@@ -24,8 +24,18 @@ function crawlPage() {
             timeout: 30000
         });
 
-        const hrefs = await page.$$eval('a', as => as.map(a => a.href));
-        console.log(hrefs);
+        const addresses = await page.$$eval('a', as => as.map(a => a.href));
+        console.log(addresses);
+
+        for (let i = 0; i < addresses.length; i++) {
+            console.log(addresses[i]);
+            const name = addresses[i].lastIndexOf('/');
+            await page.goto(addresses[i], { "waitUntil": "networkidle2" })
+            await page.screenshot({
+                path: `screenshots/slickdeals-${i}-full.png`,
+                fullPage: true
+            });
+        }
 
         await page.close();
         await browser.close();
