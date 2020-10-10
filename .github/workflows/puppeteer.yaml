@@ -1,37 +1,43 @@
-'use strict';
-const puppeteer = require('puppeteer');
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-crawlPage();
+name: Run bash script
 
-function crawlPage() {
-    (async () => {
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+    - cron: "0 * * * *"
 
-        const args = [
-            "--disable-setuid-sandbox",
-            "--no-sandbox",
-            "--blink-settings=imagesEnabled=false",
-        ];
-        const options = {
-            args,
-            headless: true,
-            ignoreHTTPSErrors: true,
-        };
+jobs:
+  build:
 
-        const browser = await puppeteer.launch(options);
-        const page = await browser.newPage();
-        await page.goto("http://slickdeals.net", {
-            waitUntil: 'networkidle2',
-            timeout: 30000
-        });
+    runs-on: ubuntu-latest
 
-        const hrefs = await page.$$eval('a', as => as.map(a => a.href));
-        console.log(hrefs);
+    strategy:
+      matrix:
+        node-version: [14.x]
 
-        await page.close();
-        await browser.close();
-
-    })().catch((error) => {
-        console.error(error);
-    });
-
-}
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install -g yarn
+    - run: yarn install --frozen-lockfile
+    - run: node index.js
+    - run: git config user.name "Linus Torvalds";
+      if: always()
+    - run: git config user.email "torvalds@linux-foundation.org";
+      if: always()
+    - run: git add .;
+      if: always()
+    - run: git commit -m "add all files" -m "yes, really";
+      if: always()
+    - run: git pull --rebase --strategy-option=theirs;
+      if: always()
+    - run: git push origin master;
+      if: always()
