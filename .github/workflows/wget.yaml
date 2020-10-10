@@ -1,0 +1,43 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: wget slickdeals
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  schedule:
+    - cron: "0 * * * *"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install -g yarn
+    - run: yarn install --frozen-lockfile
+    - run: wget --verbose --save-headers --content-on-error=on --timeout=3 --tries=1 --no-proxy --recursive --no-parent -w 1 --random-wait https://slickdeals.net/;
+    - run: git config user.name "Linus Torvalds";
+      if: always()
+    - run: git config user.email "torvalds@linux-foundation.org";
+      if: always()
+    - run: git add .;
+      if: always()
+    - run: git commit -m "add all files" -m "yes, really";
+      if: always()
+    - run: git pull --rebase --strategy-option=theirs;
+      if: always()
+    - run: git push origin master;
+      if: always()
