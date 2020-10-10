@@ -1,0 +1,451 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/8.5
+Set-Cookie: ASP.NET_SessionId=pfepyezdzs4vfktim0wuevjb; path=/; HttpOnly
+X-AspNetMvc-Version: 5.2
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Sat, 10 Oct 2020 16:42:14 GMT
+Content-Length: 27820
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <title>Costco National Membership Program</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Libre+Baskerville:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../../css/costco.css">
+    <link rel="stylesheet" type="text/css" media="print" href="../../../css/costco-print.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cc.hostedpci.com/WBSStatic/site60/proxy/js/jquery.ba-postmessage.2.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cc.hostedpci.com/WBSStatic/site60/proxy/js/hpci-cciframe-1.0.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script type="text/javascript">
+
+        //var $j = jQuery.noConflict();
+        //var disabled = true;
+
+        var hpciLocation = "checkout1";
+        var hpciSiteId = "529481";
+        //Test
+        //var thisSiteHostName = "http://localhost:60042/purchase/purchase/";
+        //Dev
+        //var thisSiteHostName = "https://cnmp.dcgdv.com/purchase/purchase/";
+        //Live
+        var thisSiteHostName = "https://costcomembershipoffer.com/purchase/purchase/";
+        var thisURLQueryString = "hpci";
+
+        var ecommerceSiteHostName = encodeURIComponent(thisSiteHostName);
+        var ecommerceURLQueryString = encodeURIComponent(thisURLQueryString);
+
+        var hpciCCFrameHost = "https://cc.hostedpci.com";
+        var hpciCCFrameName = "ccframe";
+
+        var hpciCCFrameFullUrl = "https://cc.hostedpci.com/iSynSApp/showPxyPage!ccFrame.action?pgmode1=prod" +
+            "&locationName=" + hpciLocation +
+            "&sid=" + hpciSiteId +
+            "&cvvValidate=Y" +
+            "&fullParentHost=" + ecommerceSiteHostName +
+            "&fullParentQStr=" + ecommerceURLQueryString;
+
+        var hpciSiteErrorHandler = function (errorCode, errorMsg) {
+            switch (errorCode) {
+                case "MCC_1":
+                    dislayErrorMessgae("The credit card number you entered is invalid.");
+                    document.getElementById("submitButton").disabled = false;
+                    break;
+                case "MCC_2":
+                    dislayErrorMessgae("The credit card code you entered is invalid.");
+                    document.getElementById("submitButton").disabled = false;
+                    break;
+                default:
+                    dislayErrorMessgae("Credit card is invalid.");
+                    document.getElementById("submitButton").disabled = false;
+                    break;
+            }
+        }
+
+        var hpciSiteSuccessHandlerV2 = function (mappedCCValue, mappedCVVValue, ccBINValue) {
+            document.getElementById("ccNum").value = mappedCCValue;
+            document.getElementById("ccCVV").value = mappedCVVValue;
+            document.getElementById("ccBIN").value = ccBINValue;
+            //alert("mappedCCValue: " + mappedCCValue + " | ccNum.value: " + document.getElementById("ccNum").value);
+            submitForm();
+        }
+
+        var hpci3DSitePINSuccessHandler = function () {
+            submitForm();
+        }
+
+        var hpci3DSitePINErrorHandler = function () {
+            dislayErrorMessgae("Could not verify PIN for the credit card");
+        }
+
+        var hpciCCPreliminarySuccessHandler = function (hpciCCTypeValue, hpciCCBINValue, hpciCCValidValue, hpciCCLengthValue) {
+            dislayErrorMessgae("Received preliminary credit card details");
+        }
+
+        var hpciCVVPreliminarySuccessHandler = function (hpciCVVLengthValue) {
+            dislayErrorMessgae("Received preliminary CVV details");
+        }
+
+        var hpciSiteShow3DSecHandler = function () {
+            dislayErrorMessgae("hpciSiteShow3DSecHandler");
+        }
+
+        function dislayErrorMessgae(message) {
+            document.getElementById("errorMessageContainer").style.display = "block";
+            document.getElementById("errorMessageText").innerHTML = message;
+            hideWaitMessage();
+        }
+
+        function hideErrorMessgae() {
+            document.getElementById("errorMessageContainer").style.display = "none";
+            document.getElementById("errorMessageText").innerHTML = "";
+        }
+
+        $(document).ready(function () {
+            if (hpciLocation == "" || hpciSiteId == "" || thisSiteHostName == "" || thisURLQueryString == "") {
+                dislayErrorMessgae("Error: Invalid HPCI Frame parameters.");
+            } else if (document.getElementById(hpciCCFrameName) != null) {
+                document.getElementById(hpciCCFrameName).src = hpciCCFrameFullUrl;
+            }
+        });
+    </script>
+
+    <!--Hosted PCI Scripts-->
+
+</head>
+<body>
+
+    <div>
+        
+
+
+
+
+<section>
+    <div class="hero">
+        <div class="hero-img" style="background-image: url(/img/heroBG.jpg);">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-text">
+            <div class="logo-head">
+                <embed src="/img/logo-costco.svg" alt="Costco" class="logo" />
+            </div>
+            <h1>Costco Membership Activation Certificate Exclusive Promotion</h1>
+            <h2><p>Join the 100 million Costco members who enjoy low warehouse prices on thousands of high-end brand-name products and services at more than 750 locations worldwide.</p><p><span style="color: red;">THIS MEMBERSHIP MUST BE ACTIVATED IN-STORE</span></p></h2>
+        </div>
+    </div>
+    ,
+</section>
+
+<!-- only show one of the next two sections -->
+        <section>
+            <div class="cols100 bottom-divider">
+                <h1>Purchase a Costco Membership Activation Certificate to join as a new member and receive a Costco Shop Card. </h1>
+                <div class="cash-card-box">
+                    <div class="cash-card">
+                        <img src="/img/Costco_ShopCard.png" alt="Costco Shop Card" />
+                    </div>
+                    <div class="cash-card-text">
+                        <p><p>Your Costco Shop Card can be used at any of our warehouses, gas stations, and online at Costco.com.</p></p>
+                        <ul>
+                                    <li>Gold Star Members receive a $10 Costco Shop Card</li>
+                                    <li>Gold Star Executive Members receive a $20 Costco Shop Card</li>
+                        </ul>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- only show one of the next three sections -->
+    <section>
+        <div class="cols no-divider cards">
+            <div class="col-left">
+                <div class="membership-cards both-cards">
+                    <img src="/img/Costco_GoldStar.svg" alt="Gold Star Membership Card" />
+                    <img src="/img/Costco_Executive.svg" alt="Executive Membership Card" />
+                </div>
+            </div>
+            <div class="col-right">
+                <h1>Your Costco Membership Benefits</h1>
+                <p>A Costco membership includes <span style="background-color: rgb(255, 255, 255);">one additional Household Card for anyone over the age of 18 and living at the same address.</span> A Costco membership is valid for one year at all Costco locations worldwide and online at Costco.com.</p><p>Join as a Gold Star Executive Member and receive an annual 2% Reward (up to $1,000)* on eligible Costco and Costco.com purchases, plus additional benefits on select Costco Services.</p>
+            </div>
+        </div>
+    </section>
+
+<section class="stepsBG">
+    <div class="steps-img"></div>
+    <div class="steps-text">
+        <h1>Become a Costco member in three simple steps.</h1>
+        <p style="text-align: center"><strong>Must Activate in Store</strong></p>
+        <p>1. Purchase your Costco Membership Activation Certificate below.</p>
+        <p>2. Receive your Costco Membership Activation Certificate by email.</p>
+        <p>3. Bring your Costco Membership Activation Certificate to any U.S. or Puerto Rico Costco location to join as a new member.                                               </p>
+    </div>
+</section>
+
+<section>
+    <div class="membership-form">
+<form action="/Purchase/Purchase/cj" class="purchaseForm" id="purchaseForm" method="post">            <div class="alert" id="errBox" tabindex="0">All fields are required.</div>
+            <div class="form-head form-head-intro">Membership Type</div>
+            <div id="whichCard">
+                    <input type="radio" name="memType" id="m1" value="1" class="hiddenRadio" checked />
+                    <label class="inlineLabel mem-type" for="m1"><img src="/img/Costco_GoldStar.svg" alt="Costco Gold Star Card" /><div class="mem-card-text">Gold Star Membership<br /><strong>$60.00</strong></div></label>
+                    <input type="radio" name="memType" id="m2" value="2" class="hiddenRadio" />
+                    <label class="inlineLabel mem-type" for="m2"><img src="/img/Costco_Executive.svg" alt="Costco Executive Card" /><div class="mem-card-text">Gold Star Executive Membership<br /><strong>$120.00</strong></div></label>
+            </div>
+            <input type="checkbox" id="f1" class="hiddenRadio" /><label class="cbLabel" for="f1">Yes, this is a gift</label>
+            <div></div>
+                <div class="form-head">Billing Address</div>
+            <div class="form-cols">
+                <div class="form-col">
+                    <label for="firstName">First Name</label>
+                    <input class="textEntry" data-val="true" data-val-required="The First Name field is required." id="firstName" name="PurchaseViewModelObject.FirstName" type="text" value="" />
+                </div>
+                <div class="form-col">
+                    <label for="lastName">Last Name</label>
+                    <input class="textEntry" data-val="true" data-val-required="The Last Name field is required." id="lastName" name="PurchaseViewModelObject.LastName" type="text" value="" />
+                </div>
+            </div>
+            <label for="address">Address</label>
+<input class="textEntry" data-val="true" data-val-required="The Address 1 field is required." id="address" name="PurchaseViewModelObject.Address1" type="text" value="" />            <div class="form-cols three-cols">
+                <div class="form-col">
+                    <label for="city">City</label>
+                    <input class="textEntry" data-val="true" data-val-required="The City field is required." id="city" name="PurchaseViewModelObject.City" type="text" value="" />
+                </div>
+                <div class="form-col">
+                    <label for="state">State</label>
+                    <select class="pretty-dropdown" data-val="true" data-val-required="The State/Territory field is required." id="state" name="PurchaseViewModelObject.State"><option value="">Select</option>
+<option value="AK">ALASKA</option>
+<option value="AL">ALABAMA</option>
+<option value="AR">ARKANSAS</option>
+<option value="AZ">ARIZONA</option>
+<option value="CA">CALIFORNIA</option>
+<option value="CO">COLORADO</option>
+<option value="CT">CONNECTICUT</option>
+<option value="DC">DISTRICT OF COLUMBIA</option>
+<option value="DE">DELAWARE</option>
+<option value="FL">FLORIDA</option>
+<option value="GA">GEORGIA</option>
+<option value="HI">HAWAII</option>
+<option value="IA">IOWA</option>
+<option value="ID">IDAHO</option>
+<option value="IL">ILLINOIS</option>
+<option value="IN">INDIANA</option>
+<option value="KS">KANSAS</option>
+<option value="KY">KENTUCKY</option>
+<option value="LA">LOUISIANA</option>
+<option value="MA">MASSACHUSETTS</option>
+<option value="MD">MARYLAND</option>
+<option value="ME">MAINE</option>
+<option value="MI">MICHIGAN</option>
+<option value="MN">MINNESOTA</option>
+<option value="MO">MISSOURI</option>
+<option value="MS">MISSISSIPPI</option>
+<option value="MT">MONTANA</option>
+<option value="NC">NORTH CAROLINA</option>
+<option value="ND">NORTH DAKOTA</option>
+<option value="NE">NEBRASKA</option>
+<option value="NH">NEW HAMPSHIRE</option>
+<option value="NJ">NEW JERSEY</option>
+<option value="NM">NEW MEXICO</option>
+<option value="NV">NEVADA</option>
+<option value="NY">NEW YORK</option>
+<option value="OH">OHIO</option>
+<option value="OK">OKLAHOMA</option>
+<option value="OR">OREGON</option>
+<option value="PA">PENNSYLVANIA</option>
+<option value="PR">PUERTO RICO</option>
+<option value="RI">RHODE ISLAND</option>
+<option value="SC">SOUTH CAROLINA</option>
+<option value="SD">SOUTH DAKOTA</option>
+<option value="TN">TENNESSEE</option>
+<option value="TX">TEXAS</option>
+<option value="UT">UTAH</option>
+<option value="VA">VIRGINIA</option>
+<option value="VT">VERMONT</option>
+<option value="WA">WASHINGTON</option>
+<option value="WI">WISCONSIN</option>
+<option value="WV">WEST VIRGINIA</option>
+<option value="WY">WYOMING</option>
+</select>
+                </div>
+                <div class="form-col">
+                    <label for="zip">Zip</label>
+                    <input class="textEntry" data-val="true" data-val-length="Must be a 5 digit ZIP code" data-val-length-max="5" data-val-length-min="5" data-val-required="The ZIP field is required." id="zip" name="PurchaseViewModelObject.Zip" type="text" value="" />
+                </div>
+            </div>
+            <div class="form-head">Payment Details</div>
+            <!--show only for Voucher-based offers -->
+                <label for="nameOnCard">Name on Card</label>
+                <input type="text" class="textEntry" id="nameOnCard" />
+                <!--hostedPCI iFrame -->
+                <!--TEST 
+            <iframe id="ccframe" title="Credit Card Details" name="ccframe" src="https://cc.hostedpci.com/iSynSApp/showPxyPage!ccFrame.action?pgmode1=prod&locationName=checkout1&sid=529481&reportCCType=Y&reportCCDigits=Y&reportCVVDigits=Y&fullParentHost=https://cnmp.dcgdv.com/purchase/purchase&fullParentQStr=/hpci" width="700" height="140" scrolling="NO" frameBorder="0">
+            If you can see this, your browser doesn't understand IFRAME.
+            </iframe> -->
+                <!--LIVE -->
+                <iframe id="ccframe" title="Credit Card Details" name="ccframe" src="https://cc.hostedpci.com/iSynSApp/showPxyPage!ccFrame.action?pgmode1=prod&locationName=checkout1&sid=529481&reportCCType=Y&reportCCDigits=Y&reportCVVDigits=Y&fullParentHost=https://costcomembershipoffer.com/purchase/purchase&fullParentQStr=/hpci" width="700" height="140" scrolling="NO" frameBorder="0">
+                    If you can see this, your browser doesn't understand IFRAME.
+                </iframe> 
+                <div class="form-cols expDate">
+                    <div class="form-col">
+                        <label for="ccMonth">Expiration Month</label>
+                        <select class="pretty-dropdown" data-val="true" data-val-required="The Expiration Month field is required." id="ccMonth" name="PurchaseViewModelObject.ExpirationMonth"><option value="">Select</option>
+<option value="01">January (01)</option>
+<option value="02">February (02)</option>
+<option value="03">March (03)</option>
+<option value="04">April (04)</option>
+<option value="05">May (05)</option>
+<option value="06">June (06)</option>
+<option value="07">July (07)</option>
+<option value="08">August (08)</option>
+<option value="09">September (09)</option>
+<option value="10">October (10)</option>
+<option value="11">November (11)</option>
+<option value="12">December (12)</option>
+</select>
+                    </div>
+                    <div class="form-col">
+                        <label for="ccYear">&nbsp;</label>
+                        <select class="pretty-dropdown" data-val="true" data-val-required="The Expiration Year field is required." id="ccYear" name="PurchaseViewModelObject.ExpirationYear"><option value="">Select</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+<option value="2027">2027</option>
+<option value="2028">2028</option>
+<option value="2029">2029</option>
+<option value="2030">2030</option>
+</select>
+
+                    </div>
+                </div>
+                <div id="errorMessageContainer" style="display:none;">
+                    <div id="errorMessageText"></div>
+                </div>
+                <p style="color: red;"></p>
+            <div class="form-subhead">Where can we send your Costco Membership Activation Certificate?</div>
+            <div class="form-cols">
+                <div class="form-col">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="textEntry" id="email" name="email" />
+                </div>
+                <div class="form-col">
+                    <label for="confirmEmail">Confirm Email Address</label>
+                    <input type="email" class="textEntry" id="confirmEmail" />
+                </div>
+            </div>
+            <div id="termsBox">
+                <input type="checkbox" id="tandc" class="hiddenRadio" name="agreeToTerms" />
+                <label class="cbLabel hangingCheckbox" for="tandc">
+                    By receiving your membership activation certificate, you have accepted the <a href="https://www.costco.com/terms-and-conditions-of-use.html" target="_blank">Terms&nbsp;&&nbsp;Conditions</a> of Costco Wholesale.
+                </label><br />
+                <!--<input type="checkbox" id="autobill" class="hiddenRadio" name="autobill" />-->
+                    <label>
+                        RENEWAL ELECTION: BY PURCHASING YOU AGREE AT THE TIME OF MEMBERSHIP SIGN UP THAT YOUR COSTCO MEMBERSHIP FEE WILL AUTOMATICALLY RENEW AND BE CHARGED TO A SELECTED VISA CARD PROVIDED AT THE TIME OF SIGN UP ANNUALLY ON THE FIRST DAY OF YOUR RENEWAL MONTH UNTIL YOU CHOOSE A DIFFERENT FORM OF PAYMENT OR CANCEL YOUR COSTCO MEMBERSHIP. IF YOU CHOOSE NOT TO SIGN UP FOR AUTO RENEW, YOUR MEMBERSHIP FEES WILL BE CHARGED ON YOUR FIRST SHOP AFTER YOUR RENEWAL MONTH. MEMBERSHIP FEES WILL BE CHARGED BASED ON YOUR MEMBERSHIP LEVEL ($60 A YEAR FOR GOLD STAR MEMBERS, PLUS AN ADDITIONAL $60 UPGRADE FEE A YEAR FOR EXECUTIVE MEMBERS). MAY BE SUBJECT TO SALES TAX. IF YOU WISH TO PAY YOUR COSTCO MEMBERSHIP FEE WITH A DIFFERENT FORM OF PAYMENT OR CANCEL YOUR COSTCO MEMBERSHIP, PLEASE VISIT THE COSTCO MEMBERSHIP COUNTER OR CALL COSTCO AT 1-800-774-2678, BEFORE THE FIRST DAY OF YOUR RENEWAL MONTH. VISIT COSTCO.COM FOR MORE INFORMATION ABOUT COSTCO MEMBER PRIVILEGES AND CONDITIONS.
+                    </label>
+                    <br />
+                    <p>Please click here for Costco's <a href="https://www.costco.com/privacy-policy.html" target="_blank">Privacy Policy</a>.</p>
+                <p style="color: red;"></p>
+            </div>
+            <div class="form-subhead">You will receive an email that includes your Costco Membership Activation Certificate.</div>
+            <br />
+            <div class="g-recaptcha" data-sitekey="6LcIvZgUAAAAAINKFTPsPlSE-ODAUtMXgOhBWqBk"></div>
+            <br />
+                <input id="submitButton" type="submit" value="Place Order" class="btn" onClick="return tempSubmit();" />
+            <input type="hidden" id="ccNum" name="ccNum" />
+            <input type="hidden" id="ccCVV" name="ccCVV" />
+            <input type="hidden" id="ccBIN" name="ccBIN" />
+<input id="CampaignTitle" name="PurchaseTemplateModelObject.strTitle" type="hidden" value="cj" /><input id="CID" name="PurchaseViewModelObject.strCID" type="hidden" value="414" /><input id="RefBy" name="PurchaseViewModelObject.strReferredBy" type="hidden" value="https://slickdeals.net/article/buying-guide/costco-coupon-book/" /><input id="QID" name="PurchaseViewModelObject.strQID" type="hidden" value="8c0848b40b1711eb812400b10a24060c" /><input id="CGUID" name="PurchaseTemplateModelObject.strCampaignGUID" type="hidden" value="4980ca47-fba1-4776-91c9-9ea30b75e216" /><input id="AC" name="PurchaseTemplateModelObject.strAC" type="hidden" value="23575" /><input id="PC" name="PurchaseTemplateModelObject.strPromoCode" type="hidden" value="2849970" /><input id="memType" name="PurchaseTemplateModelObject.strMemberType" type="hidden" value="both" /><input id="offerGroupID" name="PurchaseTemplateModelObject.strOfferGroupID" type="hidden" value="-1" /><input id="pyamentType" name="PurchaseTemplateModelObject.strPaymentType" type="hidden" value="CreditCard" /><input id="merchantCode" name="PurchaseTemplateModelObject.strMerchantCode" type="hidden" value="DCG ONE" /></form>
+        <p class="fineprint"><p><strong>Please print the certificate and present it to the membership counter at any U.S. or Puerto Rico Costco location. There, you’ll complete a membership application form. At that time, your Membership Activation Certificate will be converted into a Costco membership and you’ll receive your membership card.</strong></p><p>Please note: The Membership Activation Certificate is not valid toward the renewal of an existing membership or an expired membership. Membership Activation Certificates are not valid for payment on Costco.com. Promotion valid through 12/31/20.</p><p>Thank you for your purchase. We look forward to welcoming you as a new Costco member.</p></p>
+
+        <div class="tandc">
+            <p><strong>Please note: Your credit card statement for this purchase will show DCG One for Costco as the merchant of record.</strong></p><p>*Terms, conditions and exclusions apply to the 2% Reward. See the membership counter for details.</p><p>A Costco membership is $60 per year. An Executive Membership is an additional $60 upgrade fee per year. Each membership includes one free Household Card. May be subject to sales tax.</p><p>RESTRICTIONS: Valid for new memberships only. New members must be 18 years of age or older. To qualify as a new member, an existing Costco membership must be expired for 18 months or more. Not valid for renewal of an existing Costco membership or an upgrade of an existing membership to an Executive Membership. Costco Membership Activation Certificates are valid for a new Costco Gold Star, Business or Executive Membership. Executive Membership requires two $60 Costco Membership Activation Certificates. Costco Membership Activation Certificates are not replaceable if lost, stolen or destroyed.</p><p>Limit one per household. Valid only for new members for their first year of Costco membership at any U.S. or Puerto Rico Costco location. To activate your Costco membership you must bring your Costco Membership Activation Certificate to your local Costco membership counter. New members are required to present valid government-issued photo identification before signing up for membership.</p><p><span style="background-color: white;">The Costco Shop Card will be mailed to the address provided at the time of new membership sign up at the Costco location. The Costco Shop Card will be mailed within 4 - 6 weeks. You must join Costco by January 31, 2021, to qualify for the Costco Shop Card provided in the promotion.&nbsp;</span></p><p>A Membership Activation Certificate is not redeemable for cash or merchandise, nor is it a debit or credit card. Membership Activation Certificates are not redeemable at Costco.com or outside of the United States or Puerto Rico. Visit Costco.com to find a warehouse location near you. Membership Activation Certificates do not expire and there are no dormancy fees. Membership Activation Certificates cannot be used to purchase additional Membership Activation Certificates or a Costco Shop Card.</p><p>Costco accepts all Visa® cards, as well as cash, checks, debit/ATM cards, EBT and Costco Shop Cards.</p><p>Costco Membership Activation Certificate orders are fulfilled by a third-party organization. Your Membership Activation Certificate will be immediately emailed to your email address provided at purchase.</p><p>Costco reserves the right to refuse to honor the Membership Activation Certificate if Costco believes a Membership Activation Certificate has been obtained by fraud or theft.</p><p>These terms and conditions will govern the use of the Membership Activation Certificate by the recipient and all subsequent known or unknown recipients or holders of the Membership Activation Certificate. Costco reserves the right to change or amend these terms in whole or in part at any time.</p><p>This website is powered by DCG One. For questions, please contact customer service at 1-877-234-2433 or email <a href="mailto:costcomembership@dcgone.com" target="_blank">costcomembership@dcgone.com</a>.</p>
+        </div>
+        <div class="tandc">
+            <p>This website is powered by DCG One. For questions, please contact customer service at 1-877-234-2433 or email costcomembership@dcgone.com.</p><p><span style="background-color: rgb(255, 255, 255);">May not be combined with any other promotion.</span></p>
+        </div>
+
+    </div><!--membership-form -->
+</section>
+
+
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+
+<script type="text/javascript" src="/js/postmessage.js"></script>
+
+<script type="text/javascript" src="/js/costco.js"></script>
+
+<script type="text/javascript">
+
+	function tempSubmit() {
+		var valResult = valFormUpdated();
+		if (valResult != false)
+		{
+			return sendHPCIMsg();
+		}
+		return valResult;
+    }
+
+    function tempNonCC() {
+        return valFormUpdated();
+    }
+
+        function checkout() {
+            //hideErrorMessgae();
+            sendHPCIMsg();
+            //showWaitMessage();
+            return false;
+        }
+
+        function showWaitMessage() {
+            document.getElementById("submitButton").disabled = true;
+            //document.getElementById("waitingMessage").style.display = "block";
+        }
+
+        function hideWaitMessage() {
+            document.getElementById("submitButton").disabled = false;
+            //document.getElementById("waitingMessage").style.display = "none";
+        }
+
+        function submitForm() {
+            //document.getElementById("ccType").value = document.getElementById("PurchaseViewModelObject_CreditCardType").value;
+            //document.getElementById("expMonth").value = document.getElementById("PurchaseViewModelObject_ExpirationMonth").value;
+            //document.getElementById("expYear").value = document.getElementById("PurchaseViewModelObject_ExpirationYear").value;
+            //alert("ccNum.value: " + document.getElementById("ccNum").value);
+            document.getElementById("purchaseForm").submit();
+        }
+</script>
+
+
+
+
+        <hr />
+        <footer>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-sm-12">
+                        Copyright &copy; 1998&mdash;2020 Costco Wholesale Corporation.
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+</html>

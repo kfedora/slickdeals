@@ -1,0 +1,60 @@
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+Access-Control-Allow-Headers: x-requested-with, content-type, accept, sd-extension-client, sd-extension-version, sd-extension-user
+Access-Control-Allow-Origin: *
+ETag: "1547039199"
+Last-Modified: Thu, 01 Oct 2020 07:06:07 GMT
+Server: Akamai Resource Optimizer
+Vary: Accept-Encoding
+Cache-Control: max-age=337981
+Expires: Wed, 14 Oct 2020 14:19:12 GMT
+Date: Sat, 10 Oct 2020 16:26:11 GMT
+Content-Length: 1540
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=HIT
+Server-Timing: edge; dur=3
+Strict-Transport-Security: max-age=86400
+
+/**
+ * This file was left out of require js on purpose.
+ * When loading Require JS with wordpress assets the page would break because wordpress assets
+ * would think they were in amd loading of js modules.
+ *
+ * DO NOT REMOVE FILE NOT LEGACY
+ */
+
+$(document).ready(function ()
+{
+    if ($('#wordpressContent').find('div[id^="ytContentWrapper"]'))
+    {
+        $('div[id^="ytContentWrapper"]').each(function(){
+            const $ytContentWrapper = $(this);
+
+            if ($ytContentWrapper.length && $ytContentWrapper.text().length)
+            {
+                const videoPath = 'https://www.youtube.com/embed/' + $ytContentWrapper.text().trim();
+                const $videoWrapper = $('<div>')
+                    .addClass('youtubeVideoWrapper');
+                const $videoResponsiveWrapper = $('<div>')
+                    .addClass('youtubeResponsiveWrapper')
+                    .appendTo($videoWrapper);
+
+                $videoWrapper.insertAfter($ytContentWrapper);
+
+                const $iframe = $('<iframe>')
+                    .attr({
+                        'id': 'ytplayer',
+                        'type': 'text/html',
+                        'width': '560',
+                        'height': '315',
+                        'src': '',
+                        'frameborder': '0'
+                    }).appendTo($videoResponsiveWrapper);
+
+                window.sdLoadQueue.push([function() {
+                    $iframe.attr('src', videoPath);
+                }, 'nonCriticalUi']);
+            }
+        })
+    }
+});
