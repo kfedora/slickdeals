@@ -1,0 +1,83 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=600, public
+Content-Type: text/html; charset=utf-8
+Date: Sat, 10 Oct 2020 22:59:35 GMT
+Expires: Sat, 10 Oct 2020 23:09:35 GMT
+Server: jws/webrouter:1de4277f
+Vary: Accept-Encoding
+Vary: Origin
+X-From-Cache: 1
+Transfer-Encoding: chunked
+Via: 1.1 google
+Alt-Svc: h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+
+<!DOCTYPE html><html lang=en><head><title>JustWatch</title><base href=/ ><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="viewport-fit=cover,width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"><meta name=keywords content=""><meta name=description content=""><meta property=og:site_name content=JustWatch><meta property=fb:app_id content=794243977319785><meta property=og:title content=""><meta property=og:description content=""><meta property=og:image content=/appassets/img/JustWatch_logo_with_claim.png><meta property=og:image:width content=606><meta property=og:image:height content=302><meta name=mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-capable content=yes><meta name=theme-color content=#182531><meta name=ahrefs-site-verification content=67ac3aca753f5580e707e357a3f802c7cdfbcf06ea2b78e1cb5363968f96db94><link rel=icon href=/appassets/favicon.ico><script>
+var PLOCALE = `US`
+var FLOCALE = `en_US`
+var MYAPI = `https://apis.justwatch.com/content`
+function getData(url = ``) {
+  var oReq = new XMLHttpRequest();
+  oReq.open("GET", url);
+  oReq.overrideMimeType("application/json");
+  oReq.setRequestHeader("Accept", "application/json, text/plain, */*");
+  if (url.indexOf("urls")!==-1){
+    oReq.onload = function() {
+       var j = JSON.parse(oReq.responseText);
+       if (j.object_type === `movie` || j.object_type === `show`) {
+        getData(MYAPI+`/titles/`+j.object_type+`/`+j.object_id+`/locale/`+FLOCALE)
+       }
+    };
+  }
+  oReq.send();
+}
+getData(MYAPI+`/translations/`+FLOCALE+`?prefix=WEBAPP_&translatable_type=ui_string`)
+getData(MYAPI+`/genres/locale/`+FLOCALE)
+getData(MYAPI+`/providers/locale/`+FLOCALE)
+getData(MYAPI+`/age_certifications?country=`+PLOCALE+`&object_type=movie`)
+getData(MYAPI+`/urls?include_children=true&path=`+encodeURIComponent(window.location.pathname))</script><link rel="preconnect" crossorigin="use-credentials" href="https://apis.justwatch.com">
+<link rel="preconnect" crossorigin="use-credentials" href="https://i.tw.cx">
+<link rel="preconnect" crossorigin="use-credentials" href="https://userapi.justwatch.com">
+<link rel="preconnect" crossorigin href="https://images.justwatch.com">
+<style>html {
+				background-color: #0c151d;
+			}
+			body {
+				background-color: #0c151d;
+			}</style><link href=/appassets/64de969a/css/justwatch.deafb520.css rel=prefetch><link href=/appassets/64de969a/js/chunk-0110b49e.45094979.js rel=prefetch><link href=/appassets/64de969a/js/chunk-25d2434c.04a63576.js rel=prefetch><link href=/appassets/64de969a/js/chunk-48994ce8.9357a463.js rel=prefetch><link href=/appassets/64de969a/js/chunk-57bf7011.714403cc.js rel=prefetch><link href=/appassets/64de969a/js/chunk-716e8cac.b9d31131.js rel=prefetch><link href=/appassets/64de969a/js/chunk-7465c616.4eae443a.js rel=prefetch><link href=/appassets/64de969a/js/chunk-81aa3ff2.217a891d.js rel=prefetch><link href=/appassets/64de969a/js/chunk-930764de.3c5c9b61.js rel=prefetch><link href=/appassets/64de969a/js/chunk-beb9cb3c.3d281cec.js rel=prefetch><link href=/appassets/64de969a/js/chunk-df8f3e68.ffc208b5.js rel=prefetch><link href=/appassets/64de969a/js/chunk-f335b050.8430e6be.js rel=prefetch><link href=/appassets/64de969a/js/cinema.1e297c02.js rel=prefetch><link href=/appassets/64de969a/js/detail.0ff33eeb.js rel=prefetch><link href=/appassets/64de969a/js/detail~home.f465b870.js rel=prefetch><link href=/appassets/64de969a/js/home.a0fbed56.js rel=prefetch><link href=/appassets/64de969a/js/justwatch.df5a960c.js rel=prefetch><link href=/appassets/64de969a/js/lp-streamgreen.187efecc.js rel=prefetch><link href=/appassets/64de969a/js/new.bec0be5b.js rel=prefetch><link href=/appassets/64de969a/js/popular.a11ce369.js rel=prefetch><link href=/appassets/64de969a/js/search.bc814692.js rel=prefetch><link href=/appassets/64de969a/js/static.213ac99b.js rel=prefetch><link href=/appassets/64de969a/js/watchlist.9c5a7402.js rel=prefetch><link href=/appassets/64de969a/css/app.16782f6c.css rel=preload as=style><link href=/appassets/64de969a/css/vendors.a32f0cd3.css rel=preload as=style><link href=/appassets/64de969a/js/app.4d0d73a3.js rel=preload as=script><link href=/appassets/64de969a/js/runtime.ead7706d.js rel=preload as=script><link href=/appassets/64de969a/js/vendors.270dca10.js rel=preload as=script><link href=/appassets/64de969a/css/vendors.a32f0cd3.css rel=stylesheet><link href=/appassets/64de969a/css/app.16782f6c.css rel=stylesheet></head><body><script>window.is404Request = false;</script><script>window.JW_CONFIG = {
+  "API": "https://apis.justwatch.com/content",
+  "ASSETS_URL": "https://www.justwatch.com/static/compile_jw/assets",
+  "CLICK_URL": "https://click.justwatch.com",
+  "CHECKIP_URL": "https://info.justwatch.com",
+  "NOTIFICATION_URL": "https://apis.justwatch.com/notification",
+  "DOMAIN": "justwatch.com",
+  "FEEDBACK_URL": "https://apis.justwatch.com/feedback",
+  "ID_URL": "https://i.tw.cx",
+  "IMAGESCALER_URL": "https://images.justwatch.com",
+  "PULL_URL": "https://apis.justwatch.com/push",
+  "USER_URL": "https://userapi.justwatch.com",
+  "WRITE_URL": "https://apis.justwatch.com/personalization",
+  "EVENT_URL": "https://apis.justwatch.com/event",
+  "FACEBOOK_APP_ID": "794243977319785",
+  "GOOGLE_CLIENT_ID": "532718895899-fhbuhnd9nsrae0ivadejq35vsr2sgr0l.apps.googleusercontent.com",
+  "GOOGLE_MAPS_API_KEY": "AIzaSyBVU86Zuf3v_6W8dnnV9BRKe_YSBXroqCA",
+  "DISCOVERY_URL": "https://apis.justwatch.com/discovery",
+  "TRACKING_URL": "https://apis.justwatch.com/tracking",
+  "SNOWPLOW_COLLECTOR_ENDPOINT": "www.justwatch.com",
+  "EXPERIMENT_CONFIG_URL": "https://apis.justwatch.com/configuration/experiments",
+  "SENTRY_DSN": "https://ad6b9c4b3a3f4e998e38c3c7ed92574f@sentry.justwatch.com/4",
+  "WEBP_PERMILLE": 1000
+}
+</script><script>window.JW_ASSETS_DIR = 'appassets'</script><script>window.PLATFORM = {"IS_MOBILE":false,"IS_WEBAPP":true,"IS_IOS":false,"IS_ANDROID":false,"ASSETS_DIR":"appassets"}</script><script src=/appassets/js/long-press-event.min.js></script><script>window.IS_SEO4AJAX = window.navigator.userAgent.indexOf('seo4ajax') !== -1;</script><script>if (IS_SEO4AJAX) {
+				// this hack is used to force the ion-page in the ion-tab to scroll for seo4ajax
+				var styleEl = document.createElement('style');
+				styleEl.innerHTML = 'ion-tab.ion-page { overflow-y: scroll; } #startup-spinner { display: none; }';
+				document.head.appendChild(styleEl);
+			}</script><script src=https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js></script><script>window.SIWA_STATE = Math.random()
+				.toString(36)
+				.slice(-4);</script><script>AppleID.auth.init({
+				clientId: 'com.justwatch.client',
+				scope: '',
+				redirectURI: 'https://' + window.location.hostname + '/sign-in-with-apple-redirect',
+				state: window.SIWA_STATE,
+				usePopup: true,
+			});</script><script>window.JW_START_TIME = Date.now();</script><noscript><strong>We're sorry but jw-app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/appassets/64de969a/js/runtime.ead7706d.js></script><script src=/appassets/64de969a/js/vendors.270dca10.js></script><script src=/appassets/64de969a/js/app.4d0d73a3.js></script></body></html>

@@ -1,0 +1,712 @@
+HTTP/1.1 200 OK
+Content-Type: text/html;charset=UTF-8
+Cache-Control: no-store, private
+Content-Language: en-US
+RewriteTestHook: c94ca081
+RewriteTeamHook: af65aaf9
+X-EdgeConnect-MidMile-RTT: 67
+X-EdgeConnect-Origin-MEX-Latency: 378
+Vary: Accept-Encoding
+Date: Sat, 10 Oct 2020 22:58:02 GMT
+Content-Length: 31930
+Connection: keep-alive
+Set-Cookie: cca_device_id=43dd7de3-e5c9-4407-ac85-65946414d88a; Max-Age=2592000; Expires=Mon, 09-Nov-2020 22:58:02 GMT; Path=/creditcard; Secure; HttpOnly
+Set-Cookie: cca_session_time=eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiZGlyIn0..FsKbVOXcgpUkhjDz.jOqcSOKDmJ9oImhWvNu4qdrj6DolgrmrQnhwY2pchgS0oIeCRiZLtkV-XttNtEIZT0WwQivoDe53-KXr92RaPU0abq22rlqK634Z0b2BOfaVWTuL2cOibotXI5_LeOxBWhdhUFg_NdHR5kwADkV5fIERTf0r8x_XQFDaY2sQVaQXN2OzycVdu3qKaxDoHF1d8kyGhsvyd40rE6zSjhDIYZyKK7O-b-Z8rXdQtesySARsuIkkjOujQ7t04dZeK4_o-rpHziIkGjA6t9TIkvwDhTZxQgGyJ6EKrhtz.2Nr2Pqg9xBggvD9qwJa0SA; Path=/creditcard; Secure; HttpOnly
+Set-Cookie: cca_persist=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/creditcard; Secure; HttpOnly
+Set-Cookie: cca_app_state=%7B%22cc%22%3A%22AA1001%22%2C%22uid%22%3A%22fc6d26f3-44bb-4b5b-8d53-14a106752899%22%2C%22cdate%22%3A%222020-10-10T22%3A58%3A02.572Z%22%2C%22nordLoad%22%3A%22false%22%2C%22mdate%22%3A%222020-10-10T22%3A58%3A02.572Z%22%7D; Path=/creditcard; Secure; HttpOnly
+Set-Cookie: shopping-bag-migration=shopperId=&isMigrated=true; expires=Mon, 31-Dec-2038 23:59:59 GMT; path=/
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=68
+Server-Timing: origin; dur=378
+Timing-Allow-Origin: *
+Content-Security-Policy: upgrade-insecure-requests
+Strict-Transport-Security: max-age=600 ; includeSubDomains
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="no-js" lang="en">
+
+<head>
+    <title>Nordstrom Online Application</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="robots" content="noindex,noarchive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script>
+  (function() {
+    (function(a) {
+      "use strict";
+
+      function b(c, d) {
+        if ({}.hasOwnProperty.call(b.cache, c)) return b.cache[c];
+        var e = b.resolve(c);
+        if (!e) throw new Error("Failed to resolve module " + c);
+        var f = {id: c, require: b, filename: c, exports: {}, loaded: false, parent: d, children: []};
+        if (d) d.children.push(f);
+        var g = c.slice(0, c.lastIndexOf("/") + 1);
+        b.cache[c] = f.exports;
+        e.call(void 0, f, f.exports, g, c);
+        f.loaded = true;
+        return b.cache[c] = f.exports
+      }
+
+      b.modules = {};
+      b.cache = {};
+      b.resolve = function(h) {return {}.hasOwnProperty.call(b.modules, h) ? b.modules[h] : void 0};
+      b.define = function(i, j) {b.modules[i] = j};
+      b.define("1", function(k, l, m, n) {
+        var o = b("2", k);
+        var p = o["default"];
+        var q = String.fromCharCode.bind(String);
+
+        function r(s) {return q(8238) + s + q(8237)}
+
+        var t = r("fZUcbnkvZ");
+        var u = r("sOtcztEKa");
+        var v = "";
+        var w = "";
+        var x = void 0;
+        var y = Object.defineProperty.bind(Object);
+        (function() {
+          var z = XMLHttpRequest.prototype;
+          var A = z.open;
+          var B = z.send;
+          var C = z.setRequestHeader;
+
+          function D(E, F, G) {
+            var H = Object.getOwnPropertyDescriptor(E, F);
+            if (H && (H.writable || H.configurable)) {
+              H.value = G;
+              y(E, F, H)
+            }
+          }
+
+          function I(J, K, L, M, N) {
+            var O = [].slice.call(arguments);
+            var P = "" + J;
+            O[0] = P;
+            var Q = A.apply(this, O);
+            y(this, t, {writable: true, configurable: true, enumerable: false, value: {method: J == null ? null : P.toLowerCase(), url: K}});
+            return Q
+          }
+
+          function R(S) {
+            if (x != null && t in this && x.shouldHook(this[t])) {
+              var T = x.getEncodedData();
+              if (T) {
+                for (var U in T) {
+                  if (!{}.hasOwnProperty.call(T, U)) continue;
+                  var V = T[U];
+                  var W = x.config.headerNamePrefix + U;
+                  var X = x.chunk(W, V, x.config.headerChunkSize);
+                  for (var Y in X) {
+                    if (!{}.hasOwnProperty.call(X, Y)) continue;
+                    C.call(this, Y, X[Y])
+                  }
+                }
+              }
+            }
+            return B.apply(this, arguments)
+          }
+
+          if (!(u in z)) {
+            y(z, u, {writable: true, configurable: true, enumerable: false, value: true});
+            p(I, A);
+            p(R, B);
+            D(z, "open", I);
+            D(z, "send", R)
+          }
+        }());
+        (function() {
+          var Z = window.fetch;
+          var ba = window.Request;
+          var bb = function bc(bd, be) {
+            var bf = new ba(bd, be);
+            var bg = {url: bf.url, method: bf.method};
+            if (x != null && x.shouldHook(bg)) {
+              var bh = x.getEncodedData();
+              if (bh) {
+                for (var bi in bh) {
+                  if (!{}.hasOwnProperty.call(bh, bi)) continue;
+                  var bj = bh[bi];
+                  var bk = x.config.headerNamePrefix + bi;
+                  var bl = x.chunk(bk, bj, x.config.headerChunkSize);
+                  for (var bm in bl) {
+                    if (!{}.hasOwnProperty.call(bl, bm)) continue;
+                    bf.headers.set(bm, bl[bm])
+                  }
+                }
+              }
+            }
+            return Z(bf)
+          };
+          if (typeof Z === "function" && !(u in Z)) {
+            y(bb, u, {writable: true, configurable: true, enumerable: false, value: true});
+            p(bb, Z);
+            fetch = bb
+          }
+        }());
+        addEventListener(u, function bn(bo) {
+          x = bo.detail;
+          if (bo.detail == null) {removeEventListener(u, bn)}
+        })
+      });
+      b.define("2", function(bp, bq, br, bs) {
+        var bt = Function.prototype.call.bind(Function.prototype.toString);
+        var bu = void 0, bv = void 0;
+        var bw = function bx() {
+          var by = bu.lastIndexOf(this);
+          if (by >= 0) {return bv[by]}
+          return bt(this)
+        };
+        bw.prototype = void 0;
+        bu = [bw];
+        bv = [bt(Function.prototype.toString)];
+
+        function bz(bA, bB) {
+          if (typeof bB !== "function") {return}
+          try {
+            bv.push(bt(bB));
+            bu.push(bA);
+            if (Function.prototype.toString !== bw) {Function.prototype.toString = bw}
+          } catch (bC) {}
+        }
+
+        bq["default"] = bz
+      });
+      return b("1")
+    }.call(this, this))
+  }())
+</script>
+
+    <script async src="/mwp/integration/ns_common.js?async"></script>
+    
+
+    <!-- begin ga -->
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments)}
+            , i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-107105548-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- end ga -->
+
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="static/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="static/assets/favicons/favicon-16x16.png">
+<link rel="manifest" href="static/assets/favicons/manifest.json">
+<link rel="mask-icon" href="static/assets/favicons/safari-pinned-tab.svg" color="#908882">
+<link rel="shortcut icon" href="static/assets/favicons/favicon.ico">
+<meta name="msapplication-config" content="static/assets/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/uikit.min.js"></script>
+    <script src="static/js/sticky.js"></script>
+</head>
+
+<body class="entrypage">
+  <div class="container-fluid">
+    <div class="row n-header nm">
+  <div class="container">
+    <div class="row nm">
+      <div class="col-md-6 col-sm-12 landing-nordstrom-logo">
+        <a aria-label="Nordstrom Logo" class="n-logo" href="https://www.nordstrom.com" target="_blank">
+            <figure aria-label="Nordstrom Logo">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+         viewBox="0 0 566.26 74.48" style="enable-background:new 0 0 566.26 74.48;" xml:space="preserve">
+                    <path d="M534.22,43.08l30.04-40.73v68.4h-10.18V33.97l-19.86,26.46l-19.86-26.46v36.78h-10.18V2.35L534.22,43.08z M301.1,52.98
+	c-0.18-3.5-1.83-10.48-10.95-17.84l-8.02-7.01c-3.37-2.69-5.03-5.64-5.07-9.03c-0.05-3.89,2.55-6.63,6.48-6.83
+	c0.05-0.01,5-0.55,7.95,3.58l0.12,0.17l8.14-5.45l-0.1-0.17c-1.36-2.24-7.72-8.23-16.23-7.76c-4.85,0.24-9.14,2.06-12.1,5.12
+	c-3.08,3.18-4.57,7.43-4.33,12.31c0.29,5.74,3.61,11.03,10.45,16.64l7.5,6.64c4.16,3.42,6.03,6.31,6.24,9.69
+	c0.16,2.52-0.65,4.91-2.28,6.74c-1.42,1.59-3.02,2.35-5.21,2.46l-0.49,0.02c-6.33,0.02-8.88-4.49-10.41-7.18l-0.39-0.68l-8.66,4.2
+	c0.8,2.22,5.51,13.32,19.32,13.28l0.24,0c5.02-0.25,9.61-2.26,12.92-5.66C299.62,62.72,301.35,58.02,301.1,52.98z M100.92,2
+	C81.49,2,65.69,17.81,65.69,37.24c0,19.43,15.81,35.24,35.24,35.24c19.43,0,35.24-15.81,35.24-35.24C136.16,17.81,120.35,2,100.92,2
+	z M100.92,62.27c-13.8,0-25.03-11.23-25.03-25.03c0-13.8,11.23-25.03,25.03-25.03s25.03,11.23,25.03,25.03
+	C125.96,51.04,114.73,62.27,100.92,62.27z M455.81,2c-19.43,0-35.24,15.81-35.24,35.24c0,19.43,15.81,35.24,35.24,35.24
+	c19.43,0,35.24-15.81,35.24-35.24C491.05,17.81,475.24,2,455.81,2z M455.81,62.27c-13.8,0-25.03-11.23-25.03-25.03
+	c0-13.8,11.23-25.03,25.03-25.03c13.8,0,25.03,11.23,25.03,25.03C480.84,51.04,469.61,62.27,455.81,62.27z M52.33,72.45V3.75H42.12
+	v42.67L2,2.35v68.4h10.18V28.72l0.37,0.39L52.33,72.45z M352.62,3.75l-42.83,0v9.36h16.13v57.64h10.57V13.11h16.13V3.75z
+	 M397.32,45.53l0.22-0.1c1.13-0.54,2.19-1.17,3.13-1.87c5.49-4.05,8.77-10.8,8.77-18.05c0-11.99-8.89-21.75-19.83-21.75h-23.58v67
+	h10.2l0-23.5h0.21c0.02,0,5.54,0,9.64-0.01h0.11l0.06,0.09l15.49,23.41h12.19L397.32,45.53z M388.49,36.98h-12.25V13.7l12.25,0
+	c5.87,0,10.64,5.22,10.64,11.64C399.12,31.76,394.35,36.98,388.49,36.98z M226.69,3.75h-16.55v67h16.55
+	c16.23,0,29.02-15.03,29.02-33.5C255.71,18.78,242.81,3.75,226.69,3.75z M226.39,61.13h-6.16V13.37h6.16
+	c10.96,0,19.27,10.71,19.27,23.88C245.67,50.42,237.36,61.13,226.39,61.13z M180.72,45.53l0.22-0.1c1.13-0.54,2.19-1.17,3.13-1.87
+	c5.49-4.05,8.77-10.8,8.77-18.05c0-11.99-8.89-21.75-19.83-21.75h-23.58v67h10.2l0-23.5h0.21c0.02,0,5.54,0,9.64-0.01h0.11
+	l0.06,0.09l15.49,23.41h12.19L180.72,45.53z M171.88,36.98h-12.25V13.7l12.25,0c5.87,0,10.64,5.22,10.64,11.64
+	C182.52,31.76,177.75,36.98,171.88,36.98z"></path>
+                </svg>
+</figure>
+
+        </a>
+      </div>
+      <div class="col-md-6 col-sm-12 landing-nordy-club-logo">
+        <a href="https://www.nordstrom.com/content/nordy-club?cm_sp=corp-_-corp_MoreToExplore-_-globalfooternav_rewards&origin=footer" target="_blank">
+            <img src="static/assets/approval_banner_top_203x70.png" alt="The Nordy Club logo">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="row n-body nm">
+      <div class="container">
+       
+       <div class="row nm">
+        <div class="col-md-7 col-xs-12 landing-40-10-30-0">
+          <div class="page-header">
+              <h1 class="landing-h1">Apply for a Nordstrom credit card today!</h1>
+              <p class="landing-body" style="margin-top:10px;">
+                Earn <strong>3 points per dollar</strong> spent with us.
+              </p>
+          </div>
+          <div>
+            <div class="landing-header-icons">
+              <img class="landing-header-icon-bonus" src="static/assets/bonus-note@2x.png" alt="Bonus note icon">
+            </div>
+            <p class="landing-header-text">
+              Unlock a <strong>$40 Bonus Note.*</strong> Subject to credit approval.
+            </p>
+            <div class="landing-header-icons">
+              <img class="landing-header-icon-bag" src="static/assets/shop@2x.png" alt="Shopping bag icon">
+            </div>
+            <p class="landing-header-text">
+              <strong>Shop right away</strong> with your new card at Nordstrom.com
+              or through the Nordstrom app.
+            </p>
+            <div class="landing-header-icons">
+              <img class="landing-header-icon-accesskey" src="static/assets/unlock-access@2x.png" alt="Key icon">
+            </div>
+            <p class="landing-header-text">
+              Automatically get access to exclusive benefits with <strong>The Nordy Club.</strong>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-5 col-xs-12">
+          <img class="landing-header-img" src="static/assets/cc_coming_out_of_wallet@2x.jpg" alt="The Nordy Club wallet with Nordstrom Visa credit card">
+        </div>
+      </div>
+
+      <div class="row landing-section nm">
+        <div class="col-md-5 col-xs-12">
+          <h3 class="landing-section-title">Nordstrom Visa<sup>&reg;</sup> credit card</h3>
+          <div class="landing-body">
+            Earn points anywhere Visa is accepted and with Nordstrom. No annual fee!
+            <p class="landing-link">
+              <a href="static/terms/combined_visa_retail_schumer_box.pdf" target="_blank">See APR and fee information</a>
+            </p>
+          </div>
+          <div class="btn-apply">
+            <a href="validate?card=Visa" class="btn btn-entry btn-outline-dark btn-block-sm-only">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="col-md-5 col-xs-12">
+          <h3 class="landing-section-title">Nordstrom retail credit card</h3>
+          <div class="landing-body">
+            Shop and earn with your favorite brands at Nordstrom. No annual fee!
+            <p class="landing-link">
+              <a href="static/terms/combined_visa_retail_schumer_box.pdf" target="_blank">See APR and fee information</a>
+            </p>
+          </div>
+          <div class="btn-apply">
+            <a href="validate?card=Retail" class="btn btn-entry btn-outline-dark btn-block-sm-only">Apply Now</a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <p class="landing-header-text-disclosure">
+            When you submit this application, you are applying for a Nordstrom
+            credit card issued by TD Bank USA, N.A. and approval is based on
+            your credit worthiness. If you apply for a Visa credit card, you'll be
+            considered for a Visa Signature<sup>&reg;</sup> or Visa Platinum<sup>&reg;</sup>&dagger;, based on your
+            credit worthiness. If you don't qualify for a Visa credit card, your
+            application will be considered for a Nordstrom retail credit card.
+            <br>
+          </p>
+          <div class="landing-header-info">
+            <img class="landing-header-icon-info" src="static/assets/info@2x.png" alt="Info icon">
+          </div>
+          <p class="landing-header-text-disclosure">
+              Not sure which card is right for you? <a href="#compare-table"><strong>Compare Cards</strong></a>
+          </p>
+        </div>
+      </div>
+
+      <div class="row nm">
+        <div class="col-md-12">
+          <hr class="landing-rule">
+        </div>
+      </div>
+
+      <div>
+        <div class="row nm landing-40-10-30-0">
+          <div class="col-md-12 col-xs-12">
+            <h1 class="landing-h1 text-center" style="margin-bottom: 10px;">Earn more on every purchase as a credit cardmember.</h1>
+          </div>
+          <div class="col-md-12 col-xs-12">
+            <div class="landing-body text-center">For every 2,000 points, you'll get a $20 Nordstrom Note.</div>
+          </div>
+        </div>
+
+        <div class="row nm landing-section text-center">
+          <div class="col-md-1"></div>
+          <div class="col-md-4 col-xs-12">
+            <img class="landing-points-icons" src="static/assets/3-point-large@2x.png" alt="3 points">
+            <h3 class="landing-section-title">Earn 3 points per dollar</h3>
+            <div class="landing-body">
+              on all purchases from Nordstrom, Nordstrom Rack, HauteLook and Trunk Club,
+              online and in stores.
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4 col-xs-12">
+            <img class="landing-points-icons" src="static/assets/1-point-large@2x.png" alt="1 point">
+            <h3 class="landing-section-title">Earn 1 point per dollar</h3>
+            <div class="landing-body">
+              on all other purchases, wherever Visa credit cards are accepted.<br>
+              <span style="font-style: italic;">Nordstrom Visa credit card exclusive</span>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+
+        <div class="row nm landing-section">
+          <div class="col-md-12 col-xs-12">
+            <div class="landing-body landing-middle text-center">
+              Subject to change. For more details,
+              go to <a href="https://www.nordstrom.com/c/rewards-terms-conditions" target="_blank">nordstrom.com/nordyterms</a>.
+            </div>
+          </div>
+        </div>
+
+        <div class="row nm landing-40-10-30-0">
+          <div class="col-md-12 col-xs-12">
+            <h1 class="landing-h1 text-center">Plus, enjoy these cardmember-exclusive Nordy Club perks.</h1>
+          </div>
+        </div>
+
+        <div class="row nm landing-section text-center">
+          <div class="col-md-4 col-xs-12">
+            <div class="landing-perks-icons">
+              <img class="access-alteration-icon" src="static/assets/early-access@2x.png" alt="Key card icon">
+            </div>
+            <h3 class="landing-section-title">Early Access to Anniversary Sale</h3>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="landing-perks-icons">
+              <img class="access-alteration-icon" src="static/assets/alteration-benefit@2x.png" alt="Scissors icon">
+            </div>
+            <h3 class="landing-section-title">Alterations Benefit <span style="font-weight:400; font-style: italic;">(in Notes)</span></h3>
+          </div>
+          <div class="col-md-4 col-xs-12">
+            <div class="landing-perks-icons">
+              <img class="styling-icon" src="static/assets/styling@2x.png" alt="Clothes hanger icon">
+            </div>
+            <h3 class="landing-section-title">Free Trunk Club Styling</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="row nm">
+        <div class="col-md-12">
+          <hr class="landing-rule">
+        </div>
+      </div>
+
+      <div class="row nm landing-40-10-30-0">
+        <div class="col-md-12 col-xs-12">
+          <h1 class="landing-h1 text-center">You'll love our card benefits—see what each card has to offer!</h1>
+        </div>
+      </div>
+
+      <div class="row nm">
+        <table class="table" id="stickyFooterStart">
+          <thead>
+            <tr class="row col-12 nm" id="table-header" data-uk-sticky="{media: '(max-width: 768px)', boundary: '#boundary'}">
+              <th class="col-6"></th>
+              <th class="col-3 text-center">
+                <img id="compare-table" class="card-img" id="visaImg" src="static/assets/CREDIT_0520_Visa-Signature-Card_USA_FLAT@2x.png" alt="Visa credit card">
+                <h4 class="landing-table-title" id="visaTitle">Visa <br class="br-xs">credit <br class="br-xs-title">card</h4>
+                <div class="landing-table-subtitle" id="visaSubtitle">
+                  Earn points <br class="br-sm">
+                  anywhere Visa <br class="br-sm">
+                  is accepted <br class="br-sm">
+                  and with <br class="br-sm">
+                  Nordstrom.
+                </div>
+              </th>
+              <th class="col-3 text-center">
+                <img class="card-img" id="retailImg" src="static/assets/CREDIT_0520_Retail-Card_USA_FLAT@2x.png" alt="Retail credit card">
+                <h4 class="landing-table-title" id="retailTitle">Retail <br class="br-xs">credit <br class="br-xs-title">card</h4>
+                <div class="landing-table-subtitle" id="retailSubtitle">
+                  Shop and earn <br class="br-sm">
+                  with your <br class="br-sm">
+                  favorite <br class="br-sm">
+                  brands at <br class="br-sm">
+                  Nordstrom.
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="row col-12 nm">
+              <td class="col-6">
+                <div class="landing-table-icons">
+                  <img class="bonus-note-icon" src="static/assets/bonus-note@2x.png" alt="Bonus note icon">
+                </div>
+                <div class="landing-table-content">
+                  <h4 class="landing-table-title">
+                    Unlock a $40 Bonus Note*
+                  </h4>
+                  <div class="landing-table-subtitle">
+                    Exclusively for new credit cardmembers.
+                  </div>
+                </div>
+              </td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+            </tr>
+
+            <tr class="row col-12 nm">
+              <td class="col-6">
+                <div class="landing-table-icons">
+                  <img class="annual-fee-icon" src="static/assets/no-fee@2x.png" alt="Dollar sign icon">
+                </div>
+                <div class="landing-table-content">
+                  <h4 class="landing-table-title">
+                    No annual fee
+                  </h4>
+                  <div class="landing-table-subtitle">
+                    and competitive interest rates.
+                    <a href="static/terms/combined_visa_retail_schumer_box.pdf" target="_blank">
+                      See APR and fee information</a>.
+                  </div>
+                </div>
+              </td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+            </tr>
+
+            <tr class="row col-12 nm">
+              <td class="col-6">
+                <div class="landing-table-icons">
+                  <img class="insider-access-icon" src="static/assets/insider-access@2x.png" alt="Key icon">
+                </div>
+                <div class="landing-table-content">
+                  <h4 class="landing-table-title">
+                    Instant Insider Status
+                  </h4>
+                  <div class="landing-table-subtitle">
+                    in The Nordy Club.
+                  </div>
+                </div>
+              </td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+            </tr>
+
+            <tr class="row col-12 nm">
+              <td class="col-6">
+                <div class="landing-table-icons">
+                  <img class="customer-service-icon" src="static/assets/customer-service@2x.png" alt="Around the clock check icon">
+                </div>
+                <div class="landing-table-content">
+                  <h4 class="landing-table-title">
+                    24/7 Customer Service
+                  </h4>
+                  <div class="landing-table-subtitle">
+                    with our representitives in Colorado and California. Call us anytime at <a href="tel:1.888.246.8720">1.888.246.8720</a>.
+                  </div>
+                </div>
+              </td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+            </tr>
+
+            <tr class="row col-12 nm">
+              <td class="col-6">
+                <div class="landing-table-icons">
+                  <img class="points-icon" src="static/assets/3-points@2x.png" alt="3 points icon">
+                </div>
+                <div class="landing-table-content">
+                  <h4 class="landing-table-title">
+                    3 points per dollar
+                  </h4>
+                  <div class="landing-table-subtitle">
+                    spent at Nordstrom, Nordstrom Rack, HauteLook and Trunk Club, online &amp; in stores.
+                  </div>
+                </div>
+              </td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+            </tr>
+
+            <tr class="row col-12 nm">
+              <td class="col-6">
+                <div class="landing-table-icons">
+                  <img class="points-icon" src="static/assets/1-point@2x.png" alt="1 point icon">
+                </div>
+                <div class="landing-table-content">
+                  <h4 class="landing-table-title">
+                    1 point per dollar
+                  </h4>
+                  <div class="landing-table-subtitle">
+                    on all other purchases, wherever Visa credit cards are accepted.
+                  </div>
+                </div>
+              </td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+              <td class="col-3 text-center"></td>
+            </tr>
+
+            <tr class="row col-12 nm" id="widthGuide">
+              <td class="col-6">
+                <div class="landing-table-icons">
+                  <img class="pay-tap-icon" src="static/assets/pay-tap@2x.png" alt="Tap to pay credit card icon">
+                </div>
+                <div class="landing-table-content">
+                  <h4 class="landing-table-title">
+                    Pay with a single tap
+                  </h4>
+                  <div class="landing-table-subtitle">
+                    with Visa contactless payment at many of your favorite merchants.
+                  </div>
+                </div>
+              </td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+              <td class="col-3 text-center"></td>
+            </tr>
+
+            <tr class="row col-12 nm" id="boundary">
+              <td class="col-6">
+                <div class="landing-table-icons">
+                  <img class="no-foreign-icon" src="static/assets/foreign@2x.png" alt="Airplane icon">
+                </div>
+                <div class="landing-table-content">
+                  <h4 class="landing-table-title">
+                    No foreign transaction fees
+                  </h4>
+                  <div class="landing-table-subtitle">
+                    <a href="static/terms/combined_visa_retail_schumer_box.pdf" target="_blank">See APR and fee information</a>.
+                  </div>
+                </div>
+              </td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+              <td class="col-3 text-center"></td>
+            </tr>
+
+            <tr class="row col-12 nm" id="stickyFooter">
+              <td class="col-6 landing-table-right">
+                  <div class="landing-table-subtitle-right">
+                    Subject to credit approval.
+                  </div>
+              </td>
+              <td class="col-3 text-center"><a href="validate?card=Visa" class="btn btn-entry btn-table btn-outline-dark btn-block-sm-only">Apply Now</a></td>
+              <td class="col-3 text-center"><a href="validate?card=Retail" class="btn btn-entry btn-table btn-outline-dark btn-block-sm-only">Apply Now</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+    <div class="row n-footer nm">
+      <div class="container">
+        <div class="col-12 landing-disclosure">
+          <p>Additional questions? Call us anytime at <a href="tel:1.888.246.8720">1.888.246.8720</a>.
+          For additional information about The Nordy Club, see <a href="https://www.nordstrom.com/c/nordy-faq" target="_blank">FAQs</a>.</p>
+          <p><a href="static/terms/Nordstrom_Credit_Card_Agreement.pdf" target="_blank">Nordstrom Credit Card Agreement</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.nordstromcard.com/docserver/nordstromcard/docs/Nordstrom%20Credit%20Card%20Privacy%20Notice.pdf" target="_blank">Nordstrom Credit Card
+            Privacy Notice</a>
+          </p>
+          <p>
+            *Bonus Note is unlocked for use on future purchase when you apply for a Nordstrom credit card,
+            get approved, and shop with us on your new card the same day.
+            Current Nordstrom credit cardmembers are not eligible for this offer.
+          </p>
+          <!--<p>**Current Nordstrom credit cardmembers are not eligible for this offer.</p>-->
+          <p>&dagger;Visa Signature cards and Visa Platinum cards have the same credit card terms and conditions.
+            All of our cardmembers enjoy zero liability for fraud losses and with our Visa cards,
+            cardmembers enjoy worldwide Visa acceptance, enhanced chip security and auto rental collision
+            damage protection. Visa Signature cards have additional benefits, such as preferred access
+            to events and receiving the greatest value at some of the world’s finest hotels. Visit
+            <a href="http://visasignature.com" target="_blank">visasignature.com</a>
+            and <a href="https://www.visasignaturehotels.com/" target="_blank">Visa Signature Hotels</a>
+            for details. For information on the Visa Platinum card benefits, download the
+            <a href="static/terms/WEB.Visa_Plat_Guide.080719_EN_V2.pdf" target="_blank">Nordstrom
+            Visa Platinum Guide to Enhancements (PDF)</a>.
+            For information on the Visa Signature card benefits, download the
+            <a href="static/terms/WEB.Visa_Sig_Guide.080719_EN_V1.pdf" target="_blank">Nordstrom Visa
+            Signature Guide to Enhancements (PDF)</a>.
+            Nordstrom Card Services does not provide, endorse or guarantee merchants’ website security,
+            privacy policies or the products or services promoted through these services.
+          </p>
+          <p>Nordstrom credit cards are issued by TD Bank USA, N.A.</p>
+          <p>Nordstrom Card Services, a wholly owned subsidiary of Nordstrom, Inc., is TD Bank USA, N.A.’s service provider for the Nordstrom Credit Card program.</p>
+          <p>&copy;2020 Nordstrom</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+  var properties = {};
+properties.env = 'prd';
+properties.applicationContext = '/creditcard/';
+properties.resourceLocation = 'static/';
+properties.submitApplicationUri = '/creditcard/api/apply';
+properties.applicationStatusUri = '/creditcard/api/status';
+properties.qrCodeUri = '/creditcard/api/qrcode';
+properties.retrieveApplicationUri = '/creditcard/api/retrieve';
+properties.decisionEmailUri = '/creditcard/api/decisionEmail';
+properties.findByMobileUri = '/creditcard/api/findbymobile';
+properties.findByEmailUri = '/creditcard/api/findbyemail';
+properties.loyaltyEmailValidateUri = '/creditcard/api/emailverify';
+properties.loyaltyLastNameValidateUri = '/creditcard/api/lastnameverify';
+properties.loyaltyMobileValidateUri = '/creditcard/api/mobileverify';
+properties.updateCustomerUri = '/creditcard/api/updateCustomer';
+properties.createCustomerUri = '/creditcard/api/createCustomer';
+properties.applicationApplyUri = '/creditcard/apply';
+properties.applicationErrorUri = '/creditcard/error';
+properties.applicationExpiredUri = '/creditcard/expired';
+properties.apiClientStatusCheckWait = 2000;
+properties.apiClientStatusCheckPollInterval = 1000;
+properties.apiClientStatusCheckTimeout = 60;
+properties.clientBackgroundTimeout = 720000;
+properties.clientCountdownTimeout = 180000;
+properties.clientSessionTimeout = 7200;
+properties.uspsServiceDomain = 'secure.shippingapis.com';
+properties.uspsServiceMemberId = '574IBM004846';
+properties.enableIovation = 'true';
+</script>
+
+
+<script type="text/javascript">
+  console.log('clearing all local storage');
+  window.sessionStorage.clear();
+</script>
+
+<script src="static/js/tether.min.js"></script>
+<script src="static/js/popper.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/script.js"></script>
+<script src="static/js/reorder.js"></script>
+<!--<script src="static/js/testing.js"></script>-->
+<!--<script src="static/js/sticky-footer.js"></script>-->
+<!--<script src="static/js/sticky-1.js"></script>-->
+<script src="static/js/smooth-scroll.js"></script>
+</body>
+
+</html>
