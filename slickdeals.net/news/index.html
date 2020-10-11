@@ -1,14 +1,2302 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
-Content-Type: text/html
-Content-Length: 96
-Date: Sun, 11 Oct 2020 06:48:58 GMT
+HTTP/1.1 200 OK
+X-Powered-By: PHP/7.2.31
+Expires: 0
+Cache-Control: private, post-check=0, pre-check=0, max-age=0, no-cache
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+X-UA-Compatible: IE=edge
+Referrer-Policy: strict-origin-when-cross-origin
+Server: Apache
+X-Akamai-Transformed: 9 36414 0 pmb=mRUM,2
+Vary: Accept-Encoding
+Date: Sun, 11 Oct 2020 02:22:00 GMT
+Transfer-Encoding:  chunked
 Connection: keep-alive
+Connection: Transfer-Encoding
+Set-Cookie: auuid=521c6ab20b6811eb84972211e560f7e8; expires=Mon, 11-Oct-2021 02:22:00 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: bblastactivity=1602382920; expires=Mon, 11-Oct-2021 02:22:00 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net; secure
+Set-Cookie: sd_a=1602382920|521cfcca0b6811eb84972211e560f7e8-521d00580b6811eb84972211e560f7e8|0|; expires=Mon, 11-Oct-2021 02:22:00 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602382824%7D&count=1&new=1&abt_new=1602382824&abt_uuid=0c0fd5e061094107b394ca243b7c2e4c&sticky=132-263-130-34-54&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 11-Oct-2021 02:22:00 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602382824%7D&count=1&new=1&abt_new=1602382824&abt_uuid=0c0fd5e061094107b394ca243b7c2e4c&sticky=132-263-130-34-54&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 11-Oct-2021 02:22:00 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602382824%7D&count=1&new=1&abt_new=1602382824&abt_uuid=0c0fd5e061094107b394ca243b7c2e4c&sticky=132-263-130-34-54&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 11-Oct-2021 02:22:00 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: sd_s=pvnum=48&dfpSplit=18; path=/; domain=.slickdeals.net
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=33
-Server-Timing: origin; dur=15034
+Server-Timing: edge; dur=39
+Server-Timing: origin; dur=120
 Strict-Transport-Security: max-age=86400
 
-<html><body><h1>500 Internal Server Error</h1>
-An internal server error occured.
-</body></html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+        <script>var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+    </script>
+          <script>
+(function(w){'use strict';const requestedUrls=[];const keyData={};function fetch(key,url,callback){if(url[0]!=='/'){throw new Error('URL is malformed')}if(requestedUrls.indexOf(url)>-1){throw new Error('Provided url has already been requested');}if(key in keyData){throw new Error('Specified key already exists');}processUrl(key,url,callback)};function isKeyLoaded(key){if(key in keyData){return keyData[key].loaded}throw new Error('Either no key was provided, or no key-url pair exists');};function getData(key,callback){if(key in keyData){if(keyData[key].loaded===true){if(typeof callback==='function'){return callback(keyData[key].data)}else{return keyData[key].data}}else if(keyData[key].loaded===false&&typeof callback==='function'){keyData[key].callback=callback}else{throw new Error('Data is currently unavailable for key: '+key);}}else{throw new Error('Either no key was provided, or no key-url pair exists');}};function addCallback(key,callback){if(typeof callback==='function'&&key in keyData){if(isKeyLoaded(key)){return callback(getData(key))}keyData[key].callback=callback}else{if(typeof callback!=='function'){throw new Error('Expected a valid callback');}throw new Error('Key does not exist');}};function dumpLoadTable(){console.info(keyData,requestedUrls)};function processUrl(key,url,callback){keyData[key]={'loaded':false,'url':url,};requestedUrls.push(url);if(typeof callback==='function'){keyData[key].callback=callback}if(typeof window.fetch!=='undefined'){window.fetch(url).then(handleFetchResponse.bind(null,key))}else{const xmlRequest=new XMLHttpRequest();xmlRequest.open('GET',url);xmlRequest.addEventListener('load',handleXhrResponse.bind(null,key,xmlRequest));xmlRequest.send()}}function handleFetchResponse(key,response){if(response.ok){response.text().then(handleFetchText.bind(null,key))}else{throw new Error('Url failed to fetch - bad request');}}function handleFetchText(key,text){keyData[key].data=text;keyData[key].loaded=true;if('callback'in keyData[key]){keyData[key].callback(text);delete keyData[key].callback}}function handleXhrResponse(key,xmlRequest){if(xmlRequest.status>=400){throw new Error('Url failed to fetch - bad request');}handleFetchText.call(null,key,xmlRequest.response)}function hasKey(key){return key in keyData}if(!w.hasOwnProperty('immediateFetch')){w.immediateFetch={'fetch':fetch,'isKeyLoaded':isKeyLoaded,'getData':getData,'addCallback':addCallback,'dumpLoadTable':dumpLoadTable,'hasKey':hasKey,}}}(window));
+</script>
+<script>
+    </script>
+      <link rel="preload" href="/ajax/bSubNavPlacement.php?section=newsindex&amp;url=%2Fnews%2F" as="fetch" crossorigin="anonymous">
+<script>
+  window.immediateFetch.fetch('banner', '/ajax/bSubNavPlacement.php?section=newsindex&url=%2Fnews%2F');
+</script>
+          <script>
+Array.from||(Array.from=function(){var r=Object.prototype.toString,n=function(n){return"function"==typeof n||"[object Function]"===r.call(n)},t=function(r){var n=Number(r);return isNaN(n)?0:0!==n&&isFinite(n)?(n>0?1:-1)*Math.floor(Math.abs(n)):n},e=Math.pow(2,53)-1,o=function(r){var n=t(r);return Math.min(Math.max(n,0),e)};return function(r){var t=this,e=Object(r);if(null==r)throw new TypeError("Array.from requires an array-like object - not null or undefined");var a,i=arguments.length>1?arguments[1]:void 0;if(void 0!==i){if(!n(i))throw new TypeError("Array.from: when provided, the second argument must be a function");arguments.length>2&&(a=arguments[2])}for(var u,f=o(e.length),c=n(t)?Object(new t(f)):new Array(f),h=0;h<f;)u=e[h],c[h]=i?void 0===a?i(u,h):i.call(a,u,h):u,h+=1;return c.length=f,c}}());
+[Element.prototype,CharacterData.prototype,DocumentType.prototype].forEach(function(e){e.hasOwnProperty("remove")||Object.defineProperty(e,"remove",{configurable:!0,enumerable:!0,writable:!0,value:function(){this.parentNode.removeChild(this)}})});
+Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{value:function(r,e){function t(r,e){return r===e||"number"==typeof r&&"number"==typeof e&&isNaN(r)&&isNaN(e)}if(null==this)throw new TypeError('"this" is null or not defined');var n=Object(this),i=n.length>>>0;if(0===i)return!1;for(var o=0|e,u=Math.max(o>=0?o:i-Math.abs(o),0);i>u;){if(t(n[u],r))return!0;u++}return!1}});
+"function"!=typeof Object.assign&&Object.defineProperty(Object,"assign",{value:function(e,t){"use strict";if(null==e)throw new TypeError("Cannot convert undefined or null to object");for(var n=Object(e),r=1;r<arguments.length;r++){var o=arguments[r];if(null!=o)for(var c in o)Object.prototype.hasOwnProperty.call(o,c)&&(n[c]=o[c])}return n},writable:!0,configurable:!0});
+!function(){if("function"==typeof window.CustomEvent)return!1;function t(t,e){e=e||{bubbles:!1,cancelable:!1,detail:void 0};var n=document.createEvent("CustomEvent");return n.initCustomEvent(t,e.bubbles,e.cancelable,e.detail),n}t.prototype=window.Event.prototype,window.CustomEvent=t}();
+!function(){var r=Function.call.bind(Function.call),o=String.prototype.match,i=Function.toString;!!Object.defineProperty&&!function(n){try{return n(),!1}catch(n){return!0}}(function(){Object.defineProperty({},"x",{get:function(){}})})&&"foo"!==function(){}.name&&Object.defineProperty(Function.prototype,"name",{configurable:!0,enumerable:!1,get:function(){var n=r(i,this),t=r(o,n,/\s*function\s+([^(\s]*)\s*/),e=t&&t[1];return Object.defineProperty(this,"name",{configurable:!0,enumerable:!1,writable:!1,value:e}),e}})}();
+!function(t,n,e){n[t]=n[t]||e(),"undefined"!=typeof module&&module.exports?module.exports=n[t]:"function"==typeof define&&define.amd&&define(function(){return n[t]})}("Promise","undefined"!=typeof global?global:this,function(){"use strict";var n,c,e,t=Object.prototype.toString,o="undefined"!=typeof setImmediate?function(t){return setImmediate(t)}:setTimeout;try{Object.defineProperty({},"x",{}),n=function(t,n,e,o){return Object.defineProperty(t,n,{value:e,writable:!0,configurable:!1!==o})}}catch(t){n=function(t,n,e){return t[n]=e,t}}function i(t,n){e.add(t,n),c||(c=o(e.drain))}function f(t){var n,e=typeof t;return null==t||"object"!=e&&"function"!=e||(n=t.then),"function"==typeof n&&n}function u(){for(var t=0;t<this.chain.length;t++)r(this,1===this.state?this.chain[t].success:this.chain[t].failure,this.chain[t]);this.chain.length=0}function r(t,n,e){var o,r;try{!1===n?e.reject(t.msg):(o=!0===n?t.msg:n.call(void 0,t.msg))===e.promise?e.reject(TypeError("Promise-chain cycle")):(r=f(o))?r.call(o,e.resolve,e.reject):e.resolve(o)}catch(t){e.reject(t)}}function a(t){var n=this;n.triggered||(n.triggered=!0,n.def&&(n=n.def),n.msg=t,n.state=2,0<n.chain.length&&i(u,n))}function s(t,e,o,r){for(var n=0;n<e.length;n++)!function(n){t.resolve(e[n]).then(function(t){o(n,t)},r)}(n)}function h(t){this.def=t,this.triggered=!1}function l(t){this.promise=t,this.state=0,this.triggered=!1,this.chain=[],this.msg=void 0}function p(t){if("function"!=typeof t)throw TypeError("Not a function");if(0!==this.__NPO__)throw TypeError("Not a promise");this.__NPO__=1;var o=new l(this);this.then=function(t,n){var e={success:"function"!=typeof t||t,failure:"function"==typeof n&&n};return e.promise=new this.constructor(function(t,n){if("function"!=typeof t||"function"!=typeof n)throw TypeError("Not a function");e.resolve=t,e.reject=n}),o.chain.push(e),0!==o.state&&i(u,o),e.promise},this.catch=function(t){return this.then(void 0,t)};try{t.call(void 0,function(t){(function t(e){var o,r=this;if(!r.triggered){r.triggered=!0,r.def&&(r=r.def);try{(o=f(e))?i(function(){var n=new h(r);try{o.call(e,function(){t.apply(n,arguments)},function(){a.apply(n,arguments)})}catch(t){a.call(n,t)}}):(r.msg=e,r.state=1,0<r.chain.length&&i(u,r))}catch(t){a.call(new h(r),t)}}}).call(o,t)},function(t){a.call(o,t)})}catch(t){a.call(o,t)}}e=function(){var e,o,r;function i(t,n){this.fn=t,this.self=n,this.next=void 0}return{add:function(t,n){r=new i(t,n),o?o.next=r:e=r,o=r,r=void 0},drain:function(){var t=e;for(e=o=c=void 0;t;)t.fn.call(t.self),t=t.next}}}();var y=n({},"constructor",p,!1);return n(p.prototype=y,"__NPO__",0,!1),n(p,"resolve",function(e){return e&&"object"==typeof e&&1===e.__NPO__?e:new this(function(t,n){if("function"!=typeof t||"function"!=typeof n)throw TypeError("Not a function");t(e)})}),n(p,"reject",function(e){return new this(function(t,n){if("function"!=typeof t||"function"!=typeof n)throw TypeError("Not a function");n(e)})}),n(p,"all",function(n){var c=this;return"[object Array]"!=t.call(n)?c.reject(TypeError("Not an array")):0===n.length?c.resolve([]):new c(function(e,t){if("function"!=typeof e||"function"!=typeof t)throw TypeError("Not a function");var o=n.length,r=Array(o),i=0;s(c,n,function(t,n){r[t]=n,++i===o&&e(r)},t)})}),n(p,"race",function(n){var o=this;return"[object Array]"!=t.call(n)?o.reject(TypeError("Not an array")):new o(function(e,t){if("function"!=typeof e||"function"!=typeof t)throw TypeError("Not a function");s(o,n,function(t,n){e(n)},t)})}),p});
+window.Element&&!Element.prototype.closest&&(Element.prototype.closest=function(e){var t,o=(this.document||this.ownerDocument).querySelectorAll(e),n=this;do{for(t=o.length;--t>=0&&o.item(t)!==n;);}while(t<0&&(n=n.parentElement));return n});
+if(!String.prototype.padStart){String.prototype.padStart=function padStart(targetLength,padString){targetLength=targetLength>>0;padString=String(typeof padString!=='undefined'?padString:' ');if(this.length>=targetLength){return String(this)}else{targetLength=targetLength-this.length;if(targetLength>padString.length){padString+=padString.repeat(targetLength/padString.length)}return padString.slice(0,targetLength)+String(this)}}}
+</script>
+  <script>
+window.addLoadEvent=function(n){if("function"===typeof window.addEventListener)window.addEventListener("load",n);else if("function"===typeof window.onload){var o=window.onload;window.onload=function(d){o(d),n(d)}}else window.onload=n};window.addLoadEvent(function(n){window.addLoadEvent=function(o){o(n)}});
+</script>
+  <script>
+window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.EventQueue={priorityLabels:["thirdPartyPixels","nonCriticalUi","revenueGenerating","analytics","criticalPath"],queueIntervalId:0,queuedFunctions:{},initLoadQueue:function(){for(var e=0;e<window.sdLoadQueue.length;e++)SD.EventQueue._queueFunction(window.sdLoadQueue[e][0],window.sdLoadQueue[e][1]);window.sdLoadQueue.push=function(e){SD.EventQueue._queueFunction(e[0],e[1]),SD.EventQueue._requestQueueParse()},SD.EventQueue._requestQueueParse()},_queueFunction:function(e,u){var n=this.priorityLabels.indexOf(u);if(-1===n)throw new Error('SD.EventQueue: Invalid priority "'+u+'"');this.queuedFunctions[n]?this.queuedFunctions[n].push(e):this.queuedFunctions[n]=[e]},_requestQueueParse:function(){this.queueIntervalId||this._initQueueParse()},_parseQueue:function(){var e=Object.keys(this.queuedFunctions);if(e.length){var u=e.sort(function(e,u){return e-u}).pop(),n=this.queuedFunctions[u].shift();0==this.queuedFunctions[u].length&&delete this.queuedFunctions[u],"function"==typeof n&&n()}else window.clearInterval(this.queueIntervalId),this.queueIntervalId=0},_initQueueParse:function(){this.queueIntervalId=window.setInterval(this._parseQueue.bind(this),4)}},window.addLoadEvent(window.SD.EventQueue.initLoadQueue);
+</script>
+<script>
+  window.SD=window.SD||{},window.SD.ABTest={extendedData:{},_rSeed:0,execute:function(e,t,n){var i=SD.ABTest._getGroup(e);null!=i&&void 0!==n[i]&&(n[i](),window.SD.ABTest.initDevTools&&window.SD.ABTest.initDevTools(e))},isTest:function(e){return SD.ABTest.data.hasOwnProperty(SD.ABTest._getDataGroupName(e))},_getGroup:function(e){var t,n={link:new RegExp("linked:([0-9]+)","gi"),position:new RegExp("position:([0-9]+)","gi"),split:new RegExp("split:([0-9,]+)","gi")},i={};if(SD.ABTest.isTest(e)){if(-1<e.indexOf("linked:")){for(t in n)if(n.hasOwnProperty(t)){if(i[t]=n[t].exec(e),n[t].lastIndex=0,null===i[t]||0===i[t].length)return null;i[t]=i[t][1]}for(t in window.SD.ABTest.data)if(window.SD.ABTest.data.hasOwnProperty(t)&&-1<t.indexOf(i.link)&&t!=="Test: "+e){if(i.secondPosition=n.position.exec(t),n.position.lastIndex=0,null!==i.secondPosition&&0===i.secondPosition.length)return null;i.secondPosition=i.secondPosition[1]}return SD.ABTest._getExtendedGroup(!1,!1,i)}return SD.ABTest.data[SD.ABTest._getDataGroupName(e)]}return null},_getDataGroupName:function(e){return"Test: "+e.trim()},extendedExecute:function(e,t,n){SD.ABTest.extendedData.hasOwnProperty(e)&&n[SD.ABTest._getExtendedGroup(!1,!1,SD.ABTest.extendedData[e])]()},setupExtendedTest:function(e,t,n,i,o){null!==e&&null!==o&&0<o.length&&0<n&&n<32&&n!=i&&0<i&&i<32&&(SD.ABTest.extendedData[e]={link:t,position:n,secondPosition:i,split:o})},_getExtendedGroup:function(e,t,n,i){var o,s,d,r,u,l,a,p=new RegExp("abt_uuid=([0-9a-f]+)","g"),D=0,S=[];if(n&&(e=n.position,t=n.secondPosition),e--,t--,o=(o=(o=p.exec(document.cookie))[1]).slice(0,12)+o.slice(13,32),i&&console.log({A:e,B:t,UUID:o,Hex:o[e]+o[t]}),s=parseInt(o[e]+o[t],16),!n)return s;for(d=(d=(d=n.split.split(",")).map(function(e){return e=parseInt(e,10),D+=e,e})).map(function(e){return e/D*255<<0}),(r=new Array(255)).fill(0),l=u=0,a=d.length;u<a;u++)r.fill(u,l,l+d[u]),l+=d[u];for(SD.ABTest._rSeed=n.link;S.length<256;)u=SD.ABTest._seededRandom(256,0)<<0,-1===S.indexOf(u)&&S.push(u);return r[S[s]]},_seededRandom:function(e,t){return e=e||1,t=t||0,SD.ABTest._rSeed=(9301*SD.ABTest._rSeed+49297)%233280,t+SD.ABTest._rSeed/233280*(e-t)}};
+  window.SD.ABTest.data = {"logged_in":false,"deviceType":"desktop","scriptIdent":"newsindex","Test: Sticky right rail - 30578":"1","Test: Mobile web fp v3 - 29127":"1","Test: Deal Details v7 - 27993":"0","Test: Add In Line Top Coupons Module on FP - 27589":"0","Test: Post a Deal":"1","Test: Category Redesign":"1","Test: Display % off on the Frontpage":"0","Test: SEM LP Redesign Test":"1","Test: Mobile 3 AB Test":"2","Test: Store Page Test":"1","Test: Redesign of FP and Deal Details":"1","Test: Rolling 24 Hour Time Frame for Deals in Top Section on FP":"1","Test: Search Results Layout and Store Logos Test":"1","view":"redesign","storeTest":null,"mobile":false,"forumid":null};
+  </script>
+  <script>
+    var dataLayer = {"visitor":{"ipAddress":"52.149.32.86","isMachineIp":true,"isForeignIp":true,"sectionLayout":"News&Articles_Redesign","pbSectionLayout":"News&Articles_Redesign","asEnabled":false,"confiant":1,"noads":0,"immediateSource":"","layout":"Redesign","uncookiedUser":false,"userId":0,"username":"Unregistered","isLoggedIn":"No","status":"Anonymous","verified":"No","daysRegistered":null,"emailHashes":"","abTestInfo":[{"testKey":"65810-gale-desktop-item-to-item.yaml","variantName":"Gale (thread expiry)","testName":"Gale (Desktop) Item-to-Item Pers V2"}],"gaOptimizeInfo":"","appReferrer":null},"reporting":{"clientID":"521d00580b6811eb84972211e560f7e8","sessionID":"521cfcca0b6811eb84972211e560f7e8"},"traffic":{"trueReferrer":null,"subSection1":"Page1","subSection2":null,"subSection3":null,"subSection4":null,"corporateDomain":"slickdeals.net","deviceSegment":"desktop","clientHeaders":[]},"page":{"rml":false,"pageName":"News&Articles:Page1","section":"News&Articles","type":"Article List","analyticsTitle":null,"template":null,"publishedDate":null,"pageGroup":"Articles","layout":"Redesign","nps":null},"btt":{"AbTestingSegment":null},"microSite":"Slickdeals","frontpage":{"layout":null},"build":"20201009-160315-PDT-14b12a24cc2","abTestEventData":null,"gdpr":{"isEu":false,"showPrompt":false},"cdp":{"blueshift_id":"13779bc333ac34fac08a37c930c61e97"}};
+
+    // Copy the tests from dataLayer.visitor.ABTestInfo to SD.ABTest.data
+    if (typeof dataLayer.visitor !== 'undefined'
+        && typeof dataLayer.visitor.abTestInfo !== 'undefined'
+        && typeof SD !== 'undefined'
+        && typeof SD.ABTest !== 'undefined'
+        && typeof SD.ABTest.data !== 'undefined'
+    )
+    {
+        for (prop in dataLayer.visitor.abTestInfo)
+        {
+            var abTestDetails = dataLayer.visitor.abTestInfo[prop];
+
+            if (abTestDetails.hasOwnProperty('testName') && abTestDetails.hasOwnProperty('variantName'))
+            {
+                var abTestDataKey = 'SD_Test: ' + dataLayer.visitor.abTestInfo[prop].testName;
+
+                SD.ABTest.data[abTestDataKey] = dataLayer.visitor.abTestInfo[prop].variantName;
+            }
+        }
+    }
+
+    dataLayer.processadb = function ()
+    {
+        var f = document.getElementById('check2');
+        var fs;
+        if (window.getComputedStyle)
+        {
+            fs = window.getComputedStyle(f);
+        }
+
+        var a = function (v,d,c)
+        {
+            c = c || 0;
+            var e = document.getElementById(d);
+            if (fs && fs.display != 'none')
+            {
+                var es = window.getComputedStyle(e);
+                dataLayer.visitor[v] = es.display == 'none' ? 'Yes' : 'No';
+            }
+            else if (window.getComputedStyle && c < 100) {
+                dataLayer.visitor[v] = 'Unknown';
+                window.setTimeout(function () { fs = window.getComputedStyle(f); a(v, d, c + 1); }, 10);
+            }
+            else
+            {
+                dataLayer.visitor[v] = e == null || f.offsetParent == null ? 'Unknown' : e.offsetParent == null ? 'Yes' : 'No';
+                if (f.offsetParent == null && c < 100)
+                {
+                    window.setTimeout(function () { a(v, d, c + 1); }, 10);
+                }
+            }
+        };
+
+        a('ab', 'Ad-Container');
+    };
+
+    // Pass dataLayer to Google Tag Manager
+    var gtmDl = [dataLayer];
+  </script>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','gtmDl','GTM-5XP5PSM');</script>
+  <script type="text/javascript">
+    window.gtagSettings = JSON.parse('\u007B\u0022account\u0022\u003A\u0022AW\u002D935793791\u0022,\u0022conversionLabel\u0022\u003A\u0022SECLCOnCsQUQ_6icvgM\u0022,\u0022conversionLabelUnique\u0022\u003A\u0022ElLfCPut72gQ_6icvgM\u0022\u007D');
+
+    (function (w,d,s,g,l,i) {
+        w[l]=w[l]||[];w[g] = function(){w[l].push(arguments)};w[g]('js',new Date());w[g]('config',i);
+        var f=d.getElementsByTagName(s)[0],j = d.createElement(s);j.async=true;
+        j.src='https://www.googletagmanager.com/gtag/js?id=' + i + '&l=' + l;
+        window.sdLoadQueue.push([function(){f.parentNode.insertBefore(j, f);},'revenueGenerating'])
+    })(window,document,'script','gtag','gglData', window.gtagSettings.account);
+</script>
+<script>
+    window._qevents = window._qevents || [];
+    window.sdLoadQueue.push([function() {
+        var elem = document.createElement('script');
+
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem, scpt);
+
+        _qevents.push( { qacct:"p-cfnoCr0uPjoco"} );
+    }, 'revenueGenerating']);
+</script>
+<script>
+    window.rlcData = '\u005B\u005D';
+</script>
+
+
+      <script>
+    var googletag = googletag || {};
+    googletag.ebdaBuckets = {"10":2,"%10":2};
+</script>
+  
+    <title>Deal News, Shopping Guides &amp; Discount Tips | Slickdeals</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:site_name" content="Slickdeals">
+          <meta property="fb:app_id" content="17289117961">
+        <link rel="search" type="application/opensearchdescription+xml" title="Slickdeals Forums" href="/forums/misc/sdfopensearch.xml">
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//static.slickdealscdn.com">
+    <link rel="dns-prefetch" href="//css.slickdealscdn.com">
+    <link rel="dns-prefetch" href="//js.slickdealscdn.com">
+    <link rel="dns-prefetch" href="//hipchat.slickdealscdn.com">
+    <link rel="dns-prefetch" href="//odds.optimizely.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//slickdeals-d.openx.net">
+    <link rel="dns-prefetch" href="//c.amazon-adsystem.com">
+    <link rel="dns-prefetch" href="//www.googletagservices.com">
+    <link rel="mask-icon" sizes="any" href="/images/slickdeals_icon.svg" color="#0873ba">
+
+                  <link rel="canonical" href="https://slickdeals.net/news/">
+          
+    
+    
+    
+                  <meta name="description" content="Get money-saving tips, breaking deal news, and helpful buying guides from Slickdeals' team of industry experts.">
+        <meta property="og:description" content="Get money-saving tips, breaking deal news, and helpful buying guides from Slickdeals' team of industry experts.">
+          
+    
+          <meta property="og:url"   content="https://slickdeals.net/news/">
+    
+          <meta property="og:title" content="Deal News, Shopping Guides &amp; Discount Tips | Slickdeals">
+    
+    <meta property="og:determiner" content="auto">
+
+                            <meta property="og:image" content="https://static.slickdealscdn.com/images/sd_share_logo.png?8402">
+                  
+                            <meta property="og:type" content="article">
+                  
+    
+    
+    
+                  <link media="screen" href="https://css.slickdealscdn.com/min/8402/g=css&amp;style=14&amp;n=global-critical-desktop%2Cglobal-desktop%2Clegacy-global-desktop%2Cjqueryui%2Ccomponents" rel="stylesheet" crossorigin="anonymous" >
+                    
+  <link media="screen" href="https://css.slickdealscdn.com/min/8402/g=css&amp;style=14&amp;n=articleHub%2Carticles%2Farticles-desktop" rel="stylesheet" crossorigin="anonymous" >
+
+        <!--[if lt IE 9]>
+                <script src="https://js.slickdealscdn.com/min/8402/g=js&amp;n=html5shiv.min,css3-mediaqueries" crossorigin="anonymous"></script>
+  
+        <link media="screen" href="https://css.slickdealscdn.com/min/8402/g=css&amp;style=14&amp;n=modern_ie" rel="stylesheet" crossorigin="anonymous" >
+    <![endif]-->
+        <script>
+      window.CKEDITOR_BASEPATH = '/scripts/ckeditor/';
+
+      var vb_minify = 8402;
+      var vb_min_debug = "";
+      var vb_styleid = "14";
+
+              var show_facebook_popup = true;
+        var facebook_appid = 17289117961;
+        var update_fbid = true;
+        var FORCE_FACEBOOK_INCLUDE = false;
+        var sdfacebook = sdfacebook || {};
+        sdfacebook.fb_options = 0;
+        sdfacebook.SDLoggedIn = false;
+      
+      var SESSIONURL = "";
+      var SECURITYTOKEN = "guest";
+      var IMGDIR_MISC = "/images/misc";
+      var vb_disable_ajax = parseInt("0", 10);
+      window['\u200BviewSid'] = "8b2654120b6811ebb6355281c35caba30000";
+    </script>
+
+      <script>
+      sdRequire = window.sdRequire || [];
+  </script>
+          <script src="https://js.slickdealscdn.com/scripts/bundles/article-hub.js?8402" async></script>
+        <script>
+      sdRequire.push([[
+          'sd/core/settings',
+          'sd/abtests/abTestSettings',
+      ],
+      function (
+          Settings,
+          AbTestSettings
+      )
+      {
+          Settings.minify = '8402';
+          Settings.securityToken = 'guest';
+          Settings.email = '',
+          Settings.pageDisplayedTimestamp = Math.floor(Date.now() / 1000);
+          Settings.pageGeneratedTimestamp = '1602382920';
+          Settings.userActivityDealAlertsTrackingEnabled = true;
+          Settings.stickyGlobalHeader = true;
+          Settings.app = {
+            'environment': 'prod',
+            'debug': false,
+          };
+
+          
+          
+          AbTestSettings.addTestData('35995', {'showRecentSearchTest': false});
+      }]);
+  </script>
+    
+    <script>
+    /** Global hydration queue */
+    window.bpHydration = window.bpHydration || [];
+
+    /**
+     * Adds hydration data for JavaScript modules in Blueprint. Any module/data combinations
+     * passed into this function are used when modules instantiate themselves through the
+     * {@link componentLoader} function.
+     * 
+     * @param {String} moduleName The name of the element/component/pattern the data applies to
+     * @param {Object} [moduleData={}] Any data to be passed into the JavaScript module up instantiation
+     **/
+    function bpHydrate(moduleName, moduleData) {
+        moduleData = moduleData || {};
+
+        if (typeof moduleName === 'string') {
+            const obj = {};
+            obj[moduleName] = moduleData;
+
+            window.bpHydration.push(obj);
+        }
+    }
+</script>
+    
+              
+            <script type="text/javascript">
+          var sdgoogle_settings = {
+            clientId: '848950106722-o17212am4mt231tdgatgrh2p1b8shjq1.apps.googleusercontent.com',
+            googleRegistrationVersion: "",
+          };
+        </script>
+      
+                                                
+    
+              
+    
+    
+              
+              <script>
+  if (typeof window.I11C !== 'undefined' && window.I11C.hasOwnProperty('RegisterAbdCallback'))
+  {
+    window.I11C.RegisterAbdCallback(function(results)
+    {
+      return true;
+    });
+  }
+</script>
+
+    <script>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+
+    function gaPubadsReadyCallback(unit)
+    {
+      googletag.cmd.push(function ()
+      {
+        googletag.display(unit);
+      });
+      optimeraRefresh(unit);
+    }
+
+    optimeraRefresh = function () {null;}
+    optimeraRefreshAll = function () {null;}
+    optimeraDelayedLoad = function () {null;}
+  </script>
+
+      <script src="https://slickdeals-net.videoplayerhub.com/videoloader.js" async></script>
+
+    
+
+          <script src="//acdn.adnxs.com/prebid/c/7084/pb.js" async="async"></script>
+
+
+    <script>
+  function optimeraRefresh(divId)
+  {
+    // This function is defined in GTM
+    if ('function' === typeof oPageUnload)
+    {
+      oPageUnload(divId);
+    }
+  }
+
+  function optimeraRefreshAll()
+  {
+    // This function is defined in GTM
+    if ('function' === typeof oPageUnload)
+    {
+      oPageUnload('ALL');
+    }
+  }
+
+  function optimeraDelayedLoad()
+  {
+    // This function is defined in GTM
+    if ('function' === typeof oPageUnload)
+    {
+      oPageUnload(1);
+    }
+  }
+</script>
+
+
+        
+
+    
+
+        
+
+        <script src="//securepubads.g.doubleclick.net/tag/js/gpt.js" async></script>
+
+        
+
+        
+
+        
+
+        <script>
+    (function ()
+{
+    var slotRef = {};
+
+    if ('adSlot2' in window)
+    {
+        slotRef = window.adSlot2;
+    }
+
+    window.adSlot2 = slotRef;
+    window.failSlots = {};
+
+    function adStyleCallback(mutationsList)
+    {
+        for (let mutation in mutationsList)
+        {
+            if (mutation.type === 'attributes' && mutation.attributeName === 'style' && mutation.target.style.cssText !== '')
+            {
+                mutation.target.style.cssText = '';
+            }
+        }
+    }
+
+    let preDefinedSlots = [];
+
+    function doSlotProcessingAfterLoad()
+    {
+        preDefinedSlots.forEach(function (data) {
+            if (document.getElementById(data.id))
+            {
+                const config = {
+                    'attributes': true,
+                    'childList': false,
+                    'subtree': false
+                };
+                const observer = new MutationObserver(adStyleCallback);
+
+                observer.observe(document.getElementById(data.id), config);
+            }
+
+            const element = document.querySelector(['#' + data.id, '.' + data.id].join(','));
+            if (element === null)
+            {
+                googletag.destroySlots([data.slot]);
+
+                if (window.heap && window.heap.track)
+                {
+                    console.log("Bad Ad Defined: " + data.id + ' - ' + data.path);
+                    window.heap.track("Bad Ad Defined", {
+                        'divId': data.id,
+                        'adUnit': data.path
+                    });
+                }
+            }
+        });
+    }
+
+    function verifyOrNotify(data)
+    {
+        if (typeof data !== 'object')
+        {
+            console.log("Expected data, got the below", data);
+            return;
+        }
+
+        var unitBoundary,
+            boundaryFn,
+            boundaryWidths = [],
+            sizeMap = false;
+
+      if ('sizeMapping' in data && data.sizeMapping.length > 0)
+        {
+            sizeMap = googletag.sizeMapping();
+
+            for (let key = data.sizeMapping.length - 1; key > -1; key--)
+            {
+                sizeMap = sizeMap.addSize(data.sizeMapping[key]['viewport'], data.sizeMapping[key]['unitSize']);
+
+                if (data.sizeMapping[key]['viewport'][0] > 0)
+                {
+                    boundaryWidths.push(data.sizeMapping[key]['viewport'][0]);
+                }
+            }
+
+            sizeMap = sizeMap.build();
+            console.info('%c%s -> %s', 'color: white; background-color: black;', data.id, JSON.stringify(sizeMap));
+        }
+        let tag = googletag.defineSlot(data.path, data.sizes, data.id);
+
+        if (tag !== null)
+        {
+            if (sizeMap)
+            {
+                tag.defineSizeMapping(sizeMap);
+
+                if (boundaryWidths.length > 0)
+                {
+                    boundaryFn = function ()
+                    {
+                        console.info('%cBoundary Refresh for slot: %o', 'color: orange; background-color: black;', this.adSlot);
+                        googletag.pubads().clear([this.adSlot]);
+                        googletag.pubads().refresh([this.adSlot]);
+                        optimeraRefresh(this.adSlot.getSlotElementId());
+                    };
+
+                    for (let key = boundaryWidths.length - 1; key > -1; key--)
+                    {
+                        if (typeof window.sdRequire !== 'undefined')
+                        {
+                            sdRequire.push([['boundary'], function (viewportWidth, callback, adSlot)
+                            {
+                                var adBoundary = new Boundary();
+                                adBoundary.addBoundary(viewportWidth, callback.bind({'adSlot': adSlot}));
+                            }.bind(
+                                null,
+                                boundaryWidths[key],
+                                boundaryFn,
+                                tag
+                            ), ['controllerLoad']]);
+                        }
+                        else if (typeof window.Boundary !== 'undefined')
+                        {
+                            unitBoundary = new Boundary();
+                            unitBoundary.addBoundary(boundaryWidths[key], boundaryFn.bind({'adSlot': tag}));
+                        }
+                    }
+                }
+            }
+
+            tag.addService(googletag.pubads());
+
+            if ('targeting' in data)
+            {
+                len = data.targeting.length - 1;
+
+                for (; len > -1; len--)
+                {
+                    tag.setTargeting(data.targeting[len][0], data.targeting[len][1]);
+                }
+            }
+
+            if (data.lazyLoad && !window.usingAdLazyLoad)
+            {
+                googletag.cmd.push(function()
+                {
+                    googletag.pubads().enableLazyLoad({
+                        fetchMarginPercent: 0,
+                        renderMarginPercent: 0,
+                        mobileScaling: 2.0
+                    });
+                });
+
+                window.usingAdLazyLoad = true;
+            }
+
+            slotRef[data.id] = tag;
+        }
+        else
+        {
+            failSlots[data.id] = {'msg': 'defineSlot call failed for [' + data.id + ']', 'data': data};
+        }
+
+        let slotData = {
+            id: data.id,
+            path: data.path,
+            slot: tag
+        };
+        preDefinedSlots.push(slotData);
+    }
+
+    // Expose to naked window:
+    window.verifyOrNotify = verifyOrNotify;
+
+    function displayAds()
+    {
+        defineSlots();
+        fetchBids();
+        window.sdLoadQueue.push([fetchAndRenderAds, 'revenueGenerating']);
+    }
+
+    function defineSlots()
+    {
+        googletag.cmd.push(function googleCmdDefineSlots() {
+            var generalTargeting = {"targeting":[["article_label","N\/A"],["requestSource","GPT"],["ptype","articles"],["login","no"],["view","redesign"],["env","prod"],["UserGroup","C"],["pvnum","48"],["exp","18"],["scat","none"]]}, pRef = googletag.pubads(), key;
+            if ('targeting' in generalTargeting)
+            {
+                for (key in generalTargeting.targeting)
+                {
+                    if (typeof generalTargeting.targeting[key] === 'object')
+                    {
+                        pRef.setTargeting.apply(pRef, generalTargeting.targeting[key]);
+                    }
+                }
+            }
+
+                    var adSlot = {};
+
+if ('adSlot2' in window)
+{
+    adSlot = window.adSlot2;
+}
+
+window.adSlot2 = adSlot;
+
+if (typeof SERP_300X250_GROUP == 'undefined' || SERP_300X250_GROUP == 'control1' || SERP_300X250_GROUP == 'control2')
+  {
+    verifyOrNotify({"path":"\/1006041\/articles300ATF","sizes":[[300,250]],"id":"top-300x250-A","targeting":[["bucket",2],["pos","atf"]],"lazyLoad":false});
+    }
+verifyOrNotify({"path":"\/1006041\/articles300BTF1","sizes":[[300,250]],"id":"top-300x250-B","targeting":[["bucket",2],["pos","atf"]],"lazyLoad":false});
+
+
+    
+      
+      
+  
+          
+
+
+
+
+
+          
+            if (!window.usingAdLazyLoad)
+            {
+                googletag.pubads().disableInitialLoad();
+                googletag.pubads().enableSingleRequest();
+            }
+        });
+    }
+
+    var doRefresh = true;
+    function fetchBids()
+    {
+        googletag.cmd.push(function () {
+          
+          
+          // Initially set as false in dfp_ad_integration.js.twig
+doRefresh = false;
+
+!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function()
+{q("f",arguments)},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)} ("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+
+apstag.init({
+    pubID: '3097',
+    adServer: 'googletag',
+    bidTimeout: 2e3
+});
+
+var amznAdSlots = [];
+
+if (typeof slotRef !== 'undefined')
+{
+    for (var id in slotRef)
+    {
+        var sizes = [];
+        var unProcessSizes = slotRef[id].getSizes() || [];
+        var len = unProcessSizes.length;
+
+        for (var j = 0; j < len; j++)
+        {
+            if (unProcessSizes[j].getWidth)
+            {
+                sizes.push([
+                    unProcessSizes[j].getWidth(), unProcessSizes[j].getHeight()
+                ]);
+            }
+        }
+
+        amznAdSlots.push({
+            'slotID': id,
+            'slotName': slotRef[id].getAdUnitPath(),
+            'sizes': sizes
+        });
+    }
+}
+
+if (amznAdSlots.length)
+{
+    apstag.fetchBids(
+    {
+        slots: amznAdSlots
+    },
+    function(bids)
+    {
+        var refreshAds = function()
+        {
+            googletag.cmd.push(function ()
+            {
+                apstag.setDisplayBids();
+
+                                    function tryPrebidRefresh(counter)
+                    {
+                        var emitDone = false;
+
+                        if (counter > 0)
+                        {
+                            if (typeof pbjs !== 'undefined' && 'refreshAds' in pbjs)
+                            {
+                                pbjs.refreshAds(Object.keys(window.adSlot2).map(function (key)
+                                {
+                                    return window.adSlot2[key].getAdUnitPath();
+                                }));
+                                emitDone = true;
+                            }
+                            else
+                            {
+                                setTimeout(tryPrebidRefresh.bind(null, counter - 1), 50);
+                            }
+                        }
+                        else
+                        {
+                            googletag.pubads().refresh();
+                            optimeraRefreshAll();
+                            emitDone = true;
+                        }
+
+                        if (emitDone && typeof window.dispatchEvent === 'function')
+                        {
+                            window.dispatchEvent(new CustomEvent('onAdsReady'))
+                        }
+                    }
+
+                    setTimeout(tryPrebidRefresh.bind(null, 100), 50);            });
+        };
+                    refreshAds();
+            });
+}
+
+
+          
+            googletag.enableServices();
+        });
+
+    }
+
+    function fetchAndRenderAds()
+    {
+        googletag.cmd.push(function()
+        {
+            doSlotProcessingAfterLoad();
+
+
+
+                      if (doRefresh)
+            {
+                // Need to wait for pubads service to be ready before calling refresh - or stall.
+                (function (factory)
+                {
+                    'use strict';
+
+                    if (typeof window.sdRequire !== 'undefined')
+                    {
+                        sdRequire.push([['sd/core/proxyAwait'], factory]);
+                    }
+                    else if (window.ProxyAwait)
+                    {
+                        factory(window.ProxyAwait);
+                    }
+                } (function (ProxyAwait)
+                {
+                    new ProxyAwait('googletag').chain(
+                        new ProxyAwait('pubadsReady', null, {
+                            'successCallback': function ()
+                            {
+                                var slotObjectArray = [], i;
+
+                                for (i in slotRef)
+                                {
+                                    slotObjectArray.push(slotRef[i]);
+                                }
+
+                                if (slotObjectArray.length > 0)
+                                {
+                                    googletag.pubads().refresh(slotObjectArray);
+                                    slotObjectArray.forEach(function (slot)
+                                    {
+                                        optimeraRefresh(slot.getSlotElementId());
+                                    });
+                                }
+
+                                if (typeof window.dispatchEvent === 'function')
+                                {
+                                    window.dispatchEvent(new Event('onAdsReady'))
+                                }
+                            }
+                        })
+                    ).process();
+                }));
+            }
+        });
+    }
+
+      displayAds();
+  })();
+
+    </script>
+
+        
+      
+          <script type="text/javascript">
+        var nobt = true;
+      </script>
+    
+              
+    
+
+    <link rel="alternate" type="application/rss+xml" title="Slickdeals" href="/newsearch.php?mode=frontpage&amp;searcharea=deals&amp;searchin=first&amp;rss=1">
+                      <script>
+  window.sd_outclick_handler = window.sd_outclick_handler || [];
+</script>
+
+    <script async="true" type="text/javascript" src="//slickdeals.btttag.com/btt.js"></script>
+                    	<script type="text/javascript">
+		window.heap = window.heap || [], heap.load = function(e, t)
+		{
+			window.heap.appid = e, window.heap.config = t = t || {};
+
+	        window.sdLoadQueue.push([function ()
+	        {
+				var r = t.forceSSL || "https:" === document.location.protocol,
+					a = document.createElement("script");
+				a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js";
+				var n = document.getElementsByTagName("script")[0];
+				n.parentNode.insertBefore(a, n);
+			}, 'analytics']);
+
+			for (var o = function(e) {
+					return function() {
+						heap.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+					}
+				}, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+		};
+
+		heap.load("4023737901", {
+			secureCookie: true,
+			forceSSL: true
+		});
+
+		function findClosestElement(target, selector) {
+			if (!target)
+			{
+				return undefined;
+			}
+
+			while (target && !target.matches(selector) && !target.matches('body'))
+			{
+				target = target.parentElement;
+			}
+
+			return (target && target.matches(selector)) ? target : undefined;
+		}
+
+		// Once all window dependencies are loaded, fire module impressions and listen for module clicks
+		window.onload = function (event) {
+			const modules = Array.prototype.slice.call(document.querySelectorAll('[data-module-name]'));
+			const moduleNames = modules.map(function (element) {
+				return element.getAttribute('data-module-name');
+			});
+
+			for (let i = 0; i < moduleNames.length; ++i) {
+				window.heap.track('Module Impression', {'moduleName': moduleNames[i]});
+			}
+
+			document.addEventListener('click', function(e) {
+				let clickElm = e.target;
+				const parentElm = findClosestElement(clickElm, '[data-module-name]');
+
+				if (!clickElm.hasAttribute('data-module-item'))
+				{
+					while (clickElm && clickElm.tagName !== 'BODY' && typeof clickElm.hasAttribute === 'function' && !clickElm.hasAttribute('data-module-item'))
+					{
+						clickElm = clickElm.parentNode;
+					}
+				}
+
+				if (parentElm && clickElm && clickElm.tagName !== 'BODY')
+				{
+					let children = Array.prototype.filter.call(parentElm.querySelectorAll('[data-module-item]'), function (elm) {
+						return elm.offsetParent !== null;
+					});
+
+					window.heap.track('Module Click', {'moduleName': parentElm.dataset.moduleName, 'moduleItemPosition': children.indexOf(clickElm)+1})
+				}
+			}, false);
+		}
+	</script>
+                      <script src="/forums/userstyles.php?uniq=eF7lWdtu4zYQ_RVCaF-KdKO7LL-lSYMtkGyDOOhLszVomXaIyKIhUg6CwP_eGcoSRStIsnbSbDcvAoY38XJ45szwwaHKGTo3Si2H14fXhzLn2e2U0Vx-Kpi6PizYnbw-dA6cks1YycpNW_lo46YZtBtXFZ9CYyhSfMGkooulM_Ri1w8Gfuq7B86Ml2w6boctqjzHv9C8LnvRv6ZM8nlxQhV1hg_OxBnCuAX85sBZ6e8cyp2_PPIr-cLuYCp0got1M3c2jZgbe24aem4yCdIwo34YTJLMZ2HmrHF2xZyVFyUvoAeMKm_58pLV_7tkmSin0MAZqrJiBw5fLHMOi6kkK3HV9VqaUtzCnCkFmyKricxKvlRcFGPTElqMmJRQ6AxnsPUwJBQdw5j4d1NypFTJJxX2botLPRmrpp7UDCZx-cKdnLIVz9hY3S-ZnhZsnbyhcD64rXRyBecnneHfD84gxBJ9sl7gRXpLxwqqdTeshvNGs6ALBgUjBXC6JyWf3yhSUp7DUQRulAyg3YqV9ZIdF6ylkLxemJOCWW9TDSCa5-IOthd2_1YJgJHjdUoVncDubkZpmi7EhOc4AT00nbPxgspbsP_59MtPOLyelz6wTaMMoKdwwY4XeUmUJmmKiwHgls3grMBqHJFmiq9weJxIfQIaDrpyRfOKjd1NbW15luVbVmBZsMF61LpfZFmxZSXW_waWlVoW3gIzM7gmHSuzrGaB9d-bDayt2aYll2OxhK0ai6q-G_NSVMtxUS0mejc9vD8JzLwBihfF20CBahso5_rAyB2bkNmSrALAiZ96fvIUToLdcNIFT4sTLPxmnLhh7Kehj1v7ijjx29NHnOAi6_1HnJhTRJwYC3FiLMSJsb5vnMDNaHHi442zCCXBc-kSygk4CHLCFFCJJKsEYQI3VW9SSydodehE09QOfPIoTnbiEzcI_SCMNV734RNzpn0-Maj50XDiIp9EwG8GJ5qDu44Hqm2cHE2n5I-CnPGCkSuxJMdAUaKQ5FxMK-AZUZDTCw2eaIDuxoAHqaoLHkTBDuDRM9z4rf2ckQZPkLwpeAyw-s7IJhnjmvokY-r6zsjU9Z2Rqes7I1PXd0ZY95wz0uAJDclEgx52oNbGzoWQilBgGZo_BQ1EynsiIxykoFTCEG_-m9HKj4sMLVPA4zS04gc9ZGh_1PU-xyAR56K8J00oYOED_UyHOvwddeyr-Z0QwO6GXqT93z5-x1zCt9KxNnUYC3WsTR3GQh1rU4extI5vlVOj1I2OfQl11AABQmz8Tp86oHZLnnC5zOk9-ZmI2Qy9jLph5LQUhUJx-aRK2Y1NXg8sIfiYOIk1aPcBy8tFipG2fTFr-xkjblDMmn7P-RnTD8Fi-j3nZ0w_DHqw34v8jAeza6NjHMPSKFC7FRz_fk7OLlouIRhmWxDRQYmJi-tA49sD490DHuzZCYxDPx0ESZhoz7cPRj4woXigm1qM9OJiqH00Lg7I0W99fGxr1f8cH_jDLj4CL4QMX7w3Psz9Q4djB8R2oGMs5BBjYUBsLNSqNocYCznEWOhwjIVa1eYQYyGHGAsdjrHQ4dgcgtZzHOKjw4FotVUkOmK0OWQ7bzJSomTkApxLHx5bekTzz7vSB2RLIFb39xasH5k-OvmSvmD1tkOZRqeCHMGAlxZTHdY0GZSnwpt3Rws4Gz-Kk_9BFva7Va8mugl6qbXt2OZS5DkksYkfks-iKskVPNuAdIU8PpmJUsNGEl7obMqIQQIc1K1Oo1ggwrvdkSz68N5RsQRp6kZRHO6dPfnAlGMioKgHou34Z8Romd2ApJVVriQ5o_fwSKBpp3ZUZ2IuZN9TbaHmNRO2L0rsb-tciJpj3_X2joU-LGrWXyGnyuFZU0HGpH46hAexB2fzLKhJA18bQSe1qRQQPxpqmzafhUKu4Zkkp_BUbDqcsBkFdDlr_ElWSSUWI7Z5n9w8I_2pnw6_wAhAWJsyHV2tv67X_wIy-S3r&amp;pv=8b2c58a80b6811ebb6355281c35caba3&amp;au=521c6ab20b6811eb84972211e560f7e8" async="async" defer="defer"></script>
+<noscript><link rel="stylesheet" href="/forums/userstyles.php?uniq=eF7lWdtu4zYQ_RVCaF-KdKO7LL-lSYMtkGyDOOhLszVomXaIyKIhUg6CwP_eGcoSRStIsnbSbDcvAoY38XJ45szwwaHKGTo3Si2H14fXhzLn2e2U0Vx-Kpi6PizYnbw-dA6cks1YycpNW_lo46YZtBtXFZ9CYyhSfMGkooulM_Ri1w8Gfuq7B86Ml2w6boctqjzHv9C8LnvRv6ZM8nlxQhV1hg_OxBnCuAX85sBZ6e8cyp2_PPIr-cLuYCp0got1M3c2jZgbe24aem4yCdIwo34YTJLMZ2HmrHF2xZyVFyUvoAeMKm_58pLV_7tkmSin0MAZqrJiBw5fLHMOi6kkK3HV9VqaUtzCnCkFmyKricxKvlRcFGPTElqMmJRQ6AxnsPUwJBQdw5j4d1NypFTJJxX2botLPRmrpp7UDCZx-cKdnLIVz9hY3S-ZnhZsnbyhcD64rXRyBecnneHfD84gxBJ9sl7gRXpLxwqqdTeshvNGs6ALBgUjBXC6JyWf3yhSUp7DUQRulAyg3YqV9ZIdF6ylkLxemJOCWW9TDSCa5-IOthd2_1YJgJHjdUoVncDubkZpmi7EhOc4AT00nbPxgspbsP_59MtPOLyelz6wTaMMoKdwwY4XeUmUJmmKiwHgls3grMBqHJFmiq9weJxIfQIaDrpyRfOKjd1NbW15luVbVmBZsMF61LpfZFmxZSXW_waWlVoW3gIzM7gmHSuzrGaB9d-bDayt2aYll2OxhK0ai6q-G_NSVMtxUS0mejc9vD8JzLwBihfF20CBahso5_rAyB2bkNmSrALAiZ96fvIUToLdcNIFT4sTLPxmnLhh7Kehj1v7ijjx29NHnOAi6_1HnJhTRJwYC3FiLMSJsb5vnMDNaHHi442zCCXBc-kSygk4CHLCFFCJJKsEYQI3VW9SSydodehE09QOfPIoTnbiEzcI_SCMNV734RNzpn0-Maj50XDiIp9EwG8GJ5qDu44Hqm2cHE2n5I-CnPGCkSuxJMdAUaKQ5FxMK-AZUZDTCw2eaIDuxoAHqaoLHkTBDuDRM9z4rf2ckQZPkLwpeAyw-s7IJhnjmvokY-r6zsjU9Z2Rqes7I1PXd0ZY95wz0uAJDclEgx52oNbGzoWQilBgGZo_BQ1EynsiIxykoFTCEG_-m9HKj4sMLVPA4zS04gc9ZGh_1PU-xyAR56K8J00oYOED_UyHOvwddeyr-Z0QwO6GXqT93z5-x1zCt9KxNnUYC3WsTR3GQh1rU4extI5vlVOj1I2OfQl11AABQmz8Tp86oHZLnnC5zOk9-ZmI2Qy9jLph5LQUhUJx-aRK2Y1NXg8sIfiYOIk1aPcBy8tFipG2fTFr-xkjblDMmn7P-RnTD8Fi-j3nZ0w_DHqw34v8jAeza6NjHMPSKFC7FRz_fk7OLlouIRhmWxDRQYmJi-tA49sD490DHuzZCYxDPx0ESZhoz7cPRj4woXigm1qM9OJiqH00Lg7I0W99fGxr1f8cH_jDLj4CL4QMX7w3Psz9Q4djB8R2oGMs5BBjYUBsLNSqNocYCznEWOhwjIVa1eYQYyGHGAsdjrHQ4dgcgtZzHOKjw4FotVUkOmK0OWQ7bzJSomTkApxLHx5bekTzz7vSB2RLIFb39xasH5k-OvmSvmD1tkOZRqeCHMGAlxZTHdY0GZSnwpt3Rws4Gz-Kk_9BFva7Va8mugl6qbXt2OZS5DkksYkfks-iKskVPNuAdIU8PpmJUsNGEl7obMqIQQIc1K1Oo1ggwrvdkSz68N5RsQRp6kZRHO6dPfnAlGMioKgHou34Z8Romd2ApJVVriQ5o_fwSKBpp3ZUZ2IuZN9TbaHmNRO2L0rsb-tciJpj3_X2joU-LGrWXyGnyuFZU0HGpH46hAexB2fzLKhJA18bQSe1qRQQPxpqmzafhUKu4Zkkp_BUbDqcsBkFdDlr_ElWSSUWI7Z5n9w8I_2pnw6_wAhAWJsyHV2tv67X_wIy-S3r&amp;pv=8b2c58a80b6811ebb6355281c35caba3&amp;au=521c6ab20b6811eb84972211e560f7e8"></noscript>
+      
+  <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
+  <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="MLLW9-NN3V3-ZFFMF-A4D42-H99AC",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"MLLW9-NN3V3-ZFFMF-A4D42-H99AC";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="gsksavvydrougx4cnrea-f-3b811be5a-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"949601","ak.ai":parseInt("608755",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"4880b749","ak.r":35328,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"52.149.32.0","ak.cport":1024,"ak.gh":"184.28.93.63","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1602382920","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==4/ZgUSQKya5vR+CShvnrrhkaahjABvHUIqi077z2NZD3s/kVXYcp2as+8HGnjls5NDYhVgb2ZvAM0Ghma/oR9ul3+W7tM59w/UTqvs+6gA+3dG1cVG27Z6yCbP/QXAXDJzQvi33NcGEPQ1wMsbIM6BbiVCuZ3FxGA8MziDOXLBw1BsYOW/xSKvkT2SOF9Xdd7E9r6dMYxSnov7GM1Y9LjA0qAtbOpXBUDwBnr3xzn5Of+5fm03HtJsWyxiFL+L5B/deRpb47tik+QB5RUcqU5i58mTYSU1BnvFt2ohBUVEV39f89TutKnalBXfOc8O/COwTjUlOF689RLYtKlWgc+FFXkjvxNc7nQcIzGcgjROmcbBHPTD1XEkWDckRnGBDngMXfN8DRTV/FInXoj/eTcRe/aNka0INHkrshpDE6dSE=","ak.pv":"45","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+  <body data-modern="true" id="">
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XP5PSM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+          
+    
+          <div class="headerPlaceholder  stickyHeader"></div>
+    
+          <div class="categoryBarPlaceholder"></div>
+        <div id="categoryBar" class="categoryBar stickyHeader
+      ">
+    <div class="inner">
+              <a href="/coupons/" style="color:#D62828">Top Coupons</a>
+                                <a href="/deals/grocery/">Grocery</a>
+      
+      
+      <a href="/video-game-deals/">Video Games</a>
+      <a href="/tv-deals/">TV</a>
+      <a href="/computer-deals/">Computers</a>
+      <a href="/credit-card-offers/">Credit Cards</a>
+      <a href="/deals/home/">Home</a>
+      <a href="/deals/apparel/">Clothing & Accessories</a>
+      <a href="/deals/tech/">Tech</a>
+      <a href="/deals/photo/">Cameras</a>
+      <a href="/deals/auto/">Auto</a>
+      <a href="/deals/beauty/">Health &amp; Beauty</a>
+      <a href="/deals/children/">Babies & Kids</a>
+      <a href="/deals/entertainment/">Entertainment</a>
+      <a href="/travel-deals/">Travel</a>
+    </div>
+  </div>
+
+
+                                                
+    
+    <div id="pageContent">
+      
+                            
+        <div id="topInfo" class="">
+      </div>
+
+  
+  <div id="mainColumn" class="">
+            <div class="box slider featuredArticleCarousel">
+    <a href="/article/buying-guide/google-nest-audio-review/?src=hubcarousel" class="currentImage">
+      <div id="featuredImgContainer">
+        <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="/blog/wp-content/uploads/2020/10/google-nest-audio-review-photos.jpg" data-lazy-img="critical">
+      </div>
+      <span class="featuredBadge">Featured</span>
+      <span class="sliderTitle" title="Review: Get Ready to be Wowed by Nest Audio&#039;s Sound Quality">Review: Get Ready to be Wowed by Nest Audio&#039;s Sound Quality</span>
+      <span class="imageOverlay"></span>
+    </a>
+    <ul class="articleList">
+              <li class="active" data-imageurl="/blog/wp-content/uploads/2020/10/google-nest-audio-review-photos.jpg" data-title="Review: Get Ready to be Wowed by Nest Audio&#039;s Sound Quality" data-url="/article/buying-guide/google-nest-audio-review/?src=hubcarousel">
+          <a href="/article/buying-guide/google-nest-audio-review/?src=hubcarousel" title="Review: Get Ready to be Wowed by Nest Audio&#039;s Sound Quality">Review: Get Ready to be Wowed by Nest Audio&#039;s Sound Quality</a>
+        </li>
+              <li data-imageurl="/blog/wp-content/uploads/2020/09/dell-27-gaming-monitor-review-photos.jpg" data-title="Review: Dell&#039;s 27 Gaming Monitor Combines Speed and Color Accuracy in a Mature Package" data-url="/article/buying-guide/dell-27-gaming-monitor-review-s2721dgf/?src=hubcarousel">
+          <a href="/article/buying-guide/dell-27-gaming-monitor-review-s2721dgf/?src=hubcarousel" title="Review: Dell&#039;s 27 Gaming Monitor Combines Speed and Color Accuracy in a Mature Package">Review: Dell&#039;s 27 Gaming Monitor Combines Speed and Color Accuracy in a Mature Package</a>
+        </li>
+              <li data-imageurl="/blog/wp-content/uploads/2019/12/19-benefits-amazon-prime-holidays-hero-3.jpg" data-title="Here&#039;s How to Get $10 For Free During Amazon Prime Day 2020" data-url="/article/list/amazon-prime-day-10-gift-card-free-deal/?src=hubcarousel">
+          <a href="/article/list/amazon-prime-day-10-gift-card-free-deal/?src=hubcarousel" title="Here&#039;s How to Get $10 For Free During Amazon Prime Day 2020">Here&#039;s How to Get $10 For Free During Amazon Prime Day 2020</a>
+        </li>
+              <li data-imageurl="/blog/wp-content/uploads/2020/07/20-hero-Sams-Club-logo-at-night.jpg" data-title="Only 2 Days Left To Get the &#039;Free&#039; Sam&#039;s Club Annual Membership" data-url="/article/list/best-sams-club-membership-deals-and-discounts/?src=hubcarousel">
+          <a href="/article/list/best-sams-club-membership-deals-and-discounts/?src=hubcarousel" title="Only 2 Days Left To Get the &#039;Free&#039; Sam&#039;s Club Annual Membership">Only 2 Days Left To Get the &#039;Free&#039; Sam&#039;s Club Annual Membership</a>
+        </li>
+              <li data-imageurl="/blog/wp-content/uploads/2019/09/19-costco-groupon-hero-1-1.jpg" data-title="Costco Coupon Book October 2020 and Ad Scans Are Here" data-url="/article/buying-guide/costco-coupon-book/?src=hubcarousel">
+          <a href="/article/buying-guide/costco-coupon-book/?src=hubcarousel" title="Costco Coupon Book October 2020 and Ad Scans Are Here">Costco Coupon Book October 2020 and Ad Scans Are Here</a>
+        </li>
+          </ul>
+  </div>
+
+  <div class="recentArticles">
+    <div class="tabs">
+      <a href="/news/" class="active">All Articles</a>
+              <a href="/news/games/" >Video Games</a>
+              <a href="/news/entertainment/" >Entertainment</a>
+              <a href="/news/consumer-news/" >Consumer News</a>
+              <a href="/news/reviews/" >Reviews</a>
+              <a href="/news/tech/" >Tech &amp; Electronics</a>
+          </div>
+    <h1 class="header">
+              Recent Deal News &amp; Articles
+          </h1>
+    <div class="content">
+
+      <ul class="articles">
+                  <li>
+            <a href="/article/deal-guide/amazon-prime-day-2020-deal-list/?src=hublist">
+              <div class="articleImgContainer">
+                <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/3/5/0/2/7/9/3/160x160/9447854.thumb" data-lazy-img="critical">
+              </div>
+              <div>
+                <strong>Here's Just About Every Deal We Can Expect From Prime Day 2020</strong>
+                <em>by   on Oct 9, 2020</em>
+                <p class="articleExcerpt">The anticipated Amazon Prime Day (which runs Tuesday and Wednesday, October 13 &amp; 14 this year) promises 48 hours of incredible discounts and sales on almost anything you can imagine included Amazon's own brands and services. Luckily, Amazon took mercy on all us deal hunters and savvy shoppers and just dropped a full-on detailed preview of Prime Day deals members can expect as part of their Prime benefits. Ahead is the list taken directly from Amazon so you can plan ahead and get exactly what</p>
+              </div>
+            </a>
+          </li>
+                  <li>
+            <a href="/article/news/shop-halloween-for-amazon-prime-credit/?src=hublist">
+              <div class="articleImgContainer">
+                <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/5/9/9/9/2/5/6/160x160/9448025.thumb" data-lazy-img="critical">
+              </div>
+              <div>
+                <strong>Get $10 For Doing Your Halloween Prep This Weekend on Amazon Small Businesses</strong>
+                <em>by Aaron Rasmus on Oct 9, 2020</em>
+                <p class="articleExcerpt">Amazon Prime Day is almost here, and now you can actually earn free money to spend on the epic event by shopping for Halloween items you may already be planning to purchase.
+Buy $10 in products from select small business through Oct. 12, and get a $10 credit to spend on Amazon for Prime Day, which runs from 12 a.m. (PT) October 13 through 11:59 p.m. (PT) October 14.
+The best part about the deal is you get to choose exactly which type of small business you want to support. Amazon has conveniently</p>
+              </div>
+            </a>
+          </li>
+                  <li>
+            <a href="/article/buying-guide/google-nest-audio-review/?src=hublist">
+              <div class="articleImgContainer">
+                <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/6/0/1/0/8/7/2/160x160/9447983.thumb" data-lazy-img="critical">
+              </div>
+              <div>
+                <strong>Review: Get Ready to be Wowed by Nest Audio's Sound Quality</strong>
+                <em>by Andrew Chen on Oct 9, 2020</em>
+                <p class="articleExcerpt">The arrival of Google&rsquo;s Nest Audio smart speaker couldn&rsquo;t have been more opportune, as music has taken center stage in our lives while we work remotely and remain safer at home during this pandemic.
+With the retirement of the original Google Home, Nest Audio fills the product gap between Nest Mini and Google Home Max, but it&rsquo;s more than simply a follow-up to Google&rsquo;s first-ever smart speaker. Delivering the best possible listening experience is Nest Audio&rsquo;s main obj</p>
+              </div>
+            </a>
+          </li>
+                  <li>
+            <a href="/article/list/amazon-prime-day-10-gift-card-free-deal/?src=hublist">
+              <div class="articleImgContainer">
+                <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/1/5/8/5/9/2/0/3/160x160/9447956.thumb" data-lazy-img="nonCritical">
+              </div>
+              <div>
+                <strong>Here's How to Get $10 For Free During Amazon Prime Day 2020</strong>
+                <em>by Liam Fitzpatrick on Oct 9, 2020</em>
+                <p class="articleExcerpt">Every Amazon Prime Day, Slickdealers come out in force to hunt down the best deals. And every year, so far, the most popular deals have been Amazon gift cards. For Prime Day 2020, you can pick up an Amazon gift card of $40 or more and receive $10 in promotional Amazon store credit. You can also get the same deal if you reload an extant gift card balance with $40 or more. Essentially, it's free money. The deal starts on October 13 at 12:00 a.m (PT).
+Check Amazon Gift Cards
+Of course, there are a </p>
+              </div>
+            </a>
+          </li>
+                  <li>
+            <a href="/article/news/razercon-2020-announcement-giveaway-date/?src=hublist">
+              <div class="articleImgContainer">
+                <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/4/4/5/7/6/7/0/160x160/9447623.thumb" data-lazy-img="nonCritical">
+              </div>
+              <div>
+                <strong>Get the Scoop on the Latest Tech at RazerCon 2020</strong>
+                <em>by Jon Bitner on Oct 9, 2020</em>
+                <p class="articleExcerpt">The first-ever RazerCon kicks off this weekend on October 10th, and it promises to be a day filled with product launches, game reveals, tech demos and even musical performances. Viewers can even enter a mysterious raffle with a chance to win over $10,000 worth of goodies &mdash; including the elusive Nvidia GeForce RTX 3080.
+The event begins at 9:00 a.m. PDT on Saturday with a keynote from Min-Liang Tan, CEO of Razer. After that there's a wild assortment of product showcases, game reveals and ce</p>
+              </div>
+            </a>
+          </li>
+                  <li>
+            <a href="/article/deal-guide/best-early-prime-day-deals/?src=hublist">
+              <div class="articleImgContainer">
+                <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/5/9/9/9/2/5/6/160x160/9446804.thumb" data-lazy-img="nonCritical">
+              </div>
+              <div>
+                <strong>Don't Wait: Pre-Amazon Prime Day Deals Now Can Also Earn You Cash</strong>
+                <em>by Aaron Rasmus on Oct 9, 2020</em>
+                <p class="articleExcerpt">The upcoming Amazon Prime Day promises 48 hours of incredible sales, but insiders know the real secret to maximizing the deals is to begin preparing&nbsp;right now. Get a head start on the shopping competition and even pre-Prime Day bargains with this convenient Slickdeals guide showing ways Amazon Prime members can get the most out of the epic event.
+Shop Small Businesses and Whole Foods Now to Get Free Money to Spend on Amazon
+
+  
+  
+  
+  
+    
+  
+
+
+Spend $10 at select US-based small businesse</p>
+              </div>
+            </a>
+          </li>
+                  <li>
+            <a href="/article/news/home-gym-yoga-mats-gear-deals-sales/?src=hublist">
+              <div class="articleImgContainer">
+                <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/3/5/0/2/7/9/3/160x160/8954102.thumb" data-lazy-img="nonCritical">
+              </div>
+              <div>
+                <strong>Buy a Mat and Fitbit, and Watch the Stress Fall Away</strong>
+                <em>by   on Oct 9, 2020</em>
+                <p class="articleExcerpt">With recent events and a never-ending cycle of news, having a small escape if even just a few minutes for simple stretching or a short cardio session may be just what you need to reset and refocus. And it's also great for your mental health. In fact, it's even proven to be an effective way to cope with anxiety and depression, both of which are rising during the pandemic.
+And with World Mental Health Day on October 10, there's no better time to get started. Unfortunately, gym closures have made i</p>
+              </div>
+            </a>
+          </li>
+                  <li>
+            <a href="/article/list/amazon-prime-video-best-deals-discounts/?src=hublist">
+              <div class="articleImgContainer">
+                <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/1/6/3/5/4/8/9/5/160x160/9448019.thumb" data-lazy-img="nonCritical">
+              </div>
+              <div>
+                <strong>Upgrade Your Amazon Prime Video Service with $1 Add On Channels During Prime Day</strong>
+                <em>by Eric Vega on Oct 9, 2020</em>
+                <p class="articleExcerpt">The Fall shopping season is underway, and Amazon is celebrating Prime Day early by offering tons of deals on movies, TV shows, and entire streaming channels. You can currently pick up quite a few movies for under $4.99 each. There is also a wide selection of films for rent under $2.99.
+Check Prices at Amazon
+If you're an existing Prime member, however, this next streaming deal will be one that's hard to ignore. Right now, Amazon Prime is offering a dozen add-on channels for just $1 per month for</p>
+              </div>
+            </a>
+          </li>
+                  <li>
+            <a href="/article/list/kindle-unlimited-deals-discounts-amazon-prime-day/?src=hublist">
+              <div class="articleImgContainer">
+                <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/1/9/2/6/7/5/2/2/160x160/9447356.thumb" data-lazy-img="nonCritical">
+              </div>
+              <div>
+                <strong>Early Prime Day Deals: Get Kindle Unlimited Free for Two Months or 50% off for Half a Year</strong>
+                <em>by Quan Tsang on Oct 9, 2020</em>
+                <p class="articleExcerpt">A lot of things have gone down in 2020, but the one upside to the year is that you may have found yourself with more time to read than ever before. And while a collection of paperbacks looks nice on your bookshelf, avid readers may find the hobby rather costly long term. If you're looking to expand your library without hurting your wallet, it's time to consider these Kindle Unlimited deals.
+As you may be aware, Amazon Prime Day&nbsp;is set to take place on&nbsp;October 13th and 14th. But even be</p>
+              </div>
+            </a>
+          </li>
+                  <li>
+            <a href="/article/list/commercial-free-streaming-worth-it-deal/?src=hublist">
+              <div class="articleImgContainer">
+                <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/4/9/0/1/8/1/1/160x160/9446972.thumb" data-lazy-img="nonCritical">
+              </div>
+              <div>
+                <strong>Is Paying for Commercial-Free Streaming Really Worth It?</strong>
+                <em>by Dan Seitz on Oct 9, 2020</em>
+                <p class="articleExcerpt">If you've switched from cable to streaming services for your favorite shows and movies, getting rid of commercials may have been one of the many perks you considered before signing up. And most streaming services offer a fairly simple deal: if you're willing to pay to make ads go away, you can.
+But is what you get for the cost actually worth it? Should you just put up with the ads? We took a closer look at Hulu, CBS All Access and NBC's new streaming platform Peacock to determine whether the upg</p>
+              </div>
+            </a>
+          </li>
+              </ul>
+
+              <div id="commentsBox">
+          <div id="commentsBottomRow">
+            <div class="pageCounter">
+              Page <span id="currentPageNum">1</span> of
+              <span id="totalPageNum">205</span>
+            </div>
+            <div class="pagination-wrapper">
+              <div class="paginationPages">
+                <a href="/news/" onclick="return false;" class="icon icon-arrow-first disabled"></a>
+                <a href="/news/?page=0" onclick="return false;" class="icon icon-arrow-left disabled"></a>
+                                                      <span class="pageNum  active">1</span>
+                                                                        <a href="/news/?page=2" class="pageNum ">2</a>
+                                                                        <a href="/news/?page=3" class="pageNum ">3</a>
+                                                                        <a href="/news/?page=4" class="pageNum ">4</a>
+                                                                        <a href="/news/?page=5" class="pageNum ">5</a>
+                                                  <a href="/news/?page=2"  class="icon icon-arrow-right2 "></a>
+                <a href="/news/?page=205"  class="icon icon-arrow-right "></a>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+  </div>
+      </div>
+  <div id="sideColumn">
+            <div id="stickyRightRailWrapper" class="stickyRightRailWrapper">
+                        
+                      <div class="sideGridBox abc" id="crt-adblock-a">
+                <div id="top-300x250-A" class="ablock" data-adlocation="right-column-0">
+                                    <script>
+                    window.sdLoadQueue.push([function (a)
+                    {
+                      (function (factory)
+                      {
+                        if (typeof window.sdRequire !== 'undefined')
+                        {
+                          sdRequire.push([['sd/core/proxyAwait'], factory]);
+                        }
+                        else if (window.ProxyAwait)
+                        {
+                          factory(ProxyAwait);
+                        }
+                      }(function (ProxyAwait)
+                      {
+                        
+                        if (typeof criteo_pubtag === 'undefined' || (criteo_pubtag.hasOwnProperty('context') && criteo_pubtag.context.isAdBlocked === false))
+                        {
+                          gaPubadsReadyCallback('top-300x250-A');
+                        }
+                      }));
+                        }, 'revenueGenerating']);
+                  </script>
+                                      <span class="bt-uid-tg" data-uid="5c4a012c34-226" style="display: none !important"></span>
+                                  </div>
+              </div>
+                      
+            <div class="sideGridBox frontpageDeals"data-module-name="Frontpage Deals">
+  <h3><a href="/">Frontpage Deals</a>  <span class="titleRight"><a href="/newsearch.php?mode=frontpage&amp;searcharea=deals&amp;searchin=first&amp;rss=1" class="rss"><span class="icon icon-feed rss"></span></a></span>
+</h3>
+            <div class="subBoxContent" data-module-item>
+    <div class="dealInfo">
+      <a class="title" href="/f/14405090-sea-gull-lighting-6-traverse-white-integrated-led-canless-downlight-14-watt-1000-lumens-3000k-3-79-fs-over-49?src=fpw">
+        <img class="fpDealImg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/3/5/3/1/8/3/4/150x150/9446993.thumb" data-lazy-img="critical">
+      </a>
+      <a class="title altText" href="/f/14405090-sea-gull-lighting-6-traverse-white-integrated-led-canless-downlight-14-watt-1000-lumens-3000k-3-79-fs-over-49?src=fpw">
+        Sea Gull Lighting 6" Traverse White Integrated LED Downlight: Round $3.55, Square $3.80      </a>
+      <span class="icon icon-thumbs-up"></span>
+      <span class="likes">25</span>
+      &nbsp;•&nbsp;
+      <span class="icon icon-bubble2"></span>
+      <span class="comments">24</span>
+    </div>
+  </div>
+            <div class="subBoxContent" data-module-item>
+    <div class="dealInfo">
+      <a class="title" href="/f/14407286-6-pairs-gold-toe-men-s-harrington-crew-socks-various-styles-9-90?src=fpw">
+        <img class="fpDealImg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/3/7/4/7/9/3/150x150/9449423.thumb" data-lazy-img="critical">
+      </a>
+      <a class="title altText" href="/f/14407286-6-pairs-gold-toe-men-s-harrington-crew-socks-various-styles-9-90?src=fpw">
+        6-Pairs Gold Toe Men's Harrington Crew Socks (Various Styles) $9.90      </a>
+      <span class="icon icon-thumbs-up"></span>
+      <span class="likes">30</span>
+      &nbsp;•&nbsp;
+      <span class="icon icon-bubble2"></span>
+      <span class="comments">22</span>
+    </div>
+  </div>
+            <div class="subBoxContent" data-module-item>
+    <div class="dealInfo">
+      <a class="title" href="/f/14404118-acer-aspire-tc-895-ua92-desktop-i5-10400-12gb-ddr4-512gb-nvme-ssd-dvd-rw-wifi-6-win10h-514-95-f-s?src=fpw">
+        <img class="fpDealImg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/5/5/8/2/7/0/5/150x150/9445940.thumb" data-lazy-img="critical">
+      </a>
+      <a class="title altText" href="/f/14404118-acer-aspire-tc-895-ua92-desktop-i5-10400-12gb-ddr4-512gb-nvme-ssd-dvd-rw-wifi-6-win10h-514-95-f-s?src=fpw">
+        Acer Aspire TC-895-UA92 Desktop: i5-10400, 12GB DDR4, 512GB SSD $515      </a>
+      <span class="icon icon-thumbs-up"></span>
+      <span class="likes">22</span>
+      &nbsp;•&nbsp;
+      <span class="icon icon-bubble2"></span>
+      <span class="comments">42</span>
+    </div>
+  </div>
+            <div class="subBoxContent" data-module-item>
+    <div class="dealInfo">
+      <a class="title" href="/f/14405207-pair-triangle-bora-br02-bookshelf-speakers-in-4-colors-329-each-free-s-h?src=fpw">
+        <img class="fpDealImg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/9/5/3/2/3/150x150/9447059.thumb" data-lazy-img="critical">
+      </a>
+      <a class="title altText" href="/f/14405207-pair-triangle-bora-br02-bookshelf-speakers-in-4-colors-329-each-free-s-h?src=fpw">
+        Triangle Bora BR02 HiFi Bookshelf Speakers (pair) $329      </a>
+      <span class="icon icon-thumbs-up"></span>
+      <span class="likes">19</span>
+      &nbsp;•&nbsp;
+      <span class="icon icon-bubble2"></span>
+      <span class="comments">30</span>
+    </div>
+  </div>
+            <div class="subBoxContent" data-module-item>
+    <div class="dealInfo">
+      <a class="title" href="/f/14406359-2-motorola-talkabout-t280-rechargeable-two-way-radio-bundle-white-40-free-shipping?src=fpw">
+        <img class="fpDealImg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/1/9/5/6/4/1/4/150x150/9448427.thumb" data-lazy-img="critical">
+      </a>
+      <a class="title altText" href="/f/14406359-2-motorola-talkabout-t280-rechargeable-two-way-radio-bundle-white-40-free-shipping?src=fpw">
+        2-Count Motorola Talkabout T280 Rechargeable 2-Way Radios (White) $40      </a>
+      <span class="icon icon-thumbs-up"></span>
+      <span class="likes">26</span>
+      &nbsp;•&nbsp;
+      <span class="icon icon-bubble2"></span>
+      <span class="comments">30</span>
+    </div>
+  </div>
+    </div>
+
+  <div class="sideGridBox meetTheAuthors">
+    <h3>Meet The Authors</h3>
+    <div class="subBoxContent">
+              <div class="author">
+          <a href="https://slickdeals.net/authors//">
+                          <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/sd-mark.png" data-lazy-img="nonCritical">
+                      </a>
+          <a href="https://slickdeals.net/authors//" class="authorName"> </a>
+        </div>
+              <div class="author">
+          <a href="https://slickdeals.net/authors/aaron-rasmus/">
+                          <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/sd-mark.png" data-lazy-img="nonCritical">
+                      </a>
+          <a href="https://slickdeals.net/authors/aaron-rasmus/" class="authorName">Aaron Rasmus</a>
+        </div>
+              <div class="author">
+          <a href="https://slickdeals.net/authors/andrew-chen/">
+                          <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="/blog/wp-content/uploads/2015/10/Andrew-Chen-Profile-Picture-1.png" data-lazy-img="nonCritical">
+                      </a>
+          <a href="https://slickdeals.net/authors/andrew-chen/" class="authorName">Andrew Chen</a>
+        </div>
+              <div class="author">
+          <a href="https://slickdeals.net/authors/liam-fitzpatrick/">
+                          <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="/blog/wp-content/uploads/2018/06/Photo-on-6-25-18-at-11.33-AM.jpg" data-lazy-img="nonCritical">
+                      </a>
+          <a href="https://slickdeals.net/authors/liam-fitzpatrick/" class="authorName">Liam Fitzpatrick</a>
+        </div>
+              <div class="author">
+          <a href="https://slickdeals.net/authors/jon-bitner/">
+                          <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/sd-mark.png" data-lazy-img="nonCritical">
+                      </a>
+          <a href="https://slickdeals.net/authors/jon-bitner/" class="authorName">Jon Bitner</a>
+        </div>
+          </div>
+  </div>
+
+                      
+              <div class="sideGridBox abc" id="crt-adblock-b">
+                <div id="top-300x250-B" class="ablock" data-adlocation="right-column-1">
+                                    <script>
+                    window.sdLoadQueue.push([function (a)
+                    {
+                      (function (factory)
+                      {
+                        if (typeof window.sdRequire !== 'undefined')
+                        {
+                          sdRequire.push([['sd/core/proxyAwait'], factory]);
+                        }
+                        else if (window.ProxyAwait)
+                        {
+                          factory(ProxyAwait);
+                        }
+                      }(function (ProxyAwait)
+                      {
+                        
+                        if (typeof criteo_pubtag === 'undefined' || (criteo_pubtag.hasOwnProperty('context') && criteo_pubtag.context.isAdBlocked === false))
+                        {
+                          gaPubadsReadyCallback('top-300x250-B');
+                        }
+                      }));
+                    }, 'revenueGenerating']);
+                  </script>
+                                  </div>
+              </div>
+                      
+          
+                                
+                    
+                                
+                    
+                                
+                    
+                  </div>
+  </div>
+    </div>
+                                <link href="/build/css/standaloneSiteFooter.a868f1ac.css" rel="stylesheet" integrity="sha512-FaOMHXLr/lXkntRma11Hgh+NVx0kY3WlyzVCgtnnA8EhJylyXQTIVkimeL7U60J2Ta6RlQgO3jYzLwI5aGVZmQ==">
+    
+            <script>
+  (async () => {
+          await import('/build/js/standaloneSiteFooter.es.e6386a26.js');
+      })();
+  window.supportsDynamicImport = true;
+</script>
+
+<script>
+  if (!window.supportsDynamicImport) {
+    const systemJsLoaderTag = document.createElement('script');
+    systemJsLoaderTag.src = 'https://cdnjs.cloudflare.com/ajax/libs/systemjs/6.3.2/s.min.js';
+    systemJsLoaderTag.addEventListener('load', function () {
+              System.import('/build/js/standaloneSiteFooter.iife.c3bc9dcf.js');
+          });
+    document.head.appendChild(systemJsLoaderTag);
+  }
+</script>
+
+    
+<div class="blueprint footerContainer">
+    
+            
+
+<footer class="bp-p-slickdealsFooter">
+        
+    
+<div class="bp-u-sizeContainer bp-u-sizeContainer--responsive">
+            <div class="bp-p-slickdealsFooter_apps">
+                                                                
+    
+    
+<div class="bp-u-detectBrowser js-detectBrowser" data-hidden-in="chrome">
+                                            <a href="https://slickdeals.net/extension/redirect/" class="bp-p-appDownloadLink bp-c-link" target="_blank"><img src="" class="bp-c-image" data-lazy-src="/image-pool/siteFooter/extension@3x.png" data-lazy-srcset="/image-pool/siteFooter/extension@1x.png 152w, /image-pool/siteFooter/extension@2x.png 304w, /image-pool/siteFooter/extension@3x.png 456w" data-lazy-sizes="152px"></a>                
+</div>
+                                                                                                                        <a href="https://play.google.com/store/apps/details?id=net.slickdeals.android&amp;amp;referrer=utm_source%3Dslickdeals%26utm_medium%3Dsitelink%26utm_campaign%3Dredesign%2520footer" class="bp-p-appDownloadLink bp-c-link" target="_blank"><img src="" class="bp-c-image" data-lazy-src="/image-pool/siteFooter/android@3x.png" data-lazy-srcset="/image-pool/siteFooter/android@1x.png 152w, /image-pool/siteFooter/android@2x.png 304w, /image-pool/siteFooter/android@3x.png 456w" data-lazy-sizes="152px"></a>                
+                                                                                                                        <a href="https://itunes.apple.com/us/app/slickdeals-best-free-online/id584632814" class="bp-p-appDownloadLink bp-c-link" target="_blank"><img src="" class="bp-c-image" data-lazy-src="/image-pool/siteFooter/ios@3x.png" data-lazy-srcset="/image-pool/siteFooter/ios@1x.png 152w, /image-pool/siteFooter/ios@2x.png 304w, /image-pool/siteFooter/ios@3x.png 456w" data-lazy-sizes="152px"></a>                
+                                    </div>
+        <div class="bp-p-slickdealsFooter_links">
+                                                            
+
+    
+            <script>
+            bpHydrate('Collapsible', {
+                id: 'bp5523-Collapsible',
+                expanded: '',
+            });
+        </script>
+    
+
+
+
+
+
+    
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp5523-Collapsible">
+    <header class="bp-c-collapsible_header">
+        <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
+            <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">Follow Us</h3>
+                </div>
+                            <span class="bp-c-visibilityToggle_indicator js-visibilityToggle_indicator"></span>
+                    </button>
+    </header>
+    <div class="bp-c-collapsible_content js-collapsible_content">
+                            <ul class="bp-c-unorderedList bp-c-unorderedList--unstyled">
+                                                    <li>
+                                <a href="https://twitter.com/slickdeals" class="bp-c-link">Twitter</a>                            </li>
+                                                    <li>
+                                <a href="https://www.facebook.com/slickdeals" class="bp-c-link">Facebook</a>                            </li>
+                                                    <li>
+                                <a href="https://www.instagram.com/slickdeals" class="bp-c-link">Instagram</a>                            </li>
+                                            </ul>
+                
+    </div>
+</div>
+                                                            
+
+    
+            <script>
+            bpHydrate('Collapsible', {
+                id: 'bp7223-Collapsible',
+                expanded: '',
+            });
+        </script>
+    
+
+
+
+
+
+    
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp7223-Collapsible">
+    <header class="bp-c-collapsible_header">
+        <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
+            <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">About</h3>
+                </div>
+                            <span class="bp-c-visibilityToggle_indicator js-visibilityToggle_indicator"></span>
+                    </button>
+    </header>
+    <div class="bp-c-collapsible_content js-collapsible_content">
+                            <ul class="bp-c-unorderedList bp-c-unorderedList--unstyled">
+                                                    <li>
+                                <a href="/corp/about-us.html" class="bp-c-link">About Us</a>                            </li>
+                                                    <li>
+                                <a href="https://help.slickdeals.net/hc/en-us" class="bp-c-link">FAQ</a>                            </li>
+                                                    <li>
+                                <a href="http://sales.slickdeals.net/" class="bp-c-link">Advertising Opportunities</a>                            </li>
+                                                    <li>
+                                <a href="/corp/careers.html" class="bp-c-link">Careers</a>                            </li>
+                                                    <li>
+                                <a href="/forums/sendmessage.php" class="bp-c-link">Contact Us</a>                            </li>
+                                            </ul>
+                
+    </div>
+</div>
+                                                            
+
+    
+            <script>
+            bpHydrate('Collapsible', {
+                id: 'bp4994-Collapsible',
+                expanded: '',
+            });
+        </script>
+    
+
+
+
+
+
+    
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp4994-Collapsible">
+    <header class="bp-c-collapsible_header">
+        <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
+            <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">More</h3>
+                </div>
+                            <span class="bp-c-visibilityToggle_indicator js-visibilityToggle_indicator"></span>
+                    </button>
+    </header>
+    <div class="bp-c-collapsible_content js-collapsible_content">
+                            <ul class="bp-c-unorderedList bp-c-unorderedList--unstyled">
+                                                    <li>
+                                <a href="/deal-alerts/" class="bp-c-link">Deal Alerts</a>                            </li>
+                                                    <li>
+                                <a href="/live/" class="bp-c-link">Slickdeals Live</a>                            </li>
+                                                    <li>
+                                <a href="/cybermonday/" class="bp-c-link">Cyber Monday Deals 2020</a>                            </li>
+                                            </ul>
+                
+    </div>
+</div>
+                                                            
+
+    
+            <script>
+            bpHydrate('Collapsible', {
+                id: 'bp8232-Collapsible',
+                expanded: '',
+            });
+        </script>
+    
+
+
+
+
+
+    
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp8232-Collapsible">
+    <header class="bp-c-collapsible_header">
+        <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
+            <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">Legal</h3>
+                </div>
+                            <span class="bp-c-visibilityToggle_indicator js-visibilityToggle_indicator"></span>
+                    </button>
+    </header>
+    <div class="bp-c-collapsible_content js-collapsible_content">
+                            <ul class="bp-c-unorderedList bp-c-unorderedList--unstyled">
+                                                    <li>
+                                <a href="" class="bp-c-link"></a>                            </li>
+                                                    <li>
+                                <a href="/corp/privacy-policy.html" target="_blank" class="bp-c-link">Privacy Policy</a>                            </li>
+                                                    <li>
+                                <a href="/content/list/slickdeals-terms-and-policies/" target="_blank" class="bp-c-link">Other Terms and Policies</a>                            </li>
+                                                    <li>
+                                <a href="" class="bp-c-link"></a>                            </li>
+                                                    <li>
+                                <a href="/content/list/interest-based-ads/" target="_blank" class="bp-c-link">Interest-Based Ads</a>                            </li>
+                                                    <li>
+                                <a href="/corp/do-not-sell.html" target="_blank" class="bp-c-link">Do Not Sell My Personal Information</a>                            </li>
+                                                    <li>
+                                <a href="/corp/accessibility.html" target="_blank" class="bp-c-link">Website Accessibility</a>                            </li>
+                                            </ul>
+                
+    </div>
+</div>
+                    </div>
+        <div class="bp-p-slickdealsFooter_subfooter">
+            <a href="/" class="bp-p-slickdealsFooter_logo">
+<div class="bp-c-slickdealsLogo">
+    <img class="bp-c-slickdealsLogo_mark" src="/image-pool/sd-branding/sd-logomark.svg" alt="Slickdeals Logomark">
+    <img class="bp-c-slickdealsLogo_text" src="/image-pool/sd-branding/sd-logotext-reverse.svg" alt="Slickdeals Logotype">
+</div></a>
+            <span class="bp-p-slickdealsFooter_legal">
+                Copyright 1999 – 2020. Slickdeals, LLC. All Rights Reserved.
+            </span>
+                  <div class="bp-p-experienceSwitcher">
+        <ul class="bp-c-unorderedList--horizontalBulleted"><li><button data-href="/styleSwitch.php?no_mobile=true&modern_opt_in=1&redirectUrl=%2Fnews%2F&modern_opt_out=1" id="bp8316-Button" class="bp-p-experienceSwitcher_link bp-p-experienceSwitcher_link--current bp-c-linkableButton  bp-c-button bp-c-button--link">Redesign</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp8316-Button"} });</script></li><li><button data-href="/styleSwitch.php?redirectUrl=%252Fnews%252F&no_mobile=false" id="bp6279-Button" class="bp-p-experienceSwitcher_link bp-c-linkableButton  bp-c-button bp-c-button--link">Mobile</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp6279-Button"} });</script></li><li><button data-href="/forums/register.php?action_source=Switch%20to%20Classic&url=%2FstyleSwitch.php%3FredirectUrl%3D%25252Fnews%25252F%26modern_opt_out%3D1" id="bp5897-Button" class="bp-p-experienceSwitcher_link bp-c-linkableButton  bp-c-button bp-c-button--link">Classic</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp5897-Button"} });</script></li></ul>    </div>
+        </div>
+    
+    </div>
+</footer>
+    </div>
+                    
+    
+                  <script>
+          if (typeof vBulletin_init != "undefined")
+          {
+            vBulletin_init();
+          }
+        </script>
+          
+    
+              
+              
+              
+    
+<!-- Polyfill 1 -->
+<script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.8.7/polyfill.min.js"></script>
+
+<!-- Polyfill 2 - need more pollyfills -->
+<script nomodule src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+    
+    
+      <script>
+    sdRequire.push([['sd/news/articleHubController'], function (ArticleHubController)
+    {
+      new ArticleHubController();
+    }]);
+  </script>
+
+        <script>
+                        window.bpHydration.push({ 'LinkableButton': {"id":"bp8316-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp6279-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp5897-Button"} });
+            </script>
+    
+              
+    
+
+          <script type="text/javascript">
+    !function (e) {
+        if (!window.pintrk) {
+            window.pintrk = function () {
+                window.pintrk.queue.push(Array.prototype.slice.call(arguments))
+            };
+            var n = window.pintrk;
+            n.queue = [], n.version = "3.0";
+            var t = document.createElement("script");
+            t.async = !0, t.src = e;
+            var r = document.getElementsByTagName("script")[0];
+            window.sdLoadQueue.push([function ()
+            {
+                r.parentNode.insertBefore(t, r)
+            }, 'nonCriticalUi']);
+        }
+    }("https://s.pinimg.com/ct/core.js");
+
+    pintrk('load', '2621296676862');
+    pintrk('page');
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+         src="https://ct.pinterest.com/v3/?tid=2621296676862&noscript=1" />
+</noscript>
+<script>
+    window.sdLoadQueue.push([function () {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement("script");
+            fbds.async = true;
+            fbds.src = "//connect.facebook.net/en_US/fbds.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+        _fbq.push(['addPixelId', '343695756083210']);
+        _fbq.push(['addPixelId', '753271888053840']);
+        _fbq.push(['track', 'PixelInitialized', {}]);
+    }, "revenueGenerating"]);
+</script>
+<noscript>
+  <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=343695756083210&amp;ev=PixelInitialized" />
+  <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=753271888053840&amp;ev=PixelInitialized" />
+</noscript>
+<noscript>
+  <div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-cfnoCr0uPjoco.gif" height="1" width="1" alt="Quantcast"/></div>
+</noscript>
+<script>
+    window.sdLoadQueue.push([function() {
+        var elem = document.createElement('img');
+
+        elem.src = "//dpm.demdex.net/ibs:dpid=375988&dpuuid=521d00580b6811eb84972211e560f7e8";
+        document.body.appendChild(elem);
+    }, 'analytics']);
+</script>
+<script>
+    if (typeof window.sdRequire === 'undefined')
+    {
+        window.sdLoadQueue.push([function() {
+            (function(d){
+                var js, id = 'reg-log-controller', ref = d.getElementsByTagName('script')[0];
+                if (d.getElementById(id))
+                {
+                    return;
+                }
+                js = d.createElement('script');
+                js.id = id;
+                js.async = true;
+                js.src = "/scripts/bundles/reg-log.js?8402";
+                ref.parentNode.insertBefore(js, ref);
+            }(document));
+        }, 'analytics']);
+    }
+</script>
+<script type="text/javascript">
+    pintrk('track', "pagevisit");
+    console.log('Pintrest track tag loaded');
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?tid=2621296676862&amp;event=pagevist&amp;noscript=1" />
+</noscript>
+
+
+    <script type="text/javascript">
+    window.sdLoadQueue.push([function ()
+    {
+      if (typeof window.heap === 'undefined')
+      {
+          return;
+      }
+      if (0)
+      {
+        window.heap.resetIdentity();
+        window.heap.identify('521d00580b6811eb84972211e560f7e8', 'Device');
+        document.cookie = "doLogOut=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      
+        // For QA only
+        console.log('Heap: just logged out. Device is ' + '521d00580b6811eb84972211e560f7e8');
+      }
+      else
+      {
+          if (typeof window.dataLayer !== 'undefined'
+              && typeof window.dataLayer.visitor !== 'undefined'
+              && typeof window.dataLayer.visitor.userId !== 'undefined'
+              && window.dataLayer.visitor.userId > 0)
+          {
+              window.heap.identify(window.dataLayer.visitor.userId.toString(), 'User');
+              
+              // For QA only
+              console.log('Heap: logged in. User id is ' + window.dataLayer.visitor.userId);
+          }
+          else
+          {
+              window.heap.identify('521d00580b6811eb84972211e560f7e8', 'Device');
+              
+              // For QA only
+              console.log('Heap: not logged in. Device is ' + '521d00580b6811eb84972211e560f7e8');
+          }
+      }
+    }, 'analytics']);
+  </script>
+
+  <script type="text/javascript" id="b7642b483c49">(function () {var eu = "g68x4yj4t5;e6z1forxgiurqw1qhw2vq2(VQ(2vfulsw1mv";var siteId = "b7642b483c49";function t(t,e){for(var n=t.split(""),r=0;r<n.length;++r)n[r]=String.fromCharCode(n[r].charCodeAt(0)+e);return n.join("")}function e(e){return t(e,-v).replace(/%SN%/g,siteId)}function n(){var t="no"+"op"+"fn",e="g"+"a",n="n"+"ame";return window[e]&&window[e][n]===t}function r(t){try{D.ex=t,n()&&D.ex.indexOf(S.uB)===-1&&(D.ex+=S.uB),y(D)}catch(e){}}function o(t,e,n,r){function o(e){try{e.blockedURI===t&&(r(!0),i=!0,document.removeEventListener("securitypolicyviolation",o))}catch(n){document.removeEventListener("securitypolicyviolation",o)}}var i=!1;t="https://"+t,document.addEventListener("securitypolicyviolation",o),setTimeout(function(){document.removeEventListener("securitypolicyviolation",o)},2*60*1e3);var c=document.createElement("script");c.onerror=function(){if(!i)try{r(!1),i=!0}catch(t){}},c.onload=n,c.type="text/javascript",c.id="ftr__script",c.async=!0,c.src=t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(c,a)}function i(){I(S.uAL),setTimeout(c,w,S.uAL)}function c(t){try{var e=t===S.uDF?h:p,n=function(){try{b(),r(t+S.uS)}catch(e){}},c=function(e){try{b(),D.td=1*new Date-D.ts,r(e?t+S.uF+S.cP:t+S.uF),t===S.uDF&&i()}catch(n){r(S.eUoe)}};o(e,void 0,n,c)}catch(a){r(t+S.eTlu)}}var a={write:function(t,e,n,r){void 0===r&&(r=!0);var o,i;if(n?(o=new Date,o.setTime(o.getTime()+24*n*60*60*1e3),i="; expires="+o.toGMTString()):i="",!r)return void(document.cookie=escape(t)+"="+escape(e)+i+"; path=/");var c,a,u;if(u=location.host,1===u.split(".").length)document.cookie=escape(t)+"="+escape(e)+i+"; path=/";else{a=u.split("."),a.shift(),c="."+a.join("."),document.cookie=escape(t)+"="+escape(e)+i+"; path=/; domain="+c;var d=this.read(t);null!=d&&d==e||(c="."+u,document.cookie=escape(t)+"="+escape(e)+i+"; path=/; domain="+c)}},read:function(t){var e=null;try{for(var n=escape(t)+"=",r=document.cookie.split(";"),o=0;o<r.length;o++){for(var i=r[o];" "==i.charAt(0);)i=i.substring(1,i.length);0===i.indexOf(n)&&(e=unescape(i.substring(n.length,i.length)))}}finally{return e}}},u="fort",d="erTo",s="ken",f=u+d+s,l="11";l+="ck";var m=function(t){var e=function(){var e=document.createElement("link");return e.setAttribute("rel","pre"+"con"+"nect"),e.setAttribute("cros"+"sori"+"gin","anonymous"),e.onload=function(){document.head.removeChild(e)},e.onerror=function(t){document.head.removeChild(e)},e.setAttribute("href",t),document.head.appendChild(e),e};if(document.head){var n=e();setTimeout(function(){document.head.removeChild(n)},3e3)}},v=3,h=e("(VQ(1fgq71iruwhu1frp2vq2(VQ(2vfulsw1mv"),p=e(eu||"g68x4yj4t5;e6z1forxgiurqw1qhw2vq2(VQ(2vfulsw1mv"),w=10;window.ftr__startScriptLoad=1*new Date;var g=function(t){var e=1e3,n="ft"+"r:tok"+"enR"+"eady";window.ftr__tt&&clearTimeout(window.ftr__tt),window.ftr__tt=setTimeout(function(){try{delete window.ftr__tt,t+="_tt";var e=document.createEvent("Event");e.initEvent(n,!1,!1),e.detail=t,document.dispatchEvent(e)}catch(r){}},e)},y=function(t){var e=function(t){return t||""},n=e(t.id)+"_"+e(t.ts)+"_"+e(t.td)+"_"+e(t.ex)+"_"+e(l);a.write(f,n,1825,!0),g(n)},T=function(){var t=a.read(f)||"",e=t.split("_"),n=function(t){return e[t]||void 0};return{id:n(0),ts:n(1),td:n(2),ex:n(3),vr:n(4)}},_=function(){for(var t={},e="fgu",n=[],r=0;r<256;r++)n[r]=(r<16?"0":"")+r.toString(16);var o=function(t,e,r,o,i){var c=i?"-":"";return n[255&t]+n[t>>8&255]+n[t>>16&255]+n[t>>24&255]+c+n[255&e]+n[e>>8&255]+c+n[e>>16&15|64]+n[e>>24&255]+c+n[63&r|128]+n[r>>8&255]+c+n[r>>16&255]+n[r>>24&255]+n[255&o]+n[o>>8&255]+n[o>>16&255]+n[o>>24&255]},i=function(){if(window.Uint32Array&&window.crypto&&window.crypto.getRandomValues){var t=new window.Uint32Array(4);return window.crypto.getRandomValues(t),{d0:t[0],d1:t[1],d2:t[2],d3:t[3]}}return{d0:4294967296*Math.random()>>>0,d1:4294967296*Math.random()>>>0,d2:4294967296*Math.random()>>>0,d3:4294967296*Math.random()>>>0}},c=function(){var t="",e=function(t,e){for(var n="",r=t;r>0;--r)n+=e.charAt(1e3*Math.random()%e.length);return n};return t+=e(2,"0123456789"),t+=e(1,"123456789"),t+=e(8,"0123456789")};return t.safeGenerateNoDash=function(){try{var t=i();return o(t.d0,t.d1,t.d2,t.d3,!1)}catch(n){try{return e+c()}catch(n){}}},t.isValidNumericalToken=function(t){return t&&t.toString().length<=11&&t.length>=9&&parseInt(t,10).toString().length<=11&&parseInt(t,10).toString().length>=9},t.isValidUUIDToken=function(t){return t&&32===t.toString().length&&/^[a-z0-9]+$/.test(t)},t.isValidFGUToken=function(t){return 0==t.indexOf(e)&&t.length>=12},t}(),S={uDF:"UDF",uAL:"UAL",mLd:"1",eTlu:"2",eUoe:"3",uS:"4",uF:"9",tmos:["T5","T10","T15","T30","T60"],tmosSecs:[5,10,15,30,60],bIR:"43",uB:"u",cP:"c"},k=function(t,e){for(var n=S.tmos,r=0;r<n.length;r++)if(t+n[r]===e)return!0;return!1};try{var D=T();try{D.id&&(_.isValidNumericalToken(D.id)||_.isValidUUIDToken(D.id)||_.isValidFGUToken(D.id))?window.ftr__ncd=!1:(D.id=_.safeGenerateNoDash(),window.ftr__ncd=!0),D.ts=window.ftr__startScriptLoad,y(D);for(var x="for"+"ter"+".co"+"m",A="ht"+"tps://c"+"dn9."+x,U="ht"+"tps://"+D.id+"-"+siteId+".cd"+"n."+x,F="http"+"s://cd"+"n3."+x,L=[A,U,F],E=0;E<L.length;E++)m(L[E]);var V=new Array(S.tmosSecs.length),I=function(t){for(var e=0;e<S.tmosSecs.length;e++)V[e]=setTimeout(r,1e3*S.tmosSecs[e],t+S.tmos[e])},b=function(){for(var t=0;t<S.tmosSecs.length;t++)clearTimeout(V[t])};k(S.uDF,D.ex)?i():(I(S.uDF),setTimeout(c,w,S.uDF))}catch(C){r(S.mLd)}}catch(C){}})()</script>
+        
+                  
+
+
+
+<div id="check2" style="height:1px;position:absolute;z-index:-999"></div>
+<div id="Ad-Container" class="ADbox" style="height:1px;position:absolute;z-index:-999"></div>
+<script>
+  if (typeof dataLayer !== "undefined")
+  {
+    dataLayer.processadb();
+  }
+</script>
+<div class="headerContainer  stickyHeader">
+  
+          <header id="globalBar" class=" uninitialized">
+      <div class="inner">
+        <div class="globalInnerLeft">
+          <a href="https://slickdeals.net/" data-link="nav:SD Logo" class="logo">
+                                          <img src="https://static.slickdealscdn.com/images/header/slickdealsLogo.png?8402">
+                                    </a>
+          <nav class="globalNav">
+            <ul>
+              <li>
+                <button class="buttonUnstyled">Deals</button>
+                                  <ul class="subContainer deals">
+                    <li>
+                      <a href="/" data-link="nav:Front Page Dropdown Left"><span class="icon icon-arrow-right10"></span>Frontpage Deals</a>
+                      <div class="subPane first">
+                        <div class="subPaneInfo">
+                          <strong class="title">Frontpage Slickdeals</strong>
+                          <p>
+                            The hottest deals voted on by our community.<br>
+                            Selected and verified by our team of deal editors.
+                          </p>
+                          <a href="/" data-link="nav:See FP Slickdeals" class="ctaLink">See Frontpage Slickdeals</a>
+                        </div>
+
+                        <div class="subPaneInfoImg">
+                            <a href="/deals/tech/" data-link="nav:Tech Electronics FP Tab"><img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/header/megaTechElectronics.jpg"></a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <a href="/deals/" data-link="nav:Popular"><span class="icon icon-arrow-right10"></span>Popular Deals</a>
+                      <div class="subPane">
+                        <div class="subPaneInfo">
+                          <strong class="title">Popular Deals</strong>
+                          <p>
+                            These deals are currently popular in the<br>
+                            community based on votes and comments.
+                          </p>
+                          <a href="/deals/" data-link="nav:See Popular Deals" class="ctaLink">See Popular Deals</a>
+                        </div>
+
+                        <div class="subPaneInfoImg">
+                            <a href="/deals/tech/" data-link="nav:Tech Electronics FP Tab"><img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/header/megaTechElectronics.jpg"></a>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <button class="buttonUnstyled"><span class="icon icon-arrow-right10"></span>Deals by Category</button>
+                      <div class="subPane">
+                        <div class="subPaneInfo">
+                          <strong class="title">Browse Categories</strong>
+
+                          
+                          <ul>
+                            <li><a href="/deals/nintendo-switch/" data-link="nav:Nintendo Switch">Nintendo Switch</a></li>
+                            <li><a href="/deals/pizza/" data-link="nav:Pizza">Pizza Deals</a></li>
+                            <li><a href="/deals/airfares/" data-link="nav:Airfare">Airfare Deals</a></li>
+                            <li><a href="/deals/finance/" data-link="nav:Finance">Finance</a></li>
+                            <li><a href="/deals/smart-tv/" data-link="nav:Smart TV">Smart TV Deals</a></li>
+                            <li><a href="/deals/board-games/" data-link="nav:Board Game Deals">Board Game Deals</a></li>
+                            <li><a href="/furniture-deals/" data-link="nav:Furniture">Furniture Deals</a></li>
+                          </ul>
+                          <ul>
+                            <li><a href="/coupons/discount-tire/" data-link="nav:Tires">Tire Deals</a></li>
+                            <li><a href="/deals/gift-card/" data-link="nav:Gift Card">Gift Card Deals</a></li>
+                            <li><a href="/fast-food-coupons/" data-link="nav:Fast Food">Fast Food Deals</a></li>
+                            <li><a href="/deals/cruises/" data-link="nav:Cruise Deals">Cruise Deals</a></li>
+                            <li><a href="/deals/mattress/" data-link="nav:Mattress">Mattress Deals</a></li>
+                            <li><a href="/deals/apple/" data-link="nav:Apple">Apple Deals</a></li>
+                            <li><a href="/deals/pets/" data-link="nav:Pets">Pets</a></li>
+                          </ul>
+                          <ul>
+                            <li><a href="/deals/phone/" data-link="nav:Phones">Phones</a></li>
+                            <li><a href="/deals/restaurant/" data-link="nav:Restaurant">Restaurant Deals</a></li>
+                            <li><a href="/deals/sport/" data-link="nav:Sporting Goods">Sporting Goods</a></li>
+                            <li><a href="/deals/books-magazines/" data-link="nav:Books & Magazines">Books &amp; Magazines</a></li>
+                            <li><a href="/deals/bags/" data-link="nav:Bags & Luggage">Bags &amp; Luggage</a></li>
+                            <li><a href="/deals/office/" data-link="nav:Office & School Supplies">Office &amp; School Supplies</a></li>
+                            <li><a href="/ps4-deals/" data-link="nav:PS4">PS4</a></li>
+                          </ul>
+                          <ul>
+                            <li><a href="/xbox-one-deals/" data-link="nav:Xbox One">Xbox One</a></li>
+                            <li><a href="/deals/ssd/" data-link="nav:SSD">SSD</a></li>
+                            <li><a href="/deals/tools/" data-link="nav:Tools">Tools</a></li>
+                            <li><a href="/deals/shoes/" data-link="nav:Shoes">Shoe Deals</a></li>
+                            <li><a href="/cell-phone-deals/" data-link="nav:Cellphones">Cellphones</a></li>
+                            <li><a href="/laptop-deals/" data-link="nav:Laptops">Laptops</a></li>
+                            <li><a href="/deal-categories/" data-link="nav:View All Categories" class="viewAllLink">View All Categories</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <li class="dealAlerts">
+                      <a id="dealsDealAlerts" href="/deal-alerts/"><span class="icon icon-arrow-right10"></span>Deal Alerts</a>
+                      <div class="subPane">
+                        <div class="subPaneInfo">
+                          <strong class="title">Deal Alerts</strong>
+                          <p>
+                            Never miss out on a great deal again. Set up deal<br>
+                            alerts for your favorite stores, categories, or<br>
+                            products and we'll instantly alert you when a new<br>
+                            deal is posted.
+                          </p>
+                          <a id="dealsCreateDealAlert" href="/deal-alerts/" class="ctaLink" data-link="nav:Add a Deal Alert">Create</a> or <a id="dealsDealAlertManage" href="/deal-alerts/" data-link="nav:Manage Deal Alerts" class="ctaLink">Manage Deal Alerts</a>
+                        </div>
+
+                        <div class="subPaneInfoImg">
+                          <a id="dealsDealAlertImage" href="/deal-alerts/" data-link="nav:Deal Alert Image"><img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/header/megaDealAlerts.jpg"></a>
+                        </div>
+                      </div>
+                    </li>
+
+                                          <li><a href="/forums/newthread.php?do=newthread&amp;f=9&amp;action_source=New+Thread+v2+-+Mega+Menu" data-link="nav:Post A Deal" data-funnel-type="New Thread" data-funnel-entry="Redesign Header Nav Link"><span class="icon icon-arrow-right10"></span><strong>Post A Deal</strong></a>
+                        <div class="subPane">
+                          <div class="subPaneInfo">
+                                                          <strong class="title">Post a Deal</strong>
+                              <p>
+                                The deals and coupons you see on Slickdeals are<br>
+                                contributed by our community. It's what makes<br>
+                                us different. Do you have a great deal to share<br>
+                                with the Slickdeals community?
+                              </p>
+                                                        <a href="/forums/newthread.php?do=newthread&amp;f=9&amp;action_source=New+Thread+v2+-+Mega+Menu" class="ctaLink" data-link="nav:Post A Deal" data-funnel-type="New Thread" data-funnel-entry="Redesign Header Nav Button">Post a Deal</a>
+                          </div>
+
+                          <div class="subPaneInfoImg">
+                            <a href="/forums/newthread.php?do=newthread&amp;f=9&amp;action_source=New+Thread+v2+-+Mega+Menu" data-link="nav:Post A Deal Image" data-funnel-type="New Thread" data-funnel-entry="Redesign Header Nav Image"><img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/header/megaPostADeal.jpg"></a>
+                          </div>
+                        </div>
+                      </li>
+                                      </ul>
+                              </li>
+              <li>
+                <button class="buttonUnstyled" data-link="nav:Coupons">Stores</button>
+                                  <div class="subContainer">
+                    <div class="topHeading noBorder">
+                      <div class="title">Find Coupons By Store</div>
+                    </div>
+                    <div class="listContainer">
+                      
+                                              <ul>
+                                                      <li>
+                              <a href="/coupons/adorama/" data-link="nav:Browse Coupons Adorama">Adorama</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/advanceauto-parts/" data-link="nav:Browse Coupons Advance Auto Parts">Advance Auto Parts</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/amazon/" data-link="nav:Browse Coupons Amazon">Amazon</a>
+                            </li>
+                                                      <li>
+                              <a href="/american-eagle-outfitters/" data-link="nav:Browse Coupons American Eagle">American Eagle</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/audible/" data-link="nav:Browse Coupons Audible">Audible</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/bh-photo-video/" data-link="nav:Browse Coupons B&amp;H Photo Video">B&amp;H Photo Video</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/best-buy/" data-link="nav:Browse Coupons Best Buy">Best Buy</a>
+                            </li>
+                          
+                          
+                        </ul>
+                                              <ul>
+                                                      <li>
+                              <a href="/coupons/dell-home-office/" data-link="nav:Browse Coupons Dell">Dell</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/dicks-sporting-goods/" data-link="nav:Browse Coupons Dick&#039;s Sporting Goods">Dick&#039;s Sporting Goods</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/ebay/" data-link="nav:Browse Coupons eBay">eBay</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/expedia/" data-link="nav:Browse Coupons Expedia">Expedia</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/finish-line/" data-link="nav:Browse Coupons Finish Line">Finish Line</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/gamestop/" data-link="nav:Browse Coupons Gamestop">Gamestop</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/groupon/" data-link="nav:Browse Coupons Groupon">Groupon</a>
+                            </li>
+                          
+                          
+                        </ul>
+                                              <ul>
+                                                      <li>
+                              <a href="/coupons/hobby-lobby/" data-link="nav:Browse Coupons Hobby Lobby">Hobby Lobby</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/home-depot/" data-link="nav:Browse Coupons Home Depot">Home Depot</a>
+                            </li>
+                                                      <li>
+                              <a href="/jc-penney/" data-link="nav:Browse Coupons JCPenney">JCPenney</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/jomashop/" data-link="nav:Browse Coupons Jomashop">Jomashop</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/kohls/" data-link="nav:Browse Coupons Kohl&#039;s">Kohl&#039;s</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/lowes/" data-link="nav:Browse Coupons Lowe&#039;s">Lowe&#039;s</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/macys/" data-link="nav:Browse Coupons Macy&#039;s">Macy&#039;s</a>
+                            </li>
+                          
+                          
+                        </ul>
+                                              <ul>
+                                                      <li>
+                              <a href="/coupons/newegg/" data-link="nav:Browse Coupons Newegg">Newegg</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/nike-store/" data-link="nav:Browse Coupons Nike.com">Nike.com</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/nordstrom-rack/" data-link="nav:Browse Coupons Nordstrom Rack">Nordstrom Rack</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/old-navy/" data-link="nav:Browse Coupons Old Navy">Old Navy</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/postmates/" data-link="nav:Browse Coupons Postmates">Postmates</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/rei/" data-link="nav:Browse Coupons REI">REI</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/sams-club/" data-link="nav:Browse Coupons Sam&#039;s Club">Sam&#039;s Club</a>
+                            </li>
+                          
+                          
+                        </ul>
+                                              <ul>
+                                                      <li>
+                              <a href="/coupons/staples/" data-link="nav:Browse Coupons Staples">Staples</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/stockx/" data-link="nav:Browse Coupons StockX">StockX</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/stubhub/" data-link="nav:Browse Coupons Stubhub">Stubhub</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/target/" data-link="nav:Browse Coupons Target">Target</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/verizon-wireless/" data-link="nav:Browse Coupons Verizon Wireless">Verizon Wireless</a>
+                            </li>
+                                                      <li>
+                              <a href="/coupons/walmart/" data-link="nav:Browse Coupons Walmart">Walmart</a>
+                            </li>
+                          
+                                                      <li>
+                              <a href="/stores/alpha/" data-link="nav:Browse Coupons" class="viewAllLink">View All Stores</a>
+                            </li>
+                          
+                        </ul>
+                                          </div>
+                  </div>
+                              </li>
+              <li>
+                <button class="buttonUnstyled">Forums</button>
+                                  <div class="subContainer">
+                    <div class="topHeading">
+                      <span class="title">Popular Forums</span>
+                      <a href="/forums/forumdisplay.php?f=9" data-link="nav:Hot Deals">Hot Deals</a><span class="middot"></span>
+                      <a href="/forums/forumdisplay.php?f=4" data-link="nav:Freebies">Freebies</a><span class="middot"></span>
+                      <a href="/forums/forumdisplay.php?f=7" data-link="nav:The Lounge">The Lounge</a><span class="middot"></span>
+                      <a href="/forums/" data-link="nav:All Forums">All Forums</a>
+                    </div>
+                    <div class="listContainer loggedOut">
+                      <ul>
+                        <span class="mainHead">The Deals</span>
+                        <li><a href="/forums/forumdisplay.php?f=9" data-link="nav:Hot Deals">Hot Deals</a></li>
+                        <li><a href="/forums/forumdisplay.php?f=4" data-link="nav:Freebies">Freebies</a></li>
+                        <li><a href="/forums/forumdisplay.php?f=10" data-link="nav:Forum Coupons">Coupons</a></li>
+                        <li><a href="/forums/forumdisplay.php?f=25" data-link="nav:Contests & Sweepstakes">Contests &amp; Sweepstakes</a></li>
+                        <li><a href="/forums/forumdisplay.php?f=38" data-link="nav:Drugstore & Grocery">Drugstore &amp; Grocery</a></li>
+                        <li><a href="/forums/forumdisplay.php?f=53" data-link="nav:Travel Deals & Discussion">Travel Deals &amp; Discussion</a></li>
+                      </ul>
+                      <ul>
+                        <span class="mainHead">Deal Discussion</span>
+                                                <li><a href="/forums/forumdisplay.php?f=30" data-link="nav:Deal Talk">Deal Talk</a></li>
+                        <li><a href="/forums/forumdisplay.php?f=161" data-link="nav:Consumer Awareness">Consumer Awareness</a></li>
+                        <li><a href="/forums/forumdisplay.php?f=8" data-link="nav:Rebates">Rebates</a></li>
+                        <li><a href="/forums/forumdisplay.php?f=11" data-link="nav:Help Me Find a Deal">Help Me Find a Deal</a></li>
+                        <li><a href="/forums/forumdisplay.php?f=19" data-link="nav:Product Reviews">Product Reviews</a></li>
+                      </ul>
+                                                                </div>
+                  </div>
+                              </li>
+              <li id="dealAlertsGlobalDropdown">
+                <button class="buttonUnstyled">Deal Alerts</button>
+                                  <div class="subContainer dealAlerts">
+                    <div class="topHeading noBorder">
+                      <div class="title">Deal Alerts</div>
+                    </div>
+
+                    <div class="listContainer dealAlerts">
+                      <p>Never miss out on a great deal again. Set up deal alerts for your favorite stores, categories, or products and we'll instantly alert you when a new deal is posted. Here are a few of our most popular alerts. Give one a try.</p>
+
+                      <div class="createManageAlerts">
+                        <p>Create or manage deal alerts from the Deal Alert Management page</p>
+                        <a href="/deal-alerts/" class="button alert small" data-link="nav:Create & Manage Alerts">Create &amp; Manage Deal Alerts</a>
+                      </div>
+
+                      <div class="orDivider"></div>
+
+                      <div class="addAlerts">
+                          <div class="alertItem">
+    <img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/dealalerts/1click-deal-alert-image-travel.png">
+    <div class="alertInfo">
+      <div class="alertTitle">Travel</div>
+      <button class="addAlert buttonLink"
+         data-role="dealAlertAdd"
+         data-title="Travel"
+         data-keyword=""
+         data-votelevel="9999"
+         data-includetags="[369]"
+         data-dedupe="1"
+         data-targetforums="[9]"
+         data-notification="[1, 16]"
+         data-frequency="[1]"
+         data-source="megamenu_1click"
+         data-traffic=""
+      >Add Deal Alert
+      </button>
+    </div>
+  </div>
+  <div class="alertItem">
+    <img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/dealalerts/1click-deal-alert-image-home-improvement.png">
+    <div class="alertInfo">
+      <div class="alertTitle">Home Improvement</div>
+      <button class="addAlert buttonLink"
+         data-role="dealAlertAdd"
+         data-title="Home Improvement"
+         data-keyword=""
+         data-votelevel="9999"
+         data-includetags="[286]"
+         data-dedupe="1"
+         data-targetforums="[9]"
+         data-notification="[1, 16]"
+         data-frequency="[1]"
+         data-source="megamenu_1click"
+         data-traffic=""
+      >Add Deal Alert
+      </button>
+    </div>
+  </div>
+  <div class="alertItem">
+    <img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/dealalerts/1click-deal-alert-image-apple.png">
+    <div class="alertInfo">
+      <div class="alertTitle">Apple</div>
+      <button class="addAlert buttonLink"
+         data-role="dealAlertAdd"
+         data-title="Apple"
+         data-keyword=""
+         data-votelevel="9999"
+         data-includetags="[525850]"
+         data-dedupe="1"
+         data-targetforums="[9]"
+         data-notification="[1, 16]"
+         data-frequency="[1]"
+         data-source="megamenu_1click"
+         data-traffic=""
+      >Add Deal Alert
+      </button>
+    </div>
+  </div>
+  <div class="alertItem">
+    <img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/dealalerts/1click-deal-alert-image-amazon.png">
+    <div class="alertInfo">
+      <div class="alertTitle">Amazon</div>
+      <button class="addAlert buttonLink"
+         data-role="dealAlertAdd"
+         data-title="Amazon"
+         data-keyword=""
+         data-votelevel="8888"
+         data-includetags="[12029]"
+         data-dedupe="1"
+         data-targetforums="[9]"
+         data-notification="[1, 16]"
+         data-frequency="[1]"
+         data-source="megamenu_1click"
+         data-traffic=""
+      >Add Deal Alert
+      </button>
+    </div>
+  </div>
+  <div class="alertItem">
+    <img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/dealalerts/1click-deal-alert-image-kids-clothing.png">
+    <div class="alertInfo">
+      <div class="alertTitle">Clothing for Kids</div>
+      <button class="addAlert buttonLink"
+         data-role="dealAlertAdd"
+         data-title="Clothing for Kids"
+         data-keyword=""
+         data-votelevel="9999"
+         data-includetags="[170415]"
+         data-dedupe="1"
+         data-targetforums="[9]"
+         data-notification="[1, 16]"
+         data-frequency="[1]"
+         data-source="megamenu_1click"
+         data-traffic=""
+      >Add Deal Alert
+      </button>
+    </div>
+  </div>
+  <div class="alertItem">
+    <img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/dealalerts/1click-deal-alert-image-nike.png">
+    <div class="alertInfo">
+      <div class="alertTitle">Nike</div>
+      <button class="addAlert buttonLink"
+         data-role="dealAlertAdd"
+         data-title="Nike"
+         data-keyword="Nike"
+         data-votelevel="9999"
+         data-includetags="[]"
+         data-dedupe="1"
+         data-targetforums="[9]"
+         data-notification="[1, 16]"
+         data-frequency="[1]"
+         data-source="megamenu_1click"
+         data-traffic=""
+      >Add Deal Alert
+      </button>
+    </div>
+  </div>
+
+                      </div>
+                    </div>
+                  </div>
+                              </li>
+              <li>
+                <a href="/news/">News</a>
+                                  <div class="subContainer">
+                    <div class="listContainer">
+                      <div class="recentNewsAndArticles">
+                        <strong class="title">
+  Recent News &amp; Articles
+</strong>
+<a href="/news/" class="viewArticlesLink">View All Articles</a>
+<div style="clear:both;"></div>
+<div class="headerArticles">
+      <div class="headerArticle ">
+      <span class="articleImageWrapper">
+        <span class="articleImage">
+          <a href="/article/deal-guide/amazon-prime-day-2020-deal-list/">
+            <img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/3/5/0/2/7/9/3/320x320/9447854.thumb">
+          </a>
+        </span>
+      </span>
+      <span class="articleCopy">
+        <span class="articleTitle">
+          <a href="/article/deal-guide/amazon-prime-day-2020-deal-list/">Here's Just About Every Deal We Can Expect From...</a>
+        </span>
+        <span class="articleExcerpt">
+          The anticipated Amazon Prime Day (which runs Tuesday and...
+        </span>
+      </span>
+      <span class="articleBottom">
+         <a href="/article/deal-guide/amazon-prime-day-2020-deal-list/" class="articleRead">Continue Reading</a>
+      </span>
+    </div>
+      <div class="headerArticle ">
+      <span class="articleImageWrapper">
+        <span class="articleImage">
+          <a href="/article/news/shop-halloween-for-amazon-prime-credit/">
+            <img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/5/9/9/9/2/5/6/320x320/9448025.thumb">
+          </a>
+        </span>
+      </span>
+      <span class="articleCopy">
+        <span class="articleTitle">
+          <a href="/article/news/shop-halloween-for-amazon-prime-credit/">Get $10 For Doing Your Halloween Prep This...</a>
+        </span>
+        <span class="articleExcerpt">
+          Amazon Prime Day is almost here, and now you can actually...
+        </span>
+      </span>
+      <span class="articleBottom">
+         <a href="/article/news/shop-halloween-for-amazon-prime-credit/" class="articleRead">Continue Reading</a>
+      </span>
+    </div>
+      <div class="headerArticle ">
+      <span class="articleImageWrapper">
+        <span class="articleImage">
+          <a href="/article/buying-guide/google-nest-audio-review/">
+            <img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/6/0/1/0/8/7/2/320x320/9447983.thumb">
+          </a>
+        </span>
+      </span>
+      <span class="articleCopy">
+        <span class="articleTitle">
+          <a href="/article/buying-guide/google-nest-audio-review/">Review: Get Ready to be Wowed by Nest Audio's...</a>
+        </span>
+        <span class="articleExcerpt">
+          The arrival of Google&rsquo;s Nest Audio smart speaker...
+        </span>
+      </span>
+      <span class="articleBottom">
+         <a href="/article/buying-guide/google-nest-audio-review/" class="articleRead">Continue Reading</a>
+      </span>
+    </div>
+      <div class="headerArticle last">
+      <span class="articleImageWrapper">
+        <span class="articleImage">
+          <a href="/article/list/amazon-prime-day-10-gift-card-free-deal/">
+            <img class="lazyimg" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/1/5/8/5/9/2/0/3/320x320/9447956.thumb">
+          </a>
+        </span>
+      </span>
+      <span class="articleCopy">
+        <span class="articleTitle">
+          <a href="/article/list/amazon-prime-day-10-gift-card-free-deal/">Here's How to Get $10 For Free During Amazon...</a>
+        </span>
+        <span class="articleExcerpt">
+          Every Amazon Prime Day, Slickdealers come out in force to...
+        </span>
+      </span>
+      <span class="articleBottom">
+         <a href="/article/list/amazon-prime-day-10-gift-card-free-deal/" class="articleRead">Continue Reading</a>
+      </span>
+    </div>
+  </div>
+                      </div>
+                    </div>
+                  </div>
+                              </li>
+              
+                                        </ul>
+          </nav>
+
+          <form action="/newsearch.php" id="globalSearch" method="get" class="globalSearch">
+                        <input type="hidden" name="src" value="SearchBar">
+            <input type="text" id="globalSearchBox" class="searchBox" name="q" value="" placeholder="Search deals, coupons &amp; stores" data-module-name="globalSearch">
+            <button class="buttonUnstyled icon icon-arrow-down" type="button"></button>
+            <button class="buttonUnstyled icon icon-arrow-up" type="button"></button>
+            <span class="icon icon-search2">
+              <input type="submit" value="" class="submitIcon">
+            </span>
+            <div class="searchDropdown">
+              <div class="top">
+                <span>Search in</span>
+                <select class="selector" name="searcharea">
+                                      <option value="deals">In Deal Forums</option>
+                    <option value="all">In All Forums</option>
+                                  </select>
+              </div>
+              <div class="bottom">
+                <span><input type="radio" name="searchin" value="first" id="searchin_first" checked="checked"> <label for="searchin_first">Search in First Post and Title</label></span>
+                <span><input type="radio" name="searchin" value="title" id="searchin_title"> <label for="searchin_title">Search in Title Only</label></span>
+              </div>
+            </div>
+          </form>
+
+                  </div>
+
+                  <div class="loginButtonContainer">
+            <a class="button track-login" href="/forums/login.php?action_source=Log%20In%20Button">Log In</a>
+            <a class="button primary signUp track-sign-up" href="/forums/register.php?action_source=Sign+Up+Button&eor=1">Sign Up</a>
+          </div>
+        
+      </div>
+
+    </header>
+  </div>
+<div class="headerOverlay"></div>
+
+      
+    
+      </body>
+</html>

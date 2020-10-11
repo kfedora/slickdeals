@@ -4,20 +4,20 @@ Cache-Control: no-store, private
 Content-Language: en-US
 RewriteTestHook: c94ca081
 RewriteTeamHook: af65aaf9
-X-EdgeConnect-MidMile-RTT: 67
-X-EdgeConnect-Origin-MEX-Latency: 378
+X-EdgeConnect-MidMile-RTT: 19
+X-EdgeConnect-Origin-MEX-Latency: 350
 Vary: Accept-Encoding
-Date: Sat, 10 Oct 2020 22:58:02 GMT
-Content-Length: 31930
+Date: Sun, 11 Oct 2020 03:37:14 GMT
+Content-Length: 33251
 Connection: keep-alive
-Set-Cookie: cca_device_id=43dd7de3-e5c9-4407-ac85-65946414d88a; Max-Age=2592000; Expires=Mon, 09-Nov-2020 22:58:02 GMT; Path=/creditcard; Secure; HttpOnly
-Set-Cookie: cca_session_time=eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiZGlyIn0..FsKbVOXcgpUkhjDz.jOqcSOKDmJ9oImhWvNu4qdrj6DolgrmrQnhwY2pchgS0oIeCRiZLtkV-XttNtEIZT0WwQivoDe53-KXr92RaPU0abq22rlqK634Z0b2BOfaVWTuL2cOibotXI5_LeOxBWhdhUFg_NdHR5kwADkV5fIERTf0r8x_XQFDaY2sQVaQXN2OzycVdu3qKaxDoHF1d8kyGhsvyd40rE6zSjhDIYZyKK7O-b-Z8rXdQtesySARsuIkkjOujQ7t04dZeK4_o-rpHziIkGjA6t9TIkvwDhTZxQgGyJ6EKrhtz.2Nr2Pqg9xBggvD9qwJa0SA; Path=/creditcard; Secure; HttpOnly
+Set-Cookie: cca_device_id=d0cb3aab-b986-427a-8cf9-8611515751d3; Max-Age=2592000; Expires=Tue, 10-Nov-2020 03:37:14 GMT; Path=/creditcard; Secure; HttpOnly
+Set-Cookie: cca_session_time=eyJjdHkiOiJKV1QiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiZGlyIn0..C4k-MoO-idPp_hA3.gcgdGrYud5RChC_3qmtbSnjR0abKBy6apekmv_kqzGNRzta_a0uMKaStiyZb2VPrmrY6YcCGDcKBMorKv6sMAIuLhiwVUDDBD-3vYwWTpNKMMs-zN3VUymWB1K8AUCPADSxgdVg5CeYwwXJHMsRAqN7-6pW8-_6fYCFucS6iSv3jQNhddVVgYjYZUmDcSaeJ2s4wH4eLyoanH66UhN_FgwnwhTR6UjP7SM18FHnZfoVW0COrlCQp3kvxRa0it0sfhIINOfN9QmasKZjmPdWJtjc91F9P8QS286fH.CEXTdQlqsODn7tK3QnAM5Q; Path=/creditcard; Secure; HttpOnly
 Set-Cookie: cca_persist=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/creditcard; Secure; HttpOnly
-Set-Cookie: cca_app_state=%7B%22cc%22%3A%22AA1001%22%2C%22uid%22%3A%22fc6d26f3-44bb-4b5b-8d53-14a106752899%22%2C%22cdate%22%3A%222020-10-10T22%3A58%3A02.572Z%22%2C%22nordLoad%22%3A%22false%22%2C%22mdate%22%3A%222020-10-10T22%3A58%3A02.572Z%22%7D; Path=/creditcard; Secure; HttpOnly
+Set-Cookie: cca_app_state=%7B%22cc%22%3A%22AA1001%22%2C%22uid%22%3A%2205871c87-e540-4e0c-b423-34f7bb785c73%22%2C%22cdate%22%3A%222020-10-11T03%3A37%3A14.289Z%22%2C%22nordLoad%22%3A%22false%22%2C%22mdate%22%3A%222020-10-11T03%3A37%3A14.29Z%22%7D; Path=/creditcard; Secure; HttpOnly
 Set-Cookie: shopping-bag-migration=shopperId=&isMigrated=true; expires=Mon, 31-Dec-2038 23:59:59 GMT; path=/
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=68
-Server-Timing: origin; dur=378
+Server-Timing: edge; dur=22
+Server-Timing: origin; dur=350
 Timing-Allow-Origin: *
 Content-Security-Policy: upgrade-insecure-requests
 Strict-Transport-Security: max-age=600 ; includeSubDomains
@@ -267,9 +267,6 @@ Strict-Transport-Security: max-age=600 ; includeSubDomains
         <div class="col-md-7 col-xs-12 landing-40-10-30-0">
           <div class="page-header">
               <h1 class="landing-h1">Apply for a Nordstrom credit card today!</h1>
-              <p class="landing-body" style="margin-top:10px;">
-                Earn <strong>3 points per dollar</strong> spent with us.
-              </p>
           </div>
           <div>
             <div class="landing-header-icons">
@@ -360,7 +357,6 @@ Strict-Transport-Security: max-age=600 ; includeSubDomains
         </div>
 
         <div class="row nm landing-section text-center">
-          <div class="col-md-1"></div>
           <div class="col-md-4 col-xs-12">
             <img class="landing-points-icons" src="static/assets/3-point-large@2x.png" alt="3 points">
             <h3 class="landing-section-title">Earn 3 points per dollar</h3>
@@ -369,7 +365,14 @@ Strict-Transport-Security: max-age=600 ; includeSubDomains
               online and in stores.
             </div>
           </div>
-          <div class="col-md-2"></div>
+          <div class="col-md-4 col-xs-12">
+            <img class="landing-points-icons" src="static/assets/2-point-large@2x.png" alt="2 points">
+              <h3 class="landing-section-title">Earn 2 points per dollar</h3>
+              <div class="landing-body">
+                on travel, dining and entertainment purchases.&dagger;&dagger;**<br>
+                <span style="font-style: italic;">Nordstrom Visa credit card exclusive</span>
+              </div>
+          </div>
           <div class="col-md-4 col-xs-12">
             <img class="landing-points-icons" src="static/assets/1-point-large@2x.png" alt="1 point">
             <h3 class="landing-section-title">Earn 1 point per dollar</h3>
@@ -378,15 +381,14 @@ Strict-Transport-Security: max-age=600 ; includeSubDomains
               <span style="font-style: italic;">Nordstrom Visa credit card exclusive</span>
             </div>
           </div>
-          <div class="col-md-1"></div>
         </div>
 
         <div class="row nm landing-section">
           <div class="col-md-12 col-xs-12">
             <div class="landing-body landing-middle text-center">
-              Subject to change. For more details,
-              go to <a href="https://www.nordstrom.com/c/rewards-terms-conditions" target="_blank">nordstrom.com/nordyterms</a>.
-            </div>
+              &dagger;&dagger;Effective October 28, 2020, travel, dining and entertainment purchases
+              will earn 1 point per dollar. For more details,
+              go to <a href="https://www.nordstrom.com/c/rewards-terms-conditions" target="_blank">nordstrom.com/nordyterms</a>.</div>
           </div>
         </div>
 
@@ -433,7 +435,7 @@ Strict-Transport-Security: max-age=600 ; includeSubDomains
       <div class="row nm">
         <table class="table" id="stickyFooterStart">
           <thead>
-            <tr class="row col-12 nm" id="table-header" data-uk-sticky="{media: '(max-width: 768px)', boundary: '#boundary'}">
+            <tr class="row col-12 nm" id="table-header" data-uk-sticky="{boundary: '#boundary'}">
               <th class="col-6"></th>
               <th class="col-3 text-center">
                 <img id="compare-table" class="card-img" id="visaImg" src="static/assets/CREDIT_0520_Visa-Signature-Card_USA_FLAT@2x.png" alt="Visa credit card">
@@ -555,6 +557,24 @@ Strict-Transport-Security: max-age=600 ; includeSubDomains
             <tr class="row col-12 nm">
               <td class="col-6">
                 <div class="landing-table-icons">
+                  <img class="points-icon" src="static/assets/2-points@2x.png" alt="2 points icon">
+                </div>
+                <div class="landing-table-content">
+                  <h4 class="landing-table-title">
+                    2 points per dollar&dagger;&dagger;**
+                  </h4>
+                  <div class="landing-table-subtitle">
+                    on travel, dining and entertainment purchases.
+                  </div>
+                </div>
+              </td>
+              <td class="col-3 text-center"><div class="card-dot" aria-label="Check marked"></div></td>
+              <td class="col-3 text-center"></td>
+            </tr>
+
+            <tr class="row col-12 nm">
+              <td class="col-6">
+                <div class="landing-table-icons">
                   <img class="points-icon" src="static/assets/1-point@2x.png" alt="1 point icon">
                 </div>
                 <div class="landing-table-content">
@@ -635,6 +655,8 @@ Strict-Transport-Security: max-age=600 ; includeSubDomains
             *Bonus Note is unlocked for use on future purchase when you apply for a Nordstrom credit card,
             get approved, and shop with us on your new card the same day.
             Current Nordstrom credit cardmembers are not eligible for this offer.
+          </p>
+          <p>&dagger;&dagger;**Restrictions apply and subject to change. For complete Nordy Club program details, go to <a href="https://www.nordstrom.com/content/rewards-terms-conditions" target="blank">nordstrom.com/nordyterms</a>.
           </p>
           <!--<p>**Current Nordstrom credit cardmembers are not eligible for this offer.</p>-->
           <p>&dagger;Visa Signature cards and Visa Platinum cards have the same credit card terms and conditions.
