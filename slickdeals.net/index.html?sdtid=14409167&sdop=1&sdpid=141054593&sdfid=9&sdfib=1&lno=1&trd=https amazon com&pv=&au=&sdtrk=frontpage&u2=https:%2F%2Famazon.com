@@ -3,16 +3,16 @@ Content-Type: text/html
 Content-Length: 2671
 Connection: keep-alive
 Server: Server
-Date: Mon, 12 Oct 2020 07:44:22 GMT
-x-amz-rid: 9JWDED7JV76EGW96CNNK
+Date: Mon, 12 Oct 2020 09:10:49 GMT
+x-amz-rid: D1QE56101P24V5S6TGAM
 Vary: Content-Type,Accept-Encoding,X-Amzn-CDN-Cache,X-Amzn-AX-Treatment,User-Agent
 Last-Modified: Wed, 30 Sep 2020 23:54:00 GMT
 ETag: "a6f-5b0909d09d600"
 Accept-Ranges: bytes
 X-Cache: Error from cloudfront
-Via: 1.1 0570243541aa4edb51d3f1e60aee5a33.cloudfront.net (CloudFront)
-X-Amz-Cf-Pop: IAD79-C2
-X-Amz-Cf-Id: NjcZRk7sbB8CL7GQ9WnczCOzXQKLtEoIXFq4_L4u7Ag4V3wV5pjVuw==
+Via: 1.1 22e9d361a9c4153886c1c8aa0eb4ffa8.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD89-C3
+X-Amz-Cf-Id: FEDp2NJ6XNdHsdSHapp5JbjH44Al5cr9Rpp_fU-gLhsIKHfNwhd1sA==
 
 <!--
         To discuss automated access to Amazon data please contact api-services-support@amazon.com.
