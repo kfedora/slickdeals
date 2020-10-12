@@ -1,18 +1,19 @@
 HTTP/1.1 200 OK
 Content-Type: text/html; charset=utf-8
-Last-Modified: Mon, 12 Oct 2020 14:06:07 GMT
+Last-Modified: Mon, 12 Oct 2020 18:10:31 GMT
 Content-Security-Policy-Report-Only: default-src data: https: 'self' 'unsafe-inline' 'unsafe-eval'; report-uri /mixed-content-collector;
 Content-Security-Policy: upgrade-insecure-requests;
 Access-Control-Allow-Origin: *
+X-Akamai-Path-Stats: [3:52883:631117]
 X-Akamai-Transformed: 9 - 0 pmb=mTOE,1mRUM,2
 Cache-Control: private, max-age=300
-Date: Mon, 12 Oct 2020 14:06:08 GMT
+Date: Mon, 12 Oct 2020 18:10:32 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=190
-Server-Timing: origin; dur=878
+Server-Timing: edge; dur=52
+Server-Timing: origin; dur=685
 X-Akam-SW-Version: 0.5.0
 Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
 Vary: Accept-Encoding; User-Agent
@@ -281,11 +282,11 @@ html .checkout-container.tablet .left-container, html .checkout-container.tablet
 
 
   <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
-  <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="ES2KS-7ZHWV-CJWMG-6EA78-DGF9D",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"ES2KS-7ZHWV-CJWMG-6EA78-DGF9D",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="gog26mdimne64x4emlhq-f-f50968361-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"57452","ak.ai":parseInt("177308",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"24167355","ak.r":38462,"ak.a2":e,"ak.m":"a","ak.n":"essl","ak.bpcip":"51.141.175.0","ak.cport":1037,"ak.gh":"184.29.141.87","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1602511567","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==5gNpDYYoEiJI3MHgyxOOF+lB15/2OCnxg3B4XyiQB0TQLe3nMscQw3pVSM5xTbc8bTvlS8huvnDuJ7jr2ADxzT1AddjxW5iqGwd4xkpSXoelZupdta9eLcd5foCFO1TUhC0WK392LI3R2G4zNtO9wesSK2V2E8wUDyqjz0gPh4mBNwFp1l9fmdbeqCOL8bNdyVvd4dkxzGBpKdwtKJx8ikm9zH9ZBxAqHW+8E47NEhooV3b9JJ6r2yeCnTURQMYO0Lt/NfxVGkavT+nCl67RCmPo+xqp5ipCryi/kvTa00hwdN4cEelvbTfRCJmJQVgrb7WGcLGJJ2kXCUCpItmVSf3OJQx6b7Z4wNdAUiFHJbgRpnqiXD7A4QhacCK1pl4Z3bDGT/4t6CZnkqHklc8KSNQBoLtUP3z9Uj1F6KtRbQM=","ak.pv":"434","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var _={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!_.i){var a=BOOMR.subscribe;a("before_beacon",_.av,null,null),a("onbeacon",_.rv,null,null),_.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+  <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="ES2KS-7ZHWV-CJWMG-6EA78-DGF9D",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"ES2KS-7ZHWV-CJWMG-6EA78-DGF9D",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="gog23lfyk3enyx4etqlq-f-f108f9f39-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"57452","ak.ai":parseInt("177308",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"43f6b8e9","ak.r":34125,"ak.a2":e,"ak.m":"a","ak.n":"essl","ak.bpcip":"51.141.173.0","ak.cport":2007,"ak.gh":"23.36.3.12","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1602526231","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==Hmm5/0LuE9gl3oHrlFKOAb39Gubxois/gV3FQF8hkHupD3Dv8ncv72WRDtPXfXdvZhVJNZBs9qkT8Gt9G6fO85jGtLUS0aLcg9CmQBAXYWE/Tulanouv77ApNTKw04gWXgBJaiNwluoPROVyEtkgIXlkKCQ9kw01Hr/YhonLBOli2T0RnSud5gmTkf8qjNfVl4GQ0zA8YpwTX+/JKgovYIH+8sJ0dReuHPfm9fsJKVF2Hujr0z5iuw99Qx9YkCa1ZGzJM8+smMWzQRpvZGPt96r0b02VCscaRh4OOb+dcIQEqxdMoZTwN5Fu+vVsX2gpSnnjAYbDuRob172DtwcUKhbZOZ4gUPkPWRaUpeMYChaK1Ee+AwoBq+o6JAOm8Jnj3Ls082rVuV8pJvyNEUnZySHxKHmGWoPs6akYPWft6qo=","ak.pv":"434","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var _={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!_.i){var a=BOOMR.subscribe;a("before_beacon",_.av,null,null),a("onbeacon",_.rv,null,null),_.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
 <body class=" pd-v2" id="products-show">
 
     <div class="js-disabled-message">We use JavaScript to create the most functional website possible for our customers. JavaScript enables you to fully navigate and make a purchase on our site. If disabled the content or the functionality of the website can be limited or unavailable. Please enable JavaScript in your browser for the best possible experience. Thank you!</div>
-    <div id="server-name" title="HD300 - 10/12/2020 10:06:07 AM"></div>
+    <div id="server-name" title="HD305 - 10/12/2020 2:10:31 PM"></div>
 
     
 
@@ -5019,32 +5020,32 @@ jQuery(document).ready(function($) {
                                         </li>
                                         <li class="image-container">
                                             <label>
-                                                <input type="radio" name="image" href="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308155244~709032_alt2.jpg" data-zoom="[&quot;https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodzoom/-~709032_alt2.jpg&quot;,&quot;https://i04.hsncdn.com/is/image/HomeShoppingNetwork/rocs1200/-~709032_alt2.jpg&quot;]">
-                                                <img alt="image 2 of 6" height="54" src="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/arlo-pro-3-floodlight-2k-security-camera-d-2020060308155244~709032_alt2.jpg" width="54">
-                                            </label>
-                                        </li>
-                                        <li class="image-container">
-                                            <label>
-                                                <input type="radio" name="image" href="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308160405~709032_alt4.jpg" data-zoom="[&quot;https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodzoom/-~709032_alt4.jpg&quot;,&quot;https://i02.hsncdn.com/is/image/HomeShoppingNetwork/rocs1200/-~709032_alt4.jpg&quot;]">
-                                                <img alt="image 3 of 6" height="54" src="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/arlo-pro-3-floodlight-2k-security-camera-d-2020060308160405~709032_alt4.jpg" width="54">
-                                            </label>
-                                        </li>
-                                        <li class="image-container">
-                                            <label>
-                                                <input type="radio" name="image" href="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154613~709032_alt3.jpg" data-zoom="[&quot;https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodzoom/-~709032_alt3.jpg&quot;,&quot;https://i03.hsncdn.com/is/image/HomeShoppingNetwork/rocs1200/-~709032_alt3.jpg&quot;]">
-                                                <img alt="image 4 of 6" height="54" src="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154613~709032_alt3.jpg" width="54">
-                                            </label>
-                                        </li>
-                                        <li class="image-container">
-                                            <label>
                                                 <input type="radio" name="image" href="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154398~709032_alt5.jpg" data-zoom="[&quot;https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodzoom/-~709032_alt5.jpg&quot;,&quot;https://i01.hsncdn.com/is/image/HomeShoppingNetwork/rocs1200/-~709032_alt5.jpg&quot;]">
-                                                <img alt="image 5 of 6" height="54" src="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154398~709032_alt5.jpg" width="54">
+                                                <img alt="image 2 of 6" height="54" src="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154398~709032_alt5.jpg" width="54">
                                             </label>
                                         </li>
                                         <li class="image-container">
                                             <label>
                                                 <input type="radio" name="image" href="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154865~709032_alt1.jpg" data-zoom="[&quot;https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodzoom/-~709032_alt1.jpg&quot;,&quot;https://i01.hsncdn.com/is/image/HomeShoppingNetwork/rocs1200/-~709032_alt1.jpg&quot;]">
-                                                <img alt="image 6 of 6" height="54" src="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154865~709032_alt1.jpg" width="54">
+                                                <img alt="image 3 of 6" height="54" src="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154865~709032_alt1.jpg" width="54">
+                                            </label>
+                                        </li>
+                                        <li class="image-container">
+                                            <label>
+                                                <input type="radio" name="image" href="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308155244~709032_alt2.jpg" data-zoom="[&quot;https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodzoom/-~709032_alt2.jpg&quot;,&quot;https://i04.hsncdn.com/is/image/HomeShoppingNetwork/rocs1200/-~709032_alt2.jpg&quot;]">
+                                                <img alt="image 4 of 6" height="54" src="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/arlo-pro-3-floodlight-2k-security-camera-d-2020060308155244~709032_alt2.jpg" width="54">
+                                            </label>
+                                        </li>
+                                        <li class="image-container">
+                                            <label>
+                                                <input type="radio" name="image" href="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308160405~709032_alt4.jpg" data-zoom="[&quot;https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodzoom/-~709032_alt4.jpg&quot;,&quot;https://i02.hsncdn.com/is/image/HomeShoppingNetwork/rocs1200/-~709032_alt4.jpg&quot;]">
+                                                <img alt="image 5 of 6" height="54" src="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/arlo-pro-3-floodlight-2k-security-camera-d-2020060308160405~709032_alt4.jpg" width="54">
+                                            </label>
+                                        </li>
+                                        <li class="image-container">
+                                            <label>
+                                                <input type="radio" name="image" href="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154613~709032_alt3.jpg" data-zoom="[&quot;https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodzoom/-~709032_alt3.jpg&quot;,&quot;https://i03.hsncdn.com/is/image/HomeShoppingNetwork/rocs1200/-~709032_alt3.jpg&quot;]">
+                                                <img alt="image 6 of 6" height="54" src="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodthum/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154613~709032_alt3.jpg" width="54">
                                             </label>
                                         </li>
                                 </ul>
@@ -5108,17 +5109,17 @@ jQuery(document).ready(function($) {
                 </div>
 
 
-<div id="favorite_94ed2da9d9bc48aaa23997aefa0a865b" class="favorite-wrapper">
+<div id="favorite_1e01b9762eed4e93b2694c61cd806a62" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9444835" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9444835],&quot;product_sku&quot;:[709032],&quot;product_brand&quot;:[&quot;Arlo&quot;],&quot;product_name&quot;:[&quot;Arlo Pro 3 Floodlight 2K Security Camera&quot;],&quot;product_sale_price&quot;:[249.99],&quot;product_original_price&quot;:[249.99],&quot;product_shipping_handling&quot;:[&quot;12.47&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Arlo&quot;,&quot;Id&quot;:16257}],&quot;product_brand_name&quot;:[&quot;Arlo&quot;],&quot;product_brand_id&quot;:[16257],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Smart Home&quot;,&quot;Id&quot;:&quot;EC0447&quot;},{&quot;Name&quot;:&quot;Smart Home Security&quot;,&quot;Id&quot;:&quot;EC0561&quot;},{&quot;Name&quot;:&quot;Security Cameras&quot;,&quot;Id&quot;:&quot;EC0535&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0535&quot;],&quot;product_primary_category_name&quot;:[&quot;Security Cameras&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[&quot;Sold Out&quot;],&quot;product_rating_average&quot;:[4.2],&quot;product_rating_count&quot;:[5],&quot;product_code_highest_flexpay&quot;:[3],&quot;product_code_first_flexpay_amount&quot;:[83.33],&quot;product_sale_time_remaining&quot;:[null],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[false],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0,&quot;matrix_id&quot;:[0],&quot;low_inventory_level&quot;:[0]}" data-tooltip="Add to Favorites" data-cmprefix="soldout" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9444835" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9444835],&quot;product_sku&quot;:[709032],&quot;product_brand&quot;:[&quot;Arlo&quot;],&quot;product_name&quot;:[&quot;Arlo Pro 3 Floodlight 2K Security Camera&quot;],&quot;product_sale_price&quot;:[249.99],&quot;product_original_price&quot;:[249.99],&quot;product_shipping_handling&quot;:[&quot;12.47&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Arlo&quot;,&quot;Id&quot;:16257}],&quot;product_brand_name&quot;:[&quot;Arlo&quot;],&quot;product_brand_id&quot;:[16257],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Smart Home&quot;,&quot;Id&quot;:&quot;EC0447&quot;},{&quot;Name&quot;:&quot;Smart Home Security&quot;,&quot;Id&quot;:&quot;EC0561&quot;},{&quot;Name&quot;:&quot;Security Cameras&quot;,&quot;Id&quot;:&quot;EC0535&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0535&quot;],&quot;product_primary_category_name&quot;:[&quot;Security Cameras&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[&quot;Sold Out&quot;],&quot;product_rating_average&quot;:[4.2],&quot;product_rating_count&quot;:[5],&quot;product_code_highest_flexpay&quot;:[3],&quot;product_code_first_flexpay_amount&quot;:[83.33],&quot;product_sale_time_remaining&quot;:[null],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[false],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0,&quot;matrix_id&quot;:[0],&quot;low_inventory_level&quot;:[0]}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_94ed2da9d9bc48aaa23997aefa0a865b;
+  var favorite_1e01b9762eed4e93b2694c61cd806a62;
     jQuery(document).ready(function () {
-    favorite_94ed2da9d9bc48aaa23997aefa0a865b = new HSN.Widget.Favorite({
+    favorite_1e01b9762eed4e93b2694c61cd806a62 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_94ed2da9d9bc48aaa23997aefa0a865b'
+      container: '#favorite_1e01b9762eed4e93b2694c61cd806a62'
     });
   });
 </script>
@@ -5761,9 +5762,9 @@ Protect your home or business with the Arlo Pro 3 floodlight camera. This wire-f
         <div class="sort-form">
             <label for="template-product-detail-reviews-sort">Sort by:</label>
             <select id="template-product-detail-reviews-sort" name="template-product-detail-reviews-sort"><option value="Ascending,Date">Date - Low to High</option>
-<option value="Descending,Date">Date - High to Low</option>
+<option selected="selected" value="Descending,Date">Date - High to Low</option>
 <option value="Ascending,Rating">Rating - Low to High</option>
-<option selected="selected" value="Descending,Rating">Rating - High to Low</option>
+<option value="Descending,Rating">Rating - High to Low</option>
 <option value="Ascending,Helpful">Helpful - Low to High</option>
 <option value="Descending,Helpful">Helpful - High to Low</option>
 </select>
@@ -5949,64 +5950,6 @@ Protect your home or business with the Arlo Pro 3 floodlight camera. This wire-f
 
 
     <div class="rateit bigstars" 
-         aria-label="customer rated this 5 out of 5">
-        <div class="rateit-range">
-            <div class="rateit-selected rateit-preset" style="width:100%">
-            </div>
-        </div>
-    </div>
-
-                        <time tabindex="0" datetime="2020-06-18">6/18/2020</time>
-                            <em tabindex="0" class="baseball-card-no-popup" data-tooltip="Tsmooth1 has chosen to keep their profile private.">Tsmooth1, NJ</em>
-                    </div>
-                    <div class="review-left">
-                        <h3 class="title" tabindex="0">Arlo Floodlight</h3>
-                        <div class="copy">
-                            <p tabindex="0" style="word-wrap:break-word;">At first l had problems setting it up so I reached out to the support team from Arlo and he was a life saver,  we spent over 2 hours trying to figure it out and I was getting frustrated, but he hung on in the with me until the Floodlight was set up. It was my original phone was not reading the  Scan Code so I had to use another phone and it read it instantly read it and I heard the chime to move on to the next phase.. I love the Floodlight and it does everything as advertise.</p>
-                        </div>
-                        <div class="helpful">
-                            <span class="rate-helpful" tabindex="0">Was this review helpful?</span>
-                            <div class="voting-container">
-                                <div class="rate">
-                                    <div class="like">
-                                        <a data-review-id="7bfc9625-da5b-4a12-aba6-f28e3f71eb54" data-was-helpful="true" tabindex="0" aria-label="Vote Yes">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17">
-    <g fill="#0077C8" fill-rule="nonzero">
-        <path d="M14 5.937h-3.5V3.925c0-1.56-.95-3.372-2.7-3.875-.3-.1-.65-.05-.9.151-.25.202-.4.453-.4.805v2.768L4 6.994v7.798l.95.504c.95.452 2 .704 3.05.704h5c1.1 0 2.05-.805 2.25-1.962L16 8v-.05c0-1.107-.9-2.013-2-2.013zM2.5 7h-2c-.3 0-.5.21-.5.526v8.948c0 .315.2.526.5.526h2c.3 0 .5-.21.5-.526V7.526C3 7.211 2.8 7 2.5 7z"/>
-    </g>
-</svg>
-                                        </a>
-                                    </div>
-                                    <div class="like">
-                                        <a data-review-id="7bfc9625-da5b-4a12-aba6-f28e3f71eb54" data-was-helpful="false" tabindex="0" aria-label="Vote No">
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-    <g fill="#0077C8" fill-rule="nonzero">
-        <path d="M2 10h3.5v2c0 1.55.95 3.35 2.7 3.85.3.1.65.05.9-.15s.4-.45.4-.8v-2.75l2.5-3.2V1.2l-.95-.5C10.1.25 9.05 0 8 0H3C1.9 0 .95.8.75 1.95l-.75 6V8c0 1.1.9 2 2 2zM13.5 9.5h2c.3 0 .5-.2.5-.5V.5c0-.3-.2-.5-.5-.5h-2c-.3 0-.5.2-.5.5V9c0 .3.2.5.5.5z"/>
-    </g>
-</svg>
-                                        </a>
-                                    </div>
-                                </div>
-
-                                    <div class="report-container">
-                                        <span class="report" data-review-id="7bfc9625-da5b-4a12-aba6-f28e3f71eb54">
-                                            <a tabindex="0">REPORT</a>
-                                        </span>
-                                    </div>
-                            </div>
-
-                            <span class="foundHelpful" tabindex="0">15 out of 15 found this review helpful</span>
-                            <br />
-                            <span class="message"></span>
-
-                        </div>
-                    </div>
-                </li>
-                <li class="clearfix review-item">
-                    <div class="info">
-
-
-    <div class="rateit bigstars" 
          aria-label="customer rated this 1 out of 5">
         <div class="rateit-range">
             <div class="rateit-selected rateit-preset" style="width:20%">
@@ -6054,6 +5997,64 @@ Protect your home or business with the Arlo Pro 3 floodlight camera. This wire-f
                             </div>
 
                             <span class="foundHelpful" tabindex="0">1 out of 2 found this review helpful</span>
+                            <br />
+                            <span class="message"></span>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="clearfix review-item">
+                    <div class="info">
+
+
+    <div class="rateit bigstars" 
+         aria-label="customer rated this 5 out of 5">
+        <div class="rateit-range">
+            <div class="rateit-selected rateit-preset" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+                        <time tabindex="0" datetime="2020-06-18">6/18/2020</time>
+                            <em tabindex="0" class="baseball-card-no-popup" data-tooltip="Tsmooth1 has chosen to keep their profile private.">Tsmooth1, NJ</em>
+                    </div>
+                    <div class="review-left">
+                        <h3 class="title" tabindex="0">Arlo Floodlight</h3>
+                        <div class="copy">
+                            <p tabindex="0" style="word-wrap:break-word;">At first l had problems setting it up so I reached out to the support team from Arlo and he was a life saver,  we spent over 2 hours trying to figure it out and I was getting frustrated, but he hung on in the with me until the Floodlight was set up. It was my original phone was not reading the  Scan Code so I had to use another phone and it read it instantly read it and I heard the chime to move on to the next phase.. I love the Floodlight and it does everything as advertise.</p>
+                        </div>
+                        <div class="helpful">
+                            <span class="rate-helpful" tabindex="0">Was this review helpful?</span>
+                            <div class="voting-container">
+                                <div class="rate">
+                                    <div class="like">
+                                        <a data-review-id="7bfc9625-da5b-4a12-aba6-f28e3f71eb54" data-was-helpful="true" tabindex="0" aria-label="Vote Yes">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17">
+    <g fill="#0077C8" fill-rule="nonzero">
+        <path d="M14 5.937h-3.5V3.925c0-1.56-.95-3.372-2.7-3.875-.3-.1-.65-.05-.9.151-.25.202-.4.453-.4.805v2.768L4 6.994v7.798l.95.504c.95.452 2 .704 3.05.704h5c1.1 0 2.05-.805 2.25-1.962L16 8v-.05c0-1.107-.9-2.013-2-2.013zM2.5 7h-2c-.3 0-.5.21-.5.526v8.948c0 .315.2.526.5.526h2c.3 0 .5-.21.5-.526V7.526C3 7.211 2.8 7 2.5 7z"/>
+    </g>
+</svg>
+                                        </a>
+                                    </div>
+                                    <div class="like">
+                                        <a data-review-id="7bfc9625-da5b-4a12-aba6-f28e3f71eb54" data-was-helpful="false" tabindex="0" aria-label="Vote No">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g fill="#0077C8" fill-rule="nonzero">
+        <path d="M2 10h3.5v2c0 1.55.95 3.35 2.7 3.85.3.1.65.05.9-.15s.4-.45.4-.8v-2.75l2.5-3.2V1.2l-.95-.5C10.1.25 9.05 0 8 0H3C1.9 0 .95.8.75 1.95l-.75 6V8c0 1.1.9 2 2 2zM13.5 9.5h2c.3 0 .5-.2.5-.5V.5c0-.3-.2-.5-.5-.5h-2c-.3 0-.5.2-.5.5V9c0 .3.2.5.5.5z"/>
+    </g>
+</svg>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                    <div class="report-container">
+                                        <span class="report" data-review-id="7bfc9625-da5b-4a12-aba6-f28e3f71eb54">
+                                            <a tabindex="0">REPORT</a>
+                                        </span>
+                                    </div>
+                            </div>
+
+                            <span class="foundHelpful" tabindex="0">15 out of 15 found this review helpful</span>
                             <br />
                             <span class="message"></span>
 
@@ -6120,17 +6121,17 @@ Protect your home or business with the Arlo Pro 3 floodlight camera. This wire-f
             <div class="brand-info">
 
 
-<div id="favorite_5f2b7cd87a9942f7b5b6e8c6f0a5dbd5" class="favorite-wrapper">
+<div id="favorite_c0262082447a4c40b00cb6e5c8b5ce53" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="16257" data-object-type="2" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_brand_attribute&quot;:[{&quot;Id&quot;:16257}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[16257],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="ProductPage" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="16257" data-object-type="2" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_brand_attribute&quot;:[{&quot;Id&quot;:16257}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[16257],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_5f2b7cd87a9942f7b5b6e8c6f0a5dbd5;
+  var favorite_c0262082447a4c40b00cb6e5c8b5ce53;
     jQuery(document).ready(function () {
-    favorite_5f2b7cd87a9942f7b5b6e8c6f0a5dbd5 = new HSN.Widget.Favorite({
+    favorite_c0262082447a4c40b00cb6e5c8b5ce53 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_5f2b7cd87a9942f7b5b6e8c6f0a5dbd5'
+      container: '#favorite_c0262082447a4c40b00cb6e5c8b5ce53'
     });
   });
 </script>
@@ -7456,13 +7457,13 @@ Protect your home or business with the Arlo Pro 3 floodlight camera. This wire-f
   "is_onair_today": [
     false
   ],
-  "ab_test_value_cms": "TestA",
+  "ab_test_value_cms": "TestB",
   "ab_test_value_1": "TestA",
   "ab_test_value_2": "TestB",
-  "ab_test_value_3": "TestA",
+  "ab_test_value_3": "TestB",
   "ab_test_value_4": "TestC",
-  "ab_test_value_5": "TestA",
-  "ab_test_value_6": "TestA",
+  "ab_test_value_5": "TestB",
+  "ab_test_value_6": "TestB",
   "ab_test_value_7": "TestA",
   "error_type": 0,
   "matrix_id": [
@@ -7473,11 +7474,11 @@ Protect your home or business with the Arlo Pro 3 floodlight camera. This wire-f
   ],
   "product_image_url": [
     "https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-20200603081545723~709032.jpg",
+    "https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154398~709032_alt5.jpg",
+    "https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154865~709032_alt1.jpg",
     "https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308155244~709032_alt2.jpg",
     "https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308160405~709032_alt4.jpg",
-    "https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154613~709032_alt3.jpg",
-    "https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154398~709032_alt5.jpg",
-    "https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154865~709032_alt1.jpg"
+    "https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodfull/arlo-pro-3-floodlight-2k-security-camera-d-2020060308154613~709032_alt3.jpg"
   ]
 }];
 
