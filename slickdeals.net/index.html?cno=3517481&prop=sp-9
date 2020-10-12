@@ -1,19 +1,20 @@
 HTTP/1.1 200 OK
 Content-Type: text/html; charset=utf-8
-Last-Modified: Mon, 12 Oct 2020 09:16:08 GMT
+Last-Modified: Mon, 12 Oct 2020 14:00:42 GMT
 Content-Security-Policy-Report-Only: default-src data: https: 'self' 'unsafe-inline' 'unsafe-eval'; report-uri /mixed-content-collector;
 Content-Security-Policy: upgrade-insecure-requests;
 Access-Control-Allow-Origin: *
 X-Akam-SW-Version: 0.5.0
+X-Akamai-Path-Stats: [1:5329:475671]
 X-Akamai-Transformed: 9 - 0 pmb=mTOE,1mRUM,2
 Cache-Control: private, max-age=600
-Date: Mon, 12 Oct 2020 09:16:08 GMT
+Date: Mon, 12 Oct 2020 14:00:43 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
-Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=23
-Server-Timing: origin; dur=561
+Server-Timing: cdn-cache; desc=REVALIDATE
+Server-Timing: edge; dur=63
+Server-Timing: origin; dur=476
 Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
 Vary: Accept-Encoding; User-Agent
 
@@ -273,11 +274,11 @@ html .checkout-container.tablet .left-container, html .checkout-container.tablet
 
 
   <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
-  <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="ES2KS-7ZHWV-CJWMG-6EA78-DGF9D",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"ES2KS-7ZHWV-CJWMG-6EA78-DGF9D",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="fba6ehtip646gx4ed3ma-f-c6ecff507-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"57452","ak.ai":parseInt("177308",10),"ak.ol":"0","ak.cr":5,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"dc08455","ak.r":37293,"ak.a2":e,"ak.m":"a","ak.n":"essl","ak.bpcip":"40.65.226.0","ak.cport":1026,"ak.gh":"23.40.190.5","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1602494168","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==lSJlUADzfivDd8hq94hQGxm8I+pUoeM0sGbBqiOFC3VwKoIBDh6ApzsEI1s58gNHeuG1NEMB9Dqr7svRLQYG/HsiqKHTEEQ5txchox6jmqKcoSAWSOan7FiMJVTzhZRCzNqcW2ypA2O5cWgU3SPGteOkjKbGD/koewPtnI3A0YXQhs/0pvOYyNi7SvNyNMYDjN5qRmBuaz8HV1YUj/s3dUpxvlUqfMLO0hdmw+H1ZxCCA3Ep4WNd8mjW5Xjej3gX4xldS5NMjOZmiqMSpzdxtEXBlPgzyXSAuxIdOOdBWDVh2KDETtYTsmVD2bJ86PUauRjJoU/jDJVPmGo66D2+Ciih1nv4W3BROI6PMfF7fcFQWCoZTBjm4cT9V30yXLt9wAaiCgvEKVPN5AmJyF9c3JsiQn4g6fI+igqfIHr8OmM=","ak.pv":"434","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var _={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!_.i){var a=BOOMR.subscribe;a("before_beacon",_.av,null,null),a("onbeacon",_.rv,null,null),_.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+  <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="ES2KS-7ZHWV-CJWMG-6EA78-DGF9D",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"ES2KS-7ZHWV-CJWMG-6EA78-DGF9D",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="gog26mdimne64x4emgfa-f-2804edcae-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"57452","ak.ai":parseInt("177308",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"6a937d80","ak.r":38462,"ak.a2":e,"ak.m":"a","ak.n":"essl","ak.bpcip":"51.141.175.0","ak.cport":1026,"ak.gh":"184.29.141.21","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1602511242","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==l1eCHA6wEe6Tc41k5iU3+tldFet2kUwK4e/kdZ6rDLCCOMwXKWlZA68ZEWaUwI63+1G3o3xUptTnjN143G+CQSdYFqUVcxxCMz6Ek17I446kVUu5OGZExVN68ffAmEUC8HmjoS/Q7uhQ9K9v8zA5pB61rmah8kAQO3JcfLuH2unv7aiwZPT6LtgzfTOm0kBchRXhlXK7eiPkSOlmSFETpSI5eZkIMNNo0X70ZyP6xjvimskDpUwwh3wciNqTfObrqQM15GHy/XHr0YkuLniylMY/pixcDPAChfLlFcUDBL/D1nno7RSWVoUe2qVuUOsv4nfprIMl9oL2vA+PprntHQ/d5q8ekDBPtB0bhsoMfjNbGELBwt83lQyw2CLIYwpy7hdp98WcHFd8Q9bL/gTks1s01pJ93BxNY1bnI6NIVks=","ak.pv":"434","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var _={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!_.i){var a=BOOMR.subscribe;a("before_beacon",_.av,null,null),a("onbeacon",_.rv,null,null),_.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
 <body class="theme-2d2926  " id="CmsShops">
 
     <div class="js-disabled-message">We use JavaScript to create the most functional website possible for our customers. JavaScript enables you to fully navigate and make a purchase on our site. If disabled the content or the functionality of the website can be limited or unavailable. Please enable JavaScript in your browser for the best possible experience. Thank you!</div>
-    <div id="server-name" title="HD106 - 10/12/2020 5:16:08 AM"></div>
+    <div id="server-name" title="HD303 - 10/12/2020 10:00:43 AM"></div>
 
     
 
@@ -4693,8 +4694,8 @@ Printers</h1>
             <dd class="filter-group departments">
                 <ul>
                     
-        <li><a href="/shop/home-office-accessories/ec0504" manual_cm_sp="BreadBox-_-Departments-_-homeofficeaccessories" manual_cm_re="BreadBox-_-Departments-_-homeofficeaccessories" aria-label="Home Office Accessories with 193 products"><span class="name float-left" aria-hidden="true">Home Office Accessories</span> <span class="count float-left" aria-hidden="true">(193)</span></a></li>
-        <li><a href="/shop/home-phones/ec0448" manual_cm_sp="BreadBox-_-Departments-_-homephones" manual_cm_re="BreadBox-_-Departments-_-homephones" aria-label="Home Phones with 14 products"><span class="name float-left" aria-hidden="true">Home Phones</span> <span class="count float-left" aria-hidden="true">(14)</span></a></li>
+        <li><a href="/shop/home-office-accessories/ec0504" manual_cm_sp="BreadBox-_-Departments-_-homeofficeaccessories" manual_cm_re="BreadBox-_-Departments-_-homeofficeaccessories" aria-label="Home Office Accessories with 196 products"><span class="name float-left" aria-hidden="true">Home Office Accessories</span> <span class="count float-left" aria-hidden="true">(196)</span></a></li>
+        <li><a href="/shop/home-phones/ec0448" manual_cm_sp="BreadBox-_-Departments-_-homephones" manual_cm_re="BreadBox-_-Departments-_-homephones" aria-label="Home Phones with 15 products"><span class="name float-left" aria-hidden="true">Home Phones</span> <span class="count float-left" aria-hidden="true">(15)</span></a></li>
         <li class="active"><a href="/shop/printers/ec0454" manual_cm_sp="BreadBox-_-Departments-_-printers" manual_cm_re="BreadBox-_-Departments-_-printers" aria-label="Printers with 24 products"><span class="name float-left" aria-hidden="true">Printers</span> <span class="count float-left" aria-hidden="true">(24)</span></a></li>
         <li><a href="/shop/scanners/ec0458" manual_cm_sp="BreadBox-_-Departments-_-scanners" manual_cm_re="BreadBox-_-Departments-_-scanners" aria-label="Scanners with 5 products"><span class="name float-left" aria-hidden="true">Scanners</span> <span class="count float-left" aria-hidden="true">(5)</span></a></li>
         <li><a href="/shop/shredders/ec0455" manual_cm_sp="BreadBox-_-Departments-_-shredders" manual_cm_re="BreadBox-_-Departments-_-shredders" aria-label="Shredders with 18 products"><span class="name float-left" aria-hidden="true">Shredders</span> <span class="count float-left" aria-hidden="true">(18)</span></a></li>
@@ -4806,28 +4807,28 @@ Printers</h1>
             </a>
         </li>
         <li>
-            <a data-identity="4475" href="/shop/recently-on-tv-printers/ec0454-4475" rel="nofollow" role="checkbox" aria-label="Recently on TV with 2 products">
+            <a data-identity="4475" href="/shop/recently-on-tv-printers/ec0454-4475" rel="nofollow" role="checkbox" aria-label="Recently on TV with 1 products">
                 <label aria-hidden="true">
                     <span class="checkbox"><span class="checkbox-image"><input name="filter-4475" id="filter-4475" data-id="4475" data-name="Recently on TV" data-group-name="Popular Filters" data-is-attribute="true" data-cmname="recentlyontv" type="checkbox"  tabindex="-1"/></span></span>
                         <span class="attribute-filter-icon attribute-4475"></span>
 
                     <span class="filter-name float-left" title="Recently on TV">Recently on TV</span>
                         <span class="count float-left">
-                            (2)
+                            (1)
                         </span>
 
                 </label>
             </a>
         </li>
         <li>
-            <a data-identity="5544" href="/shop/sale-printers/ec0454-5544" rel="nofollow" role="checkbox" aria-label="Sale with 2 products">
+            <a data-identity="5544" href="/shop/sale-printers/ec0454-5544" rel="nofollow" role="checkbox" aria-label="Sale with 1 products">
                 <label aria-hidden="true">
                     <span class="checkbox"><span class="checkbox-image"><input name="filter-5544" id="filter-5544" data-id="5544" data-name="Sale" data-group-name="Popular Filters" data-is-attribute="true" data-cmname="sale" type="checkbox"  tabindex="-1"/></span></span>
                         <span class="attribute-filter-icon attribute-5544"></span>
 
                     <span class="filter-name float-left" title="Sale">Sale</span>
                         <span class="count float-left">
-                            (2)
+                            (1)
                         </span>
 
                 </label>
@@ -4970,14 +4971,14 @@ Printers</h1>
             </a>
         </li>
         <li>
-            <a data-identity="6665" href="/shop/100-199-printers/ec0454-6665" rel="nofollow" role="checkbox" aria-label="$100 - $199 with 11 products">
+            <a data-identity="6665" href="/shop/100-199-printers/ec0454-6665" rel="nofollow" role="checkbox" aria-label="$100 - $199 with 10 products">
                 <label aria-hidden="true">
                     <span class="checkbox"><span class="checkbox-image"><input name="filter-6665" id="filter-6665" data-id="6665" data-name="$100 - $199" data-group-name="Price" data-is-attribute="true" data-cmname="100199" type="checkbox"  tabindex="-1"/></span></span>
                         <span class="attribute-filter-icon attribute-6665"></span>
 
                     <span class="filter-name float-left" title="$100 - $199">$100 - $199</span>
                         <span class="count float-left">
-                            (11)
+                            (10)
                         </span>
 
                 </label>
@@ -4998,14 +4999,14 @@ Printers</h1>
             </a>
         </li>
         <li>
-            <a data-identity="6667" href="/shop/500-999-printers/ec0454-6667" rel="nofollow" role="checkbox" aria-label="$500 - $999 with 2 products">
+            <a data-identity="6667" href="/shop/500-999-printers/ec0454-6667" rel="nofollow" role="checkbox" aria-label="$500 - $999 with 3 products">
                 <label aria-hidden="true">
                     <span class="checkbox"><span class="checkbox-image"><input name="filter-6667" id="filter-6667" data-id="6667" data-name="$500 - $999" data-group-name="Price" data-is-attribute="true" data-cmname="500999" type="checkbox"  tabindex="-1"/></span></span>
                         <span class="attribute-filter-icon attribute-6667"></span>
 
                     <span class="filter-name float-left" title="$500 - $999">$500 - $999</span>
                         <span class="count float-left">
-                            (2)
+                            (3)
                         </span>
 
                 </label>
@@ -5056,14 +5057,14 @@ Printers</h1>
     <dd class="filter-group" data-cmname="Function" role="group">
             <ul>
         <li>
-            <a data-identity="15648" href="/shop/printer-printers/ec0454-15648" rel="nofollow" role="checkbox" aria-label="Printer with 12 products">
+            <a data-identity="15648" href="/shop/printer-printers/ec0454-15648" rel="nofollow" role="checkbox" aria-label="Printer with 13 products">
                 <label aria-hidden="true">
                     <span class="checkbox"><span class="checkbox-image"><input name="filter-15648" id="filter-15648" data-id="15648" data-name="Printer" data-group-name="Function" data-is-attribute="true" data-cmname="printer" type="checkbox"  tabindex="-1"/></span></span>
                         <span class="attribute-filter-icon attribute-15648"></span>
 
                     <span class="filter-name float-left" title="Printer">Printer</span>
                         <span class="count float-left">
-                            (12)
+                            (13)
                         </span>
 
                 </label>
@@ -5218,14 +5219,14 @@ Printers</h1>
             </a>
         </li>
         <li>
-            <a data-identity="15108" href="/shop/with-warranty-printers/ec0454-15108" rel="nofollow" role="checkbox" aria-label="with Warranty with 12 products">
+            <a data-identity="15108" href="/shop/with-warranty-printers/ec0454-15108" rel="nofollow" role="checkbox" aria-label="with Warranty with 13 products">
                 <label aria-hidden="true">
                     <span class="checkbox"><span class="checkbox-image"><input name="filter-15108" id="filter-15108" data-id="15108" data-name="with Warranty" data-group-name="Features" data-is-attribute="true" data-cmname="withwarranty" type="checkbox"  tabindex="-1"/></span></span>
                         <span class="attribute-filter-icon attribute-15108"></span>
 
                     <span class="filter-name float-left" title="with Warranty">with Warranty</span>
                         <span class="count float-left">
-                            (12)
+                            (13)
                         </span>
 
                 </label>
@@ -5323,16 +5324,16 @@ Printers</h1>
                         <img alt="Minolta Instant Print Camera and Printer Kit" height="230" src="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid230/minolta-instant-print-camera-and-printer-kit-d-20200911105610417~734930_010.jpg" width="230" itemprop="image" />
                 </li>
                         <li>
-                            <img alt="Minolta Instant Print Camera and Printer Kit" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/minolta-instant-print-camera-and-printer-kit-d-20200911105609497~734930_alt1.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Minolta Instant Print Camera and Printer Kit" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/minolta-instant-print-camera-and-printer-kit-d-20200911105609477~734930_alt2.jpg" width="230" style="display: none" />
+                            <img alt="Minolta Instant Print Camera and Printer Kit" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/minolta-instant-print-camera-and-printer-kit-d-20200911105610897~734930_alt5.jpg" width="230" style="display: none" />
                         </li>
                         <li>
                             <img alt="Minolta Instant Print Camera and Printer Kit" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/minolta-instant-print-camera-and-printer-kit-d-20200911105610027~734930_alt3.jpg" width="230" style="display: none" />
                         </li>
                         <li>
-                            <img alt="Minolta Instant Print Camera and Printer Kit" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/minolta-instant-print-camera-and-printer-kit-d-20200911105610897~734930_alt5.jpg" width="230" style="display: none" />
+                            <img alt="Minolta Instant Print Camera and Printer Kit" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/minolta-instant-print-camera-and-printer-kit-d-20200911105609497~734930_alt1.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="Minolta Instant Print Camera and Printer Kit" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/minolta-instant-print-camera-and-printer-kit-d-20200911105609477~734930_alt2.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -5393,17 +5394,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_6f2cdeaef1f644138e2eecf7a0eade0a" class="favorite-wrapper">
+<div id="favorite_f608ca4d4c564125b93157e96a1e832d" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9765368" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9765368],&quot;product_sku&quot;:[734930],&quot;product_brand&quot;:[&quot;Minolta&quot;],&quot;product_name&quot;:[&quot;Minolta Instant Print Camera and Printer Kit&quot;],&quot;product_sale_price&quot;:[89.99],&quot;product_original_price&quot;:[129.99],&quot;product_shipping_handling&quot;:[&quot;5.50&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Minolta&quot;,&quot;Id&quot;:58}],&quot;product_brand_name&quot;:[&quot;Minolta&quot;],&quot;product_brand_id&quot;:[58],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Cameras, Photo &amp; Video&quot;,&quot;Id&quot;:&quot;EC0405&quot;},{&quot;Name&quot;:&quot;Cameras&quot;,&quot;Id&quot;:&quot;EC0407&quot;},{&quot;Name&quot;:&quot;Point &amp; Shoot Cameras&quot;,&quot;Id&quot;:&quot;EC0408&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0408&quot;],&quot;product_primary_category_name&quot;:[&quot;Point &amp; Shoot Cameras&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9765368" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9765368],&quot;product_sku&quot;:[734930],&quot;product_brand&quot;:[&quot;Minolta&quot;],&quot;product_name&quot;:[&quot;Minolta Instant Print Camera and Printer Kit&quot;],&quot;product_sale_price&quot;:[89.99],&quot;product_original_price&quot;:[129.99],&quot;product_shipping_handling&quot;:[&quot;5.50&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Minolta&quot;,&quot;Id&quot;:58}],&quot;product_brand_name&quot;:[&quot;Minolta&quot;],&quot;product_brand_id&quot;:[58],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Cameras, Photo &amp; Video&quot;,&quot;Id&quot;:&quot;EC0405&quot;},{&quot;Name&quot;:&quot;Cameras&quot;,&quot;Id&quot;:&quot;EC0407&quot;},{&quot;Name&quot;:&quot;Point &amp; Shoot Cameras&quot;,&quot;Id&quot;:&quot;EC0408&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0408&quot;],&quot;product_primary_category_name&quot;:[&quot;Point &amp; Shoot Cameras&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_6f2cdeaef1f644138e2eecf7a0eade0a;
+  var favorite_f608ca4d4c564125b93157e96a1e832d;
     jQuery(document).ready(function () {
-    favorite_6f2cdeaef1f644138e2eecf7a0eade0a = new HSN.Widget.Favorite({
+    favorite_f608ca4d4c564125b93157e96a1e832d = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_6f2cdeaef1f644138e2eecf7a0eade0a'
+      container: '#favorite_f608ca4d4c564125b93157e96a1e832d'
     });
   });
 </script>
@@ -5435,16 +5436,16 @@ Printers</h1>
                         <img alt="Canon SELPHY Square QX10 Compact Photo Printer - Black" height="230" src="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid230/canon-selphy-square-qx10-compact-photo-printer-black-d-2020091314495679~9772368w.jpg" width="230" itemprop="image" />
                 </li>
                         <li>
-                            <img alt="Canon SELPHY Square QX10 Compact Photo Printer - Black" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-selphy-square-qx10-compact-photo-printer-black-d-20200913144934833~9772368w_alt2.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Canon SELPHY Square QX10 Compact Photo Printer - Black" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-selphy-square-qx10-compact-photo-printer-black-d-2020091314503683~9772368w_alt3.jpg" width="230" style="display: none" />
+                            <img alt="Canon SELPHY Square QX10 Compact Photo Printer - Black" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-selphy-square-qx10-compact-photo-printer-black-d-20200913145021637~9772368w_alt1.jpg" width="230" style="display: none" />
                         </li>
                         <li>
                             <img alt="Canon SELPHY Square QX10 Compact Photo Printer - Black" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-selphy-square-qx10-compact-photo-printer-black-d-20200913145006543~9772368w_alt4.jpg" width="230" style="display: none" />
                         </li>
                         <li>
-                            <img alt="Canon SELPHY Square QX10 Compact Photo Printer - Black" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-selphy-square-qx10-compact-photo-printer-black-d-20200913145021637~9772368w_alt1.jpg" width="230" style="display: none" />
+                            <img alt="Canon SELPHY Square QX10 Compact Photo Printer - Black" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-selphy-square-qx10-compact-photo-printer-black-d-20200913144934833~9772368w_alt2.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="Canon SELPHY Square QX10 Compact Photo Printer - Black" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-selphy-square-qx10-compact-photo-printer-black-d-2020091314503683~9772368w_alt3.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -5487,17 +5488,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_2339631a496744d5bdad74c7cccaba0f" class="favorite-wrapper">
+<div id="favorite_0c1dbe3b0e164338b5c8cc6f55188a1e" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="10083392" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10083392],&quot;product_sku&quot;:[1255646],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon SELPHY Square QX10 Compact Photo Printer&quot;],&quot;product_sale_price&quot;:[189.99],&quot;product_original_price&quot;:[189.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="10083392" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10083392],&quot;product_sku&quot;:[1255646],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon SELPHY Square QX10 Compact Photo Printer&quot;],&quot;product_sale_price&quot;:[189.99],&quot;product_original_price&quot;:[189.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_2339631a496744d5bdad74c7cccaba0f;
+  var favorite_0c1dbe3b0e164338b5c8cc6f55188a1e;
     jQuery(document).ready(function () {
-    favorite_2339631a496744d5bdad74c7cccaba0f = new HSN.Widget.Favorite({
+    favorite_0c1dbe3b0e164338b5c8cc6f55188a1e = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_2339631a496744d5bdad74c7cccaba0f'
+      container: '#favorite_0c1dbe3b0e164338b5c8cc6f55188a1e'
     });
   });
 </script>
@@ -5590,17 +5591,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_5ca5327997b44921b3adfd42aa573a26" class="favorite-wrapper">
+<div id="favorite_195d182333e84e908a4535dd88e20a7e" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="10078673" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10078673],&quot;product_sku&quot;:[642341],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon Selphy Color Ink Cartridge and Photo Paper Set&quot;],&quot;product_sale_price&quot;:[46.99],&quot;product_original_price&quot;:[46.99],&quot;product_shipping_handling&quot;:[&quot;5.50&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[&quot;Customer Pick&quot;],&quot;product_rating_average&quot;:[4.3],&quot;product_rating_count&quot;:[35],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="10078673" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10078673],&quot;product_sku&quot;:[642341],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon Selphy Color Ink Cartridge and Photo Paper Set&quot;],&quot;product_sale_price&quot;:[46.99],&quot;product_original_price&quot;:[46.99],&quot;product_shipping_handling&quot;:[&quot;5.50&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[&quot;Customer Pick&quot;],&quot;product_rating_average&quot;:[4.3],&quot;product_rating_count&quot;:[35],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_5ca5327997b44921b3adfd42aa573a26;
+  var favorite_195d182333e84e908a4535dd88e20a7e;
     jQuery(document).ready(function () {
-    favorite_5ca5327997b44921b3adfd42aa573a26 = new HSN.Widget.Favorite({
+    favorite_195d182333e84e908a4535dd88e20a7e = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_5ca5327997b44921b3adfd42aa573a26'
+      container: '#favorite_195d182333e84e908a4535dd88e20a7e'
     });
   });
 </script>
@@ -5704,17 +5705,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_0a031912f351414cafce49f42dfdab13" class="favorite-wrapper">
+<div id="favorite_a0d49fc13b484af28ac9f30f891d0a3f" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="8996650" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[8996650],&quot;product_sku&quot;:[1235441],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon Selphy CP1300 Wireless Photo Printer - White&quot;],&quot;product_sale_price&quot;:[169.99],&quot;product_original_price&quot;:[169.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[5.0],&quot;product_rating_count&quot;:[1],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="8996650" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[8996650],&quot;product_sku&quot;:[1235441],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon Selphy CP1300 Wireless Photo Printer - White&quot;],&quot;product_sale_price&quot;:[169.99],&quot;product_original_price&quot;:[169.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[5.0],&quot;product_rating_count&quot;:[1],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_0a031912f351414cafce49f42dfdab13;
+  var favorite_a0d49fc13b484af28ac9f30f891d0a3f;
     jQuery(document).ready(function () {
-    favorite_0a031912f351414cafce49f42dfdab13 = new HSN.Widget.Favorite({
+    favorite_a0d49fc13b484af28ac9f30f891d0a3f = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_0a031912f351414cafce49f42dfdab13'
+      container: '#favorite_a0d49fc13b484af28ac9f30f891d0a3f'
     });
   });
 </script>
@@ -5807,17 +5808,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_5987a6781993449f80f739de74eee5d0" class="favorite-wrapper">
+<div id="favorite_2970f66854f7492b8f07090df0be46cb" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="8996655" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[8996655],&quot;product_sku&quot;:[1231825],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon Selphy CP1300 Wireless Photo Printer - Black&quot;],&quot;product_sale_price&quot;:[169.99],&quot;product_original_price&quot;:[169.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[5.0],&quot;product_rating_count&quot;:[2],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="8996655" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[8996655],&quot;product_sku&quot;:[1231825],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon Selphy CP1300 Wireless Photo Printer - Black&quot;],&quot;product_sale_price&quot;:[169.99],&quot;product_original_price&quot;:[169.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[5.0],&quot;product_rating_count&quot;:[2],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_5987a6781993449f80f739de74eee5d0;
+  var favorite_2970f66854f7492b8f07090df0be46cb;
     jQuery(document).ready(function () {
-    favorite_5987a6781993449f80f739de74eee5d0 = new HSN.Widget.Favorite({
+    favorite_2970f66854f7492b8f07090df0be46cb = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_5987a6781993449f80f739de74eee5d0'
+      container: '#favorite_2970f66854f7492b8f07090df0be46cb'
     });
   });
 </script>
@@ -5891,17 +5892,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_aee79cbb5e9041d5bcc1e3e1c1007629" class="favorite-wrapper">
+<div id="favorite_f8cad8bd94004a959cea83d63ec6f540" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="10081663" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10081663],&quot;product_sku&quot;:[1235439],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon IVY Mini Photo Portable Printer&quot;],&quot;product_sale_price&quot;:[159.99],&quot;product_original_price&quot;:[159.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="10081663" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10081663],&quot;product_sku&quot;:[1235439],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon IVY Mini Photo Portable Printer&quot;],&quot;product_sale_price&quot;:[159.99],&quot;product_original_price&quot;:[159.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_aee79cbb5e9041d5bcc1e3e1c1007629;
+  var favorite_f8cad8bd94004a959cea83d63ec6f540;
     jQuery(document).ready(function () {
-    favorite_aee79cbb5e9041d5bcc1e3e1c1007629 = new HSN.Widget.Favorite({
+    favorite_f8cad8bd94004a959cea83d63ec6f540 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_aee79cbb5e9041d5bcc1e3e1c1007629'
+      container: '#favorite_f8cad8bd94004a959cea83d63ec6f540'
     });
   });
 </script>
@@ -5934,6 +5935,18 @@ Printers</h1>
                         <img alt="Canon IVY CLIQ+ Instant Camera Printer with 50-pack Photo Paper" height="230" src="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid230/canon-ivy-cliq-instant-camera-printer-with-50-pack-phot-d-20200709151811273~729077.jpg" width="230" itemprop="image" />
                 </li>
                         <li>
+                            <img alt="Canon IVY CLIQ+ Instant Camera Printer with 50-pack Photo Paper" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-ivy-cliq-instant-camera-printer-with-50-pack-phot-d-20200709151807423~729077_alt3.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="Canon IVY CLIQ+ Instant Camera Printer with 50-pack Photo Paper" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-ivy-cliq-instant-camera-printer-with-50-pack-phot-d-2020070915180741~729077_alt2.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="Canon IVY CLIQ+ Instant Camera Printer with 50-pack Photo Paper" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-ivy-cliq-instant-camera-printer-with-50-pack-phot-d-20200709151807937~729077_alt6.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="Canon IVY CLIQ+ Instant Camera Printer with 50-pack Photo Paper" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-ivy-cliq-instant-camera-printer-with-50-pack-phot-d-2020070915182008~729077_alt98.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
                             <img alt="Canon IVY CLIQ+ Instant Camera Printer with 50-pack Photo Paper" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-ivy-cliq-instant-camera-printer-with-50-pack-phot-d-20200709151807383~729077_alt1.jpg" width="230" style="display: none" />
                         </li>
                         <li>
@@ -5947,18 +5960,6 @@ Printers</h1>
                         </li>
                         <li>
                             <img alt="Canon IVY CLIQ+ Instant Camera Printer with 50-pack Photo Paper" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-ivy-cliq-instant-camera-printer-with-50-pack-phot-d-20200709151823377~729077_alt99.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Canon IVY CLIQ+ Instant Camera Printer with 50-pack Photo Paper" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-ivy-cliq-instant-camera-printer-with-50-pack-phot-d-20200709151807423~729077_alt3.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Canon IVY CLIQ+ Instant Camera Printer with 50-pack Photo Paper" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-ivy-cliq-instant-camera-printer-with-50-pack-phot-d-2020070915180741~729077_alt2.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Canon IVY CLIQ+ Instant Camera Printer with 50-pack Photo Paper" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-ivy-cliq-instant-camera-printer-with-50-pack-phot-d-20200709151807937~729077_alt6.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Canon IVY CLIQ+ Instant Camera Printer with 50-pack Photo Paper" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-ivy-cliq-instant-camera-printer-with-50-pack-phot-d-2020070915182008~729077_alt98.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -6020,17 +6021,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_a6d7383c61344e24b2ddfd33f04dfd17" class="favorite-wrapper">
+<div id="favorite_89ffe0341ba546b6845c5e5f457c3a98" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9711658" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9711658],&quot;product_sku&quot;:[729077],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon IVY CLIQ Instant Camera Printer with 50-pack Photo Paper&quot;],&quot;product_sale_price&quot;:[89.99],&quot;product_original_price&quot;:[89.99],&quot;product_shipping_handling&quot;:[&quot;5.50&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[2.0],&quot;product_rating_count&quot;:[5],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9711658" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9711658],&quot;product_sku&quot;:[729077],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon IVY CLIQ Instant Camera Printer with 50-pack Photo Paper&quot;],&quot;product_sale_price&quot;:[89.99],&quot;product_original_price&quot;:[89.99],&quot;product_shipping_handling&quot;:[&quot;5.50&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[2.0],&quot;product_rating_count&quot;:[5],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_a6d7383c61344e24b2ddfd33f04dfd17;
+  var favorite_89ffe0341ba546b6845c5e5f457c3a98;
     jQuery(document).ready(function () {
-    favorite_a6d7383c61344e24b2ddfd33f04dfd17 = new HSN.Widget.Favorite({
+    favorite_89ffe0341ba546b6845c5e5f457c3a98 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_a6d7383c61344e24b2ddfd33f04dfd17'
+      container: '#favorite_89ffe0341ba546b6845c5e5f457c3a98'
     });
   });
 </script>
@@ -6065,6 +6066,12 @@ Printers</h1>
                         </noscript>
                 </li>
                         <li>
+                            <img alt="iHome Full-Size 4&quot;x 6&quot; Photo Printer with Dock and Additional Paper" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-full-size-4x-6-photo-printer-with-dock-and-additi-d-2020090108425112~733899_alt2.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="iHome Full-Size 4&quot;x 6&quot; Photo Printer with Dock and Additional Paper" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-full-size-4x-6-photo-printer-with-dock-and-additi-d-2020090108425466~733899_alt6.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
                             <img alt="iHome Full-Size 4&quot;x 6&quot; Photo Printer with Dock and Additional Paper" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-full-size-4x-6-photo-printer-with-dock-and-additi-d-20200901084248983~733899_alt1.jpg" width="230" style="display: none" />
                         </li>
                         <li>
@@ -6078,12 +6085,6 @@ Printers</h1>
                         </li>
                         <li>
                             <img alt="iHome Full-Size 4&quot;x 6&quot; Photo Printer with Dock and Additional Paper" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-full-size-4x-6-photo-printer-with-dock-and-additi-d-20200901084251283~733899_alt5.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome Full-Size 4&quot;x 6&quot; Photo Printer with Dock and Additional Paper" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-full-size-4x-6-photo-printer-with-dock-and-additi-d-2020090108425112~733899_alt2.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome Full-Size 4&quot;x 6&quot; Photo Printer with Dock and Additional Paper" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-full-size-4x-6-photo-printer-with-dock-and-additi-d-2020090108425466~733899_alt6.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -6149,17 +6150,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_d65fad57d0fe45a09773e5e0c6c48773" class="favorite-wrapper">
+<div id="favorite_4e00b88bfdd6477d8f0a9b40f6eaa9ff" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9756146" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9756146],&quot;product_sku&quot;:[733899],&quot;product_brand&quot;:[&quot;iHome&quot;],&quot;product_name&quot;:[&quot;iHome Full-Size 4x 6 Photo Printer with Dock and Additional Paper&quot;],&quot;product_sale_price&quot;:[169.99],&quot;product_original_price&quot;:[169.99],&quot;product_shipping_handling&quot;:[&quot;0.00&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;iHome&quot;,&quot;Id&quot;:9203}],&quot;product_brand_name&quot;:[&quot;iHome&quot;],&quot;product_brand_id&quot;:[9203],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[5.0],&quot;product_rating_count&quot;:[1],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9756146" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9756146],&quot;product_sku&quot;:[733899],&quot;product_brand&quot;:[&quot;iHome&quot;],&quot;product_name&quot;:[&quot;iHome Full-Size 4x 6 Photo Printer with Dock and Additional Paper&quot;],&quot;product_sale_price&quot;:[169.99],&quot;product_original_price&quot;:[169.99],&quot;product_shipping_handling&quot;:[&quot;0.00&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;iHome&quot;,&quot;Id&quot;:9203}],&quot;product_brand_name&quot;:[&quot;iHome&quot;],&quot;product_brand_id&quot;:[9203],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[5.0],&quot;product_rating_count&quot;:[1],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_d65fad57d0fe45a09773e5e0c6c48773;
+  var favorite_4e00b88bfdd6477d8f0a9b40f6eaa9ff;
     jQuery(document).ready(function () {
-    favorite_d65fad57d0fe45a09773e5e0c6c48773 = new HSN.Widget.Favorite({
+    favorite_4e00b88bfdd6477d8f0a9b40f6eaa9ff = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_d65fad57d0fe45a09773e5e0c6c48773'
+      container: '#favorite_4e00b88bfdd6477d8f0a9b40f6eaa9ff'
     });
   });
 </script>
@@ -6233,17 +6234,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_4018047f71a3486cbe77954149c8b78c" class="favorite-wrapper">
+<div id="favorite_ad2c68c250cd400187ac6d5721ead233" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9756150" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9756150],&quot;product_sku&quot;:[733900],&quot;product_brand&quot;:[&quot;iHome&quot;],&quot;product_name&quot;:[&quot;iHome 4 x 6 Paper  Ink Replacement Cartridge with 40 prints&quot;],&quot;product_sale_price&quot;:[24.99],&quot;product_original_price&quot;:[24.99],&quot;product_shipping_handling&quot;:[&quot;3.50&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;iHome&quot;,&quot;Id&quot;:9203}],&quot;product_brand_name&quot;:[&quot;iHome&quot;],&quot;product_brand_id&quot;:[9203],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9756150" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9756150],&quot;product_sku&quot;:[733900],&quot;product_brand&quot;:[&quot;iHome&quot;],&quot;product_name&quot;:[&quot;iHome 4 x 6 Paper  Ink Replacement Cartridge with 40 prints&quot;],&quot;product_sale_price&quot;:[24.99],&quot;product_original_price&quot;:[24.99],&quot;product_shipping_handling&quot;:[&quot;3.50&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;iHome&quot;,&quot;Id&quot;:9203}],&quot;product_brand_name&quot;:[&quot;iHome&quot;],&quot;product_brand_id&quot;:[9203],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_4018047f71a3486cbe77954149c8b78c;
+  var favorite_ad2c68c250cd400187ac6d5721ead233;
     jQuery(document).ready(function () {
-    favorite_4018047f71a3486cbe77954149c8b78c = new HSN.Widget.Favorite({
+    favorite_ad2c68c250cd400187ac6d5721ead233 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_4018047f71a3486cbe77954149c8b78c'
+      container: '#favorite_ad2c68c250cd400187ac6d5721ead233'
     });
   });
 </script>
@@ -6280,13 +6281,13 @@ Printers</h1>
                         </noscript>
                 </li>
                         <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Paper/Ink Replacement Cartridges- 20 prints" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-paperink-replacement-cartridge-d-2020090210023476~733895_alt2.jpg" width="230" style="display: none" />
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Paper/Ink Replacement Cartridges- 20 prints" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-paperink-replacement-cartridge-d-20200902100234327~733895_alt1.jpg" width="230" style="display: none" />
                         </li>
                         <li>
                             <img alt="iHome PocketPrint3 3&quot; x 3&quot; Paper/Ink Replacement Cartridges- 20 prints" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-paperink-replacement-cartridge-d-2020090210023435~733895_alt3.jpg" width="230" style="display: none" />
                         </li>
                         <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Paper/Ink Replacement Cartridges- 20 prints" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-paperink-replacement-cartridge-d-20200902100234327~733895_alt1.jpg" width="230" style="display: none" />
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Paper/Ink Replacement Cartridges- 20 prints" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-paperink-replacement-cartridge-d-2020090210023476~733895_alt2.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -6328,17 +6329,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_211c6c1074594c6a99cf34b1d84ce4cd" class="favorite-wrapper">
+<div id="favorite_53cdccd896c14fbaa7f5cf929a74b4d0" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9756145" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9756145],&quot;product_sku&quot;:[733895],&quot;product_brand&quot;:[&quot;iHome&quot;],&quot;product_name&quot;:[&quot;iHome PocketPrint3 3 x 3 PaperInk Replacement Cartridges- 20 prints&quot;],&quot;product_sale_price&quot;:[18.99],&quot;product_original_price&quot;:[18.99],&quot;product_shipping_handling&quot;:[&quot;3.50&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;iHome&quot;,&quot;Id&quot;:9203}],&quot;product_brand_name&quot;:[&quot;iHome&quot;],&quot;product_brand_id&quot;:[9203],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9756145" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9756145],&quot;product_sku&quot;:[733895],&quot;product_brand&quot;:[&quot;iHome&quot;],&quot;product_name&quot;:[&quot;iHome PocketPrint3 3 x 3 PaperInk Replacement Cartridges- 20 prints&quot;],&quot;product_sale_price&quot;:[18.99],&quot;product_original_price&quot;:[18.99],&quot;product_shipping_handling&quot;:[&quot;3.50&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;iHome&quot;,&quot;Id&quot;:9203}],&quot;product_brand_name&quot;:[&quot;iHome&quot;],&quot;product_brand_id&quot;:[9203],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_211c6c1074594c6a99cf34b1d84ce4cd;
+  var favorite_53cdccd896c14fbaa7f5cf929a74b4d0;
     jQuery(document).ready(function () {
-    favorite_211c6c1074594c6a99cf34b1d84ce4cd = new HSN.Widget.Favorite({
+    favorite_53cdccd896c14fbaa7f5cf929a74b4d0 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_211c6c1074594c6a99cf34b1d84ce4cd'
+      container: '#favorite_53cdccd896c14fbaa7f5cf929a74b4d0'
     });
   });
 </script>
@@ -6373,6 +6374,36 @@ Printers</h1>
                         </noscript>
                 </li>
                         <li>
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-20200831093800237~733872_alt14.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109380806~733872_alt15.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-20200831093819573~733872_alt18.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109375257~733872_alt1.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-20200831093754767~733872_alt2.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109375617~733872_alt10.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109381279~733872_alt17.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-20200831093755667~733872_alt9.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109375866~733872_alt11.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109380149~733872_alt13.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
                             <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109375066~733872_alt4.jpg" width="230" style="display: none" />
                         </li>
                         <li>
@@ -6395,36 +6426,6 @@ Printers</h1>
                         </li>
                         <li>
                             <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-20200831093812017~733872_alt16.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-20200831093800237~733872_alt14.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109380806~733872_alt15.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-20200831093819573~733872_alt18.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109380149~733872_alt13.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-20200831093755667~733872_alt9.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109375866~733872_alt11.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109381279~733872_alt17.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109375257~733872_alt1.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-20200831093754767~733872_alt2.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="iHome PocketPrint3 3&quot; x 3&quot; Photo Printer with Paper Included" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/ihome-pocketprint3-3-x-3-photo-printer-with-paper-inclu-d-2020083109375617~733872_alt10.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -6467,17 +6468,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_a1c803f21bcc49908482bcd29fcf9017" class="favorite-wrapper">
+<div id="favorite_8e9c1e3dde9c4394aee7871ec185cc91" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9756142" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9756142],&quot;product_sku&quot;:[733872],&quot;product_brand&quot;:[&quot;iHome&quot;],&quot;product_name&quot;:[&quot;iHome PocketPrint3 3 x 3 Photo Printer with Paper Included&quot;],&quot;product_sale_price&quot;:[139.99],&quot;product_original_price&quot;:[139.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;iHome&quot;,&quot;Id&quot;:9203}],&quot;product_brand_name&quot;:[&quot;iHome&quot;],&quot;product_brand_id&quot;:[9203],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9756142" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9756142],&quot;product_sku&quot;:[733872],&quot;product_brand&quot;:[&quot;iHome&quot;],&quot;product_name&quot;:[&quot;iHome PocketPrint3 3 x 3 Photo Printer with Paper Included&quot;],&quot;product_sale_price&quot;:[139.99],&quot;product_original_price&quot;:[139.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;iHome&quot;,&quot;Id&quot;:9203}],&quot;product_brand_name&quot;:[&quot;iHome&quot;],&quot;product_brand_id&quot;:[9203],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_a1c803f21bcc49908482bcd29fcf9017;
+  var favorite_8e9c1e3dde9c4394aee7871ec185cc91;
     jQuery(document).ready(function () {
-    favorite_a1c803f21bcc49908482bcd29fcf9017 = new HSN.Widget.Favorite({
+    favorite_8e9c1e3dde9c4394aee7871ec185cc91 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_a1c803f21bcc49908482bcd29fcf9017'
+      container: '#favorite_8e9c1e3dde9c4394aee7871ec185cc91'
     });
   });
 </script>
@@ -6512,13 +6513,13 @@ Printers</h1>
                         </noscript>
                 </li>
                         <li>
-                            <img alt="Lexmark MS331dn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms331dn-monochrome-laser-printer-d-20200429161212017~9622928w_alt1.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
                             <img alt="Lexmark MS331dn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms331dn-monochrome-laser-printer-d-20200429161212157~9622928w_alt3.jpg" width="230" style="display: none" />
                         </li>
                         <li>
                             <img alt="Lexmark MS331dn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms331dn-monochrome-laser-printer-d-2020042916121815~9622928w_alt2.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="Lexmark MS331dn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms331dn-monochrome-laser-printer-d-20200429161212017~9622928w_alt1.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -6564,17 +6565,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_74c00095d6ce49dc848f58e3c9dabee4" class="favorite-wrapper">
+<div id="favorite_3afd551960a2423e9abbf3b68466f9dd" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9622928" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622928],&quot;product_sku&quot;:[1247855],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MS331dn Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[252.99],&quot;product_original_price&quot;:[252.99],&quot;product_shipping_handling&quot;:[&quot;18.72&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9622928" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622928],&quot;product_sku&quot;:[1247855],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MS331dn Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[252.99],&quot;product_original_price&quot;:[252.99],&quot;product_shipping_handling&quot;:[&quot;18.72&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_74c00095d6ce49dc848f58e3c9dabee4;
+  var favorite_3afd551960a2423e9abbf3b68466f9dd;
     jQuery(document).ready(function () {
-    favorite_74c00095d6ce49dc848f58e3c9dabee4 = new HSN.Widget.Favorite({
+    favorite_3afd551960a2423e9abbf3b68466f9dd = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_74c00095d6ce49dc848f58e3c9dabee4'
+      container: '#favorite_3afd551960a2423e9abbf3b68466f9dd'
     });
   });
 </script>
@@ -6609,13 +6610,13 @@ Printers</h1>
                         </noscript>
                 </li>
                         <li>
+                            <img alt="Lexmark MS431dn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms431dn-monochrome-laser-printer-d-20200429161221087~9622927w_alt2.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
                             <img alt="Lexmark MS431dn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms431dn-monochrome-laser-printer-d-2020042916121271~9622927w_alt3.jpg" width="230" style="display: none" />
                         </li>
                         <li>
                             <img alt="Lexmark MS431dn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms431dn-monochrome-laser-printer-d-2020042916121229~9622927w_alt1.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Lexmark MS431dn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms431dn-monochrome-laser-printer-d-20200429161221087~9622927w_alt2.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -6657,17 +6658,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_74baa7d6375a4a3d8458713e71389e20" class="favorite-wrapper">
+<div id="favorite_53f0a91d2bac4921ac5f59b79cd4a863" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9622927" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622927],&quot;product_sku&quot;:[1249969],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MS431dn Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[389.99],&quot;product_original_price&quot;:[389.99],&quot;product_shipping_handling&quot;:[&quot;19.22&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9622927" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622927],&quot;product_sku&quot;:[1249969],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MS431dn Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[389.99],&quot;product_original_price&quot;:[389.99],&quot;product_shipping_handling&quot;:[&quot;19.22&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_74baa7d6375a4a3d8458713e71389e20;
+  var favorite_53f0a91d2bac4921ac5f59b79cd4a863;
     jQuery(document).ready(function () {
-    favorite_74baa7d6375a4a3d8458713e71389e20 = new HSN.Widget.Favorite({
+    favorite_53f0a91d2bac4921ac5f59b79cd4a863 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_74baa7d6375a4a3d8458713e71389e20'
+      container: '#favorite_53f0a91d2bac4921ac5f59b79cd4a863'
     });
   });
 </script>
@@ -6702,13 +6703,13 @@ Printers</h1>
                         </noscript>
                 </li>
                         <li>
+                            <img alt="Lexmark MS431dw Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms431dw-monochrome-laser-printer-d-20200429161214103~9622926w_alt2.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
                             <img alt="Lexmark MS431dw Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms431dw-monochrome-laser-printer-d-20200429161212797~9622926w_alt1.jpg" width="230" style="display: none" />
                         </li>
                         <li>
                             <img alt="Lexmark MS431dw Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms431dw-monochrome-laser-printer-d-2020042916122513~9622926w_alt3.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Lexmark MS431dw Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-ms431dw-monochrome-laser-printer-d-20200429161214103~9622926w_alt2.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -6754,17 +6755,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_654b5a6fa8304d75b0e4d5dd172186e0" class="favorite-wrapper">
+<div id="favorite_cd4ae36ab6a047b7b46bdbab948b535f" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9622926" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622926],&quot;product_sku&quot;:[1252587],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MS431dw Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[379.99],&quot;product_original_price&quot;:[379.99],&quot;product_shipping_handling&quot;:[&quot;19.22&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9622926" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622926],&quot;product_sku&quot;:[1252587],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MS431dw Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[379.99],&quot;product_original_price&quot;:[379.99],&quot;product_shipping_handling&quot;:[&quot;19.22&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_654b5a6fa8304d75b0e4d5dd172186e0;
+  var favorite_cd4ae36ab6a047b7b46bdbab948b535f;
     jQuery(document).ready(function () {
-    favorite_654b5a6fa8304d75b0e4d5dd172186e0 = new HSN.Widget.Favorite({
+    favorite_cd4ae36ab6a047b7b46bdbab948b535f = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_654b5a6fa8304d75b0e4d5dd172186e0'
+      container: '#favorite_cd4ae36ab6a047b7b46bdbab948b535f'
     });
   });
 </script>
@@ -6799,13 +6800,13 @@ Printers</h1>
                         </noscript>
                 </li>
                         <li>
-                            <img alt="Lexmark B3442dw Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-b3442dw-monochrome-laser-printer-d-20200429161232103~9622924w_alt1.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
                             <img alt="Lexmark B3442dw Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-b3442dw-monochrome-laser-printer-d-20200429161216313~9622924w_alt2.jpg" width="230" style="display: none" />
                         </li>
                         <li>
                             <img alt="Lexmark B3442dw Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-b3442dw-monochrome-laser-printer-d-20200429161233243~9622924w_alt3.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="Lexmark B3442dw Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-b3442dw-monochrome-laser-printer-d-20200429161232103~9622924w_alt1.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -6851,17 +6852,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_f8e0bee7f1204e0ab6f1d820af9496c4" class="favorite-wrapper">
+<div id="favorite_9bf40c3f985041f9a53caa939dce3b4a" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9622924" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622924],&quot;product_sku&quot;:[1249972],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark B3442dw Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[379.99],&quot;product_original_price&quot;:[379.99],&quot;product_shipping_handling&quot;:[&quot;19.22&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9622924" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622924],&quot;product_sku&quot;:[1249972],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark B3442dw Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[379.99],&quot;product_original_price&quot;:[379.99],&quot;product_shipping_handling&quot;:[&quot;19.22&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_f8e0bee7f1204e0ab6f1d820af9496c4;
+  var favorite_9bf40c3f985041f9a53caa939dce3b4a;
     jQuery(document).ready(function () {
-    favorite_f8e0bee7f1204e0ab6f1d820af9496c4 = new HSN.Widget.Favorite({
+    favorite_9bf40c3f985041f9a53caa939dce3b4a = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_f8e0bee7f1204e0ab6f1d820af9496c4'
+      container: '#favorite_9bf40c3f985041f9a53caa939dce3b4a'
     });
   });
 </script>
@@ -6896,13 +6897,13 @@ Printers</h1>
                         </noscript>
                 </li>
                         <li>
-                            <img alt="Lexmark MX331adn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mx331adn-monochrome-laser-printer-d-20200429161215277~9622923w_alt2.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
                             <img alt="Lexmark MX331adn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mx331adn-monochrome-laser-printer-d-20200429161223883~9622923w_alt1.jpg" width="230" style="display: none" />
                         </li>
                         <li>
                             <img alt="Lexmark MX331adn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mx331adn-monochrome-laser-printer-d-20200429161225697~9622923w_alt3.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="Lexmark MX331adn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mx331adn-monochrome-laser-printer-d-20200429161215277~9622923w_alt2.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -6948,17 +6949,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_ba180f61a7eb4a6a8842b7f401ae6fa6" class="favorite-wrapper">
+<div id="favorite_2255224bc6aa4376b73bda41f4ece317" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9622923" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622923],&quot;product_sku&quot;:[1249968],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MX331adn Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[519.99],&quot;product_original_price&quot;:[519.99],&quot;product_shipping_handling&quot;:[&quot;22.72&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9622923" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622923],&quot;product_sku&quot;:[1249968],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MX331adn Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[519.99],&quot;product_original_price&quot;:[519.99],&quot;product_shipping_handling&quot;:[&quot;22.72&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_ba180f61a7eb4a6a8842b7f401ae6fa6;
+  var favorite_2255224bc6aa4376b73bda41f4ece317;
     jQuery(document).ready(function () {
-    favorite_ba180f61a7eb4a6a8842b7f401ae6fa6 = new HSN.Widget.Favorite({
+    favorite_2255224bc6aa4376b73bda41f4ece317 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_ba180f61a7eb4a6a8842b7f401ae6fa6'
+      container: '#favorite_2255224bc6aa4376b73bda41f4ece317'
     });
   });
 </script>
@@ -6993,13 +6994,13 @@ Printers</h1>
                         </noscript>
                 </li>
                         <li>
-                            <img alt="Lexmark MX431adn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mx431adn-monochrome-laser-printer-d-20200429161227873~9622922w_alt3.jpg" width="230" style="display: none" />
+                            <img alt="Lexmark MX431adn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mx431adn-monochrome-laser-printer-d-2020042916122669~9622922w_alt1.jpg" width="230" style="display: none" />
                         </li>
                         <li>
                             <img alt="Lexmark MX431adn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mx431adn-monochrome-laser-printer-d-20200429161215613~9622922w_alt2.jpg" width="230" style="display: none" />
                         </li>
                         <li>
-                            <img alt="Lexmark MX431adn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mx431adn-monochrome-laser-printer-d-2020042916122669~9622922w_alt1.jpg" width="230" style="display: none" />
+                            <img alt="Lexmark MX431adn Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mx431adn-monochrome-laser-printer-d-20200429161227873~9622922w_alt3.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -7045,17 +7046,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_fbc1a15ab39a4de38ef66b65626c9dfa" class="favorite-wrapper">
+<div id="favorite_8584b0f1afec42fa91b7f288d0a2926d" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9622922" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622922],&quot;product_sku&quot;:[1249608],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MX431adn Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[589.99],&quot;product_original_price&quot;:[589.99],&quot;product_shipping_handling&quot;:[&quot;22.72&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9622922" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622922],&quot;product_sku&quot;:[1249608],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MX431adn Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[589.99],&quot;product_original_price&quot;:[589.99],&quot;product_shipping_handling&quot;:[&quot;22.72&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_fbc1a15ab39a4de38ef66b65626c9dfa;
+  var favorite_8584b0f1afec42fa91b7f288d0a2926d;
     jQuery(document).ready(function () {
-    favorite_fbc1a15ab39a4de38ef66b65626c9dfa = new HSN.Widget.Favorite({
+    favorite_8584b0f1afec42fa91b7f288d0a2926d = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_fbc1a15ab39a4de38ef66b65626c9dfa'
+      container: '#favorite_8584b0f1afec42fa91b7f288d0a2926d'
     });
   });
 </script>
@@ -7066,6 +7067,103 @@ Printers</h1>
 </li>        <!--HookLogic Ad Display-->
         <div id="hl-3"></div>
 
+
+
+<li class="item product-item module violated" data-product-id="9622921" data-matrix-id="0" data-preview-url="/products/lexmark-mb3442adw-monochrome-laser-printer/9622921/preview" data-product-url="/products/lexmark-mb3442adw-monochrome-laser-printer/9622921" itemscope itemtype="https://schema.org/Product">
+    <meta itemprop="sku" content="1249973" />
+    <h4 style="width: 0px; height: 0px; opacity: 0;">
+        <a href="/products/lexmark-mb3442adw-monochrome-laser-printer/9622921" itemprop="url"><span itemprop="name">
+            Lexmark MB3442adw Monochrome Laser Printer
+        </span></a>
+    </h4>
+
+
+
+
+        <div class="violator2 violator-color" tabindex="-1" >&nbsp;</div>
+
+
+    <div class="info">
+        <div class="image ">
+            <ul>
+                <li>
+                        <img alt="Lexmark MB3442adw Monochrome Laser Printer" height="230" class="lazy" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid230/lexmark-mb3442adw-monochrome-laser-printer-d-20200429161234467~9622921w.jpg" width="230" />
+                        <noscript>
+                            <img alt="Lexmark MB3442adw Monochrome Laser Printer" height="230" src="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid230/lexmark-mb3442adw-monochrome-laser-printer-d-20200429161234467~9622921w.jpg" width="230" itemprop="image" />
+                        </noscript>
+                </li>
+                        <li>
+                            <img alt="Lexmark MB3442adw Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mb3442adw-monochrome-laser-printer-d-20200429171207227~9622921w_alt2.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="Lexmark MB3442adw Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mb3442adw-monochrome-laser-printer-d-20200429161218123~9622921w_alt1.jpg" width="230" style="display: none" />
+                        </li>
+                        <li>
+                            <img alt="Lexmark MB3442adw Monochrome Laser Printer" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/lexmark-mb3442adw-monochrome-laser-printer-d-202004291712078~9622921w_alt3.jpg" width="230" style="display: none" />
+                        </li>
+            </ul>
+        </div>
+            <div>
+
+                    <div class="swatches" role="toolbar" aria-label="color switcher">
+                        
+                                                    &nbsp;
+                    </div>
+                <a href="/products/lexmark-mb3442adw-monochrome-laser-printer/9622921" itemprop="url" tabindex="-1"><span itemprop="name">
+
+                    Lexmark MB3442adw Monochrome Laser Printer
+                </span></a>
+                <dl>
+
+
+
+
+
+
+
+
+<dt>Pricing</dt>
+<dd class="pricing" tabindex="0">
+            <strong class="actual-price price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="549.99">549.99</span>
+            <meta itemprop="availability" content="InStock" />
+        </strong>
+
+    
+        <span class="flex-price">
+            <span class="article-modal" data-article-id="3280" data-article-slug="flexpays" data-show-modal="true"> or 5 payments of </span><span class="price">$110.00</span>
+        </span>
+</dd>
+                    
+
+
+<dt>Note:</dt>
+    <dd class="note" style="color: #e23e2d;" tabindex="0">Only 7 left</dd>
+                </dl>
+            </div>
+
+            <div class="favorite-container">
+
+
+<div id="favorite_adb8076e85b04701bdeb8d3626172052" class="favorite-wrapper">
+    <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9622921" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622921],&quot;product_sku&quot;:[1249973],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MB3442adw Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[549.99],&quot;product_original_price&quot;:[549.99],&quot;product_shipping_handling&quot;:[&quot;22.72&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
+    <span class="favorite-link save-changes" data-object-id="9622921" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9622921],&quot;product_sku&quot;:[1249973],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lexmark MB3442adw Monochrome Laser Printer&quot;],&quot;product_sale_price&quot;:[549.99],&quot;product_original_price&quot;:[549.99],&quot;product_shipping_handling&quot;:[&quot;22.72&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
+</div>
+
+<script>
+  var favorite_adb8076e85b04701bdeb8d3626172052;
+    jQuery(document).ready(function () {
+    favorite_adb8076e85b04701bdeb8d3626172052 = new HSN.Widget.Favorite({
+      application: HSN.Instance(),
+      container: '#favorite_adb8076e85b04701bdeb8d3626172052'
+    });
+  });
+</script>
+
+            </div>
+    </div>
+
+</li>
 
 
 <li class="item product-item module violated" data-product-id="9088160" data-matrix-id="0" data-preview-url="/products/lifeprint-40-pack-3-x-45-zink-photo-paper-for-mobile-pr/9088160/preview" data-product-url="/products/lifeprint-40-pack-3-x-45-zink-photo-paper-for-mobile-pr/9088160" itemscope itemtype="https://schema.org/Product">
@@ -7135,17 +7233,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_eb0230f2842d4c91b78e3d27b9c6c93e" class="favorite-wrapper">
+<div id="favorite_f8d480b35e5c41eb9c26620abf512274" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9088160" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9088160],&quot;product_sku&quot;:[669339],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lifeprint 40-pack 3 x 45 ZINK Photo Paper for Mobile Printers&quot;],&quot;product_sale_price&quot;:[49.99],&quot;product_original_price&quot;:[49.99],&quot;product_shipping_handling&quot;:[&quot;3.50&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="9088160" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9088160],&quot;product_sku&quot;:[669339],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Lifeprint 40-pack 3 x 45 ZINK Photo Paper for Mobile Printers&quot;],&quot;product_sale_price&quot;:[49.99],&quot;product_original_price&quot;:[49.99],&quot;product_shipping_handling&quot;:[&quot;3.50&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_eb0230f2842d4c91b78e3d27b9c6c93e;
+  var favorite_f8d480b35e5c41eb9c26620abf512274;
     jQuery(document).ready(function () {
-    favorite_eb0230f2842d4c91b78e3d27b9c6c93e = new HSN.Widget.Favorite({
+    favorite_f8d480b35e5c41eb9c26620abf512274 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_eb0230f2842d4c91b78e3d27b9c6c93e'
+      container: '#favorite_f8d480b35e5c41eb9c26620abf512274'
     });
   });
 </script>
@@ -7180,13 +7278,13 @@ Printers</h1>
                         </noscript>
                 </li>
                         <li>
-                            <img alt="Fuji Instax Mini Link Portable Smart Phone Printer - Dark Denim" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/fuji-instax-mini-link-portable-smart-phone-printer-dark-d-20200526110201493~9661959w_alt3.jpg" width="230" style="display: none" />
+                            <img alt="Fuji Instax Mini Link Portable Smart Phone Printer - Dark Denim" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/fuji-instax-mini-link-portable-smart-phone-printer-dark-d-2020052611020099~9661959w_alt1.jpg" width="230" style="display: none" />
                         </li>
                         <li>
                             <img alt="Fuji Instax Mini Link Portable Smart Phone Printer - Dark Denim" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/fuji-instax-mini-link-portable-smart-phone-printer-dark-d-2020052611020033~9661959w_alt2.jpg" width="230" style="display: none" />
                         </li>
                         <li>
-                            <img alt="Fuji Instax Mini Link Portable Smart Phone Printer - Dark Denim" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/fuji-instax-mini-link-portable-smart-phone-printer-dark-d-2020052611020099~9661959w_alt1.jpg" width="230" style="display: none" />
+                            <img alt="Fuji Instax Mini Link Portable Smart Phone Printer - Dark Denim" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/fuji-instax-mini-link-portable-smart-phone-printer-dark-d-20200526110201493~9661959w_alt3.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -7228,17 +7326,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_45707617c0744096907504862b0a511b" class="favorite-wrapper">
+<div id="favorite_0035e0bfe0014caeaf4bf0134b7f0c60" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="10083116" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10083116],&quot;product_sku&quot;:[1253298],&quot;product_brand&quot;:[&quot;Fujifilm&quot;],&quot;product_name&quot;:[&quot;Fuji Instax Mini Link Portable Smart Phone Printer&quot;],&quot;product_sale_price&quot;:[109.99],&quot;product_original_price&quot;:[109.99],&quot;product_shipping_handling&quot;:[&quot;10.72&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Fujifilm&quot;,&quot;Id&quot;:48}],&quot;product_brand_name&quot;:[&quot;Fujifilm&quot;],&quot;product_brand_id&quot;:[48],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="10083116" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10083116],&quot;product_sku&quot;:[1253298],&quot;product_brand&quot;:[&quot;Fujifilm&quot;],&quot;product_name&quot;:[&quot;Fuji Instax Mini Link Portable Smart Phone Printer&quot;],&quot;product_sale_price&quot;:[109.99],&quot;product_original_price&quot;:[109.99],&quot;product_shipping_handling&quot;:[&quot;10.72&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Fujifilm&quot;,&quot;Id&quot;:48}],&quot;product_brand_name&quot;:[&quot;Fujifilm&quot;],&quot;product_brand_id&quot;:[48],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_45707617c0744096907504862b0a511b;
+  var favorite_0035e0bfe0014caeaf4bf0134b7f0c60;
     jQuery(document).ready(function () {
-    favorite_45707617c0744096907504862b0a511b = new HSN.Widget.Favorite({
+    favorite_0035e0bfe0014caeaf4bf0134b7f0c60 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_45707617c0744096907504862b0a511b'
+      container: '#favorite_0035e0bfe0014caeaf4bf0134b7f0c60'
     });
   });
 </script>
@@ -7313,17 +7411,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_4c2a803e2b5845bca4eec536aa90d526" class="favorite-wrapper">
+<div id="favorite_0f1aeb5217d945809dcfdb7271506f5e" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="10080839" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10080839],&quot;product_sku&quot;:[1225268],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon IVY CLIQ Instant Camera Printer&quot;],&quot;product_sale_price&quot;:[129.99],&quot;product_original_price&quot;:[129.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="10080839" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10080839],&quot;product_sku&quot;:[1225268],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon IVY CLIQ Instant Camera Printer&quot;],&quot;product_sale_price&quot;:[129.99],&quot;product_original_price&quot;:[129.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_4c2a803e2b5845bca4eec536aa90d526;
+  var favorite_0f1aeb5217d945809dcfdb7271506f5e;
     jQuery(document).ready(function () {
-    favorite_4c2a803e2b5845bca4eec536aa90d526 = new HSN.Widget.Favorite({
+    favorite_0f1aeb5217d945809dcfdb7271506f5e = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_4c2a803e2b5845bca4eec536aa90d526'
+      container: '#favorite_0f1aeb5217d945809dcfdb7271506f5e'
     });
   });
 </script>
@@ -7417,17 +7515,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_8e88fbc1657f4f87a896c08bfe3c4c2a" class="favorite-wrapper">
+<div id="favorite_080ecc265e0249ceabf178b687cf81b2" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="10080838" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10080838],&quot;product_sku&quot;:[1225267],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon IVY CLIQ Instant Camera Printer&quot;],&quot;product_sale_price&quot;:[199.99],&quot;product_original_price&quot;:[199.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[5.0],&quot;product_rating_count&quot;:[1],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="10080838" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10080838],&quot;product_sku&quot;:[1225267],&quot;product_brand&quot;:[&quot;Canon&quot;],&quot;product_name&quot;:[&quot;Canon IVY CLIQ Instant Camera Printer&quot;],&quot;product_sale_price&quot;:[199.99],&quot;product_original_price&quot;:[199.99],&quot;product_shipping_handling&quot;:[&quot;12.22&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Canon&quot;,&quot;Id&quot;:44}],&quot;product_brand_name&quot;:[&quot;Canon&quot;],&quot;product_brand_id&quot;:[44],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[null],&quot;product_rating_average&quot;:[5.0],&quot;product_rating_count&quot;:[1],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[true],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_8e88fbc1657f4f87a896c08bfe3c4c2a;
+  var favorite_080ecc265e0249ceabf178b687cf81b2;
     jQuery(document).ready(function () {
-    favorite_8e88fbc1657f4f87a896c08bfe3c4c2a = new HSN.Widget.Favorite({
+    favorite_080ecc265e0249ceabf178b687cf81b2 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_8e88fbc1657f4f87a896c08bfe3c4c2a'
+      container: '#favorite_080ecc265e0249ceabf178b687cf81b2'
     });
   });
 </script>
@@ -7436,128 +7534,6 @@ Printers</h1>
     </div>
 
         <div class="more-choices">More choices available</div>
-</li>
-
-
-<li class="item product-item module violated" data-product-id="9338167" data-matrix-id="0" data-preview-url="/products/canon-pixma-crafting-all-in-one-printer-bundle/9338167/preview" data-product-url="/products/canon-pixma-crafting-all-in-one-printer-bundle/9338167" itemscope itemtype="https://schema.org/Product">
-    <meta itemprop="sku" content="694852" />
-    <h4 style="width: 0px; height: 0px; opacity: 0;">
-        <a href="/products/canon-pixma-crafting-all-in-one-printer-bundle/9338167" itemprop="url"><span itemprop="name">
-            Canon PIXMA Crafting All-In-One Printer Bundle
-        </span></a>
-    </h4>
-
-
-
-
-        <div class="violator2 violator-color sold-out" tabindex="0" >Sold Out&nbsp;</div>
-
-
-    <div class="info">
-        <div class="image ">
-            <ul>
-                <li>
-                        <img alt="Canon PIXMA Crafting All-In-One Printer Bundle" height="230" class="lazy" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid230/canon-pixma-crafting-all-in-one-printer-bundle-d-202002210846243~694852.jpg" width="230" />
-                        <noscript>
-                            <img alt="Canon PIXMA Crafting All-In-One Printer Bundle" height="230" src="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid230/canon-pixma-crafting-all-in-one-printer-bundle-d-202002210846243~694852.jpg" width="230" itemprop="image" />
-                        </noscript>
-                </li>
-                        <li>
-                            <img alt="Canon PIXMA Crafting All-In-One Printer Bundle" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-pixma-crafting-all-in-one-printer-bundle-d-2019110408473696~694852_alt1.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Canon PIXMA Crafting All-In-One Printer Bundle" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-pixma-crafting-all-in-one-printer-bundle-d-20200221084623237~694852_alt5.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Canon PIXMA Crafting All-In-One Printer Bundle" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-pixma-crafting-all-in-one-printer-bundle-d-20191104084737267~694852_alt6.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Canon PIXMA Crafting All-In-One Printer Bundle" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-pixma-crafting-all-in-one-printer-bundle-d-2019110408473716~694852_alt2.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Canon PIXMA Crafting All-In-One Printer Bundle" height="230" class="lazy lazy-hover" data-original="https://i01.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-pixma-crafting-all-in-one-printer-bundle-d-20191104084739287~694852_alt4.jpg" width="230" style="display: none" />
-                        </li>
-                        <li>
-                            <img alt="Canon PIXMA Crafting All-In-One Printer Bundle" height="230" class="lazy lazy-hover" data-original="https://i04.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/canon-pixma-crafting-all-in-one-printer-bundle-d-20191104084737403~694852_alt3.jpg" width="230" style="display: none" />
-                        </li>
-            </ul>
-        </div>
-            <div>
-
-                    <div class="swatches" role="toolbar" aria-label="color switcher">
-                        
-                                                    &nbsp;
-                    </div>
-                <a href="/products/canon-pixma-crafting-all-in-one-printer-bundle/9338167" itemprop="url" tabindex="-1"><span itemprop="name">
-
-                    Canon PIXMA Crafting All-In-One Printer Bundle
-                </span></a>
-                <dl>
-
-
-
-
-
-
-
-
-<dt>Pricing</dt>
-<dd class="pricing with-old-price" tabindex="0">
-            <strong class="actual-price price sale" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-    <span itemprop="priceCurrency" content="USD">$</span><span itemprop="price" content="179.99">179.99</span>
-            <meta itemprop="availability" content="OutOfStock" />
-        </strong>
-
-        <div class="old-price-container">
-        <span style="display:inline-flex; width: 0px; height: 0px; opacity: 0;"> Original price of </span>
-        <span class="old-price price"><del>$249.99</del></span>
-    </div>
-
-</dd>
-                    
-    <dt style="visibility: hidden; height: 0">Rating</dt>
-    <dd class="rating clearfix">
-
-
-    <div class="rateit " itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating"
-         aria-label="Rating of 3.6 out of 5 based on 8 customer reviews">
-        <div class="rateit-range">
-            <div class="rateit-selected rateit-preset" style="width:72%">
-                    <div class="hidden">
-                        <span itemprop="ratingValue">3.6</span>
-                        <span itemprop="bestRating">5.0</span>
-                            <span itemprop="reviewCount">8</span>
-                    </div>
-            </div>
-        </div>
-    </div>
-
-        <span class="count" aria-hidden="true">(8)</span>
-    </dd>
-                </dl>
-            </div>
-
-            <div class="favorite-container">
-
-
-<div id="favorite_86a84da4554d48beae5223ec845c7d04" class="favorite-wrapper">
-    <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="9338167" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9338167],&quot;product_sku&quot;:[694852],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Canon PIXMA Crafting All-In-One Printer Bundle&quot;],&quot;product_sale_price&quot;:[179.99],&quot;product_original_price&quot;:[249.99],&quot;product_shipping_handling&quot;:[&quot;18.72&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[&quot;Sold Out&quot;],&quot;product_rating_average&quot;:[3.6],&quot;product_rating_count&quot;:[8],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[false],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
-    <span class="favorite-link save-changes" data-object-id="9338167" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[9338167],&quot;product_sku&quot;:[694852],&quot;product_brand&quot;:[&quot;none&quot;],&quot;product_name&quot;:[&quot;Canon PIXMA Crafting All-In-One Printer Bundle&quot;],&quot;product_sale_price&quot;:[179.99],&quot;product_original_price&quot;:[249.99],&quot;product_shipping_handling&quot;:[&quot;18.72&quot;],&quot;product_brand_attribute&quot;:[{}],&quot;product_brand_name&quot;:[&quot;&quot;],&quot;product_brand_id&quot;:[null],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[&quot;Sold Out&quot;],&quot;product_rating_average&quot;:[3.6],&quot;product_rating_count&quot;:[8],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[false],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
-</div>
-
-<script>
-  var favorite_86a84da4554d48beae5223ec845c7d04;
-    jQuery(document).ready(function () {
-    favorite_86a84da4554d48beae5223ec845c7d04 = new HSN.Widget.Favorite({
-      application: HSN.Instance(),
-      container: '#favorite_86a84da4554d48beae5223ec845c7d04'
-    });
-  });
-</script>
-
-            </div>
-    </div>
-
 </li><!-- Brief:49778 -->
 <style>
 	.flush-module {position:relative;}
@@ -7637,17 +7613,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_912b46e272d1417ea3123bcf2d867d94" class="favorite-wrapper">
+<div id="favorite_bc6b4b2a27b54e4db96bdb4a4cf7b745" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="8810619" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[8810619],&quot;product_sku&quot;:[632342],&quot;product_brand&quot;:[&quot;Brother&quot;],&quot;product_name&quot;:[&quot;Brother MFC-J895DW Wireless Color All-In-One Inkjet Printer&quot;],&quot;product_sale_price&quot;:[159.99],&quot;product_original_price&quot;:[159.99],&quot;product_shipping_handling&quot;:[&quot;17.97&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Brother&quot;,&quot;Id&quot;:43}],&quot;product_brand_name&quot;:[&quot;Brother&quot;],&quot;product_brand_id&quot;:[43],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[{&quot;Name&quot;:&quot;Brother&quot;,&quot;Id&quot;:43}]],&quot;product_item_flag&quot;:[&quot;Sold Out&quot;],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[false],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="8810619" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[8810619],&quot;product_sku&quot;:[632342],&quot;product_brand&quot;:[&quot;Brother&quot;],&quot;product_name&quot;:[&quot;Brother MFC-J895DW Wireless Color All-In-One Inkjet Printer&quot;],&quot;product_sale_price&quot;:[159.99],&quot;product_original_price&quot;:[159.99],&quot;product_shipping_handling&quot;:[&quot;17.97&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;Brother&quot;,&quot;Id&quot;:43}],&quot;product_brand_name&quot;:[&quot;Brother&quot;],&quot;product_brand_id&quot;:[43],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[{&quot;Name&quot;:&quot;Brother&quot;,&quot;Id&quot;:43}]],&quot;product_item_flag&quot;:[&quot;Sold Out&quot;],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[false],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_912b46e272d1417ea3123bcf2d867d94;
+  var favorite_bc6b4b2a27b54e4db96bdb4a4cf7b745;
     jQuery(document).ready(function () {
-    favorite_912b46e272d1417ea3123bcf2d867d94 = new HSN.Widget.Favorite({
+    favorite_bc6b4b2a27b54e4db96bdb4a4cf7b745 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_912b46e272d1417ea3123bcf2d867d94'
+      container: '#favorite_bc6b4b2a27b54e4db96bdb4a4cf7b745'
     });
   });
 </script>
@@ -7682,10 +7658,10 @@ Printers</h1>
                         </noscript>
                 </li>
                         <li>
-                            <img alt="HP OfficeJet Pro 8035 All-in-One - Basalt" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/hp-officejet-pro-8035-all-in-one-basalt-d-2020020615031284~9441131w_alt2.jpg" width="230" style="display: none" />
+                            <img alt="HP OfficeJet Pro 8035 All-in-One - Basalt" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/hp-officejet-pro-8035-all-in-one-basalt-d-20200206150311393~9441131w_alt1.jpg" width="230" style="display: none" />
                         </li>
                         <li>
-                            <img alt="HP OfficeJet Pro 8035 All-in-One - Basalt" height="230" class="lazy lazy-hover" data-original="https://i02.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/hp-officejet-pro-8035-all-in-one-basalt-d-20200206150311393~9441131w_alt1.jpg" width="230" style="display: none" />
+                            <img alt="HP OfficeJet Pro 8035 All-in-One - Basalt" height="230" class="lazy lazy-hover" data-original="https://i03.hsncdn.com/is/image/HomeShoppingNetwork/prodgrid/hp-officejet-pro-8035-all-in-one-basalt-d-2020020615031284~9441131w_alt2.jpg" width="230" style="display: none" />
                         </li>
             </ul>
         </div>
@@ -7724,17 +7700,17 @@ Printers</h1>
             <div class="favorite-container">
 
 
-<div id="favorite_b12b9d2e047e4f8c92832949aa3a6f6b" class="favorite-wrapper">
+<div id="favorite_3378ad75dd20498c8dc827106eda2ca8" class="favorite-wrapper">
     <button type="button" aria-label="Add to favorites" class="favorite-link favorite large ir" data-object-id="10082146" data-object-type="1" data-favorite-web-id="" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10082146],&quot;product_sku&quot;:[1240799],&quot;product_brand&quot;:[&quot;HP&quot;],&quot;product_name&quot;:[&quot;HP OfficeJet Pro 8035 All-in-One&quot;],&quot;product_sale_price&quot;:[239.99],&quot;product_original_price&quot;:[239.99],&quot;product_shipping_handling&quot;:[&quot;17.47&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;HP&quot;,&quot;Id&quot;:51}],&quot;product_brand_name&quot;:[&quot;HP&quot;],&quot;product_brand_id&quot;:[51],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[&quot;Sold Out&quot;],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[false],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Add to Favorites" data-cmprefix="Grid" >&hearts;</button>
     <span class="favorite-link save-changes" data-object-id="10082146" data-object-type="1" data-favorite-web-id="" style="display:none;" data-datalayer-udo="{&quot;display_page&quot;:0,&quot;display_count&quot;:0,&quot;display_skip&quot;:0,&quot;product_id&quot;:[10082146],&quot;product_sku&quot;:[1240799],&quot;product_brand&quot;:[&quot;HP&quot;],&quot;product_name&quot;:[&quot;HP OfficeJet Pro 8035 All-in-One&quot;],&quot;product_sale_price&quot;:[239.99],&quot;product_original_price&quot;:[239.99],&quot;product_shipping_handling&quot;:[&quot;17.47&quot;],&quot;product_brand_attribute&quot;:[{&quot;Name&quot;:&quot;HP&quot;,&quot;Id&quot;:51}],&quot;product_brand_name&quot;:[&quot;HP&quot;],&quot;product_brand_id&quot;:[51],&quot;categories&quot;:[[{&quot;Name&quot;:&quot;Electronics&quot;,&quot;Id&quot;:&quot;EC&quot;},{&quot;Name&quot;:&quot;Home Office&quot;,&quot;Id&quot;:&quot;EC0573&quot;},{&quot;Name&quot;:&quot;Printers&quot;,&quot;Id&quot;:&quot;EC0454&quot;}]],&quot;product_primary_category_id&quot;:[&quot;EC0454&quot;],&quot;product_primary_category_name&quot;:[&quot;Printers&quot;],&quot;product_attributes&quot;:[[]],&quot;product_item_flag&quot;:[&quot;Sold Out&quot;],&quot;product_rating_average&quot;:[0.0],&quot;product_rating_count&quot;:[0],&quot;product_retek_division&quot;:[6],&quot;product_afs_status&quot;:[false],&quot;is_onair_today&quot;:[false],&quot;error_type&quot;:0}" data-tooltip="Update Favorite">&hearts; SAVE CHANGES</span>
 </div>
 
 <script>
-  var favorite_b12b9d2e047e4f8c92832949aa3a6f6b;
+  var favorite_3378ad75dd20498c8dc827106eda2ca8;
     jQuery(document).ready(function () {
-    favorite_b12b9d2e047e4f8c92832949aa3a6f6b = new HSN.Widget.Favorite({
+    favorite_3378ad75dd20498c8dc827106eda2ca8 = new HSN.Widget.Favorite({
       application: HSN.Instance(),
-      container: '#favorite_b12b9d2e047e4f8c92832949aa3a6f6b'
+      container: '#favorite_3378ad75dd20498c8dc827106eda2ca8'
     });
   });
 </script>
@@ -9022,11 +8998,11 @@ Also, because the models we carry are so streamlined, they'll easily fit on your
     9622924,
     9622923,
     9622922,
+    9622921,
     9088160,
     10083116,
     10080839,
     10080838,
-    9338167,
     8810619,
     10082146
   ],
@@ -9048,11 +9024,11 @@ Also, because the models we carry are so streamlined, they'll easily fit on your
     1249972,
     1249968,
     1249608,
+    1249973,
     669339,
     1253298,
     1225268,
     1225267,
-    694852,
     632342,
     1240799
   ],
@@ -9074,11 +9050,11 @@ Also, because the models we carry are so streamlined, they'll easily fit on your
     "Lexmark B3442dw Monochrome Laser Printer",
     "Lexmark MX331adn Monochrome Laser Printer",
     "Lexmark MX431adn Monochrome Laser Printer",
+    "Lexmark MB3442adw Monochrome Laser Printer",
     "Lifeprint 40-pack 3 x 45 ZINK Photo Paper for Mobile Printers",
     "Fuji Instax Mini Link Portable Smart Phone Printer",
     "Canon IVY CLIQ Instant Camera Printer",
     "Canon IVY CLIQ Instant Camera Printer",
-    "Canon PIXMA Crafting All-In-One Printer Bundle",
     "Brother MFC-J895DW Wireless Color All-In-One Inkjet Printer",
     "HP OfficeJet Pro 8035 All-in-One"
   ],
@@ -9105,13 +9081,13 @@ Also, because the models we carry are so streamlined, they'll easily fit on your
     "Printers"
   ],
   "grid_filters": [],
-  "ab_test_value_cms": "TestB",
+  "ab_test_value_cms": "TestA",
   "ab_test_value_1": "TestA",
   "ab_test_value_2": "TestB",
-  "ab_test_value_3": "TestB",
+  "ab_test_value_3": "TestA",
   "ab_test_value_4": "TestC",
-  "ab_test_value_5": "TestB",
-  "ab_test_value_6": "TestB",
+  "ab_test_value_5": "TestA",
+  "ab_test_value_6": "TestA",
   "ab_test_value_7": "TestA",
   "error_type": 0,
   "search_category": "Electronics"

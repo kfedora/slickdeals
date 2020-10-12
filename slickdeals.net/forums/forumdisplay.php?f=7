@@ -1,12 +1,33 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
-Content-Type: text/html
-Content-Length: 96
-Date: Mon, 12 Oct 2020 15:14:57 GMT
+HTTP/1.1 200 OK
+X-Powered-By: PHP/7.2.31
+Expires: 0
+Cache-Control: private, post-check=0, pre-check=0, max-age=0, no-cache
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+X-UA-Compatible: IE=edge
+Referrer-Policy: strict-origin-when-cross-origin
+Server: Apache
+X-Akamai-Transformed: 9 97526 0 pmb=mRUM,2
+Vary: user-agent
+Vary: Accept-Encoding
+Date: Mon, 12 Oct 2020 13:04:38 GMT
+Transfer-Encoding:  chunked
 Connection: keep-alive
+Connection: Transfer-Encoding
+Set-Cookie: auuid=d9be78840c8a11eb97272e969d48dfac; expires=Tue, 12-Oct-2021 13:04:38 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: bblastactivity=1602507878; expires=Tue, 12-Oct-2021 13:04:38 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net; secure
+Set-Cookie: sd_a=1602507878|d9bf1d160c8a11eb97272e969d48dfac-d9bf205e0c8a11eb97272e969d48dfac|0|; expires=Tue, 12-Oct-2021 13:04:38 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602507606%7D&count=1&new=1&abt_new=1602507606&abt_uuid=dda29b36f03941428df9dd44e5210b50&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Tue, 12-Oct-2021 13:04:38 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602507606%7D&count=1&new=1&abt_new=1602507606&abt_uuid=dda29b36f03941428df9dd44e5210b50&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Tue, 12-Oct-2021 13:04:38 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602507606%7D&count=1&new=1&abt_new=1602507606&abt_uuid=dda29b36f03941428df9dd44e5210b50&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Tue, 12-Oct-2021 13:04:38 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_s=pvnum=114&dfpSplit=8; path=/; domain=.slickdeals.net
+Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=28
-Server-Timing: origin; dur=15007
+Server-Timing: edge; dur=42
+Server-Timing: origin; dur=249
 Strict-Transport-Security: max-age=86400
 
 <!DOCTYPE html>
@@ -46,10 +67,10 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 </script>
 <script>
   window.SD=window.SD||{},window.SD.ABTest={extendedData:{},_rSeed:0,execute:function(e,t,n){var i=SD.ABTest._getGroup(e);null!=i&&void 0!==n[i]&&(n[i](),window.SD.ABTest.initDevTools&&window.SD.ABTest.initDevTools(e))},isTest:function(e){return SD.ABTest.data.hasOwnProperty(SD.ABTest._getDataGroupName(e))},_getGroup:function(e){var t,n={link:new RegExp("linked:([0-9]+)","gi"),position:new RegExp("position:([0-9]+)","gi"),split:new RegExp("split:([0-9,]+)","gi")},i={};if(SD.ABTest.isTest(e)){if(-1<e.indexOf("linked:")){for(t in n)if(n.hasOwnProperty(t)){if(i[t]=n[t].exec(e),n[t].lastIndex=0,null===i[t]||0===i[t].length)return null;i[t]=i[t][1]}for(t in window.SD.ABTest.data)if(window.SD.ABTest.data.hasOwnProperty(t)&&-1<t.indexOf(i.link)&&t!=="Test: "+e){if(i.secondPosition=n.position.exec(t),n.position.lastIndex=0,null!==i.secondPosition&&0===i.secondPosition.length)return null;i.secondPosition=i.secondPosition[1]}return SD.ABTest._getExtendedGroup(!1,!1,i)}return SD.ABTest.data[SD.ABTest._getDataGroupName(e)]}return null},_getDataGroupName:function(e){return"Test: "+e.trim()},extendedExecute:function(e,t,n){SD.ABTest.extendedData.hasOwnProperty(e)&&n[SD.ABTest._getExtendedGroup(!1,!1,SD.ABTest.extendedData[e])]()},setupExtendedTest:function(e,t,n,i,o){null!==e&&null!==o&&0<o.length&&0<n&&n<32&&n!=i&&0<i&&i<32&&(SD.ABTest.extendedData[e]={link:t,position:n,secondPosition:i,split:o})},_getExtendedGroup:function(e,t,n,i){var o,s,d,r,u,l,a,p=new RegExp("abt_uuid=([0-9a-f]+)","g"),D=0,S=[];if(n&&(e=n.position,t=n.secondPosition),e--,t--,o=(o=(o=p.exec(document.cookie))[1]).slice(0,12)+o.slice(13,32),i&&console.log({A:e,B:t,UUID:o,Hex:o[e]+o[t]}),s=parseInt(o[e]+o[t],16),!n)return s;for(d=(d=(d=n.split.split(",")).map(function(e){return e=parseInt(e,10),D+=e,e})).map(function(e){return e/D*255<<0}),(r=new Array(255)).fill(0),l=u=0,a=d.length;u<a;u++)r.fill(u,l,l+d[u]),l+=d[u];for(SD.ABTest._rSeed=n.link;S.length<256;)u=SD.ABTest._seededRandom(256,0)<<0,-1===S.indexOf(u)&&S.push(u);return r[S[s]]},_seededRandom:function(e,t){return e=e||1,t=t||0,SD.ABTest._rSeed=(9301*SD.ABTest._rSeed+49297)%233280,t+SD.ABTest._rSeed/233280*(e-t)}};
-  window.SD.ABTest.data = {"logged_in":false,"deviceType":"desktop","scriptIdent":"forumdisplay","Test: Sticky right rail - 30578":"0","Test: Mobile web fp v3 - 29127":"0","Test: Deal Details v7 - 27993":"0","Test: Add In Line Top Coupons Module on FP - 27589":"1","Test: Post a Deal":"1","Test: Category Redesign":"1","Test: Display % off on the Frontpage":"1","Test: SEM LP Redesign Test":"1","Test: Mobile 3 AB Test":"2","Test: Store Page Test":"1","Test: Deal Editors Fire Deal Marker":"0","Test: Redesign of FP and Deal Details":"1","Test: Rolling 24 Hour Time Frame for Deals in Top Section on FP":"1","Test: Search Results Layout and Store Logos Test":"1","view":"redesign","storeTest":null,"mobile":false,"forumid":7};
+  window.SD.ABTest.data = {"logged_in":false,"deviceType":"desktop","scriptIdent":"forumdisplay","Test: Sticky right rail - 30578":"0","Test: Mobile web fp v3 - 29127":"0","Test: Deal Details v7 - 27993":"2","Test: Add In Line Top Coupons Module on FP - 27589":"1","Test: Post a Deal":"1","Test: Category Redesign":"1","Test: Display % off on the Frontpage":"1","Test: SEM LP Redesign Test":"1","Test: Mobile 3 AB Test":"2","Test: Store Page Test":"1","Test: Deal Editors Fire Deal Marker":"0","Test: Redesign of FP and Deal Details":"1","Test: Rolling 24 Hour Time Frame for Deals in Top Section on FP":"1","Test: Search Results Layout and Store Logos Test":"1","view":"redesign","storeTest":null,"mobile":false,"forumid":7};
   </script>
   <script>
-    var dataLayer = {"visitor":{"ipAddress":"40.65.226.30","isMachineIp":true,"isForeignIp":false,"sectionLayout":"Forums_Redesign","pbSectionLayout":"Forums_Redesign","asEnabled":false,"confiant":1,"noads":0,"immediateSource":"","layout":"Redesign","uncookiedUser":false,"userId":0,"username":"Unregistered","isLoggedIn":"No","status":"Anonymous","verified":"No","daysRegistered":null,"emailHashes":"","abTestInfo":[{"testKey":"65810-gale-desktop-item-to-item.yaml","variantName":"Gale (yield)","testName":"Gale (Desktop) Item-to-Item Pers V2"}],"gaOptimizeInfo":"","appReferrer":null},"reporting":{"clientID":"0ecd4c8e0c6411eb830be645f6083ee1","sessionID":"0ecd49820c6411eb830be645f6083ee1"},"traffic":{"trueReferrer":null,"subSection1":"General Discussion","subSection2":"The Lounge","subSection3":"P1","subSection4":null,"corporateDomain":"slickdeals.net","deviceSegment":"desktop","clientHeaders":[]},"page":{"rml":false,"pageName":"Forums:General Discussion:The Lounge:P1","section":"Forums","type":"Thread List","analyticsTitle":null,"template":null,"publishedDate":null,"pageGroup":"Forums","layout":"Redesign","nps":null},"btt":{"AbTestingSegment":null},"microSite":"Slickdeals","frontpage":{"layout":null},"build":"20201009-160315-PDT-14b12a24cc2","abTestEventData":null,"gdpr":{"isEu":false,"showPrompt":false},"cdp":{"blueshift_id":"13779bc333ac34fac08a37c930c61e97"},"product":{"forum":"The Lounge","title":null,"products":null,"postedBy":null,"comments":null,"votes":null,"brand":null,"store":null,"category":null,"primaryCategory":null,"subCategory":null,"isExpiredDeal":null,"threadId":null}};
+    var dataLayer = {"visitor":{"ipAddress":"51.141.175.48","isMachineIp":true,"isForeignIp":true,"sectionLayout":"Forums_Redesign","pbSectionLayout":"Forums_Redesign","asEnabled":false,"confiant":1,"noads":0,"immediateSource":"","layout":"Redesign","uncookiedUser":false,"userId":0,"username":"Unregistered","isLoggedIn":"No","status":"Anonymous","verified":"No","daysRegistered":null,"emailHashes":"","abTestInfo":[],"gaOptimizeInfo":"","appReferrer":null},"reporting":{"clientID":"d9bf205e0c8a11eb97272e969d48dfac","sessionID":"d9bf1d160c8a11eb97272e969d48dfac"},"traffic":{"trueReferrer":null,"subSection1":"General Discussion","subSection2":"The Lounge","subSection3":"P1","subSection4":null,"corporateDomain":"slickdeals.net","deviceSegment":"desktop","clientHeaders":[]},"page":{"rml":false,"pageName":"Forums:General Discussion:The Lounge:P1","section":"Forums","type":"Thread List","analyticsTitle":null,"template":null,"publishedDate":null,"pageGroup":"Forums","layout":"Redesign","nps":null},"btt":{"AbTestingSegment":null},"microSite":"Slickdeals","frontpage":{"layout":null},"build":"20201009-160315-PDT-14b12a24cc2","abTestEventData":null,"gdpr":{"isEu":false,"showPrompt":false},"cdp":{"blueshift_id":"13779bc333ac34fac08a37c930c61e97"},"product":{"forum":"The Lounge","title":null,"products":null,"postedBy":null,"comments":null,"votes":null,"brand":null,"store":null,"category":null,"primaryCategory":null,"subCategory":null,"isExpiredDeal":null,"threadId":null}};
 
     // Copy the tests from dataLayer.visitor.ABTestInfo to SD.ABTest.data
     if (typeof dataLayer.visitor !== 'undefined'
@@ -146,7 +167,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
       <script>
     var googletag = googletag || {};
-    googletag.ebdaBuckets = {"10":9,"%10":9};
+    googletag.ebdaBuckets = {"10":6,"%10":6};
 </script>
   
     <title>The Lounge - Slickdeals.net</title>
@@ -277,7 +298,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       var SECURITYTOKEN = "guest";
       var IMGDIR_MISC = "/images/misc";
       var vb_disable_ajax = parseInt("0", 10);
-      window['\u200BviewSid'] = "c0c3c5580c6411ebb02d162af5eba7fc0000";
+      window['\u200BviewSid'] = "7bf9cb300c8b11ebb47002ced187688b0000";
     </script>
 
       <script>
@@ -298,7 +319,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           Settings.securityToken = 'guest';
           Settings.email = '',
           Settings.pageDisplayedTimestamp = Math.floor(Date.now() / 1000);
-          Settings.pageGeneratedTimestamp = '1602491243';
+          Settings.pageGeneratedTimestamp = '1602507878';
           Settings.userActivityDealAlertsTrackingEnabled = true;
           Settings.stickyGlobalHeader = true;
           Settings.app = {
@@ -642,7 +663,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     function defineSlots()
     {
         googletag.cmd.push(function googleCmdDefineSlots() {
-            var generalTargeting = {"targeting":[["article_label","N\/A"],["requestSource","GPT"],["ptype","forum"],["login","no"],["view","redesign"],["env","prod"],["UserGroup","C"],["pvnum","121"],["exp","19"],["scat","none"]]}, pRef = googletag.pubads(), key;
+            var generalTargeting = {"targeting":[["article_label","N\/A"],["requestSource","GPT"],["ptype","forum"],["login","no"],["view","redesign"],["env","prod"],["UserGroup","C"],["pvnum","114"],["exp","8"],["scat","none"]]}, pRef = googletag.pubads(), key;
             if ('targeting' in generalTargeting)
             {
                 for (key in generalTargeting.targeting)
@@ -663,15 +684,15 @@ if ('adSlot2' in window)
 
 window.adSlot2 = adSlot;
 
-    verifyOrNotify({"path":"\/1006041\/forum728ATF","sizes":[[728,90]],"id":"top-728","targeting":[["bucket",9],["pos","atf"],["refresh",1]],"lazyLoad":false});
+    verifyOrNotify({"path":"\/1006041\/forum728ATF","sizes":[[728,90]],"id":"top-728","targeting":[["bucket",6],["pos","atf"],["refresh",1]],"lazyLoad":false});
 
 
-    verifyOrNotify({"path":"\/1006041\/forum300ATF","sizes":[[300,250]],"id":"rightcol-300x250-A","targeting":[["bucket",9],["pos","atf"],["refresh",1]],"lazyLoad":false});
-      verifyOrNotify({"path":"\/1006041\/forum300BTF","sizes":[[300,250]],"id":"rightcol-300x250-B","targeting":[["bucket",9],["pos","btf"],["refresh",1]],"lazyLoad":false});
+    verifyOrNotify({"path":"\/1006041\/forum300ATF","sizes":[[300,250]],"id":"rightcol-300x250-A","targeting":[["bucket",6],["pos","atf"],["refresh",1]],"lazyLoad":false});
+      verifyOrNotify({"path":"\/1006041\/forum300BTF","sizes":[[300,250]],"id":"rightcol-300x250-B","targeting":[["bucket",6],["pos","btf"],["refresh",1]],"lazyLoad":false});
   
   
-  verifyOrNotify({"path":"\/1006041\/forum728BTF","sizes":[[468,60],[728,90]],"id":"bottom-728","targeting":[["bucket",9],["pos","btf"],["refresh",1]],"lazyLoad":false,"sizeMapping":[{"viewport":[0,0],"unitSize":[468,60]},{"viewport":[1115,200],"unitSize":[728,90]},{"viewport":[0,0],"unitSize":[468,60]},{"viewport":[1115,200],"unitSize":[728,90]}]});
-verifyOrNotify({"path":"\/1006041\/forum300bottom","sizes":[[300,250]],"id":"bottom-300","targeting":[["bucket",9],["pos","btf"],["refresh",1]],"lazyLoad":false});
+  verifyOrNotify({"path":"\/1006041\/forum728BTF","sizes":[[468,60],[728,90]],"id":"bottom-728","targeting":[["bucket",6],["pos","btf"],["refresh",1]],"lazyLoad":false,"sizeMapping":[{"viewport":[0,0],"unitSize":[468,60]},{"viewport":[1115,200],"unitSize":[728,90]},{"viewport":[0,0],"unitSize":[468,60]},{"viewport":[1115,200],"unitSize":[728,90]}]});
+verifyOrNotify({"path":"\/1006041\/forum300bottom","sizes":[[300,250]],"id":"bottom-300","targeting":[["bucket",6],["pos","btf"],["refresh",1]],"lazyLoad":false});
     
       
       
@@ -978,11 +999,11 @@ if (amznAdSlots.length)
 			}, false);
 		}
 	</script>
-                      <script src="/forums/userstyles.php?uniq=eF7lWV1v2zYU_SsEsb0MWatPyzYwDF3TogOSLkiKvaydQVuUTUQWBZFyEAT577uXkkXR6pLUTpeuebFx-S3y8NxzL28o03RKV1qX048vP75UuVhcppzl6kXB9ceXmazqtWr_U6HKnF2_KFflr9kvCT2iFc94xat2BPXZIbbNoN2srkUKjaFIizVXmq1LOvVHXhBN_CAKj2gmKp7OumGLOs9xFpY3ZQ-aK-VKLItjphmd3tA5nXpHtIBpjujG_C6hnP7pk5_Je34FS2Fz3ALfj9h8shgnQRJG2YKPAz-bJ-l8zLOUpcyjt7i6Ysmrs0oU0ANGVZeiPOfNfOd8IasUGtCprmp-RMW6zAV8TK14hV_dfMu2tOBXKudaw6aoeq4WlSi1kMXMtoQWF1wpKKTTDA4EhoSi1zAmzm5LXmldiXmNvbviyizGqWkWlcEizh-4kynfiAWf6euSm2XB1qkVg_PBbWXzD3B-ik7_uqHjCEvMyfqhH5stnWmoNt2wGs4bzYKtORRcaADZNanEcqVJxUQORxF6cTKGdhteNZ9MPbBKqUTzYXQCZrNNDYBYnssr2F7Y_UstAUbU75VqNofdbUfZNl3LuchxAWZotuSzNVOXYP_94qcfcHizLnNgbaMFQE_jB1M_9pN4kkwm-DEA3Go7OC-wGkdkCy02ODwupDkBAwdTuWF5zWdeW9tYvmMFjhU6FmywGbXpFzvWyLESZ76xY00cC2-BXRlck561cKztBzazbzewsbK2pVAzWcJWzWTd3I1lJetyVtTrebubcH8SWPkWKH482gUKVLtAOTUHRq74nGQl2YSAkwCIApnnX3ES7oeTPng6nGDhF-PEi0bBJApwax8RJ0F3-ogT_Mhm_xEn9hQRJ9ZCnFgLcWKtbxsncDM6nAR44xxCSfBc-oRyDA6CHHMNVKLIJkGYwE01m9TRCVo9OjE0tQeffBYne_GJF0ZBGI0MXg_hE3umQz6xqPkucRIDv1mcGA7uOx6odnHyKk3J7wU5EQUnH2RJXgNFyUKRU5nWwDOyIG_PDHjiMbobCx6kqj54EAV7gMessPVbhzkjA54w-argscAaOiOXZKxrGpKMrRs6I1s3dEa2buiMbN3QGWHdfc7IRzEXWZKJxwPsQK2LnTOpNGHAMiy_CxqIlKdERjSegFKJIrz5X41WvnNkgMfZ0koQDpBh_FHf-7wGibiU1TXZhgIOPtDP9Kgj2FPHPprfiQDsXuTHxv8d4nfsJfxaOtalDmuhjnWpw1qoY13qsJbR8Z1y2ip1q2MfTB0BEOLW7wypA2p35EkTN5Mficwy9DJ6xcnbShYaxeWdKmU_Nnk8sETgY0bJyID2ELA8XKRYaTsUs66fseIGxaztd5-fsf0QLLbffX7G9sOgB_s9yM_4sLouOsYxHI0CtTvB8ZtTcnLWcQnBMNuBiAlKbFzcBBpfHhjvH_Bgz15gHAWTcZhEifF8h2DkGROKD7qpw8ggLobaz8bFIXn12xAfu1r1P8cHTtjHR-hHkOEbHYwPe__Q4bgBsRvoWAs5xFoYEFsLtarLIdZCDrEWOhxroVZ1OcRayCHWQodjLXQ4LoegdR-HBKhVIVrtFImJGF0O2c2bXGhZcXIGzmUIjx09YvjnSekDsiUQqwcHC9bnTB-QE2rpYzTQqz7u7CBb8iYVABJF3kLC3QQ15JRVl5CquyO1ZpRvh5WV1JB3FQvVC2rvScY-ns_xknHi-56Jww_xOa4usRYm2dwo57tLsvm9JNswyoFaFzXb4AY0LGZJWJE2sGnTbnfFxE9OMaBQgniU_A9S999syGND4nCQj90NiM9lnsPLBwki8k7WFfkAb30Q78DjD4H3RAMbRURhUnAXHF5NICQyuTcHREhbPZ3rcM8TUE44mXhxPIoOTrk9Yz9lw-Z4AKLdoPmCs2qxgjhI1blW5IRdw8uSoZ1G3ZzIpVRDebODmsfM8pvA675Xw93gCFIto8DzDw6gny1qbj-BIhHwFq4hzda8N8Mr6g1t35INaeATNTjsLv8GitlArW3zTmrkGpAqRu7YDsc8Y4AueouTLGql5fqCt4_a7dvjH-a9-T2MAITVlpmQ_PbT7e0_hpPeWA&amp;pv=c0c97e120c6411ebb02d162af5eba7fc&amp;au=0eccad6a0c6411eb830be645f6083ee1" async="async" defer="defer"></script>
-<noscript><link rel="stylesheet" href="/forums/userstyles.php?uniq=eF7lWV1v2zYU_SsEsb0MWatPyzYwDF3TogOSLkiKvaydQVuUTUQWBZFyEAT577uXkkXR6pLUTpeuebFx-S3y8NxzL28o03RKV1qX048vP75UuVhcppzl6kXB9ceXmazqtWr_U6HKnF2_KFflr9kvCT2iFc94xat2BPXZIbbNoN2srkUKjaFIizVXmq1LOvVHXhBN_CAKj2gmKp7OumGLOs9xFpY3ZQ-aK-VKLItjphmd3tA5nXpHtIBpjujG_C6hnP7pk5_Je34FS2Fz3ALfj9h8shgnQRJG2YKPAz-bJ-l8zLOUpcyjt7i6Ysmrs0oU0ANGVZeiPOfNfOd8IasUGtCprmp-RMW6zAV8TK14hV_dfMu2tOBXKudaw6aoeq4WlSi1kMXMtoQWF1wpKKTTDA4EhoSi1zAmzm5LXmldiXmNvbviyizGqWkWlcEizh-4kynfiAWf6euSm2XB1qkVg_PBbWXzD3B-ik7_uqHjCEvMyfqhH5stnWmoNt2wGs4bzYKtORRcaADZNanEcqVJxUQORxF6cTKGdhteNZ9MPbBKqUTzYXQCZrNNDYBYnssr2F7Y_UstAUbU75VqNofdbUfZNl3LuchxAWZotuSzNVOXYP_94qcfcHizLnNgbaMFQE_jB1M_9pN4kkwm-DEA3Go7OC-wGkdkCy02ODwupDkBAwdTuWF5zWdeW9tYvmMFjhU6FmywGbXpFzvWyLESZ76xY00cC2-BXRlck561cKztBzazbzewsbK2pVAzWcJWzWTd3I1lJetyVtTrebubcH8SWPkWKH482gUKVLtAOTUHRq74nGQl2YSAkwCIApnnX3ES7oeTPng6nGDhF-PEi0bBJApwax8RJ0F3-ogT_Mhm_xEn9hQRJ9ZCnFgLcWKtbxsncDM6nAR44xxCSfBc-oRyDA6CHHMNVKLIJkGYwE01m9TRCVo9OjE0tQeffBYne_GJF0ZBGI0MXg_hE3umQz6xqPkucRIDv1mcGA7uOx6odnHyKk3J7wU5EQUnH2RJXgNFyUKRU5nWwDOyIG_PDHjiMbobCx6kqj54EAV7gMessPVbhzkjA54w-argscAaOiOXZKxrGpKMrRs6I1s3dEa2buiMbN3QGWHdfc7IRzEXWZKJxwPsQK2LnTOpNGHAMiy_CxqIlKdERjSegFKJIrz5X41WvnNkgMfZ0koQDpBh_FHf-7wGibiU1TXZhgIOPtDP9Kgj2FPHPprfiQDsXuTHxv8d4nfsJfxaOtalDmuhjnWpw1qoY13qsJbR8Z1y2ip1q2MfTB0BEOLW7wypA2p35EkTN5Mficwy9DJ6xcnbShYaxeWdKmU_Nnk8sETgY0bJyID2ELA8XKRYaTsUs66fseIGxaztd5-fsf0QLLbffX7G9sOgB_s9yM_4sLouOsYxHI0CtTvB8ZtTcnLWcQnBMNuBiAlKbFzcBBpfHhjvH_Bgz15gHAWTcZhEifF8h2DkGROKD7qpw8ggLobaz8bFIXn12xAfu1r1P8cHTtjHR-hHkOEbHYwPe__Q4bgBsRvoWAs5xFoYEFsLtarLIdZCDrEWOhxroVZ1OcRayCHWQodjLXQ4LoegdR-HBKhVIVrtFImJGF0O2c2bXGhZcXIGzmUIjx09YvjnSekDsiUQqwcHC9bnTB-QE2rpYzTQqz7u7CBb8iYVABJF3kLC3QQ15JRVl5CquyO1ZpRvh5WV1JB3FQvVC2rvScY-ns_xknHi-56Jww_xOa4usRYm2dwo57tLsvm9JNswyoFaFzXb4AY0LGZJWJE2sGnTbnfFxE9OMaBQgniU_A9S999syGND4nCQj90NiM9lnsPLBwki8k7WFfkAb30Q78DjD4H3RAMbRURhUnAXHF5NICQyuTcHREhbPZ3rcM8TUE44mXhxPIoOTrk9Yz9lw-Z4AKLdoPmCs2qxgjhI1blW5IRdw8uSoZ1G3ZzIpVRDebODmsfM8pvA675Xw93gCFIto8DzDw6gny1qbj-BIhHwFq4hzda8N8Mr6g1t35INaeATNTjsLv8GitlArW3zTmrkGpAqRu7YDsc8Y4AueouTLGql5fqCt4_a7dvjH-a9-T2MAITVlpmQ_PbT7e0_hpPeWA&amp;pv=c0c97e120c6411ebb02d162af5eba7fc&amp;au=0eccad6a0c6411eb830be645f6083ee1"></noscript>
+                      <script src="/forums/userstyles.php?uniq=eF7lWV1v2zYU_SsEsb0MWatvWQaGoWtadEDSBUmxl7UzaIuyhciiIFIOgiD_ffdSsihaXZLa6dI1LzYuv0UennvP5Q1lik7pSqlq-vHlx5eyyBeXKWeFfFFy9fFlJupmLbv_NJdVwa5fVKvq1-yXmB7Rmme85nU3gvzsENtm0G7WNHkKjaFI5WsuFVtXdOpGjhc68SSeHNEsr3k664ctm6LAWVjRlj1orpTLfFkeM8Xo9IbO6dQ5oiVMc0Q3-ncJ5fRPl_xM3vMrWAqb4xakKfOSuR9ljp8EbuBN0ixJ0yDgoec689Cht7i6csnrszovoQeMKi_z6py3853zhahTaECnqm74Ec3XVZHDxzSS1_jV7bdsS0t-JQuuFGyKbOZyUeeVykU5My2hxQWXEgrpNIMDgSGh6DWMibObkldK1fm8wd59ca0XY9W0i8pgEecP3MmUb_IFn6nriutlwdbJFYPzwW1l8w9wfpJO_7qhkwBL9Mm6vhvqLZ0pqNbdsBrOG82SrTkUXCgA2TWp8-VKkZrlBRyF74TxBNpteN1-MnXAqoTM2w-jCZjtNrUAYkUhrmB7YfcvlQAYUXdQqtgcdrcbZdt0LeZ5gQvQQ7Mln62ZvAT77xc__YDD63XpA-saLQB6Cj-YuqEbh0mcJPgxANx6OzgvsRpHZAuVb3B4XEh7AhoOunLDiobPnK62tVzL8izLtyzYYD1q2y-0rMiyYmu-iWUlloW3wKwMrsnAWljW9gPb2bcb2FpZ1zKXM1HBVs1E096NZS2aalY263m3m3B_Ylj5FihuGO0CBaptoJzqAyNXfE6yimx8wImXuB4yz7_ixN8PJ0Pw9DjBwi_GiRNEXhJ4uLWPiBOvP33ECX5ku_-IE3OKiBNjIU6MhTgx1reNE7gZPU48vHEWocR4LkNCOQYHQY65AiqRZBMjTOCm6k3q6QStAZ1omtqDTz6Lk734xPEDzw8ijddD-MSc6ZhPDGq-N5x46I9D4DeDE83BQ8cD1TZOXqUp-b0kJ3nJyQdRkddAUaKU5FSkDfCMKMnbMw2ecILuxoAHqWoIHkTBHuDRK-z81mHOSIPHj78qeAywxs7IJhnjmsYkY-rGzsjUjZ2RqRs7I1M3dkZYd58zchE8gSGZcDLCDtTa2DkTUhEGLMOKu6CBSHlKZASTBCKVIMCb_9Vo5TtHBnicLa14_ggZ2h8Nvc9rCBGXor4mWylg4QP9zIA6vD3j2EfzOwGA3QncUPu_Q_yOuYRfK461qcNYGMfa1GEsjGNt6jCWjuP7yGkbqZs49sHU4QEhbv3OmDqgdic8aXUz-ZGILEMvo1acvK1FqTC4vDNK2Y9NHg8sAfiYKI40aA8By8ODFBPajoNZ28-Y4AaDWdPvPj9j-iFYTL_7_Izph6IH-z3Iz7iwul4d4xhWjAK1O-L4zSk5Oeu5hKDMtiCiRYnRxa3Q-HJhvL_gwZ4DYRx4ycSPg1h7vkMw8owJxYW4qcfISBdD7Wd1sU9e_TbGx26s-p_jAycc4sN3A8jwRQfjw9w_dDi2ILaFjrGQQ4yFgthYGKvaHGIs5BBjocMxFsaqNocYCznEWOhwjIUOx-YQtO7jEC10QK32EYlWjDaH7OZNLpSoOTkD5zKGx048ovnnSekDsiWg1b2DA9bnTB-QE-roIxrFqy7u7Chb8ibNASSSvIWEuxY15JTVl5CquyO1piPfHisroSDvmi_kQNTek4x9PJ-DzwWu62gdfojPseMSY2GSzVY5312SzR0k2cYqB2pt1GzFDcSwmCVhZdrCpku73aWJn5xiIELxwij-H6Tuv1nJYySxP8rH7gric1EU8PJBvIC8E01NPsBbH-gdePwh8J6oYSNJXuoU3AWHVxOQRDr3ZoEIaWsQ51rc8wSU4yeJE4ZRcHDK7Rn7KSObwxGIdkXzBWf1YgU6SDaFkuSEXcPLkqadNro5EUshx-HNDmoeM8uvhdd9r4a74ghSLZHnuAcL6GeLmttPEJHk8BauIM3WvjfDK-oN7d6SNWngEzU47D7_BhGzhlrX5p1QyDUQquhwx3Q45hkDdNFbnGTRSCXWF7x71O7eHv_Q783vYQQgrK5MS_LbT7e3_wCrAN1y&amp;pv=7c0144140c8b11ebb47002ced187688b&amp;au=d9be78840c8a11eb97272e969d48dfac" async="async" defer="defer"></script>
+<noscript><link rel="stylesheet" href="/forums/userstyles.php?uniq=eF7lWV1v2zYU_SsEsb0MWatvWQaGoWtadEDSBUmxl7UzaIuyhciiIFIOgiD_ffdSsihaXZLa6dI1LzYuv0UennvP5Q1lik7pSqlq-vHlx5eyyBeXKWeFfFFy9fFlJupmLbv_NJdVwa5fVKvq1-yXmB7Rmme85nU3gvzsENtm0G7WNHkKjaFI5WsuFVtXdOpGjhc68SSeHNEsr3k664ctm6LAWVjRlj1orpTLfFkeM8Xo9IbO6dQ5oiVMc0Q3-ncJ5fRPl_xM3vMrWAqb4xakKfOSuR9ljp8EbuBN0ixJ0yDgoec689Cht7i6csnrszovoQeMKi_z6py3853zhahTaECnqm74Ec3XVZHDxzSS1_jV7bdsS0t-JQuuFGyKbOZyUeeVykU5My2hxQWXEgrpNIMDgSGh6DWMibObkldK1fm8wd59ca0XY9W0i8pgEecP3MmUb_IFn6nriutlwdbJFYPzwW1l8w9wfpJO_7qhkwBL9Mm6vhvqLZ0pqNbdsBrOG82SrTkUXCgA2TWp8-VKkZrlBRyF74TxBNpteN1-MnXAqoTM2w-jCZjtNrUAYkUhrmB7YfcvlQAYUXdQqtgcdrcbZdt0LeZ5gQvQQ7Mln62ZvAT77xc__YDD63XpA-saLQB6Cj-YuqEbh0mcJPgxANx6OzgvsRpHZAuVb3B4XEh7AhoOunLDiobPnK62tVzL8izLtyzYYD1q2y-0rMiyYmu-iWUlloW3wKwMrsnAWljW9gPb2bcb2FpZ1zKXM1HBVs1E096NZS2aalY263m3m3B_Ylj5FihuGO0CBaptoJzqAyNXfE6yimx8wImXuB4yz7_ixN8PJ0Pw9DjBwi_GiRNEXhJ4uLWPiBOvP33ECX5ku_-IE3OKiBNjIU6MhTgx1reNE7gZPU48vHEWocR4LkNCOQYHQY65AiqRZBMjTOCm6k3q6QStAZ1omtqDTz6Lk734xPEDzw8ijddD-MSc6ZhPDGq-N5x46I9D4DeDE83BQ8cD1TZOXqUp-b0kJ3nJyQdRkddAUaKU5FSkDfCMKMnbMw2ecILuxoAHqWoIHkTBHuDRK-z81mHOSIPHj78qeAywxs7IJhnjmsYkY-rGzsjUjZ2RqRs7I1M3dkZYd58zchE8gSGZcDLCDtTa2DkTUhEGLMOKu6CBSHlKZASTBCKVIMCb_9Vo5TtHBnicLa14_ggZ2h8Nvc9rCBGXor4mWylg4QP9zIA6vD3j2EfzOwGA3QncUPu_Q_yOuYRfK461qcNYGMfa1GEsjGNt6jCWjuP7yGkbqZs49sHU4QEhbv3OmDqgdic8aXUz-ZGILEMvo1acvK1FqTC4vDNK2Y9NHg8sAfiYKI40aA8By8ODFBPajoNZ28-Y4AaDWdPvPj9j-iFYTL_7_Izph6IH-z3Iz7iwul4d4xhWjAK1O-L4zSk5Oeu5hKDMtiCiRYnRxa3Q-HJhvL_gwZ4DYRx4ycSPg1h7vkMw8owJxYW4qcfISBdD7Wd1sU9e_TbGx26s-p_jAycc4sN3A8jwRQfjw9w_dDi2ILaFjrGQQ4yFgthYGKvaHGIs5BBjocMxFsaqNocYCznEWOhwjIUOx-YQtO7jEC10QK32EYlWjDaH7OZNLpSoOTkD5zKGx048ovnnSekDsiWg1b2DA9bnTB-QE-roIxrFqy7u7Chb8ibNASSSvIWEuxY15JTVl5CquyO1piPfHisroSDvmi_kQNTek4x9PJ-DzwWu62gdfojPseMSY2GSzVY5312SzR0k2cYqB2pt1GzFDcSwmCVhZdrCpku73aWJn5xiIELxwij-H6Tuv1nJYySxP8rH7gric1EU8PJBvIC8E01NPsBbH-gdePwh8J6oYSNJXuoU3AWHVxOQRDr3ZoEIaWsQ51rc8wSU4yeJE4ZRcHDK7Rn7KSObwxGIdkXzBWf1YgU6SDaFkuSEXcPLkqadNro5EUshx-HNDmoeM8uvhdd9r4a74ghSLZHnuAcL6GeLmttPEJHk8BauIM3WvjfDK-oN7d6SNWngEzU47D7_BhGzhlrX5p1QyDUQquhwx3Q45hkDdNFbnGTRSCXWF7x71O7eHv_Q783vYQQgrK5MS_LbT7e3_wCrAN1y&amp;pv=7c0144140c8b11ebb47002ced187688b&amp;au=d9be78840c8a11eb97272e969d48dfac"></noscript>
       
   <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
-  <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="MLLW9-NN3V3-ZFFMF-A4D42-H99AC",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"MLLW9-NN3V3-ZFFMF-A4D42-H99AC";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="fba6ehqxgasg4x4ecnvq-f-e7261cedc-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"949601","ak.ai":parseInt("608755",10),"ak.ol":"0","ak.cr":5,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"5faeee3","ak.r":33468,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"40.65.226.0","ak.cport":1025,"ak.gh":"23.48.36.106","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1602491243","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==NXt9KZ4VEPSQz1Ta63Ch0jXb0FAiHergt54pnYo3j8vz7kN8bvIYIvM0cL+bebsBkzbtRc0l2iIg8+fa8C+de3NcwPgutzEBKySVGU0xiXs/97qaeESxjqLrCzBol65fCKEqZ4UESpC3jzFv2E2gEJhRkMicgnnR7ff9SnOGAyh3743i9ocSnm7DUafwPwFzDS6VUTFiHZNbOlXNDITmc1P5fBxxsEAVFk2zOaeOQTkCwNrcfph0cMrwqmuiduGWSxvYZCTrE+kK0NzA9cybqinuZ0p32gHwjff3eQQzr7GXstggYuThxfnV88uYrzwhs9FbbACEkz+95eq63C+9NVy7d+tbibE4czlLFr4dhGSSWj/CvgCURKT3hn31nYGGg/JascKwCJEZGxCBrq4SafxZow6rn7pKxS6uMBMRL60=","ak.pv":"45","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+  <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="MLLW9-NN3V3-ZFFMF-A4D42-H99AC",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"MLLW9-NN3V3-ZFFMF-A4D42-H99AC";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="gog26maxgyjxux4ekrta-f-b0d66d275-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"949601","ak.ai":parseInt("608755",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"39aee99b","ak.r":29234,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"51.141.175.0","ak.cport":1024,"ak.gh":"23.54.19.118","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1602507878","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==htWnWOEcfgr5U0rJ2mt0dxAzWf+2pYQQz7/Bf80teYe4tgVLImhV4h4+635BfEKj6monK+HXUi1qpLrLY8BW0EQAXHyZn7oHzO1RHgWz2+ctaL0StjCjD7xOJcO4mZ7V/bnAt0m6JA7LJt/BVeppLKPTNto/5zy2SOWH+eUdiMmDGgtLwC+y/XOLNAA382+5fQUTp0JI32e4AON9MQ0kshWgDsXiDygfp2LGmh3Jx+0X0JLV4w+ktbk/SHj2tFusDU4gBsL127YwShnXE9OusAyKOsNetOUNGaWVfU8gA1cmKuBbXzPTDqoMju6EpGSla1FzGEbPlRGh5ZJZK4KCNqwpNj14Hlb0nIixABjSpu36Qj1g3eqR62Wt+KXtuZ2S+y/bb8fidL4u6RMSKGA6oBOmiK+qV5rcTknc6WGgHW0=","ak.pv":"45","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
   <body data-modern="true" id="">
           <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XP5PSM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
@@ -1502,7 +1523,7 @@ if (amznAdSlots.length)
 		<a href="#hide" onclick="hideannouncement('announcement287'); return false">Hide Announcement</a>
 	</div>
 	<div style="float: right;">
-		<span class="smallfont">Views: <strong>36,810</strong> <a href="/forums/announcement.php?f=7&amp;a=287"><img class="inlineimg" src="https://static.slickdealscdn.com/images/buttons/lastpost.gif" alt="View Announcement" border="0" /></a></span><br />
+		<span class="smallfont">Views: <strong>36,829</strong> <a href="/forums/announcement.php?f=7&amp;a=287"><img class="inlineimg" src="https://static.slickdealscdn.com/images/buttons/lastpost.gif" alt="View Announcement" border="0" /></a></span><br />
 		<span><span class="smallfont">08-23-2020</span></span>
 	</div>
 </div>
@@ -1607,10 +1628,10 @@ This is a community where all are welcomed and appreciated. In order to keep the
    <a href="#" onclick="who(1091306); return false;">2</a>
    </td>
  <td class="alt2" align="center">
- 248,474
+ 248,476
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 2, Views: 248,474">
+  <td class="alt1" title="Replies: 2, Views: 248,476">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  07-27-2010 <span class="time">12:16 PM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -1627,7 +1648,75 @@ This is a community where all are welcomed and appreciated. In order to keep the
    <!-- Notification -->
   </tr>
 
-                                        <tr id="sdpostrow_77467359"  >
+                                        <tr id="sdpostrow_140981729"  >
+ <td class="alt1 unread" id="td_threadstatusicon_14401721">
+ <div style="position: relative;">
+  <form class="goToNewPostForm" action="/f/14401721-it-s-official-october-13th-14th-are-now-the-new-black-fridays-of-2020" method="post">
+ <button class="concat-general thread_new" title="Unread"></button>
+ </form>
+  </div>
+ </td>
+  <td class="alt2 tlv3_cat">
+   <span class="icon icon-tag"></span>
+  <form action="/forums/forumdisplay.php?f=7" method="post" class="threadCategoryForm">
+ <button class="buttonUnstyled" name="icon" value="36">Chat</button>
+ </form>
+    </td>
+   <td class="alt1" id="td_threadtitle_14401721" title="With Best Buy entering the ring, October 13th-14th is now the new Black Friday. Thoughts">
+ 
+ <div class="threadtitleline">
+  <span style="float:right">
+ &nbsp;<a href="#" onclick="return sdignorethread(14401721,140981729,0);"><img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" class="concat-general ignorethreadsmall " alt="Ignore/Unignore thread" /></a>
+ </span>
+      <form action="/f/14401721-it-s-official-october-13th-14th-are-now-the-new-black-fridays-of-2020" method="post">
+ <input type="hidden" name="goto" value="newpost">
+ <input id="thread_gotonew_14401721" class="inlineimg" type="image" title="Go to first new post" src="https://static.slickdealscdn.com/images/buttons/firstnew.gif">
+ </form>
+   
+ 
+ 
+  <a href="/f/14401721-it-s-official-october-13th-14th-are-now-the-new-black-fridays-of-2020" id="thread_title_14401721" style="font-weight: bold" class="bp-c-link">It’s official - October 13th-14th are now the new Black Fridays of 2020</a>
+   </div>
+   <div class="smallfont">
+  </div>
+  </td>
+ <!-- Post Date -->
+ <td class="alt2 " id="td_postdate_14401721">
+ <div class="smallfont " style="text-align:left; white-space:nowrap">
+ 10-08-2020
+  <span class="time">06:37 AM</span>
+  <br />
+   <form class="postUsernameForm" action="/forums/member.php" method="post">
+ <input type="hidden" name="u" value="2917204">
+ <button class="buttonUnstyled">Marth5454</button>
+ </form>
+   </div>
+ </td>
+ <!-- Replies Views Counts -->
+  <td class="alt1" align="center">
+   <a href="#" onclick="who(14401721); return false;">8</a>
+   </td>
+ <td class="alt2" align="center">
+ 245
+ </td>
+   <!-- Last Post -->
+  <td class="alt1" title="Replies: 8, Views: 245">
+ <div class="smallfont" style="text-align:right; white-space:nowrap">
+ Today <span class="time">05:25 AM</span><br />
+  <form class="postUsernameForm" action="/forums/member.php" method="post">
+ <input type="hidden" name="find" value="lastposter">
+ <input type="hidden" name="t" value="14401721">
+ <button class="buttonUnstyled">Autumn</button>
+ </form>
+ <form class="lastPostForm" action="/f/14401721-it-s-official-october-13th-14th-are-now-the-new-black-fridays-of-2020" method="post">
+ <input type="hidden" name="p" value="141069902">
+ <button class="concat-general lastpost" title="Go to Last Post"></button>
+ </form>
+  </div>
+ </td>
+   <!-- Notification -->
+  </tr>
+<tr id="sdpostrow_77467359"  >
  <td class="alt1 unread" id="td_threadstatusicon_8024655">
  <div style="position: relative;">
   <form class="goToNewPostForm" action="/f/8024655-favorites" method="post">
@@ -1680,10 +1769,10 @@ First question -  favorite dessert?">
    <a href="#" onclick="who(8024655); return false;">1,048</a>
    </td>
  <td class="alt2" align="center">
- 31,192
+ 31,201
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 1,048, Views: 31,192">
+  <td class="alt1" title="Replies: 1,048, Views: 31,201">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  Today <span class="time">01:03 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -1760,10 +1849,10 @@ System Notice: This thread has been automatically renewed after reaching a post 
    <a href="#" onclick="who(355069); return false;">6,310</a>
    </td>
  <td class="alt2" align="center">
- 282,997
+ 283,001
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 6,310, Views: 282,997">
+  <td class="alt1" title="Replies: 6,310, Views: 283,001">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  Today <span class="time">01:02 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -1839,10 +1928,10 @@ Answer:  Coke.
    <a href="#" onclick="who(788864); return false;">4,360</a>
    </td>
  <td class="alt2" align="center">
- 155,687
+ 155,693
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 4,360, Views: 155,687">
+  <td class="alt1" title="Replies: 4,360, Views: 155,693">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  Today <span class="time">01:01 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -1914,10 +2003,10 @@ Night">
    <a href="#" onclick="who(11709311); return false;">5,279</a>
    </td>
  <td class="alt2" align="center">
- 73,799
+ 73,806
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 5,279, Views: 73,799">
+  <td class="alt1" title="Replies: 5,279, Views: 73,806">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  Today <span class="time">01:00 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -1927,74 +2016,6 @@ Night">
  </form>
  <form class="lastPostForm" action="/f/11709311-free-association" method="post">
  <input type="hidden" name="p" value="141067796">
- <button class="concat-general lastpost" title="Go to Last Post"></button>
- </form>
-  </div>
- </td>
-   <!-- Notification -->
-  </tr>
-<tr id="sdpostrow_140981729"  >
- <td class="alt1 unread" id="td_threadstatusicon_14401721">
- <div style="position: relative;">
-  <form class="goToNewPostForm" action="/f/14401721-it-s-official-october-13th-14th-are-now-the-new-black-fridays-of-2020" method="post">
- <button class="concat-general thread_new" title="Unread"></button>
- </form>
-  </div>
- </td>
-  <td class="alt2 tlv3_cat">
-   <span class="icon icon-tag"></span>
-  <form action="/forums/forumdisplay.php?f=7" method="post" class="threadCategoryForm">
- <button class="buttonUnstyled" name="icon" value="36">Chat</button>
- </form>
-    </td>
-   <td class="alt1" id="td_threadtitle_14401721" title="With Best Buy entering the ring, October 13th-14th is now the new Black Friday. Thoughts">
- 
- <div class="threadtitleline">
-  <span style="float:right">
- &nbsp;<a href="#" onclick="return sdignorethread(14401721,140981729,0);"><img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" class="concat-general ignorethreadsmall " alt="Ignore/Unignore thread" /></a>
- </span>
-      <form action="/f/14401721-it-s-official-october-13th-14th-are-now-the-new-black-fridays-of-2020" method="post">
- <input type="hidden" name="goto" value="newpost">
- <input id="thread_gotonew_14401721" class="inlineimg" type="image" title="Go to first new post" src="https://static.slickdealscdn.com/images/buttons/firstnew.gif">
- </form>
-   
- 
- 
-  <a href="/f/14401721-it-s-official-october-13th-14th-are-now-the-new-black-fridays-of-2020" id="thread_title_14401721" style="font-weight: bold" class="bp-c-link">It’s official - October 13th-14th are now the new Black Fridays of 2020</a>
-   </div>
-   <div class="smallfont">
-  </div>
-  </td>
- <!-- Post Date -->
- <td class="alt2 " id="td_postdate_14401721">
- <div class="smallfont " style="text-align:left; white-space:nowrap">
- 10-08-2020
-  <span class="time">06:37 AM</span>
-  <br />
-   <form class="postUsernameForm" action="/forums/member.php" method="post">
- <input type="hidden" name="u" value="2917204">
- <button class="buttonUnstyled">Marth5454</button>
- </form>
-   </div>
- </td>
- <!-- Replies Views Counts -->
-  <td class="alt1" align="center">
-   <a href="#" onclick="who(14401721); return false;">7</a>
-   </td>
- <td class="alt2" align="center">
- 230
- </td>
-   <!-- Last Post -->
-  <td class="alt1" title="Replies: 7, Views: 230">
- <div class="smallfont" style="text-align:right; white-space:nowrap">
- Yesterday <span class="time">06:17 PM</span><br />
-  <form class="postUsernameForm" action="/forums/member.php" method="post">
- <input type="hidden" name="find" value="lastposter">
- <input type="hidden" name="t" value="14401721">
- <button class="buttonUnstyled">Dr. J</button>
- </form>
- <form class="lastPostForm" action="/f/14401721-it-s-official-october-13th-14th-are-now-the-new-black-fridays-of-2020" method="post">
- <input type="hidden" name="p" value="141062099">
  <button class="concat-general lastpost" title="Go to Last Post"></button>
  </form>
   </div>
@@ -2058,10 +2079,10 @@ in the living room?">
    <a href="#" onclick="who(14264567); return false;">94</a>
    </td>
  <td class="alt2" align="center">
- 2,213
+ 2,217
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 94, Views: 2,213">
+  <td class="alt1" title="Replies: 94, Views: 2,217">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  Yesterday <span class="time">05:56 PM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2132,10 +2153,10 @@ I'd like to discuss ALL of the tobacco contests in one place without worrying...
    <a href="#" onclick="who(8588050); return false;">12,334</a>
    </td>
  <td class="alt2" align="center">
- 1,735,720
+ 1,735,842
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 12,334, Views: 1,735,720">
+  <td class="alt1" title="Replies: 12,334, Views: 1,735,842">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  Yesterday <span class="time">06:22 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2202,10 +2223,10 @@ I'd like to discuss ALL of the tobacco contests in one place without worrying...
    <a href="#" onclick="who(14378456); return false;">18</a>
    </td>
  <td class="alt2" align="center">
- 436
+ 440
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 18, Views: 436">
+  <td class="alt1" title="Replies: 18, Views: 440">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  Yesterday <span class="time">05:34 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2274,10 +2295,10 @@ I'd like to discuss ALL of the tobacco contests in one place without worrying...
    <a href="#" onclick="who(7516684); return false;">56,137</a>
    </td>
  <td class="alt2" align="center">
- 1,006,794
+ 1,006,815
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 56,137, Views: 1,006,794">
+  <td class="alt1" title="Replies: 56,137, Views: 1,006,815">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  Yesterday <span class="time">04:56 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2344,10 +2365,10 @@ I'd like to discuss ALL of the tobacco contests in one place without worrying...
    <a href="#" onclick="who(14374835); return false;">21</a>
    </td>
  <td class="alt2" align="center">
- 574
+ 576
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 21, Views: 574">
+  <td class="alt1" title="Replies: 21, Views: 576">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  10-10-2020 <span class="time">07:53 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2415,10 +2436,10 @@ Ok. Back up about an hour later. Thx.">
    <a href="#" onclick="who(14390171); return false;">1</a>
    </td>
  <td class="alt2" align="center">
- 157
+ 158
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 1, Views: 157">
+  <td class="alt1" title="Replies: 1, Views: 158">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  10-10-2020 <span class="time">04:29 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2485,10 +2506,10 @@ https://www.cnn.com/2020/10/06/entertainment/eddie-van-halen-dead/index.html">
    <a href="#" onclick="who(14398130); return false;">9</a>
    </td>
  <td class="alt2" align="center">
- 212
+ 217
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 9, Views: 212">
+  <td class="alt1" title="Replies: 9, Views: 217">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  10-10-2020 <span class="time">04:13 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2555,10 +2576,10 @@ Delta explodes into Cat 4 storm, will be very dangerous hurricane as it charges 
    <a href="#" onclick="who(14398958); return false;">6</a>
    </td>
  <td class="alt2" align="center">
- 238
+ 242
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 6, Views: 238">
+  <td class="alt1" title="Replies: 6, Views: 242">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  10-10-2020 <span class="time">04:09 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2623,10 +2644,10 @@ Delta explodes into Cat 4 storm, will be very dangerous hurricane as it charges 
    <a href="#" onclick="who(14387957); return false;">10</a>
    </td>
  <td class="alt2" align="center">
- 238
+ 239
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 10, Views: 238">
+  <td class="alt1" title="Replies: 10, Views: 239">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  10-09-2020 <span class="time">07:48 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2693,10 +2714,10 @@ https://www.youtube.com/watch?v=HR5MlZHA1fo&amp;list=RDCMUCXX0RWOIBjt4o3ziHu-6a5
    <a href="#" onclick="who(14398391); return false;">8</a>
    </td>
  <td class="alt2" align="center">
- 180
+ 181
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 8, Views: 180">
+  <td class="alt1" title="Replies: 8, Views: 181">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  10-09-2020 <span class="time">04:37 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2764,10 +2785,10 @@ now positive, New England team on standby from league on whether to depart to K.
    <a href="#" onclick="who(14390384); return false;">21</a>
    </td>
  <td class="alt2" align="center">
- 450
+ 453
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 21, Views: 450">
+  <td class="alt1" title="Replies: 21, Views: 453">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  10-08-2020 <span class="time">04:13 PM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2836,10 +2857,10 @@ I've never done anything wrong, so I guess it's your turn.">
    <a href="#" onclick="who(14388098); return false;">22</a>
    </td>
  <td class="alt2" align="center">
- 412
+ 416
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 22, Views: 412">
+  <td class="alt1" title="Replies: 22, Views: 416">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  10-08-2020 <span class="time">11:11 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -2909,10 +2930,10 @@ We found...">
    <a href="#" onclick="who(14378609); return false;">3</a>
    </td>
  <td class="alt2" align="center">
- 280
+ 281
  </td>
    <!-- Last Post -->
-  <td class="alt1" title="Replies: 3, Views: 280">
+  <td class="alt1" title="Replies: 3, Views: 281">
  <div class="smallfont" style="text-align:right; white-space:nowrap">
  10-07-2020 <span class="time">09:32 AM</span><br />
   <form class="postUsernameForm" action="/forums/member.php" method="post">
@@ -3004,47 +3025,47 @@ We found...">
             <img class="concat-thumbs-new ratingn4" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="Rating" border="0"/>
           </label>
         </div>
-                <a href="/f/14407367-maybelline-lasting-drama-light-eyeliner-twinkle-black-2-90-w-s-s-free-shipping-w-amazon-prime-or-orders-25" data-sd-params="&#x7B;&quot;src&quot;&#x3A;&quot;pdw&quot;&#x7D;" class="bp-c-link">          Maybelline Lasting Drama Light Eyeliner (Twinkle Black) $2.90 w/ S&amp;S + Free Shipping w/ Amazon Prime or Orders $25+
+                <a href="/f/14409893-jvc-50-4k-roku-smart-tv-218-walmart" data-sd-params="&#x7B;&quot;src&quot;&#x3A;&quot;pdw&quot;&#x7D;" class="bp-c-link">          JVC 50&quot; 4K Roku Smart TV $218 @ walmart
                   </a>      </div>
 
           <div class="colitem">
         <div class="votebar_small">
           <label>
-            <b>+5</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png" alt="Comment"/>1</span><br/>
+            <b>+20</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png" alt="Comment"/>8</span><br/>
+            <img class="concat-thumbs-new ratingn10" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="Rating" border="0"/>
+          </label>
+        </div>
+                <a href="/f/14411459-2-pack-kasa-smart-plug-wifi-outlet-9-99-after-coupon-and-prime-savings-amazon-fs-with-prime" data-sd-params="&#x7B;&quot;src&quot;&#x3A;&quot;pdw&quot;&#x7D;" class="bp-c-link">          2-Pack Kasa Smart Plug, WiFi Outlet - $9.99 after coupon and Prime Savings @ Amazon + FS with Prime
+                  </a>      </div>
+
+          <div class="colitem">
+        <div class="votebar_small">
+          <label>
+            <b>+7</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png" alt="Comment"/>8</span><br/>
+            <img class="concat-thumbs-new ratingn6" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="Rating" border="0"/>
+          </label>
+        </div>
+                <a href="/f/14410556-amazon-prime-members-w-amazon-voice-shopping-amazon-fire-tv-cube-4k-ultra-hd-streaming-media-player-79-99-or-32gb-amazon-fire-hd-8-tablet-w-offers-10th-gen-54-99-fs" data-sd-params="&#x7B;&quot;src&quot;&#x3A;&quot;pdw&quot;&#x7D;" class="bp-c-link">          Amazon Prime Members w/ Amazon Voice Shopping: Amazon Fire TV Cube 4K Ultra HD Streaming Media Player $79.99 or 32GB Amazon Fire HD 8 Tablet w/ Offers (10th Gen) $54.99 + FS
+                  </a>      </div>
+
+          <div class="colitem">
+        <div class="votebar_small">
+          <label>
+            <b>+8</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png" alt="Comment"/>3</span><br/>
+            <img class="concat-thumbs-new ratingn7" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="Rating" border="0"/>
+          </label>
+        </div>
+                <a href="/f/14408297-the-learning-journey-lift-learn-puzzle-for-10-95" data-sd-params="&#x7B;&quot;src&quot;&#x3A;&quot;pdw&quot;&#x7D;" class="bp-c-link">          The Learning Journey Lift &amp; Learn Puzzle for $10.95
+                  </a>      </div>
+
+          <div class="colitem">
+        <div class="votebar_small">
+          <label>
+            <b>+5</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png" alt="Comment"/>3</span><br/>
             <img class="concat-thumbs-new ratingn5" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="Rating" border="0"/>
           </label>
         </div>
-                <a href="/f/14408222-michael-michael-kors-sale-jet-set-charm-east-west-crossbody-48-60-eva-nylon-top-zip-tote-57-60-more-fs-on-25" data-sd-params="&#x7B;&quot;src&quot;&#x3A;&quot;pdw&quot;&#x7D;" class="bp-c-link">          Michael Michael Kors Sale: Jet Set Charm East West Crossbody $48.60, Eva Nylon Top Zip Tote $57.60, More + FS on $25+
-                  </a>      </div>
-
-          <div class="colitem">
-        <div class="votebar_small">
-          <label>
-            <b>+9</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png" alt="Comment"/>13</span><br/>
-            <img class="concat-thumbs-new ratingn7" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="Rating" border="0"/>
-          </label>
-        </div>
-                <a href="/f/14409368-bike-u-lock-with-cable-14mm-shackle-and-10mm-x1-8m-cable-with-mounting-bracket-23-37" data-sd-params="&#x7B;&quot;src&quot;&#x3A;&quot;pdw&quot;&#x7D;" class="bp-c-link">          Bike U Lock with Cable -14mm Shackle and 10mm x1.8m Cable with Mounting Bracket $23.37
-                  </a>      </div>
-
-          <div class="colitem">
-        <div class="votebar_small">
-          <label>
-            <b>+9</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png" alt="Comment"/>16</span><br/>
-            <img class="concat-thumbs-new ratingn7" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="Rating" border="0"/>
-          </label>
-        </div>
-                <a href="/f/14409872-lenovo-smart-clock-with-google-assistant-for-39-free-shipping" data-sd-params="&#x7B;&quot;src&quot;&#x3A;&quot;pdw&quot;&#x7D;" class="bp-c-link">          Lenovo Smart Clock with Google Assistant for $39 + Free Shipping
-                  </a>      </div>
-
-          <div class="colitem">
-        <div class="votebar_small">
-          <label>
-            <b>+12</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png" alt="Comment"/>12</span><br/>
-            <img class="concat-thumbs-new ratingn9" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="Rating" border="0"/>
-          </label>
-        </div>
-                <a href="/f/14410214-philips-norelco-bg7030-49-bodygroom-series-7000-49-95" data-sd-params="&#x7B;&quot;src&quot;&#x3A;&quot;pdw&quot;&#x7D;" class="bp-c-link">          Philips Norelco BG7030/49 Bodygroom Series 7000 $49.95
+                <a href="/f/14408093-21-oz-hempz-triple-moisture-moisturizing-hand-sanitizer-10-free-shipping" data-sd-params="&#x7B;&quot;src&quot;&#x3A;&quot;pdw&quot;&#x7D;" class="bp-c-link">          21-Oz Hempz Triple Moisture Moisturizing Hand Sanitizer $10 + Free Shipping
                   </a>      </div>
 
       </div>
@@ -3081,6 +3102,30 @@ We found...">
  <div id="collapseobj_upbox" style="">
  <div class="colitem">
  <div class="votebar_small">
+ <label><b title="7">+6</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png">1</span><br />
+ <img class="concat-thumbs-new ratingn6" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="" title="" border="0" />
+ </label>
+ </div>
+ <a href="/f/14410631-amex-card-members-happy-cards-gift-cards-spend-100-get-15-back-ymmv?src=tdw" class="bp-c-link">Amex Card Members: Happy Cards Gift Cards - Spend $100 &amp; Get $15 Back - YMMV</a>
+</div>
+<div class="colitem">
+ <div class="votebar_small">
+ <label><b title="7">+6</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png">2</span><br />
+ <img class="concat-thumbs-new ratingn6" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="" title="" border="0" />
+ </label>
+ </div>
+ <a href="/f/14410241-live-adidas-coupon-additional-savings-for-regular-and-sale-items-33-off-free-s-h?src=tdw" class="bp-c-link">*live*adidas Coupon: Additional Savings for Regular and Sale Items 33% Off + Free S/H</a>
+</div>
+<div class="colitem">
+ <div class="votebar_small">
+ <label><b title="7">+6</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png">1</span><br />
+ <img class="concat-thumbs-new ratingn6" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="" title="" border="0" />
+ </label>
+ </div>
+ <a href="/f/14410394-xbox-one-digital-the-witcher-3-wild-hunt-goty-12-75?src=tdw" class="bp-c-link">Xbox One Digital - The Witcher 3: Wild Hunt GOTY $12.75</a>
+</div>
+<div class="colitem">
+ <div class="votebar_small">
  <label><b title="7">+6</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png">12</span><br />
  <img class="concat-thumbs-new ratingn6" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="" title="" border="0" />
  </label>
@@ -3089,35 +3134,11 @@ We found...">
 </div>
 <div class="colitem">
  <div class="votebar_small">
- <label><b title="7">+4</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png">3</span><br />
- <img class="concat-thumbs-new ratingn4" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="" title="" border="0" />
- </label>
- </div>
- <a href="/f/14410436-hanes-men-s-short-sleeve-beefy-t-black-s-m-l-xl-xxl-3xl-4xl-5xl-6xl-3-99-fs-w-prime?src=tdw" class="bp-c-link">Hanes Men's Short Sleeve Beefy-t, BLACK, (S, M, L, XL, XXL, 3XL, 4XL, 5XL, 6XL)  $3.99 - FS w/ Prime</a>
-</div>
-<div class="colitem">
- <div class="votebar_small">
- <label><b title="7">+4</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png">0</span><br />
- <img class="concat-thumbs-new ratingn4" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="" title="" border="0" />
- </label>
- </div>
- <a href="/f/14410307-melissa-doug-countdown-to-christmas-wooden-advent-calendar-10-free-shipping-w-prime-or-orders-over-25?src=tdw" class="bp-c-link">Melissa &amp; Doug Countdown to Christmas Wooden Advent Calendar $10 + free shipping w/ Prime or orders over $25</a>
-</div>
-<div class="colitem">
- <div class="votebar_small">
- <label><b title="7">+3</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png">1</span><br />
+ <label><b title="7">+3</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png">2</span><br />
  <img class="concat-thumbs-new ratingn3" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="" title="" border="0" />
  </label>
  </div>
- <a href="/f/14410295-fly-wheels-launcher-2-street-wheels-rip-it-up-to-200-scale-mph-3-14?src=tdw" class="bp-c-link">Fly Wheels Launcher + 2 Street Wheels - Rip it up to 200 Scale MPH $3.14</a>
-</div>
-<div class="colitem">
- <div class="votebar_small">
- <label><b title="7">+1</b><span><img src="https://static.slickdealscdn.com/images/iconrepo/comment.png">10</span><br />
- <img class="concat-thumbs-new ratingn1" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" alt="" title="" border="0" />
- </label>
- </div>
- <a href="/f/14410247-ymmv-samsung-pay-staples-22-cash-back-upto-100?src=tdw" class="bp-c-link">YMMV - Samsung Pay Staples 22% Cash Back upto $100</a>
+ <a href="/f/14410562-status-members-only-early-access-to-extra-50-off-select-styles-with-code?src=tdw" class="bp-c-link">STATUS Members Only - Early Access to Extra 50% off Select Styles with code</a>
 </div>
 
  </div>
@@ -3453,7 +3474,7 @@ We found...">
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp6687-Collapsible',
+                id: 'bp9573-Collapsible',
                 expanded: '',
             });
         </script>
@@ -3464,7 +3485,7 @@ We found...">
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp6687-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp9573-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">Follow Us</h3>
@@ -3489,7 +3510,7 @@ We found...">
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp2825-Collapsible',
+                id: 'bp6333-Collapsible',
                 expanded: '',
             });
         </script>
@@ -3500,7 +3521,7 @@ We found...">
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp2825-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp6333-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">About</h3>
@@ -3529,7 +3550,7 @@ We found...">
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp9360-Collapsible',
+                id: 'bp8720-Collapsible',
                 expanded: '',
             });
         </script>
@@ -3540,7 +3561,7 @@ We found...">
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp9360-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp8720-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">More</h3>
@@ -3565,7 +3586,7 @@ We found...">
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp7869-Collapsible',
+                id: 'bp7361-Collapsible',
                 expanded: '',
             });
         </script>
@@ -3576,7 +3597,7 @@ We found...">
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp7869-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp7361-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">Legal</h3>
@@ -3615,7 +3636,7 @@ We found...">
                 Copyright 1999 – 2020. Slickdeals, LLC. All Rights Reserved.
             </span>
                   <div class="bp-p-experienceSwitcher">
-        <ul class="bp-c-unorderedList--horizontalBulleted"><li><button data-href="/styleSwitch.php?no_mobile=true&modern_opt_in=1&redirectUrl=%2Fforums%2Fforumdisplay.php%3Ff%3D7&modern_opt_out=1" id="bp9723-Button" class="bp-p-experienceSwitcher_link bp-p-experienceSwitcher_link--current bp-c-linkableButton  bp-c-button bp-c-button--link">Redesign</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9723-Button"} });</script></li><li><button data-href="/styleSwitch.php?redirectUrl=%252Fforums%252Fforumdisplay.php%253Ff%253D7&no_mobile=false" id="bp3174-Button" class="bp-p-experienceSwitcher_link bp-c-linkableButton  bp-c-button bp-c-button--link">Mobile</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp3174-Button"} });</script></li><li><button data-href="/forums/register.php?action_source=Switch%20to%20Classic&url=%2FstyleSwitch.php%3FredirectUrl%3D%25252Fforums%25252Fforumdisplay.php%25253Ff%25253D7%26modern_opt_out%3D1" id="bp9133-Button" class="bp-p-experienceSwitcher_link bp-c-linkableButton  bp-c-button bp-c-button--link">Classic</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9133-Button"} });</script></li></ul>    </div>
+        <ul class="bp-c-unorderedList--horizontalBulleted"><li><button data-href="/styleSwitch.php?no_mobile=true&modern_opt_in=1&redirectUrl=%2Fforums%2Fforumdisplay.php%3Ff%3D7&modern_opt_out=1" id="bp9684-Button" class="bp-p-experienceSwitcher_link bp-p-experienceSwitcher_link--current bp-c-linkableButton  bp-c-button bp-c-button--link">Redesign</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9684-Button"} });</script></li><li><button data-href="/styleSwitch.php?redirectUrl=%252Fforums%252Fforumdisplay.php%253Ff%253D7&no_mobile=false" id="bp4938-Button" class="bp-p-experienceSwitcher_link bp-c-linkableButton  bp-c-button bp-c-button--link">Mobile</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp4938-Button"} });</script></li><li><button data-href="/forums/register.php?action_source=Switch%20to%20Classic&url=%2FstyleSwitch.php%3FredirectUrl%3D%25252Fforums%25252Fforumdisplay.php%25253Ff%25253D7%26modern_opt_out%3D1" id="bp1700-Button" class="bp-p-experienceSwitcher_link bp-c-linkableButton  bp-c-button bp-c-button--link">Classic</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp1700-Button"} });</script></li></ul>    </div>
         </div>
     
     </div>
@@ -3674,9 +3695,9 @@ We found...">
   </script>
 
         <script>
-                        window.bpHydration.push({ 'LinkableButton': {"id":"bp9723-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp3174-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp9133-Button"} });
+                        window.bpHydration.push({ 'LinkableButton': {"id":"bp9684-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp4938-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp1700-Button"} });
             </script>
     
               
@@ -3734,7 +3755,7 @@ We found...">
     window.sdLoadQueue.push([function() {
         var elem = document.createElement('img');
 
-        elem.src = "//dpm.demdex.net/ibs:dpid=375988&dpuuid=0ecd4c8e0c6411eb830be645f6083ee1";
+        elem.src = "//dpm.demdex.net/ibs:dpid=375988&dpuuid=d9bf205e0c8a11eb97272e969d48dfac";
         document.body.appendChild(elem);
     }, 'analytics']);
 </script>
@@ -3769,11 +3790,11 @@ We found...">
       if (0)
       {
         window.heap.resetIdentity();
-        window.heap.identify('0ecd4c8e0c6411eb830be645f6083ee1', 'Device');
+        window.heap.identify('d9bf205e0c8a11eb97272e969d48dfac', 'Device');
         document.cookie = "doLogOut=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       
         // For QA only
-        console.log('Heap: just logged out. Device is ' + '0ecd4c8e0c6411eb830be645f6083ee1');
+        console.log('Heap: just logged out. Device is ' + 'd9bf205e0c8a11eb97272e969d48dfac');
       }
       else
       {
@@ -3789,10 +3810,10 @@ We found...">
           }
           else
           {
-              window.heap.identify('0ecd4c8e0c6411eb830be645f6083ee1', 'Device');
+              window.heap.identify('d9bf205e0c8a11eb97272e969d48dfac', 'Device');
               
               // For QA only
-              console.log('Heap: not logged in. Device is ' + '0ecd4c8e0c6411eb830be645f6083ee1');
+              console.log('Heap: not logged in. Device is ' + 'd9bf205e0c8a11eb97272e969d48dfac');
           }
       }
     }, 'analytics']);
