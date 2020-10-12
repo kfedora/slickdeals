@@ -1,16 +1,8 @@
-HTTP/1.1 200 OK
-X-Powered-By: PHP/7.2.31
-Expires: 0
-Cache-Control: private, post-check=0, pre-check=0, max-age=0, no-cache
-Pragma: no-cache
-Content-Type: text/html; charset=UTF-8
-X-UA-Compatible: IE=edge
-Referrer-Policy: strict-origin-when-cross-origin
-Server: Apache
-X-Akamai-Transformed: 9 29318 0 pmb=mRUM,2
-Vary: Accept-Encoding
-Date: Mon, 12 Oct 2020 06:58:39 GMT
-Transfer-Encoding:  chunked
+HTTP/1.1 500 Internal Server Error
+Cache-Control: no-cache
+Content-Type: text/html
+Content-Length: 96
+Date: Mon, 12 Oct 2020 12:09:35 GMT
 Connection: keep-alive
 Connection: Transfer-Encoding
 Set-Cookie: auuid=ed76348a0c5711ebbfc37e1fa6f2e8ad; expires=Tue, 12-Oct-2021 06:58:38 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
@@ -25,8 +17,8 @@ Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; 
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=66
-Server-Timing: origin; dur=156
+Server-Timing: edge; dur=62
+Server-Timing: origin; dur=15009
 Strict-Transport-Security: max-age=86400
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
