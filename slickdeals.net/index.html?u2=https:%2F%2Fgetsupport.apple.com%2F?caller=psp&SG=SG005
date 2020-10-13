@@ -1,0 +1,64 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Content-Type: text/html
+ETag: "3c922f139195ff767e1a89b6a84a986e:1445022854"
+Last-Modified: Fri, 16 Oct 2015 19:14:14 GMT
+Server: AkamaiNetStorage
+Content-Length: 1423
+Date: Tue, 13 Oct 2020 03:15:10 GMT
+X-Cache: TCP_MISS from a23-56-172-4.deploy.akamaitechnologies.com (AkamaiGHost/10.1.5-30889964) (-)
+Connection: keep-alive
+X-Cache-Remote: TCP_REFRESH_HIT from a23-56-172-76.deploy.akamaitechnologies.com (AkamaiGHost/10.1.5-30889964) (S)
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" >
+<head>
+    <title>Support</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+		.container {
+			height: 500px;
+			width: 500px;
+			margin: 80px auto 0;
+			background-image: url("https://static-uptodate.cdn-apple.com/resources/images/2014/1x-covers-card.png");
+			background-repeat: no-repeat;
+			background-position: 50% 0;
+			text-align: center;
+		}
+
+		.animated-image {
+			height: 100%;
+			width: auto;
+		}
+
+		.copyright {
+			color: #888;
+		}
+
+		@media only screen and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) {
+			.container {
+				width: 320px;
+				height: 320px;
+				background-size: 320px;
+			}
+		}
+    </style>
+</head>	
+<body>
+	<div class="container">
+		<img class="animated-image" src="https://static-uptodate.cdn-apple.com/resources/images/support-wewillbeback.gif" alt="We'll be back soon" />
+		<p class="copyright">Copyright &copy; <span id="current-year"></span> Apple Inc. All rights reserved.</p>
+	</div>
+
+	<script>
+		(function(document){
+			var year = new Date().getYear() + 1900;
+			var yearElement = document.getElementById("current-year");
+			if(yearElement) {
+				yearElement.innerHTML = year;
+			}
+		})(document);
+	</script>
+    <script src="https://km.support.apple.com.edgekey.net/includes/darwin/en_US/secure/header.js"></script>
+</body>
+</html>
