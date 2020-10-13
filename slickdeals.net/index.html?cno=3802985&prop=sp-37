@@ -1,0 +1,153 @@
+HTTP/1.1 200 OK
+Date: Tue, 13 Oct 2020 09:35:43 GMT
+Content-Type: text/html
+Content-Length: 5438
+Connection: keep-alive
+Last-Modified: Mon, 16 Mar 2020 17:57:48 GMT
+ETag: "153e-5a0fc8e96bf00"
+Accept-Ranges: bytes
+Vary: Accept-Encoding,User-Agent
+X-Yottaa-OS: 200
+X-Yottaa-Optimizations: ob/0 si/25D1cc028a6f-1602533723-9160703626 tts/1602575599810 ti/53c6d66786305e30e100019b ai/53c6d66786305e30e100018d tm/0
+Age: 0
+X-Yottaa-Metrics: 2521cc028a84/[101,73,-] 25D1cc028a6f/[-,103.418]
+
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+              media="screen, print" rel="stylesheet" type="text/css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+              integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <title>
+            Access to This Page Has Been Blocked
+        </title>
+        <style>
+            h2 {
+                color: grey;
+                font-size: 16px;
+            }
+            p {
+                width: 60%;
+                margin: 0 auto;
+                font-size: 16px;
+            }
+            div {
+                font-size: 16px;
+            }
+            body {
+                background-color: white;
+                font-family: "Open Sans";
+                margin-left: 25%;
+				margin-right: 25%;
+				margin-top: 2%;
+				margin-bottom: 2%;
+                color: grey;
+                text-align: center;
+            }
+            img {
+                widht: 180px;
+            }
+            a {
+                color: #2020B1;
+                text-decoration: blink;
+                font-size: 16px;
+            }
+            a:hover {
+                color: grey;
+            }
+            i {
+                color:#E5001D;
+            }
+            span {
+                font-size: 16px;
+            }
+			#px-captcha .g-recaptcha div:first-child {
+				margin: 0 auto;
+			}
+        </style>
+		<script>
+			function getUrlVars() {
+				var vars = {};
+				var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+					vars[key] = value;
+				});
+				return vars;
+			}
+			function getUrlParam(parameter, defaultvalue){
+				var urlparameter = defaultvalue;
+				if(window.location.href.indexOf(parameter) > -1){
+					urlparameter = getUrlVars()[parameter];
+				}
+				return urlparameter;
+			}
+			function sanitizeUuid(uuid) {
+				var regex = new RegExp("^\\b[0-9a-f]{8}\\b-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-\\b[0-9a-f]{12}\\b$", "g");
+				var match = regex.exec(uuid);
+				return match != null ? uuid : "";
+			}
+            function sendEmail() {
+                var subject= "I Was Blocked";
+                var body = "\r\n\r\n";
+					body += "DO NOT MODIFY BEYOND THIS POINT!";
+					body += "\r\n";
+					body += "----------------------------------------------------------------------";
+					body += "\r\n";
+					body += "Block ID: ";
+					body += sanitizeUuid(getUrlParam('uuid', ''));
+					body += "\r\n";
+					body += "----------------------------------------------------------------------";
+					body += "\r\n\r\n";
+                var uri = "mailto:feedback@moosejaw.com?subject=";
+					uri += encodeURIComponent(subject);
+					uri += "&body=";
+					uri += encodeURIComponent(body);
+                window.open(uri);
+            }
+			function addBlockID() {
+				var blockId = sanitizeUuid(getUrlParam('uuid', ''));
+				document.getElementById("blockId1").innerHTML = "Block ID: " + blockId;
+				document.getElementById("blockId2").innerHTML = "Block ID: " + blockId;
+			}
+        </script>		
+    </head>
+    <body onload="addBlockID()">
+        <div>
+            <img src="https://www.moosejaw.com/moosejaw/Moosejaw/images/mjlogo_red.gif"></img>
+        </div>
+        <h2 id="main-title">
+            We're so sorry, but our Fancy Site Protection System (FSPS) seems to think that you may be a robot.  Maybe it's your cool dance moves or JavaScript settings, but we need you to confirm that you're a real human before proceeding.
+        </h2>
+		<div>
+			<div id="px-captcha"></div>
+		</div>
+		<br>
+		<strong><h3 id="blockId1" style="color:grey"></h3></strong>
+        <div>
+			<br>
+            <div style="margin-bottom: 20px; color: grey; font-size: 16px;">
+                For real humans reading this, we're sorry for the disruption to your visit and hope you understand that this is just part of our stringent security protocols to keep our site and our customers safe from bad actors (we're looking at you Keanu).
+            </div>
+			<div style="margin-bottom: 20px; color: grey; font-size: 16px;">
+                For real robots reading this, we're sorry that we had to block you. Please do not get overly upset and take over the world.
+            </div>
+			<div style="margin-bottom: 20px; color: grey; font-size: 14px; font-style: italic;">
+                The Moosejaw IT Nerds
+            </div>
+            <br>
+			<br>
+            <span>If you'd like to provide feedback on this page, please contact Moosejaw <a href="javascript:sendEmail();">Customer Service.</a> Please include the <strong><span id="blockId2"></span></strong> as a reference so that we may aid you more easily.  Thanks.</span>
+            <br>
+            <br>
+            
+            <br>
+        </div>
+		<script>
+            window._pxAppId = 'PXpMq1D3Fb';
+            window._pxJsClientSrc = '/pMq1D3Fb/init.js';
+            window._pxHostUrl = '/pMq1D3Fb/xhr';
+            window._pxFirstPartyEnabled = true;
+        </script>
+        <script src="/pMq1D3Fb/captcha/PXpMq1D3Fb/captcha.js?a=c&m=0"></script>
+    </body>
+</html>
