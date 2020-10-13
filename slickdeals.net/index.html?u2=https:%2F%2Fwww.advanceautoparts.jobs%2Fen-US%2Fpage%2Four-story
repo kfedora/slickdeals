@@ -1,29 +1,14 @@
-HTTP/1.1 503 Service Unavailable
+HTTP/1.1 500 Internal Server Error
+Cache-Control: no-cache
 Content-Type: text/html
-Content-Length: 658
+Content-Length: 96
+Date: Tue, 13 Oct 2020 08:50:58 GMT
 Connection: keep-alive
-Access-Control-Allow-Origin: https://www.advanceautoparts.jobs
-Date: Sat, 10 Oct 2020 19:51:20 GMT
-Server: nginx
-Set-Cookie: cms_tn_session_id=24a8b5a0-1bb6-4f63-bf23-42ed6212b326; path=/; httponly; Secure
-x-powered-by: PencilBlue
-X-Cache: Error from cloudfront
-Via: 1.1 29708ecf347192c02a40779f838f2ddb.cloudfront.net (CloudFront)
-X-Amz-Cf-Pop: IAD66-C1
-X-Amz-Cf-Id: YGk_JRc3aD0vK1S-OLiCZ2Co03DhAlHnNGbStnYhpx73G4XlFI8ZmQ==
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=65
+Server-Timing: origin; dur=15007
+Strict-Transport-Security: max-age=86400
 
-<head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/public/cms_base/css/503.css">
-</head>
-
-<div class="container main-container">
-    <div class="center-block text-center">
-    </div>
-    <div class="center-block text-center main-message">
-        CareerBuilder is currently experiencing a service interruption. We apologize for the inconvenience.
-    </div>
-    <div class="center-block text-center sub-message">
-       
-    </div>
-</div>
+<html><body><h1>500 Internal Server Error</h1>
+An internal server error occured.
+</body></html>
