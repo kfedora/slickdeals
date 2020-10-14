@@ -1,0 +1,66 @@
+HTTP/1.1 200 OK
+date: Wed, 14 Oct 2020 04:51:02 GMT
+last-modified: Mon, 12 Oct 2020 18:58:00 GMT
+content-type: text/html
+accept-ranges: bytes
+content-length: 1448
+server: Jetty(9.4.z-SNAPSHOT)
+
+<html>
+<head>
+</head>
+<body style="text-align: center;">
+
+<script type="text/javascript">
+
+function getInternetExplorerVersion() {
+    var rv = -1;
+    if (navigator.appName == 'Microsoft Internet Explorer') {
+        var ua = navigator.userAgent;
+        var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+        if (re.exec(ua) != null)
+            rv = parseFloat(RegExp.$1);
+    }
+    return rv;
+}
+
+var query = location.search.substr(1);
+var data = query.split("&");
+var result = {};
+var timeout = 0;
+var landingPage = ''
+for(var i=0; i<data.length; i++) {
+    var item = data[i].split("=");
+    if( item[0] == 't' ) {
+        timeout = item[1];
+    } else if( item[0] == 'l' ) {
+        landingPage = decodeURIComponent(item[1]);
+    }
+}
+if( landingPage != '' ) {
+    setTimeout(function() {
+        var ie_ver = getInternetExplorerVersion();
+        if (ie_ver > -1) {
+            var referLink = document.createElement('a');
+            referLink.href = landingPage;
+            document.body.appendChild(referLink);
+            referLink.click();
+        } else {
+            window.location.replace(landingPage);
+        }
+    }, timeout);
+}
+</script>
+
+<!-- We don't want any message shown to the user now in order to address perceived redirect slowness
+<div style="height: 100px;"></div>
+<div>
+    You are being redirected. Please wait...
+    <br />
+    <br />
+    <img src="images/loader.gif" border="0" />
+</div>
+-->
+
+</body>
+</html>

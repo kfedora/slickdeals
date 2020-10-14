@@ -1,0 +1,33 @@
+HTTP/1.1 200 OK
+server: nginx/1.18.0
+date: Wed, 14 Oct 2020 05:06:09 GMT
+content-type: text/html
+content-length: 794
+last-modified: Wed, 07 Oct 2020 08:24:08 GMT
+etag: "5f7d7b28-31a"
+accept-ranges: bytes
+strict-transport-security:: max-age=15552000
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Slickdeals Rewards - BETA</title>
+    </head>
+
+    <body>
+        <script src="/env-config.js"></script>
+        <script>
+            var favIcon = document.createElement("link");
+            favIcon.setAttribute("rel", "icon");
+            favIcon.setAttribute("type", "image/png");
+            favIcon.setAttribute(
+                "href",
+                window._env_.awsBucketUrl + "ap/favicon.ico"
+            );
+            document.getElementsByTagName("head")[0].appendChild(favIcon);
+        </script>
+        <div id="root"></div>
+    <script type="text/javascript" src="/main.bundle.js"></script></body>
+</html>
