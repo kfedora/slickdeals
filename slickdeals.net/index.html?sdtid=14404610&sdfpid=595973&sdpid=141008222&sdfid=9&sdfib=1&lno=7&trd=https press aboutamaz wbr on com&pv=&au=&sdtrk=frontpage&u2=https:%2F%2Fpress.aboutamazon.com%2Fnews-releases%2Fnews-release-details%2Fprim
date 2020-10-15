@@ -1,0 +1,1797 @@
+HTTP/1.1 200 OK
+Content-Language: en
+Content-Type: text/html; charset=UTF-8
+device: desktop
+ETag: "1602726753"
+Expect-CT: max-age=0, report-uri="/report-expect-ct-violation"
+Feature-Policy: accelerometer 'none';ambient-light-sensor 'none';autoplay 'self';camera 'none';encrypted-media 'none';fullscreen 'self';geolocation 'self';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'none';picture-in-picture 'none';speaker 'self';sync-xhr 'self';usb 'none';vibrate 'none';vr 'none'
+From-Origin: same
+Last-Modified: Thu, 15 Oct 2020 01:52:33 GMT
+Link: <https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october/>; rel="canonical"
+Link: <https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october>; rel="alternate"; hreflang="en"
+Link: <https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october>; rel="revision"
+Referrer-Policy: no-referrer-when-downgrade
+X-Age: 551
+X-Cache-Hits: 6
+X-Content-Type-Options: nosniff
+X-Drupal-Dynamic-Cache: UNCACHEABLE
+X-Frame-Options: SAMEORIGIN
+X-Request-ID: v-1762fe62-0e89-11eb-8d54-4fdfd81b4fd6
+X-UA-Compatible: IE=edge
+X-XSS-Protection: 1; mode=block
+X-Akamai-Path-Stats: [3:9023:3977]
+Vary: Accept-Encoding
+Cache-Control: public, max-age=0, s-maxage=1800
+Expires: Thu, 15 Oct 2020 02:07:01 GMT
+Date: Thu, 15 Oct 2020 02:07:01 GMT
+Transfer-Encoding:  chunked
+Connection: keep-alive
+Connection: Transfer-Encoding
+Set-Cookie: DrupalVisitorMobile=0; path=/; Secure; HttpOnly
+Strict-Transport-Security: max-age=15768000 ; preload
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"761e715901",applicationID:"87675502"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+<meta property="og:site_name" content="Amazon.com, Inc. - Press Room" />
+<link rel="canonical" href="https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october/" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october" />
+<meta property="og:title" content="Prime Day Deals Revealed! Jumpstart Your Holiday Shopping on October 13 &amp; 14 | Amazon.com, Inc. - Press Room" />
+<meta property="og:description" content="Prime Day kicks off Tuesday, October 13 at 12am PT and runs for 48 hours, delivering two full days of shopping on more than a million deals worldwide for Prime members Through October 12 , Amazon is offering a $10 credit to use on Prime Day to members who spend $10 on items sold by select small" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/sites/g/files/knoqqb37121/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october" />
+<link rel="revision" href="https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october" />
+
+    <title>Prime Day Deals Revealed! Jumpstart Your Holiday Shopping on October 13 &amp; 14 | Amazon.com, Inc. - Press Room</title>
+    <link rel="stylesheet" media="all" href="/sites/g/files/knoqqb37121/files/css/css_NRmgfE7PDqMPimvCjz666hBep0GsMON9xUAojqIOMJw.css" />
+<link rel="stylesheet" media="all" href="/sites/g/files/knoqqb37121/files/css/css_O9xdEFxyT6Vz86Lj10LWu70rCsJNL3T-b5yO_zxhB2M.css" />
+<link rel="stylesheet" media="print" href="/sites/g/files/knoqqb37121/files/css/css_31Pb4-j2bLX6RRPYdHuWoBu-0RQ6bkwbZdvi8RVmk4U.css" />
+<link rel="stylesheet" media="all" href="/sites/g/files/knoqqb37121/files/css/css_qEIT6H___LfrVNZA5R2Kzd9_O7_IYVIc09T0lhwXw4M.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/g/files/knoqqb37121/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+<script src="/sites/g/files/knoqqb37121/files/js/js__gXsFD20umzZxYHA4qnln41OAtfy5of3Fiqh3LbN0zs.js"></script>
+
+    
+
+    <script async custom-element="amp-analytics" src="//cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+  </head>
+  <body class="body-sidebars-first nir-node nir-node--type-nir-news nir-node--28651">
+    <!-- Start Alexa AMP Certify Javascript -->
+    <amp-analytics type="alexametrics">
+      <script type="application/json"> {"vars": { "atrk_acct": "bSTXp1d0RC20XR", "domain": "aboutamazon.com" }}</script>
+    </amp-analytics>
+    <!-- End Alexa AMP Certify Javascript -->
+
+
+    <div id="skip">
+      <a class="visually-hidden focusable skip-link" href="#main-menu">
+        Skip to main navigation
+      </a>
+    </div>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var body = document.getElementsByTagName('body')[0]
+            if (body) {
+                body.setAttribute('data-dayofweek', new Date().getDay())
+            }
+        })
+    </script>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" id="iconsMap">
+        <symbol id="icon-facebook" viewBox="0 0 512 512">
+            <title>Facebook</title>
+            <path d="M288,192v-38.1c0-17.2,3.8-25.9,30.5-25.9H352V64h-55.9c-68.5,0-91.1,31.4-91.1,85.3V192h-45v64h45v192h83V256h56.4l7.6-64
+                            H288z" />
+        </symbol>
+        <symbol id="icon-googleplus" viewBox="0 0 512 512">
+            <title>Google Plus</title>
+            <g>
+                <path d="M242.1,275.6l-18.2-13.7l-0.1-0.1c-5.8-4.6-10-8.3-10-14.7c0-7,5-11.8,10.9-17.4l0.5-0.4c20-15.2,44.7-34.3,44.7-74.6
+                                c0-26.9-11.9-44.7-23.3-57.7h13L320,64H186.5c-25.3,0-62.7,3.2-94.6,28.6l-0.1,0.3C70,110.9,57,137.4,57,163.5
+                                c0,21.2,8.7,42.2,23.9,57.4c21.4,21.6,48.3,26.1,67.1,26.1c1.5,0,3,0,4.5-0.1c-0.8,3-1.2,6.3-1.2,10.3c0,10.9,3.6,19.3,8.1,26.2
+                                c-24,1.9-58.1,6.5-84.9,22.3C35.1,328.4,32,361.7,32,371.3c0,38.2,35.7,76.8,115.5,76.8c91.6,0,139.5-49.8,139.5-99
+                                C287,312,264.2,293.5,242.1,275.6z M116.7,139.9c0-13.4,3-23.5,9.3-30.9c6.5-7.9,18.2-13.1,29-13.1c19.9,0,32.9,15,40.4,27.6
+                                c9.2,15.5,14.9,36.1,14.9,53.6c0,4.9,0,20-10.2,29.8c-7,6.7-18.7,11.4-28.6,11.4c-20.5,0-33.5-14.7-40.7-27
+                            C120.4,173.5,116.7,153.1,116.7,139.9z M237.8,368c0,27.4-25.2,44.5-65.8,44.5c-48.1,0-80.3-20.6-80.3-51.3
+                            c0-26.1,21.5-36.8,37.8-42.5c18.9-6.1,44.3-7.3,50.1-7.3c3.9,0,6.1,0,8.7,0.2C224.9,336.8,237.8,347.7,237.8,368z" />
+                <polygon points="402,142 402,64 368,64 368,142 288,142 288,176 368,176 368,257 402,257 402,176 480,176 480,142 	" />
+            </g>
+        </symbol>
+        <symbol id="icon-instagram" viewBox="0 0 29 28">
+            <title>Instagram</title>
+            <g>
+                <path d="M14.192.061c-3.796 0-4.272.016-5.763.084C6.941.213 5.925.45 5.036.793a6.852 6.852 0 0 0-2.475 1.61 6.834 6.834 0 0 0-1.613 2.47c-.345.887-.582 1.9-.65 3.385-.068 1.488-.084 1.963-.084 5.75 0 3.788.016 4.263.085 5.751.067 1.485.304 2.498.65 3.386a6.835 6.835 0 0 0 1.612 2.47 6.852 6.852 0 0 0 2.475 1.609c.89.344 1.905.58 3.393.648 1.491.068 1.967.084 5.763.084 3.797 0 4.273-.016 5.763-.084 1.488-.068 2.504-.304 3.393-.648a6.852 6.852 0 0 0 2.476-1.609 6.836 6.836 0 0 0 1.612-2.47c.346-.888.582-1.901.65-3.386.068-1.488.084-1.963.084-5.75 0-3.788-.016-4.263-.084-5.75-.068-1.485-.304-2.5-.65-3.387a6.835 6.835 0 0 0-1.612-2.47A6.852 6.852 0 0 0 23.348.793C22.46.45 21.443.213 19.955.145 18.465.077 17.99.061 14.192.061m0 2.513c3.733 0 4.175.014 5.649.081 1.362.062 2.103.29 2.595.48a4.332 4.332 0 0 1 1.607 1.044c.49.488.792.953 1.046 1.604.191.491.419 1.23.481 2.59.067 1.47.082 1.911.082 5.635 0 3.725-.015 4.166-.082 5.636-.062 1.36-.29 2.099-.481 2.59a4.32 4.32 0 0 1-1.046 1.604c-.489.488-.954.79-1.607 1.043-.492.191-1.233.419-2.595.48-1.474.068-1.916.082-5.649.082-3.732 0-4.174-.014-5.648-.081-1.363-.062-2.103-.29-2.595-.48a4.331 4.331 0 0 1-1.608-1.044 4.322 4.322 0 0 1-1.045-1.604c-.192-.491-.42-1.23-.482-2.59-.067-1.47-.081-1.911-.081-5.636 0-3.724.014-4.165.081-5.635.063-1.36.29-2.099.482-2.59A4.321 4.321 0 0 1 4.34 4.179c.49-.488.955-.79 1.608-1.043.492-.191 1.232-.419 2.595-.48 1.474-.068 1.916-.082 5.648-.082" />
+                <path d="M14.192 18.658a4.654 4.654 0 0 1-4.659-4.65 4.654 4.654 0 0 1 4.66-4.649 4.654 4.654 0 0 1 4.659 4.65 4.654 4.654 0 0 1-4.66 4.649m0-11.812c-3.964 0-7.177 3.207-7.177 7.163 0 3.955 3.213 7.162 7.177 7.162 3.965 0 7.178-3.207 7.178-7.162 0-3.956-3.213-7.163-7.178-7.163M23.331 6.563c0 .925-.75 1.674-1.677 1.674-.926 0-1.678-.75-1.678-1.674 0-.924.752-1.673 1.678-1.673.926 0 1.677.749 1.677 1.673" />
+            </g>
+        </symbol>
+        <symbol id="icon-mailto" viewBox="0 0 512 512">
+            <title>Mail To</title>
+            <g>
+                <path d="M67,148.7c11,5.8,163.8,89.1,169.5,92.1c5.7,3,11.5,4.4,20.5,4.4c9,0,14.8-1.4,20.5-4.4c5.7-3,158.5-86.3,169.5-92.1
+                            c4.1-2.1,11-5.9,12.5-10.2c2.6-7.6-0.2-10.5-11.3-10.5H257H65.8c-11.1,0-13.9,3-11.3,10.5C56,142.9,62.9,146.6,67,148.7z" />
+                <path d="M455.7,153.2c-8.2,4.2-81.8,56.6-130.5,88.1l82.2,92.5c2,2,2.9,4.4,1.8,5.6c-1.2,1.1-3.8,0.5-5.9-1.4l-98.6-83.2
+                                c-14.9,9.6-25.4,16.2-27.2,17.2c-7.7,3.9-13.1,4.4-20.5,4.4c-7.4,0-12.8-0.5-20.5-4.4c-1.9-1-12.3-7.6-27.2-17.2l-98.6,83.2
+                                c-2,2-4.7,2.6-5.9,1.4c-1.2-1.1-0.3-3.6,1.7-5.6l82.1-92.5c-48.7-31.5-123.1-83.9-131.3-88.1c-8.8-4.5-9.3,0.8-9.3,4.9
+                                c0,4.1,0,205,0,205c0,9.3,13.7,20.9,23.5,20.9H257h185.5c9.8,0,21.5-11.7,21.5-20.9c0,0,0-201,0-205
+                                C464,153.9,464.6,148.7,455.7,153.2z" />
+            </g>
+        </symbol>
+        <symbol id="icon-linkedin" viewBox="0 0 512 512">
+            <title>LinkedIn</title>
+            <path d="M417.2,64H96.8C79.3,64,64,76.6,64,93.9v321.1c0,17.4,15.3,32.9,32.8,32.9h320.3c17.6,0,30.8-15.6,30.8-32.9V93.9
+                                C448,76.6,434.7,64,417.2,64z M183,384h-55V213h55V384z M157.4,187H157c-17.6,0-29-13.1-29-29.5c0-16.7,11.7-29.5,29.7-29.5
+                                c18,0,29,12.7,29.4,29.5C187.1,173.9,175.7,187,157.4,187z M384,384h-55v-93.5c0-22.4-8-37.7-27.9-37.7
+                                c-15.2,0-24.2,10.3-28.2,20.3c-1.5,3.6-1.9,8.5-1.9,13.5V384h-55V213h55v23.8c8-11.4,20.5-27.8,49.6-27.8
+                                c36.1,0,63.4,23.8,63.4,75.1V384z" />
+        </symbol>
+        <symbol id="icon-pinterest" viewBox="0 0 512 512">
+            <title>Pinterest</title>
+            <g>
+                <path d="M256,32C132.3,32,32,132.3,32,256c0,91.7,55.2,170.5,134.1,205.2c-0.6-15.6-0.1-34.4,3.9-51.4
+                                c4.3-18.2,28.8-122.1,28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2,19.2-58,43.2-58c20.4,0,30.2,15.3,30.2,33.6
+                                c0,20.5-13.1,51.1-19.8,79.5c-5.6,23.8,11.9,43.1,35.4,43.1c42.4,0,71-54.5,71-119.1c0-49.1-33.1-85.8-93.2-85.8
+                                c-67.9,0-110.3,50.7-110.3,107.3c0,19.5,5.8,33.3,14.8,43.9c4.1,4.9,4.7,6.9,3.2,12.5c-1.1,4.1-3.5,14-4.6,18
+                                c-1.5,5.7-6.1,7.7-11.2,5.6c-31.3-12.8-45.9-47-45.9-85.6c0-63.6,53.7-139.9,160.1-139.9c85.5,0,141.8,61.9,141.8,128.3
+                                c0,87.9-48.9,153.5-120.9,153.5c-24.2,0-46.9-13.1-54.7-27.9c0,0-13,51.6-15.8,61.6c-4.7,17.3-14,34.5-22.5,48
+                                c20.1,5.9,41.4,9.2,63.5,9.2c123.7,0,224-100.3,224-224C480,132.3,379.7,32,256,32z" />
+            </g>
+        </symbol>
+        <symbol id="icon-tumblr" viewBox="0 0 512 512">
+            <title>Tumblr</title>
+            <g>
+                <path d="M321.2,396.3c-11.8,0-22.4-2.8-31.5-8.3c-6.9-4.1-11.5-9.6-14-16.4c-2.6-6.9-3.6-22.3-3.6-46.4V224h96v-64h-96V48h-61.9
+                                c-2.7,21.5-7.5,44.7-14.5,58.6c-7,13.9-14,25.8-25.6,35.7c-11.6,9.9-25.6,17.9-41.9,23.3V224h48v140.4c0,19,2,33.5,5.9,43.5
+                                c4,10,11.1,19.5,21.4,28.4c10.3,8.9,22.8,15.7,37.3,20.5c14.6,4.8,31.4,7.2,50.4,7.2c16.7,0,30.3-1.7,44.7-5.1
+                                c14.4-3.4,30.5-9.3,48.2-17.6v-65.6C363.2,389.4,342.3,396.3,321.2,396.3z" />
+            </g>
+        </symbol>
+        <symbol id="icon-twitter" viewBox="0 0 512 512">
+            <title>Twitter</title>
+            <g>
+                <path d="M492,109.5c-17.4,7.7-36,12.9-55.6,15.3c20-12,35.4-31,42.6-53.6c-18.7,11.1-39.4,19.2-61.5,23.5
+                                C399.8,75.8,374.6,64,346.8,64c-53.5,0-96.8,43.4-96.8,96.9c0,7.6,0.8,15,2.5,22.1c-80.5-4-151.9-42.6-199.6-101.3
+                                c-8.3,14.3-13.1,31-13.1,48.7c0,33.6,17.2,63.3,43.2,80.7C67,210.7,52,206.3,39,199c0,0.4,0,0.8,0,1.2c0,47,33.4,86.1,77.7,95
+                                c-8.1,2.2-16.7,3.4-25.5,3.4c-6.2,0-12.3-0.6-18.2-1.8c12.3,38.5,48.1,66.5,90.5,67.3c-33.1,26-74.9,41.5-120.3,41.5
+                                c-7.8,0-15.5-0.5-23.1-1.4C62.8,432,113.7,448,168.3,448C346.6,448,444,300.3,444,172.2c0-4.2-0.1-8.4-0.3-12.5
+                                C462.6,146,479,129,492,109.5z" />
+            </g>
+        </symbol>
+        <symbol id="icon-youtube" viewBox="0 0 512 512">
+            <title>Youtube</title>
+            <g>
+                <path d="M508.6,148.8c0-45-33.1-81.2-74-81.2C379.2,65,322.7,64,265,64c-3,0-6,0-9,0s-6,0-9,0c-57.6,0-114.2,1-169.6,3.6
+                                c-40.8,0-73.9,36.4-73.9,81.4C1,184.6-0.1,220.2,0,255.8C-0.1,291.4,1,327,3.4,362.7c0,45,33.1,81.5,73.9,81.5
+                                c58.2,2.7,117.9,3.9,178.6,3.8c60.8,0.2,120.3-1,178.6-3.8c40.9,0,74-36.5,74-81.5c2.4-35.7,3.5-71.3,3.4-107
+                                C512.1,220.1,511,184.5,508.6,148.8z M207,353.9V157.4l145,98.2L207,353.9z" />
+            </g>
+        </symbol>
+        <symbol id="icon-magnify" viewBox="0 0 512 512">
+            <title>magnify</title>
+            <g>
+                <path d="M337.509,305.372h-17.501l-6.571-5.486c20.791-25.232,33.922-57.054,33.922-93.257
+                                C347.358,127.632,283.896,64,205.135,64C127.452,64,64,127.632,64,206.629s63.452,142.628,142.225,142.628
+                                c35.011,0,67.831-13.167,92.991-34.008l6.561,5.487v17.551L415.18,448L448,415.086L337.509,305.372z M206.225,305.372
+                                c-54.702,0-98.463-43.887-98.463-98.743c0-54.858,43.761-98.742,98.463-98.742c54.7,0,98.462,43.884,98.462,98.742
+                                C304.687,261.485,260.925,305.372,206.225,305.372z" />
+            </g>
+        </symbol>
+        <symbol id="icon-greater-than" viewBox="0 0 202 342">
+            <title>greater than</title>
+            <g>
+                <polygon points="135 171 0.002 312.077 31 342 202 171 31 0 1.078 29.924"></polygon>
+            </g>
+        </symbol>
+        <symbol id="icon-quote" viewBox="0 0 35 31">
+            <title>Quote</title>
+            <g>
+                <path fill-rule="evenodd" d="M14.966.972c-2.736 1.368-4.932 3.168-6.588 5.4-1.656 2.232-2.484 4.572-2.484 7.02 0 2.016.81 3.672 2.43 4.968 1.62 1.296 3.906 2.124 6.858 2.484 0 2.952-.612 5.256-1.836 6.912-1.224 1.656-2.88 2.484-4.968 2.484-2.448 0-4.338-1.008-5.67-3.024C1.376 25.2.71 22.356.71 18.684c0-3.744.846-7.236 2.538-10.476C4.94 4.968 7.19 2.592 9.998 1.08 11.222.36 12.302 0 13.238 0c.864 0 1.44.324 1.728.972zm19.224 0c-2.736 1.368-4.932 3.168-6.588 5.4-1.656 2.232-2.484 4.572-2.484 7.02 0 2.016.81 3.672 2.43 4.968 1.62 1.296 3.906 2.124 6.858 2.484 0 2.952-.612 5.256-1.836 6.912-1.224 1.656-2.88 2.484-4.968 2.484-2.448 0-4.338-1.008-5.67-3.024-1.332-2.016-1.998-4.86-1.998-8.532 0-3.744.846-7.236 2.538-10.476 1.692-3.24 3.942-5.616 6.75-7.128C30.446.36 31.526 0 32.462 0c.864 0 1.44.324 1.728.972z" />
+            </g>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 512 512">
+            <title>Close</title>
+            <g>
+                <path d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5
+                            c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9
+                            c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z" />
+            </g>
+        </symbol>
+        <symbol id="icon-menu" viewBox="0 0 512 512">
+            <g>
+                <rect x="96" y="241" width="320" height="32" />
+                <rect x="96" y="145" width="320" height="32" />
+                <rect x="96" y="337" width="320" height="32" />
+            </g>
+        </symbol>
+        <symbol id="icon-search" viewBox="0 0 512 512">
+            <title>Search</title>
+            <g>
+                <path d="M337.509,305.372h-17.501l-6.571-5.486c20.791-25.232,33.922-57.054,33.922-93.257
+                                C347.358,127.632,283.896,64,205.135,64C127.452,64,64,127.632,64,206.629s63.452,142.628,142.225,142.628
+                                c35.011,0,67.831-13.167,92.991-34.008l6.561,5.487v17.551L415.18,448L448,415.086L337.509,305.372z M206.225,305.372
+                                c-54.702,0-98.463-43.887-98.463-98.743c0-54.858,43.761-98.742,98.463-98.742c54.7,0,98.462,43.884,98.462,98.742
+                                C304.687,261.485,260.925,305.372,206.225,305.372z" />
+            </g>
+        </symbol>
+        <symbol id="icon-right-arrow" viewBox="0 0 7 12">
+            <title>Right arrow</title>
+            <g>
+                <path d="M1.845 10.988a.618.618 0 0 1-.452.19.618.618 0 0 1-.452-.19.618.618 0 0 1-.191-.452v-9c0-.174.064-.325.19-.452a.618.618 0 0 1 .453-.191c.174 0 .325.063.452.19l4.5 4.5c.127.128.19.279.19.453a.618.618 0 0 1-.19.452l-4.5 4.5z" />
+            </g>
+        </symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24">
+            <title>Download Icon</title>
+            <g fill-rule="evenodd">
+                <path d="M23 16.718a1 1 0 0 0-1 1v1.913C22 20.675 21.119 22 20.13 22H3.869C2.88 22 2 20.675 2 19.63v-1.912a1 1 0 0 0-2 0v1.913C0 21.694 1.654 24 3.869 24H20.13c2.215 0 3.87-2.306 3.87-4.37v-1.912a1 1 0 0 0-1-1" />
+                <path d="M11.292 18.315a1 1 0 0 0 1.415 0l7-6.999a.999.999 0 1 0-1.414-1.414L13 15.195V1a1 1 0 0 0-2 0v14.195L5.707 9.902a.999.999 0 1 0-1.414 1.414l6.999 7z" />
+            </g>
+        </symbol>
+    </svg>
+
+    <header class="CategoryPage-header" data-with-toggle-menu itemscope itemtype="http://schema.org/WPHeader">
+    
+        <div class="CategoryPage-hat">
+            <div class="CategoryPage-hat-contentWrapper">
+
+                <div class="CategoryPage-gateway">
+                    <a href="http://www.amazon.com" target="_blank" data-cms-ai="0">Back to Amazon</a>
+                    <div class="CategoryPage-gateway-dropdown">
+                        <span class="CategoryPage-gateway-dropdown-first" data-flag="us">us</span>
+                        <div class="CategoryPage-gateway-dropdown-content">
+                            <hr class="mood-bgcolor"></hr>
+                            <div class="CategoryPage-gateway-dropdown-content-items">
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="au" href="http://www.amazon.com.au" target="_blank" data-cms-ai="0">au</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="br" href="http://www.amazon.com.br" target="_blank" data-cms-ai="0">br</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="ca" href="http://www.amazon.ca" target="_blank" data-cms-ai="0">ca</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="cn" href="http://www.amazon.cn" target="_blank" data-cms-ai="0">cn</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="de" href="http://www.amazon.de" target="_blank" data-cms-ai="0">de</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="fr" href="http://www.amazon.fr" target="_blank" data-cms-ai="0">fr</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="in" href="http://www.amazon.in" target="_blank" data-cms-ai="0">in</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="it" href="http://www.amazon.it" target="_blank" data-cms-ai="0">it</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="jp" href="http://www.amazon.co.jp" target="_blank" data-cms-ai="0">jp</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="mx" href="http://www.amazon.com.mx" target="_blank" data-cms-ai="0">mx</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="nl" href="http://www.amazon.nl" target="_blank" data-cms-ai="0">nl</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="es" href="http://www.amazon.es" target="_blank" data-cms-ai="0">es</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="uk" href="http://www.amazon.co.uk" target="_blank" data-cms-ai="0">uk</a></div>
+                                <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="us" href="http://www.amazon.com" target="_blank" data-cms-ai="0">us</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="CategoryPage-hat-logo">
+
+                    <a href="https://www.blog.aboutamazon.com" data-cms-ai="0">
+                        <img class="PageLogo-image" src="/sites/g/files/knoqqb37121/themes/site/nir_pid2497/styleguide/media/dayOne_tag@3x.svg" alt="Day One Blog" width="165" />
+                    </a>
+
+                </div>
+                <div class="CategoryPage-hat-navigation" data-toggle-item="hat-navigation">
+                    <button class="CategoryPage-hat-navigation-toggle" data-toggle-trigger="hat-navigation"><span>Site Navigation</span></button>
+
+                    <nav class="Navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                      
+        
+<h3 class="visually-hidden">Category Navigation</h3>
+
+
+                  <ul data-block-uuid="5b5460c4-e151-4f15-869f-56385a895db0" class="menu side-menu">
+                  <li class="side-menu__item">
+          <a href="https://ir.aboutamazon.com/" target="" rel="">Investors</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="https://press.aboutamazon.com/" target="" rel="">Press Center</a>
+                  </li>
+              <li class="side-menu__item">
+          <a href="https://www.seattlespheres.com/" target="" rel="">The Spheres</a>
+                  </li>
+          </ul>
+  
+
+
+
+
+
+                    </nav>
+
+                </div>
+                <div class="CategoryPage-hat-banner">
+
+                </div>
+                <div class="CategoryPage-hat-content">
+
+                    <div class="PromoHat">
+
+                        <div class="PromoHat-title">
+                            <a class="Link" href="https://email.aboutamazon.com/l/637851/2018-10-26/7z82j?Traffic_Source=ir&Module=hat" target="_blank" data-amzn-id="00000162-1662-d15c-ab62-f6f73b3c0001" data-cms-ai="0">Get the latest news in your inbox</a>
+                        </div>
+
+                        <div class="PromoHat-media">
+                            <a class="Link" href="https://email.aboutamazon.com/l/637851/2018-10-26/7z82j?Traffic_Source=ir&Module=hat" target="_blank" data-amzn-id="00000162-1662-d15c-ab62-f6f73b3c0001" data-cms-ai="0">
+                                <picture>
+                                    <source width="54" height="35" media="(min-width: 768px)" srcset="/sites/g/files/knoqqb37121/themes/site/nir_pid2497/styleguide/media/newsletter-box-3x.png 1x,/sites/g/files/knoqqb37121/themes/site/nir_pid2497/styleguide/media/newsletter-box-3x.png 2x" alt="Newsletter Box">
+                                    <source width="54" height="35" srcset="/sites/g/files/knoqqb37121/themes/site/nir_pid2497/styleguide/media/newsletter-box-3x.png 1x,/sites/g/files/knoqqb37121/themes/site/nir_pid2497/styleguide/media/newsletter-box-3x.png 2x" alt="Newsletter Box">
+                                    <img class="Image" src="/sites/g/files/knoqqb37121/themes/site/nir_pid2497/styleguide/media/newsletter-box-3x.png" alt="Newsletter Box">
+                                </picture>
+                            </a>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="CategoryPage-header-bottom">
+            <div class="CategoryPage-header-contentWrapper">
+                <div class="CategoryPage-header-menuLogo">
+                    <div class="CategoryPage-header-menuToggle-bg">
+                        <button class="CategoryPage-header-menuToggle" aria-label="Menu" aria-controls="navigation" data-toggle-trigger="navigation">
+                            <svg>
+                                <use xlink:href="#icon-menu" />
+                            </svg><span>Menu</span></button>
+                    </div>
+
+                    <div class="CategoryPage-navigation" data-main-navigation data-toggle-item="navigation">
+                        <div class="CategoryPage-navigation-heading">
+                            <div class="CategoryPage-header-menuClose-bg">
+                                <button class="CategoryPage-header-menuClose" aria-label="Menu" aria-controls="navigation" data-toggle-trigger="navigation">
+                                    <svg>
+                                        <use xlink:href="#icon-close" />
+                                    </svg><span>Close</span></button>
+                            </div>
+
+                            <div class="CategoryPage-logo">
+
+                                <a href="https://www.aboutamazon.com" data-amzn-id="00000162-0242-d25e-a5ee-b6f6eb5e0000" data-cms-ai="0">
+                                    <img class="PageLogo-image" src="/sites/g/files/knoqqb37121/themes/site/nir_pid2497/styleguide/media/logo-black.svg" alt="amazon-logo-rgb-wht.svg" width="165" />
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <nav class="Navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                          
+        
+<h3 class="visually-hidden">Corporate Menu</h3>
+
+
+    
+
+
+              <ul class="Navigation-items">
+          
+          <li class="Navigation-items-item">
+            <div class="NavigationItem mood-color">
+
+                <div class="NavigationItem-text">
+
+                    <a class="NavigationItem-text-link mood-hover" href="https://www.aboutamazon.com/sustainability" data-cms-ai="0">Sustainability</a>
+                </div>
+            </div>
+
+                  </li>
+      
+          <li class="Navigation-items-item">
+            <div class="NavigationItem mood-color">
+
+                <div class="NavigationItem-text">
+
+                    <a class="NavigationItem-text-link mood-hover" href="https://www.aboutamazon.com/supporting-small-businesses" data-cms-ai="0">Supporting small business</a>
+                </div>
+            </div>
+
+                  </li>
+      
+          <li class="Navigation-items-item">
+            <div class="NavigationItem mood-color">
+
+                <div class="NavigationItem-text">
+
+                    <a class="NavigationItem-text-link mood-hover" href="https://www.aboutamazon.com/job-creation-and-investment/" data-cms-ai="0">Job creation &amp; investment</a>
+                </div>
+            </div>
+
+                  </li>
+      
+          <li class="Navigation-items-item">
+            <div class="NavigationItem mood-color">
+
+                <div class="NavigationItem-text">
+
+                    <a class="NavigationItem-text-link mood-hover" href="https://www.aboutamazon.com/working-at-amazon" data-cms-ai="0">Working at Amazon</a>
+                </div>
+            </div>
+
+                  </li>
+      
+          <li class="Navigation-items-item">
+            <div class="NavigationItem mood-color">
+
+                <div class="NavigationItem-text">
+
+                    <a class="NavigationItem-text-link mood-hover" href="https://www.aboutamazon.com/our-communities" data-cms-ai="0">Our communities</a>
+                </div>
+            </div>
+
+                  </li>
+      
+          <li class="Navigation-items-item">
+            <div class="NavigationItem mood-color">
+
+                <div class="NavigationItem-text">
+
+                    <a class="NavigationItem-text-link mood-hover" href="https://www.amazon.science/" data-cms-ai="0">Innovation</a>
+                </div>
+            </div>
+
+                  </li>
+          </ul>
+  
+
+
+
+
+
+
+                          
+    <div id="block-gbdayonenav" class="block-content--nir-global-block block-content--nir-global-block--22161 block--block-content69e95814-2ea9-4f9a-9d47-722eccf5996f block--block-content69e95814-2ea9-4f9a-9d47-722eccf5996f--28651 block--dayone-navigation--block-content--69e95814-2ea9-4f9a-9d47-722eccf5996f block--dayone-navigation--block-content--69e95814-2ea9-4f9a-9d47-722eccf5996f--28651 block--c6663242-32b7-423d-8125-69b6f30791f4 block--c6663242-32b7-423d-8125-69b6f30791f4--28651 block block-block-content block-block-content69e95814-2ea9-4f9a-9d47-722eccf5996f">
+  
+    
+      
+            <div class="field field--name-field-nir-global-block-node field--type-entity-reference field--label-hidden field__item">  
+            <div class="clearfix text-formatted field field--name-field-nir-global-block-body field--type-text-long field--label-hidden field__item"><ul class="Navigation-itemsBelow"><li class="Navigation-itemsBelow-item">
+	<div class="NavigationItem mood-color">
+	<div class="NavigationItem-text"><a class="NavigationItem-text-link mood-hover" data-cms-ai="0" href="https://blog.aboutamazon.com/">Day One: The Amazon Blog</a></div>
+
+	<ul class="NavigationItem-items"><li class="NavigationItem-items-item">
+		<div class="NavigationSubnav">
+		<ul class="NavigationSubnav-items"><li class="NavigationSubnav-items-item">
+			<div class="NavigationSubnavItem">
+			<div class="NavigationSubnavItem-text"><a class="NavigationSubnavItem-text-link" data-cms-ai="0" href="https://blog.aboutamazon.com/working-at-amazon">Work Here</a></div>
+
+			<ul class="NavigationSubnavItem-items"><li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/amazon-campus">Amazon Campus</a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/culture-and-diversity">Culture and Diversity </a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/veterans">Veterans </a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/working-at-amazon">Working at Amazon</a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.amazon.jobs/?utm_source=amazonblog&amp;utm_medium=footerlink&amp;utm_campaign=footer">Amazon.jobs</a></li>
+			</ul></div>
+			</li>
+			<li class="NavigationSubnav-items-item">
+			<div class="NavigationSubnavItem">
+			<div class="NavigationSubnavItem-text"><a class="NavigationSubnavItem-text-link" data-cms-ai="0" href="https://blog.aboutamazon.com/working-at-amazon">Our Business</a></div>
+
+			<ul class="NavigationSubnavItem-items"><li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/amazon-prime">Amazon Prime</a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/aws">AWS</a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/devices">Devices </a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/entertainment">Entertainment </a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/innovation">Innovation</a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/operations">Operations </a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/transportation">Transportation</a></li>
+			</ul></div>
+			</li>
+			<li class="NavigationSubnav-items-item">
+			<div class="NavigationSubnavItem">
+			<div class="NavigationSubnavItem-text"><a class="NavigationSubnavItem-text-link" data-cms-ai="0" href="https://blog.aboutamazon.com/community">Our Communities </a></div>
+
+			<ul class="NavigationSubnavItem-items"><li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/community">Community </a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/policy">Policy </a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://blog.aboutamazon.com/sustainability">Sustainability </a></li>
+			</ul></div>
+			</li>
+			<li class="NavigationSubnav-items-item">
+			<div class="NavigationSubnavItem">
+			<div class="NavigationSubnavItem-text"><a class="NavigationSubnavItem-text-link" data-cms-ai="0" href="https://www.blog.aboutamazon.com/">Amazon Blogs</a></div>
+
+			<ul class="NavigationSubnavItem-items"><li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://developer.amazon.com/blogs/alexa/" target="_blank">Alexa Developer Blog</a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://developer.amazon.com/blogs" target="_blank">Amazon Developer Blog</a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="http://www.amazonbusinessblog.com/" target="_blank">Amazon Business Blog</a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://aws.amazon.com/blogs/aws/" target="_blank">AWS News Blog</a></li>
+				<li class="NavigationSubnavItem-items-item"><a class="NavigationLink" data-cms-ai="0" href="https://www.amazon.com/primeinsider" target="_blank">Prime Insider </a></li>
+			</ul></div>
+			</li>
+		</ul></div>
+		</li>
+	</ul></div>
+	</li>
+</ul></div>
+      
+</div>
+      
+  </div>
+
+
+
+
+                        </nav>
+
+                    </div>
+
+                    <div class="CategoryPage-logo">
+                      <span class="CategoryPage-logo-image">
+                        <a href="https://www.aboutamazon.com" data-amzn-id="00000162-0242-d25e-a5ee-b6f6eb5e0000" data-cms-ai="0">
+                          <img class="PageLogo-image" src="/sites/g/files/knoqqb37121/themes/site/nir_pid2497/styleguide/media/logo.svg" alt="About Amazon logo" width="165"/>
+                        </a>
+                      </span>
+                      <span class="CategoryPage-logo-image-inverse">
+                        <a href="https://www.aboutamazon.com" data-amzn-id="00000162-0242-d25e-a5ee-b6f6eb5e0000" data-cms-ai="0">
+                            <img class="PageLogo-image" src="/sites/g/files/knoqqb37121/themes/site/nir_pid2497/styleguide/media/logo-black.svg" alt="amazon-logo-rgb-wht.svg" width="165"/>
+                        </a>
+                      </span>
+                    </div>
+
+                </div>
+
+                <div class="CategoryPage-header-content">
+
+                    <div class="CategoryPage-search-wrapper" data-search-toggle>
+                        <button class="CategoryPage-search-toggle" data-toggle-trigger="search">
+                            <svg>
+                                <use xlink:href="#icon-search" />
+                            </svg><span>Open Search</span></button>
+                        <form class="CategoryPage-search" action="https://www.aboutamazon.com/search" novalidate="" autocomplete="off" data-toggle-item="search">
+
+                            <button type="submit" class="CategoryPage-searchButton">
+                                <svg>
+                                    <use xlink:href="#icon-search" />
+                                </svg><span>Search</span></button>
+
+                            <input type="text" class="CategoryPage-searchInput" placeholder="Search..." name="q">
+
+                            <button class="CategoryPage-search-close" data-toggle-trigger="search">
+                                <svg>
+                                    <use xlink:href="#icon-close" />
+                                </svg><span>Close Search</span></button>
+                        </form>
+                    </div>
+                    <button class="CategoryPage-header-backTop">Back To Top</button>
+                    <div class="CategoryPage-language" data-toggle-item="language">
+                        <button class="LanguagesMenu-toggle" data-toggle-trigger="language"><span>en</span></button>
+                        <div class="CategoryPage-language-dropdown">
+                            <div class="CategoryPage-language-dropdown-header" data-toggle-trigger="language">
+                                <button class="LanguagesMenu-toggle"><span>en</span></button>
+                                <div class="CategoryPage-language-dropdown-header-content">
+                                    <svg>
+                                        <use xlink:href="#icon-greater-than" />
+                                    </svg>
+                                    Visit a different Amazon site
+                                </div>
+                            </div>
+                            <div class="CategoryPage-language-dropdown-content">
+                              
+    <div id="block-gbothercountries" class="block-content--nir-global-block block-content--nir-global-block--22166 block--block-content60269457-480d-4cdb-b04a-e42077062cd7 block--block-content60269457-480d-4cdb-b04a-e42077062cd7--28651 block--other-countries--block-content--60269457-480d-4cdb-b04a-e42077062cd7 block--other-countries--block-content--60269457-480d-4cdb-b04a-e42077062cd7--28651 block--2f81ac3b-157d-453f-850b-64eaeed73462 block--2f81ac3b-157d-453f-850b-64eaeed73462--28651 block block-block-content block-block-content60269457-480d-4cdb-b04a-e42077062cd7">
+  
+    
+      
+            <div class="field field--name-field-nir-global-block-node field--type-entity-reference field--label-hidden field__item">  
+            <div class="clearfix text-formatted field field--name-field-nir-global-block-body field--type-text-long field--label-hidden field__item"><div class="LanguagesMenu-dropdown-content">
+<div class="LanguagesMenu-dropdown-content-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="eu" href="https://www.aboutamazon.eu/" target="">European Union</a>
+<div class="LanguagesMenuItem-languages"><a class="Link" data-cms-ai="0" href="https://www.aboutamazon.eu/">English</a></div>
+</div>
+
+<div class="LanguagesMenu-dropdown-content-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="fr" href="https://www.aboutamazon.fr" target="">France</a>
+
+<div class="LanguagesMenuItem-languages"><a class="Link" data-cms-ai="0" href="https://www.aboutamazon.fr">Français</a></div>
+</div>
+
+<div class="LanguagesMenu-dropdown-content-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="de" href="https://www.aboutamazon.de/" target="">Germany (Deutschland)</a>
+
+<div class="LanguagesMenuItem-languages"><a class="Link" data-cms-ai="0" href="https://www.aboutamazon.de/">Deutsch</a></div>
+</div>
+
+<div class="LanguagesMenu-dropdown-content-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="in" href="https://www.aboutamazon.in" target="">India </a>
+
+<div class="LanguagesMenuItem-languages"><a class="Link" data-cms-ai="0" href="https://www.aboutamazon.in">English</a></div>
+</div>
+
+<div class="LanguagesMenu-dropdown-content-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="it" href="https://www.aboutamazon.it" target="">Italy (Italia)</a>
+
+<div class="LanguagesMenuItem-languages"><a class="Link" data-cms-ai="0" href="https://www.aboutamazon.it">Italiano</a></div>
+</div>
+
+<div class="LanguagesMenu-dropdown-content-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="es" href="https://www.aboutamazon.es" target="">Spain (España)</a>
+
+<div class="LanguagesMenuItem-languages"><a class="Link" data-cms-ai="0" href="https://www.aboutamazon.es">Español</a></div>
+</div>
+
+<div class="LanguagesMenu-dropdown-content-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="uk" href="https://www.aboutamazon.co.uk/" target="">United Kingdom</a>
+
+<div class="LanguagesMenuItem-languages"><a class="Link" data-cms-ai="0" href="https://www.aboutamazon.co.uk/">English</a></div>
+</div>
+
+<div class="LanguagesMenu-dropdown-content-item"><a class="LanguagesMenuItem-link" data-cms-ai="0" data-flag="us" href="https://www.aboutamazon.com/" target="">United States</a>
+
+<div class="LanguagesMenuItem-languages"><a class="Link" data-cms-ai="0" href="https://www.aboutamazon.com/">English</a></div>
+</div>
+</div>
+</div>
+      
+</div>
+      
+  </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+<div class="ArticlePage-contentWrapper">
+
+    <main class="ArticlePage-main" data-statusbar-headline="Responsible sourcing" data-statusbar-headlinetext="Reading Now">
+
+        <article class="ArticlePage-mainContent" itemprop="mainEntity" itemscope="" itemtype="http://schema.org/Article">
+
+            <div class="ArticlePage-lede">
+                <div class="ArticlePage-lede-content">
+                    <div class="ArticlePage-breadcrumbs">
+                      
+    <div id="block-breadcrumbs" class="block--system-breadcrumb-block block--system-breadcrumb-block--28651 block--breadcrumbs--system-breadcrumb-block block--breadcrumbs--system-breadcrumb-block--28651 block--5d6b0702-256d-401d-b7e4-2d7af260664e block--5d6b0702-256d-401d-b7e4-2d7af260664e--28651 block block-system block-system-breadcrumb-block">
+  
+    
+      <div class="ArticlePage-breadcrumbs-item">
+  <a href="https://www.aboutamazon.com/"> About Amazon</a>
+  <span class="mood-fill">
+      <svg>
+          <use xlink:href="#icon-right-arrow"></use>
+      </svg>
+  </span>
+  <a href="/">Press Center</a>
+  <span class="mood-fill">
+      <svg>
+          <use xlink:href="#icon-right-arrow"></use>
+      </svg>
+  </span>
+          
+            <a href="">Prime Day Deals Revealed! Jumpstart Your Holiday Shopping on October 13 &amp; 14</a>
+  <span class="mood-fill">
+      <svg>
+          <use xlink:href="#icon-right-arrow"></use>
+      </svg>
+  </span>
+</div>
+
+  </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ArticlePage-content">
+
+                <div class="ArticlePage-articleBody articleBody" itemprop="articleBody">
+                  <section id="content">
+                      <div id="content-header">
+
+                          
+
+                      </div>
+
+
+                      <div class="row" id="ndq-content">
+                        <div class="column col-md-4 no-padding" >
+                          <nav class="NavigationSection" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                              
+    
+<h3>Press center</h3>
+
+
+    
+
+
+    
+          <ol class="ListOrdered-items">
+    
+            
+                  <li  class="ListOrdered-items-item current">
+        
+          <a class=""  href="/press-releases" data-cms-ai="0">Press release archive</a>
+
+                  </li>
+            
+                  <li  class="ListOrdered-items-item">
+        
+          <a class=""  href="/images-videos" data-cms-ai="0">Images and videos</a>
+
+                  </li>
+            
+                  <li  class="ListOrdered-items-item">
+        
+          <a class="external"  href="https://www.aboutamazon.com/" data-cms-ai="0">About Amazon</a>
+
+                  </li>
+            
+                  <li  class="ListOrdered-items-item">
+        
+          <a class="external"  href="https://www.blog.aboutamazon.com/" data-cms-ai="0">The Amazon blog</a>
+
+                  </li>
+            
+                  <li  class="ListOrdered-items-item">
+        
+          <a class=""  href="/contact-pr" data-cms-ai="0">Contact Amazon PR</a>
+
+                  </li>
+          </ul>
+  
+
+
+
+
+
+                          </nav>
+                          <div class="facets">
+                                                       </div>
+                        </div>
+                        <div class="col-md-8 ndq-28651">
+                          <h1 class="ArticlePage-headline" itemprop="headline">
+                                                            Press release
+                                                      </h1>
+
+                          
+    <div id="block-nir-pid2497-websitenoticeblock" class="block--website-notice-block block--website-notice-block--28651 block--content--website-notice-block block--content--website-notice-block--28651 block--0f3f10b6-d05c-4976-9e1a-1b8300142464 block--0f3f10b6-d05c-4976-9e1a-1b8300142464--28651 block block-nir-website-notices block-website-notice-block">
+  
+    
+      
+  </div>
+<div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-nir-pid2497-content" class="block--system-main-block block--system-main-block--28651 block--content--system-main-block block--content--system-main-block--28651 block--76602d03-21a8-4b4f-ab47-03716b617044 block--76602d03-21a8-4b4f-ab47-03716b617044--28651 block block-system block-system-main-block">
+  
+    
+      
+<article role="article" class="node node--nir-news--full node--type-nir-news node--view-mode-full node--promoted">
+
+  <h1>
+<div class="field field--name-field-nir-news-title field--type-string field--label-hidden">
+        <div class="field__item">Prime Day Deals Revealed! Jumpstart Your Holiday Shopping on October 13 &amp; 14</div>
+    </div>
+</h1>
+  
+<div class="field field--name-field-nir-news-date field--type-datetimezone field--label-hidden">
+        <div class="field__item">October 9, 2020 at 1:00 AM EDT</div>
+    </div>
+
+  <div class="node__content">
+    <div id="ndq-tools">
+      <a href="javascript:void(0);" class="ndq-open-dialog" rel="nofollow" title="Share" alt="Share"><span class="ndqicon-share"></span><p>Share</p></a></li>
+      <div id="output"></div>
+      <div class="ndq-dialog-overlay" style="display: none;"></div>
+      <div class="ndq-dialog" style="display: none;">
+        <ul id="ndq-share">
+          <li><a class="ndqicon-fb" href="http://www.facebook.com/share.php?u=https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october?&amp;t=Prime%20Day%20Deals%20Revealed%21%20Jumpstart%20Your%20Holiday%20Shopping%20on%20October%2013%20%26%2014" onclick="window.open('http://www.facebook.com/share.php?u=https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october?&amp;t=Prime%20Day%20Deals%20Revealed%21%20Jumpstart%20Your%20Holiday%20Shopping%20on%20October%2013%20%26%2014','Facebook','resizable=yes,scrollbars=yes,width=520,height=570'); return false;" title="Facebook"><span class="hide-txt">Facebook</span></a></li>
+          <li><a class="ndqicon-google" href="https://plus.google.com/share?url=https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october?&amp;t=Prime%20Day%20Deals%20Revealed%21%20Jumpstart%20Your%20Holiday%20Shopping%20on%20October%2013%20%26%2014" onclick="window.open('https://plus.google.com/share?url=https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october?&amp;t=Prime%20Day%20Deals%20Revealed%21%20Jumpstart%20Your%20Holiday%20Shopping%20on%20October%2013%20%26%2014','GooglePlus','resizable=yes,scrollbars=yes,width=900,height=570'); return false;" alt="Google" title="GooglePlus" aria-label="GooglePlus"><span class="hide-txt">Google+</span></a></li>
+          <li><a class="ndqicon-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october?&amp;t=Prime%20Day%20Deals%20Revealed%21%20Jumpstart%20Your%20Holiday%20Shopping%20on%20October%2013%20%26%2014" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october?&amp;t=Prime%20Day%20Deals%20Revealed%21%20Jumpstart%20Your%20Holiday%20Shopping%20on%20October%2013%20%26%2014','LinkedIn','resizable=yes,scrollbars=yes,width=520,height=570'); return false;" title="LinkedIn"><span class="hide-txt">LinkedIn</span></a></li>
+          <li><a class="ndqicon-tw" href="http://twitter.com/home?status=Currently%20reading%20https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october?&amp;t=Prime%20Day%20Deals%20Revealed%21%20Jumpstart%20Your%20Holiday%20Shopping%20on%20October%2013%20%26%2014" onclick="window.open('http://twitter.com/home?status=Currently%20reading%20https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october?&amp;t=Prime%20Day%20Deals%20Revealed%21%20Jumpstart%20Your%20Holiday%20Shopping%20on%20October%2013%20%26%2014','Twitter','resizable=yes,scrollbars=yes,width=520,height=570'); return false;" title="Twitter"><span class="hide-txt">Twitter</span></a></li>
+          <li><a class="ndqicon-rss" href="/rss-news-feeds" alt="RSS" title="RSS" aria-label="RSS"><span class="hide-txt">RSS Feeds</span></a></li>
+          <li><a class="ndqicon-mail" href="mailto:?subject=Prime%20Day%20Deals%20Revealed%21%20Jumpstart%20Your%20Holiday%20Shopping%20on%20October%2013%20%26%2014&Body=https://press.aboutamazon.com/news-releases/news-release-details/prime-day-deals-revealed-jumpstart-your-holiday-shopping-october" alt="Mail this" title="Mail" aria-label="RSS"><span class="hide-txt">Email Page</span></a></li>
+        </ul>
+        <button class="ndq-close-dialog ndqicon-close" title="Close" aria-label="Close"><span class="hide-txt">Close</span></button>
+      </div>
+    </div>
+    <div class="box__right">
+
+      
+      
+      
+      
+          </div>
+
+                <p class="bwalignc">
+<i>Prime Day kicks off <chron>Tuesday, October 13</chron> at <chron>12am PT</chron> and runs for 48 hours, delivering two full days of shopping on more than a million deals worldwide for Prime members </i>
+</p>
+<p class="bwalignc">
+<i>Through <chron>October 12</chron>, <org value="AMZN" idsrc="xmltag.org">Amazon</org> is offering a <money>$10</money> credit to use on Prime Day to members who spend <money>$10</money> on items sold by select small businesses in Amazon’s store</i>
+</p>
+<p class="bwalignc">
+<i>Through <chron>October 14</chron>, members can ‘Spend $10’ to ‘Get $10’ while shopping in store at <org>Whole Foods Market</org>, <org value="AMZN" idsrc="xmltag.org">Amazon</org> Fresh, <org value="AMZN" idsrc="xmltag.org">Amazon</org> Go or <org>Amazon Go Grocery</org>, <org>Amazon Books</org> or <org value="AMZN" idsrc="xmltag.org">Amazon</org> Pop Up and <org value="AMZN" idsrc="xmltag.org">Amazon</org> 4-star stores and earn up to <money>$50</money> in credits to use on <a href="http://Amazon.com">Amazon.com</a> during Prime Day</i>
+</p>
+<p class="bwalignc">
+<i>Shop with Alexa on an Echo device beginning <chron>Sunday, October 11</chron>, to get early access to select deals on devices. Just ask, “Alexa, what are my Prime Day deals?” Members will also find select device deals early on <a href="http://Amazon.com">Amazon.com</a> starting <chron>Monday, October 12</chron> at <chron>12pm PT</chron> / <chron>3pm ET</chron></i>
+</p>
+<p>    <location value="LU/us.wa.seatle" idsrc="xmltag.org">SEATTLE</location>--(BUSINESS WIRE)--Oct. 9, 2020--
+Two full days of can’t-miss savings are almost here as <org value="AMZN" idsrc="xmltag.org">Amazon</org> prepares to kick off Prime Day at <chron>12am PT</chron> / <chron>3am ET</chron> on <chron>October 13</chron> in 19 countries worldwide. Prime members will have exclusive access to more than one million deals on everything they need and love, including the most popular, beloved brands and must-have holiday gifts across every category from toys, electronics, fashion, <org value="AMZN" idsrc="xmltag.org">Amazon</org> devices and more. Shop with Alexa on an Echo device beginning <chron>Sunday, October 11</chron> to get early access to select deals on devices. Just ask, “Alexa, what are my Prime Day deals?” Anyone can get a jump-start on their holiday shopping and savings this Prime Day by joining Prime or starting a free 30-day trial at <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fprimeday&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fprimeday&amp;index=1&amp;md5=3a4cff3765272069c8b36293e2fb4b20" shape="rect">amazon.com/primeday</a>.
+</p>
+<p>
+<b><span class="bwuline">Support Small Businesses</span></b>
+</p>
+<p>
+Prime members can support small businesses this Prime Day by shopping deals featured in the Support Small storefront, <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=https%3A%2F%2Fwww.amazon.com%2Fb%3Fnode%3D11260432011&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=Amazon+Handmade&amp;index=2&amp;md5=1179d242be90a500cc880b914207ac99" shape="rect"><org value="AMZN" idsrc="xmltag.org">Amazon</org> Handmade</a> and <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=https%3A%2F%2Fwww.amazon.com%2Fb%3Fie%3DUTF8%26node%3D12034488011%26ref%3Dal_surl&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=Amazon+Launchpad&amp;index=3&amp;md5=a3f74afcacc82bf08174ee396bb0c694" shape="rect"><org value="AMZN" idsrc="xmltag.org">Amazon</org> Launchpad</a>. More than half of the items sold in Amazon’s store worldwide are from third-party sellers – mostly small and medium-sized businesses, and last Prime Day, these sellers surpassed <money>$2 billion</money> in sales.
+</p>
+<p>
+To make it easier than ever for customers to support small businesses, <org value="AMZN" idsrc="xmltag.org">Amazon</org> has launched new, curated collections to connect customers with local small businesses. Through <chron>October 12</chron>, <org value="AMZN" idsrc="xmltag.org">Amazon</org> is offering a <money>$10</money> credit to use on Prime Day to members who spend <money>$10</money> on items sold by select small businesses in Amazon’s store. Visit <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fsupportsmall&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fsupportsmall&amp;index=4&amp;md5=3ca6ec24916c317324529c5533e1cee9" shape="rect">amazon.com/supportsmall</a> to start shopping.
+</p>
+<p>
+"We’ve been thrilled with the increased traffic and revenue Pawstruck has experienced this week since the Spend <money>$10</money>, Get <money>$10</money> small business promotion launched,” said <person>Kyle Goguen</person>, founder of Pawstruck in <location value="LU/us.ca.elsndo" idsrc="xmltag.org">El Segundo, CA.</location> “We’re anxiously awaiting Prime Day 2020, where we expect even greater results."
+</p>
+<p>
+<b><span class="bwuline">Prime Day Deals Preview</span></b>
+</p>
+<p>
+When it comes to incredible deals on amazing products, Prime Day 2020 delivers in a big way with more deals than any Prime Day event before. Additionally, members can shop featured lightning deals, which offer jaw-dropping prices on top-tier brands and products. Watch for deals on Nintendo Switch Titles, Barbie &amp; Hot Wheels toys, iRobot Roomba vacuums, Panasonic Cameras and Premium Beauty brands this Prime Day. These offers could sell out quickly so be sure to come back and shop the entire 48 hours of Prime Day to cash in on the biggest savings.
+</p>
+<p>
+A preview of Prime Day deals members can expect include:
+</p>
+<p>
+<b><org value="AMZN" idsrc="xmltag.org">Amazon</org> Devices</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save 60% on our most popular smart speaker, <person>Echo Dot</person> (3rd Gen), just <money>$18.99</money></li>
+<li>
+Save up to <money>$80</money> on Echo Show devices. Get the Echo Show 5 for <money>$44.99</money>, Echo Show 8 for <money>$64.99</money>, and Echo Show (2nd Gen) for <money>$149.99</money></li>
+<li>
+Take Alexa on the road with <money>$30</money> off Echo Auto, now with <person>Auto Mode</person> in the Alexa App and Start My Commute features, just <money>$19.99</money></li>
+<li>
+Fire TV Edition Smart TVs start at just <money>$79.99</money>. Plus, get the Insignia 32-inch Smart HD Fire TV Edition TV for <money>$109.99</money> and the Toshiba 43-inch Smart 4K UHD Fire TV Edition TV for <money>$209.99</money></li>
+<li>
+Save <money>$40</money> on Fire TV Cube and use your voice to control your entertainment experience, just <money>$79.99</money></li>
+<li>
+Save up to 45% on Fire tablets. Get the Fire HD 10 for <money>$79.99</money> and Fire 7 Kids Edition tablet for <money>$59.99</money></li>
+<li>
+Save <money>$75</money> on eero Mesh WiFi system ensuring you have whole home WiFi coverage, just <money>$174.00</money></li>
+<li>
+Save <money>$20</money> on Ring Stick Up Cam, just <money>$79.99</money>.
+</li>
+<li>
+Save 30% on Ring Video Doorbell devices and get Ring Video Doorbell (2nd Gen) for <money>$69.99</money></li>
+<li>
+Get Blink Mini Indoor Cam, just <money>$24.99</money></li>
+<li>
+Get your smart home started with Ring Video Doorbell 3 and Echo Show 5, just <money>$149.99</money></li>
+<li>
+Get an <person>Echo Dot</person> and LIFX Smart Bulb (Wi-Fi set up), just <money>$18.99</money></li>
+<li>
+Save <money>$50</money> on Kindle Paperwhite, just <money>$79.99</money></li>
+<li>
+Save <money>$35</money> on the Kindle Kids Edition, just <money>$74.99</money></li>
+</ul><p>
+<b>Electronics</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save 36% on 12 Month Nintendo Switch Online Family Membership + SanDisk 128GB <person>Memory Card</person></li>
+<li>
+Save up to 33% on select Nintendo Switch titles
+</li>
+<li>
+Save up to 33% on DJI Mavic Mini Drone and Osmo cameras
+</li>
+<li>
+Save up to 35% on Nixplay WIFI digital frames
+</li>
+<li>
+Save up to 40% off on Panasonic cameras
+</li>
+<li>
+Save up to 46% on Garmin GPS units and smartwatches
+</li>
+<li>
+Save up to 30% on Tile trackers
+</li>
+<li>
+Save 30% on select cell phone cases
+</li>
+<li>
+Save on JBL Boombox
+</li>
+<li>
+Save up to 30% on headphones from top brands
+</li>
+<li>
+Save up to 30% on select Samsung and Sony TVs
+</li>
+<li>
+Save 20% on Mynt 3D pens
+</li>
+<li>
+Save 20% on Sindoh 3D printers
+</li>
+<li>
+Save 30% on <org value="3600070003" idsrc="xmltag.org">Dremel</org> 3D20 DigiLab 3D Printer
+</li>
+</ul><p>
+<b>Smart Home</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save <money>$75</money> on Select <person>August Locks</person> and get a free <person>Echo Dot</person>(3rd Gen)
+</li>
+<li>
+Save up to 30% off Arlo Smart Home Security Products
+</li>
+<li>
+Save up to 33% on iRobot Roomba vacuums
+</li>
+<li>
+Save on myQ Smart Garage Hub
+</li>
+<li>
+Save up to 35% on Smart Home products from Moen, Leviton, Kasa and more
+</li>
+<li>
+Save on ecobee3 lite Smart Thermostat
+</li>
+<li>
+Save up to 44% on Shark vacuums
+</li>
+<li>
+Save up to 22% on Hamilton Beach Works with <person>Alexa Smart Coffee Maker</person></li>
+</ul><p>
+<b>Small Businesses Including <org value="AMZN" idsrc="xmltag.org">Amazon</org> Launchpad and <org value="AMZN" idsrc="xmltag.org">Amazon</org> Handmade</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save up to 47% on <org>Parker Baby Co.</org> baby products and gear
+</li>
+<li>
+Save up to 40% on Pawstruck natural dog treats
+</li>
+<li>
+Save up to 25% on Simply Gum natural breath mints and chewing gum
+</li>
+<li>
+Save 20% on select <org value="AMZN" idsrc="xmltag.org">Amazon</org> Launchpad products including Skoolzy STEM Peg Board Toddler Stacking Toys and Taco vs. Burrito, the surprisingly strategic card game
+</li>
+<li>
+Save up to 25% on select <org value="AMZN" idsrc="xmltag.org">Amazon</org> Launchpad products including Trifo Robot Vacuum Cleaners
+</li>
+<li>
+Save up to 20% on handcrafted gifts and décor from <org value="AMZN" idsrc="xmltag.org">Amazon</org> Handmade
+</li>
+<li>
+Save 20% on pumpkin bakery soy candles from <org value="AMZN" idsrc="xmltag.org">Amazon</org> Handmade Maker, <person>Lorenzen Candle Co</person></li>
+<li>
+Save 20% on rose embossing rolling pins from <org value="AMZN" idsrc="xmltag.org">Amazon</org> Handmade Maker, <person>Algis Crafts</person></li>
+<li>
+Save 20% on blue simulated turquoise hoop earrings from <org value="AMZN" idsrc="xmltag.org">Amazon</org> Handmade Maker, MJLuLu
+</li>
+<li>
+Save 20% on dog leash holders from <org value="AMZN" idsrc="xmltag.org">Amazon</org> Handmade Maker, <org>G3 Studios</org></li>
+</ul><p>
+<b>Home &amp; Kitchen</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save up to 30% on Classic Brands, Furrino, and Sauder furniture
+</li>
+<li>
+Save up to 30% on Zinus furniture
+</li>
+<li>
+Save up to 30% on <org value="0992498852" idsrc="xmltag.org">Casper</org> mattresses
+</li>
+<li>
+Save up to 35% on Bissell floorcare
+</li>
+<li>
+Save up to 40% on kitchen essentials from <org value="0956264424" idsrc="xmltag.org">Le Creuset</org>, Pyrex, Corelle and more
+</li>
+<li>
+Save up to 50% on Instant Pot products
+</li>
+<li>
+Save up to 30% on <org value="2301687294" idsrc="xmltag.org">Cuisinart</org> appliances and cookware
+</li>
+<li>
+Save up to 37% on Ninja kitchen products
+</li>
+</ul><p>
+<b>Toys &amp; Games</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save up to 30% on Arts &amp; Crafts sets for kids
+</li>
+<li>
+Save up to 30% on Barbie &amp; Hot Wheels toys
+</li>
+<li>
+Save up to 40% on Fashion Dolls and Accessories from brands like <person>L.O.L. Surprise</person>!, Calico Critters and Journey Girls
+</li>
+<li>
+Save up to 30% on NERF Toys
+</li>
+<li>
+Save up to 30% on Playskool, Sesame Street and Littlest Pet Shop toys
+</li>
+<li>
+Save up to 30% on toys from Marvel, Star Wars and more
+</li>
+<li>
+Save up to 30% on toys from <org value="3029334849" idsrc="xmltag.org">Melissa &amp; Doug</org>, V-Tech, <org value="1489196178" idsrc="xmltag.org">Battat</org>, Hape and more
+</li>
+<li>
+Save up to 30% on Outdoor and Ride-on products
+</li>
+<li>
+Save up to 30% on games from Magic the Gathering, Exploding Kittens and more
+</li>
+<li>
+Save up to 30% on STEM toys and building sets
+</li>
+<li>
+Save 15% on AmScope Microscopes for Kids
+</li>
+</ul><p>
+<b>Fashion</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save up to 40% on select Levi's for the whole family
+</li>
+<li>
+Save up to 35% on select <org value="1605960296" idsrc="xmltag.org">Calvin Klein</org> underwear
+</li>
+<li>
+Save up to 50% on select watches from Citizen, Bulova, <person>Anne Klein</person>, Fossil and more
+</li>
+<li>
+Save up to 30% on select men's and women's clothing and more from our brands
+</li>
+<li>
+Save up to 30% on select Cubcoats for kids
+</li>
+<li>
+Save up to 15% on select Fall fashion from Shopbop
+</li>
+<li>
+Save up to 40% on select dresses from Shopbop
+</li>
+<li>
+Save up to 30% on select styles from The Drop
+</li>
+<li>
+Save up to 40% on select Champion apparel
+</li>
+<li>
+Save up to 30% on select <org>Tommy Hilfiger</org> apparel
+</li>
+<li>
+Save up to 30% on select New Balance for the family
+</li>
+</ul><p>
+<b>Beauty</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save up to 43% on Panasonic’s men’s grooming products
+</li>
+<li>
+Save more than 35% on Waterpik Counterop Aquarius products
+</li>
+<li>
+Save up to 55% on select oral care favorites from Crest
+</li>
+<li>
+Save up to 50% on select Conair products
+</li>
+<li>
+Save up to 50% on select men's grooming favorites from Braun and Gillette
+</li>
+<li>
+Save 20% on skin care products from brands including Aquaphor, Coppertone, Eucerin and Nivea
+</li>
+<li>
+Save up to 40% on Premium Beauty hair and skin care appliances from top brands like BaBylissPro, ghd, Foreo, NuFace, <person>Paul Mitchell</person>, PMD Beauty, Rusk and T3
+</li>
+<li>
+Save up to 40% on Premium Beauty favorites from brands including Bioderma, Elemis, <org>HAUS Laboratories</org> by <person>Lady Gaga</person>, Mustela, Oribe, Redken and Stila
+</li>
+<li>
+Save 30% or more on <person>Mario Badescu</person>, Pureology, Nioxin, Philosophy, R+Co, Dermablend, Stila, BaBylisspRO, Glo Science, NuFace, PMD Beauty and many more Premium Beauty brands
+</li>
+</ul><p>
+<b>Health &amp; Personal Care</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save 50% on 23andMe Health + Ancestry Personal Genetic Service Kit
+</li>
+<li>
+Save up to 30% on Fitbit Versa 2, Versa Lite and <org>Aria Air</org></li>
+<li>
+Save up to 30% on household essentials from Proctor &amp; Gamble (P&amp;G)
+</li>
+<li>
+Save up to 30% on ‘on the go’ snack bars and ready to drink beverages
+</li>
+<li>
+Save up to 20% on select products from Nature's Bounty
+</li>
+<li>
+Save up to 20% on nutrition &amp; wellness favorites from brands including <org value="2612156545" idsrc="xmltag.org">Garden of Life</org>, Culturelle and <org value="1754206294" idsrc="xmltag.org">Dymatize</org></li>
+<li>
+Save up to 20% on Marpac white noise machines
+</li>
+<li>
+Save up to 25% on home air fresheners from brands including Finish, Air Wick, Woolite and Rid-X
+</li>
+<li>
+Save 15% on First Aid Only 299 All-Purpose First Aid Kit
+</li>
+<li>
+Save 20% on Scott washroom essentials
+</li>
+</ul><p>
+<b><org value="AMZN" idsrc="xmltag.org">Amazon</org> Brands </b>
+</p>
+<ul class="bwlistdisc"><li>
+Save up to 35% on coffee and espresso from <person>Happy Belly</person> and Solimo
+</li>
+<li>
+Save up to 50% on Belei skin care products
+</li>
+<li>
+Save 20% on baby essentials from <person>Mama Bear</person></li>
+<li>
+Save 20% on health and personal care products from Solimo
+</li>
+<li>
+Save 20% on snacks and grocery essentials from <person>Happy Belly</person></li>
+<li>
+Save 20% on health and wellness products from Revly, <org value="AMZN" idsrc="xmltag.org">Amazon</org> Elements and <org value="AMZN" idsrc="xmltag.org">Amazon</org> Basic Care
+</li>
+<li>
+Save up to 40% on AmazonBasics products including luggage and travel gear, home furnishings, and kitchen essentials
+</li>
+</ul><p>
+<b>Automotive, Tools &amp; Home Improvement </b>
+</p>
+<ul class="bwlistdisc"><li>
+Save 50% on Tire Installation
+</li>
+<li>
+Save 35% off on NOCO Products
+</li>
+<li>
+Save 20% on <person>Shell Rotella</person> T6 Full Synthetic 5W-40 Diesel Engine Oil
+</li>
+<li>
+Save 20% on Select Chemical Guys Kits and Microfiber Towels
+</li>
+<li>
+Save 20% on Select Chemical Guys Kits
+</li>
+<li>
+Save 30% on Select Camco Rhino Heavy Duty Tote Tanks
+</li>
+<li>
+Save up to 40% on DEWALT tools
+</li>
+<li>
+Save up to 40% on CRAFTSMAN tools
+</li>
+<li>
+Save on Sylvania light bulbs
+</li>
+<li>
+Save up to 15% on select Kidde smoke &amp; <org value="1793631966" idsrc="xmltag.org">carbon</org> monoxide alarms
+</li>
+</ul><p>
+<b>Lawn &amp; Garden</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save on select Scotts lawn and garden products
+</li>
+<li>
+Save up to 20% on select Shop Succulents live plants
+</li>
+<li>
+Save up to 20% on select <org>Costa Farms</org> live plants
+</li>
+<li>
+Save up to 20% on select Briggs &amp; Stratton power products
+</li>
+<li>
+Save up to 20% on select Classic Accessories patio covers
+</li>
+<li>
+Save up to 20% on select Worx fall clean up equipment and power tools
+</li>
+<li>
+Save up to 15% on select Worx Hydroshot pressure washer and PowerShare products
+</li>
+<li>
+Save up to 30% on select BLACK+DECKER string and hedge trimmers
+</li>
+</ul><p>
+<b>Baby</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save up to 35% on baby feeding essentials
+</li>
+<li>
+Save up to 20% on baby bath essentials
+</li>
+<li>
+Save 20% on 4-Star baby products
+</li>
+<li>
+Save 20% or more on baby nursery essentials
+</li>
+<li>
+Save up to 20% on Evenflo products
+</li>
+</ul><p>
+<b>Sports &amp; Outdoors</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save up to 30% on select Segway self-balancing electric scooters
+</li>
+<li>
+Save up to 20% on select <person>Speedo Swim</person> apparel and equipment
+</li>
+<li>
+Save up to 35% on select adidas clothing, footwear and accessories
+</li>
+<li>
+Save up to 40% on Coleman Outdoor Essentials
+</li>
+</ul><p>
+<b>Pets</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save 30% on Wellness dog &amp; cat food and treats
+</li>
+<li>
+Save up to 20% on Bayer K9 Advantix
+</li>
+</ul><p>
+<b>Major Appliances </b>
+</p>
+<ul class="bwlistdisc"><li>
+Save up to 15% on GE Profile Ice Maker
+</li>
+<li>
+Save up to 20% on Midea Fridges and Freezers
+</li>
+<li>
+Save up to 20% on Winia Compact Appliances
+</li>
+<li>
+Save up to 15% on New Air Appliances
+</li>
+<li>
+Save up to 20% on Broan Range Hoods
+</li>
+<li>
+Save up to 20% on Cosmo Appliances
+</li>
+</ul><p>
+<b>Grocery</b>
+</p>
+<ul class="bwlistdisc"><li>
+Save up to 35% on select products from Orgain
+</li>
+<li>
+Save 35% on customer favorite beverages from brands including Keurig, <person>Crystal Light</person> and more
+</li>
+<li>
+Save 30% on Hershey's <chron>Halloween</chron> candy favorites
+</li>
+<li>
+Save up to 25% on <org>ConAgra</org> products
+</li>
+<li>
+Save 30% or more on select pantry staples from <location value="LU/us.ca.camell" idsrc="xmltag.org">Campbell's</location>, Izze's, Planters, Quaker, RX Bar and more
+</li>
+</ul><p>
+<b>Additional Deals from Across <org value="AMZN" idsrc="xmltag.org">Amazon</org></b>
+</p>
+<ul class="bwlistdisc"><li>
+<b>Spend <money>$10</money>, Get <money>$10</money> In-Store: </b>Prime members who shop online or in store at <org>Whole Foods Market</org>, as well as at <org value="AMZN" idsrc="xmltag.org">Amazon</org> Fresh, <org value="AMZN" idsrc="xmltag.org">Amazon</org> Go or <org>Amazon Go Grocery</org>, <org>Amazon Books</org> or <org value="AMZN" idsrc="xmltag.org">Amazon</org> Pop Up, and <org value="AMZN" idsrc="xmltag.org">Amazon</org> 4-star can receive up to <money>$50</money> in <a href="http://Amazon.com">Amazon.com</a> credit to use on Prime Day by earning the “Spend <money>$10</money>, Get $10” in-store offer.<b> </b>
+</li>
+<li>
+<b><org value="AMZN" idsrc="xmltag.org">Amazon</org> Fresh:</b> New Fresh customers can enjoy <money>$15</money> off their first order of <money>$50</money> or more on <org value="AMZN" idsrc="xmltag.org">Amazon</org> Fresh.
+</li>
+<li>
+<b><org>Amazon Music Unlimited</org>: </b>For just <money>$0.99</money>, Prime members who haven’t yet tried <org>Amazon Music Unlimited</org> can get four months of the premium streaming tier with unlimited access to more than 60 million songs ad-free, and now a wide selection of popular podcasts. With purchase of select <org value="AMZN" idsrc="xmltag.org">Amazon</org> Echo devices on Prime Day, Prime members new to <org>Amazon Music Unlimited</org> can get six months free access to the premium music streaming tier now featuring podcasts.
+</li>
+<li>
+<b>Prime Video</b>: Enjoy a selection of titles to rent or buy at up to 50% off and for a limited time, customers will be able to subscribe to select channels for <money>$0.99</money> per month for up to two months if they are not already subscribed. Only pay for the channels you want and cancel anytime. A full list of Prime Video deals, including the offer window for each, can be found at <span class="bwuline"><a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Famazon.com%2Fprimememberdeals&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fprimememberdeals&amp;index=5&amp;md5=a612fc2d452c2a0979447fe5909778d3" shape="rect">amazon.com/primememberdeals</a></span>.
+</li>
+<li>
+<b><org>Kindle Unlimited</org></b>: New customers to <org>Kindle Unlimited</org> get 3 months free with a new subscription
+</li>
+<li>
+<b>Kindle Book Deals</b>: Receive a <money>$5</money> credit on any Kindle book with the purchase of select Kindle devices.
+</li>
+<li>
+<b>Books</b>: Discover discount and flash deals on select multi-genre books and ebooks, including kids content
+</li>
+<li>
+<b>Crown Channel: </b>Prime members can grab free in-game content for <i>Yahtzee with Buddies </i>from Prime Gaming. <i>Yahtzee with Buddies</i> is featured in Season 2 of <i>Chasing the Crown </i>on Crown Channel. <i>Chasing the Crown</i> supports up-and-coming Twitch streamers, helping them build their audiences and hone their skills as they compete for a <money>$50,000</money> cash prize. Season 2 starts <chron>Friday, Oct. 9</chron> at <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Ftwitch.tv%2Fcrown&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=twitch.tv%2Fcrown&amp;index=6&amp;md5=754185dc5bac28c5b75d16dba1568938" shape="rect">twitch.tv/crown</a>.
+</li>
+<li>
+<b><org value="AMZN" idsrc="xmltag.org">Amazon</org> Gift Cards:</b> On <chron>October 13</chron> and 14, Prime members will receive a <money>$10</money> promotional credit when they purchase an <org value="AMZN" idsrc="xmltag.org">Amazon</org> Gift Card of <money>$40</money> or more (including newly-launched <org value="AMZN" idsrc="xmltag.org">Amazon</org> Video eGift Cards, available on mobile) or <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=https%3A%2F%2Fwww.amazon.com%2Fb%2Fref%3Dgc_reload_surl%3Fie%3DUTF8%26node%3D10232440011&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=reload&amp;index=7&amp;md5=d171badf1c5186f706ee8e5f60d8b7ca" shape="rect">reload</a> their own gift card balance with <money>$40</money> or more. This limited-time offer is available while supplies last and has a limit of one per <org value="AMZN" idsrc="xmltag.org">Amazon</org> customer account. The promotional credit will expire on <chron>November 29, 2020</chron>. Other restrictions apply.
+</li>
+<li>
+<b>Audible: </b>Prime members can save <money>$50</money> on a year of Audible Premium Plus. Audible members will also get access to the Plus catalog, featuring more than 10K Audible Originals, audiobooks, wellness programs and podcasts, all available on an all-you-can-listen basis. One upcoming highlight of the Plus catalog is <i>The Sesame Street Podcast with Foley &amp; Friends</i>, releasing only on Audible on <chron>October 14</chron>. This first podcast of its kind from the iconic children’s show introduces preschool listeners to brand new Sesame Street character Foley, and includes original music, interactive games, jokes, and visits from friends like Elmo.
+</li>
+<li>
+<b>IMDbPro: </b>Prime members receive a 30-day free trial and save 60% on a new annual membership to IMDbPro at <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.imdbpro.com&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=imdbpro.com&amp;index=8&amp;md5=546c4d6a1d7e9f4caf53f06f12dbfa3c" shape="rect">imdbpro.com</a>, the essential resource for the entertainment industry, making it just <money>$95</money> – the lowest price of the year – for a full year of access. IMDbPro members who join through the Prime Day offer are also eligible for 50% off Dropbox Plus for one year – the largest discount offered ever. This exclusive, limited-time offer is available for new and returning IMDbPro memberships.
+</li>
+<li>
+<b><org>Amazon Warehouse</org></b>: Members save an extra 20% on thousands of quality pre-owned, used and open box items for the kitchen, home, office, sports and outdoors, including major appliances, furniture, home décor and more. Visit <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=https%3A%2F%2Fwww.amazon.com%2Famazonwarehouse&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Famazonwarehouse&amp;index=9&amp;md5=127a86a44f616b718aa7df15acbefc0b" shape="rect">amazon.com/amazonwarehouse</a>.
+</li>
+<li>
+<b>Woot!</b>:<b> </b><org value="AMZN" idsrc="xmltag.org">Amazon's</org> daily deal site will have deals with deep discounts and free shipping available only to Prime members from <chron>October 11 through October 17</chron>. Visit <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.woot.com&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=woot.com&amp;index=10&amp;md5=79162c0bdcfe05cc5f1a82e3a530aa5b" shape="rect">woot.com</a> or download the Woot! app.
+</li>
+</ul><p>
+<b><span class="bwuline">Ways to Shop This Prime Day </span></b>
+</p>
+<ul class="bwlistdisc"><li>
+<b>Shop with Alexa: </b>Prime members can discover deals by asking “Alexa, what are my Prime Day deals?” Plus, starting today and for a limited time, new Prime members who sign up for Prime using an Echo device will receive a <money>$5</money> <org value="AMZN" idsrc="xmltag.org">Amazon</org> credit. Just say, “Alexa, sign me up for Prime.”
+</li>
+<li>
+<b>Holiday Gift Guides: </b>Get an early start on holiday shopping with Amazon’s biggest-ever selection of gift guides and exclusive storefronts, available earlier than ever before at <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fgifts&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fgifts&amp;index=11&amp;md5=d5f0c6ff0285ace1df3df918dd49834f" shape="rect">amazon.com/gifts</a>. Launching in time for Prime Day, Amazon’s gift guides offer Prime members exclusive gifting selection and Prime Day deals from some of the hottest brands in toys, electronics, home, beauty, fashion and more.
+</li>
+<li>
+<b><org value="AMZN" idsrc="xmltag.org">Amazon</org> Prime Credit Cards: </b>Now through <chron>October 31</chron>, eligible Prime members who apply and are approved for the <org value="AMZN" idsrc="xmltag.org">Amazon</org> Prime Rewards Visa Signature Card will instantly receive a <money>$100</money> Gift Card. To apply, visit <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fprimevisa&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fprimevisa&amp;index=12&amp;md5=3f07ddb88580f046e7db3d2db71a6351" shape="rect">amazon.com/primevisa</a>. Additionally, from <chron>October 12 through October 18</chron>, eligible Prime members with an <org value="AMZN" idsrc="xmltag.org">Amazon</org> Prime Rewards Visa Signature Card or <org value="AMZN" idsrc="xmltag.org">Amazon</org> Prime Store Card will receive up to 25% back on a curated selection of best-selling products across categories including consumer electronics, home, digital gaming, and more. More details can be found at <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fpcb&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fpcb&amp;index=13&amp;md5=19cac1364f6cd3ee7f849d8602da751b" shape="rect">amazon.com/pcb</a>.
+</li>
+<li>
+<b>Go In-Store: </b>Prime members can visit Amazon’s physical retail locations, including <org>Whole Foods Market</org>, <org value="AMZN" idsrc="xmltag.org">Amazon</org> 4-star, <org>Amazon Books</org>, <org value="AMZN" idsrc="xmltag.org">Amazon</org> Pop Up, and <org value="AMZN" idsrc="xmltag.org">Amazon</org> Fresh to find in-store deals.
+</li>
+<li>
+<b><org value="AMZN" idsrc="xmltag.org">Amazon</org> Live</b>: Tune in to <org value="AMZN" idsrc="xmltag.org">Amazon</org> Live throughout Prime Day to see live product demonstrations, hear directly from brands, and shop can’t miss deals the minute they go live. Customers will see products in action through cooking demonstrations, try-on hauls, and more, and celebrities and influencers will be joining live to surprise customers with exclusive experiences. Viewers can easily shop the products and brands featured through a carousel that updates in real-time as hosts discuss the products. To watch, visit <span class="bwuline"><a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Famazon.com%2Fprimeday&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fprimeday&amp;index=14&amp;md5=14499e0924ea78932a311fba2641776b" shape="rect">amazon.com/primeday</a></span> and via the <org value="AMZN" idsrc="xmltag.org">Amazon</org> Shopping app on Fire TV.
+</li>
+<li>
+<b>AmazonSmile:</b> Customers can visit<b> </b><a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.smile.amazon.com%2F&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=smile.amazon.com&amp;index=15&amp;md5=8cb4d74ac7bcb2220414d14fdd4af017" shape="rect">smile.amazon.com</a> and find the exact same <org value="AMZN" idsrc="xmltag.org">Amazon</org> experience – amazing deals, wide selection, fast and free delivery options – with the added bonus that AmazonSmile will donate a portion of the purchase price of eligible purchases to the charity of their choice. AmazonSmile customers can now shop AmazonSmile on the latest version of the <org value="AMZN" idsrc="xmltag.org">Amazon</org> app by opening the app and finding ‘Settings’ in the main menu (☰), tap on ‘AmazonSmile’ and follow the on-screen instructions to turn on AmazonSmile on your phone.
+</li>
+<li>
+<b>Climate Pledge Friendly</b>: Customers can discover and shop for products that have one or more of 19 different sustainability certifications, which help preserve the natural world. Get details at <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2FClimatePledgeFriendly&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2FClimatePledgeFriendly.&amp;index=16&amp;md5=c23bdfb5bcbcf33b52e48b2d0b22199c" shape="rect">amazon.com/ClimatePledgeFriendly.</a>
+</li>
+<li>
+<b><org value="AMZN" idsrc="xmltag.org">Amazon</org> Photos Prime Day Photos Sweepstakes: </b>Customers can enter for a chance to win the Prime Day Photos Sweepstakes by downloading the <org value="AMZN" idsrc="xmltag.org">Amazon</org> Photos app, sharing a photo that shows how Prime delivers joy, tagging <org value="AMZN" idsrc="xmltag.org">Amazon</org> Photos (@amazon.photos on Instagram and @amazonphotos on Facebook and Twitter), and using the hashtag #PrimeDayPhotos. A total of 30 winners will receive <money>$1,000</money> <a href="http://Amazon.com">Amazon.com</a> Gift Cards good for purchases on <a href="http://Amazon.com">Amazon.com</a>. Get details at <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fprimedayphotos&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fprimedayphotos&amp;index=17&amp;md5=e3d2afc2fb188383081035b028ee323b" shape="rect">amazon.com/primedayphotos</a>.
+</li>
+<li>
+<b><a href="http://Amazon.com">Amazon.com</a> in Spanish</b>: Customers can visit <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=https%3A%2F%2Fwww.amazon.com%2F%3Flanguage%3Des_US%26ref%3Dhp_surl_esus&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fespanol&amp;index=18&amp;md5=b5f7a62e88f432f91793155ac0d83c37" shape="rect">amazon.com/espanol</a> or use the <org value="AMZN" idsrc="xmltag.org">Amazon</org> App to shop, browse, search for millions of products, read reviews, view their carts, and place orders in Spanish. On the mobile App customers can go to Settings and tap on “Country and Language” to select Spanish. <a href="http://Amazon.com">Amazon.com</a> in Spanish gives customers the same convenient shopping experience in their preferred language on any device.
+</li>
+<li>
+<b><org value="AMZN" idsrc="xmltag.org">Amazon</org> App: </b>Prime members can shop anytime, anywhere with the <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=https%3A%2F%2Fwww.amazon.com%2Fgp%2Ffeature.html%3Fie%3DUTF8%26docId%3D1000625601%26ref%3Dmm_1_shortURL_desktop&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=Amazon+App&amp;index=19&amp;md5=8fec2574649400d9295de7367a51bb3e" shape="rect"><org value="AMZN" idsrc="xmltag.org">Amazon</org> App</a> to ensure you never miss a Prime Day deal.
+</li>
+</ul><p>
+<b>Every <person>Day Made Better</person> with Prime </b>
+</p>
+<p>
+Prime was designed to make your life better every single day. Over 150 million paid members around the world enjoy the many benefits of Prime, including the best of shopping and entertainment. In the <location value="LC/us" idsrc="xmltag.org">U.S.</location> that includes unlimited access to award-winning movies and TV episodes with Prime Video, ad-free listening of 2 million songs plus thousands of stations and playlists with <org value="AMZN" idsrc="xmltag.org">Amazon</org> Music, unlimited access to more than 1,000 books and magazines with Prime Reading, free in-game content and games with Prime Gaming, Prime Day, and more. Prime members can also get deep discounts on select popular products at <org>Whole Foods Market</org> plus an additional 10 percent off hundreds of sale items. Prime was built on the foundation of unlimited fast, free shipping. In addition to more than 10 million items eligible for free One-Day Delivery coast to coast, Prime members in thousands of cities and towns across 47 major metropolitan areas have access to millions of items with free Same-Day Delivery and the option to pick up and return their <org value="AMZN" idsrc="xmltag.org">Amazon</org> packages for free through <org value="AMZN" idsrc="xmltag.org">Amazon</org> Hub, a contactless, click and collect service at no additional cost. Prime members also have access to free and fast grocery delivery from <org value="AMZN" idsrc="xmltag.org">Amazon</org> Fresh and <org>Whole Foods Market</org> in more than 2,000 cities and towns. Prime is <money>$119</money> a year or <money>$12.99</money> a month and new members can start a free trial of <org value="AMZN" idsrc="xmltag.org">Amazon</org> Prime at <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fprime&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fprime&amp;index=20&amp;md5=b553431a55951270e40c5b02937b0217" shape="rect">amazon.com/prime</a>. College students can join Prime Student for 50% off and enjoy the benefits of Prime with a six-month trial at <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fprimestudent&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fprimestudent&amp;index=21&amp;md5=af18a26fbada1264c2bc25defb6274fd" shape="rect">amazon.com/primestudent</a>. Plus, for an additional <money>$0.99</money> a month, student members can get <org>Amazon Music Unlimited</org> and stream over 60 million songs ad-free. Customers receiving government assistance through EBT can also qualify for a discounted Prime membership of <money>$5.99</money> a month at <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fqualify.&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fqualify&amp;index=22&amp;md5=32dfd247e0218aa1a46b0420ab00cc62" shape="rect">amazon.com/qualify</a>. <org value="AMZN" idsrc="xmltag.org">Amazon</org> Business customers—from small businesses to large enterprises, as well as education, government and non-profit organizations—can also take advantage of Prime’s fast, free shipping and exclusive business-relevant benefits with Business Prime, which starts at <money>$69</money> per year as an add-on for customers with <org value="AMZN" idsrc="xmltag.org">Amazon</org> Prime on their personal account or <money>$179</money> per year for up to three users at <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fbusinessprime&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fbusinessprime&amp;index=23&amp;md5=98630d1d8d7386915bfc34b1f9cc467a" shape="rect">amazon.com/businessprime</a>.
+</p>
+<p>
+<b>About <org value="AMZN" idsrc="xmltag.org">Amazon</org> </b>
+</p>
+<p>
+<org value="AMZN" idsrc="xmltag.org">Amazon</org> is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. Customer reviews, 1-Click shopping, personalized recommendations, Prime, Fulfillment by <org value="AMZN" idsrc="xmltag.org">Amazon</org>, AWS, <org>Kindle Direct Publishing</org>, Kindle, Fire tablets, Fire TV, <org value="AMZN" idsrc="xmltag.org">Amazon</org> Echo, and Alexa are some of the products and services pioneered by <org value="AMZN" idsrc="xmltag.org">Amazon</org>. For more information, visit <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fabout&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=amazon.com%2Fabout&amp;index=24&amp;md5=086ac4b71bf29fb61d48b759d7917303" shape="rect">amazon.com/about</a> and follow <a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=https%3A%2F%2Ftwitter.com%2FAmazonNews&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=%40AmazonNews&amp;index=25&amp;md5=7ddeb088ef628c539fd4c49fe1123ad2" shape="rect">@AmazonNews</a>.
+</p>
+<p><img alt="" src="https://cts.businesswire.com/ct/CT?id=bwnews&amp;sty=20201008006027r1&amp;sid=acqr8&amp;distro=nx&amp;lang=en" style="width:0;height:0" /><span class="bwct31415"></span></p>
+<p id="mmgallerylink"><span id="mmgallerylink-phrase">View source version on <a href="http://businesswire.com">businesswire.com</a>: </span><span id="mmgallerylink-link"><a href="https://www.businesswire.com/news/home/20201008006027/en/" rel="nofollow">https://www.businesswire.com/news/home/20201008006027/en/</a></span></p>
+<p>
+<org value="AMZN" idsrc="xmltag.org">Amazon.com, Inc.</org><br />Media Hotline
+<br /><a rel="nofollow" href="mailto:Amazon-pr@amazon.com" shape="rect">Amazon-pr@amazon.com
+</a><br /><a rel="nofollow" href="https://cts.businesswire.com/ct/CT?id=smartlink&amp;url=http%3A%2F%2Fwww.amazon.com%2Fpr&amp;esheet=52303164&amp;newsitemid=20201008006027&amp;lan=en-US&amp;anchor=www.amazon.com%2Fpr&amp;index=26&amp;md5=26a733a413eca2686f32d476d8b6be14" shape="rect">www.amazon.com/pr</a>
+</p>
+<p>Source: <org value="AMZN" idsrc="xmltag.org">Amazon.com, Inc.</org></p>
+  
+      </div>
+
+</article>
+
+  </div>
+
+
+
+
+                        </div>
+
+                  </div><!--- end row --->
+
+
+                  </section>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+
+      <div class="ArticlePage-stickyEnd" data-sticky-end=""></div>
+              </div>
+
+  <!-- footer starts here -->
+<footer class="CategoryPage-footer" itemscope itemtype="https://schema.org/WPFooter">
+    <div class="CategoryPage-footer-contentWrapper">
+        <div class="CategoryPage-footer-topRow">
+
+            <div class="CategoryPage-logo">
+                <div class="CategoryPage-logo-image">
+
+                    <a href="https://www.aboutamazon.com" data-amzn-id="00000162-0242-d25e-a5ee-b6f6eb5e0000" data-cms-ai="0">
+                        <img class="PageLogo-image" src="/sites/g/files/knoqqb37121/themes/site/nir_pid2497/styleguide/media/logo.svg" alt="About Amazon logo" width="165" />
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="CategoryPage-social">
+                <div class="SocialBar">
+                  
+        
+<h3 class="visually-hidden">Social Links</h3>
+
+
+            <ul class="SocialBar-items">
+      
+        <li class="SocialBar-items-item">
+          <a class="SocialLink" href='https://www.facebook.com/Amazon/' target="_blank" data-social-service="facebook" data-cms-ai="0">
+            <svg>
+                <use xlink:href="#icon-facebook" />
+            </svg>
+          </a>
+                    </li>
+
+      
+        <li class="SocialBar-items-item">
+          <a class="SocialLink" href='https://www.instagram.com/insideamazon/' target="_blank" data-social-service="instagram" data-cms-ai="0">
+            <svg>
+                <use xlink:href="#icon-instagram" />
+            </svg>
+          </a>
+                    </li>
+
+      
+        <li class="SocialBar-items-item">
+          <a class="SocialLink" href='https://www.linkedin.com/company/1586/' target="_blank" data-social-service="linkedin" data-cms-ai="0">
+            <svg>
+                <use xlink:href="#icon-linkedin" />
+            </svg>
+          </a>
+                    </li>
+
+      
+        <li class="SocialBar-items-item">
+          <a class="SocialLink" href='https://twitter.com/amazonnews' target="_blank" data-social-service="twitter" data-cms-ai="0">
+            <svg>
+                <use xlink:href="#icon-twitter" />
+            </svg>
+          </a>
+                    </li>
+
+      
+        <li class="SocialBar-items-item">
+          <a class="SocialLink" href='https://www.youtube.com/amazonnews' target="_blank" data-social-service="youtube" data-cms-ai="0">
+            <svg>
+                <use xlink:href="#icon-youtube" />
+            </svg>
+          </a>
+                    </li>
+
+      
+  
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="CategoryPage-footerContent">
+
+                <a class="PromoTextItem" href="https://www.amazon.com" target="" data-amzn-id="00000162-2c06-dfbd-af6f-2f466b680001" data-cms-ai="0">
+                    <span class="PromoTextItem-title">Shop Amazon.com</span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="CategoryPage-gateway">
+            <a href="http://www.amazon.com" target="_blank" data-cms-ai="0">Back to Amazon</a>
+            <div class="CategoryPage-gateway-dropdown">
+                <span class="CategoryPage-gateway-dropdown-first" data-flag="us">us</span>
+                <div class="CategoryPage-gateway-dropdown-content">
+                    <hr class="mood-bgcolor"></hr>
+                    <div class="CategoryPage-gateway-dropdown-content-items">
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="au" href="http://www.amazon.com.au" target="_blank" data-cms-ai="0">au</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="br" href="http://www.amazon.com.br" target="_blank" data-cms-ai="0">br</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="ca" href="http://www.amazon.ca" target="_blank" data-cms-ai="0">ca</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="cn" href="http://www.amazon.cn" target="_blank" data-cms-ai="0">cn</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="de" href="http://www.amazon.de" target="_blank" data-cms-ai="0">de</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="fr" href="http://www.amazon.fr" target="_blank" data-cms-ai="0">fr</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="in" href="http://www.amazon.in" target="_blank" data-cms-ai="0">in</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="it" href="http://www.amazon.it" target="_blank" data-cms-ai="0">it</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="jp" href="http://www.amazon.co.jp" target="_blank" data-cms-ai="0">jp</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="mx" href="http://www.amazon.com.mx" target="_blank" data-cms-ai="0">mx</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="nl" href="http://www.amazon.nl" target="_blank" data-cms-ai="0">nl</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="es" href="http://www.amazon.es" target="_blank" data-cms-ai="0">es</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="uk" href="http://www.amazon.co.uk" target="_blank" data-cms-ai="0">uk</a></div>
+                        <div class="CategoryPage-gateway-dropdown-content-item"><a class="LinkGateway" data-flag="us" href="http://www.amazon.com" target="_blank" data-cms-ai="0">us</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="CategoryPage-footerNavigation">
+          
+        
+<h3 class="visually-hidden">Footer Navigation</h3>
+
+
+            
+    
+              
+                      <div class="ListFooter">
+              <div class="ListFooter-title">
+                                  <a href="https://www.aboutamazon.com/supporting-small-businesses">SUPPORTING SMALL BUSINESS</a>
+                              </div>
+          
+                                        <ul class="ListFooter-items">
+    
+              
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/supporting-small-businesses" target="" rel="">How we support small businesses</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/supporting-small-businesses/small-business-impact-report" target="" rel="">Small business impact report</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/supporting-small-businesses/success-stories" target="" rel="">Success stories</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.amazon.com/b?node=17395088011&amp;ref=azussoa_shorturl_insights&amp;ld=AZUSSOA-shorturl-insights" target="" rel="">Advice for small business owners</a></li>
+          
+            
+            
+              
+    </ul>
+
+  
+            
+                          </div>
+            
+        
+                      <div class="ListFooter">
+              <div class="ListFooter-title">
+                                  <a href="https://www.aboutamazon.com/job-creation-and-investment">JOB CREATION &amp; INVESTMENT</a>
+                              </div>
+          
+                                        <ul class="ListFooter-items">
+    
+              
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/job-creation-and-investment" target="" rel="">Explore job creation and investment</a></li>
+          
+            
+            
+              
+    </ul>
+
+  
+            
+                          </div>
+            
+        
+                      <div class="ListFooter">
+              <div class="ListFooter-title">
+                                  <a href="https://www.aboutamazon.com/working-at-amazon">WORKING AT AMAZON</a>
+                              </div>
+          
+                                        <ul class="ListFooter-items">
+    
+              
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/working-at-amazon" target="" rel="">Explore working at Amazon</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/working-at-amazon/amazon-offices" target="" rel="">Amazon offices</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/working-at-amazon/get-to-know-us" target="" rel="">Get to know us</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/working-at-amazon/opportunities-for-veterans" target="" rel="">Opportunities for veterans</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/working-at-amazon/our-culture" target="" rel="">Our culture</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.amazon.jobs/" target="" rel="">Jobs</a></li>
+          
+            
+            
+              
+    </ul>
+
+  
+            
+                          </div>
+            
+        
+                      <div class="ListFooter">
+              <div class="ListFooter-title">
+                                  <a href="https://www.aboutamazon.com/our-communities">OUR COMMUNITIES</a>
+                              </div>
+          
+                                        <ul class="ListFooter-items">
+    
+              
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/our-communities" target="" rel="">Our communities</a></li>
+          
+            
+            
+              
+    </ul>
+
+  
+            
+                          </div>
+            
+        
+                      <div class="ListFooter">
+              <div class="ListFooter-title">
+                                  <a href="https://sustainability.aboutamazon.com/">SUSTAINABILITY</a>
+                              </div>
+          
+                                        <ul class="ListFooter-items">
+    
+              
+                        <li class="ListFooter-items-item"><a href="https://sustainability.aboutamazon.com/" target="" rel="">Explore sustainability</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/sustainability/packaging" target="" rel="">Packaging</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.amazon.com/sustainabilityquestionbank" target="" rel="">Sustainability Question Bank</a></li>
+          
+            
+            
+              
+    </ul>
+
+  
+            
+                          </div>
+            
+        
+                      <div class="ListFooter">
+              <div class="ListFooter-title">
+                                  <a href="https://www.amazon.science/">INNOVATION</a>
+                              </div>
+          
+                                        <ul class="ListFooter-items">
+    
+              
+                        <li class="ListFooter-items-item"><a href="https://www.amazon.science/" target="" rel="">Our innovations</a></li>
+          
+            
+            
+              
+    </ul>
+
+  
+            
+                          </div>
+            
+        
+                      <div class="ListFooter">
+              <div class="ListFooter-title">
+                                  Our Company
+                              </div>
+          
+                                        <ul class="ListFooter-items">
+    
+              
+                        <li class="ListFooter-items-item"><a href="https://ir.aboutamazon.com/" target="" rel="">Investors</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://press.aboutamazon.com/" target="" rel="">Press center</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.seattlespheres.com/" target="" rel="">The Spheres</a></li>
+          
+            
+            
+        
+                        <li class="ListFooter-items-item"><a href="https://www.aboutamazon.com/our-company/select-awards-and-recognition" target="" rel="">Select awards and recognition</a></li>
+          
+            
+            
+              
+    </ul>
+
+  
+            
+                          </div>
+            
+              
+    </ul>
+
+  
+
+
+
+
+
+        </div>
+        <div class="CategoryPage-disclaimer">
+          
+        
+<h3 class="visually-hidden">Footer</h3>
+
+
+        
+              <a href="http://www.amazon.com/" target="_blank" data-cms-ai="0">Amazon.com</a>
+
+          
+              <a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508088" target="_blank" data-cms-ai="0">Conditions of Use</a>
+
+          
+      
+  
+
+
+
+
+
+          &copy; 1996-2020 Amazon.com, Inc. - Press Room or its affiliates
+        </div>
+
+    </div>
+</footer>
+
+  </div>
+
+    
+          <script type="text/javascript">var s_CCSWebHostingAccount = "trcgclientweb689";</script>
+        <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/28651","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"classy\/node,core\/html5shiv,nir_base\/adobe_omniture,nir_base\/nir_icons,nir_base\/nir_toolbar,nir_ckeditor_datatables\/datatables,nir_multimedia\/nir_multimedia,nir_pid2497\/override,nir_website_notices\/nir_website_notices.notices,system\/base","theme":"nir_pid2497","theme_token":null},"ajaxTrustedUrl":[],"user":{"uid":0,"permissionsHash":"afa7826996c406e5d6eb1284b3f36251f7864880be1dc9838501d065cd72ce93"}}</script>
+<script src="/sites/g/files/knoqqb37121/files/js/js_d4AfypcyFHoKZyiTo2S4as_cUR0vK4W6NZM5LHyPS4I.js"></script>
+
+    <script type="text/javascript">
+/*<![CDATA[*/
+(function() {
+var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+sz.src = '//siteimproveanalytics.com/js/siteanalyze_6029594.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+})();
+/*]]>*/
+</script>
+
+<script id="parsely-cfg" src="//cdn.parsely.com/keys/press.aboutamazon.com/p.js"></script>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"761e715901","applicationID":"87675502,24276188","transactionName":"ZlVXYRcAW0ZRW0QKX18fdFYRCFpbH3xCFkBQXGlbCgVQaXNXXhdCXlxZUBc9e1pUXWYKVUZzWlsRE1pZXF1CTg5HWVBC","queueTime":0,"applicationTime":469,"atts":"ShJUF18aSEg=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>
