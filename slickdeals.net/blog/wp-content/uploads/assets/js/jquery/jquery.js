@@ -6,13 +6,13 @@ Server: Akamai Resource Optimizer
 X-Akamai-Path-Stats: [1:2727:16273]
 Vary: Accept-Encoding
 Cache-Control: max-age=191699
-Expires: Sun, 18 Oct 2020 14:32:56 GMT
-Date: Fri, 16 Oct 2020 09:17:57 GMT
+Expires: Sun, 18 Oct 2020 17:37:07 GMT
+Date: Fri, 16 Oct 2020 12:22:08 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=71
+Server-Timing: edge; dur=197
 Strict-Transport-Security: max-age=86400
 
 /*! jQuery v1.12.4 | (c) jQuery Foundation | jquery.org/license | WordPress 2019-05-16 */
