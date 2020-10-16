@@ -1,0 +1,1679 @@
+HTTP/1.1 200 OK
+Date: Fri, 16 Oct 2020 09:21:25 GMT
+Content-Type: text/html; charset=ISO-8859-1
+Transfer-Encoding: chunked
+Connection: keep-alive
+Last-Modified: Fri, 09 Oct 2020 15:44:20 GMT
+Vary: Accept-Encoding
+X-Pad: avoid browser bug
+X-Fetched-On: Fri, 16 Oct 2020 09:21:25 GMT
+cache-control: max-age=240
+X-Varnish: 325224540
+Age: 0
+Via: 1.1 varnish (Varnish/5.2)
+Accept-Ranges: bytes
+
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+	<head>
+	<!--
+	  ___                          _  _       _                      _
+	 / __| __ _  _ __   ___  _ _  | \| | ___ | |_ __ __ __ ___  _ _ | |__
+	| (_ |/ _` || '  \ / -_)| '_| | .` |/ -_)|  _|\ V  V // _ \| '_|| / /
+	 \___|\__,_||_|_|_|\___||_|   |_|\_|\___| \__| \_/\_/ \___/|_|  |_\_\
+
+	Copyright 2020. All rights reserved.
+	We're hiring! http://www.gamer-network.net/jobs
+	-->
+
+				<base href="https://www.eurogamer.net/" />
+				<title>Xbox Series X back-compat loading times: SSDs and HDDs compared &bull; Eurogamer.net</title>
+
+					<link rel="canonical" href="https://www.eurogamer.net/articles/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis" />
+		
+		
+		
+						<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+							<meta name="robots" content="max-image-preview:large" />
+							<meta name="twitter:card" content="summary_large_image" />
+							<meta name="twitter:site" content="@eurogamer" />
+							<meta name="twitter:creator" content="@digitalfoundry" />
+							<meta name="twitter:title" content="Xbox Series X back-compat loading times: SSDs and HDDs compared" />
+							<meta name="twitter:url" content="https://www.eurogamer.net/articles/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis" />
+							<meta name="twitter:image:src" content="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-09-15-44/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis-1602254650441.jpg/EG11/resize/1200x-1/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis-1602254650441.jpg" />
+							<meta property="og:site_name" content="Eurogamer.net" />
+							<meta property="fb:app_id" content="156247124404264" />
+							<meta property="fb:pages" content="42657691753" />
+							<meta property="og:title" content="Xbox Series X back-compat loading times: SSDs and HDDs compared" />
+							<meta property="og:url" content="https://www.eurogamer.net/articles/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis" />
+							<meta property="og:type" content="article" />
+							<meta property="article:published_time" content="2020-10-09T15:00:00+01:00" />
+							<meta property="article:modified_time" content="2020-10-09T15:44:20+01:00" />
+							<meta property="og:image" content="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-09-15-44/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis-1602254650441.jpg/EG11/resize/1200x-1/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis-1602254650441.jpg" />
+							<meta property="og:image:width" content="1200" />
+							<meta property="og:image:height" content="676" />
+			<link rel="stylesheet" type="text/css" href="css/pages/article.css?v20201015144635" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/devices/hd.css?v20201015144635" media="screen" />
+<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css?v20201015144635" media="screen" />
+			<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon-152x152.png"/>
+					<link rel="shortcut icon" href="https://www.eurogamer.net/favicon.ico" />
+		
+					<link rel="feed" title="RSS" href="https://www.eurogamer.net/?format=rss"/>
+		
+		<link rel="amphtml" href="https://www.eurogamer.net/amp/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis" />
+<link rel="preconnect" href="https://www.google-analytics.com" />
+<link rel="preload" href="https://securepubads.g.doubleclick.net/tag/js/gpt.js" />
+<link rel="preload" href="https://c.amazon-adsystem.com/aax2/apstag.js" />
+<link rel="preload" href="scripts/prebid4.12.0.js" />
+
+				<script>
+					(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			
+				function gaSetup() {
+					ga('require', 'displayfeatures');
+					ga('require', 'linkid', 'linkid.js');
+			
+					ga('set', 'dimension1', 'article');
+				
+					ga('set', 'dimension2', 'digital_foundry');
+				
+					ga('set', 'dimension4', 'Richard Leadbetter');
+				
+					ga('set', 'dimension5', '0');
+				
+					ga('set', 'dimension7', 'hd');
+				}
+					function gaWrapper() {
+						if (window.gaDone) return;
+						ga('create', {"trackingId":"UA-12091157-1","cookieDomain":".eurogamer.net"});
+						gaSetup();
+						ga('send', 'pageview');
+						window.gaDone = true;
+					}
+			
+				function gaAnonWrapper() {
+					if (window.gaDone) return;
+					ga('create', {"trackingId":"UA-12091157-1","cookieDomain":".eurogamer.net","storage":"none"});
+					gaSetup();
+					ga('set', 'anonymizeIp', true);
+					ga('send', 'pageview');
+					window.gaDone = true;
+				}
+			</script>
+<script src='vendor/jquery/dist/jquery.min.js?v20201015144635'></script>
+<script src='vendor/jquery-jsonp/src/jquery.jsonp.js?v20201015144635'></script>
+<script src='scripts/jquery.viewport.js?v20201015144635'></script>
+<script src='scripts/videoPlayer.js?v20201015144635' defer='defer'></script>
+<script src='scripts/NewsletterSubscriber.js?v20201015144635' defer='defer'></script>
+<script src='scripts/FollowButtons.js?v20201015144635' defer='defer'></script>
+<script src='scripts/gn-ad-script.min.js?v20201015144635'></script>
+<script src='vendor/js-cookie/src/js.cookie.js?v20201015144635' defer='defer'></script>
+<script src='scripts/LanguageBar.js?v20201015144635' defer='defer'></script>
+<script src='scripts/LazyCovers.js?v20201015144635' defer='defer'></script>
+<script src='scripts/SidebarAds.js?v20201015144635' defer='defer'></script>
+<script src='scripts/FacebookLogin.js?v20201015144635' defer='defer'></script>
+<script src='scripts/CommentToolbar.js?v20201015144635' defer='defer'></script>
+<script src='scripts/Comments.js?v20201015144635' defer='defer'></script>
+<script src='https://cdn.gamer-network.net/2020/scripts/edmonds/1.3.3/edmonds.js?v20201015144635' defer='defer'></script>
+<script src='scripts/SocialListener.js?v20201015144635' defer='defer'></script>
+<script src='scripts/LazyImages.js?v20201015144635' defer='defer'></script>
+	</head>
+		<body id="theTop">
+		
+							<div id="fb-root"></div>
+			<script>
+				// For login with Facebook functionality
+				function appendFacebookSDK() {
+					window.fbAsyncInit = function () {
+						FB.init({
+							appId: '156247124404264',
+							version: 'v2.7',
+							channelUrl: '/channel.html',
+							status: true,
+							cookie: true,
+							xfbml: true,
+							oauth: true
+						});
+					};
+
+					// Load the SDK Asynchronously
+					(function (d) {
+						var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+						if (d.getElementById(id)) {
+							return;
+						}
+						js = d.createElement('script');
+						js.id = id;
+						js.async = true;
+						js.onload = function () {
+							if (typeof runFacebookLogin == 'function') {
+								runFacebookLogin();
+							}
+							if (typeof runFacebookRegistrationLogin == 'function') {
+								runFacebookRegistrationLogin();
+							}
+						};
+
+												js.src = "//connect.facebook.net/en_GB/all.js";
+						ref.parentNode.insertBefore(js, ref);
+					}(document));
+				}
+			</script>
+		
+								<header class="desktop-header">
+				<div class="container-1260 with-inside-padding">
+					<a href="/"><img src="https://d2skuhm0vrry40.cloudfront.net/2018/eg12/EG-Logo-net.png/EG11/resize/-1x92/format/png/logo.png?v20201015144635" class="logo" alt="Eurogamer.net"/></a>
+								<div class="account signed-out">
+									<button class="button" data-action="launch-sign-in-overlay">Sign in / Create an account</button>
+							</div>
+						</div>
+
+				<nav>
+					<div class="primary">
+						<div class="container-1260 with-inside-padding">
+															<a href="/pc" >PC</a>
+															<a href="/ps4" >PS4</a>
+															<a href="/ps5" >PS5</a>
+															<a href="/xboxone" >Xbox One</a>
+															<a href="/switch" >Switch</a>
+															<a href="/digitalfoundry" >Digital Foundry</a>
+															<a href="/news" >News</a>
+															<a href="/reviews" >Reviews</a>
+															<a href="/videos" >Videos</a>
+															<a href="/features" >Features</a>
+															<a href="/guides" >Guides</a>
+																					<div class="search">
+					<form action="search.php" method="get">
+													<label for="header-search"><i class="fa fa-search" title="Search"></i></label>
+												<input
+							type="text"
+							name="q"
+							id="header-search"
+							placeholder="Search"
+						/>
+					</form>
+				</div>
+											</div>
+					</div>
+
+					<div class="secondary">
+						<div class="container-1260 with-inside-padding">
+															<span>Highlights</span>
+																	<a href="/deals">Deals</a>
+																	<a href="/forum">Forum</a>
+																	<a href="/release-dates">Release dates</a>
+															
+															<a href="https://www.eurogamer.net/articles/xbox-series-x-games-confirmed-exclusives-6400">Xbox Series games list</a>
+															<a href="https://www.eurogamer.net/articles/destiny-2-ps5-xbox-series-upgrade-4k-load-times-fov-7004">Destiny 2 PS5, Xbox Series details</a>
+															<a href="https://www.eurogamer.net/articles/full-fibre-broadband-deals">The best full fibre broadband deals</a>
+													</div>
+					</div>
+				</nav>
+			</header>
+				
+		<div id="browserMaster" class="hd">
+
+			<div id="page-wrapper">
+
+				
+																																					<div id="leaderboard" class="advert leaderboard">
+											<div class="collapsible advertContainer" data-dfp-id='EGNET_LB_1' data-dfp-sizes='728x90, 960x160, 960x250, 970x250, 1260x110, 1260x160, 1260x200, 1260x250' data-dfp-targeting='site=eurogamer.net,position=atf' id='div-ga-EGNET_LB_1' ></div>										</div>
+									
+									
+																	
+							
+				<main class="document-wrapper">
+
+					<div class="document">
+						<div class="main ">
+							
+			
+			<article class="article">
+
+				
+		    
+			<header class="article-header ">
+
+				
+				
+				
+				<h1 class="title">Xbox Series X back-compat loading times: SSDs and HDDs&nbsp;compared	</h1>
+
+									<p class="strapline">
+												It turns out that off-the-shelf solid state storage works&nbsp;great.					</p>
+				
+				<div class="metadata">
+					<div class="author-name">
+												<strong class="feature-type">Article</strong>
+																			by																							Richard Leadbetter, Technology Editor, Digital Foundry																		</div>
+
+											<div class="social">
+														<a href="//www.facebook.com/sharer.php?u=https://www.eurogamer.net/articles/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis" data-type="facebook" class="button circle colour-facebook" rel="nofollow"><i class="fa fa-facebook"></i></a>
+							<a href="//twitter.com/intent/tweet?text=Xbox+Series+X+back-compat+loading+times%3A+SSDs+and+HDDs+compared+https://www.eurogamer.net/articles/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis" data-type="twitter" class="button circle colour-twitter" rel="nofollow"><i class="fa fa-twitter"></i></a>
+							<a href="//www.reddit.com/submit?url=https://www.eurogamer.net/articles/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis&title=Xbox+Series+X+back-compat+loading+times%3A+SSDs+and+HDDs+compared" data-type="reddit" class="button circle colour-reddit" rel="nofollow"><i class="fa fa-reddit-alien"></i></a>
+						</div>
+					
+					<div class="date">
+													Updated on 							<span itemProp="dateModified" content="2020-10-09T15:44:20+01:00">9 October 2020</span>
+											</div>
+
+				</div>
+
+
+							</header>
+
+		
+				<div class="body">
+
+					
+					
+											<div class="desktop-mpu">
+							<div class="collapsible advertContainer" data-dfp-id='EGNET_MPU_1' data-dfp-sizes='300x250' data-dfp-targeting='site=eurogamer.net,position=atf' id='div-ga-EGNET_MPU_1'  data-dfp-collapse="true" ></div>						</div>
+					
+					
+					<section class=""><p>Xbox Series X backwards compatibility is shaping up to be an absolute home run based on our testing so far - yes, every title we've looked at so far seems to hit their performance target when 30fps or 60fps caps are in place, games using dynamic resolution scaling can show clear improvements, while we're looking at anything up to a 2x multiplier in GPU performance in games with unlocked frame-rates. On top of that, there's an image quality bonus too: texture filtering is improved via enforced 16x anisotropic filtering. Loading time improvements are also significantly improved - and that's the focus for this follow-up coverage.</p><p>You see, there's one disadvantage to the next-gen dream. Storage space on the internal solid state drive is at a premium - Xbox Series X ships with 802 useable gigs on the 1TB drive. On the one hand, that's actually an improvement over the 781GB of Xbox One X's 1TB HDD (my theory: Microsoft uses its hardware decompression engines to reduce the OS footprint, the console decompressing system files on demand). On the other, with the 1TB plug-in expansion drive priced at &pound;220/$220, fast storage for next-gen titles comes at a price premium. </p><p>But maybe there is a better place for your library of OG, Xbox 360 and Xbox One titles. Xbox Series X still allows for standard USB drives to be connected to the console, and there's no reason why you can't buy an off-the-shelf SATA SSD or even a faster NVMe equivalent and copy your back-compat library there. And in theory, there may not be too much of a performance penalty for doing so: older Xbox titles cannot access the low level SSD APIs that truly revolutionise storage performance, so it may well be the case that keeping old games on the new drive is actually a sub-optimal use of the space anyway. </p><p>With all of this in mind, I set out on a mission to test the most common storage alternatives. I used an off-the-shelf 5TB Seagate Passport drive to tick off the mechanical HDD option, then paired a Samsung 870 QVO SATA SSD with a Sabrent USB to SATA adapter in order to tick off what I suspected would be the option with the best balance of price vs performance. Rounding off the pack, I took a Samsung PM961 NVMe drive out of storage and brought that into play, connecting it to the Series X via the rather splendid Asus ROG Strix Arion - a USB to NVMe adapter that supports both standard type-A and type-C USB. While the PM961 isn't the fastest drive on the market, it should still saturate the Series X's USB interface.</p>				<figure class="video"><div><div class="video-container">
+						<iframe width="1280" height="720" frameborder="0" allowfullscreen data-youtube="true" data-src="https://www.youtube.com/embed/7y-Fy1Q2O2k?enablejsapi=1"></iframe><div class="onetrust-placeholder" data-type="targeting" style="display: none;">
+  <span class="message">This content is hosted on an external platform, which will only display it if you accept targeting cookies. Please enable cookies to view.</span>
+  <button id="ot-sdk-btn" class="ot-sdk-show-settings">Manage cookie settings</button>
+</div>
+					</div></div>
+					<figcaption><p>A video breakdown of our loading time tests and conclusions</p>					<div class="like-and-subscribe">
+						<a href="https://www.youtube.com/user/DigitalFoundry?sub_confirmation=1" class="button wide" target="_blank">Subscribe to our YouTube channel</a>
+					</div></figcaption></figure><p>The first order of business in establishing a pecking order in performance terms was to run each drive through some standard read/write tests and here, there can only be one measure: my install of Call of Duty Modern Warfare 2019 currently sits at a remarkable 172.2GB of space and it is surely the hottest candidate generally for migrating away from internal storage. During the transfer process, I noticed that was no uniform read or write rate, but as you can see from the table below, the results are intriguing.</p><p>As you might expect, the mechanical hard drive does not fair that well at all, but the difference between the SATA and NVMe units is interesting. In terms of raw write speeds, the NVMe drive is predictably quicker, but more curious is the fact that when it comes to read speeds (where we copied Modern Warfare 2019 back from the external storage to the internal drive), the gap closes significantly.</p><p>The NVMe drive is still faster, but not necessarily <em>that</em> much faster bearing in mind that we're transferring across 172.2GB of data, where in context, the difference is vanishingly small. In-game performance will be much more reliant on read speeds, suggesting that excellent loading times may well be within grasp for SATA drives, without the need to spend much more on an NVMe alternative.</p><div class="table-wrapper"><table class=" "><thead><th>Raw Copy Speeds</th>
+<th>Samsung 870 QVO SATA</th>
+<th>Samsung PM961 NVMe</th>
+<th>Seagate 5TB Passport HDD</th>
+
+</thead><tbody><tr class="row1 "><th>Copy To Storage</th>
+<td>17mins 33secs</td>
+<td>11mins 6secs</td>
+<td>34mins 31secs</td>
+</tr><tr class="row0 "><th>Copy Back From Storage</th>
+<td>8mins 37secs</td>
+<td>8mins 26secs</td>
+<td>21mins 24secs</td>
+</tr></tbody></table></div><p>I kicked off the game tests by revisiting Final Fantasy 15 - the game that saw Series X  absolutely trounce Xbox One X in <a href="https://www.eurogamer.net/articles/digitalfoundry-2020-xbox-series-x-back-compat-is-transformative" target="_blank">our first back-compat feature</a>. In terms of setting the stage, these initial results are extraordinary. First of all, I found that loading times could vary a touch from run to run, even on the same drive, but the end result sees that while the internal drive on Xbox Series X is almost always the fastest solid state option, the actual load time advantage up against other SSD solutions is barely noticeable. My results varied from <em>no difference whatsoever</em> to just over two seconds.</p><p>However, what's equally clear is that in all cases, using a solid state storage device of any flavour delivers a big, big advantage over sticking to a mechanical hard drive like the 5TB Seagate Passport drive I used for my testing. The difference between SSD and HDD can vary quite dramatically based on content, but suffice to say that I know where I'd rather be playing my back-compat titles.</p><p>There is an additional game-changer to factor in, however, for owners of current generation Xbox consoles. It turns out that storage speed is only one part of the speed boost you get to loading times via backwards compatibility - the CPU plays just as big role. To put it into perspective, consider the Hexatheon's Blessings save below. I took the same NVMe drive over to Xbox One X and loaded the same data. What took the Series X console 17.3 seconds to complete balloons to a massive one minute, 12.8 seconds on the older console. Yes, on this game at least, loading on a mechanical drive on Series X is a faster enterprise than using an SSD on Xbox One X but the ideal solution is to leverage both storage and CPU advantages. In <a href="https://www.eurogamer.net/articles/digitalfoundry-2020-xbox-series-x-back-compat-is-transformative" target="_blank">my first back-compat report</a>, the CPU boost offered by the new hardware was so vast, it couldn't be quantified in terms of game frame-rates in CPU-bound scenarios. Short of some kind of major disparity in USB throughput, the evidence here suggests that the new console can indeed deliver a 4x improvement to CPU performance - but it takes raw decompression tests to find the extent of the improvement.</p><div class="table-wrapper"><table class=" "><thead><th>Final Fantasy 15 Load Game</th>
+<th>Series X Internal SSD</th>
+<th>Samsung 870 QVO SATA</th>
+<th>Samsung PM961 NVMe</th>
+<th>Seagate 5TB Passport HDD</th>
+
+</thead><tbody><tr class="row1 "><th>The Hexatheon's Blessings</th>
+<td>15.7secs</td>
+<td>16.9secs</td>
+<td>17.3secs</td>
+<td>52.5secs</td>
+</tr><tr class="row0 "><th>Onward to the Disc</th>
+<td>17.6secs</td>
+<td>19.8secs</td>
+<td>18.8secs</td>
+<td>24.2secs</td>
+</tr><tr class="row1 "><th>A Gentlemen's Agreement</th>
+<td>14.4secs</td>
+<td>14.4secs</td>
+<td>14.8secs</td>
+<td>21.3secs</td>
+</tr></tbody></table></div><p>Rise of the Tomb Raider is our next port of call and our first test concerns loading up the game from scratch - a test that may have less relevance in the next-gen era. The first time I did so on Xbox Series X, Quick Resume kicked in, taking me back to exactly where I was previously. This is great for gamers, but not so good for loading time analysis and you can purge the Quick Resume state from storage by exiting the application from the console front-end. The end result shows the game booting in nigh-on identical times from any of our storage solutions. There's literally no need to use precious internal SSD space for this one.</p><p>What's interesting here is that loading times are fairly decent across the board, and even the mechanical drive fares fairly well - and what I also found fascinating was that taking the Samsung PM961 drive in the Asus enclosure over to Xbox One X saw some fairly close comparisons when it came to level loading. For example, the Lost Expedition level load only took Xbox One X just under three seconds longer to load. It looks like the CPU is more involved on the initial load, however. The 10.6 second result on Series X balloons to 17.5 seconds on One X.</p><div class="table-wrapper"><table class=" "><thead><th>Rise of the Tomb Raider</th>
+<th>Series X Internal SSD</th>
+<th>Samsung 870 QVO SATA</th>
+<th>Samsung PM961 NVMe</th>
+<th>Seagate 5TB Passport HDD</th>
+
+</thead><tbody><tr class="row1 "><th>Initial Load</th>
+<td>10.5secs</td>
+<td>10.5secs</td>
+<td>10.6secs</td>
+<td>22.6secs</td>
+</tr><tr class="row0 "><th>Lost Expedition</th>
+<td>24.2secs</td>
+<td>24.7secs</td>
+<td>24.7secs</td>
+<td>39.5secs</td>
+</tr><tr class="row1 "><th>Geothermal Valley</th>
+<td>39.1secs</td>
+<td>39.4secs</td>
+<td>40.7secs</td>
+<td>1min 2.5secs</td>
+</tr></tbody></table></div><p>Borderlands 3 next, but there's not much in the way of additional information to impart - once again the solid state storage drives deliver nigh-on identical results whether we're looking at initial loads or indeed level loads. I did test further titles such as Fallout 4 and Just Cause 3, but the story is always the same. It looks to me like storing backwards compatible titles on the internal drive offers minimal advantages, and sometimes no real boost at all. The NVMe drive via USB seems to have a write speed advantage, but this only manifests to any meaningful extent when copying bulk data away from the internal SSD, otherwise you're good to go with SATA.</p><p>Once a level loads in Borderlands 3, there is a noticeable degree of texture streaming, where higher quality assets pop into view. Different textures resolve fully at different times. There didn't seem to be any discernible pecking order here between our various solid state storage units, but all of them noticeably outperformed the mechanical hard drive.</p><p>One final note: you may have observed that even though we are booting from the SSD, there's still a relatively long period of time to wait from boot to being able to make a selection on the option screen - which further endorses the convenience of Quick Resume. But if 55 seconds sounds like a long time to wait, it's still a night and day improvement over Xbox One X running from the same NVMe drive, where the same process completed in an astonishing two minutes and 21 seconds - enough time to make a sandwich or enjoy a toilet break.</p><div class="table-wrapper"><table class=" "><thead><th>Borderlands 3</th>
+<th>Series X Internal SSD</th>
+<th>Samsung 870 QVO SATA</th>
+<th>Samsung PM961 NVMe</th>
+<th>Seagate 5TB Passport HDD</th>
+
+</thead><tbody><tr class="row1 "><th>Initial Load</th>
+<td>54.4secs</td>
+<td>54.5secs</td>
+<td>55.3secs</td>
+<td>1min 14.8secs</td>
+</tr><tr class="row0 "><th>Level Load</th>
+<td>16.4secs</td>
+<td>16.4secs</td>
+<td>16.5secs</td>
+<td>19.5secs</td>
+</tr></tbody></table></div><p>Before reaching a final conclusion, I wanted to share an additional piece of data. To begin with, I benchmarked the Samsung 870 QVO SATA drive using a no-name USB 3.0 to SATA adapter I bought from Amazon. I wasn't entirely sure of the results, so I tested all of the adapters I have in my collection and found that a <a href="https://geni.us/DvqBHv" target="_blank">USB 3.1 bridge cable from Sabrent was the fastest</a>, the extent of its speed boost varying from title to title. As you can see below, just the choice of adapter can have a fairly big impact on loading times, so I'd suggest factoring that into the equation if you're looking to use a loose 2.5-inch SATA drive as the best price vs performance home for your back-compat titles.</p><p>Of course, you may be tempted to go for a more robust off-the-shelf solution that integrates both SATA drive and USB adapter into an all-in-one product. This is a great idea, but I would read reviews for the products in question and ensure that you're getting a full USB 3.1/3.2 bandwidth connection between the drive and the source. PC benchmarks from review should do the job just fine here in ascertaining just how much bandwidth you're getting.</p><div class="table-wrapper"><table class=" "><thead><th>USB Adapter Face-Off</th>
+<th>Sabrent Adapter</th>
+<th>Amazon No Name Adapter</th>
+
+</thead><tbody><tr class="row1 "><th>ROTTR Initial Load</th>
+<td>10.5secs</td>
+<td>12.9secs</td>
+</tr><tr class="row0 "><th>Borderlands 3 Initial Load</th>
+<td>55.7secs</td>
+<td>1min 12,7secs</td>
+</tr></tbody></table></div><p>Ultimately, I came away pleasantly surprised by the results. The hype surrounding next generation solid state drives has reached a fever pitch, but the bottom line is that it's going to be low level access via the Xbox Velocity Architecture that really sees the SSD reaching its full potential. With the existing library of Xbox games, we're looking at results similar to what we see on PC - an accelerant, and a wonderful one when paired with the huge leap in CPU decompression performance, but what we're seeing here really does suggest that the internal drive or indeed the bespoke &pound;220/$220 external SSD is not really a must for your current library of Xbox games - you'll do just fine with a USB alternative, be it SATA or USB-based in nature.</p><p>All of which makes me wonder just how more performance there is to extract from the internal unit via the Xbox Velocity Architecture - and that's something we hope to be able to show you soon as the focus on backwards compatibility with Xbox Series X shifts to titles actually designed with the new console in mind.</p></section>
+
+										
+				</div>
+
+							</article>
+
+			<div class="container-690">
+				
+									<p class="affiliate_disclaimer"><em>Sometimes we include links to online retail stores. If you click on one and make a purchase we may receive a small commission. For more information, go <a href="/policies.php?view=how-we-work#advertisingpolicy">here</a>.</em></p>
+				
+				
+				<p class="comment-cta">
+											<a href="/articles/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis#comments" class="button">Jump to comments (130)</a>
+									</p>
+				
+										<p class="section-title">About the author</p>
+			
+			<div class="author-bio">
+				
+				<img src="https://d2skuhm0vrry40.cloudfront.net/2018/eurogamer/illustrations/richard-leadbetter.jpg/EG11/thumbnail/192x192/quality/75/format/jpg" alt="Richard Leadbetter" />
+
+				<div class="details">
+					<p class="name"><a href="/authors/175">Richard Leadbetter</a></p>
+					<p class="job-title">Technology Editor, Digital Foundry</p>
+					<p class="bio">Rich has been a games journalist since the days of 16-bit and specialises in technical analysis. He's commonly known around Eurogamer as the Blacksmith of the Future.</p>
+
+									</div>
+			</div>
+
+							</div>
+
+			
+			
+						<script>
+				$(document).ready(function() {
+					
+					new LazyImages();
+
+											new SocialListener({
+							target: $(".social a")
+						});
+					
+					
+					
+									});
+			</script>
+
+									</div>
+
+													<div class="sidebar">
+								
+																	<div id="skyscraper" class="advert"><div class="collapsible advertContainer" data-dfp-id='EGNET_HP' data-dfp-sizes='300x250,160x600,300x600,300x1050' data-dfp-targeting='site=eurogamer.net,position=atf' id='div-ga-EGNET_HP' ></div></div>
+																						<div class="ads-rail upper"></div>
+												</div>
+											</div>
+
+					
+			
+			<div class="below hd">
+
+				
+												<div class="homepage-billboard-container collapsible">
+													<div class="collapsible advertContainer" data-dfp-id='EGNET_LB_2' data-dfp-sizes='728x90,970x250,1200x500' data-dfp-targeting='site=eurogamer.net,position=btf,lazyload=true,sticky=false,position=eurogamer.net-2' id='div-ga-EGNET_LB_2'  data-dfp-collapse="true" ></div>																	</div>
+							
+					
+							<p class="section-title">Related</p>
+			
+							<div class="stack">
+					<div class="grid">
+																				<div class="grid-4">
+								
+			
+			<div class="list-item large">
+								<div class="cover-wrapper">
+					<a href="/articles/digitalfoundry-2020-a-first-look-at-the-ps5-user-interface" class="cover" data-cover="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-15-13-00/digitalfoundry-2020-a-first-look-at-the-ps5-user-interface-1602763242349.jpg/EG11/thumbnail/796x448/format/jpg/quality/75/cover.jpg"></a>
+				</div>
+								<div class="details">
+					<p class="title">
+						<a href="/articles/digitalfoundry-2020-a-first-look-at-the-ps5-user-interface">
+							<span class="prefix">Digital Foundry</span>Our first look at the PlayStation 5 user interface - and it could be a game-changer						</a>
+					</p>
+											<p class="subtitle">Cards, Activities and the Control Centre have the potential to change the way we play.</p>
+										<div class="metadata">
+													<a href="/articles/digitalfoundry-2020-a-first-look-at-the-ps5-user-interface#comments" class="comment-count" >269</a>
+										</div>
+				</div>
+			</div>
+									</div>
+																				<div class="grid-2">
+								
+			
+			<div class="list-item default">
+								<div class="cover-wrapper">
+					<a href="/articles/2020-10-15-living-with-the-xbox-series-x" class="cover" data-cover="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-15-14-04/living-with-the-xbox-series-x-1602766986823.jpg/EG11/thumbnail/388x218/format/jpg/quality/60/cover.jpg"></a>
+				</div>
+								<div class="details">
+					<p class="title">
+						<a href="/articles/2020-10-15-living-with-the-xbox-series-x">
+							<span class="prefix">Feature</span>The Xbox Series X is the least console-feeling console I've had						</a>
+					</p>
+											<p class="subtitle">What Microsoft's new machine is like to live with.</p>
+										<div class="metadata">
+													<a href="/articles/2020-10-15-living-with-the-xbox-series-x#comments" class="comment-count" >176</a>
+										</div>
+				</div>
+			</div>
+									</div>
+																				<div class="grid-2">
+								
+			
+			<div class="list-item default">
+								<div class="cover-wrapper">
+					<a href="/articles/2020-10-15-cyberpunk-2077-shows-off-its-fast-cars-and-fancy-clothes-in-latest-livestream" class="cover" data-cover="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-15-19-04/cyberpunk-2077-shows-off-its-cars-and-clothes-1602785073748.jpg/EG11/thumbnail/388x218/format/jpg/quality/60/cover.jpg"></a>
+				</div>
+								<div class="details">
+					<p class="title">
+						<a href="/articles/2020-10-15-cyberpunk-2077-shows-off-its-fast-cars-and-fancy-clothes-in-latest-livestream">
+							<span class="prefix"></span>Cyberpunk 2077 shows off its fast cars and fancy clothes in latest livestream						</a>
+					</p>
+											<p class="subtitle">Oh, and a little bit about bikes.</p>
+										<div class="metadata">
+													<a href="/articles/2020-10-15-cyberpunk-2077-shows-off-its-fast-cars-and-fancy-clothes-in-latest-livestream#comments" class="comment-count" >44</a>
+										</div>
+				</div>
+			</div>
+									</div>
+																				<div class="grid-2">
+								
+			
+			<div class="list-item default">
+								<div class="cover-wrapper">
+					<a href="/articles/2020-10-14-seven-hours-with-assassins-creed-valhalla" class="cover" data-cover="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-14-17-35/seven-hours-with-assassins-creed-valhalla-1602693312223.jpg/EG11/thumbnail/388x218/format/jpg/quality/60/cover.jpg"></a>
+				</div>
+								<div class="details">
+					<p class="title">
+						<a href="/articles/2020-10-14-seven-hours-with-assassins-creed-valhalla">
+							<span class="prefix">Feature</span>Seven hours with Assassin's Creed Valhalla						</a>
+					</p>
+											<p class="subtitle">Viking direct.</p>
+										<div class="metadata">
+													<a href="/articles/2020-10-14-seven-hours-with-assassins-creed-valhalla#comments" class="comment-count" >107</a>
+										</div>
+				</div>
+			</div>
+									</div>
+																				<div class="grid-2">
+								
+			
+			<div class="list-item default">
+								<div class="cover-wrapper">
+					<a href="/articles/2020-10-15-sega-sorry-for-dredging-up-painful-memories-after-releasing-golden-axed-game-made-during-crunch" class="cover" data-cover="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-15-14-39/sega-sorry-for-dredging-up-painful-memories-after-releasing-golden-axed-game-made-during-crunch-1602769176055.jpg/EG11/thumbnail/388x218/format/jpg/quality/60/cover.jpg"></a>
+				</div>
+								<div class="details">
+					<p class="title">
+						<a href="/articles/2020-10-15-sega-sorry-for-dredging-up-painful-memories-after-releasing-golden-axed-game-made-during-crunch">
+							<span class="prefix"></span>Sega "didn't mean to dredge up painful memories" by releasing Golden Axed game made during crunch						</a>
+					</p>
+											<p class="subtitle">Steam listing edited to remove &quot;slur&quot;.</p>
+										<div class="metadata">
+													<a href="/articles/2020-10-15-sega-sorry-for-dredging-up-painful-memories-after-releasing-golden-axed-game-made-during-crunch#comments" class="comment-count" >32</a>
+										</div>
+				</div>
+			</div>
+									</div>
+											</div>
+
+									</div>
+					
+				
+							
+						<p class="section-title">You may also enjoy...</p>
+										<div class="stack small">
+					<div class="grid">
+																			<div class="grid-fifth">
+								
+			
+			<div class="list-item ">
+								<div class="cover-wrapper">
+					<a href="/articles/2020-10-16-will-the-elder-scrolls-6-launch-on-ps5-welcome-to-the-eurogamer-next-gen-news-cast" class="cover" data-cover="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-16-09-40/will-the-elder-scrolls-6-launch-on-ps5-welcome-to-the-eurogamer-next-gen-news-cast-1602837605093.jpg/EG11/thumbnail/388x218/format/jpg/quality/60/cover.jpg"></a>
+				</div>
+								<div class="details">
+					<p class="title">
+						<a href="/articles/2020-10-16-will-the-elder-scrolls-6-launch-on-ps5-welcome-to-the-eurogamer-next-gen-news-cast">
+							<span class="prefix"></span>Will The Elder Scrolls 6 launch on PS5? Welcome to the Eurogamer next-gen news cast!						</a>
+					</p>
+											<p class="subtitle">Quick maths.</p>
+										<div class="metadata">
+													<a href="/articles/2020-10-16-will-the-elder-scrolls-6-launch-on-ps5-welcome-to-the-eurogamer-next-gen-news-cast#comments" class="comment-count" >7</a>
+										</div>
+				</div>
+			</div>
+									</div>
+													<div class="grid-fifth">
+								
+			
+			<div class="list-item ">
+								<div class="cover-wrapper">
+					<a href="/articles/2020-10-15-two-point-hospital-gets-some-movie-magic-in-this-months-culture-shock-expansion" class="cover" data-cover="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-15-23-45/-1602801931506.jpg/EG11/thumbnail/388x218/format/jpg/quality/60/cover.jpg"></a>
+				</div>
+								<div class="details">
+					<p class="title">
+						<a href="/articles/2020-10-15-two-point-hospital-gets-some-movie-magic-in-this-months-culture-shock-expansion">
+							<span class="prefix"></span>Two Point Hospital gets some movie magic in this month's Culture Shock expansion						</a>
+					</p>
+											<p class="subtitle">Plus free new items for Sega's 60th birthday.</p>
+										<div class="metadata">
+													<a href="/articles/2020-10-15-two-point-hospital-gets-some-movie-magic-in-this-months-culture-shock-expansion#comments" class="comment-count" >2</a>
+										</div>
+				</div>
+			</div>
+									</div>
+													<div class="grid-fifth">
+								
+			
+			<div class="list-item ">
+								<div class="cover-wrapper">
+					<a href="/articles/2020-10-15-xcom-2-collection-making-its-way-to-ios-next-month" class="cover" data-cover="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-15-22-39/xcom-2-collection-making-its-way-to-ios-next-month-1602797973743.jpg/EG11/thumbnail/388x218/format/jpg/quality/60/cover.jpg"></a>
+				</div>
+								<div class="details">
+					<p class="title">
+						<a href="/articles/2020-10-15-xcom-2-collection-making-its-way-to-ios-next-month">
+							<span class="prefix"></span>XCOM 2 Collection making its way to iOS next month						</a>
+					</p>
+											<p class="subtitle">Includes War of the Chosen expansion and more.</p>
+										<div class="metadata">
+													<a href="/articles/2020-10-15-xcom-2-collection-making-its-way-to-ios-next-month#comments" class="comment-count" >11</a>
+										</div>
+				</div>
+			</div>
+									</div>
+													<div class="grid-fifth">
+								
+			
+			<div class="list-item ">
+								<div class="cover-wrapper">
+					<a href="/articles/2020-10-15-borderlands-3-getting-second-season-pass-adding-designers-cut-and-directors-cut" class="cover" data-cover="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-15-20-25/borderlands-3-is-getting-another-season-pass-featuring-designers-cut-and-directors-cut-1602789942279.jpg/EG11/thumbnail/388x218/format/jpg/quality/60/cover.jpg"></a>
+				</div>
+								<div class="details">
+					<p class="title">
+						<a href="/articles/2020-10-15-borderlands-3-getting-second-season-pass-adding-designers-cut-and-directors-cut">
+							<span class="prefix"></span>Borderlands 3 getting second season pass adding Designer's Cut and Director's Cut						</a>
+					</p>
+											<p class="subtitle">First half due on all platforms in November.</p>
+										<div class="metadata">
+													<a href="/articles/2020-10-15-borderlands-3-getting-second-season-pass-adding-designers-cut-and-directors-cut#comments" class="comment-count" >17</a>
+										</div>
+				</div>
+			</div>
+									</div>
+													<div class="grid-fifth">
+								
+			
+			<div class="list-item ">
+								<div class="cover-wrapper">
+					<a href="/articles/2020-10-15-cyberpunk-2077-shows-off-its-fast-cars-and-fancy-clothes-in-latest-livestream" class="cover" data-cover="https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-15-19-04/cyberpunk-2077-shows-off-its-cars-and-clothes-1602785073748.jpg/EG11/thumbnail/388x218/format/jpg/quality/60/cover.jpg"></a>
+				</div>
+								<div class="details">
+					<p class="title">
+						<a href="/articles/2020-10-15-cyberpunk-2077-shows-off-its-fast-cars-and-fancy-clothes-in-latest-livestream">
+							<span class="prefix"></span>Cyberpunk 2077 shows off its fast cars and fancy clothes in latest livestream						</a>
+					</p>
+											<p class="subtitle">Oh, and a little bit about bikes.</p>
+										<div class="metadata">
+													<a href="/articles/2020-10-15-cyberpunk-2077-shows-off-its-fast-cars-and-fancy-clothes-in-latest-livestream#comments" class="comment-count" >44</a>
+										</div>
+				</div>
+			</div>
+									</div>
+											</div>
+
+									</div>
+
+					
+									<div id="comments" class="hd">
+						<p class="section-title">Comments (130)</p>
+						
+			
+						
+			
+				
+					<div class="main-login-prompt">
+						<button class="button" data-action="launch-sign-in-overlay">Sign in / Create an account</button>
+					</div>
+				
+					
+			<div class="threaded-comments hd">
+
+				<div class="filters">
+					<div class="button-group threshold">
+						<span>Hide low-scoring comments</span>
+						<button data-action="threshold" data-value="true" class="button outline on">Yes</button>
+						<button data-action="threshold" data-value="false" class="button outline">No</button>
+					</div>
+
+					<div class="button-group order">
+						<span>Order</span>
+						<button data-action="order" data-value="newest" class="button outline ">Newest</button>
+						<button data-action="order" data-value="oldest" class="button outline ">Oldest</button>
+						<button data-action="order" data-value="best" class="button outline on">Best</button>
+						<button data-action="order" data-value="worst" class="button outline ">Worst</button>
+					</div>
+
+					<div class="button-group threading">
+						<span>Threading</span>
+						<button data-action="expand" class="button outline">Expand all</button>
+						<button data-action="collapse" class="button outline">Collapse all</button>
+					</div>
+				</div>
+
+				<div class="comments-list"></div>
+			</div>
+
+			<script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+			<script>
+				// Global for use in Google Universal Event tracking
+				var article = {
+					"slug": "digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis",
+					"type": "article",
+											"topics": "digital_foundry",
+															"author": "Richard Leadbetter"
+				};
+
+				$(document).ready( function() {
+					var toolbar = new CommentToolbar({
+						toolbar: $("#main-toolbar"),
+						textarea: $("#comment-textarea"),
+						lang: {
+							loading: "Loading... hold tight!",
+						},
+					});
+					var c = new Comments({
+						toolbar: toolbar,
+						id: 2118792,
+						uid: 0,
+						lang: {
+							loading: "Loading... hold tight!",
+							post: "Post a comment",
+							updating: "Updating...",
+							error: "Sorry, but an error occurred. Please try again.",
+							newAccountLinks: "Sorry, new accounts can't post links! Please remove the link and try posting again."
+						},
+						device: "hd",
+						orderBy: "best"
+					});
+				});
+			</script>
+							</div>
+											<div id="comments-rail" class="right-rail right-sidebar">
+							<div class="mpu collapsible" style="display:none;">
+								<p class="section-title">Advertisement</p>
+								<div class="lazyload" data-dfp-id="EGNET_Lazy_Load_HP_MPU" data-dfp-sizes="300x250" data-dfp-collapse="true" data-dfp-targeting="site=eurogamer.net,position=eurogamer.net-comments-1,lazyload=true,sticky=false" id="div-ga-ARTICLE_MPU_COMMENTS"></div>
+							</div>
+						</div>
+									
+															<div class="homepage-billboard-container collapsible">
+							<div class="collapsible advertContainer" data-dfp-id='EGNET_LEADERBOARD_LAST' data-dfp-sizes='728x90, 970x250' data-dfp-targeting='site=eurogamer.net' id='div-ga-EGNET_LEADERBOARD_LAST'  data-dfp-collapse="true" ></div>						</div>
+												</div>
+		
+					<div class="end">
+						
+			
+				
+									<div class="newsletter-promo hd" id="newsletter-promo">
+						<div class="grid">
+							<div class="grid-6">
+								<p class="section-title">Subscribe to The Eurogamer.net Daily</p>
+								<p class="description">
+									The 10 most popular stories of the day, delivered at 5pm UK time. Never miss a thing.								</p>
+							</div>
+							<div class="grid-6">
+								<form>
+																		<input type="hidden" name="action" value="subscribe"/>
+									<input type="hidden" name="newsletter" value="net-daily"/>
+									<input type="email" name="email" value="" placeholder="Email address" required="required"/>
+									<button class="button">Subscribe</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<script>
+						$(document).ready(function() {
+							new NewsletterSubscriber({
+								target: $("#newsletter-promo"),
+								lang: {
+									subscribe: "Subscribe",
+									success: "You're subscribed to this newsletter. Nice one!",
+									error: "Sorry, but an error occurred. Please try again."
+								}
+							});
+						});
+					</script>
+														</div>
+				</main>
+			</div>
+
+
+			
+			<footer class="footer hd">
+				<div class="container-1260 with-inside-padding">
+					<div class="about">
+						<a href="/"><img src="https://d2skuhm0vrry40.cloudfront.net/2018/eg12/EG-LogoReversed-net.png/EG11/resize/-1x36/format/png/logo.png?v20201015144635" alt="Eurogamer.net"/></a>
+
+						<p>Bad puns and video games since 1999.</p>
+						<p>This site &copy; 2020 Gamer Network Limited. All Rights Reserved. No part of this site or its content may be reproduced without the permission of the copyright holder.</p>
+
+						<div class="switcher">
+							<form method="post" action="/articles/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis">
+																<label class="section-title">Site version</label>
+								<div class="button-group">
+									<button type="submit" name="version" value="mobile" class="button outline ">Mobile</button>
+									<button type="submit" name="version" value="portable" class="button outline ">Portable</button>
+									<button type="submit" name="version" value="hd" class="button outline on">Desktop</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<nav>
+						<div class="explore">
+							<p class="section-title">Explore</p>
+							<ul>
+																	<li>
+										<a href="/pc">PC</a>
+									</li>
+																	<li>
+										<a href="/ps4">PS4</a>
+									</li>
+																	<li>
+										<a href="/ps5">PS5</a>
+									</li>
+																	<li>
+										<a href="/xboxone">Xbox One</a>
+									</li>
+																	<li>
+										<a href="/switch">Switch</a>
+									</li>
+																	<li>
+										<a href="/digitalfoundry">Digital Foundry</a>
+									</li>
+																	<li>
+										<a href="/news">News</a>
+									</li>
+																	<li>
+										<a href="/reviews">Reviews</a>
+									</li>
+																	<li>
+										<a href="/videos">Videos</a>
+									</li>
+																	<li>
+										<a href="/features">Features</a>
+									</li>
+																	<li>
+										<a href="/guides">Guides</a>
+									</li>
+																<li><a href="/authors">Authors</a></li>
+								<li><a href="/games?letter=a">GameDB</a></li>
+							</ul>
+						</div>
+
+						<div class="helpful-links">
+							<p class="section-title">Helpful links</p>
+							<ul>
+																	<li><a href="articles/the-eurogamer-staff" rel="nofollow">Staff</a></li>
+								
+								<li><a href="contact" rel="nofollow">Contact us</a></li>
+								<li><a href="https://www.gamer-network.net" target="_blank">Corporate site</a>
+
+											<li><a href="policies">Policy centre</a></li>
+		
+																	<li><a href="//www.twitter.com/eurogamer" rel="nofollow" target="_blank">Twitter</a></li>
+								
+																	<li><a href="https://www.facebook.com/Eurogamer" rel="nofollow" target="_blank">Facebook</a></li>
+								
+								<li><a href="/rss" rel="nofollow">RSS</a></li>
+
+								<li><a class="optanon-show-settings">Cookie Settings</a></li>
+
+								<li><a href="https://privacy.reedexpo.com/en-gb.html" target="_blank" rel="nofollow">Privacy Policy</a></li>
+								<li><a href="https://privacy.reedexpo.com/en-gb/cookie-policy.html" target="_blank" rel="nofollow">Cookie Policy</a></li>
+
+																	<li><a href="https://privacy.reedexpo.com/en-us/ccpa.html" target="_blank" rel="nofollow">California Privacy Notice</a></li>
+															</ul>
+						</div>
+
+													<div class="network">
+								<p class="section-title">Across Europe</p>
+								<ul>
+									<li><a href="https://www.eurogamer.cz" target="_blank">Eurogamer.cz</a></li>
+									<li><a href="https://www.eurogamer.de" target="_blank">Eurogamer.de</a></li>
+									<li><a href="https://www.eurogamer.es" target="_blank">Eurogamer.es</a></li>
+									<li><a href="https://www.eurogamer.it" target="_blank">Eurogamer.it</a></li>
+									<li><a href="https://www.eurogamer.net" target="_blank">Eurogamer.net</a></li>
+									<li><a href="https://www.eurogamer.nl" target="_blank">Eurogamer.nl</a></li>
+									<li><a href="https://www.eurogamer.pl" target="_blank">Eurogamer.pl</a></li>
+									<li><a href="https://www.eurogamer.pt" target="_blank">Eurogamer.pt</a></li>
+								</ul>
+							</div>
+
+							<div class="network">
+								<p class="section-title">Gamer Network</p>
+								<ul>
+									<li><a href="https://www.cosplaycentral.com" target="_blank">Cosplay Central</a></li>
+									<li><a href="https://www.dicebreaker.com" target="_blank">Dicebreaker</a></li>
+									<li><a href="https://www.egx.net" target="_blank">EGX</a></li>
+									<li><a href="https://www.gamesindustry.biz" target="_blank">GamesIndustry.biz</a></li>
+									<li><a href="https://www.jelly.deals" target="_blank">Jelly Deals</a></li>
+									<li><a href="https://www.metabomb.net" target="_blank">Metabomb</a></li>
+									<li><a href="http://www.nintendolife.com" target="_blank">Nintendo Life</a></li>
+									<li><a href="https://www.purexbox.com" target="_blank">Pure Xbox</a></li>
+									<li><a href="http://www.pushsquare.com" target="_blank">Push Square</a></li>
+									<li><a href="https://www.rockpapershotgun.com" target="_blank">Rock, Paper, Shotgun</a></li>
+									<li><a href="https://www.usgamer.net" target="_blank">USgamer</a></li>
+									<li><a href="https://www.vg247.com" target="_blank">VG247</a></li>
+									<li><a href="https://www.videogameschronicle.com" target="_blank">VGC</a></li>
+								</ul>
+							</div>
+											</nav>
+
+				</div>
+
+				
+			</footer>
+
+			
+		
+			
+									<script>
+					$(document).ready( function () {
+						new LanguageBar({
+							site: 1,
+							sites: {
+																	1: {
+										www: "https://www.eurogamer.net/",
+										exists: "Do you know about Eurogamer.net?",
+										cta: "Click here to visit Eurogamer.net!"
+									},
+																	2: {
+										www: "https://www.eurogamer.de/",
+										exists: "Kennst du Eurogamer.de?",
+										cta: "Hier klicken, um zu Eurogamer.de zu gelangen!"
+									},
+																	4: {
+										www: "https://www.eurogamer.es/",
+										exists: "&iquest;Conoces Eurogamer.es?",
+										cta: "Haz click aqu&iacute; para visitar Eurogamer.es"
+									},
+																	5: {
+										www: "https://www.eurogamer.it/",
+										exists: "Sapevi di Eurogamer.it?",
+										cta: "Clicca qu&igrave; per visitare Eurogamer.it!"
+									},
+																	10: {
+										www: "https://www.eurogamer.cz/",
+										exists: "V&iacute;te o Eurogamer.cz?",
+										cta: "Klikn&#283;te zde pro n&aacute;v&scaron;t&#283;vu Eurogamer.cz!"
+									},
+																	13: {
+										www: "https://www.eurogamer.pl/",
+										exists: "Czy wiesz, &#380;e Eurogamer jest dost&#281;pny po polsku?",
+										cta: "Kliknij tutaj, by przej&#347;&#263; na Eurogamer.pl!"
+									},
+																	7: {
+										www: "https://www.eurogamer.nl/",
+										exists: "Had je al gehoord van Eurogamer.nl?",
+										cta: "Klik hier om Eurogamer.nl te bezoeken!"
+									},
+																15: {
+									www: "http://www.usgamer.net",
+									exists: "Have you heard about USgamer.net? It covers the best in video gaming from an American perspective.",
+									cta: "Click here to visit!"
+								}
+							}
+						})
+					});
+				</script>
+												<div class="sign-in-overlay">
+
+					<div class="sign-in-container">
+
+						<div class="sign-in-content">
+							<div>
+								<p class="section-title">Sign in</p>
+
+								<form method="post" class="form">
+									<input type="hidden" name="useraction" value="login"/>
+
+									<label>Username</label>
+									<input id="login-username" name="username" autocomplete="username"/>
+
+									<label>Password</label>
+									<input type="password" name="password" autocomplete="current-password"/>
+
+									<button class="button wide">Sign in</button>
+								</form>
+
+												<div id="facebook-login-wrapper" style="display: none;">
+					<hr/>
+					<p class="section-title">Connect with Facebook</p>
+					<div id="fb-login-via-overlay"></div>
+				</div>
+				<script>
+					function runFacebookLogin() {
+						$("#facebook-login-wrapper").show();
+						new FacebookLogin({
+							target: $("#fb-login-via-overlay"),
+							style: "wide",
+							translations: {
+								login: "Connect with Facebook",
+								working: "Logging in...",
+								error: "Sorry, but an error occurred. Please try again."
+							}
+						});
+					}
+				</script>
+			
+								<hr/>
+
+								<p class="section-title">New in town?</p>
+								<a href="register" class="button outline wide" rel="nofollow">Create an account</a>
+
+								<hr/>
+
+								<a href="login" rel="nofollow">Forgotten your details?</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<script>
+					$(document).ready( function() {
+						$("[data-action=launch-sign-in-overlay]").on("click", function(e) {
+							$(".sign-in-overlay").addClass("open");
+						});
+
+						$(".sign-in-overlay").on("click", function(e) {
+							if($(e.target).hasClass("sign-in-container")) {
+								$(".sign-in-overlay").removeClass("open");
+							}
+						});
+					});
+				</script>
+					
+		
+			<script type='text/javascript'>
+			function do_the_ads(custom_variables) {
+
+				jQuery(document).ready(function() {
+
+					function getAudienceProjectTargetingData() {
+						"use strict";
+
+						var CACHE_KEY = "apr_tdc";
+						try {
+							var json = window.localStorage.getItem(CACHE_KEY);
+							if (json) {
+								var cache = JSON.parse(json);
+								if (cache.exp > Date.now()) {
+									return cache.d;
+								}
+								else {
+									window.localStorage.removeItem(CACHE_KEY);
+								}
+							}
+						}
+						catch (err) {
+							window.localStorage.removeItem(CACHE_KEY);
+						}
+						return {};
+					};
+
+					function setAPTargeting() {
+						var setTargeting = function () {
+							var targetingData = getAudienceProjectTargetingData();
+							for (var key in targetingData) {
+								if (targetingData.hasOwnProperty(key)) {
+									window.googletag.pubads().setTargeting(key, targetingData[key]);
+								}
+							}
+						};
+
+						window.googletag = window.googletag || {};
+						window.googletag.cmd = window.googletag.cmd || [];
+						if (window.googletag.cmd.unshift) {
+							window.googletag.cmd.unshift(setTargeting);
+						}
+						else {
+							window.googletag.cmd.push(setTargeting);
+						}
+
+						window.googletag.cmd.push(function() {
+							if (window.googletag.pubads().getTargeting('carbon_segment').length === 0) {
+								var carbon = JSON.parse(window.localStorage.getItem('ccRealtimeData'));
+								window.googletag.pubads().setTargeting('carbon_segment', carbon ? carbon.audiences.map(function (i) { return i.id; }) : []);
+							}
+						});
+					};
+
+					if(jQuery('#content header').length) {
+						jQuery('#skyscraper').css({'margin-top' : jQuery('#content header').height() + 'px'});
+					}
+
+											if(jQuery('#prod-buy').length > 0) {
+							jQuery('#sidebar .games').after('<li id=\"sidebar_amazon\"></li>');
+							jQuery('#sidebar_amazon').append(jQuery('#prod-buy'));
+							jQuery('#prod-buy').show();
+						}
+					
+					custom_variables['source'] = "article";
+					custom_variables['version'] = "hd";
+					custom_variables['release'] = "eg12";
+					custom_variables['logged_in'] = "false";
+
+											custom_variables['tags'] = ["article","digital_foundry"];
+					
+					
+					
+					
+											var ads_space = 450;
+					
+					if(Cookies.get('sp')) {
+						custom_variables['sp_message'] = Cookies.get('sp');
+					}
+
+					setAPTargeting();
+
+					try {
+						window.AdScript = new GNAdScript('.advertContainer', {
+							custom_variables: custom_variables,
+							lazyload_spacer: ads_space,
+							device: custom_variables['version'],
+														runUAM: true,
+																					runPrebid: true,
+							prebidLib: 'scripts/prebid4.12.0.js',
+							prebidConfig: {hd:{EGNET_LB_1:{code:"/43340684/EGNET_LB_1",mediaTypes:{banner:{sizes:[[728,90],[970,250]]}},bids:[{bidder:"districtm",params:{placementId:"19143633"}},{bidder:"districtmDMX",params:{dmxid:19143633,memberid:514415}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771882",sizes:[2,57]}},{bidder:"sovrn",params:{tagid:"308151"}},{bidder:"sovrn",params:{tagid:"722310"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_970x250_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932834"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168279",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"544548",size:[970,250]}},{bidder:"ix",params:{siteId:"544548",size:[728,90]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a9699f00175750d02821d0371ed01cb"}}]},EGNET_HP:{code:"/43340684/EGNET_HP",mediaTypes:{banner:{sizes:[[300,250],[300,600]]}},bids:[{bidder:"districtm",params:{placementId:"19143634"}},{bidder:"districtmDMX",params:{dmxid:19143634,memberid:514416}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771884",sizes:[10,15]}},{bidder:"sovrn",params:{tagid:"308150"}},{bidder:"sovrn",params:{tagid:"727523"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_sidebar_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932806"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168282",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545792",size:[300,250]}},{bidder:"ix",params:{siteId:"545792",size:[300,600]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a96900601757509a2be1d03a2210340"}}]},EGNET_LB_2:{code:"/43340684/EGNET_LB_2",mediaTypes:{banner:{sizes:[[728,90],[970,250]]}},bids:[{bidder:"districtm",params:{placementId:"19143635"}},{bidder:"districtmDMX",params:{dmxid:19143635,memberid:514417}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771882",sizes:[2,57]}},{bidder:"sovrn",params:{tagid:"308151"}},{bidder:"sovrn",params:{tagid:"722310"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_970x250_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932834"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168284",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545796",size:[970,250]}},{bidder:"ix",params:{siteId:"545796",size:[728,90]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a96945901757509a7551d03fd55033a"}}]},EGNET_LEADERBOARD_LAST:{code:"/43340684/EGNET_LEADERBOARD_LAST",mediaTypes:{banner:{sizes:[[728,90],[970,250]]}},bids:[{bidder:"districtm",params:{placementId:"19143635"}},{bidder:"districtmDMX",params:{dmxid:19143635,memberid:514417}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771882",sizes:[2,57]}},{bidder:"sovrn",params:{tagid:"308151"}},{bidder:"sovrn",params:{tagid:"722310"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_970x250_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932834"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168283",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545796",size:[970,250]}},{bidder:"ix",params:{siteId:"545796",size:[728,90]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a96945901757509a7551d03d2260339"}}]},EGNET_Lazy_Load_HP_MPU:{code:"/43340684/EGNET_Lazy_Load_HP_MPU",mediaTypes:{banner:{sizes:[[300,250],[300,600]]}},bids:[{bidder:"districtm",params:{placementId:"19143636"}},{bidder:"districtmDMX",params:{dmxid:19143636,memberid:514418}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771884",sizes:[10,15]}},{bidder:"sovrn",params:{tagid:"308150"}},{bidder:"sovrn",params:{tagid:"727523"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_sidebar_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"3036935"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168288",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545794",size:[300,250]}},{bidder:"ix",params:{siteId:"545794",size:[300,600]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a9699f00175750d02821d046cfa01cd"}}]},EGNET_MPU_1:{code:"/43340684/EGNET_MPU_1",mediaTypes:{banner:{sizes:[[300,250]]}},bids:[{bidder:"districtm",params:{placementId:"19143636"}},{bidder:"districtmDMX",params:{dmxid:19143636,memberid:514418}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771886",sizes:[15]}},{bidder:"sovrn",params:{tagid:"308150"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_300x250_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932804"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168286",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545793",size:[300,250]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a9699f00175750d02821d04263701cc"}}]}},tablet:{EGNET_TAB_TOP:{code:"/43340684/EGNET_TAB_TOP",mediaTypes:{banner:{sizes:[[728,90]]}},bids:[{bidder:"districtm",params:{placementId:"19143633"}},{bidder:"districtmDMX",params:{dmxid:19143633,memberid:514415}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771882",sizes:[2]}},{bidder:"sovrn",params:{tagid:"308151"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168279",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"544548",size:[728,90]}}]},EGNET_TAB_LL:{code:"/43340684/EGNET_TAB_LL",mediaTypes:{banner:{sizes:[[728,90]]}},bids:[{bidder:"districtm",params:{placementId:"19143635"}},{bidder:"districtmDMX",params:{dmxid:19143635,memberid:514417}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771884",sizes:[2]}},{bidder:"sovrn",params:{tagid:"308151"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168284",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545796",size:[728,90]}}]},EGNET_MPU_MOB:{code:"/43340684/EGNET_MPU_MOB",mediaTypes:{banner:{sizes:[[300,250],[320,400]]}},bids:[{bidder:"districtm",params:{placementId:"19143636"}},{bidder:"districtmDMX",params:{dmxid:19143636,memberid:514418}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771888",sizes:[15]}},{bidder:"sovrn",params:{tagid:"308150"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_300x250_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932804"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168291",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545797",size:[300,250]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a96945901757509a7551d04c2e3033c"}}]},EGNET_Lazy_Load_HP_MPU:{code:"/43340684/EGNET_Lazy_Load_HP_MPU",mediaTypes:{banner:{sizes:[[300,250]]}},bids:[{bidder:"districtm",params:{placementId:"19143636"}},{bidder:"districtmDMX",params:{dmxid:19143636,memberid:514418}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771888",sizes:[15]}},{bidder:"sovrn",params:{tagid:"308150"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_300x250_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932804"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168288",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545797",size:[300,250]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a96945901757509a7551d049c8f033b"}}]}},mobile:{EGNET_MPU_MOB:{code:"/43340684/EGNET_MPU_MOB",mediaTypes:{banner:{sizes:[[300,250],[320,400]]}},bids:[{bidder:"districtm",params:{placementId:"19143641"}},{bidder:"districtmDMX",params:{dmxid:19143641,memberid:514418}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771888",sizes:[15]}},{bidder:"sovrn",params:{tagid:"308150"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_300x250_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932804"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168291",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545797",size:[300,250]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a96945901757509a7551d04c2e3033c"}}]},EGNET_Lazy_Load_HP_MPU:{code:"/43340684/EGNET_Lazy_Load_HP_MPU",mediaTypes:{banner:{sizes:[[300,250]]}},bids:[{bidder:"districtm",params:{placementId:"19143636"}},{bidder:"districtmDMX",params:{dmxid:19143636,memberid:514418}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771888",sizes:[15]}},{bidder:"sovrn",params:{tagid:"308150"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_300x250_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932804"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168288",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545797",size:[300,250]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a96945901757509a7551d049c8f033b"}}]},EGNET_STICKY_LB:{code:"/43340684/EGNET_STICKY_LB",mediaTypes:{banner:{sizes:[[320,50]]}},bids:[{bidder:"districtm",params:{placementId:"19143637"}},{bidder:"districtmDMX",params:{dmxid:19143637,memberid:514419}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771890",sizes:[43]}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932832"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541208109",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545798",size:[320,50]}}]},EGNET_MPU_LAST:{code:"/43340684/EGNET_MPU_LAST",mediaTypes:{banner:{sizes:[[300,250]]}},bids:[{bidder:"districtm",params:{placementId:"19143636"}},{bidder:"districtmDMX",params:{dmxid:19143636,memberid:514418}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771888",sizes:[15]}},{bidder:"sovrn",params:{tagid:"308150"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_300x250_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932804"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168295",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545797",size:[300,250]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a96900601757509a2be1d04e9ce0341"}}]},EGNET_MPU_FEED:{code:"/43340684/EGNET_MPU_FEED",mediaTypes:{banner:{sizes:[[300,250]]}},bids:[{bidder:"districtm",params:{placementId:"19143636"}},{bidder:"districtmDMX",params:{dmxid:19143636,memberid:514418}},{bidder:"rubicon",params:{accountId:"16622",siteId:"336494",zoneId:"1771888",sizes:[15]}},{bidder:"sovrn",params:{tagid:"308150"}},{bidder:"triplelift",params:{inventoryCode:"eurogamer_300x250_desktop_prebid"}},{bidder:"pubmatic",params:{publisherId:"159481",adSlot:"2932804"}},{bidder:"conversant",params:{site_id:"109747",secure:1}},{bidder:"openx",params:{unit:"541168297",delDomain:"gamer-d.openx.net"}},{bidder:"ix",params:{siteId:"545797",size:[300,250]}},{bidder:"onemobile",params:{dcn:"8a9699f00175750d02821d0139d401c9",pos:"8a96900601757509a2be1d052ce60342"}}]}}},
+														insertInto : '',
+							showNonPersonalisedAds: false,
+							adRenderedCallback: function(slotName, event) {
+								if (event.isEmpty) {
+									const ad = document.getElementById(slotName);
+									if (ad.dataset.dfpCollapse == 'true') {
+										if(ad.parentNode.classList.contains('collapsible')) {
+											ad.parentNode.style.display = 'none';
+										}
+										if(ad.parentNode.parentNode.classList.contains('collapsible')) {
+											ad.parentNode.parentNode.style.display = 'none';
+										}
+									}
+								}
+
+								if(slotName.includes('STICKY_LB')) {
+									if(!event.isEmpty) {
+										document.getElementById('sticky_leader_close').style.display = 'block';
+										document.getElementById('sticky_leaderboard').style.paddingTop = '4px';
+										document.querySelector('body #browserMaster').style.paddingBottom = '90px';
+									}
+								}
+							}
+						});
+						window.AdScript.init();
+					} catch(e) {
+					}
+
+											(adsbygoogle = window.adsbygoogle || []).requestNonPersonalizedAds=0;
+						window.adsbygoogle.push({});
+					
+				});
+			}
+			</script>
+
+							<script type="text/javascript">
+					function appendSourcepoint() {
+						( function () {
+							var _sp_=function(n){function t(e){if(o[e])return o[e].exports;var r=o[e]={i:e,l:!1,exports:{}};return n[e].call(r.exports,r,r.exports,t),r.l=!0,r.exports}var o={};return t.m=n,t.c=o,t.i=function(n){return n},t.d=function(n,o,e){t.o(n,o)||Object.defineProperty(n,o,{configurable:!1,enumerable:!0,get:e})},t.n=function(n){var o=n&&n.__esModule?function(){return n["default"]}:function(){return n};return t.d(o,"a",o),o},t.o=function(n,t){return Object.prototype.hasOwnProperty.call(n,t)},t.p="",t(t.s=2)}([function(n,t){function o(n,t){e&&console[n].apply(console,["[bootstrap]"].concat(Array.prototype.slice.call(t)))}var e=!1;n.exports={debug:function(){o("debug",arguments)},info:function(){o("info",arguments)},time:function(){o("time",arguments)},warn:function(){o("warn",arguments)},error:function(){o("error",arguments)},useDefaults:function(){e=!0},DEBUG:1}},function(n,t,o){"use strict";function e(){R||(R=!0,D=b.config=b.config||{},s(),F=D.bootstrap&&D.bootstrap.contentControlCallback||D.content_control_callback,q=D.accountId||D.account_id||D.client_id||window.sp_cid,N=D.beacon&&D.beacon.contentControlEndpoint||D.content_control_beacon_endpoint||v.a,D.debug_level&&"OFF"!==D.debug_level.toString().toUpperCase()||D.debug&&D.debug.level&&"OFF"!==D.debug.level.toString().toUpperCase()?j=!0:window.location.search&&null!=window.location.search.match(/_sp_debug_level=(?!off|OFF)/)&&(j=!0),j&&m.useDefaults({defaultLevel:m.DEBUG}))}function r(n,t,e){function r(o,e){var r=new Image;r.src="//"+N+"/cct?v="+encodeURIComponent(v.b)+"&ct="+h+"&cid="+encodeURIComponent(q)+"&l="+encodeURIComponent(n.toString())+"&rc="+encodeURIComponent(t)+"&d0="+encodeURIComponent(i)+(o?"&d1="+encodeURIComponent(o):"")+(null==e?"":"&d2="+encodeURIComponent(e)),g.info("sending beacon: "+r.src),c&&c()}var i=arguments.length>3&&void 0!==arguments[3]?arguments[3]:"",a=arguments[4],c=arguments[5];if(a){var d=e.lastIndexOf("."),u=e.lastIndexOf("/"),s=-1===d||u>d?e+".png":e.substring(0,d)+".png",l=new Image;l.addEventListener("load",function(){r("1",s)}),l.addEventListener("error",function(){o.i(f.a)(s,function(n,t,o){r("0",s+"::"+o)})}),l.src=s}else r()}function i(n,t,o,e){var r=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{},a=arguments.length>5&&void 0!==arguments[5]&&arguments[5],c=function(){i(n,t,o,e,r,!0)};n(t,a?o:c,e,r)}function a(n,t,o,e){function r(o,r){t(o,n,r,e.enableImageLoad)}function i(t,r){o(t,n,r,e.enableImageLoad),e.onError&&e.onError(r)}var a=document.createElement("script");a.src=n,a.onload=function(){e.onLoad&&e.onLoad()},a.onerror=function(){function t(n){return o.indexOf(n)>-1}var o=(navigator.userAgent||navigator.vendor||window.opera).toLowerCase();t("mobi")||t("ipad")||t("android")||t("iphone")?i(L):t("exabot")?i(O):t("bingbot")||t("bingpreview")?i(k):t("googlebot")||t("adsbot-google")||t("mediapartners-google")?i(C):t("googleweblight")?i(E):window.location.host===w?i(x):t("msie 10")||t("msie 9")||t("msie 8")?i(I):c(n,r,i)},document.head.appendChild(a)}function c(n,t,e){o.i(f.a)(n,function(o,r,i,a){(o||r?t:e)(a,n+"::"+i)})}function d(n,t,o,e){if(S)return void u(U+"::"+n,o);r(y,n,t,o,e,function(){if(F){if(j){g.error("bootstrap locking",y,n,t,o,e);debugger}setTimeout(function(){F()},250)}})}function u(n,t,o,e){r(_,n,t,o,e)}function s(){b._networkListenerData||(b._networkListenerData=o.i(p.a)())}function l(n,t){e(),g.info("bootstrap called with",n,t),i(a,n,d,u,t)}Object.defineProperty(t,"__esModule",{value:!0});var f=o(4),p=o(5),v=o(3),g=o(0),m=void 0;m=o(0);var w=["w","e","b","c","a","c","h","e",".","g","o","o","g","l","e","u","s","e","r","c","o","n","t","e","n","t",".","c","o","m"].join(""),b=window._sp_||{},h=1,_=0,y=1,L="m",C="g",x="gw",E="gl",I="i",k="b",O="e",U="n",R=!1,S=!1,j=!1,D=void 0,F=void 0,q=void 0,N=void 0;window.addEventListener("beforeunload",function(){S=!0}),window._sp_=b,b.setupNetworkListeners=s,b.bootstrap=l,window.spBootstrap=l,t["default"]=b},function(n,t,o){o(0);n.exports=o(1)["default"]},function(n,t,o){"use strict";function e(n){return n.join("")}o.d(t,"b",function(){return r}),o.d(t,"a",function(){return i});var r=(o(0),"2.0.1098"),i=(e(["w","w","w",".","s","u","m","m","e","r","h","a","m","s","t","e","r",".","c","o","m"]),e(["w","w","w",".","r","o","o","s","t","e","r","f","i","r","e","w","o","r","k",".","c","o","m"]));e(["/","/","f","s","m","1","0","1","9",".","g","l","o","b","a","l",".","s","s","l",".","f","a","s","t","l","y",".","n","e","t","/","f","s","m","/","d","s"]),e(["h","t","t","p","s",":","/","/","d","2","z","v","5","r","k","i","i","4","6","m","i","q",".","c","l","o","u","d","f","r","o","n","t",".","n","e","t","/","0","/","2",".","0",".","1","0","9","8","/","r","e","c","o","v","e","r","y","_","d","f","p","_","i","n","t","e","r","n","a","l","-","v","2",".","0",".","1","0","9","8",".","j","s"]),e(["h","t","t","p","s",":","/","/","d","2","z","v","5","r","k","i","i","4","6","m","i","q",".","c","l","o","u","d","f","r","o","n","t",".","n","e","t","/","0","/","2",".","0",".","1","0","9","8","/","r","e","c","o","v","e","r","y","_","l","i","b","_","a","p","i","_","i","f","r","a","m","e","-","v","2",".","0",".","1","0","9","8",".","h","t","m","l"]),e(["h","t","t","p","s",":","/","/","d","2","z","v","5","r","k","i","i","4","6","m","i","q",".","c","l","o","u","d","f","r","o","n","t",".","n","e","t","/","0","/","2",".","0",".","1","0","9","8","/","r","e","c","o","v","e","r","y","_","l","i","b","_","r","i","d","_","i","f","r","a","m","e","-","v","2",".","0",".","1","0","9","8",".","h","t","m","l"])},function(n,t,o){"use strict";function e(n,t){function o(n){try{return n&&n.timeStamp?n.timeStamp:window.performance.now()}catch(n){return Date.now()}}var e=arguments.length>2&&void 0!==arguments[2]?arguments[2]:window.location,l=arguments.length>3&&void 0!==arguments[3]?arguments[3]:window.navigator,f=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{},p=document.createElement("a");if(p.href=n,"https:"===e.protocol&&p.protocol!==e.protocol)return r.error("protocol mismatch in https environment, standing down"),void t(!1,!1,p.protocol,u);var v=new XMLHttpRequest,g=f.withCredentials;null!=g&&(v.withCredentials=g);try{v.open(f.method||"GET",n)}catch(n){return void t(!0,!1,n.toString(),c,v)}if(null!=f.headers){var m=f.headers;Object.keys(m).forEach(function(n){v.setRequestHeader(n,m[n])})}var w=void 0,b=void 0;v.onloadstart=function(n){w=o(n)},v.onreadystatechange=function(n){if(4===this.readyState){b=o(n)-w;var e=0===this.status&&!1!==l.onLine,r="2"===this.status.toString()[0],c=void 0;return c=r?a:!1===l.onLine?s:i,void t(e,r,this.status+"::"+b,c,v)}};try{v.send(f.body)}catch(n){return void t(!0,!1,n.toString(),d,v)}}t.a=e;var r=o(0),i="n",a="nx",c="xo",d="xs",u="p",s="of"},function(n,t,o){"use strict";function e(){var n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:document,t=[],o=[],e=r.bind(null,t),i=r.bind(null,o);return n.addEventListener("load",e,!0),n.addEventListener("error",i,!0),{load:{events:t,listener:e},error:{events:o,listener:i}}}function r(n,t){if(t.target){var o="string"==typeof t.target.tagName?t.target.tagName.toLowerCase():"",e="string"==typeof t.target.src?t.target.src:"";"iframe"!==o&&n.push({tagName:o,src:e})}}t.a=e;o(0)}]);
+							//# sourceMappingURL=https://s3.amazonaws.com/d3jlsadfjkuern/2.0.1098/Ym9vdHN0cmFwLmpz.map
+							window ._sp_ =  window ._sp_ || {};
+							window ._sp_.config =  window ._sp_.config || {};
+							window ._sp_.config.account_id = 347;
+							window ._sp_.config.content_control_callback =  function () {
+								//console.log( "CONTENT LOCK" );
+							};
+							window ._sp_.config.mms_domain =  "eurogamer-uk.eurogamer.net" ;
+							window ._sp_.mms =  window ._sp_.mms || {};
+							window ._sp_.mms.cmd =  window ._sp_.mms.cmd || [];
+							window ._sp_.config.mms_client_data_callback =  function (o) {
+								var _sp_msg_id = parseInt(o.info.msg_id);
+								var _sp_cookie_val = "";
+								if(o.d.abp==true && _sp_msg_id>0) {
+
+																	if( _sp_msg_id == 30015) {
+										Cookies.set("sp", "eg_wl_only_message_seen", { expires: 30 });
+									} else {
+										Cookies.set("sp", "eg_continue_message_seen", { expires: 30 });
+									}
+								
+								}
+							};
+
+															window._sp_.config.fsm_endpoint = "//eg-p2.eurogamer.net";
+								window._sp_.config.enable_fsm_detection = true;
+								window._sp_.config.enable_fsm_network_detection = true;
+							
+							window ._sp_.mms.cmd.push( function () {
+
+								window ._sp_.mms.setTargeting( "logged-in", "false" );
+								window ._sp_.mms.setTargeting( "page", "article" );
+								window ._sp_.mms.setTargeting( "show-ads", "true" );
+
+								
+																	window ._sp_.mms.setTargeting( "guide", "false" );
+								
+							});
+
+							window ._sp_.mms.cmd.push( function () {
+								window ._sp_.mms.startMsg();
+							});
+
+							window ._sp_.bootstrap( "scripts/Eurogamer/meurogamer-fsm.js?3" );
+							window ._sp_.config.mms_choice_selected_callback =  function (choiceID) {};
+
+						})();
+					};
+				</script>
+					
+		
+						<script type="text/javascript">
+				function appendCarbon() {
+					!function(a,l,b,c,k,s,t,g,A){a.CustomerConnectAnalytics=k,a[k]=a[k]||function(){
+					(a[k].q=a[k].q||[]).push(arguments)},g=l.createElement(b),A=l.getElementsByTagName(b)[0],
+					g.type="text/javascript",g.async=!0,g.src=c+"?id="+s+"&parentId="+t,A.parentNode.insertBefore(g,A)
+					}(window,document,"script","//carbon-cdn.ccgateway.net/script","cca",window.location.hostname,"04d6b31292");
+				}
+			</script>
+			<script>
+				// Drop Third-Party Cookies on Consent
+				function dropCookies() {
+										!function (f, b, e, v, n, t, s) {
+						if (f.fbq)return;
+						n = f.fbq = function () {
+							n.callMethod ?
+									n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+						};
+						if (!f._fbq)f._fbq = n;
+						n.push = n;
+						n.loaded = !0;
+						n.version = '2.0';
+						n.queue = [];
+						t = b.createElement(e);
+						t.async = !0;
+						t.src = v;
+						s = b.getElementsByTagName(e)[0];
+						s.parentNode.insertBefore(t, s)
+					}(window,
+							document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+					
+															fbq('init', '897415313645265');
+					
+										fbq('init', '738979179819818');
+					
+											fbq('track', 'PageView');
+					
+					appendCarbon();
+				}
+			</script>
+			<script>
+				function doAdsOnConsent() {
+					if (typeof do_the_ads == 'function') {
+						do_the_ads({});
+					}
+
+					if (typeof do_the_ads_mobile == 'function') {
+						do_the_ads_mobile();
+					}
+
+					if (typeof do_the_ads_portable == 'function') {
+						do_the_ads_portable();
+					}
+				}
+			</script>
+		
+		<script type="application/ld+json">
+			{
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": "https://www.eurogamer.net/articles/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis",
+    "url": "https://www.eurogamer.net/articles/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis",
+    "headline": "Xbox Series X back-compat loading times: SSDs and HDDs compared",
+    "inLanguage": "en",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-10-09-15-44/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis-1602254650441.jpg/EG11/resize/1200x-1/digitalfoundry-2020-xbox-series-x-back-compat-ssd-load-time-analysis-1602254650441.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Richard Leadbetter",
+        "sameAs": "https://www.eurogamer.net/authors/175"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Eurogamer.net",
+        "sameAs": "https://www.eurogamer.net/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://d2skuhm0vrry40.cloudfront.net/2018/eg12/EG-Logo-net.png/EG11/resize/-1x120/logo.png"
+        }
+    },
+    "datePublished": "2020-10-09T15:00:00+01:00",
+    "dateModified": "2020-10-09T15:44:20+01:00"
+}		</script>
+
+					<script type="application/ld+json">
+				{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.eurogamer.net/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Articles",
+            "item": "https://www.eurogamer.net/archive/article"
+        }
+    ]
+}			</script>
+		
+				<script>
+			function appendComscore() {
+				var _comscore = _comscore || [];
+				_comscore.push({ c1: "2", c2: "8518622" });
+				(function() {
+					var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+					s.src = "https://sb.scorecardresearch.com/beacon.js";
+					el.parentNode.insertBefore(s, el);
+				})();
+			}
+		</script>
+
+					<script type="text/javascript">
+				function appendSkimlinks() {
+											var skim_script = document.createElement("script");
+						skim_script.type = "text/javascript";
+						skim_script.async = true;
+						skim_script.src = "//s.skimresources.com/js/87431X1540261.skimlinks.js";
+						document.getElementsByTagName('head')[0].appendChild(skim_script);
+									}
+			</script>
+
+		<script type="text/javascript">
+			function appendAudienceProject() {
+				var ap_script = document.createElement("script");
+				ap_script.type = "text/javascript";
+				ap_script.async = true;
+				ap_script.src = "https://sak.userreport.com/gamer-network/launcher.js";
+				document.getElementsByTagName('head')[0].appendChild(ap_script);
+			}
+		</script>
+
+					<script>
+				function mormontLoaded () {
+					if (typeof OptanonActiveGroups !== 'undefined' && OptanonActiveGroups.match(/,2,/) && !window.mormontDone) {
+						runMormont();
+					}
+				}
+
+				function runMormont() {
+					if (!mormont) return;
+										mormont('configure', 'property', 'eurogamer');
+											mormont('set', 'section', 'article');
+										if (window.location.pathname.match('^/profile')) {
+						mormont('set', 'section', 'community');
+					}
+					if (window.location.pathname.match('^/inbox')) {
+						mormont('set', 'section', 'user');
+					}
+											mormont('set', 'language', 'en');
+																					mormont('set', 'tags', ["tag:digital_foundry"]);
+																					mormont('set', 'published', '2020-10-09T15:00:00+01:00');
+						mormont('set', 'article_type', 'article');
+																mormont('set', 'author', "Richard Leadbetter");
+											mormont('send', 'pageview');
+											mormont('trackClicks', ['article']);
+										window.mormontDone = true;
+				};
+			</script>
+			<script src="https://cdn.gamer-network.net/2018/scripts/mormont/v2.20.0/mormont.js" async onload="mormontLoaded()"></script>
+		
+		<script defer>
+			$(document).ready(function() {
+				window.followButtons = new FollowButtons({
+					uid: 0,
+					lang: {
+						follow: "Follow",
+						unfollow: "Unfollow",
+						following: "Following"
+					}
+				});
+			});
+		</script>
+
+					<script>
+				jQuery(document).ready(function(){
+					renderEdmonds('.edmonds-block', {
+						'site': 'eurogamer.net',
+					});
+
+					// Check for other Amazon links and add subtag if required
+					jQuery.each(jQuery('article main a'), function(i, k) {
+
+						var link_href = jQuery(k).attr('href');
+					    if(link_href.match(/amazon\./i) && link_href.indexOf('ascsubtag') == -1) {
+
+					      subtag='';
+					      if(window.location.pathname.length > 1){
+					        var subtag = window.location.pathname.substring(1);
+					        subtag = subtag.replace(/\//g,'-').substring(0,89);
+					      } else {
+					        subtag='index';
+					      }
+					      link_href = link_href + ((link_href.indexOf('?') == -1) ? '?ascsubtag=' : '&ascsubtag=') + subtag;
+
+					      jQuery(k).attr('href', link_href);
+
+					    }
+
+					});
+
+				});
+			</script>
+						<script>
+				function appendYouTubeAPI() {
+					if (window.youTubeAPIDone) return;
+					var tag = document.createElement('script');
+					tag.src = "https://www.youtube.com/iframe_api";
+					var firstScriptTag = document.getElementsByTagName('script')[0];
+					firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+					window.youTubeAPIDone = true;
+				}
+
+				// All functions added by this will be called once the YouTube API is ready
+				function addToYouTubeIframeCallbacks(fn) {
+					window.youTubeIframeCallbacks = window.youTubeIframeCallbacks || [];
+					window.youTubeIframeCallbacks.push(fn);
+				}
+
+				function onYouTubeIframeAPIReady() {
+					window.youTubeAPIReady = true;
+					registerAllIframesWithYouTubeAPI();
+
+					// Call all functions in window.youTubeIframeCallbacks
+					if (window.youTubeIframeCallbacks) {
+						for (i = 0; i < window.youTubeIframeCallbacks.length; i++) {
+							var fn = window.youTubeIframeCallbacks[i];
+							if (typeof fn === "function") fn();
+						}
+					}
+				}
+
+				function registerWithYouTubeAPI(target, options = {}) {
+					var player = null;
+					if (window.youTubeAPIReady) {
+						player = new YT.Player(target, options);
+						player.addEventListener("onStateChange", "onYouTubePlayerStateChange");
+						window.youTubeAPIPlayers.push(player);
+					}
+					return player;
+				}
+
+				function registerAllIframesWithYouTubeAPI() {
+					window.youTubeAPIPlayers = [];
+					var iframes = document.querySelectorAll('iframe[data-youtube="true"');
+					for (var i = 0; i < iframes.length; i++) {
+						var iframe = iframes[i];
+						registerWithYouTubeAPI(iframe);
+					}
+				}
+
+				function onYouTubePlayerStateChange(e) {
+					if (e.data === YT.PlayerState.PLAYING) {
+						// e.target.f is the iframe itself
+						if (e.target && e.target.f) {
+							pauseOtherYouTubePlayers(e.target.f);
+						}
+					}
+				}
+
+				function pauseOtherYouTubePlayers(target) {
+					for (var i = 0; i < window.youTubeAPIPlayers.length; i++) {
+						var player = window.youTubeAPIPlayers[i];
+						var iframe = player.f;
+						// Don't pause the target player
+						if (target !== iframe && typeof player.pauseVideo === 'function') {
+							player.pauseVideo();
+						}
+					}
+				}
+
+				function appendVideoPlayer() {
+											// Video Player
+						var videos = $(".video-player");
+						for(i = 0; i < videos.length; i++) {
+							var video = $(videos[i]);
+							new videoPlayer({
+								player: video,
+								label: video.attr('data-label'),
+								more: "More videos",
+								subscribe: "Subscribe to our YouTube channel",
+								version: "hd",
+								error: "Sorry, but there was an error loading the video player.",
+								registerWithYouTubeAPI
+							});
+						}
+									}
+
+				function appendTwitchPlayer() {
+									}
+
+				$(document).ready(function() {
+					// Lazy Covers
+					lazycovers = new LazyCovers({});
+
+											window['adsSidebar'] = new SidebarAds({
+							content: $(".document > .main"),
+							sidebar: $(".ads-rail.upper"),
+							offset: 600,
+							firstOffset: 600,
+							limit: 20,
+							prefix: "ARTICLE",
+							zone: 'EGNET_Lazy_Load_HP_MPU',
+							site: 'eurogamer.net',
+							articles: [{"slug":"2020-10-16-will-the-elder-scrolls-6-launch-on-ps5-welcome-to-the-eurogamer-next-gen-news-cast","title":"Will The Elder Scrolls 6 launch on PS5? Welcome to the Eurogamer next-gen news cast!","subtitle":"Quick maths.","comments":7,"image":"2020\/articles\/2020-10-16-09-40\/will-the-elder-scrolls-6-launch-on-ps5-welcome-to-the-eurogamer-next-gen-news-cast-1602837605093.jpg"},{"slug":"2020-10-15-two-point-hospital-gets-some-movie-magic-in-this-months-culture-shock-expansion","title":"Two Point Hospital gets some movie magic in this month's Culture Shock expansion","subtitle":"Plus free new items for Sega's 60th birthday.","comments":2,"image":"2020\/articles\/2020-10-15-23-45\/-1602801931506.jpg"},{"slug":"2020-10-15-xcom-2-collection-making-its-way-to-ios-next-month","title":"XCOM 2 Collection making its way to iOS next month","subtitle":"Includes War of the Chosen expansion and more.","comments":11,"image":"2020\/articles\/2020-10-15-22-39\/xcom-2-collection-making-its-way-to-ios-next-month-1602797973743.jpg"},{"slug":"2020-10-15-borderlands-3-getting-second-season-pass-adding-designers-cut-and-directors-cut","title":"Borderlands 3 getting second season pass adding Designer's Cut and Director's Cut","subtitle":"First half due on all platforms in November.","comments":17,"image":"2020\/articles\/2020-10-15-20-25\/borderlands-3-is-getting-another-season-pass-featuring-designers-cut-and-directors-cut-1602789942279.jpg"},{"slug":"2020-10-15-cyberpunk-2077-shows-off-its-fast-cars-and-fancy-clothes-in-latest-livestream","title":"Cyberpunk 2077 shows off its fast cars and fancy clothes in latest livestream","subtitle":"Oh, and a little bit about bikes.","comments":44,"image":"2020\/articles\/2020-10-15-19-04\/cyberpunk-2077-shows-off-its-cars-and-clothes-1602785073748.jpg"},{"slug":"2020-10-15-the-internet-briefly-thought-their-ps4s-were-spying-on-them-and-the-memes-rolled-in","title":"The internet briefly thought Sony was listening to PS4 party chat, and the memes rolled in","subtitle":"Load of hot air.","comments":14,"image":"2020\/articles\/2020-10-15-17-21\/the-internet-briefly-thought-their-ps4s-were-spying-on-them-and-the-memes-rolled-in-1602778918771.jpg"},{"slug":"digitalfoundry-best-gaming-headset-for-pc-xbox-one-ps4-switch-7032","title":"Best gaming headset 2020 for PC, PS5, Xbox Series X\/S and Switch","subtitle":"The best wired and wireless gaming headsets.","comments":68,"image":"2020\/articles\/2020-10-15-15-49\/digitalfoundry-best-gaming-headset-for-pc-xbox-one-ps4-switch-7032-1602773382928.jpg"},{"slug":"2020-10-15-sega-sorry-for-dredging-up-painful-memories-after-releasing-golden-axed-game-made-during-crunch","title":"Sega \"didn't mean to dredge up painful memories\" by releasing Golden Axed game made during crunch","subtitle":"Steam listing edited to remove &quot;slur&quot;.","comments":32,"image":"2020\/articles\/2020-10-15-14-39\/sega-sorry-for-dredging-up-painful-memories-after-releasing-golden-axed-game-made-during-crunch-1602769176055.jpg"},{"slug":"2020-10-15-next-gen-optimised-version-of-destiny-2-launches-in-december","title":"Next-gen optimised version of Destiny 2 launches in December","subtitle":"Field of View coming to consoles.","comments":33,"image":"2020\/articles\/2020-10-15-14-38\/next-gen-optimised-version-of-destiny-2-launches-in-december-1602769132994.jpg"},{"slug":"2020-10-15-xbox-series-x-and-s-launch-lineup-is-not-the-kind-of-console-launch-lineup-were-used-to","title":"Xbox Series X and S launch lineup is a long list of optimised titles","subtitle":"New tactics.","comments":149,"image":"2020\/articles\/2020-10-15-12-15\/xbox-series-x-and-s-launch-lineup-is-not-the-kind-of-console-launch-lineup-were-used-to-1602760533171.jpg"},{"slug":"digitalfoundry-2020-a-first-look-at-the-ps5-user-interface","title":"Our first look at the PlayStation 5 user interface - and it could be a game-changer","subtitle":"Cards, Activities and the Control Centre have the potential to change the way we play.","comments":269,"image":"2020\/articles\/2020-10-15-13-00\/digitalfoundry-2020-a-first-look-at-the-ps5-user-interface-1602763242349.jpg"},{"slug":"2020-10-15-planet-coasters-console-edition-will-be-a-ps5-and-xbox-series-x-launch-title","title":"Planet Coaster's console edition will be a PS5 and Xbox Series X launch title","subtitle":"Double dip.","comments":7,"image":"2020\/articles\/2020-10-15-12-08\/planet-coasters-console-edition-will-be-a-ps5-and-xbox-series-x-launch-title-1602760098797.jpg"},{"slug":"2020-10-15-living-with-the-xbox-series-x","title":"The Xbox Series X is the least console-feeling console I've had","subtitle":"What Microsoft's new machine is like to live with.","comments":176,"image":"2020\/articles\/2020-10-15-14-04\/living-with-the-xbox-series-x-1602766986823.jpg"},{"slug":"2020-10-15-oculus-quest-2s-are-being-bricked-by-facebook-account-merge-issues","title":"Oculus Quest 2 Facebook account merge turns some headsets into &quot;paperweights&quot;, affected users say","subtitle":"Impacting new Facebook users. ","comments":59,"image":"2020\/articles\/2020-10-15-12-10\/oculus-quest-2s-are-being-bricked-by-facebook-account-merge-issues-1602760206239.jpg"},{"slug":"2020-10-15-playstation-5-lets-you-upload-voice-chats-to-sony-and-report-your-awful-party-mates","title":"PlayStation 5 lets you upload voice chats to Sony and report  your awful party mates","subtitle":"On the record.","comments":75,"image":"2020\/articles\/2020-10-15-11-29\/playstation-5-lets-you-upload-voice-chats-to-sony-and-report-your-awful-party-mates-1602757795658.jpg"},{"slug":"2020-10-15-devs-and-doggos-how-nodding-head-made-raji-while-saving-stray-indian-dogs","title":"Devs and doggos: how Nodding Head made Raji while saving stray Indian dogs","subtitle":"Paw patrol.","comments":4,"image":"2020\/articles\/2020-10-14-15-37\/devs-and-doggos-how-nodding-head-made-raji-while-saving-stray-indian-dogs-1602686256314.jpg"},{"slug":"2020-10-14-rusty-lakes-cube-escape-collection-bundles-9-wonderful-darkly-surreal-puzzlers-on-steam","title":"Rusty Lake's Cube Escape Collection bundles 9 wonderful, darkly surreal puzzlers on Steam","subtitle":"Out today for a minuscule price.","comments":5,"image":"2020\/articles\/2020-10-14-23-18\/rusty-lakes-cube-escape-collection-bundles-9-wonderful-darkly-surreal-puzzlers-for-a-minuscule-price-1602713936149.jpg"},{"slug":"2020-10-14-you-can-carry-spider-cat-around-in-your-backpack-in-spider-man-miles-morales","title":"You can carry Spider-Cat around in your backpack in Spider-Man: Miles Morales","subtitle":"And he'll help you in battle!","comments":41,"image":"2020\/articles\/2020-10-14-22-19\/spider-man-miles-morales-has-a-backpack-so-you-can-carry-spider-cat-around-on-your-adventures-1602710368646.jpg"},{"slug":"2020-10-14-enjoy-a-6-hour-flight-in-real-time-with-economy-class-sim-airplane-mode-from-tomorrow","title":"Enjoy a 6-hour flight in real-time with economy class sim Airplane Mode from tomorrow","subtitle":"Boarding on Mac and PC.","comments":36,"image":"2020\/articles\/2020-10-14-20-55\/economy-class-passenger-sim-airplane-mode-lets-you-enjoy-the-highs-of-a-6-hour-long-haul-flight-from-tomorrow-1602705317043.jpg"},{"slug":"2020-10-14-segas-60th-birthday-celebrations-include-a-free-yakuza-x-streets-of-rage-mash-up-on-pc","title":"Sega's 60th birthday celebrations include a free Yakuza x Streets of Rage 2 mash-up on PC","subtitle":"Plus mini games from Relic, Amplitude, and more.","comments":15,"image":"2020\/articles\/2020-10-14-19-26\/segas-60th-birthday-celebrations-include-a-free-a-yakuza-x-streets-of-rage-mini-game-mash-up-on-pc-1602700007325.jpg"},{"slug":"2020-10-14-seven-hours-with-assassins-creed-valhalla","title":"Seven hours with Assassin's Creed Valhalla","subtitle":"Viking direct.","comments":107,"image":"2020\/articles\/2020-10-14-17-35\/seven-hours-with-assassins-creed-valhalla-1602693312223.jpg"},{"slug":"2020-10-14-heres-a-look-at-pubgs-dynamic-map-in-action","title":"Here's a look at PUBG's dynamic map in action","subtitle":"The way you magma feel. ","comments":3,"image":"2020\/articles\/2020-10-14-17-00\/heres-a-look-at-pubgs-dynamic-map-in-action-1602691258004.jpg"},{"slug":"2020-10-14-sniper-elite-4-is-heading-to-switch-in-november","title":"Sniper Elite 4 is heading to Switch in November","subtitle":"Includes local multiplayer, gyro aiming, and more.","comments":9,"image":"2020\/articles\/2020-10-14-17-03\/sniper-elite-4-is-heading-to-switch-in-november-1602691394789.jpg"},{"slug":"2020-10-14-assassins-creed-valhallas-default-setup-has-you-play-as-both-male-and-female-eivor-at-various-points","title":"Assassin's Creed Valhalla's default setup has you play as both male and female Eivor at various points","subtitle":"UPDATE: \"This is integral to the story we're telling.\"","comments":126,"image":"2020\/articles\/2020-10-14-11-21\/-1602670862445.jpg"},{"slug":"2020-10-13-pokemon-go-adds-new-eggs-which-require-you-walk-up-to-12km","title":"Pok\u00e9mon Go's new eggs require you walk up to 12km","subtitle":"UPDATE: Niantic responds.","comments":16,"image":"2020\/articles\/2020-10-13-11-04\/-1602583452641.jpg"},{"slug":"2020-10-14-spelunky-2-considering-changes-to-its-frustrating-early-levels","title":"Spelunky 2 considering tweaks to its frustrating early levels","subtitle":"Whack-a-mole.","comments":14,"image":"2020\/articles\/2020-10-14-16-20\/spelunky-2-considering-changes-to-its-frustrating-early-levels-1602688854364.jpg"},{"slug":"2020-10-14-these-eurogamer-essential-games-are-all-going-cheap-for-amazon-prime-day-2020","title":"These Eurogamer 'Essential' games are going cheap for Amazon Prime Day","subtitle":"Eurogamer's favourites are all discounted on Amazon for Prime members right now.","comments":19,"image":"2020\/articles\/2020-10-14-15-09\/Dark_Souls_3_boss_header.jpg"},{"slug":"2020-10-14-monster-hunters-latest-movie-trailer-looks-brilliantly-awful","title":"Monster Hunter's latest movie trailer looks brilliantly bad","subtitle":"Black Diablos down.","comments":38,"image":"2020\/articles\/2020-10-14-15-23\/monster-hunters-latest-movie-trailer-looks-brilliantly-awful-1602685386381.jpg"},{"slug":"2020-10-14-fifa-21-players-are-already-relegating-themselves-a-week-after-launch","title":"FIFA 21 players are already relegating themselves a week after launch","subtitle":"Bung it anywhere.","comments":9,"image":"2020\/articles\/2020-10-14-14-20\/fifa-21-players-are-already-relegating-themselves-a-week-after-launch-1602681640613.jpg"},{"slug":"2020-10-14-annapurna-interactives-if-found-arrives-on-nintendo-switch-next-week","title":"Annapurna Interactive's If Found arrives on Nintendo Switch next week","subtitle":"One for the diary.","comments":0,"image":"2020\/articles\/2020-10-14-14-53\/-1602683595093.jpg"}],
+							lang: {
+								advertisement: "Advertisement",
+								related: "Related"
+							},
+						});
+									});
+
+			</script>
+								<script>
+							function checkBBVMS() {
+								function youtube_parser(url){
+									var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+									var match = url.match(regExp);
+									return (match&&match[7].length==11)? match[7] : false;
+								}
+
+								jQuery('article iframe').each(function(){
+									src = jQuery(this).attr('src');
+									if(src) {
+										check_yt = youtube_parser(src); 
+										if(check_yt){
+											jQuery(this).attr('id', 'yt-' + check_yt);
+											jQuery(this).attr('data-yt-id', check_yt);
+											jQuery(this).addClass('yt-embed');
+										}
+									}
+								});
+								var promises = [];
+								jQuery('article iframe.yt-embed').each(function() {
+									check_yt = jQuery(this).attr('data-yt-id');
+									(function(replace_yt) {
+										promises.push(jQuery.getJSON( "https://gamernetwork.bbvms.com/json/search?query=%22" + replace_yt + "%22&context=all", function( data ) {
+											if(typeof data['items'][0] !== 'undefined' && typeof data['items'][0].id !== 'undefined') {
+												yt_video = jQuery('#yt-' + replace_yt);
+												jQuery(yt_video).attr('data-bbvms-id', data['items'][0]['id']);
+											};
+										}));
+									})(check_yt);
+								});
+								Promise.all(promises).then(function( data ) {
+									first_yt = true;
+									device = 'hd';
+									if(device == 'mobile') {
+										first_yt = false;
+									}
+									jQuery("[data-bbvms-id]").each(function() {
+										yt_video_wrapper = jQuery(this).closest('figure.video');
+										if(first_yt) {
+											playout_id = 'eurogamer_auto_';
+											first_yt = false;
+										} else {
+											playout_id = 'eurogamer';
+										}
+										jQuery('> div', yt_video_wrapper).append('<div class="bb_wrapper"><script type="text/javascript" src="//gamernetwork.bbvms.com/p/' + playout_id + '/c/' + jQuery(this).attr('data-bbvms-id') + '.js" async="true"><\/script></div>');
+										jQuery('.video-container', yt_video_wrapper).remove();
+										jQuery('.like-and-subscribe', yt_video_wrapper).html('<a href="https://www.youtube.com/watch?v=' + jQuery(this).attr('data-yt-id') + '" class="button wide" target="_blank" onclick="ga(\'send\',\'event\',\'Video\',\'Click YT Link\',\'' + jQuery(this).attr('data-yt-id') + '\')">Watch on YouTube</a>');
+									});
+								});
+
+							}
+						</script>
+					
+								<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="a8860ee2-3760-451e-bc74-913dc75792ad"></script>
+			<script type="text/javascript">
+
+				function loadIframes(){
+					var iframes = $("iframe[data-src]");
+					$.each(iframes,function() {
+						var iframe = $(this);
+						iframe.attr("src", iframe.attr("data-src"));
+					});
+				}
+
+				function showOneTrustPlaceholders() {
+					if (window.OneTrustPlaceholdersDone) return;
+					var elements = document.querySelectorAll('.onetrust-placeholder');
+					for (var i = 0; i < elements.length; i ++) {
+						var element = elements[i];
+						element.style.display = '';
+					}
+					window.OneTrustPlaceholdersDone = true;
+				}
+
+				function removeOneTrustPlaceholders(type) {
+					var identifier = '.onetrust-placeholder';
+					identifier += type ? '[data-type="' + type + '"]' : '';
+					var elements = document.querySelectorAll(identifier);
+					for (var i = 0; i < elements.length; i ++) {
+						var element = elements[i];
+						element.remove();
+					}
+				}
+
+				function OptanonWrapper() {
+					// Run performance
+					if(OptanonActiveGroups.match(/,2,/)){
+						if (typeof appendComscore == 'function') {
+							appendComscore();
+						}
+						if (typeof runMormont == 'function' && typeof mormont !== 'undefined' && !window.mormontDone) {
+							runMormont();
+						}
+						if (typeof gaWrapper == 'function') {
+							gaWrapper();
+						}
+					} else {
+						if (typeof gaAnonWrapper == 'function') {
+							gaAnonWrapper();
+						}
+					}
+
+					// Run functional
+					if(OptanonActiveGroups.match(/,3,/)){
+						if (typeof appendSourcepoint == 'function') {
+							appendSourcepoint();
+						}
+						removeOneTrustPlaceholders('functional');
+					}
+
+					// Run targeting
+					if(OptanonActiveGroups.match(/,4,/)){
+						if (typeof doAdsOnConsent == 'function') {
+							doAdsOnConsent();
+						}
+						if (typeof loadIframes == 'function') {
+							loadIframes();
+						}
+						if (typeof checkBBVMS == 'function') {
+							checkBBVMS();
+						}
+						if (typeof appendFacebookSDK == 'function') {
+							appendFacebookSDK();
+						}
+						if (typeof appendVideoPlayer == 'function') {
+							appendVideoPlayer();
+						}
+						if (typeof appendTwitchPlayer == 'function') {
+							appendTwitchPlayer();
+						}
+						if (typeof appendVideoExplorer == 'function') {
+							appendVideoExplorer();
+						}
+						if (typeof appendGoogleCustomSearch == 'function') {
+							appendGoogleCustomSearch();
+						}
+						if (typeof appendYouTubeAPI == 'function') {
+							appendYouTubeAPI(); // Used for DFGraph
+						}
+						if (typeof appendAudienceProject == 'function') {
+							appendAudienceProject();
+						}
+						if (typeof dropCookies == 'function') {
+							dropCookies();
+						}
+						if (typeof appendInlineVideo == 'function') {
+							appendInlineVideo();
+						}
+						if (typeof appendSkimlinks == 'function') {
+							appendSkimlinks();
+						}
+						if (typeof appendGemius == 'function') {
+							appendGemius();
+						}
+						if (typeof appendBBElements == 'function') {
+							appendBBElements();
+						}
+						if (typeof appendVidoomy == 'function') {
+							appendVidoomy();
+						}
+						removeOneTrustPlaceholders('targeting');
+					}
+
+					showOneTrustPlaceholders();
+				}
+			</script>
+			</body>
+</html>
+		

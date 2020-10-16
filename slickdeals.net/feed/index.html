@@ -1,14 +1,40 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
-Content-Type: text/html
-Content-Length: 96
-Date: Thu, 15 Oct 2020 14:14:25 GMT
+HTTP/1.1 404 Not Found
+X-Powered-By: PHP/7.2.31
+Content-Type: text/html; charset=UTF-8
+Cache-Control: no-cache, private
+Referrer-Policy: strict-origin-when-cross-origin
+Server: Apache
+X-Akamai-Path-Stats: [3:36961:72039]
+Vary: Accept-Encoding
+Date: Fri, 16 Oct 2020 09:17:43 GMT
+Content-Length: 898
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=67
-Server-Timing: origin; dur=15008
+Server-Timing: edge; dur=33
+Server-Timing: origin; dur=109
 Strict-Transport-Security: max-age=86400
 
-<html><body><h1>500 Internal Server Error</h1>
-An internal server error occured.
-</body></html>
+    <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>An Error Occurred: Not Found</title>
+        <style>
+            body { background-color: #fff; color: #222; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; margin: 0; }
+            .container { margin: 30px; max-width: 600px; }
+            h1 { color: #dc3545; font-size: 24px; }
+            h2 { font-size: 18px; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Oops! An Error Occurred</h1>
+            <h2>The server returned a "404 Not Found".</h2>
+
+            <p>
+                Something is broken. Please let us know what you were doing when this error occurred.
+                We will fix it as soon as possible. Sorry for any inconvenience caused.
+            </p>
+        </div>
+    </body>
+</html>
