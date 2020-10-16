@@ -1,18 +1,18 @@
 HTTP/1.1 200 OK
 Content-Type: text/javascript
 ETag: "3942043982"
-Last-Modified: Thu, 01 Oct 2020 17:09:51 GMT
+Last-Modified: Mon, 12 Oct 2020 18:53:33 GMT
 Server: Akamai Resource Optimizer
 X-Akamai-Path-Stats: [1:2727:16273]
 Vary: Accept-Encoding
-Cache-Control: max-age=89719
-Expires: Sat, 17 Oct 2020 16:25:26 GMT
-Date: Fri, 16 Oct 2020 15:30:07 GMT
+Cache-Control: max-age=191699
+Expires: Mon, 19 Oct 2020 00:23:08 GMT
+Date: Fri, 16 Oct 2020 19:08:09 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=7
+Server-Timing: edge; dur=4
 Strict-Transport-Security: max-age=86400
 
 /*! jQuery v1.12.4 | (c) jQuery Foundation | jquery.org/license | WordPress 2019-05-16 */

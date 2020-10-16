@@ -1,15 +1,16 @@
-HTTP/1.1 500 Internal Server Error
+HTTP/1.1 502 Bad Gateway
 Cache-Control: no-cache
 Content-Type: text/html
 Vary: Accept-Encoding
-Content-Length: 96
-Date: Fri, 16 Oct 2020 15:09:39 GMT
+Content-Length: 107
+X-Akamai-Path-Stats: [3:1748:426252]
+Date: Fri, 16 Oct 2020 20:07:54 GMT
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=4
-Server-Timing: origin; dur=15079
+Server-Timing: edge; dur=72
+Server-Timing: origin; dur=428
 Strict-Transport-Security: max-age=86400
 
-<html><body><h1>500 Internal Server Error</h1>
-An internal server error occured.
+<html><body><h1>502 Bad Gateway</h1>
+The server returned an invalid or incomplete response.
 </body></html>
