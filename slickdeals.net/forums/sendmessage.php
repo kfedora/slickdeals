@@ -2,7 +2,7 @@ HTTP/1.1 500 Internal Server Error
 Cache-Control: no-cache
 Content-Type: text/html
 Content-Length: 96
-Date: Sat, 17 Oct 2020 01:08:09 GMT
+Date: Sat, 17 Oct 2020 04:19:46 GMT
 Connection: keep-alive
 Connection: Transfer-Encoding
 Set-Cookie: auuid=f0fb7f3c0fc911eb9ac4c258c79c7091; expires=Sat, 16-Oct-2021 16:12:38 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
@@ -17,8 +17,8 @@ Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; 
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=33
-Server-Timing: origin; dur=15011
+Server-Timing: edge; dur=75
+Server-Timing: origin; dur=15008
 Strict-Transport-Security: max-age=86400
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
