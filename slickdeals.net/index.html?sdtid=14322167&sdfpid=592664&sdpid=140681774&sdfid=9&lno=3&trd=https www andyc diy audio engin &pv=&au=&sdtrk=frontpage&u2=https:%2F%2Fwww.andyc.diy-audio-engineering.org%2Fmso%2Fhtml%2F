@@ -1,0 +1,258 @@
+HTTP/1.1 200 OK
+Date: Sat, 17 Oct 2020 11:43:01 GMT
+Server: Apache
+Last-Modified: Wed, 09 Sep 2020 19:30:57 GMT
+Accept-Ranges: bytes
+Content-Length: 19286
+Connection: close
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Multi-Sub Optimizer is a free software program to optimize the performance of a multiple-subwoofer setup at multiple listening positions." />
+	<link type="text/css" rel="stylesheet" href="styles/global_styles.css" />
+	<title>Multiple Subwoofers: Optimize Them With Multi-Sub Optimizer Software</title>
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js">
+		</script>
+	<![endif]-->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Article",
+			"headline": "Multiple Subwoofers: Optimize Them With Multi-Sub Optimizer Software",
+			"image": [
+				"https://www.andyc.diy-audio-engineering.org/mso/html/images/project_loaded.png",
+				"https://www.andyc.diy-audio-engineering.org/mso/html/images/before_after_opt.png"
+			]
+		}
+	</script>
+</head>
+
+<body class="content-typ">
+	<header>
+		<nav>
+			<ul class="link-bar-list">
+				<li><a title="Go to Tutorial" href="tut_intro.html">Tutorial</a></li>
+				<li><a title="Go to Reference" href="reference-manual.html">Reference</a></li>
+				<li><a title="Go to Help Contents page" href="contents.html">Help Contents</a></li>
+				<li><a title="Go to Revision History page" href="rev_hist.html">Revision History</a></li>
+			</ul>
+		</nav>
+	</header>
+	<article>
+		<h1 class="book-title" id="multiple_subwoofers">Multiple Subwoofers: Optimize Them With Multi-Sub Optimizer Software</h1>
+		<h2>Introduction</h2>
+		<p>
+			Multi-Sub Optimizer (MSO) is a free Windows-based software program for optimizing the bass response of audio and AV systems having multiple <span id="subwoofers">subwoofers</span>. It optimizes the flatness of the combined frequency responses of main loudspeakers and <span id="multi_sub">multiple subwoofers</span> at multiple listening positions simultaneously. Although it's possible to use it for identical equalization (EQ) of all subs at once, it does not depend on a global EQ approach like commercial "<span id="room_correction">room correction</span>" systems do. Such systems cannot reduce the seat-to-seat variation of the bass response. Instead, MSO performs optimization of EQ, gain and delay parameters individually for each subwoofer. This individual EQ optimization for each sub causes the variation of the bass response from seat to seat to be reduced, and the bass response at each listening position to be flattened.
+		</p>
+		<p>MSO can be used to perform tasks that include:</p>
+		<ul id="features">
+			<li>Optimizing subwoofer integration with main speakers through delay, gain and EQ adjustments</li>
+			<li>Reducing seat-to-seat frequency response variation of the combined sub outputs through optimized EQ of each sub individually</li>
+			<li>Achieving optimum subwoofer time alignment via individual sub delay adjustments</li>
+			<li>Improving response flatness of the combined sub outputs at all listening positions</li>
+			<li>Creating, specifying and achieving your desired target frequency response curve to shape the bass response to taste</li>
+			<li>Plotting your data in a variety of ways</li>
+			<li>Computing filter information for manual entry or as text files containing biquad coefficients for import into miniDSP EQ hardware</li>
+		</ul>
+		<h2 id="mso_screenshot">Multi-Sub Optimizer Main Window</h2>
+		<p>
+			A screenshot of the Multi-Sub Optimizer main window with a typical project loaded is shown below. Detailed descriptions of the user interface elements are given in the <a href="tut_intro.html">tutorial</a> and the <a href="reference-manual.html">reference</a>.
+		</p>
+		<figure id="fig_screenshot">
+			<img class="responsive" src="images/project_loaded.png" alt="Multi-Sub Optimizer Main Window" width="1198" height="759">
+			<figcaption>Multi-Sub Optimizer Main Window</figcaption>
+		</figure>
+		<h2 id="example_before_after">Multiple Subs Before and After Optimization</h2>
+		<p>
+			An example set of frequency responses at multiple listening positions before and after optimization is shown below. Each trace corresponds to a listening position. The response at each listening position is computed by combining the measured results of four subs plus main speakers at that position, taking phase into account (complex summation). The top traces are before optimization and the bottom ones are after. A display offset separates the groups of traces for clarity. In the case of the "after optimization" results, the overall response at each position is computed by applying the response of a set of filters to each individual sub measurement prior to their complex summation. The parameter values of these filters are computed by MSO to optimize the performance at each listening position. The measured data imported into the program are from an actual user's room and system. Equalization, gains and delays were only applied to the subs, not the main speakers, so there isn't much effect above about 120 Hz.
+		</p>
+		<figure id="fig_before_after">
+			<img class="responsive" src="images/before_after_opt.png" alt="Multiple Subs Before and After Optimization" width="864" height="597">
+			<figcaption>Multiple Subs Before and After Optimization</figcaption>
+		</figure>
+		<h2 id="sys_hw_requirements">System Hardware Requirements</h2>
+		<p>
+			A multi-channel DSP device or equivalent software using IIR filters, such as a Behringer DCX2496 or a miniDSP device or similar is assumed to be present in your system. All the subs must be driven by a mono signal derived from the sum of the signals to the main speakers, as is the case with traditional bass management used by AV receivers and preamp-processors in home theater applications. This mono signal must be split as is done internally to the DCX2496 and miniDSP 2x4 devices, and separate EQ, delay and level adjustments provided for each sub individually. Some two-channel and even multi-channel systems operate the subs in stereo mode. For such systems, MSO is not an appropriate tool for optimization and its use will likely cause unpredictable results.
+		</p>
+		<p>
+			MSO can be used effectively on systems with two subs or more. See <a href="tips_tricks.html#how_many_subs">How Many Subs are Needed?</a> for more information.
+		</p>
+		<p>
+			Many of MSO's filter types are <a href="filter_compatibility.html#behringer_compat">compatible</a> with those of the popular and low-cost Behringer iNuke amplifiers.
+		</p>
+		<h2 id="sys_sw_requirements">System Software Requirements</h2>
+		<p>
+			MSO runs only on Windows. MSO requires Windows XP Service Pack 3 or a later version of Windows.
+		</p>
+		<h2 id="meas_sys_requirements">Important: Measurement System Requirements</h2>
+		<p>
+			Your measurement system must be capable of using a loopback timing reference or the equivalent acoustic timing reference to achieve time-synchronized measurements. This means that <strong>USB microphones can only be used with Room EQ Wizard (REW) version 5.15 or later in conjunction with the acoustic timing reference feature. If you are measuring a two-channel system using a USB microphone, REW 5.15 versions prior to beta 6 had the restriction that the speaker used for the acoustic timing reference could not also be measured without some special workarounds. You must use REW 5.15 beta 6 or later when measuring a two-channel system with a USB microphone</strong>. For more information, see the <a href="measuring.html#taking_meas">measurements section</a>.
+		</p>
+		<h2 id="download_links">Download Links</h2>
+		<ul>
+			<li id="download_info">
+				<strong>Program:</strong> The software is free and <a href="https://www.diy-audio-engineering.org/web_dl/apps/mso.zip">available for download</a>. Unzipping <span class="ui-elem">mso.zip</span> gives you <span class="ui-elem">install_mso.exe</span>, which you run to install the program. See the <a href="https://www.andyc.diy-audio-engineering.org/mso/html/rev_hist.html">revision history page of the MSO web site</a> for the version of the most recent MSO update.
+			</li>
+			<li>
+				<strong>MSO Help File (.CHM format):</strong> A <a href="https://www.andyc.diy-audio-engineering.org/mso/mso_help.zip">standalone version of MSO's help file</a> is available for download. This help file is updated concurrently with the MSO web site, so there will usually be a help file available that's newer than the one in the latest version of the program. You can find the date of the most recent help file on the <a href="https://www.andyc.diy-audio-engineering.org/mso/html/help-file-latest-date.html">MSO help file information page</a>. If you have problems displaying the .CHM file, see the <span class="ui-elem">readme.html</span> contained within the downloaded zip file for instructions. To update the help file in your installed copy of MSO, unzip the downloaded zip file to obtain <span class="ui-elem">multi-sub_opt.chm</span>. Then copy this file into the MSO installation folder, usually <span class="ui-elem">C:\Program Files (x86)\Multi-Sub Optimizer</span>. You should allow overwriting the existing multi-sub_opt.chm, which may require entering administrator permission information at the Windows prompt. Be sure to also check out the <a href="tips_tricks.html#searching_help">advanced search syntax for CHM files</a>.
+			</li>
+			<li>
+				<strong>Tutorial Files and Samples:</strong> A tutorial is contained within MSO's .CHM help file as well as on this web site. To follow along with the tutorial, you'll need to download the tutorial's <a href="https://www.diy-audio-engineering.org/web_dl/apps/tutorial_files.zip">sample files and projects</a>.
+			</li>
+		</ul>
+		<h2 id="before_you_begin">Before You Begin</h2>
+		<p>
+			Before using MSO, please do the following:
+		</p>
+		<ul>
+			<li>
+				Read Harman's consumer-oriented literature on multiple subwoofers:
+				<ul>
+					<li>
+						Toole: <a href="https://www.harman.com/documents/LoudspeakersandRoomsPt3_0.pdf">Loudspeakers and Rooms for Multichannel Audio Reproduction Part 3 - Getting the Bass Right</a> (PDF)
+					</li>
+					<li>
+						Welti: <a href="https://www.harman.com/documents/multsubs_0.pdf">Subwoofers: Optimum Number and Locations</a> (PDF)
+					</li>
+				</ul>
+			</li>
+			<li>
+				Understand that colocated subs constiture a single sub for the purposes of MSO. This might include a group of near-field subs nestled behind a couch, or a pair of subs stacked atop one another. In order to take advantage of separate EQ, gain and delay for each sub, the subs must be placed far enough apart for room mode manipulation to occur.
+			</li>
+			<li>
+				Ensure you are very familiar with your measurement software.
+			</li>
+			<li>
+				Acquire a general understanding of the theory of the measurements your software performs, including:
+				<ul>
+					<li>the meaning of the frequency response, both magnitude and phase, and</li>
+					<li>the impulse response measurement and its relationship to the frequency response.</li>
+				</ul>
+			</li>
+			<li>
+				If you're using REW for your measurements, please do the following:
+				<ul>
+					<li>
+						Read the <a href="https://www.roomeqwizard.com/help/help_en-GB/html/">REW documentation</a>. See especially its <a href="https://www.roomeqwizard.com/help/help_en-GB/html/primer.html#top">"Signals and Measurements" section</a> for more information about interpreting various types of measurements in REW.
+					</li>
+					<li>
+						Read <a href="https://www.dropbox.com/s/zdhq72a1puyyxpr/REW%20101%20HTS%20Current%20Version.pdf?dl=1">AustinJerry's REW Guide</a>.
+					</li>
+				</ul>
+			</li>
+			<li>Read the documentation of your DSP hardware.</li>
+			<li>Read the MSO documentation.
+				<ul>
+					<li>
+						If you haven't used MSO before, the <a id="help_tutorial" href="tut_intro.html">Tutorial</a> is a good place to start. The section titled "<a href="tut_main_5.html#filter_spec_methods">The Two Ways of Specifying Filter Parameter Limits"</a> is especially important for new users.
+					</li>
+					<li>
+						For information about how to perform the measurements needed by MSO, go to the <a href="measuring.html">measurements page</a> of the Reference Manual.
+					</li>
+					<li>
+						If you've used MSO before and need a refresher, check out the <a href="reference-manual.html">overview of use</a> in the Reference Manual.
+					</li>
+					<li>
+						To navigate directly to any subtopic in the <span class="ui-elem">Tutorial</span> or <span class="ui-elem">Reference Manual</span>, see the <a id="help_contents" href="contents.html">Help Contents</a>.
+					</li>
+					<li>
+						For miniDSP and Behringer users, there is must-read information about compatibility of MSO's filter types with your hardware. See the <a href="filter_compatibility.html">filter compatibility page</a> for details. Behringer users should especially check out the <a href="filter_compatibility.html#behringer_compat">Behringer compatibility table</a>.
+					</li>
+					<li>
+						Check out the <a href="tips_tricks.html">Tips and Tricks</a> section for hints about how to use MSO more productively.
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<h2 id="recommended_reading">Other Recommended Reading</h2>
+		<ul>
+			<li>
+				The recently released third edition of <a href="https://www.routledge.com/Sound-Reproduction-The-Acoustics-and-Psychoacoustics-of-Loudspeakers-and/Toole/p/book/9781138921368">Floyd Toole's book</a> <em>Sound Reproduction</em> contains lots of valuable information regarding the interaction of multiple subwoofers with room modes. The third edition has been extensively changed from the two earlier ones. Chapter 8 of this new edition deals with sound fields and perception in the modal frequency region, and has many new explanations and figures compared to chapter 13 of the earlier editions. These new explanations help in determining the best placement of the subs prior to running MSO, by demonstrating how multiple subs can be used to manipulate room modes. Best results will be obtained with MSO if the subs are placed in locations that optimize performance prior to applying any DSP.
+			</li>
+			<li>
+				miniDSP have an application note called "<a href="https://www.minidsp.com/applications/home-theater-tuning/ddrc-88a-multi-sub-optimizer/">Optimizing multiple subwoofers with the DDRC-88BM and Multi-Sub Optimizer</a>". This application note has given some users the mistaken impression that the DDRC-88BM is required for MSO usage. In fact, the most economical way to use MSO with miniDSP products is to use one of the three miniDSP 2x4 variants.
+			</li>
+			<li>
+				A more general perspective on multiple subs can be found in the miniDSP application note <a href="https://www.minidsp.com/applications/home-theater-tuning/tuning-multiple-subs">Tuning Multiple Subwoofers with miniDSP</a>. MSO is mentioned in that article, where it's listed as <a href="https://www.minidsp.com/applications/home-theater-tuning/tuning-multiple-subs#multiple-subwoofers-c">Method C</a>. The graphs show how MSO compares with other methods.
+			</li>
+		</ul>
+		<h2 id="online_discussion">Online Discussion and Application Notes</h2>
+		<ul class="plain-list">
+			<li>
+				The longest discussion thread about MSO is at <a href="http://www.avsforum.com/forum/113-subwoofers-bass-transducers/2103074-optimizing-subwoofers-integration-mains-multi-sub-optimizer.html">AVS Forum</a>.
+			</li>
+			<li>
+				There is also some MSO discussion on <a href="https://www.reddit.com/r/audiophile/comments/442tvi/freeware_multisubwoofer_optimizer_released_by/">reddit</a>.
+			</li>
+			<li>
+				AVSForum user rumpeli has created an <a id="german_tutorial" href="https://www.beisammen.de/index.php?thread/121932-multi-sub-optimizer-mso/">MSO presentation and tutorial in German</a> in the beisammen.de forum.
+			</li>
+			<li>
+				MSO was written and is maintained by <span id="andy_c_org_id"><a href="https://www.avsforum.com/forum/members/8472508-andyc56.html" id="andy_c_id">Andy C</a></span>.
+			</li>
+		</ul>
+		<h2 id="license">License</h2>
+		<ul class="plain-list">
+			<li>
+				Multi-Sub Optimizer is freeware (software gratis), and may be used for non-commercial and commercial purposes.
+			</li>
+			<li>
+				This work is licensed under the Creative Commons Attribution-NoDerivatives 4.0 International License. To view a copy of this license, visit <a href="http://creativecommons.org/licenses/by-nd/4.0/">http://creativecommons.org/licenses/by-nd/4.0/</a>.
+			</li>
+		</ul>
+		<h2 id="acknowledgments">Acknowledgments</h2>
+		<ul class="plain-list">
+			<li>
+				MSO was inspired by an <a href="https://youtu.be/SCWL-zusyqw">Earl Geddes video about multiple subwoofers</a> and its associated <a href="http://gedlee.azurewebsites.net/Papers/OptimalBassPlaybackinSmallRooms.pptx">PowerPoint presentation</a>.
+			</li>
+			<li>
+				The optimization algorithm used is from the following article:<br />
+				J. Zhang and A. C. Sanderson, <em><a href="https://matlabtools.com/wp-content/uploads/2017/11/p121-3.pdf">JADE: Adaptive Differential Evolution with Optional External Archive</a></em>, IEEE Transactions on Evolutionary Computation, 13(5): 945 - 958, October 2009.
+			</li>
+			<li>
+				Enforcement of global constraints for maximum allowable total PEQ boost and cut uses Lampinen's algorithm from the following article:<br />
+				J. Lampinen, <em><a href="https://pdfs.semanticscholar.org/088e/60df2694230e8e9e841e19ec218cddba54fe.pdf">A Constraint Handling Approach for the Differential Evolution Algorithm</a></em>, Proceedings of the 2002 congress on evolutionary computation (CEC’02), vol 2, pp 1468–1473.
+			</li>
+			<li>
+				Thanks to Cédric Moonen for the <a href="https://www.codeproject.com/articles/14075/high-speed-charting-control">High-speed Charting Control</a> used for MSO's graphs.
+			</li>
+			<li>
+				Thanks to Nemanja Trifunovic for the <a href="http://utfcpp.sourceforge.net/">UTF-8 CPP</a> library used for UTF-8 text conversion.
+			</li>
+			<li>
+				Thanks to Jag768 from AVSForum and DIYAudio for beta testing, providing data and many helpful suggestions for program features.
+			</li>
+			<li>
+				Thanks to markus767 and AV_mike from AVSForum for finding and reporting bugs.
+			</li>
+			<li>
+				Thanks to AVSForum user Svenibaer for posting many interesting optimization results.
+			</li>
+			<li>
+				Thanks to AVSForum user rumpeli for posting some interesting optimization results and creating an <a href="https://www.beisammen.de/index.php?thread/121932-multi-sub-optimizer-mso/">MSO tutorial in German</a>.
+			</li>
+			<li>
+				Thanks to AVSForum user genesplitter for his data showing <a href="tips_tricks.html#how_many_subs">MSO's behavior with a two-sub system</a>.
+			</li>
+		</ul>
+	</article>
+	<footer>
+		<nav>
+			<ul class="link-bar-list">
+				<li><a title="Go to Tutorial" href="tut_intro.html">Tutorial</a></li>
+				<li><a title="Go to Reference" href="reference-manual.html">Reference</a></li>
+				<li><a title="Go to Help Contents page" href="contents.html">Help Contents</a></li>
+				<li><a title="Go to Revision History page" href="rev_hist.html">Revision History</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>

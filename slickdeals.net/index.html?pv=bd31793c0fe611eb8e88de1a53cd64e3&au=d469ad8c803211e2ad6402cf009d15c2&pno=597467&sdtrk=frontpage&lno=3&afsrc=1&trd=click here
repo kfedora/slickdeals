@@ -1,0 +1,1447 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/10.0
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 2.0.50727
+X-Powered-By: ASP.NET
+Vary: Accept-Encoding
+Cache-Control: private, max-age=0
+Date: Sat, 17 Oct 2020 11:28:08 GMT
+Transfer-Encoding:  chunked
+Connection: keep-alive
+Connection: Transfer-Encoding
+Set-Cookie: ValidCookieEnc=rd30o00000000000000000000ffffac11420co443; expires=Sat, 17-Oct-2020 12:28:08 GMT; path=/; Httponly; Secure
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<meta http-equiv="X-UA-Compatible" content="IE=10" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="ctl00_Head1"><link rel="icon" href="/ManagedContent/Images/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/ManagedContent/Images/favicon.ico" type="image/x-icon" />
+	<link href="/ManagedContent/ADMIN/jquery-ui.min.css" media="all" type="text/css" rel="stylesheet" />
+	<link href="/ManagedContent/ADMIN/master.css" media="all" type="text/css" rel="stylesheet" />
+	<script type="text/javascript"> 
+		if((navigator.userAgent.indexOf("INAPPBROWSER-") != -1)) {
+			document.write("<link href='/ManagedContent/ADMIN/app-fix.css' rel='stylesheet' type='text/css'>")
+		}
+	</script>
+	<link href="/ManagedContent/ADMIN/new-sept.css" media="all" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="/ManagedContent/ADMIN/hz-menu.css" />
+	<link href="/ManagedContent/ADMIN/skeleton.css" media="all" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="/ManagedContent/ADMIN/shadowbox/shadowbox.css">  
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="/ManagedContent/ADMIN/ie.css">
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="/ManagedContent/ADMIN/ltie8.css">
+<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="/ManagedContent/ADMIN/ie6.css">
+<![endif]-->
+<script src="/Scripts/respond.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/ManagedContent/ADMIN/shadowbox/shadowbox.js"></script>
+<script type="text/javascript"> 
+	Shadowbox.init({
+		handleOversize: "drag",
+		modal: true
+	});
+</script>
+<script src="https://shopmyexchange.com/ux-responsive/scripts/jquery.js" type="text/javascript"></script>
+<script src="https://shopmyexchange.com/ux-responsive/scripts/jquery-migrate.js" type="text/javascript"></script>
+<script src="/Scripts/SubNav.js" type="text/javascript"></script>
+<script src="/Scripts/general.js" type="text/javascript"></script>
+<script src="/Scripts/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.bgiframe.js" type="text/javascript"></script>
+<script src="/Scripts/modernizr.custom.js" type="text/javascript"></script>
+<script src="/Scripts/footer-connect.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+//$("#subnav ul ul li").next().css('border-top', 'none');
+// $("#subnav ul ul li").siblings(":last-child").css('border-bottom', '#FFF');
+
+//Back to top button
+$("#back-top").hide();
+$(function () {
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 300 & !$('body').hasClass('mmenu-push-toleft')) {
+			$('#back-top').fadeIn();
+		} else {
+			$('#back-top').fadeOut();
+		}
+	});
+	$('#back-top a').click(function () {
+		$('body,html').animate({
+			scrollTop: 0
+		}, 800);
+		return false;
+	});
+});
+// Responsive
+$("#subnav h3").click(function(){
+	$("#subnav h3").removeClass();
+	$("#subnav h3").next().slideUp();
+	if(!$(this).next().is(":visible"))
+	{
+		$(this).addClass('active');	
+		$(this).next().slideDown();
+	}
+});
+
+$("#subnav li").click(function(){
+	window.location=$(this).find("a").attr("href"); 
+	return false;
+});
+
+$("#tabs").tabs();
+$(".ui-tabs").tabs();
+
+});
+
+</script>
+<!--Floating anchor points-->
+<!--<script type="text/javascript">
+$(window).load(function(){
+$(function()  {
+if ($('.sub-nav a').length == 0) {
+$('#anchors').hide();
+}
+else {
+$('.sub-nav a').clone().insertAfter("#anchors h3");
+}
+});
+})
+</script>--><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The Exchange | Exchange Stores | Authorized Patrons</title>
+
+<title>
+
+</title></head>
+<body id="b2top" class='sub-1-col mmenu-push'>
+<noscript><p>javascript must be enabled for the correct page display</p></noscript>
+<div id="head-wrap">
+   <!--update 9 5 18-->
+	
+<link rel="stylesheet" href="https://shopmyexchange.com/ux-responsive/styles/vendor.css">
+<link rel="stylesheet" href="https://shopmyexchange.com/ux-responsive/styles/responsive-ux_main.css">
+
+
+
+
+<script src="https://shopmyexchange.com/ux-responsive/scripts/responsive-ux_plugins.js"></script>
+<script type="text/javascript" src="https://shopmyexchange.com/assets/js/aafes-base.js" defer></script>
+
+<script type="text/javascript" charset="utf-8" async src="https://s7.addthis.com/static/layers.19562ea85278f66bc3c0.js"></script>
+
+		
+		 
+		<input type="hidden" value="https://maps.googleapis.com/maps/api/geocode/json?key=" id="googleUrl"/>
+		<input type="hidden" value="AIzaSyBGGMw6GYZDSQurm8GfwGa86iOftotjdY8&address=" id="googleApiKey"/>
+<script src="https://shopmyexchange.com/ux-custom/common/js/foresee/foresee-trigger.js" type="text/javascript"></script> 
+	
+
+		
+	
+     	 <script src="https://shopmyexchange.com/ux-responsive/scripts/stores.js"></script>
+      
+<header role="banner" class="clearfix">
+      
+       
+	<style type="text/css">header .header-sales-info-section {
+	position: relative;
+    line-height: 45px;
+    height: 45px;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    background-color: white;
+}
+header .header-sales-info-section.global-banner p {
+    background-color: #ffffff;
+}
+header .header-sales-info-section.global-banner a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+header .header-sales-info-section.global-banner p {
+    color: #cd0808;
+    font-size: 0.9em;
+    font-weight: 300;
+    margin: 0 auto 0 auto;
+	white-space: nowrap;
+}
+
+header form {margin-bottom:0px;}
+
+header form button[type="submit"]:before, header form button[type="reset"]:before, header form button[type="print"]:before {content:"";} 
+
+#columns h1 {color: #FFF;
+    background: #003A6A;
+    font-family: Calibri, Arial, san-serif;
+    font-size: 24px;
+    padding: 22px 20px;
+    margin-bottom: 10px;
+    line-height: 26px;
+    text-transform: uppercase;}
+ footer .container {padding: 0 0 0; background:#fff;}
+.addthis_toolbox span.addthis_follow_label {display:none;}
+
+
+
+.fa-caret-right:before, .fa-caret-down:before {
+    content: "\25B8";
+    font-size: 17px;
+    width: 20px;
+    line-height: 15px;
+    height: 20px;
+    display: inline-block;
+}
+
+.fa-caret-down:before {
+    transform: rotate(90deg);
+
+}
+
+@media (min-width: 340px) {
+	header .header-sales-info-section.global-banner p {
+		font-size: 1em;
+	}
+}
+@media (min-width: 440px) {
+	header .header-sales-info-section.global-banner p {
+		font-size: 1.3333em;
+	}
+}
+@media (min-width: 576px) {
+	header .header-sales-info-section.global-banner p {
+		font-size: 1.6666em;
+		
+	}
+	header .header-promo-section {height:40px;}
+}
+@media (min-width: 768px) {
+	header .header-sales-info-section.global-banner p {
+		font-size: 2em;
+	}
+}
+</style>
+
+<div id="storeSelectionConfirmation" class="aafes-success-block hidden-md-up">
+        <i class="aafes-icon aafes-icon-check-white"></i>
+        <span class="message">Success</span>
+    </div>
+    <div class="header-nav-section" data-nav="header">
+        <div class="container">
+            <div class="header-logo-section">
+                <a href="https://shopmyexchange.com/">
+                    <img src="https://shopmyexchange.com/ux-responsive/images/exchange_logo.svg" alt="Exchange logo" class="tablet-logo hidden-md-down">
+                    <img src="https://shopmyexchange.com/ux-responsive/images/exchange_x_logo.svg" alt="Exchange logo" class="hidden-lg-up hidden-print">
+                </a>
+            </div>
+            <div class="header-mega-menu-section hidden-print">
+	            <a href="#" class="jsMegaMenuTrigger">
+	                <span class="aafes-icon aafes-icon-menu"></span>
+	                <span class="hidden-sm-down shop">
+	                    SHOP
+	                </span>
+	            </a>
+
+                	
+
+
+	<div id="shop-container-mega-menu" class="dropdown-menu shop-container mt-0" role="navigation" aria-labelledby="mega-menu-navigation" style="display: none;">
+		<div class="menu-spacer">
+			<div class="triangle-container">
+				<div class="triangle"></div>
+			</div>
+		</div>
+
+		<div class="mega-menu-title hidden-md-up">
+			<span class="d-flex-100">Shop The Exchange</span>
+			<button class="aafes-menu-close" aria-label="Close">
+				<span aria-hidden="true"></span>
+			</button>
+
+		</div>
+
+		
+				<div class="mega-menu-container">
+				<!--GLOBAL MENU-->
+					<div class="d-flex">
+						
+
+
+
+
+
+
+		<ul class="exchange-categories pt-md-1">
+			
+							<li data-target="1-main-category">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/apparel/_/N-102548" class="">Clothing</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+							<li data-target="2-main-category">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/handbags-accessories/_/N-103813" class="">Handbags &amp; Accessories</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+							<li data-target="3-main-category">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/Shoes/_/N-105311" class="">Shoes</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+							<li data-target="4-main-category">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/jewelry-watches/_/N-104592" class="">Jewelry &amp; Watches</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+							<li data-target="5-main-category">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/beauty-health/_/N-103246" class="">Beauty &amp; Health</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+							<li data-target="6-main-category">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/baby-toys/_/N-103179" class="">Baby &amp; Toys</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+							<li data-target="7-main-category">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/home-appliances/_/N-103904" class="">Home &amp; Appliances</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+							<li data-target="8-main-category">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/electronics/_/N-103533" class="">Electronics</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+							<li data-target="9-main-category">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/sports-outdoors/_/N-117928" class="">Sports &amp; Outdoors</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+							<li data-target="10-main-category">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/Military/_/N-104763" class="">Military</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+							<li data-target="11-main-category">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/gifts-food/_/N-105252" class="">Gifts &amp; Food</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+							<li data-target="12-main-category" class="more">
+						
+						<div class="category-item second-lvl-tier">
+						
+								<a href="https://shopmyexchange.com/browse/more/_/N-104982" class="">More</a>
+							
+						<i class="aafes-icon-chevron-right hidden-md-up" aria-hidden="true"></i>
+						</div>
+					</li>
+				
+		</ul>
+		
+			
+			
+			
+			
+			
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			
+			
+				
+			
+					</div>
+					<!--/GLOBAL MENU-->
+					
+
+
+
+
+				<ul class="mega-menu-aux-section">
+				     
+								<li class="hidden-md-up">
+									<div class="category-item">
+										<i class="aafes-icon aafes-icon-label2-grey hidden-md-up" aria-hidden="true"></i>
+										<a href="https://shopmyexchange.com/savings-center">DEALS</a>
+									</div>
+								</li>
+							
+								<li class="hidden-md-up">
+									<div class="category-item">
+										<i class="aafes-icon aafes-icon-star-grey hidden-md-up" aria-hidden="true"></i>
+										<a href="https://shopmyexchange.com/browse/_/N-1693837486">CLEARANCE</a>
+									</div>
+								</li>
+							
+								<li class="hidden-md-up">
+									<div class="category-item">
+										<i class="aafes-icon aafes-icon-schedule-grey hidden-md-up" aria-hidden="true"></i>
+										<a href="https://shopmyexchange.com/savings-center/weekly-ads">WEEKLY AD</a>
+									</div>
+								</li>
+							
+								<li class="service-item hidden-md-up pt-1">
+									<div class="category-item">
+										<i class="aafes-icon aafes-icon-marketplace-white" aria-hidden="true"></i>
+										<a href="https://shopmyexchange.com/?open=true&requestorPage=/marketplace">MARKETPLACE</a>
+									</div>
+								</li>
+							
+				     
+				     
+								<li class="service-item hidden-md-up">
+									<div class="category-item">
+										<i class="aafes-icon aafes-icon-customer-service-white" aria-hidden="true"></i>
+										<a href="https://shopmyexchange.com/customer-service">CUSTOMER SERVICE</a>
+									</div>
+								</li>
+							
+				     <li class="service-item hidden-md-up pb-1">
+				         <div class="category-item">
+				             <i class="aafes-icon aafes-icon-find-store-white" aria-hidden="true"></i>
+				             <a href="https://www.shopmyexchange.com/findastore" class="find-store-link">
+				                 FIND A STORE
+				             </a>
+				         </div>
+				     </li>
+				     <li class="military-star-mobile-container hidden-md-up">
+				         <i class="aafes-icon aafes-icon-military-star"></i>
+				         <span>Military Star</span>
+				         <div class="triangle-right-container" id="milStarExpand">
+				             <div class="triangle"></div>
+				         </div>
+				     </li>
+				 
+				 </ul>
+	 
+	 <ul class="military-star-options hidden">
+	     <li class="hidden-md-up">
+	         <div class="category-item">
+	             <a href="https://www.myecp.com" target="_blank">Log in to Military Star Account</a>
+	         </div>
+	     </li>
+	     <li class="hidden-md-up">
+	         <div class="category-item">
+	             <a href="https://www.myecp.com/CustomerAds/Page/Exchange" target="_blank">Current Promotions</a>
+	         </div>
+	     </li>
+	     <li class="hidden-md-up">
+	         <div class="category-item">
+	             <a href="https://www.shopmyexchange.com/militarystar" target="_blank">Learn More</a>
+	         </div>
+	     </li>
+	     <li class="hidden-md-up">
+	         <div class="category-item">
+	             <a href="https://www.myecp.com/CardApply" target="_blank">Apply Now</a>
+	         </div>
+	     </li>
+	 </ul>
+
+				</div>
+			
+	</div>
+
+	
+            </div>
+            <div class="header-search-bar-section hidden-print">
+                <form role="search" action="https://shopmyexchange.com/s" id="search" method="GET" class="form-inline">
+                    <input type="hidden" name="Dy" value="1">
+                    <input type="hidden" name="Nty" value="1">
+                    <div class="input-group aafes-search-group w-100">
+                        <label for="searchText" class="sr-only">Search Keyword or Item #</label>
+                        <input id="searchText" name="Ntt" type="text" class="form-control aafes-search-input" placeholder="Search the Exchange" autocomplete="off">
+                        <span class="input-group-addon aafes-search-btn p-0">
+	                        <button class="btn btn-default p-0 border-0" type="submit" id="submitSearch">
+	                            <span class="aafes-icon aafes-icon-search"><span class="sr-only">SEARCH</span></span>
+	                        </button>
+	                    </span>
+                    </div>
+                </form>
+                <div class="jsSearchRoot"><div class="autocomplete-suggestions search-popup" style="position: absolute; display: none; height: auto; z-index: 9999;"></div></div>
+            </div>
+   	
+            
+          
+            <div class="header-military-star-section aafes-flex hidden-sm-down ml-1">
+                <i class="aafes-icon aafes-icon-military-star"></i>
+                <div class="dropdown aafes-military-star nav-item hidden-print">
+                    <a class="title" href="#" role="button">
+                        <span>Military</span><br>
+                        <span class="bottom-line">Star</span>
+                    </a>
+                    <div class="dropdown-menu-wrapper">
+                        <div class="dropdown-menu my-0">
+                            <div class="triangle-container">
+                                <div class="triangle"></div>
+                            </div>
+                            <div class="dropdown-menu-content">
+                                <div class="row">
+                                    <div class="links col-xs-12">
+                                        <ul class="p-0 m-0">
+                                            <li class="mb-1">
+                                                <a href="https://www.myecp.com" target="_blank">Log in to Military Star Account</a>
+                                            </li>
+                                            <li class="mb-1">
+                                                <a href="https://www.myecp.com/CustomerAds/Page/Exchange" target="_blank">Current Promotions</a>
+                                            </li>
+                                            <li class="mb-1">
+                                                <a href="https://www.shopmyexchange.com/militarystar" target="_blank">Learn More</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <input type="button" role="button" id="apply-milstar-button" class="aafes-btn-sm-reverse w-100" urltoredirect="" value="Apply Now" aria-label="Apply Now" onclick="window.location = 'https://www.myecp.com/CardApply';">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+            		<div class="header-shopping-cart-section hidden-print">
+            			<a class="aafes-icon aafes-icon-basket" href="https://shopmyexchange.com/?open=true&requestorPage=/cart">
+			             	<span class="sr-only">Shopping cart</span>
+		           		</a>    	
+				     	
+						 
+		                
+		                <div id="aafes-mini-cart-wrap" class="hidden-sm-down">	
+				            <!-- mini cart gets positioned here -->	
+			            </div>
+			        </div>
+                
+        </div>
+    </div>
+ 
+    
+    <div class="header-promo-section hidden-sm-down hidden-print">
+        <div class="container" role="navigation" aria-labelledby="promo-navigation">
+
+	   
+
+
+
+	<div class="header-advertising-section">
+		<ul class="m-0 p-0">
+			
+								<li>
+									<i class="aafes-icon aafes-icon-label2-white"></i>
+									<a href="https://shopmyexchange.com/savings-center">DEALS</a>
+								</li>
+							
+								<li>
+									<i class="aafes-icon aafes-icon-star-white"></i>
+									<a href="https://shopmyexchange.com/browse/_/N-1693837486">CLEARANCE</a>
+								</li>
+							
+								<li>
+									<i class="aafes-icon aafes-icon-schedule-white"></i>
+									<a href="https://shopmyexchange.com/savings-center/weekly-ads">WEEKLY AD</a>
+								</li>
+							
+		</ul>
+	</div>
+	<div class="header-service-section">
+		<ul class="m-0 p-0">
+			
+								<li class="hidden-md-down">
+									<i class="aafes-icon aafes-icon-marketplace-white"></i>
+									<a href="https://shopmyexchange.com/?open=true&requestorPage=/marketplace" >MARKETPLACE</a>
+								</li>
+							
+			
+			
+								<li class="hidden-md-down">
+									<i class="aafes-icon aafes-icon-customer-service-white"></i>
+									<a href="https://shopmyexchange.com/customer-service">CUSTOMER SERVICE</a>
+								</li>
+							
+			<li class="explore-more hidden-lg-up">
+				<i class="aafes-icon aafes-icon-plus"></i>
+				<a href="#">EXPLORE MORE</a>
+				<div class="dropdown-menu explore-more-container mt-0">
+					<div class="triangle-container">
+						<div class="triangle"></div>
+					</div>
+					<div class="dropdown-menu-content">
+						<ul>
+							
+												<li>
+													<i class="aafes-icon aafes-icon-marketplace"></i>
+													<a href="https://shopmyexchange.com/?open=true&requestorPage=/marketplace">MARKETPLACE</a>
+												</li>
+											
+						
+							
+												<li>
+													<i class="aafes-icon aafes-icon-customer-service"></i>
+													<a href="https://shopmyexchange.com/customer-service">CUSTOMER SERVICE</a>
+												</li>
+											
+						</ul>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+            <div class="header-find-store hidden-print">
+                <ul class="m-0 p-0">
+                    <li class="dropdown find-store">
+
+                        <i class="aafes-icon aafes-icon-find-store-white"></i>
+                        <a href="https://www.shopmyexchange.com/findastore">
+                            <span>FIND A STORE</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+					
+        </div>
+    </div>
+    
+    </header>
+    <div></div>
+ </div>
+	<div id="body-wrap" class="clearfix">
+            <div id="main">
+                <div id="subNavWrapper"><nav class="mmenu mmenu-vertical mmenu-right" id="mmenu-s2">
+<div id="nav-text">NAVIGATE</div>
+<div id="subnav" class="menu_list">
+            <ul>
+                <li>
+                <h3 class="active">Exchange Stores</h3>
+        <ul>
+        <li class="t1"><a href="/exchange-stores/">Exchange Stores</a></li>
+        <ul>
+        <li><a href="https://www.shopmyexchange.com/findastore">Store Locator</a></li>
+        <li><a href="https://www.shopmyexchange.com/be-fit/nutrition">Exchange Restaurants</a></li>
+        <li><a href="https://www.shopmyexchange.com/s?Dy=1&Nty=1&Ntt=RTW">Military Clothing Store</a></li>
+        <li><a href="/exchange-stores/Movie-Guide/">Reel Time Movie Guide</a></li>
+        <li><a href="http://www.shopmyexchange.com/express/">Express Online</a></li>
+        <li><a href="/exchange-stores/faq/">Store FAQs</a></li>
+        <li><a href="/exchange-stores/layaway/">Layaway</a></li>
+        <!--<li><a href="/exchange-stores/ReelTime/">Reel Time</a></li>-->
+        </ul>
+        <li class="t1"><a href="/exchange-stores/overseas/">For Overseas Customers</a></li>
+        <ul>
+            <li><a href="https://www.shopmyexchange.com/customer-service/shipping-delivery/click-to-brick">Transship Program</a></li> 
+            <li><a href="http://www.militaryautosource.com/onbase" target="_blank">New Car Sales</a></li>
+            <li><a href="/exchange-stores/overseas/germany-fuel-ration/">Germany Fuel Ration Program</a></li>
+            <li><a href="/exchange-stores/overseas/netherlands-fuel-ration/">Netherlands Fuel Ration Program</a></li>
+            <li><a href="/exchange-stores/overseas/uk-fuel-ration/">UK Off Base Fuel Ration Program</a></li>
+            <li><a href="/exchange-stores/overseas/culligan/">Culligan Water - Europe</a></li>
+        </ul>
+        <li class="t1"><a href="/exchange-stores/price-match/">Price Match Policy</a></li>
+        <li class="t1"><a href="http://www.shopmyexchange.com/customer-service/returns-exchanges/instore-returns/">Refunds and Exchanges</a></li>
+        <li class="t1"><a href="/about-exchange/exchange-quick-facts/">Exchange Quick Facts</a></li>
+        <li class="t1"><a href="https://odin.aafes.com/customerfeedback">Provide Store Feedback</a></li>
+        <li class="t1"><a href="https://www.surveymonkey.com/s/MyExchSurvey" target="_blank">Customer Survey</a></li>
+        <li class="t1"><a href="/Images/ExchangeStores/2015_privacy_customer_survey.pdf" target="_blank">Customer Survey Privacy Statement</a></li>
+        <!--<li class="t1"><a href="http://www.aafes.com/docs/2015_rules_customer_survey.pdf" target="_blank">Sweepstakes Rules and Disclaimer</a></li>-->
+        <li class="t1"><a href="/exchange-stores/emergency-preparedness/">Emergency Preparedness</a></li>
+        <li class="t1"><a href="/exchange-stores/recalls-alerts/">Product Recalls & Alerts</a></li>
+        
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul>
+                <li>
+                    <h3><span>About the Exchange</span></h3>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3><span>ShopMyExchange</span></h3>            
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3><span>Exchange Credit</span></h3>                           
+                </li>
+            </ul>
+                </div>
+        
+        <script src="/Scripts/classie.js"></script>
+        <script>
+            var menuRight = document.getElementById( 'mmenu-s2' ),
+                showRightPush = document.getElementById( 'showRightPush' ),
+                body = document.body;
+
+            showRightPush.onclick = function() {
+                classie.toggle( this, 'active' );
+                classie.toggle( body, 'mmenu-push-toleft' );
+                classie.toggle( menuRight, 'mmenu-open' );
+            };
+        </script>
+        <!-- 
+        Floating Nav / Enable js in header.htm / use with latest js
+        <div id="anchors" class="open">
+        <h3>PAGE NAV</h3>
+        </div>--></div>
+                 
+    <!-- Breadcrumbs -->    
+<ul id="breadcrumbs">   
+
+</ul>
+    <div id="columns">
+<h1>Authorized Patrons</h1>
+    <!-- insert page header image here -->
+    <img src="/Images/hdr_patrons.jpg" alt="About Exchange" width="710" height="160" />
+	<!-- Main Content-->
+        
+        <!-- Column 1 -->
+        <div id="col1">
+<div id="tabs">
+      <ul>
+        <li><a class="info" href="#tabs-1">Unlimited Privileges</a></li>
+        <li><a class="links" href="#tabs-2">Limited Privileges</a></li>
+         <li><a class="links" href="#tabs-3">Europe Privileges</a></li>
+          <li><a class="links" href="#tabs-4">PACRIM Privileges</a></li>
+      </ul>
+      <div id="tabs-1">
+      
+      <h2>Unlimited Privileges</h2>
+      
+    <ul>
+      <li>Active Duty or Reserve Uniformed and Retired                           Uniformed personnel.</li>
+      <li>Recipients of the Congressional Medal of Honor.</li>
+      <li>Honorably Discharged Veterans when certified 100% disabled.</li>
+      <li>Military Members of Foreign Nations when on duty                           with U.S. Military Service.</li>
+      <li>National Guard not in Federal Service.</li>
+      <li>Red Cross Personnel who are U.S. citizens, assigned                           outside the U.S. with the Military Service.</li>
+      <li>U.S. Civilian DoD Employees when stationed outside the                           U.S.</li>
+      <li>U.S. Citizen Employees of Firms under contract to the                           Department of Defense when employed outside the U.S.</li>
+      <li>Military Transition Personnel.</li>
+      <li>Retired Ship’s Officers and Crew members of National                           Oceanic and Atmospheric Association, NOAA.</li>
+      <li>Ship’s Officers and Crew members of National Oceanic                           and Atmospheric Association, NOAA.</li>
+      <li>Dependent family members of personnel listed above.</li>
+      <li>Contract Surgeons.</li>
+      <li>Non-DoD Federal Departments/Agencies as determined                           by local commanding officer.</li>
+      <li>Dependents of members of the armed forces, commissioned officers of the Public Health Service or commissioned officers of the National Oceanic and Atmospheric Association who have been separated for dependent abuse.</li>
+    </ul>
+</div>
+
+      <div id="tabs-2">
+        
+        <h2>Limited Privileges</h2>
+        <p>Limited Exchange Privileges generally exclude tobacco products, alcoholic beverages                           and military uniforms.</p>
+<ul>
+  <li>Honorably discharged Veterans can shop online at shopmyexchange.com. The Veterans online shopping benefit does not grant on-installation access. For more information about this benefit, please check out <a href="https://www.shopmyexchange.com/veterans">our Veterans page</a>.</li>
+  <li>U.S. Government Civilian Employees and Full-time Paid                           Staff of the Red Cross who reside on military                           installations within the U.S. or Puerto Rico.*</li>
+  <li>Armed Forces Exchange Employees.*</li>
+  <li>DoD Civilian Employees on Evacuation Orders.*</li>
+  <li>DoD Civilians on Temporary Duty status when occupying                           Government quarters in the U.S.</li>
+  <li>Civilian Employees of the U.S. Government working on,                           but residing off, Military Installations are authorized                           to purchase all food and beverages sold at exchange                           locations, if consumed on post.</li>
+  <li>Uniformed and Non-Uniformed Personnel working in                           recognized welfare service organization offices within                           an Activity of the Military Service are authorized to                           purchase all food and beverages sold at exchange                           locations, if consumed on post.</li>
+  <li>Visitors to Military installations are authorized to                           purchase all food and beverages sold at exchange                           locations, if consumed on post.</li>
+  <li>Contract Technical Services Personnel in travel                           status; Army, Navy, Air Force Academy Applicants when                           occupying Government quarters in the U.S.</li>
+  <li>Foreign National Active Duty Officer and Enlisted                           Members, when visiting U.S. Military Installation for                           unofficial business. Merchandise is restricted to                           quantities required for personal use.</li>
+  <li>Service members in Civil Air Patrol in travel status                           and occupying Government quarters on a DoD Installation                           may purchase uniform items when Civil Air Patrol                           membership card is shown. </li>
+  <li>Civil Air Patrol Cadets may purchase uniform items                           when Civil Air Patrol membership card is shown and all                           food and beverages sold at exchange locations, if                           consumed on post.</li>
+  <li>Members of the Officer Reserve Training Corps and                           Junior Reserve Officer Training Corps when visiting                           installations under orders as part of a Service                           orientation program.</li>
+  <li>Members of the Naval Sea Cadets attending two week                           training course, if occupying Government quarters on a                           Military installation. </li>
+  <li>Coast Guard Auxiliary Members.</li>
+  <li>Civilian Students and Faculty Members at Service                           Schools may purchase books, supplies and materials                           related to the educational process, only at exchange                           facilities that support the school.</li>
+  <li>Hardship – Persons who are “stranded on an                           installation” may purchase small quantities of gasoline,                           oil, other automotive items, or items necessary for an                           individual’s health.</li>
+  <li>DoD Civilian Employees using Government-authorized                           vehicles for official business may purchase gasoline for                           those vehicles.</li>
+</ul>
+<p>(*includes family members of authorized  personnel)</p>
+<p>Only authorized patrons are entitled to exchange                           privileges, except when prohibited by treaty or other                           international agreements in foreign countries. For more                           information about authorized patrons, go to: <a href="http://www.dtic.mil/whs/directives/corres/pdf/133021p.pdf" target="_blank">DODI 1330.21 Armed Services Exchange Regulations.</a></p>
+<div class="clearFloat"></div>
+ </div>
+    
+    
+    
+    <div id="tabs-3">
+
+
+                    <h2>Europe Privileges</h2>
+
+		<ul>
+        	<li>Exchange privileges in overseas areas are not automatic.</li>
+            <li>Overseas commanders, in accordance with the host country’s / U.S. international
+             agreements determine who will be extended shopping privileges and access to duty free
+              goods.</li>
+             <li>The Exchange does not determine shopping privileges / access to duty free goods.</li>
+		</ul><br />
+              
+	 <h3>Command Regulations that Govern Overseas Shopping Privileges</h3>
+           <table width="96%" border="0" cellspacing="0" class="tabletwo">
+              <tbody>
+                <tr>
+                  <td><h5>CATEGORY</h5></td>
+                  <td align="center" colspan="2">
+                  <h5>Active Duty U.S. Military, DoD Civilians &amp; dependents</h5></td>
+                 
+                  <td align="center" colspan="2">
+                  <h5>Retired U.S. Military &amp; Dependents</h5></td>
+                </tr>
+               
+                <tr>
+                  <td><h5>STATUS</h5></td>
+                  <td align="center"><h5>Assigned or TDY to specific country <br />
+                    <em>(See Note 1)</em></h5></td>
+                  <td align="center"><h5>On leave from another country / area</h5></td>
+                  <td align="center"><h5>Visiting from U.S.</h5></td>
+                  <td align="center"><h5>Residing in specific county</h5></td>
+                </tr>
+                <tr>
+                  <td><strong>Belgium</strong></td>
+                  <td align="center">YES</td>
+                  <td align="center">NO</td>
+                  <td align="center">NO</td>
+                  <td align="center"><em>(See Note 2)</em></td>
+                </tr>
+                <tr>
+                  <td><strong>Germany</strong></td>
+                  <td align="center">YES</td>
+                  <td align="center"><em>(See Note 3)</em></td>
+                  <td align="center"><em>(See Note 4)</em></td>
+                  <td align="center"><em>(See Note 4)</em></td>
+                </tr>
+                <tr>
+                  <td><strong>Greece</strong></td>
+                  <td align="center">YES</td>
+                  <td align="center"><em>(See Note 5)</em></td>
+                  <td align="center">NO</td>
+                  <td align="center"><em>(See Note 6)</em></td>
+                </tr>
+                <tr>
+                  <td><strong>Italy</strong></td>
+                  <td align="center">YES</td>
+                  <td align="center"><em>(See Note 7)</em></td>
+                  <td align="center"><em>(See Note 8)</em></td>
+                  <td align="center"><em>(See Note 8)</em></td>
+                </tr>
+                <tr>
+                  <td><strong>Netherlands</strong></td>
+                  <td align="center">YES</td>
+                  <td align="center">NO</td>
+                  <td align="center">NO</td>
+                  <td align="center">NO</td>
+                </tr>
+                <tr>
+                  <td><strong>Norway</strong></td>
+                  <td align="center">YES</td>
+                  <td align="center">NO</td>
+                  <td align="center">NO</td>
+                  <td align="center"><em>(See Note 9)</em></td>
+                </tr>
+                <tr>
+                  <td><strong>Saudi Arabia</strong></td>
+                  <td align="center">YES</td>
+                  <td align="center">NO</td>
+                  <td align="center">NO</td>
+                  <td align="center">NO</td>
+                </tr>
+                <tr>
+                  <td><strong>Spain</strong></td>
+                  <td align="center">YES</td>
+                  <td align="center">NO</td>
+                  <td align="center">NO</td>
+                  <td align="center">NO</td>
+                </tr>
+                <tr>
+                  <td><strong>Turkey</strong></td>
+                  <td align="center">YES</td>
+                  <td align="center">NO</td>
+                  <td align="center">NO</td>
+                  <td align="center">NO</td>
+                </tr>
+                <tr>
+                  <td><strong>United Kingdom</strong></td>
+                  <td align="center">YES</td>
+                  <td align="center">NO</td>
+                  <td align="center">NO</td>
+                  <td align="center"><em>(See Note 10)</em></td>
+                </tr>
+              </tbody>
+        </table>
+     
+       
+            <h3>Notes</h3>
+            <ol><li>Personnel from outside the NATO area who are on TDY for less than 30 days have their TDY orders stamped by the local billeting office for entry to commissary and exchange facilities and to purchase rationed items. These personnel who are on TDY for 30 days or more must obtain a ration card for entry to the facilities in Greece, Turkey, Netherlands, and the United Kingdom, and to purchase rationed items in all countries. Member of the reserve components must be on active duty for training (ADT) status for entry to commissaries and exchanges.</li>
+<li>Privileges may be granted on a case-by-case basis by the Commander, NATO / SHAPE Support Group, in coordination with the US Ambassador to Belgium. (Authority: CINCUSAREUR / ADAGX Letter, 19 November 1981)</li>
+<li>Only personnel stationed in Europe and North Africa.</li>
+<li>Must be ordinarily resident or be visiting in Germany for a period of 30 days or more. Rationed items may not be purchased. All purchases are subject to the payment of a fixed rate tax to German customs. Entry to commissary and exchange facilities requires DD Form 2AF (Retired) or DD Form 1173, and a German Customs Certificate. (Authority: German Federal Ministry of Finance Decree, 20 July 1981; USAFER 400-4; and USAFE Supplement 1 to AFR 415-15). Also, see USAREUR 600-700 Chapter 13.</li>
+<li>Only personnel stationed in the NATO are. Personnel may not purchase controlled items (e.g. electronic and other expensive items.</li>
+<li>Must be ordinarily resident of Greece.</li>
+<li>Personnel stationed in the NATO area may purchase rationed items.
+Personnel stationed outside the NATO area may not purchase rationed items (Authority: 40 TACG / JA Message 281330z Sep 87)</li>
+<li>May purchase non-rationed items only.</li>
+<li>Must be ordinarily resident in Norway. Rationed items may not be purchased. All purchases are subject to the prepayment of a fixed rate tax to Norwegian customs authorities. Access to the facilities requires presentation of a valid ID card and Military Retirees’ Limited Privilege Card. (Authority: US-Norway Memorandum of Understanding, 12 September 1985).</li>
+<li>Must be ordinary resident in the United Kingdom. Rationed items may not be purchased. All purchases are subject to the prepayment of a fixed rate tax to British customs authorities. Access to the facilities requires USAFE Form 174a. (Authority: 3AF-HM Customs & Excise Memorandum of Understanding, 28 March 1983, and 3AF Regulation 34-1)</li> </ol>
+       
+    </div>
+    
+    
+    
+    <div id="tabs-4">
+
+      <h2>PACRIM Privileges</h2>
+
+      <ul>
+        <li>Exchange privileges in overseas areas are not automatic.</li>
+        <li>Overseas commanders, in accordance with the host country’s / U.S. international agreements determine who will be extended shopping privileges and access to duty free goods.</li>
+        <li>The Exchange does not determine shopping privileges / access to duty free goods.</li>
+        <li>Specific questions may be directed to the overseas command at the addresses listed at the end of this document.</li>
+    </ul><br />
+ 
+ 
+	<h3>Command Regulations that Govern Overseas Shopping Privileges</h3>
+			<table width="96%" border="0" cellspacing="0" class="tabletwo">
+              <tbody>
+                <tr>
+                  <td width="23%"><h5>CATEGORY</h5></td>
+                  <td align="center" colspan="2"><h5>Active Duty U.S. Military, 
+                  DoD Civilians &amp; dependents</h5></td>
+                  <td width="28%" align="center"><h5>Retired U.S. Military<br />
+                    &amp; Dependents</h5></td>
+                </tr>
+    
+                <tr>
+                  <td><h5>STATUS</h5></td>
+                  <td width="23%" align="center"><h5>Assigned or TDY to<br />
+                    specific country</h5></td>
+                  <td width="26%" align="center"><h5>On leave from <br />
+                    another country</h5></td>
+                  <td align="center"><h5>Residing or Visiting</h5></td>
+                </tr>
+
+                <tr>
+                  <td><strong>Guam</strong></td>
+                  <td align="center">YES</td>
+                  <td align="center">YES</td>
+                  <td align="center">YES</td>
+                </tr>
+                <tr>
+                  <td><strong>Korea </strong></td>
+                  <td align="center">YES <em>(Note 1)</em></td>
+                  <td align="center">YES <em>(Note 2)</em></td>
+                  <td align="center">YES <em>(Note 3)</em></td>
+                </tr>
+                <tr>
+                  <td><strong>Japan / Okinawa</strong></td>
+                  <td align="center">YES <em>(Note 4,5,7)</em></td>
+                  <td align="center">YES <em>(Note 4,5,6,7)</em></td>
+                  <td align="center">YES <em>(Note 8)</em></td>
+                </tr>
+              </tbody>
+            </table>
+         
+            <br /><br />
+            <h5>Notes</h5>
+<ol><li>Ration Control limits apply for dependents on TDY status.</li>
+<li>Accompanied dependents are authorized.  Unaccompanied dependents are not authorized unless have EML orders, active duty dependents only.</li>
+<li>Must be receiving full retirement pay and benefits or 100% disabled.  Dependents residing or visiting with sponsor are authorized.  Dependents residing or visiting without sponsor are not authorized.</li>
+<li>A reservist must be on active duty (orders). Dependents of reservists are authorized only when the reservist is assigned to active duty.</li>
+<li>Military family members are authorized only when the service member is assigned to Japan or present in country.</li>
+<li>DoD civilians on leave NOT authorized.</li>
+<li>DoD civilian dependents NOT authorized unless sponsor is assigned to Japan or physically in country on TDY orders.</li>
+<li>Retiree family members are authorized entry into the store when accompanied by retired service member. However, purchases are limited to those made by the retired service member.</li></ol>
+    
+    <h2>For Further Assistance</h2>
+
+	<table border="0" cellpadding="0" cellspacing="0" width="96%">
+    	<tbody>
+        <tr>
+        	<td valign="top" width="40%"><h5>Guam</h5></td>
+            <td><p>36th MSS / MPF<br />
+            Customer Service<br />
+            Unit 14001<br />
+            APO AP 96543-4001<br />
+            366-2276</p></td>
+        </tr>
+        <tr>
+        	<td valign="top"><h5>Korea</h5></td>
+            <td><p>USFK, J-1<br />
+            Data Management (DM)<br />
+            Unit 15237<br />
+            APO AP 96205-0010<br />
+            Telephone 723-7514 <br />
+            E-mail <a href="mailto:robertsn@korea.army.mil">robertsn@korea.army.mil</a></p></td>
+		</tr>
+ 		</tbody>
+	</table>
+ 
+ 
+	<h3>Japan/Okinawa</h3>
+	<table border="0" cellpadding="0" cellspacing="0" width="96%" >
+		<tbody>
+        <tr>
+        	<td valign="top" width="40%"><h5>Misawa</h5></td>
+            <td><p>Air Force Commander<br />
+            Misawa 35th Support Group / CC<br />
+            Air Base Unit 3517<br />
+            APO AP 96319-5017<br />
+            Telephone 226-9242</p></td>
+		</tr>
+        <tr>
+        	<td valign="top"><h5>Yokota</h5></td>
+            <td><p>Air Force Support Group Commander<br />
+            Yokota Unit 5230<br />
+            Air Base 374th SPTG / CC<br />
+            APO AP 96328<br />
+            E-mail <a href="mailto:374sptg.cc@yokota.af.mil">374sptg.cc@yokota.af.mil</a><br />
+            Telephone 225-9913</p></td>
+		</tr>
+        <tr>
+        	<td valign="top"> <h5>Japan Army Facilities</h5></td>
+            <td><p>Army Garrison Commander<br />
+            U.S. Army Garrison, Japan<br />
+            Unit 45006<br />
+            APO AP 96343-5006</p></td>
+		</tr>
+        <tr>
+        	<td valign="top"><h5>Kadena</h5></td>
+            <td><p>Air Force Department of the Air Force<br />
+            18 SPTG / CC<br />
+            Unit 5133, Box 10<br />
+            APO AP 96368-5133</p></td>
+		</tr>
+        <tr>
+        	<td valign="top"><h5>Okinawa Army Facilities</h5></td>
+            <td><p>Army Installation Coordinator<br />
+            10th Area Support Group<br />
+            ATTN: APAJ-GOF-I<br />
+            Unit 35115<br />
+            APO AP 96376-5115</p></td>
+		</tr>
+        <tr>
+        	<td valign="top"><h5>Okinawa Marine Facilities</h5></td>
+            <td><p>USMC Provost Marshall Office<br />
+            Pass and ID<br />
+            Marine Corps Base<br />
+            Camp Butler<br />
+            FPO AP 96373-5025</p></td>
+		</tr>
+        <tr>
+        	<td valign="top"><h5>Okinawa Naval Facilities</h5></td>
+            <td><p>Navy Commanding Officer<br />
+            CFAO / NAFK<br />
+            PSC 480<br />
+            FPO AP 96370-1180</p></td>
+        </tr>
+      	</tbody>
+    </table>
+    
+    </div>
+    </div>
+   
+</div>
+ 
+</div>
+
+
+            </div>
+    	
+</div>
+<div id="foot-wrap">
+<!--update 9 5 18--->
+ <footer class="clearfix">
+				    <div class="footerContent footerTop" data-nav="footer">
+				        <div class="d-flex footer-content-wrap container px-0">
+				            <div class="footer-left-content mb-0">
+				                <div class="py-1 emailSubscriptionTitle">
+				                    <div><h3 class="aafes-section-title">Sign up for emails!</h3></div>
+				                    <div class="emailSubscriptionText">Get exclusive email-only offers and advance notice about sales &amp; events.</div>
+				                </div>
+				                <div class="aafes-form-field field-email">
+									<div class="subscription-input-container">
+										<div class="subscription-input-icon">
+											<img src="https://shopmyexchange.com/ux-responsive/images/icon-mail-white.svg">
+										</div>
+										<div class="footer-email-subscription-input mb-1">
+											
+											<input type="text" class="ghostTxt footerInput border-0" placeholder="Email Address" id="signUp" onkeypress="searchEmailSignupKeyPress(event, '');" onclick="javascript:disappearEmailText();" onblur="javascript:appearEmailText();">
+											<button class="aafes-btn-sm-alt footer-email-subscription-button border-0" onclick="emailSignupRedirect('');">
+												SUBSCRIBE
+											</button>
+										   
+										</div>
+									</div>
+				                </div>
+				            </div>
+				            <div class="footer-right-content footer-head-sweepstakes">
+				                <!-- BEGIN - sweepstakes - customer content -->
+								<button type="button" onclick="redirectTonewsLetter();" aria-label="Enter To Win Our Sweepstakes!">
+					                <div class="sweepstakes-container">
+					                    <div class="enter-to-win bold">ENTER TO WIN OUR</div>
+					                    <div class="sweepstakes-row">
+					                        <div class="sweepstakes-star-wrap first">
+					                            <div class="sweepstakes-star">
+					                                <img src="https://shopmyexchange.com/ux-responsive/images/icon-star-red.svg">
+					                            </div>
+					                        </div>
+					                        <div class="sweepstakes-text bold">SWEEPSTAKES!</div>
+					                        <div class="sweepstakes-star-wrap second">
+					                            <div class="sweepstakes-star">
+					                                <img src="https://shopmyexchange.com/ux-responsive/images/icon-star-red.svg">
+					                            </div>
+					                        </div>
+					                    </div>
+					                    <div class="additional-details">
+					                        See details and enter for your chance to win!
+					                    </div>
+					                </div>
+				                </button>
+				                <!-- /END - sweepstakes - customer content -->
+				            </div>
+				        </div>
+				    </div>
+				    <div class="footerContent container aafes-container px-0">
+				        <div class="footer-bottom-links mt-2">
+				            <div class="row marginBottom footer-bottom mb-md-1 mb-sm-0 pb-md-1 pb-sm-0">
+				                
+				            	   <div class="d-flex flex-column col-sm-12 col-md-3">
+<div class="footer-links-dropdown linksContainer same-height">
+<div class="footerLinkHeader aafes-footer-link-header-border-top" data-ref="#hiddenLinks1">
+<div>
+<i class="fa fa-caret-right hidden-md-up" aria-hidden="true"></i>
+<i class="fa fa-caret-down hidden-md-up" aria-hidden="true"></i>
+</div>
+<div class="ml-1">
+<h5>Savings</h5>
+</div>
+</div>
+<div class="hiddenLinks ml-1 pb-0" id="hiddenLinks1">
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/savings-center/weekly-ads">Weekly Ads</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/savings-center">Savings Center</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/savings-center/rebates">Rebates</a></div>
+<div class="footerlinks">
+<a href="https://www.shopmyexchange.com/assets/static/store-coupons/docs/QuarterlyCoupons-2020oct.pdf">Restaurant Coupons</a></div>
+<div class="footerlinks">
+<a href="https://www.shopmyexchange.com/s/deal-of-the-day/_/N-2218403556">Deal of the Day</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/coupon-acceptance">Coupon Acceptance Policy</a></div>
+<div class="footerlinks">
+<a href="http://www.aafes.com/exchange-stores/price-match/">Price Match Policy</a></div>
+</div>
+</div>
+<div class="footer-links-dropdown linksContainer">
+<div class="footerLinkHeader aafes-footer-link-header-border-top" data-ref="#hiddenLinks5">
+<div>
+<i class="fa fa-caret-right hidden-md-up" aria-hidden="true"></i>
+<i class="fa fa-caret-down hidden-md-up" aria-hidden="true"></i>
+</div>
+<div class="ml-1">
+<h5>Exchange Credit: Military Star</h5>
+</div>
+</div>
+<div class="hiddenLinks ml-1 pb-0" id="hiddenLinks5">
+<div class="footerlinks">
+<a href="https://www.myecp.com/AccountSummary" target="_blank">Manage Account &amp; Pay Bill</a></div>
+<div class="footerlinks">
+<a href="http://www.myecp.com/CustomerAds/Page/Exchange" target="_blank">Promotions &amp; Offers</a></div>
+<div class="footerlinks">
+<a href="http://www.myecp.com/HtmlPages/CP_MilStartCard" target="_blank">About the <span class="milStar">Military Star</span> Card</a></div>
+<div class="footerlinks">
+<a href="http://www.myecp.com/CardApply" target="_blank">Apply Now</a></div>
+</div>
+</div>
+</div><div class="d-flex flex-column col-sm-12 col-md-3">
+<div class="footer-links-dropdown linksContainer same-height">
+<div class="footerLinkHeader" data-ref="#hiddenLinks2">
+<div>
+<i class="fa fa-caret-right hidden-md-up" aria-hidden="true"></i>
+<i class="fa fa-caret-down hidden-md-up" aria-hidden="true"></i>
+</div>
+<div class="ml-1">
+<h5>Shop My Exchange</h5>
+</div>
+</div>
+<div class="hiddenLinks ml-1 pb-0" id="hiddenLinks2">
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/express">Express Online</a></div>
+<div class="footerlinks">
+<a href="https://odin.aafes.com/customerfeedback">Provide Store Feedback</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/businessdelivery" target="_blank">Business Delivery</a></div>
+<div class="footerlinks">
+<a href="http://www.aafes.com/exchange-stores/Movie-Guide/">Reel Time Movie Guide</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/account/payment-information">Gift Card Balance Check</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/gift-phone-cards">Purchase Gift Cards</a></div>
+</div>
+</div>
+<div class="footer-links-dropdown linksContainer">
+<div class="footerLinkHeader" data-ref="#hiddenLinks6">
+<div>
+<i class="fa fa-caret-right hidden-md-up" aria-hidden="true"></i>
+<i class="fa fa-caret-down hidden-md-up" aria-hidden="true"></i>
+</div>
+<div class="ml-1">
+<h5>Careers</h5>
+</div>
+</div>
+<div class="hiddenLinks ml-1 pb-0" id="hiddenLinks6">
+<div class="footerlinks">
+<a href="https://publicaffairs-sme.com/applymyexchange/">Post-Government Employment</a></div>
+<div class="footerlinks">
+<a href="http://www.applymyexchange.com" target="_blank">Exchange Careers</a></div>
+<div class="footerlinks">
+<a href="https://www.aafes.com/about-exchange/military-retiree-connection/">Military Retiree Connection</a></div>
+<div class="footerlinks">
+<a href="https://www.aafes.com/about-exchange/retired-employees-association/">Retired Employees Association</a></div>
+
+</div>
+</div>
+</div><div class="d-flex flex-column col-sm-12 col-md-3">
+<div class="footer-links-dropdown linksContainer same-height">
+<div class="footerLinkHeader" data-ref="#hiddenLinks3">
+<div>
+<i class="fa fa-caret-right hidden-md-up" aria-hidden="true"></i>
+<i class="fa fa-caret-down hidden-md-up" aria-hidden="true"></i>
+</div>
+<div class="ml-1">
+<h5>Customer Service</h5>
+</div>
+</div>
+<div class="hiddenLinks ml-1 pb-0" id="hiddenLinks3">
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/customer-service/#contact">Contact Us</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/customer-service/faqs">FAQs</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/account/order-history">About My Order</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/customer-service/returns-exchanges">Returns &amp; Exchanges</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/customer-service/shipping-delivery">Shipping &amp; Delivery</a></div>
+<div class="footerlinks">
+<a href="http://www.aafes.com/exchange-stores/overseas/">For Overseas Customers</a></div>
+</div>
+</div>
+<div class="footer-links-dropdown linksContainer">
+<div class="footerLinkHeader" data-ref="#hiddenLinks7">
+<div>
+<i class="fa fa-caret-right hidden-md-up" aria-hidden="true"></i>
+<i class="fa fa-caret-down hidden-md-up" aria-hidden="true"></i>
+</div>
+<div class="ml-1">
+<h5>About the Exchange</h5>
+</div>
+</div>
+<div class="hiddenLinks ml-1 pb-0" id="hiddenLinks7">
+<div class="footerlinks">
+<a href="https://www.aafes.com/about-exchange/exchange-quick-facts/">Exchange Quick Facts</a></div>
+<div class="footerlinks">
+<a href="https://www.aafes.com/about-exchange/exchange-by-the-numbers/">Exchange By The Numbers</a></div>
+<div class="footerlinks">
+<a href="https://publicaffairs-sme.com/Community/" target="_blank">Exchange Hub</a></div>
+<div class="footerlinks">
+<a href="http://publicaffairs-sme.com/FamilyServingFamily/" target="_blank">Exchange Post</a></div>
+<div class="footerlinks">
+<a href="https://www.aafes.com/about-exchange/public-affairs/">Public Affairs </a></div>
+<div class="footerlinks">
+<a href="http://www.aafes.com/about-exchange/doing-business">Doing Business With The Exchange</a></div>
+<div class="footerlinks">
+<a href="http://www.aafes.com/about-exchange/sustainability">Sustainability</a></div>
+<div class="footerlinks">
+<a href="https://www.aafes.com/about-exchange/public-affairs/FOIA/">FOIA/Privacy</a></div>
+
+</div>
+</div>
+</div><div class="d-flex flex-column col-sm-12 col-md-3">
+<div class="footer-links-dropdown linksContainer same-height">
+<div class="footerLinkHeader" data-ref="#hiddenLinks4">
+<div>
+<i class="fa fa-caret-right hidden-md-up" aria-hidden="true"></i>
+<i class="fa fa-caret-down hidden-md-up" aria-hidden="true"></i>
+</div>
+<div class="ml-1">
+<h5>Military life</h5>
+</div>
+</div>
+<div class="hiddenLinks ml-1 pb-0" id="hiddenLinks4">
+<div class="footerlinks">
+<a href="https://publicaffairs-sme.com/Community/befit/">BE FIT</a></div>
+<div class="footerlinks">
+<a href="http://www.aafes.com/about-exchange/family-serving-family/">Family Serving Family</a></div>
+<div class="footerlinks">
+<a href="https://www.aafes.com/about-exchange/homeschooling/">Homeschooling</a></div>
+<div class="footerlinks">
+<a href="http://www.aafes.com/about-exchange/school-lunch-program/">School Meal Program</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/mobile-center">Internet, TV &amp; Phone Service</a></div>
+<div class="footerlinks">
+<a href="https://shopmyexchange.com/PCS">PCS Headquarters</a></div>
+<div class="footerlinks">
+<a href="https://www.aafes.com/exchange-stores/emergency-preparedness/">Emergency Preparedness</a></div>
+</div>
+</div>
+<div class="footer-links-dropdown linksContainer">
+<div class="footerLinkHeader" data-ref="#hiddenLinks8">
+<div>
+<i class="fa fa-caret-right hidden-md-up" aria-hidden="true"></i>
+<i class="fa fa-caret-down hidden-md-up" aria-hidden="true"></i>
+</div>
+<div class="ml-1">
+<h5>Beyond the Exchange</h5>
+</div>
+</div>
+<div class="hiddenLinks ml-1 pd-0" id="hiddenLinks8">
+<div class="footerlinks">
+<a href="https://www.aafes.com/about-exchange/inspector-general/">Office Of Inspector General</a></div>
+<div class="footerlinks">
+<a href="http://www.aafes.com/about-exchange/history-mission">History and Mission</a></div>
+<div class="footerlinks">
+<a href="https://shopcgx.com/" target="_blank">Coast Guard Exchange</a></div>
+<div class="footerlinks">
+<a href="http://www.mymcx.com/" target="_blank">Marine Corps Exchange</a></div>
+<div class="footerlinks">
+<a href="http://www.aafes.com/about-exchange/diversity-and-inclusion">EEO, Diversity &amp; Inclusion</a></div>
+<div class="footerlinks">
+<a href="http://www.aafes.com/Images/AboutExchange/Careers/NoFearAct.pdf" target="_blank">NO FEAR Act Notice</a></div>
+
+</div>
+</div>
+</div>
+				
+				            </div>
+				
+				        </div>
+				
+				        <!-- BEGIN - social icons -->
+                        <div class="footer-social-icons my-1">
+				            <div class="addthis_inline_follow_toolbox"><div id="atftbx" class="at-follow-tbx-element addthis-smartlayers addthis-animated at4-show"><p><span></span></p><div class="addthis_toolbox addthis_default_style"><a class="at300b at-follow-btn" data-svc="facebook" data-svc-id="shopmyexchange" title="Follow on Facebook" href="http://www.facebook.com/shopmyexchange" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(255, 255, 255); line-height: 32px; height: 32px; width: 32px; border-radius: 50%;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-facebook-1" style="fill: rgb(4, 60, 99); width: 32px; height: 32px;" class="at-icon at-icon-facebook"><title id="at-svg-facebook-1">Facebook</title><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span><span class="addthis_follow_label"><span class="at4-visually-hidden">Follow on </span>Facebook</span></a><a class="at300b at-follow-btn" data-svc="twitter" data-svc-id="shopmyexchange" title="Follow on Twitter" href="http://twitter.com/intent/follow?source=followbutton&amp;variant=1.0&amp;screen_name=shopmyexchange" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(255, 255, 255); line-height: 32px; height: 32px; width: 32px; border-radius: 50%;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-twitter-2" style="fill: rgb(4, 60, 99); width: 32px; height: 32px;" class="at-icon at-icon-twitter"><title id="at-svg-twitter-2">Twitter</title><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span><span class="addthis_follow_label"><span class="at4-visually-hidden">Follow on </span>Twitter</span></a><a class="at300b at-follow-btn" data-svc="instagram" data-svc-id="shopmyexchange" title="Follow on Instagram" href="http://instagram.com/shopmyexchange" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(255, 255, 255); line-height: 32px; height: 32px; width: 32px; border-radius: 50%;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-instagram-3" style="fill: rgb(4, 60, 99); width: 32px; height: 32px;" class="at-icon at-icon-instagram"><title id="at-svg-instagram-3">Instagram</title><g><path d="M16 5c-2.987 0-3.362.013-4.535.066-1.17.054-1.97.24-2.67.512a5.392 5.392 0 0 0-1.95 1.268 5.392 5.392 0 0 0-1.267 1.95c-.272.698-.458 1.498-.512 2.67C5.013 12.637 5 13.012 5 16s.013 3.362.066 4.535c.054 1.17.24 1.97.512 2.67.28.724.657 1.337 1.268 1.95a5.392 5.392 0 0 0 1.95 1.268c.698.27 1.498.457 2.67.51 1.172.054 1.547.067 4.534.067s3.362-.013 4.535-.066c1.17-.054 1.97-.24 2.67-.51a5.392 5.392 0 0 0 1.95-1.27 5.392 5.392 0 0 0 1.268-1.95c.27-.698.457-1.498.51-2.67.054-1.172.067-1.547.067-4.534s-.013-3.362-.066-4.535c-.054-1.17-.24-1.97-.51-2.67a5.392 5.392 0 0 0-1.27-1.95 5.392 5.392 0 0 0-1.95-1.267c-.698-.272-1.498-.458-2.67-.512C19.363 5.013 18.988 5 16 5zm0 1.982c2.937 0 3.285.01 4.445.064 1.072.05 1.655.228 2.042.38.514.198.88.437 1.265.822.385.385.624.75.823 1.265.15.387.33.97.38 2.042.052 1.16.063 1.508.063 4.445 0 2.937-.01 3.285-.064 4.445-.05 1.072-.228 1.655-.38 2.042-.198.514-.437.88-.822 1.265-.385.385-.75.624-1.265.823-.387.15-.97.33-2.042.38-1.16.052-1.508.063-4.445.063-2.937 0-3.285-.01-4.445-.064-1.072-.05-1.655-.228-2.042-.38-.514-.198-.88-.437-1.265-.822a3.408 3.408 0 0 1-.823-1.265c-.15-.387-.33-.97-.38-2.042-.052-1.16-.063-1.508-.063-4.445 0-2.937.01-3.285.064-4.445.05-1.072.228-1.655.38-2.042.198-.514.437-.88.822-1.265.385-.385.75-.624 1.265-.823.387-.15.97-.33 2.042-.38 1.16-.052 1.508-.063 4.445-.063zm0 12.685a3.667 3.667 0 1 1 0-7.334 3.667 3.667 0 0 1 0 7.334zm0-9.316a5.65 5.65 0 1 0 0 11.3 5.65 5.65 0 0 0 0-11.3zm7.192-.222a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0" fill-rule="evenodd"></path></g></svg></span><span class="addthis_follow_label"><span class="at4-visually-hidden">Follow on </span>Instagram</span></a><a class="at300b at-follow-btn" data-svc="pinterest" data-svc-id="shopmyexchange" title="Follow on Pinterest" href="http://www.pinterest.com/shopmyexchange" target="_blank"><span class="at-icon-wrapper" style="background-color: rgb(255, 255, 255); line-height: 32px; height: 32px; width: 32px; border-radius: 50%;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="at-svg-pinterest_share-4" style="fill: rgb(4, 60, 99); width: 32px; height: 32px;" class="at-icon at-icon-pinterest_share"><title id="at-svg-pinterest_share-4">Pinterest</title><g><path d="M7 13.252c0 1.81.772 4.45 2.895 5.045.074.014.178.04.252.04.49 0 .772-1.27.772-1.63 0-.428-1.174-1.34-1.174-3.123 0-3.705 3.028-6.33 6.947-6.33 3.37 0 5.863 1.782 5.863 5.058 0 2.446-1.054 7.035-4.468 7.035-1.232 0-2.286-.83-2.286-2.018 0-1.742 1.307-3.43 1.307-5.225 0-1.092-.67-1.977-1.916-1.977-1.692 0-2.732 1.77-2.732 3.165 0 .774.104 1.63.476 2.336-.683 2.736-2.08 6.814-2.08 9.633 0 .87.135 1.728.224 2.6l.134.137.207-.07c2.494-3.178 2.405-3.8 3.533-7.96.61 1.077 2.182 1.658 3.43 1.658 5.254 0 7.614-4.77 7.614-9.067C26 7.987 21.755 5 17.094 5 12.017 5 7 8.15 7 13.252z" fill-rule="evenodd"></path></g></svg></span><span class="addthis_follow_label"><span class="at4-visually-hidden">Follow on </span>Pinterest</span></a><div class="atclear"></div></div></div></div>
+                        </div>
+				        <!-- /END - social icons -->
+				        
+				    </div>
+				    <div class="footerContent footerBottomColor mx-0">
+				        <div class="container">
+				            <div class="footerBottom">
+				                <div class="footerBottomText w-100">
+				                    <div class="col-sm-12 col-md-4 col-lg-4 copyright">©
+				                    	2020 The EXCHANGE<sup>TM</sup> All Rights Reserved.
+				                    </div>
+				                    <div class="col-sm-12 col-md-8 col-lg-8 footerBottomLinks px-0">
+				                        <div class="legalDisclose">
+				                            <div class="lowerTxt mb-sm-1 mb-md-0">
+				                                <a href="https://www.shopmyexchange.com/customer-service/terms-and-conditions" class="lowerLinks">Site Terms &amp; Conditions</a>
+				                            </div>
+				                            <div class="lowerTxt mb-sm-1 mb-md-0">
+				                                <a href="https://www.shopmyexchange.com/customer-service/terms-and-conditions/privacy-act" class="lowerLinks">Privacy Act Statement</a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="footerBottomIcon">
+				                    <div class="col-sm-12 footerBottomImg">
+				                        <!-- BEGIN - McAfee -->
+				                        <a href="https://www.mcafeesecure.com/RatingVerify?ref=www.aafes.com" target="_newWindow">
+				                        <img src="https://images.scanalert.com/meter/www.aafes.com/12.gif" alt="McAfee Secure Logo" oncontextmenu="alert('Copying Prohibited by Law - McAfee Secure is a Trademark of McAfee, Inc.'); return false;">
+										</a>
+				                        <!-- END - McAfee -->
+				                    </div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				<script src="https://www.shopmyexchange.com/ux-custom/common/js/foresee/foresee-trigger.js" type="text/javascript"></script>    
+				<script src="https://www.shopmyexchange.com/ux/themes/main/common/js/legacy/ajax.js"></script>
+				<script src="https://www.shopmyexchange.com/ux-responsive/scripts/responsive-ux_common.js"></script>
+				</footer>
+<div id="back-top"><a href="#b2top"><p>Back to top</p></a></div>
+</div>
+<script>
+if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i)) {
+    var viewportmeta = document.querySelector('meta[name="viewport"]');
+    if (viewportmeta) {
+        viewportmeta.content = 'width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0';
+        document.body.addEventListener('gesturestart', function () {
+            viewportmeta.content = 'width=device-width, minimum-scale=0.25, maximum-scale=1.6';
+        }, false);
+    }
+}</script>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+HTTP/1.1 200 OK
+Date: Sat, 17 Oct 2020 13:16:15 GMT
+Last-Modified: Thu, 08 Oct 2020 14:42:06 GMT
+ETag: "2299-5b129d6054b80"
+Accept-Ranges: bytes
+Content-Length: 8857
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="lt-ie9 lt-ie8 lt-ie7 lt-ie10"> <![endif]-->
+<!--[if IE 7]>
+<html class="lt-ie9 lt-ie8 lt-ie10"> <![endif]-->
+<!--[if IE 8]>
+<html class="lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]>
+<html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js gt-ie9">
+<!--<![endif]-->
+
+<head>
+    <!--
+    Description:
+    Version:
+    Author:
+    //-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- #DNS prefetching -->
+    <!-- //csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers -->
+    <link rel="dns-prefetch" href="//ajax.googleapis.com">
+    <link rel="dns-prefetch" href="//use.typekit.net">
+    <link rel="dns-prefetch" href="//google-analytics.com">
+
+    <!-- #Page Prefetching -->
+    <!-- //calendar.perfplanet.com/2012/speed-up-your-site-using-prefetching -->
+    <link rel="prefetch" href="index.html">
+
+    <!-- #Typekit -->
+    <title>Verizon Wireless National Rewards Center</title>
+    <meta name="description" content="">
+    <meta name="robots" content="all">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Windows 8 Start Tile -->
+    <meta name="application-name" content=""/>
+    <meta name="msapplication-TileColor" content="#"/>
+    <meta name="msapplication-TileImage" content="start.png"/>
+    <link rel="icon" type="image/x-icon" href="//scache.vzw.com/images_b2c/shared/favicon/favicon_4.ico"/>
+    
+    <!-- for nesli -->
+    <base href="/">  
+    <!-- for qa4 -->
+    <!-- <base href="/vzwsplash/"> -->
+
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <!-- verizon header footer -->
+    <link rel="stylesheet" href="//scache.vzw.com/ui-one-digital/gn/build/gnav.css" type="text/css">
+    <!-- end verizon header footer -->
+
+    <script>
+        var zoom = "";
+        if (navigator.userAgent.toLowerCase().indexOf("ipad") > -1) {
+            zoom = ", initial-scale=1";
+        }
+        if (window.matchMedia) {
+            var viewport = document.querySelector("meta[name=viewport]"),
+                isPortrait = !window.matchMedia("(orientation: portrait)").matches,
+                getOrientationValue = function () {
+                    isPortrait = !isPortrait;
+                    if (isPortrait) {
+                        viewport.setAttribute('content', 'width=768' + zoom);
+                    } else {
+                        viewport.setAttribute('content', 'width=1024' + zoom);
+                    }
+                };
+            getOrientationValue();
+            window.addEventListener("orientationchange", getOrientationValue, false);
+        }
+    </script>
+
+
+</head>
+
+<body ng-app="vzwsplash">
+<header>
+    <div id="vzw-gn" class="sticky"></div>
+</header>
+<div class="container">
+    <div class="row-fluid">
+
+        <!-- Example row of columns -->
+        <ng-view></ng-view>
+    </div>
+</div>
+<!-- /row -->
+<div class="container-fluid">
+    <div class="row moreInfo">
+    <div class="grid-footer container noPrint" ng-if="home">
+        <div class="row">
+            <div class="clearBoth">&nbsp;</div>
+            <div class="row" style="text-align:center">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:center">
+                    <a ng-href="/#!/check-my-status" aria-label="check my status" style="text-decoration: none;">
+                        <div class="imgDiv">
+                            <img width="50" height="52" src="./assets/img/Icon_Rebate_Check.png" alt="check status">
+                            <br><br>
+                            <span class="footerlinks footerHover">Check My Status</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:center">
+                    <a ng-href="https://www.verizon.com/support/device-rebate-faqs/" target="_blank" aria-label="Frequently asked questions" style="text-decoration: none;">
+                        <div class="imgDiv">
+                            <img width="50" height="52" src="./assets/img/Icon_Rebate_FAQ.png" alt="FAQs">
+                            <br><br>
+                            <span class="footerlinks footerHover">Access FAQs</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:center">
+                    <a href="https://www.verizon.com/support/contact-us/" target="_blank" aria-label="contact us" style="text-decoration: none;">
+                        <div class="imgDiv">
+                            <img width="50" height="52" src="./assets/img/Icon_Rebate_Contact.png" alt="Contact us">
+                            <br><br>
+                            <span class="footerlinks footerHover">Contact Us</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:center" ng-if="!vzwUP">
+                    <a href="https://login.wirecard.com/login/VZWREBATES" target="_blank"
+                        aria-label="access card account" style="text-decoration: none;">
+                        <div class="imgDiv">
+                            <img width="50" height="52" src="./assets/img/Icon_Rebate_Reward.png"
+                                 alt="Access Card Account">
+                                 <br><br>
+                            <span class="footerlinks footerHover">Access Card Account</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+            </div>
+            <!--
+                <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:center">
+                    <a ng-href="/#!/check-my-status" class="footerHover" title="click here to check my status">
+                        <div class="footerlinks footerHover">Check My Status</div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:center">
+                    <a ng-href="/#!/faqs" title="click here to Freequently asked questions">
+                        <div class="footerlinks footerHover">Access FAQs</div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:center">
+                    <a ng-href="/#!/contactus" title="click here to got to contact us">
+                        <div class="footerlinks footerHover">Contact Us</div>
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="text-align:center" ng-if="!vzwUP">
+                    <a href="https://login.wirecard.com/login/VZWREBATES" target="_blank"
+                       title="cleck here to go to access card account">
+                        <div class="footerlinks footerHover">Access Card Account</div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+            </div>-->
+        </div>
+    </div>
+</div>
+</div>
+<div id="vzw-gf"></div>
+
+<script src="js/vendor.js"></script>
+
+<script src="js/extra.min.js"></script>
+
+<script src="app/app.js"></script>
+<!-- verizon super header footer scripts -->
+<script type="text/javascript" src="//scache.vzw.com/ui-one-digital/gn/build/gnav.js"></script>
+<!-- end verizon super header footer scripts -->
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-66351571-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<!-- code for the screen reader 3rd Party tool-->
+
+ <!-- <script type="text/javascript">
+  var _userway_config = {
+    account: 'NtpbmmUx6d'
+  };
+</script>
+<script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>    -->
+
+
+</body>
+
+</html>
