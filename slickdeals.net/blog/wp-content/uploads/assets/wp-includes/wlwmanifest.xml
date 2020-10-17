@@ -1,58 +1,14 @@
-HTTP/1.1 200 OK
-Content-Type: text/xml
-Accept-Ranges: bytes
-ETag: "962315940"
-Last-Modified: Mon, 09 Sep 2019 23:43:29 GMT
-Referrer-Policy: strict-origin-when-cross-origin
-Content-Length: 1045
-Server: Apache
-Date: Sat, 17 Oct 2020 12:30:16 GMT
+HTTP/1.1 500 Internal Server Error
+Cache-Control: no-cache
+Content-Type: text/html
+Content-Length: 96
+Date: Sat, 17 Oct 2020 16:31:42 GMT
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=MISS
 Server-Timing: edge; dur=64
-Server-Timing: origin; dur=22
+Server-Timing: origin; dur=15007
 Strict-Transport-Security: max-age=86400
 
-<?xml version="1.0" encoding="utf-8" ?>
-
-<manifest xmlns="http://schemas.microsoft.com/wlw/manifest/weblog">
-
-  <options>
-    <clientType>WordPress</clientType>
-	<supportsKeywords>Yes</supportsKeywords>
-	<supportsGetTags>Yes</supportsGetTags>
-  </options>
-
-  <weblog>
-    <serviceName>WordPress</serviceName>
-    <imageUrl>images/wlw/wp-icon.png</imageUrl>
-    <watermarkImageUrl>images/wlw/wp-watermark.png</watermarkImageUrl>
-    <homepageLinkText>View site</homepageLinkText>
-    <adminLinkText>Dashboard</adminLinkText>
-    <adminUrl>
-      <![CDATA[
-			{blog-postapi-url}/../wp-admin/
-		]]>
-    </adminUrl>
-    <postEditingUrl>
-      <![CDATA[
-			{blog-postapi-url}/../wp-admin/post.php?action=edit&post={post-id}
-		]]>
-    </postEditingUrl>
-  </weblog>
-
-  <buttons>
-    <button>
-      <id>0</id>
-      <text>Manage Comments</text>
-      <imageUrl>images/wlw/wp-comments.png</imageUrl>
-      <clickUrl>
-        <![CDATA[
-				{blog-postapi-url}/../wp-admin/edit-comments.php
-			]]>
-      </clickUrl>
-    </button>
-
-  </buttons>
-
-</manifest>
+<html><body><h1>500 Internal Server Error</h1>
+An internal server error occured.
+</body></html>
