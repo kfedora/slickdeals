@@ -1,0 +1,220 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/8.5
+X-AspNetMvc-Version: 
+X-AspNet-Version: 
+X-Powered-By: 
+X-Powered-By: 
+P3P: CP=" BUS CAO CNT COM CUR DEV DSP INT NAV OUR PSA PSD SAM STA TAI UNI "
+X-UA-Compatible: IE=edge
+X-Powered-By: 
+X-ARRServer: PWOLARR09
+X-Akamai-Path-Stats: [3:10611:44389]
+Vary: Accept-Encoding
+Date: Sun, 18 Oct 2020 01:22:52 GMT
+Content-Length: 26832
+Connection: keep-alive
+Set-Cookie: lwp=c=us&l=en&s=dhs; domain=dell.com; path=/; SameSite=None
+Set-Cookie: dell_canary=live;Path=/;Domain=.dell.com;SameSite=None;Secure
+X-Akamai-ERPolicy: Responsive_redirects
+X-Akamai-ERRuleID: 
+Set-Cookie: akavpau_maintenance_vp=1602984472~id=b1803c368a30d908a7d40bc100accfc8; Path=/; Secure; SameSite=None
+
+<!DOCTYPE html>
+
+<html class="ng-scope" xmlns="http://www.w3.org/1999/xhtml" ng-app="dellApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="buildInformation" content="TeamCity Build No: 05.28-20-Rel" />
+    <title>Dell-PMC</title>
+    <style type="text/css">
+        @charset "UTF-8";
+
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+            display: none !important;
+        }
+
+        ng\:form {
+            display: block;
+        }
+
+        .ng-animate-shim {
+            visibility: hidden;
+        }
+
+        .ng-anchor {
+            position: absolute;
+        }
+    </style>
+    <link rel="icon" href="/preferences/SignUp/favicon.ico" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="Composite C1 CMS - Free Open Source from http://composite.net/" name="Generator" />
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+
+    <link rel="icon" href="/preferences/SignUp/favicon.ico" />
+
+    <link type="text/css" rel="stylesheet" href="/preferences/Custom/bower_components/dell-ui-components/dell-ui-bootstrap/dell-ui-bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/preferences/Custom/bower_components/dell-ui-components/dell-ui-components/dell-ui-components.min.css" />
+    <link type="text/css" rel="stylesheet" href="/preferences/Custom/styles/site.css" />
+    <link type="text/css" rel="stylesheet" href="/preferences/Custom/styles/confirm.css" />
+    <link type="text/css" rel="stylesheet" href="/preferences/Custom/styles/signup.css" />
+    <script> var apiBaseUrl = '/preferences/SignUp/api';</script>
+    <script>
+        Dell = window.Dell || {};
+        Dell.Metrics = Dell.Metrics || {};
+        Dell.Metrics.sc = Dell.Metrics.sc || {};
+        Dell.Metrics.sc.country = "us";
+        Dell.Metrics.sc.language = "en"
+        Dell.Metrics.sc.segment = "dhs"
+        Dell.Metrics.sc.customerset = "19";
+        Dell.Metrics.sc.cms = "pmc";
+        Dell.Metrics.sc.pagename = "us:en:dhs:19:pmc:signup";
+        Dell.Metrics.sc.applicationname = "PMC: Preference management SignUp";
+    </script>
+        <script src="//nexus.dell.com/dell/Bootstrap.js"></script>
+</head>
+<body class="ng-scope" ng-controller="MainController"  dir="">
+
+    
+
+
+<div class="ng-cloak page-wrapper">
+			<div>
+				<masthead>
+					<div class="navbar">
+						<div class="container">
+							<div class="navbar-header">
+								<a href="http://www.dell.com" class="navbar-brand" target="_blank"><i class="icon-ui-dell"></i></a>
+								<a href="https://www.dellemc.com/en-us/index.htm" class="navbar-brand pull-right navbar-brand-custom-padding" target="_blank">
+									<div class="navbar-header-dellemc"></div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="masthead-shadow"></div>
+				</masthead>
+				<div class="container">
+					<div class="alert alert-warning alert-session ng-hide" ng-show="sessionNotificationEnabled">
+						<p>Your session is about to timeout and any changes will be lost – please click any key to continue</p>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="container">
+					<div class="signup-form">
+						<div class="header-content">
+							<div class="col-md-8">
+								<h1>Sign Up for Dell Email Updates</h1>
+								<p><a href=" http://i.dell.com/sites/doccontent/legal/terms-conditions/en/Documents/Dell-Technologies-List-for-Privacy-Statement-May-2018.pdf " target="_blank"><u>Dell Technologies and its group of companies </u></a> would love to stay in touch to hear about your needs and to keep you updated on products, services, solutions, exclusive offers and special events.</p>
+							</div>
+							<div class="col-md-4 imgDiv">
+								<div class="row headerbcg"></div>
+							</div>
+						</div>
+						<div class="header-content-mobile">
+							<h1>Sign Up for Dell Email Updates</h1>
+							<p><a href=" http://i.dell.com/sites/doccontent/legal/terms-conditions/en/Documents/Dell-Technologies-List-for-Privacy-Statement-May-2018.pdf " target="_blank"><u>Dell Technologies and its group of companies </u></a> would love to stay in touch to hear about your needs and to keep you updated on products, services, solutions, exclusive offers and special events.</p>
+						</div>
+						<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+							<notification type="success" ng-if="success" collapsible="true" text="Your Changes Have Been Processed Successfully! "></notification>
+							<notification type="warning" ng-if="dataError" text="Error occurred. Kindly contact respective team."></notification>
+							<notification type="warning" ng-if="showEmailErrorMessage || showConfirmEmailErrorMessage" text="Please enter a valid Email Address."></notification>
+							<notification type="warning" ng-if="showConfirmEmailUnmatchErrorMessage" text="Email IDs you have provided do not match."></notification>
+							<notification type="warning" ng-if="showCaptchaErrorMessage" text="Invalid Captcha. Please try again."></notification>
+							<form name="signUpForm" novalidate="novalidate">
+								<div class="row form-content">
+									<div class="form-group space20">
+										<label class="col-md-4 col-sm-12 col-xs-12">First Name</label>
+										<div class="col-md-7 col-sm-12 col-xs-12 padding-mobile"><input class="form-control ng-pristine ng-untouched ng-valid ng-valid-maxlength ng-valid-required" maxlength="150" ng-model="optoutData.fn" /></div>
+									</div>
+									<div class="form-group space20">
+										<label class="col-md-4 col-sm-12 col-xs-12">Last Name</label>
+										<div class="col-md-7 col-sm-12 col-xs-12 padding-mobile"><input class="form-control ng-pristine ng-untouched ng-valid ng-valid-maxlength ng-valid-required" maxlength="150" ng-model="optoutData.ln" /></div>
+									</div>
+									<div class="form-group space20">
+										<label class="col-md-4 col-sm-12 col-xs-12 requiredLabel">Email Address</label>
+										<div class="col-md-7 col-sm-12 col-xs-12 padding-mobile"><input type="email" data-html="true" data-trigger="manual" data-placement="auto top" class="form-control" ng-pattern="emailPattern" ng-required="true" ng-model="optoutData.email" name="email" ng-enter="checkEmailFormat()" ng-blur="checkEmailFormat()" ng-keyup="validateInputs()" /></div>
+									</div>
+									<div class="form-group space20">
+										<label class="col-md-4 col-sm-12 col-xs-12 requiredLabel">Confirm Email Address</label>
+										<div class="col-md-7 col-sm-12 col-xs-12 padding-mobile"><input type="email" data-html="true" data-trigger="manual" data-placement="auto top" class="form-control" ng-pattern="emailPattern" ng-required="true" ng-model="optoutData.confirmEmail" name="confirmEmail" ng-enter="checkEmailFormat()" ng-blur="checkEmailFormat()" ng-keyup="validateInputs()" /></div>
+									</div>
+									<div class="form-group space20">
+										<label class="col-md-4 col-sm-12 col-xs-12 requiredLabel">Captcha</label>
+										<div class="col-md-3 col-sm-6 col-xs-6 padding-mobile"><img id="img_captcha" height="50" width="150" ng-src="data:image/png;base64, {{daisCaptcha.Image}}" alt="captcha" /></div>
+										<div class="col-md-3 col-sm-6 col-xs-6 padding-mobile">
+											<center><a href="javascript:void(0)" ng-click="refreshCaptcha()" title="Refresh captha" tabindex="-1" class="img_refresh_captcha"></a></center>
+										</div>
+									</div>
+									<div class="form-group space20">
+										<label class="col-md-4 col-sm-12 col-xs-12"></label>
+										<div class="col-md-7 col-sm-12 col-xs-12 padding-mobile"><input type="text" maxlength="7" data-trigger="manual" data-placement="auto top" class="form-control" ng-required="true" ng-model="daisCaptcha.Input" name="captcha" ng-keyup="validateInputs()" /></div>
+									</div>
+									<div class="form-group privacyDiv space20 padding-mobile">
+										<p>For more information about how Dell uses, shares, and protects your personal data, see our <a href="{{getDellPrivacyLink()}}" target="_blank"><u>Privacy Statement </u></a>.</p>
+									</div>
+									<div class="form-group space20 padding-mobile">
+										<div class="signup-btn" style="text-align: center;" data-metrics="{&quot;btnname&quot;:&quot;signupemailupdates&quot;}">
+											<button style="display: inline-block; width: auto;" type="button" class="btn btn-block btn-primary" ng-click="signUp()" ng-disabled="disableSubmitButton">Sign Up for Email</button>
+										</div>
+										<div class="signup-btn-mobile" data-metrics="{&quot;btnname&quot;:&quot;signupemailupdates&quot;}">
+											<button type="button" class="btn btn-block btn-primary" ng-click="signUp()" ng-disabled="disableSubmitButton">Sign Up for Email</button>
+										</div>
+									</div>
+									<div ng-class="{loading:callInProgress==true}" class=""></div>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+							<div class="row">
+								<p class="space20 text-center">If you are already receiving great offers from Dell, you may click <a id="eui" href="/preferences"><u>here </u></a> to sign in and update your preference.</p>
+								<br />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<footer class="navbar">
+					<div class="container">
+						<ul class="nav navbar-nav">
+							<li><a target="_blank" href="http://www.dell.com/learn/us/en/uscorp1/site-terms-of-use-copyright">©2018 Dell</a></li>
+							<li><a target="_blank" href="http://www.dell.com/learn/us/en/uscorp1/terms-of-sale">Terms of Sale</a></li>
+							<li><a target="_blank" href="http://www.dell.com/learn/us/en/uscorp1/policies-privacy?c=us&amp;l=en&amp;s=corp">Privacy Statement</a></li>
+							<li><a target="_blank" href="http://www.dell.com/learn/us/en/uscorp1/policies-ads-and-emails">Ads &amp; Emails</a></li>
+							<li><a target="_blank" href="http://www.dell.com/learn/us/en/uscorp1/terms">Legal &amp; Regulatory</a></li>
+							<li><a target="_blank" href="http://www.dell.com/learn/us/en/uscorp1/cr">Corporate Social Responsibility</a></li>
+							<li><a target="_blank" href="http://www.dell.com/support/contents/category/Contact-Information?c=us&amp;l=en">Contact Us</a></li>
+							<li>
+								<div style="height: 35px;"></div>
+							</li>
+						</ul>
+					</div>
+				</footer>
+			</div>
+			<script type="text/javascript">
+			window.countries = [{"value":"Afghanistan","code":"AF"},{"value":"Africa","code":"AA"},{"value":"Albania","code":"AL"},{"value":"Algeria","code":"DZ"},{"value":"Andorra","code":"AD"},{"value":"Angola","code":"AO"},{"value":"Anguilla","code":"AI"},{"value":"Antigua &amp; Barbuda","code":"AG"},{"value":"Argentina","code":"AR"},{"value":"Armenia","code":"AM"},{"value":"Aruba","code":"AW"},{"value":"Asia Pacific","code":"AP"},{"value":"Australia","code":"AU"},{"value":"Austria","code":"AT"},{"value":"Azerbaijan","code":"AZ"},{"value":"Bahamas","code":"BS"},{"value":"Bahrain","code":"BH"},{"value":"Bangladesh","code":"BD"},{"value":"Barbados","code":"BB"},{"value":"Belarus","code":"BY"},{"value":"Belgium","code":"BE"},{"value":"Belize","code":"BZ"},{"value":"Benin","code":"BJ"},{"value":"Bermuda","code":"BM"},{"value":"Bhutan","code":"BT"},{"value":"Bolivia","code":"BO"},{"value":"Bosnia-Herzegovina","code":"BA"},{"value":"Botswana","code":"BW"},{"value":"Brazil","code":"BR"},{"value":"British Virgin Islands","code":"VG"},{"value":"Brunei","code":"BN"},{"value":"Bulgaria","code":"BG"},{"value":"Burkina Faso","code":"BF"},{"value":"Burundi","code":"BI"},{"value":"Cambodia","code":"KH"},{"value":"Cameroon","code":"CM"},{"value":"Canada","code":"CA"},{"value":"Cape Verde","code":"CV"},{"value":"Cayman Islands","code":"KY"},{"value":"Central African Republic","code":"CF"},{"value":"Chad","code":"TD"},{"value":"Chile","code":"CL"},{"value":"China","code":"CN"},{"value":"Christmas Island","code":"CX"},{"value":"CIS","code":"RS"},{"value":"Colombia","code":"CO"},{"value":"Commonweath of Russian States","code":"RS"},{"value":"Comoros","code":"KM"},{"value":"Congo","code":"CG"},{"value":"Cook Islands","code":"CK"},{"value":"Costa Rica","code":"CR"},{"value":"Croatia","code":"HR"},{"value":"Cyprus","code":"CY"},{"value":"Czech Republic","code":"CZ"},{"value":"Democratic Republic of the Congo","code":"CD"},{"value":"Denmark","code":"DK"},{"value":"Djibouti","code":"DJ"},{"value":"Dominica","code":"DM"},{"value":"Dominican Republic","code":"DO"},{"value":"East Timor","code":"TL"},{"value":"Ecuador","code":"EC"},{"value":"Egypt","code":"EG"},{"value":"El Salvador","code":"SV"},{"value":"Emerging Countries ","code":"ED"},{"value":"Equatorial Guinea","code":"GQ"},{"value":"Eritrea","code":"ER"},{"value":"Estonia","code":"EE"},{"value":"Ethiopia","code":"ET"},{"value":"Fiji","code":"FJ"},{"value":"Finland","code":"FI"},{"value":"France","code":"FR"},{"value":"French Guiana","code":"GF"},{"value":"French Overseas Territories","code":"TF"},{"value":"French Polynesia","code":"PF"},{"value":"Gabon","code":"GA"},{"value":"Gambia","code":"GM"},{"value":"Georgia","code":"GE"},{"value":"Germany","code":"DE"},{"value":"Ghana","code":"GH"},{"value":"Greece","code":"GR"},{"value":"Grenada","code":"GD"},{"value":"Guadeloupe","code":"GP"},{"value":"Guam","code":"GU"},{"value":"Guatemala","code":"GT"},{"value":"Guinea","code":"GN"},{"value":"Guinea Bissau","code":"GW"},{"value":"Guyana","code":"GY"},{"value":"Haiti","code":"HT"},{"value":"Honduras","code":"HN"},{"value":"Hong Kong","code":"HK"},{"value":"Hungary","code":"HU"},{"value":"Iceland","code":"IS"},{"value":"India","code":"IN"},{"value":"Indonesia","code":"ID"},{"value":"Iraq","code":"IQ"},{"value":"Ireland","code":"IE"},{"value":"Israel","code":"IL"},{"value":"Italy","code":"IT"},{"value":"Ivory Coast","code":"CI"},{"value":"Jamaica","code":"JM"},{"value":"Japan","code":"JP"},{"value":"Jordan","code":"JO"},{"value":"Kazakhstan","code":"KZ"},{"value":"Kenya","code":"KE"},{"value":"Kiribati","code":"KI"},{"value":"Korea","code":"KR"},{"value":"Kosovo","code":"KV"},{"value":"Kuwait","code":"KW"},{"value":"Kyrgyzstan","code":"KG"},{"value":"Latin America &amp; Caribbean","code":"LA"},{"value":"Latvia","code":"LV"},{"value":"Lebanon","code":"LB"},{"value":"Lesotho","code":"LS"},{"value":"Liberia","code":"LR"},{"value":"Libya","code":"LY"},{"value":"Lithuania","code":"LT"},{"value":"Luxembourg","code":"LU"},{"value":"Macedonia","code":"MK"},{"value":"Madagascar","code":"MG"},{"value":"Malawi","code":"MW"},{"value":"Malaysia","code":"MY"},{"value":"Maldives","code":"MV"},{"value":"Mali","code":"ML"},{"value":"Malta","code":"MT"},{"value":"Martinique","code":"MQ"},{"value":"Mauritania","code":"MR"},{"value":"Mauritius","code":"MU"},{"value":"Mayotte","code":"YT"},{"value":"Mexico","code":"MX"},{"value":"Middle East","code":"AE"},{"value":"Moldova","code":"MD"},{"value":"Mongolia","code":"MN"},{"value":"Montenegro","code":"CS"},{"value":"Montserrat","code":"MS"},{"value":"Morocco","code":"MA"},{"value":"Mozambique","code":"MZ"},{"value":"Myanmar","code":"MM"},{"value":"Namibia","code":"NA"},{"value":"Nauru","code":"NR"},{"value":"Nepal","code":"NP"},{"value":"Netherlands","code":"NL"},{"value":"Netherlands Antilles/Curacao","code":"AN"},{"value":"New Caledonia","code":"NC"},{"value":"New Zealand","code":"NZ"},{"value":"Nicaragua","code":"NI"},{"value":"Niger","code":"NE"},{"value":"Nigeria","code":"NG"},{"value":"Northern Marianas Island","code":"MP"},{"value":"Norway","code":"NO"},{"value":"Oman","code":"OM"},{"value":"Pakistan","code":"PK"},{"value":"Palau","code":"PW"},{"value":"Panama","code":"PA"},{"value":"Papua New Guinea","code":"PG"},{"value":"Paraguay","code":"PY"},{"value":"Peru","code":"PE"},{"value":"Philippines","code":"PH"},{"value":"Poland","code":"PL"},{"value":"Portugal","code":"PT"},{"value":"Puerto Rico","code":"PR"},{"value":"Qatar","code":"QA"},{"value":"Reunion","code":"RE"},{"value":"Romania","code":"RO"},{"value":"Russia","code":"RU"},{"value":"Rwanda","code":"RW"},{"value":"Samoa","code":"WS"},{"value":"Saudi Arabia","code":"SA"},{"value":"Senegal","code":"SN"},{"value":"Serbia","code":"YU"},{"value":"Seychelles","code":"SC"},{"value":"Sierra Leone","code":"SL"},{"value":"Singapore","code":"SG"},{"value":"Slovakia","code":"SK"},{"value":"Slovenia","code":"SI"},{"value":"Solomon Island","code":"SB"},{"value":"Somalia","code":"SO"},{"value":"South Africa","code":"ZA"},{"value":"Spain","code":"ES"},{"value":"Sri Lanka","code":"LK"},{"value":"St. Kitts &amp; Nevis","code":"KN"},{"value":"St. Lucia","code":"LC"},{"value":"St. Vincent &amp; Grenadines","code":"VC"},{"value":"Suriname","code":"SR"},{"value":"Swaziland","code":"SZ"},{"value":"Sweden","code":"SE"},{"value":"Switzerland","code":"CH"},{"value":"Taiwan","code":"TW"},{"value":"Tajikistan","code":"TJ"},{"value":"Tanzania","code":"TZ"},{"value":"Thailand","code":"TH"},{"value":"Togo","code":"TG"},{"value":"Tonga","code":"TO"},{"value":"Trinidad &amp; Tobago","code":"TT"},{"value":"Tunisia","code":"TN"},{"value":"Turkey","code":"TR"},{"value":"Turkmenistan","code":"TM"},{"value":"Turks &amp; Caicos Islands","code":"TC"},{"value":"Tuvalu","code":"TV"},{"value":"Uganda","code":"UG"},{"value":"Ukraine","code":"UA"},{"value":"United Arab Emirates","code":"AE"},{"value":"United Kingdom","code":"UK"},{"value":"United States","code":"US"},{"value":"Uruguay","code":"UY"},{"value":"US Virgin Islands","code":"VI"},{"value":"Uzbekistan","code":"UZ"},{"value":"Vanuatu","code":"VU"},{"value":"Venezuela","code":"VE"},{"value":"Vietnam","code":"VN"},{"value":"Yemen","code":"YE"},{"value":"Zambia","code":"ZM"},{"value":"Zimbabwe","code":"ZW"}];
+			window.languages = [{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"ru"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"de"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"ru"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"nl"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"pt"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"ru"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"fr"},{"value":null,"code":"de"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"zh"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"cs"},{"value":null,"code":"de"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"da"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"ar"},{"value":null,"code":"fr"},{"value":null,"code":"ar"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fi"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"ru"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"el"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"zh"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"hu"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"he"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"it"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"ja"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"ru"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"ko"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"ru"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"fr"},{"value":null,"code":"ro"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"nl"},{"value":null,"code":"no"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"es"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"pl"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"pt"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"ro"},{"value":null,"code":"ru"},{"value":null,"code":"ru"},{"value":null,"code":"ru"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"sv"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"sk"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"ru"},{"value":null,"code":"en"},{"value":null,"code":"ru"},{"value":null,"code":"ar"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"tr"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"zh"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"uk"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"ru"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"es"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"ar"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"},{"value":null,"code":"fr"},{"value":null,"code":"en"}];
+		</script>
+		</div>
+
+
+
+    
+    <script>
+        window.token = { "token": "JeGk7FLFAh2VzpSd3ll" };
+        window.customerSettings = {
+            "country": "us",
+            "language": "en",
+            "segment": "dhs",
+            "campaignId": "",
+            "websourceId": "8903",
+            "sourceSystemCode": "Email_Sign_Up"
+        };
+    </script>
+    <script src="/preferences/SignUp/bundles/signup?v=YVPbNmCcKo31ZmVb6S9lEDzM1BgAQnHyq6C9QzeSGHg1"></script>
+
+
+</body>
+</html>

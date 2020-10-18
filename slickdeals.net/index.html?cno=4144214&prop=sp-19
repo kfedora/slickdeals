@@ -1,14 +1,1445 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
+HTTP/1.1 200 OK
+Date: Sun, 18 Oct 2020 01:10:26 GMT
 Content-Type: text/html
-Content-Length: 96
-Date: Sat, 17 Oct 2020 23:37:58 GMT
+Transfer-Encoding: chunked
 Connection: keep-alive
-Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=66
-Server-Timing: origin; dur=15008
-Strict-Transport-Security: max-age=86400
+Server: Bob
+X-ServiceName: Bob
+Content-Security-Policy: frame-ancestors 'self' *.shutterfly.com *.tinyprints.com *.onehippo.io;
+Access-Control-Allow-Origin: *
+service-uuid: bob-20201013-1093-ae4f191a-875e39256
+cache-control: no-cache, no-store, max-age=0
+expires: 0
 
-<html><body><h1>500 Internal Server Error</h1>
-An internal server error occured.
-</body></html>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script>
+      (function() {
+        var attempt = 0;
+        var pageViewCalled = false;
+        function InjectHook() {
+          if (window.__satelliteLoaded) {
+            var originalTrack = window._satellite.track;
+            window._satellite.track = function() {
+              var args = [].slice.apply(arguments);
+              if (args[0] === 'delayed_page_load') {
+                pageViewCalled = true;
+              }
+              window._satellite.pageBottom();
+              return originalTrack.apply(window._satellite, args);
+            }
+            window.addEventListener("load",
+              function(event) {
+                setTimeout(function() {
+                  if (!pageViewCalled) {
+                    originalTrack('delayed_page_load');
+                  }
+                }, 5000);
+              }
+            );
+          } else {
+            attempt++;
+            if (attempt < 40) {
+              setTimeout(InjectHook, 50);
+            } else {
+              console.warn('failed to hook satellite');
+            }
+          }
+        }
+        InjectHook();
+      })();
+      // default DTL
+      window.SFLY_DTL = {
+        delayedPageLoad: true,
+        page: {
+          pageInfo: {
+            pageName: window.location.pathname,
+            pageType: 'home',
+            siteExperience: 'd.web',
+          },
+        },
+        session: {
+          partner: {
+            id: 'SFLY',
+            subId: 'WEB',
+          },
+          visitorDetails: {
+            customerId: '',
+            visitorId: '22384032-6984-4656-a481-0f943fa8f150',
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" crossorigin href="//cdn.staticsfly.com">
+    <link rel="preconnect" crossorigin href="//cdn-image.staticsfly.com">
+    <link rel="preconnect" crossorigin href="//api2.shutterfly.com">
+    <link rel="preconnect" crossorigin href="//accounts.shutterfly.com">
+    <link rel="preconnect" crossorigin href="//assets.adobedtm.com">
+    <link rel="preconnect" crossorigin href="//cld1.staticsfly.com">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="canonical" href="https://www.shutterfly.com/">
+    <link rel="SHORTCUT ICON" href="https://www.shutterfly.com/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="docType" content="html5">
+    <meta name="description" content="Create photo books, wall art, photo cards and invitations, personalized gifts, and photo prints for friends and family at Shutterfly.com. Send life updates with graduation announcements, save the date cards, birth announcements, and wedding invitations. Shop canvas prints and home decor in a variety of sizes. Create holiday and thank you cards, calendars, and photo blankets.">
+    <meta name="keywords" content="photo books, wall art, prints, canvas prints, photo gifts, cards, personalized gifts, graduation announcements, wedding invitations, save the date cards, photo blankets, photo mugs, custom mugs, home decor, framed prints, photo prints, metal prints, graduation invitations, thank you cards, baby shower invitations, bridal shower invitations, birth announcements, personalized stationery, wedding photo books, holiday cards, print photos, calendars">
+    <meta name="google-site-verification" content="xjozBocX2i5-04z8llDaXygqDekBiv05hGeJSW7-lvo">
+    <title>Shutterfly: Photo Books, Cards, Prints, Wall Art, Gifts, Wedding</title>
+    <script src="https://cld1.staticsfly.com/uigpolyfills.abaaa2fd54.js"></script><script>
+      window.BSL = {
+        errs: [],
+        rejects: [],
+        onError: function(e) {
+          if (window.BSL && window.BSL.errs) {
+            window.BSL.errs.push(e);
+          } else {
+            console.error(e)
+          };
+        },
+        onReject: function(e) {
+          if (window.BSL && window.BSL.rejects) {
+            window.BSL.rejects.push(e);
+          } else {
+            console.error(e)
+          };
+        }
+      };
+      window.addEventListener('error', function() {
+        try {
+          BSL.onError
+        } catch (e) {}
+      });
+      window.addEventListener('unhandledrejection', function() {
+        try {
+          BSL.onReject
+        } catch (e) {}
+      });
+    </script>
+    <script>
+      window.SFLY_DTL = {
+        delayedPageLoad: !0,
+        page: {
+          pageInfo: {
+            pageName: "home page",
+            pageType: "home",
+            siteSection: "home page",
+            storeType: "shutterfly"
+          }
+        }
+      }, window.targetGlobalSettings = {
+        overrideMboxEdgeServer: !0
+      }
+    </script>
+    <meta app="apcstatic" fragment-name="main" html="&lt;script src=&quot;https://cdn.staticsfly.com/apcstatic/builds/apc-20201015-513-1064d4a3-c549ad1b5f/dist/APCContainer.bundle.js&quot;&gt;&lt;/script&gt;">
+<!-- ContentSpaceName: prospect_home_marquee_css_cs -->
+
+    <!-- HTML Content Wrapper -->
+
+    <!-- resolve space --> <!-- /HTML Content Wrapper -->
+
+    <!-- End of ContentSpaceName: prospect_home_marquee_css_cs -->
+    <meta bob use-adobe-launch>
+    <script src="https://cld1.staticsfly.com/uigreact.6919f800d0.js"></script>
+    <link href="https://cld1.staticsfly.com/home2020.6756c1434e.css" rel="stylesheet">
+    <meta name="user-browser" content="undefined undefined">
+    <meta name="user-device" content="DESKTOP">
+    <meta name="user-platform" content="linux undefined">
+    <meta name="bob-sso-sync" content="data-needed">
+    <script>
+      var MasterTmsUdo = {
+        "appserverUrl": "www.shutterfly.com",
+        "browser": "undefined undefined",
+        "campaignid": "",
+        "categoryCode": null,
+        "categoryName": null,
+        "country": "US",
+        "currency": "USD",
+        "customerLoggedIn": false,
+        "device": "DESKTOP",
+        "deviceName": "COMPUTER",
+        "escapedPagename": "_entry_home",
+        "isConversion": 0,
+        "isPaid": 0,
+        "load_criteo": true,
+        "pageType": "home",
+        "partnerid": "SFLY",
+        "partnersubid": "WEB",
+        "platform": "linux undefined",
+        "productId": null,
+        "productName": null,
+        "refid": "",
+        "searchTerm": "home",
+        "sessionId": "",
+        "siteExperience": "d.web",
+        "skuCode": null,
+        "storeType": "shutterfly",
+        "uid": null,
+        "userId": null,
+        "visitorid": "22384032-6984-4656-a481-0f943fa8f150",
+        "dotomi_abandon": {
+          "DTMC_CUSTOMER_TYPE": false,
+          "DTMC_PLATFORM": "COMPUTER",
+          "DTMC_PROD_ID": null,
+          "DTM_CONV_VAL": null,
+          "DTM_ITEMS": null,
+          "DTM_USER_ID": "22384032-6984-4656-a481-0f943fa8f150",
+          "DTMC_SUB_CATEGORY": null,
+          "DTMC_TRANSACTION_ID": null
+        }
+      }
+    </script>
+    <meta name="tealium-script-src" content="https://tags.tiqcdn.com/utag/sfly/main/prod/utag.js">
+    <script>
+      (function() {
+        if (window.BOOMR && window.BOOMR.version) {
+          return;
+        }
+        var dom, doc, where, iframe = document.createElement('iframe');
+        iframe.src = "javascript:false";
+        iframe.title = "";
+        iframe.role = "presentation";
+        (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+        where = document.getElementsByTagName('script')[0];
+        where.parentNode.insertBefore(iframe, where);
+        try {
+          doc = iframe.contentWindow.document;
+        } catch (e) {
+          dom = document.domain;
+          iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+          doc = iframe.contentWindow.document;
+        }
+        doc.open()._l = function() {
+          var js = this.createElement("script");
+          if (dom) this.domain = dom;
+          js.id = "boomr-if-as";
+          js.defer = true;
+          js.src = '//c.go-mpulse.net/boomerang/' +
+            'L36VQ-JFTDE-3P6NR-B6Q8U-8ZNC6';
+          BOOMR_lstart = new Date().getTime();
+          this.body.appendChild(js);
+        };
+        doc.write('<body onload="document._l();">');
+        doc.close();
+      })();
+    </script>
+    <script id="fs">
+      function getCookieFS(name) {
+        try {
+          var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+          if (match !== null && match.length === 3) {
+            return match[2];
+          } else {
+            return null;
+          }
+        } catch (err) {
+          console.warn("FS: unexpected exception in getcookie : " + err);
+          return null;
+        }
+      }
+      if (getCookieFS('FSreal') !== null) {
+        // FS code start
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = 'HZB6B';
+        window['_fs_namespace'] = 'FS';
+        (function(m, n, e, t, l, o, g, y) {
+          if (e in m) {
+            if (m.console && m.console.log) {
+              m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+            }
+            return;
+          }
+          g = m[e] = function(a, b, s) {
+            g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+          };
+          g.q = [];
+          o = n.createElement(t);
+          o.defer = 1;
+          o.src = 'https://' + _fs_host + '/s/fs.js';
+          y = n.getElementsByTagName(t)[0];
+          y.parentNode.insertBefore(o, y);
+          g.identify = function(i, v, s) {
+            g(l, {
+              uid: i
+            }, s);
+            if (v) g(l, v, s)
+          };
+          g.setUserVars = function(v, s) {
+            g(l, v, s)
+          };
+          g.event = function(i, v, s) {
+            g('event', {
+              n: i,
+              p: v
+            }, s)
+          };
+          g.shutdown = function() {
+            g("rec", !1)
+          };
+          g.restart = function() {
+            g("rec", !0)
+          };
+          g.consent = function(a) {
+            g("consent", !arguments.length || a)
+          };
+          g.identifyAccount = function(i, v) {
+            o = 'account';
+            v = v || {};
+            v.acctId = i;
+            g(o, v)
+          };
+          g.clearUserCookie = function() {};
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+      }
+    </script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.2b0db7633f.js"></script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.2ac3b5b3d4.js"></script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.40e1102e7c.js"></script>
+    <meta name="web-server" content="bob" server-uuid="bob-20201013-1093-ae4f191a-875e39256" rendered-at="Sat Oct 17 2020 18:10:22 GMT-0700 (Pacific Daylight Time)">
+    <meta name="sfly-env" content="production">
+    <meta name="main-client-version" app="home-2020" content="home-20201008-234-40ab1c3c-a676a8fde" version-source="main">
+    <meta name="sfly-brand" content="SFLY">
+    <script>
+      let loadScript = (src) => {
+        return new Promise(function(resolve, reject) {
+          let s = window.document.createElement("SCRIPT");
+          s.onload = () => resolve(s);
+          s.onerror = () => reject(new Error(src));
+          s.src = src;
+          // don't bounce to global handler on 404.
+          s.addEventListener('error', function() {});
+          window.document.head.append(s);
+        });
+      }
+      if (!window.load_adobe_analytics) {
+        window.load_adobe_analytics = {};
+      }
+      if (!window.load_adobe_analytics.usingLaunch) {
+        window.load_adobe_analytics.usingLaunch = true;
+      }
+      let successCallback = (result) => {
+        console.log("//assets.adobedtm.com/528526b3f782/ddfab9399b13/launch-1480b4cd5321.min.js loaded.");
+      }
+      let failureCallback = (error) => {
+        console.log("load failed: " + error.message);
+      }
+      loadScript("//assets.adobedtm.com/528526b3f782/ddfab9399b13/launch-1480b4cd5321.min.js").then(successCallback, failureCallback);
+    </script>
+  </head>
+  <body class="home2020">
+    <div class="body-wrapper">
+      <div class="body-wrapper">
+        <div id="header_container_element"></div>
+        <div id="univeral-header-promo-ssr" style="display:none">
+
+          <!-- ContentSpaceName: home_prospect_promo_cs -->
+
+          <!-- HTML Content Wrapper -->
+          <style type="text/css">
+            a[data-link-id=Holiday],
+            a[data-link-id=Holiday] span {
+              color: #c21700
+            }
+            #banner-wrapper a {
+              color: #000
+            }
+            #headerTestContainer br {
+              display: none
+            }
+          </style>
+          <div id="banner-container">
+            <div id="banner-wrapper" style="left:0;right:0">
+              <div class="desktop-promo">
+                <div id="offer-banner">
+                  <div id="banner-content">
+                    <div class="promo-flex-wrapper" style="display:flex;justify-content:space-between">
+                      <div id="desktop-offer-banner-1" class="desktop-offer-banner avenir85Heavy" style="margin-right:10px"><a href="/promotions_details/#economy" target="_blank" id="desktop-offer-url-1" data-link-id="::" data-link-module-position="1" data-link-position="1"><span class="hidden" id="desktop-offer-expiration-1">1/5/20</span> <span></span> <span class="avenir95Black orangecontent">FREE SHIPPING</span> <span>on orders $39+* code: SHIP39</span><br><span class="avenir95Black orangecontent">FREE SHIPPING</span> <span>on cards* code: BESTCARDS</span> <span class="hidden" id="desktop-offer-code-1">SHIP39</span> <span class="hidden" id="desktop-offer-promoid-1">40ALL_DEFAULT</span></a></div>
+                      <div id="desktop-offer-banner-2" class="desktop-offer-banner avenir85Heavy" style="margin-right:10px"><a href="/special-offers" target="_blank" id="desktop-offer-url-2" data-link-id="::" data-link-module-position="1" data-link-position="2"><span>Ends Sun, Oct 18</span> <span class="hidden" id="desktop-offer-expiration-2">1/5/20</span> <span class="avenir95Black orangecontent">50% OFF PREMIUM CARDS &amp; HARDCOVER BOOKS + 40% OFF ALMOST EVERYTHING*</span> <span>no code needed</span> <span class="hidden" id="desktop-offer-code-2">no code needed</span> <span class="hidden" id="desktop-offer-promoid-2">no code needed</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mobile-promo mobile-only promo-type" data-promo-type="mobile">
+                <div class="global-promo mobile-offer-banner" id="mobile-offer-banner-1"><a href="/special-offers" id="mobile-offer-url-1" data-link-id="::" data-link-module-position="1" data-link-position="3"><span class="hidden" id="mobile-offer-expiration-1">1/5/20</span>
+                    <div class="fleft offer">FREE SHIPPING on orders $39+*</div>
+                    <div class="fleft seperator">|</div><span class="fleft offerCode">code: SHIP39</span> <span class="hidden" id="mobile-offer-code-1">SHIP39</span> <span class="hidden" id="mobile-offer-promoid-1">40ALL_DEFAULT</span></a></div>
+              </div>
+            </div>
+          </div> <!-- /HTML Content Wrapper -->
+
+          <!-- End of ContentSpaceName: home_prospect_promo_cs -->
+        </div>
+        <link href="https://cld1.staticsfly.com/universalheader.b748c916a9.css" rel="stylesheet">
+        <script src="https://cld1.staticsfly.com/universalheader.2284815458.js"></script>
+        <script src="https://cld1.staticsfly.com/universalheader.f87db7a1e3.js"></script>
+        <script src="https://cld1.staticsfly.com/universalheader.e95686c97a.js"></script>
+        <main id="main-content">
+          <h1 class="hidden-accessible">Shutterfly: Photo Books, Cards, Prints, Wall Art, Gifts, Wedding</h1>
+          <div class="user-content hide">
+            <div class="container-image promo-banner-top">
+
+              <!-- ContentSpaceName: member_home_promo_banner_top_cs -->
+
+              <!-- HTML Content Wrapper -->
+              <style scoped>
+                .special-offers {
+                  background-size: cover;
+                  display: block;
+                  min-height: 90px;
+                  display: flex;
+                  align-items: center;
+                  width: 100%
+                }
+                .special-offers picture {
+                  margin: auto;
+                  width: 100%
+                }
+                @media(min-width:320px) {
+                  .special-offers picture img {
+                    object-fit: cover;
+                    width: 100%
+                  }
+                }
+                @media(max-width:780px) {
+                  .special-offers {
+                    background-image: none
+                  }
+                }
+              </style><a href="/special-offers" class="promotions-details" data-link-id="P284208_SY_HP_SMB_1015.gif::" data-link-module="hp-promo-banner-above-hero" data-link-module-type="promo-banner" data-link-module-position="2" data-link-position="1">
+                <picture>
+                  <source media="(max-width: 780px)" data-srcset="//cdn-image.staticsfly.com/i/mobile/sales/P284208_SY_SO_smb_m_1015.gif"><img data-src="//cdn-image.staticsfly.com/i/home/P284208_SY_HP_SMB_1015.gif" alt="Offers Galore! Get 50% Off Premium Cards, 40% Off Almost Everything, Free 8x11 Wall Calendar, and Free Shipping on Cards! Offers end Sunday, October 18th."></picture>
+              </a> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: member_home_promo_banner_top_cs -->
+            </div>
+            <div class="hero-grid">
+              <div class="container-image hero-image split">
+
+                <!-- ContentSpaceName: sfly_hp_hero_small_apc_cs -->
+
+                <!-- HTML Content Wrapper -->
+                <style>
+                  .hero h1 {
+                    color: #fff
+                  }
+                  .hero .copy-block .cta-btn {
+                    background-color: #193A61
+                  }
+                  @media screen and (max-width:768px) {
+                    .hero {
+                      margin-bottom: 5rem
+                    }
+                  }
+                </style>
+                <div class="hero">
+                  <picture>
+                    <source media="(max-width: 767px)" data-srcset="https://cdn-image.staticsfly.com/i/mobile/P266566_SY_HP_hero_m_1013_v2.jpg"><img data-src="//cdn-image.staticsfly.com/i/home/P266655_SY_HP_ACP_hero_1013_V2.jpg" style="width:100%" id="img-hero" alt></picture>
+
+                  <!--  <div class="copy-container copy-left">
+        <div class="copy-block">
+            <h1>Cozy up with
+                <br>favorite photos</h1>
+            <span class="cta-btn">SHOP PHOTO BOOKS</span>
+        </div>
+    </div>--> <a href="/cards-stationery/christmas-cards" data-link-id="::" data-link-module="hp-hero" data-link-module-type="hp-hero" data-link-module-position="3" data-link-position="1"></a>
+                </div> <!-- /HTML Content Wrapper -->
+
+                <!-- End of ContentSpaceName: sfly_hp_hero_small_apc_cs -->
+                <div id="apc-homepage-0" class="mg-main-container popup-modal"></div>
+              </div>
+              <div class="container-image hero-image full">
+
+                <!-- ContentSpaceName: member_home_hero_image_apc_cs -->
+
+                <!-- HTML Content Wrapper -->
+                <div id="hero-main" class="hero-main without-apc"><a href="/cards-stationery/christmas-cards?ASSETID=P266566_SY_HP_hero_1013" data-link-id="P266566_SY_HP_hero_1013_V2.jpg::" data-link-module="hp-hero" data-link-module-type="hp-hero" data-link-module-position="4" data-link-position="1">
+                    <picture id="hero-main-default">
+                      <source media="(max-width: 780px)" data-srcset="//cdn-image.staticsfly.com/i/mobile/P266566_SY_HP_hero_m_1013_v2.jpg"><img data-src="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_hero_1013_V2.jpg?impolicy=resize&amp;width=1600" alt="christmas cards"></picture>
+
+                    <!--- APC ADOBE TEST -->
+                    <picture id="hero-main-alt">
+                      <source media="(max-width: 780px)" data-srcset="//cdn-image.staticsfly.com/i/mobile/P266566_SY_HP_hero_m_1013_v2.jpg"><img data-src="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_hero_1013_V2.jpg?impolicy=resize&amp;width=1600" alt="christmas cards"></picture>
+
+                    <!--- // APC ADOBE TEST -->
+                  </a></div> <!-- /HTML Content Wrapper -->
+
+                <!-- End of ContentSpaceName: member_home_hero_image_apc_cs -->
+              </div>
+              <div class="container-image promo-banner-bottom">
+
+                <!-- ContentSpaceName: member_prospect_promo_banner_bottom_cs -->
+
+                <!-- HTML Content Wrapper -->
+                <picture>
+                  <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/landingpages/2020/P273201_HP_banner_0703.jpg?impolicy=resize&amp;width=992">
+                  <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/landingpages/2020/P273201_HP_banner_0703.jpg?impolicy=resize&amp;width=1200">
+                  <img alt="Delivery carriers experiencing intermittent delays. Most orders arrive by delivery time shown in cart." data-src="//cdn-image.staticsfly.com/i/landingpages/2020/P273201_HP_banner_0703.jpg?impolicy=resize&amp;width=1600">
+                </picture> <!-- /HTML Content Wrapper -->
+
+                <!-- End of ContentSpaceName: member_prospect_promo_banner_bottom_cs -->
+              </div>
+            </div>
+          </div>
+          <div class="prospect-content">
+            <div class="container-image promo-banner-top">
+
+              <!-- ContentSpaceName: member_prospect_promo_banner_top_cs -->
+
+              <!-- HTML Content Wrapper -->
+              <style scoped>
+                .special-offers {
+                  background-size: cover;
+                  display: block;
+                  min-height: 90px;
+                  display: flex;
+                  align-items: center;
+                  width: 100%
+                }
+                .special-offers picture {
+                  margin: auto;
+                  width: 100%
+                }
+                @media(min-width:320px) {
+                  .special-offers picture img {
+                    object-fit: cover;
+                    width: 100%
+                  }
+                }
+                @media(max-width:780px) {
+                  .special-offers {
+                    background-image: none
+                  }
+                }
+              </style><a href="/special-offers" class="promotions-details" data-link-id="P284208_SY_HP_SMB_1015.gif::" data-link-module="hp-promo-banner-above-hero" data-link-module-type="promo-banner" data-link-module-position="6" data-link-position="1">
+                <picture>
+                  <source media="(max-width: 780px)" data-srcset="//cdn-image.staticsfly.com/i/mobile/sales/P284208_SY_SO_smb_m_1015.gif"><img data-src="//cdn-image.staticsfly.com/i/home/P284208_SY_HP_SMB_1015.gif" alt="Offers Galore! Get 50% Off Premium Cards, 40% Off Almost Everything, Free 8x11 Wall Calendar, and Free Shipping on Cards! Offers end Sunday, October 18th."></picture>
+              </a> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: member_prospect_promo_banner_top_cs -->
+            </div>
+            <div class="container-image hero-image">
+
+              <!-- ContentSpaceName: member_prospect_hero_image_apc_cs -->
+
+              <!-- HTML Content Wrapper -->
+              <div id="hero-main" class="hero-main without-apc"><a href="/cards-stationery/christmas-cards?ASSETID=P266566_SY_HP_hero_1013" data-link-id="P266566_SY_HP_hero_1013_V2.jpg::" data-link-module="hp-hero" data-link-module-type="hp-hero" data-link-module-position="7" data-link-position="1">
+                  <picture>
+                    <source media="(max-width: 780px)" data-srcset="//cdn-image.staticsfly.com/i/mobile/P266566_SY_HP_hero_m_1013_v2.jpg"><img data-src="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_hero_1013_V2.jpg?impolicy=resize&amp;width=1600" id="hero-main-default" alt="christmas cards"></picture>
+                </a></div> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: member_prospect_hero_image_apc_cs -->
+            </div>
+            <div class="container-image promo-banner-bottom">
+
+              <!-- ContentSpaceName: member_prospect_promo_banner_bottom_cs -->
+
+              <!-- HTML Content Wrapper -->
+              <picture>
+                <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/landingpages/2020/P273201_HP_banner_0703.jpg?impolicy=resize&amp;width=992">
+                <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/landingpages/2020/P273201_HP_banner_0703.jpg?impolicy=resize&amp;width=1200">
+                <img alt="Delivery carriers experiencing intermittent delays. Most orders arrive by delivery time shown in cart." data-src="//cdn-image.staticsfly.com/i/landingpages/2020/P273201_HP_banner_0703.jpg?impolicy=resize&amp;width=1600">
+              </picture> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: member_prospect_promo_banner_bottom_cs -->
+            </div>
+          </div>
+          <div id="apc-homepage-0" class="mg-main-container popup-modal"></div>
+          <div id="apc-homepage-1" class="mg-main-container popup-modal"></div>
+          <div id="apc-homepage-2" class="mg-main-container popup-modal"></div>
+<!-- ContentSpaceName: member_prospect_ep_well1_cs -->
+
+          <!-- HTML Content Wrapper -->
+          <div class="template-wrap">
+            <div id="sfly-category">
+              <div id="sfly_cat_nav" role="tablist">
+                <div><span id="scn01" class="scn_cat cn_selected" tabindex="0" role="tab" aria-controls="scn01_links">New Products</span></div>
+                <div><span id="scn02" class="scn_cat" tabindex="-1" role="tab" aria-controls="scn02_links">Wall Art</span></div>
+                <div><span id="scn03" class="scn_cat" tabindex="-1" role="tab" aria-controls="scn03_links">Home Decor</span></div>
+              </div>
+              <div id="scn01_links" class="scnl" role="tabpanel" tabindex="0" aria-labelledby="scn01">
+                <div class="sfly-cat-links"></div>
+              </div>
+              <div id="scn02_links" class="scnl" role="tabpanel" tabindex="0" aria-labelledby="scn02">
+                <div class="sfly-cat-links"></div>
+              </div>
+              <div id="scn03_links" class="scnl" role="tabpanel" tabindex="0" aria-labelledby="scn03">
+                <div class="sfly-cat-links"></div>
+              </div>
+            </div>
+          </div>
+          <script>
+            for (let cat01 = [{
+                url: '/photo-gifts/ornaments',
+                img: 'P282805_SY_HP_4up_Ornaments_1022.jpg',
+                title: 'Update your tree',
+                cta: 'ornaments'
+              }, {
+                url: '/photo-gifts/puzzles',
+                img: 'P266566_SY_HP_4up_puzzles_0928.jpg',
+                title: 'Give hours of fun',
+                cta: 'puzzles'
+              }, {
+                url: '/photo-books/instant-photo-books/',
+                img: 'P282805_SY_HP_4up_InstantBooks_1022.jpg',
+                title: '6x6 Hardcover Book',
+                cta: 'instant books'
+              }, {
+                url: '/personalized-gifts/cloth-face-masks/kids-face-mask-set-whimsical-prints',
+                img: 'P266566_SY_HP_4up_cloth_face_masks_0928.jpg',
+                title: 'Masks for kids',
+                cta: 'cloth face masks'
+              }], cat02 = [{
+                url: '/home-decor/photo-tiles',
+                img: 'P266566_SY_HP_4up_photo_tiles_0928.jpg',
+                title: 'Arrange and rearrange',
+                cta: 'photo tiles'
+              }, {
+                url: '/home-decor/wallart+canvas--single-piece-wall-art',
+                img: 'P266566_SY_HP_4up_canvas_prints_0928.jpg',
+                title: 'Decorate with joy',
+                cta: 'canvas prints'
+              }, {
+                url: '/home-decor/framed-prints',
+                img: 'P266566_SY_HP_4up_framed_prints_0928.jpg',
+                title: 'Display favorite faces',
+                cta: 'framed prints'
+              }, {
+                url: '/home-decor/wallart+metal--single-piece-wall-art',
+                img: 'P266566_SY_HP_4up_metal_prints_0928.jpg',
+                title: 'Elevate your space',
+                cta: 'metal prints'
+              }], cat03 = [{
+                url: '/photo-gifts/fleece-photo-blankets',
+                img: 'P266566_SY_HP_4up_fleece_blankets_0928.jpg',
+                title: 'Cozy up for fall',
+                cta: 'fleece blankets'
+              }, {
+                url: '/home-decor/desktop-plaque',
+                img: 'P266566_SY_HP_4up_desktop_plaques_0928.jpg',
+                title: 'Showcase what matters',
+                cta: 'desktop plaques'
+              }, {
+                url: '/personalized-gifts/bar-accessories',
+                img: 'P266566_SY_HP_4up_barware_0928.jpg',
+                title: 'Stock your home bar',
+                cta: 'barware'
+              }, {
+                url: '/personalized-gifts/kitchen-dining',
+                img: 'P266566_SY_HP_4up_tabletop_0928.jpg',
+                title: 'Add a personal touch',
+                cta: 'tabletop'
+              }], i = 0; 4 > i; i++) {
+              let catcode = `<a href="${cat01[i].url}"><img data-src="https://cdn-image.staticsfly.com/i/home/${cat01[i].img}" alt="${cat01[i].cta}"><span>${cat01[i].title}</span><span class="cta-text">${cat01[i].cta}</span></a>`;
+              let catcode2 = `<a href="${cat02[i].url}"><img data-src="https://cdn-image.staticsfly.com/i/home/${cat02[i].img}" alt="${cat02[i].cta}"><span>${cat02[i].title}</span><span class="cta-text">${cat02[i].cta}</span></a>`;
+              let catcode3 = `<a href="${cat03[i].url}"><img data-src="https://cdn-image.staticsfly.com/i/home/${cat03[i].img}" alt="${cat03[i].cta}"><span>${cat03[i].title}</span><span class="cta-text">${cat03[i].cta}</span></a>`;
+              document.querySelector('#scn01_links .sfly-cat-links').insertAdjacentHTML('beforeend', catcode);
+              document.querySelector('#scn02_links .sfly-cat-links').insertAdjacentHTML('beforeend', catcode2);
+              document.querySelector('#scn03_links .sfly-cat-links').insertAdjacentHTML('beforeend', catcode3);
+            }
+          </script> <!-- /HTML Content Wrapper -->
+
+          <!-- End of ContentSpaceName: member_prospect_ep_well1_cs -->
+          <div id="epWell" class="container ep-well">
+            <div class="user-content hide">
+
+              <!-- ContentSpaceName: member_home_ep_well2_cs -->
+
+              <!-- HTML Content Wrapper -->
+              <div class="two-up">
+                <div class="column"><a href="/photo-books/instant-photo-books/" class="cards" data-link-id="P266566_SY_2up_Instant_1013_v2.jpg::The fastest way to capture life&apos;s everyday OMG, LOL moments." data-link-module="ep-well" data-link-module-type="two-up" data-link-module-position="10" data-link-position="1">
+                    <picture>
+                      <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_Instant_1013_v2.jpg?impolicy=resize&amp;width=485">
+                      <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_Instant_1013_v2.jpg?impolicy=resize&amp;width=587"><img data-src="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_Instant_1013_v2.jpg?impolicy=resize&amp;width=783" alt="instant photo books"></picture>
+                    <div class="footer">
+                      <div class="footer-header">The fastest way to capture life&apos;s everyday OMG, LOL moments.</div>
+                      <div class="footer-sub-header">Shop Instant Books &gt;</div>
+                    </div>
+                  </a></div>
+                <div class="column"><a href="/photo-books/" class="cards" data-link-id="P266566_SY_2up_PB_1013_v2.jpg::Revisit favorite moments every day." data-link-module="ep-well" data-link-module-type="two-up" data-link-module-position="10" data-link-position="2">
+                    <picture>
+                      <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_PB_1013_v2.jpg?impolicy=resize&amp;width=485">
+                      <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_PB_1013_v2.jpg?impolicy=resize&amp;width=587"><img data-src="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_PB_1013_v2.jpg?impolicy=resize&amp;width=783" alt="photo books"></picture>
+                    <div class="footer">
+                      <div class="footer-header">Revisit favorite moments every day.</div>
+                      <div class="footer-sub-header">Shop Photo Books &gt;</div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="one-up"><a href="/wall-art/" class="cards" data-link-id="P266566_SY_HP_1up_wallart_0928.jpg::Fill a gallery wall with everything you love." data-link-module="ep-well" data-link-module-type="one-up" data-link-module-position="10" data-link-position="3">
+                  <picture>
+                    <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_1up_wallart_0928.jpg?impolicy=resize&amp;width=992">
+                    <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_1up_wallart_0928.jpg?impolicy=resize&amp;width=1200"><img data-src="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_1up_wallart_0928.jpg?impolicy=resize&amp;width=1578" alt="wall art"></picture>
+                  <div class="footer">
+                    <div class="footer-header">Fill a gallery wall with everything you love.</div>
+                    <div class="footer-sub-header">Shop Wall Art &gt;</div>
+                  </div>
+                </a></div> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: member_home_ep_well2_cs -->
+              <div id="apc-homepage-3" class="mg-main-container popup-modal"></div>
+<!-- ContentSpaceName: member_home_ep_well3_cs -->
+
+              <!-- HTML Content Wrapper -->
+              <div class="two-up">
+                <div class="column"><a href="/calendars" class="cards" data-link-id="P266566_SY_HP_2up_calendars_0928.jpg::Plan for a great 2021." data-link-module="ep-well" data-link-module-type="two-up" data-link-module-position="11" data-link-position="1">
+                    <picture>
+                      <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_2up_calendars_0928.jpg?impolicy=resize&amp;width=485">
+                      <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_2up_calendars_0928.jpg?impolicy=resize&amp;width=587"><img data-src="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_2up_calendars_0928.jpg?impolicy=resize&amp;width=783" alt="calendars"></picture>
+                    <div class="footer">
+                      <div class="footer-header">Plan for a great 2021.</div>
+                      <div class="footer-sub-header">Shop All Calendars &gt;</div>
+                    </div>
+                  </a></div>
+                <div class="column"><a href="/wedding/wedding-stationery" class="cards" data-link-id="P266655_SY_HP_2up_wedding_0910.jpg::Create your dream wedding suite." data-link-module="ep-well" data-link-module-type="two-up" data-link-module-position="11" data-link-position="2">
+                    <picture>
+                      <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266655_SY_HP_2up_wedding_0910.jpg?impolicy=resize&amp;width=485">
+                      <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266655_SY_HP_2up_wedding_0910.jpg?impolicy=resize&amp;width=587"><img data-src="//cdn-image.staticsfly.com/i/home/P266655_SY_HP_2up_wedding_0910.jpg?impolicy=resize&amp;width=783" alt="wedding stationery"></picture>
+                    <div class="footer">
+                      <div class="footer-header">Create your dream wedding suite.</div>
+                      <div class="footer-sub-header">Shop Wedding Shop &gt;</div>
+                    </div>
+                  </a></div>
+              </div> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: member_home_ep_well3_cs -->
+
+              <!-- ContentSpaceName: member_home_ep_well4_cs -->
+
+              <!-- HTML Content Wrapper -->
+              <style>
+                .template-wrap {
+                  font-weight: 400;
+                  font-size: calc(21px + (26 - 21) * ((100vw - 768px)/ (1600 - 768)));
+                  line-height: 1.23em;
+                  font-family: "Avenir LT", Verdana, Arial, sans-serif
+                }
+                .template-wrap .cta-text,
+                .template-wrap a.cta-text {
+                  font-size: calc(13px + (16 - 13) * ((100vw - 768px)/ (1600 - 768))) !important;
+                  font-weight: 700 !important;
+                  font-family: "Avenir LT", Verdana, Arial, sans-serif !important;
+                  color: #000 !important
+                }
+                #scn02_links,
+                #scn03_links,
+                #scn04_links {
+                  display: none
+                }
+                #sfly-category {
+                  margin: 50px 0 60px 0
+                }
+                #sfly_cat_nav {
+                  display: flex;
+                  align-items: flex-start;
+                  justify-content: space-around;
+                  margin: 0 auto 30px;
+                  width: 85%
+                }
+                #sfly_cat_nav span {
+                  display: block;
+                  flex: 0 1 auto;
+                  font-size: calc(16px + (20 - 16) * ((100vw - 768px)/ (1600 - 768)));
+                  letter-spacing: .02em;
+                  text-transform: uppercase;
+                  color: #595959;
+                  font-weight: 600;
+                  padding-bottom: 5px;
+                  margin: 0;
+                  cursor: pointer;
+                  text-align: center
+                }
+                #sfly_cat_nav span.cn_selected {
+                  color: #101010;
+                  font-weight: 700;
+                  border-bottom: 3px solid #101010;
+                  text-decoration: none
+                }
+                #scn01_links,
+                #scn02_links,
+                #scn03_links,
+                #scn04_links {
+                  text-align: center
+                }
+                .sfly-cat-links {
+                  flex: 0 1 auto;
+                  display: flex;
+                  align-items: flex-start;
+                  justify-content: space-around;
+                  margin-bottom: 30px
+                }
+                .template-wrap .sfly-cat-links a,
+                .template-wrap .sfly-cat-links a:hover {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  align-content: center;
+                  text-decoration: none;
+                  color: inherit;
+                  width: 25%;
+                  font-weight: 400
+                }
+                .sfly-cat-links a img {
+                  width: 100%;
+                  margin-bottom: 15px;
+                  display: block
+                }
+                .sfly-cat-links a span {
+                  margin-bottom: 15px
+                }
+                .cta-btn,
+                .cta-btn:hover,
+                .cta-btn:visited,
+                a.cta-btn,
+                a.cta-btn:hover,
+                a.cta-btn:visited {
+                  font-weight: 600 !important;
+                  font-size: calc(14px + (19 - 14) * ((100vw - 768px)/ (1600 - 768))) !important;
+                  line-height: 1em;
+                  font-family: "Avenir LT", Verdana, Arial, sans-serif !important;
+                  display: inline-block;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                  letter-spacing: normal;
+                  white-space: nowrap;
+                  text-align: center;
+                  padding: .55em 1.54em;
+                  min-width: 3.2em;
+                  color: #fff;
+                  background-color: #D74012;
+                  border-radius: .33em;
+                  vertical-align: middle;
+                  cursor: pointer;
+                  user-select: none
+                }
+                #sfly_cat_nav span.cn_selected {
+                  color: #D74012;
+                  border-color: #D74012
+                }
+                @media (max-width:992px) {
+                  .home2020 #sfly-category {
+                    margin: 0
+                  }
+                  .home2020 #sfly_cat_nav {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center
+                  }
+                  .home2020 #sfly_cat_nav span.cn_selected {
+                    border: none
+                  }
+                  .home2020 #sfly_cat_nav span {
+                    padding-bottom: 0;
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                    white-space: nowrap
+                  }
+                  .home2020 #sfly_cat_nav>div {
+                    width: 100%;
+                    margin-bottom: 0;
+                    border-bottom: 1px solid #ccc
+                  }
+                }
+                @media(max-width:767px) {
+                  .home2020 #sfly_cat_nav {
+                    margin: 0;
+                    width: 100%
+                  }
+                  .home2020 .template-wrap .sfly-cat-links {
+                    flex-wrap: wrap;
+                    margin-bottom: 10px
+                  }
+                  .home2020 .template-wrap .sfly-cat-links img {
+                    margin-bottom: 6px
+                  }
+                  .home2020 .template-wrap .sfly-cat-links span {
+                    margin-bottom: 6px
+                  }
+                  .home2020 .template-wrap .sfly-cat-links a,
+                  .home2020 .template-wrap .sfly-cat-links a:hover {
+                    flex-basis: 50%;
+                    width: auto;
+                    margin-bottom: 0
+                  }
+                }
+              </style> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: member_home_ep_well4_cs -->
+
+              <!-- no data found for ContentSpaceName: member_home_ep_well5_cs -->
+            </div>
+            <div class="prospect-content">
+
+              <!-- ContentSpaceName: member_prospect_ep_well2_cs -->
+
+              <!-- HTML Content Wrapper -->
+              <div class="two-up">
+                <div class="column"><a href="/photo-books/instant-photo-books/" class="cards" data-link-id="P266566_SY_2up_Instant_1013_v2.jpg::The fastest way to capture life&apos;s everyday OMG, LOL moments." data-link-module="ep-well" data-link-module-type="two-up" data-link-module-position="14" data-link-position="1">
+                    <picture>
+                      <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_Instant_1013_v2.jpg?impolicy=resize&amp;width=485">
+                      <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_Instant_1013_v2.jpg?impolicy=resize&amp;width=587"><img data-src="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_Instant_1013_v2.jpg?impolicy=resize&amp;width=783" alt="instant photo books"></picture>
+                    <div class="footer">
+                      <div class="footer-header">The fastest way to capture life&apos;s everyday OMG, LOL moments.</div>
+                      <div class="footer-sub-header">Shop Instant Books &gt;</div>
+                    </div>
+                  </a></div>
+                <div class="column"><a href="/photo-books/" class="cards" data-link-id="P266566_SY_2up_PB_1013_v2.jpg::Revisit favorite moments every day." data-link-module="ep-well" data-link-module-type="two-up" data-link-module-position="14" data-link-position="2">
+                    <picture>
+                      <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_PB_1013_v2.jpg?impolicy=resize&amp;width=485">
+                      <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_PB_1013_v2.jpg?impolicy=resize&amp;width=587"><img data-src="//cdn-image.staticsfly.com/i/home/P266566_SY_2up_PB_1013_v2.jpg?impolicy=resize&amp;width=783" alt="photo books"></picture>
+                    <div class="footer">
+                      <div class="footer-header">Revisit favorite moments every day.</div>
+                      <div class="footer-sub-header">Shop Photo Books &gt;</div>
+                    </div>
+                  </a></div>
+              </div>
+              <div class="one-up"><a href="/wall-art/" class="cards" data-link-id="P266566_SY_HP_1up_wallart_0928.jpg::Fill a gallery wall with everything you love." data-link-module="ep-well" data-link-module-type="one-up" data-link-module-position="14" data-link-position="3">
+                  <picture>
+                    <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_1up_wallart_0928.jpg?impolicy=resize&amp;width=992">
+                    <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_1up_wallart_0928.jpg?impolicy=resize&amp;width=1200"><img data-src="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_1up_wallart_0928.jpg?impolicy=resize&amp;width=1578" alt="wall art"></picture>
+                  <div class="footer">
+                    <div class="footer-header">Fill a gallery wall with everything you love.</div>
+                    <div class="footer-sub-header">Shop Wall Art &gt;</div>
+                  </div>
+                </a></div> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: member_prospect_ep_well2_cs -->
+
+              <!-- ContentSpaceName: member_prospect_ep_well3_cs -->
+
+              <!-- HTML Content Wrapper -->
+              <div class="two-up">
+                <div class="column"><a href="/calendars" class="cards" data-link-id="P266566_SY_HP_2up_calendars_0928.jpg::Plan for a great 2021." data-link-module="ep-well" data-link-module-type="two-up" data-link-module-position="15" data-link-position="1">
+                    <picture>
+                      <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_2up_calendars_0928.jpg?impolicy=resize&amp;width=485">
+                      <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_2up_calendars_0928.jpg?impolicy=resize&amp;width=587"><img data-src="//cdn-image.staticsfly.com/i/home/P266566_SY_HP_2up_calendars_0928.jpg?impolicy=resize&amp;width=783" alt="calendars"></picture>
+                    <div class="footer">
+                      <div class="footer-header">Plan for a great 2021.</div>
+                      <div class="footer-sub-header">Shop All Calendars &gt;</div>
+                    </div>
+                  </a></div>
+                <div class="column"><a href="/wedding/wedding-stationery" class="cards" data-link-id="P266655_SY_HP_2up_wedding_0910.jpg::Create your dream wedding suite." data-link-module="ep-well" data-link-module-type="two-up" data-link-module-position="15" data-link-position="2">
+                    <picture>
+                      <source media="(max-width: 992px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266655_SY_HP_2up_wedding_0910.jpg?impolicy=resize&amp;width=485">
+                      <source media="(max-width: 1200px)" data-srcset="//cdn-image.staticsfly.com/i/home/P266655_SY_HP_2up_wedding_0910.jpg?impolicy=resize&amp;width=587"><img data-src="//cdn-image.staticsfly.com/i/home/P266655_SY_HP_2up_wedding_0910.jpg?impolicy=resize&amp;width=783" alt="wedding stationery"></picture>
+                    <div class="footer">
+                      <div class="footer-header">Create your dream wedding suite.</div>
+                      <div class="footer-sub-header">Shop Wedding Shop &gt;</div>
+                    </div>
+                  </a></div>
+              </div> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: member_prospect_ep_well3_cs -->
+
+              <!-- ContentSpaceName: member_prospect_ep_well4_cs -->
+
+              <!-- HTML Content Wrapper -->
+              <style>
+                .template-wrap {
+                  font-weight: 400;
+                  font-size: calc(21px + (26 - 21) * ((100vw - 768px)/ (1600 - 768)));
+                  line-height: 1.23em;
+                  font-family: "Avenir LT", Verdana, Arial, sans-serif
+                }
+                .template-wrap .cta-text,
+                .template-wrap a.cta-text {
+                  font-size: calc(13px + (16 - 13) * ((100vw - 768px)/ (1600 - 768))) !important;
+                  font-weight: 700 !important;
+                  font-family: "Avenir LT", Verdana, Arial, sans-serif !important;
+                  color: #000 !important
+                }
+                #scn02_links,
+                #scn03_links,
+                #scn04_links {
+                  display: none
+                }
+                #sfly-category {
+                  margin: 50px 0 60px 0
+                }
+                #sfly_cat_nav {
+                  display: flex;
+                  align-items: flex-start;
+                  justify-content: space-around;
+                  margin: 0 auto 30px;
+                  width: 85%
+                }
+                #sfly_cat_nav span {
+                  display: block;
+                  flex: 0 1 auto;
+                  font-size: calc(16px + (20 - 16) * ((100vw - 768px)/ (1600 - 768)));
+                  letter-spacing: .02em;
+                  text-transform: uppercase;
+                  color: #595959;
+                  font-weight: 600;
+                  padding-bottom: 5px;
+                  margin: 0;
+                  cursor: pointer;
+                  text-align: center
+                }
+                #sfly_cat_nav span.cn_selected {
+                  color: #101010;
+                  font-weight: 700;
+                  border-bottom: 3px solid #101010;
+                  text-decoration: none
+                }
+                #scn01_links,
+                #scn02_links,
+                #scn03_links,
+                #scn04_links {
+                  text-align: center
+                }
+                .sfly-cat-links {
+                  flex: 0 1 auto;
+                  display: flex;
+                  align-items: flex-start;
+                  justify-content: space-around;
+                  margin-bottom: 30px
+                }
+                .template-wrap .sfly-cat-links a,
+                .template-wrap .sfly-cat-links a:hover {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  align-content: center;
+                  text-decoration: none;
+                  color: inherit;
+                  width: 25%;
+                  font-weight: 400
+                }
+                .sfly-cat-links a img {
+                  width: 100%;
+                  margin-bottom: 15px;
+                  display: block
+                }
+                .sfly-cat-links a span {
+                  margin-bottom: 15px
+                }
+                .cta-btn,
+                .cta-btn:hover,
+                .cta-btn:visited,
+                a.cta-btn,
+                a.cta-btn:hover,
+                a.cta-btn:visited {
+                  font-weight: 600 !important;
+                  font-size: calc(14px + (19 - 14) * ((100vw - 768px)/ (1600 - 768))) !important;
+                  line-height: 1em;
+                  font-family: "Avenir LT", Verdana, Arial, sans-serif !important;
+                  display: inline-block;
+                  text-transform: uppercase;
+                  text-decoration: none;
+                  letter-spacing: normal;
+                  white-space: nowrap;
+                  text-align: center;
+                  padding: .55em 1.54em;
+                  min-width: 3.2em;
+                  color: #fff;
+                  background-color: #D74012;
+                  border-radius: .33em;
+                  vertical-align: middle;
+                  cursor: pointer;
+                  user-select: none
+                }
+                #sfly_cat_nav span.cn_selected {
+                  color: #D74012;
+                  border-color: #D74012
+                }
+                @media (max-width:992px) {
+                  .home2020 #sfly-category {
+                    margin: 0
+                  }
+                  .home2020 #sfly_cat_nav {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center
+                  }
+                  .home2020 #sfly_cat_nav span.cn_selected {
+                    border: none
+                  }
+                  .home2020 #sfly_cat_nav span {
+                    padding-bottom: 0;
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                    white-space: nowrap
+                  }
+                  .home2020 #sfly_cat_nav>div {
+                    width: 100%;
+                    margin-bottom: 0;
+                    border-bottom: 1px solid #ccc
+                  }
+                }
+                @media(max-width:767px) {
+                  .home2020 #sfly_cat_nav {
+                    margin: 0;
+                    width: 100%
+                  }
+                  .home2020 .template-wrap .sfly-cat-links {
+                    flex-wrap: wrap;
+                    margin-bottom: 10px
+                  }
+                  .home2020 .template-wrap .sfly-cat-links img {
+                    margin-bottom: 6px
+                  }
+                  .home2020 .template-wrap .sfly-cat-links span {
+                    margin-bottom: 6px
+                  }
+                  .home2020 .template-wrap .sfly-cat-links a,
+                  .home2020 .template-wrap .sfly-cat-links a:hover {
+                    flex-basis: 50%;
+                    width: auto;
+                    margin-bottom: 0
+                  }
+                }
+              </style> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: member_prospect_ep_well4_cs -->
+
+              <!-- no data found for ContentSpaceName: member_prospect_ep_well5_cs -->
+            </div>
+          </div>
+          <div id="social-section" class="cf">
+            <div class="social-body">
+
+              <!-- ContentSpaceName: home_youtube_social_cs -->
+
+              <!-- HTML Content Wrapper -->
+              <div id="homepage-social-video">
+                <div class="youtube-player" data-id="8BswJ3z04ak" data-width="530" data-height="298" data-title=" "></div>
+              </div>
+              <div id="homepage-social-video-caption">See how people are using Shutterfly.<br><a href="/myshutterfly/" class="quote-cta" aria-describedby="homepage-social-video-caption" data-link-id="::" data-link-module-position="18" data-link-position="1">LEARN MORE &gt;</a></div>
+              <style>
+                .youtube-thumbnail {
+                  position: relative;
+                  cursor: pointer;
+                  background-size: 100% 396px;
+                  background-position: center
+                }
+                .youtube-thumbnail .play {
+                  height: 50px;
+                  width: 70px;
+                  background-color: #000;
+                  opacity: .8;
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  border-radius: 15px
+                }
+                .youtube-thumbnail:hover>.play {
+                  background-color: #c52019;
+                  opacity: 1
+                }
+                .youtube-thumbnail .arrow {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  z-index: 100;
+                  color: #fff;
+                  font-size: 175%
+                }
+                .youtube-thumbnail .title {
+                  padding: 15px;
+                  color: #fff;
+                  font-family: "Avenir LT W01 45 Book", Verdana, Arial, sans-serif;
+                  font-size: 18px
+                }
+              </style>
+              <script>
+                function getYoutubeThumbHtml(data) {
+                  const {
+                    id,
+                    width,
+                    height,
+                    title
+                  } = data;
+                  return `<div class="youtube-thumbnail" style="width: ${width}px; height: ${height}px; background-image: url('https://i.ytimg.com/vi/${id}/sddefault.jpg');" ><div class="title">${title}</div><div class="play"></div><div class="arrow">&#x25b6;</div></div>`
+                }
+                function embedYoutube(container, data) {
+                  const el = document.createElement('iframe');
+                  const {
+                    id,
+                    width,
+                    height
+                  } = data;
+                  el.setAttribute('src', `https://www.youtube-nocookie.com/embed/${id}?rel=0&autoplay=1`);
+                  el.setAttribute("width", width);
+                  el.setAttribute("height", height);
+                  el.setAttribute("frameborder", "0");
+                  el.setAttribute("allowfullscreen", "1");
+                  container.replaceChild(el, container.firstChild);
+                }
+                window.addEventListener('DOMContentLoaded', () => {
+                  const players = document.getElementsByClassName('youtube-player');
+                  for (const player of players) {
+                    const container = document.createElement('div');
+                    container.setAttribute("tabindex", "0");
+                    container.innerHTML = getYoutubeThumbHtml(player.dataset);
+                    container.addEventListener('click', evt => embedYoutube(container, player.dataset), {
+                      once: true
+                    });
+                    container.addEventListener('keydown', evt => {
+                      if (evt.keyCode === 13) {
+                        embedYoutube(container, player.dataset)
+                      }
+                    }, {
+                      once: true
+                    });
+                    player.appendChild(container);
+                  }
+                })
+              </script> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: home_youtube_social_cs -->
+
+              <!-- ContentSpaceName: home_social_cs -->
+
+              <!-- HTML Content Wrapper --><a href="/for-good/" data-link-id="Our-Promise_HP_Module_300x250.jpg::" data-link-module-position="19" data-link-position="1"><img data-src="https://cdn-image.staticsfly.com/i/home/Our-Promise_HP_Module_300x250.jpg" alt="Shutterfly for good" width="300" height="250" class="loading"></a> <!-- /HTML Content Wrapper -->
+
+              <!-- End of ContentSpaceName: home_social_cs -->
+            </div>
+          </div>
+          <div id="prospectPopup" class="hide">
+            <script type="text/javascript" src="https://cdn.staticsfly.com/js/global-v15392019510006861.js"></script>
+          </div>
+          <div id="modal-backdrop" class="fade in hide"></div>
+          <div class="prospect-content">
+
+            <!-- ContentSpaceName: marquee_sidenav_html_cs -->
+
+            <!-- HTML Content Wrapper -->
+            <script>
+              var tntParams = {
+                'tabInterval': 5000,
+                'imgroot': '//cdn.staticsfly.com/i/home/member/',
+                'tabs': [{
+                    'id': 'tab1',
+                    'tabHeader': 'PHOTO BOOKS',
+                    'tabdescription': '<b>NEW</b> Disney photo book',
+                    'tabPromo': 'SAVE UP TO 50%'
+                  },
+                  {
+                    'id': 'tab2',
+                    'tabHeader': 'HOME DECOR',
+                    'tabdescription': 'Travel inspired decor',
+                    'tabPromo': 'SAVE UP TO 50%'
+                  },
+                  {
+                    'id': 'tab3',
+                    'tabHeader': 'PHOTO GIFTS',
+                    'tabdescription': 'Personalize your gifts',
+                    'tabPromo': 'SAVE UP TO 50%'
+                  },
+                  {
+                    'id': 'tab4',
+                    'tabHeader': 'CARDS &amp; STATIONERY',
+                    'tabdescription': 'Send stand-out thanks',
+                    'tabPromo': 'SAVE UP TO 30%'
+                  },
+                  {
+                    'id': 'tab5',
+                    'tabHeader': 'TAKE IT OUTSIDE',
+                    'tabdescription': 'Create an outdoor space that&#8217;s uniquely you',
+                    'tabPromo': 'SAVE UP TO 20%'
+                  }
+                ],
+                'globalLayers': [],
+                'tabsMarquee': {
+                  'tab1': [{
+                    'src': '1152972_homepage_panel1_pb_MARQ_side_nav_0624.jpg',
+                    'layerImages': [{
+                        'top': 0,
+                        'left': 0,
+                        'height': 160,
+                        'width': 710,
+                        'href': '/photo-books',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 160,
+                        'left': 0,
+                        'height': 450,
+                        'width': 710,
+                        'href': '/pbpip/start.sfly?styleId=5168',
+                        'id': 'cta'
+                      }
+                    ],
+                    'alt': ''
+                  }],
+                  'tab2': [{
+                    'src': '1152972_homepage_panel2_hd_MARQ_side_nav_0624.jpg',
+                    'layerImages': [{
+                      'top': 0,
+                      'left': 0,
+                      'height': 610,
+                      'width': 710,
+                      'href': '/home-decor/living-room/global-living-room',
+                      'id': 'cta'
+                    }]
+                  }],
+                  'tab3': [{
+                    'src': '1152972_homepage_panel3_pg_MARQ_side_nav_0624.jpg',
+                    'layerImages': [{
+                        'top': 0,
+                        'left': 147,
+                        'height': 133,
+                        'width': 419,
+                        'href': '/photo-gifts',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 133,
+                        'left': 248,
+                        'height': 41,
+                        'width': 199,
+                        'href': '/photo-gifts',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 133,
+                        'left': 0,
+                        'height': 445,
+                        'width': 248,
+                        'href': '/photo-gifts/ipad-cases',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 182,
+                        'left': 248,
+                        'height': 118,
+                        'width': 88,
+                        'href': '/photo-gifts/ipad-cases',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 300,
+                        'left': 248,
+                        'height': 233,
+                        'width': 55,
+                        'href': '/photo-gifts/ipad-cases',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 300,
+                        'left': 303,
+                        'height': 233,
+                        'width': 209,
+                        'href': '/photo-gifts/luggage-tags',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 123,
+                        'left': 543,
+                        'height': 423,
+                        'width': 167,
+                        'href': '/photo-gifts/photo-water-bottles',
+                        'id': 'cta'
+                      }
+                    ]
+                  }],
+                  'tab4': [{
+                    'src': '1152972_homepage_panel4_cs_MARQ_side_nav_0624.jpg',
+                    'layerImages': [{
+                        'top': 12,
+                        'left': 40,
+                        'height': 132,
+                        'width': 409,
+                        'href': '/cards-stationery/thank-you-cards',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 144,
+                        'left': 128,
+                        'height': 39,
+                        'width': 237,
+                        'href': '/cards-stationery/thank-you-cards',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 236,
+                        'left': 115,
+                        'height': 374,
+                        'width': 350,
+                        'href': '/cards-stationery/thank-you-cards/vertical-big-thanks-thank-you-card-5x7-flat',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 284,
+                        'left': 465,
+                        'height': 326,
+                        'width': 82,
+                        'href': '/cards-stationery/thank-you-cards/vertical-big-thanks-thank-you-card-5x7-flat',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 57,
+                        'left': 449,
+                        'height': 179,
+                        'width': 261,
+                        'href': '/cards-stationery/thank-you-cards/watercolor-xoxo-thank-you-card-5x7-flat',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 236,
+                        'left': 465,
+                        'height': 48,
+                        'width': 245,
+                        'href': '/cards-stationery/thank-you-cards/watercolor-xoxo-thank-you-card-5x7-flat',
+                        'id': 'cta'
+                      },
+                      {
+                        'top': 284,
+                        'left': 547,
+                        'height': 239,
+                        'width': 163,
+                        'href': '/cards-stationery/thank-you-cards/watercolor-xoxo-thank-you-card-5x7-flat',
+                        'id': 'cta'
+                      }
+                    ]
+                  }],
+                  'tab5': [{
+                    'src': '1152972_homepage_panel5_hd_MARQ_side_nav_0624.jpg',
+                    'layerImages': [{
+                      'top': 0,
+                      'left': 0,
+                      'height': 610,
+                      'width': 710,
+                      'href': '/home-decor/outdoor/traditional-outdoor',
+                      'id': 'cta'
+                    }]
+                  }]
+                }
+              };
+            </script> <!-- /HTML Content Wrapper -->
+
+            <!-- End of ContentSpaceName: marquee_sidenav_html_cs -->
+          </div>
+          <div id="root"></div>
+        </main>
+        <div id="footer_container_element"></div>
+      </div>
+      <script src="https://cld1.staticsfly.com/home2020.f6b9c7e91a.js"></script>
+      <script src="https://cld1.staticsfly.com/home2020.0b299960ae.js"></script>
+      <script src="https://cld1.staticsfly.com/home2020.22b323f810.js"></script>
+    </div>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var tag = document.createElement('script');
+          var tealiumSrc = document.querySelector('meta[name="tealium-script-src"]').getAttribute('content');
+          tag.setAttribute('src', tealiumSrc);
+          document.querySelector('body').appendChild(tag);
+        }, 500);
+      });
+    </script>
+    <script src="https://cld1.staticsfly.com/bobstdlib.e574aae531.js" defer></script>
+    <script>
+      if (typeof window._satellite != 'undefined') {
+        window._satellite.pageBottom();
+      }
+    </script>
+  </body>
+</html>

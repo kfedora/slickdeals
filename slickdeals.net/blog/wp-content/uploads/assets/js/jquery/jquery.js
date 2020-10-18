@@ -3,16 +3,15 @@ Content-Type: text/javascript
 ETag: "3942043982"
 Last-Modified: Thu, 15 Oct 2020 04:03:49 GMT
 Server: Akamai Resource Optimizer
-X-Akamai-Path-Stats: [1:19693:40307]
 Vary: Accept-Encoding
-Cache-Control: max-age=387182
-Expires: Thu, 22 Oct 2020 04:04:22 GMT
-Date: Sat, 17 Oct 2020 16:31:20 GMT
+Cache-Control: max-age=143588
+Expires: Mon, 19 Oct 2020 18:53:47 GMT
+Date: Sun, 18 Oct 2020 03:00:39 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=1
+Server-Timing: edge; dur=339
 Strict-Transport-Security: max-age=86400
 
 /*! jQuery v1.12.4 | (c) jQuery Foundation | jquery.org/license | WordPress 2019-05-16 */
