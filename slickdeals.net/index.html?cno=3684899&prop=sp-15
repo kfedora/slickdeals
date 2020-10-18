@@ -1,15 +1,344 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
-Content-Type: text/html
-Content-Length: 96
-X-Akamai-Path-Stats: [3:32996:15001004]
-Date: Sat, 17 Oct 2020 19:46:47 GMT
-Connection: keep-alive
-Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=2
-Server-Timing: origin; dur=15034
-Strict-Transport-Security: max-age=86400
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=UTF-8
+Vary: Accept
+Date: Sun, 18 Oct 2020 21:00:07 GMT
+Connection: close
+Content-Length: 19866
 
-<html><body><h1>500 Internal Server Error</h1>
-An internal server error occured.
-</body></html>
+
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>The Home Depot | Style & Decor - Sign Up</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Bootstrap Tracking Include -->
+<script type="text/javascript" src="//nexus.ensighten.com/homedepot/Bootstrap.js"></script>
+<script type="text/javascript">
+var digitalData = { 
+	page: {
+		pageInfo: {
+			pageName: "Style & Decor",
+			pageType: "Sign Up",
+		},
+		category: {
+			primaryCategory: "Sign Up",
+			subCategory1: "Style & Decor",
+		},
+		attributes: {
+			sourceID: "1308",
+		}
+	}
+};
+function ddoInit() {
+	_T.pageData.push(digitalData);
+}
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+<style type="text/css">
+    .sndMainWrapper{position: relative;overflow: hidden;}
+    .sndMainWrapper::before{background:url(https://www.homedepot.com/hdus/en_US/DTCCOMNEW/fetch/Category_Pages/Decor/Rooms_and_Styles/20180131-DDSD-Acquisition-Background.jpg) top center no-repeat;background-size: cover;-webkit-filter: blur(5px) brightness(65%);-moz-filter: blur(5px) brightness(65%);
+  -o-filter: blur(5px) brightness(65%);
+  -ms-filter: blur(5px) brightness(65%);filter: blur(5px) brightness(65%);position: absolute; z-index: -1;top:-1%; bottom:-1%; left: -1%; right:-1%; content:"";}
+    .sndMainContainer{height: 960px; max-width: 1440px;font-family: opensans-light,Helvetica Neue,Helvetica-,Arial,sans-serif !important; z-index: 1}
+    .marginTop5{margin-top:5%;}
+    .marginTop8{margin-top:8%;}
+    .marginTop10{margin-top:10%;}
+    .marginTop30{margin-top:30%;}
+    .sndMainContainer h1{font-family: Helvetica Neue,Helvetica-,Arial,opensans-light,sans-serif !important;font-size: 4.5vw;font-weight: bold; color:#FFF;text-align: center;}
+    .sndMainContainer h3{font-family: Helvetica Neue,Helvetica-,Arial,opensans-light,sans-serif !important;font-size: 2.5vw;font-weight: normal; color:#FFF;text-align: center;}
+    .cataLog{width:80%; transform: rotate(-9deg);box-shadow: 0px 3px 6px #000;margin-left: 30%;}
+
+    #iphoneEmail{overflow: hidden;width: 149px; height: 350px;position: relative;}
+    #phoneFrame{position: absolute;left:0;max-height: 300px;z-index: 1;}
+    #emailScroll{position: absolute;top:10.5%;margin-left:7%;margin-right:8%;z-index: 3;overflow-y: scroll;height: 65%;-ms-overflow-style: none;-moz-scrollbars-none;}
+    #emailImage{width: 100%;}
+    
+    .sndForm{background-color:#eeeeee;box-shadow: 0px 3px 6px #000;color:#666666; width: 100%;}
+    .sndForm label{width:100%;}
+    .sndForm label span{color:#ce1e1e;}
+    .sndForm input[type="text"]{width: 100%; height: 3em; border:1px solid #CCC;padding-left:10px;}
+    .sndForm input[type="email"]{width: 100%; height: 3em; border:1px solid #CCC;padding-left:10px;}
+    .sndForm select{width: 100%; height: 3em; border:1px solid #CCC;padding-left:10px;}
+    .sndForm input[type="checkbox"]{float:left; display: inline;}
+    .sndForm label[for="catalogOptIn"] p{font-size:1em; font-weight: bold;float:left;margin-left:30px;color:#000000}
+    #catalogInfo{opacity:0.5;}
+    form[name="sndForm"]{width: 100%;}
+    
+    .chckBoxCont {display: block;position: relative;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+    .chckBoxCont input {position: absolute;opacity: 0;cursor: pointer;}
+    .chckBoxMark {position: absolute;top: 0;left: 0;height: 25px;width: 25px;background-color: #fff; border:1px solid #CCCCCC}
+    .chckBoxCont:hover input ~ .chckBoxMark {border:1px solid #F96302;}
+    .chckBoxCont input:checked ~ .chckBoxMark {background-color: #F96302;border:none;}
+    .chckBoxMark:after {content: "";position: absolute;display: none;}
+    .chckBoxCont input:checked ~ .chckBoxMark:after {display: block;}
+    .chckBoxCont .chckBoxMark:after {left: 9px;top: 5px;width: 5px;height: 10px;border: solid white;border-width: 0 3px 3px 0;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}  
+    
+    .sndForm .error{background-color: rgba(250, 220, 220, 1);}
+    .form-error{display:none !important;}
+    .has-error{background-color: none;}
+
+    @media screen and (min-width: 1200px){
+        .sndMainContainer h1{font-size: 65px;}
+        .sndMainContainer h3{font-size: 28px;}
+    }
+    @media screen and (max-width: 990px){
+        .sndMainContainer h1{font-size: 8.5vw;}
+        .sndMainContainer h3{font-size: 4.5vw;}
+        .sndForm{width: 100vw; height: auto;}
+        .marginTop30{margin-top:10%;}
+        .cataLog{width:80%;}
+        /*#emailImage{width:89.5%;}*/
+        #phoneFrame{width:100%}
+        #iphoneEmail{width: 80%;height: 45vw;}
+        #emailScroll{height: 72%;}
+        .sndMainContainer{height:auto;}
+        
+    }
+     @media screen and (max-width: 375px){
+         #emailScroll{height: 68.5%;margin-right:7%;}
+    }
+    #emailScroll::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+</style>
+</head>
+<body>
+<!-- THD Header & Footer -->
+<script id="THDHeaderFooter" src="//www.homedepot.com/hf/thirdparty/js/thd.include.third_party.js" hfapp-callertype="sfmc-coupon-landing" channel="web" bootstrap="true"> </script>
+<script type="text/javascript">
+  function unhide(){document.getElementsByTagName("body")[0].style.visibility = "visible";}
+setTimeout(function(){unhide()},1000);
+    </script>
+<div class="sndMainWrapper">
+    <div class="container-fluid sndMainContainer">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+                <div class="row marginTop30">
+                    <div class="col-12"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10 justify-content-center">
+                        <h1>ENJOY 10% OFF</h1>
+                        <h3 class="marginTop5">Save 10% on select furniture, home accents, bedding and bath when you sign up for
+
+Style &amp; Decor emails from The Home Depot.</h3>
+                    </div>
+                </div>
+                <div class="row justify-content-center marginTop10">
+                    <div class="col-6"><img src="https://www.homedepot.com/hdus/en_US/DTCCOMNEW/fetch/Category_Pages/Decor/20180131-DDSD-Acquisition-Cover.jpg " class="cataLog mt-4" /></div>
+                    <div class="col-6">
+                        <div class="row justify-content-center">
+                            <div class="col-8">
+                                <div id="iphoneEmail">
+                                <img id="phoneFrame" src="https://www.homedepot.com/hdus/en_US/DTCCOMNEW/fetch/Category_Pages/Decor/20180131-DDSD-Acquisition-Phone.png" />
+                                <div id="emailScroll">
+                                    <img id="emailImage" src="https://www.homedepot.com/hdus/en_US/DTCCOMNEW/fetch/Category_Pages/Decor/20180131-DDSD-Acquisition-Email.jpg" /> 
+                                </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row marginTop30">
+                    <div class="col-12"></div>
+                </div>
+                <div class="row sndForm justify-content-center marginTop10">
+   
+                    <form action="//pages.homedepot.com/styleanddecor_thankyou/" method="post" name="sndForm" data-toggle="validator">
+        	           <div class="col-12 pt-5 pb-5">
+                           <div class="row justify-content-center pt-4">
+                               <div class="col-5">
+                               <label for="firstName"><p>First Name <span>*</span></p>
+                                <input type="text" name="firstName" id="firstName" data-validation="required"/>
+                                </label> 
+                                </div>
+                                <div class="col-5">
+                                <label for="lastName"><p>Last Name <span>*</span></p>
+                                <input type="text" name="lastName" id="lastName" data-validation="required"/>
+                                 </label>
+                               </div>
+                            </div>
+                           <div class="row justify-content-center pt-4">
+                            <div class="col-10">
+                                <label for="emailAddress"><p>Email Address <span>*</span></p>
+                                <input type="email" name="emailAddress" id="emailAddress" data-validation="email" data-validation="required"/>
+                                </label>
+                            </div>
+                           </div>
+                           <div class="row justify-content-center pt-5">
+                            <div class="col-10 ">
+                                <label class="chckBoxCont" for="catalogOptIn">
+                                <p>Send me the Home Depot Decor Catalog, too.</p>
+                                <input type="checkbox" name="catalogOptIn" id="catalogOptIn" value="1" />
+                                <span class="chckBoxMark"></span>
+                                </label>
+                            </div>
+                           </div>
+                           <div class="row justify-content-center pt-4" id="catalogInfo">
+                            <div class="col-12">
+                             <div class="row justify-content-center">
+                                     <div class="col-10 justify-content-center pt-4">
+                                        <label for="address1"><p>Address 1 <span>*</span></p>
+                                            <input type="text" disabled name="address1" id="address1" data-validation-depends-on="catalogOptIn" data-validation="required" />
+                                        </label>
+                                     </div>
+                             </div>
+                             <div class="row justify-content-center">
+                                     <div class="col-10 justify-content-center pt-4">
+                                        <label for="address2"><p>Address 2</p>
+                                            <input type="text" disabled name="address2" id="address2"/>
+                                        </label>
+                                     </div>
+                             </div>
+                            <div class="row justify-content-center">
+                                     <div class="col-4 justify-content-center pt-4">
+                                        <label for="city"><p>City <span>*</span></p>
+                                            <input type="text" disabled name="city" id="city" data-validation-depends-on="catalogOptIn" data-validation="required"/>
+                                        </label>
+                                     </div>
+                                     <div class="col-3 justify-content-center pt-4">
+                                        <label for="state"><p>State <span>*</span></p>
+                                            <select name="state" id="state" disabled data-validation-depends-on="catalogOptIn" data-validation="required">
+                                            <option value="" selected disabled></option>
+                                            <option value="AL">AL</option>
+                                            <option value="AK">AK</option>
+                                            <option value="AR">AR</option>	
+                                            <option value="AZ">AZ</option>
+                                            <option value="CA">CA</option>
+                                            <option value="CO">CO</option>
+                                            <option value="CT">CT</option>
+                                            <option value="DC">DC</option>
+                                            <option value="DE">DE</option>
+                                            <option value="FL">FL</option>
+                                            <option value="GA">GA</option>
+                                            <option value="HI">HI</option>
+                                            <option value="IA">IA</option>	
+                                            <option value="ID">ID</option>
+                                            <option value="IL">IL</option>
+                                            <option value="IN">IN</option>
+                                            <option value="KS">KS</option>
+                                            <option value="KY">KY</option>
+                                            <option value="LA">LA</option>
+                                            <option value="MA">MA</option>
+                                            <option value="MD">MD</option>
+                                            <option value="ME">ME</option>
+                                            <option value="MI">MI</option>
+                                            <option value="MN">MN</option>
+                                            <option value="MO">MO</option>	
+                                            <option value="MS">MS</option>
+                                            <option value="MT">MT</option>
+                                            <option value="NC">NC</option>	
+                                            <option value="NE">NE</option>
+                                            <option value="NH">NH</option>
+                                            <option value="NJ">NJ</option>
+                                            <option value="NM">NM</option>			
+                                            <option value="NV">NV</option>
+                                            <option value="NY">NY</option>
+                                            <option value="ND">ND</option>
+                                            <option value="OH">OH</option>
+                                            <option value="OK">OK</option>
+                                            <option value="OR">OR</option>
+                                            <option value="PA">PA</option>
+                                            <option value="RI">RI</option>
+                                            <option value="SC">SC</option>
+                                            <option value="SD">SD</option>
+                                            <option value="TN">TN</option>
+                                            <option value="TX">TX</option>
+                                            <option value="UT">UT</option>
+                                            <option value="VT">VT</option>
+                                            <option value="VA">VA</option>
+                                            <option value="WA">WA</option>
+                                            <option value="WI">WI</option>	
+                                            <option value="WV">WV</option>
+                                            <option value="WY">WY</option>
+                                            </select>
+                                        </label>
+                                     </div>
+                                    <div class="col-3 justify-content-center pt-4" data-validation-depends-on="catalogOptIn">
+                                        <label for="zipCode"><p>ZIP Code <span>*</span></p>
+                                            <input type="text" disabled name="zipCode" id="zipCode" data-validation="number" data-validation="required"/>
+                                        </label>
+                                     </div>
+                             </div>
+                            </div>
+                           </div>
+                            
+                           <div class="row justify-content-center pt-5">
+                             <div class="col-10">
+                             <p><strong>By Providing your email address, you agree to receive emails from The Home Depot Style &amp; Decor.</strong></p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center pt-4 pb-4">
+                            <div class="col-10">
+                             <button class="bttn bttn--primary bttn--inline footerEmailSignup__submit" type="submit" name="" value="Sign Me Up &rsaquo;"><span class="bttn__content">Sign Me Up</span></button>
+                            </div>
+                        </div>
+                           
+                           
+                        </div>
+                        
+                        <!-- Optin Defaulted to 1 -->
+                                    <input type="hidden" name="emailOptIn" value="1" />
+                                    <input type="hidden" name="source" value="defaultsourcemainoptin" />
+                                    <input type="hidden" name="sourceid" value="1308" />
+				    <input type="hidden" name="ws" value="" />
+                    </form>
+                        
+                            
+                            
+                        </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+</div>
+<!-- Scripts -->
+<script type="text/javascript">
+$.validate({modules : 'logic,toggleDisabled', showErrorDialogs:false});
+/* Trigger Bootstrap*/
+ddoInit();
+/* Custom  */
+
+    $("#catalogOptIn").change(function(){
+        if(document.getElementById('catalogOptIn').checked){
+            $("#catalogInfo input").prop("disabled",false);
+            $("#catalogInfo select").prop("disabled",false);
+            $("#catalogInfo").fadeTo('slow',1);
+        }
+        else{
+            $("#catalogInfo").fadeTo('slow',0.5,function(){
+                $("#catalogInfo input").prop("disabled",true);
+                $("#catalogInfo select").prop("disabled",true);
+            });
+            
+        }
+    });
+
+</script>
+
+
+<script type="text/javascript" src="https://pages.homedepot.com/Script/HttpRequest.js"></script>
+<script type="text/javascript" src="https://pages.homedepot.com/Script/pageTracking.js"></script>
+<script type="text/javascript">
+	absoluteBaseUrl = "https://pages.homedepot.com/";
+	SaveAnalyticData(10137247, 'a3e6fc39-9392-48cf-9150-2e0f8553f591', '0a956a95-9cfd-41b9-ae99-9c18239f879f'); 
+</script>
+
+
+</body>
+</html>

@@ -1,14 +1,84 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
-Content-Type: text/html
-Content-Length: 96
-Date: Sat, 17 Oct 2020 14:05:46 GMT
-Connection: keep-alive
-Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=54
-Server-Timing: origin; dur=15007
-Strict-Transport-Security: max-age=86400
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Vary: Accept-Encoding
+X-Powered-By: PHP/7.3.22
+Cache-Control: no-cache, private
+Date: Sun, 18 Oct 2020 20:43:22 GMT
+Set-Cookie: XSRF-TOKEN=eyJpdiI6InhIc3kzaXh1M1Y1WjUrcWFTQU1TWlE9PSIsInZhbHVlIjoiTVRMRUlpcXNFVTZMYTZuUXJESFpzbDdIaGVaOWlEUUpFV3NSRmdsL1hDYzVlZytqcW05V0FqNzU1VWg3YXdKYU1hY2hEZ05QWDJlUUhFN3VvSWFHZHJ0aTIrT3MzQUltVHl1NjJLZ0t3TVVUeng5SjRVQjM0SHlSdXd4UHdIbXgiLCJtYWMiOiJmZTBiZDI3MzBmZjBhNjc1M2QzYjYzYTY2YWE2Zjk0NzE4MjU3M2YxN2IxZmQ4YWY2ZmIwZGQ3OTRkNmQ5YzBjIn0%3D; expires=Wed, 21-Oct-2020 20:43:22 GMT; Max-Age=259200; path=/; samesite=lax
+Set-Cookie: ebay25_session=eyJpdiI6InRJL0tmMGlWU041RXZYRTAyaW94S3c9PSIsInZhbHVlIjoiMm9JZk1kNG0vSW5NcGRJMC9TYWpsbnFyVnJHMHBuT2Vtc002K2hJeW1JMjR5T0ZXSFVxWElldzMxSXV4d0JOc1ZQMjUwUU9lUkcwV1JFMktjbHB1V1RKSXpZMm5mSDRKR1VZWWZkSENoK2N5emZFTVE1WTJ0a204N0VBQWtKNzEiLCJtYWMiOiIyZGUzMTViYWIwZGZlYjZiMzQwNDkyZDQ4NzE5MDQ2OGI2YzRiMjQ1YjcyNTkxOWE2MmVhMjY3M2ZkZDljNTMxIn0%3D; expires=Wed, 21-Oct-2020 20:43:22 GMT; Max-Age=259200; path=/; httponly; samesite=lax
+Via: 1.1 3c72cd1132c1 (nginx/1.18.0), 1.1 google
+Alt-Svc: clear
 
-<html><body><h1>500 Internal Server Error</h1>
-An internal server error occured.
-</body></html>
+<!-- Stored in resources/views/child.blade.php -->
+
+
+
+
+
+<!-- Stored in resources/views/layouts/app.blade.php -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="2qBa1dlwqsMp42e6DIL7z689xNVoHg7T00Xf1BsM">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- <link rel="icon" type="image/png" href="https://ebay25.com/img/favicon.png"> -->
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="2qBa1dlwqsMp42e6DIL7z689xNVoHg7T00Xf1BsM">
+
+    <title>eBay's 25th Sellerbration</title>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/46abc7d764.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <script src="/js/app.js?id=5a648267edbfd40dd1eb" defer></script>
+
+
+    <!-- Fonts -->
+    <style nonce=data.nonce>
+        .font-marketsans body {
+            font-family: "Market Sans", Arial, sans-serif;
+        }
+    </style>
+    <script nonce=data.nonce>
+        (function() {
+            var useCustomFont = ('fontDisplay' in document.documentElement.style) ||
+                (localStorage && localStorage.getItem('ebay-font'));
+            if (useCustomFont) {
+                document.documentElement.classList.add('font-marketsans');
+            }
+        })();
+    </script>
+    <!-- Styles -->
+   <link href="/css/app.css?id=91a245115b4211ebef9b" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+            {'gtm.start': new Date().getTime(),event:'gtm.js'}
+
+        );var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=gDwu3OBvbbJX1-lNBpC-lw&gtm_preview=env-1&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5RFFPWR');</script>
+    <!-- End Google Tag Manager -->
+
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5RFFPWR&gtm_auth=gDwu3OBvbbJX1-lNBpC-lw&gtm_preview=env-1&gtm_cookies_win=x"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div id="ebay">
+        <router-view></router-view>
+
+
+            <chat-bubble></chat-bubble>
+    </div>
+<script async src="/js/fontloader.standalone.js"></script>
+
+</body>
+</html>

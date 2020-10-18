@@ -1,14 +1,937 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
-Content-Type: text/html
-Content-Length: 96
-Date: Sun, 18 Oct 2020 11:32:28 GMT
+HTTP/1.1 200 OK
+Content-Language: en
+Content-Type: text/html; charset=UTF-8
+device: desktop
+ETag: "1603054420"
+Expect-CT: max-age=0, report-uri="/report-expect-ct-violation"
+Feature-Policy: accelerometer 'none';ambient-light-sensor 'none';autoplay 'self';camera 'none';encrypted-media 'none';fullscreen 'self';geolocation 'self';gyroscope 'none';magnetometer 'none';microphone 'none';midi 'none';payment 'none';picture-in-picture 'none';speaker 'self';sync-xhr 'self';usb 'none';vibrate 'none';vr 'none'
+From-Origin: same
+Last-Modified: Sun, 18 Oct 2020 20:53:40 GMT
+Link: <http://news.gamestop.com/about-gamestop>; rel="alternate"; hreflang="en"
+Link: <http://news.gamestop.com/about-gamestop>; rel="canonical"
+Link: <http://news.gamestop.com/node/14986>; rel="shortlink"
+Link: <http://news.gamestop.com/about-gamestop>; rel="revision"
+Referrer-Policy: no-referrer-when-downgrade
+X-Age: 0
+X-Content-Type-Options: nosniff
+X-Drupal-Dynamic-Cache: UNCACHEABLE
+X-Frame-Options: SAMEORIGIN
+X-Request-ID: v-0022911a-1184-11eb-ade3-bbfd47a42304
+X-UA-Compatible: IE=edge
+X-XSS-Protection: 1; mode=block
+X-EdgeConnect-MidMile-RTT: 11
+X-EdgeConnect-Origin-MEX-Latency: 396
+Vary: Accept-Encoding
+Cache-Control: public, max-age=0, s-maxage=1800
+Expires: Sun, 18 Oct 2020 20:53:40 GMT
+Date: Sun, 18 Oct 2020 20:53:40 GMT
+Transfer-Encoding:  chunked
 Connection: keep-alive
-Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=64
-Server-Timing: origin; dur=15008
-Strict-Transport-Security: max-age=86400
+Connection: Transfer-Encoding
+Set-Cookie: DrupalVisitorMobile=0; path=/; Secure; HttpOnly
 
-<html><body><h1>500 Internal Server Error</h1>
-An internal server error occured.
-</body></html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"761e715901",applicationID:"60519956"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+<meta property="og:site_name" content="Gamestop Corp." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="About GameStop | Gamestop Corp." />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/sites/g/files/knoqqb4551/files/gsfav.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" hreflang="en" href="http://news.gamestop.com/about-gamestop" />
+<link rel="canonical" href="http://news.gamestop.com/about-gamestop" />
+<link rel="shortlink" href="http://news.gamestop.com/node/14986" />
+<link rel="revision" href="http://news.gamestop.com/about-gamestop" />
+
+    <title>About GameStop | Gamestop Corp.</title>
+    <link rel="stylesheet" media="all" href="/sites/g/files/knoqqb4551/files/css/css_f6rhD_6-nS6oltPTpaElh5tut2p8v4HM8Gf3UvmlduY.css" />
+<link rel="stylesheet" media="all" href="/sites/g/files/knoqqb4551/files/css/css_S57TUmh8TjyZCWR7xMVbi8RytGRvC-CdmNQXteVF08E.css" />
+<link rel="stylesheet" media="print" href="/sites/g/files/knoqqb4551/files/css/css_7wMB648bvll5dOMc3hPwy769qrsGIAq-ChUjhwQOK6A.css" />
+
+    
+<!--[if lte IE 8]>
+<script src="/sites/g/files/knoqqb4551/files/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+
+    
+  </head>
+  <body class="body-sidebars-none nir-node nir-node--type-nir-landing-page nir-node--14986 page-node-14986 path-node page-node-type-nir-landing-page">
+    <div id="skip">
+      <a class="visually-hidden focusable skip-link" href="#main-menu">
+        Skip to main navigation
+      </a>
+    </div>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div class="">
+    <div id="mboxScriptContainer" style="display:none;visibility:hidden;"></div>
+    <style>.mboxDefault {
+            visibility: hidden;
+        }</style>
+
+
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar="" role="navigation">
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="/home-page"><img
+                                    src="/sites/g/files/knoqqb4551/themes/site/nir_pid327/client/images/gslogo.gif"></a></h1>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li><a href="/home-page">Home</a></li>
+                    <li class="has-dropdown not-click">
+                        <a href="/about-gamestop">About GameStop</a>
+                        <ul class="dropdown">
+                            <li class="title back js-generated">
+                                <h5><a href="javascript:void(0)">Back</a></h5>
+                            </li>
+                            <li class="parent-link hide-for-medium-up"><a class="parent-link js-generated"
+                                                                          href="/about-gamestop">About GameStop</a></li>
+                            <li><a href="/about-gamestop#ourhistory">Our History</a></li>
+                            <li><a href="/about-gamestop#leaders">The Leaders</a></li>
+                            <li><a href="/fact-sheet-0">Fact Sheet</a></li>
+                            <li><a href="/innovation">Innovation</a></li>
+                            <li><a href="/core-values">Core Values</a></li>
+                            <li><a href="https://careers.gamestop.com/en-US/page/culture" target="_blank">Corporate Culture</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown not-click">
+                        <a href="/home">Investor Relations </a>
+                        <ul class="dropdown">
+                            <li class="title back js-generated">
+                                <h5><a href="javascript:void(0)">Back</a></h5>
+                            </li>
+                            <li class="parent-link hide-for-medium-up"><a class="parent-link js-generated"
+                                                                          href="/home">Investor Relations </a></li>
+                            <li><a href="/corporate-governance/highlights">Corporate Governance</a></li>
+                            <li><a href="/stock-information/stock-quote">Stock Info</a></li>
+                            <li><a href="/stock-information/analyst-coverage">Analyst Coverage</a></li>
+                            <li><a href="/events-and-presentations">Events &amp; Presentations</a></li>
+                            <li><a href="/shareholder-services/online-investor-kit">Online Investor Kit</a></li>
+                            <li><a href="/financial-information/sec-filings">Financial Information</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/news-releases-0">Newsroom</a></li>
+                    <li><a href="/social-responsibility">Social Responsibility</a></li>
+                    <li><a href="http://careers.gamestop.com/">Careers</a></li>
+                </ul>
+                <header id="nir-header">
+                    <div class="container">
+                                                    <div id="header-region">
+                                                                  <div class="region region-header">
+    <div id="block-nir-pid327-stockquote" class="block--market-data-block__stock-quote block--market-data-block__stock-quote--5831 block--header--market-data-block__stock-quote block--header--market-data-block__stock-quote--5831 block--7526c794-03f0-4054-aba2-985621bf9d9f block--7526c794-03f0-4054-aba2-985621bf9d9f--5831 block block-nir-market-data-block block-market-data-block__stock-quote">
+  
+    
+      <div class='quote-wrap user-toggle-off stock-quote__featured'>
+    <div class="quote-wrapper">
+                                                                                    <ul class="right stocks hide-for-small hide-for-medium">
+                <li class="ticker"><span class="quote-header-symbol">
+   <input type="hidden" name="control_Symbol" value="03NA000000GME" >
+                         (Common Stock)
+      </span>
+                    <span class="home-quote-price"></span>
+                    <span class="ccbnDef"><span class=""></span></span>
+                    <span class="ccbnDef"><span class="ccbnTblTxt "></span></span>
+                    <br><span class="ccbnDisclaimer">Data provided by Nasdaq.  Minimum 15 minutes delayed.</span>
+                </li>
+            </ul>
+            </div>
+</div>
+  </div>
+<div id="block-nir-pid327-stockinfoattributionthomsonreuters" class="block--attribution-block__stock-info-attribution__thomson-reuters block--attribution-block__stock-info-attribution__thomson-reuters--5831 block--header--attribution-block__stock-info-attribution__thomson-reuters block--header--attribution-block__stock-info-attribution__thomson-reuters--5831 block--04ae63ff-c698-4c68-9dbe-d67338baf097 block--04ae63ff-c698-4c68-9dbe-d67338baf097--5831 block block-nir-attribution-block block-attribution-block__stock-info-attribution__thomson-reuters">
+  
+    
+      <p>
+  Data Provided by Refinitiv. Minimum 15 minutes delayed.</p>
+
+  </div>
+
+  </div>
+
+                            </div>
+                                            </div>
+                </header>
+            </section>
+        </nav>
+    </div>
+
+    <section class="hero hide">
+        <div class="row">
+            <div class="large-12 columns intro-text">
+                            </div>
+        </div>
+    </section>
+
+    
+
+    <div class="clearfix row" id="main">
+        <div class="container">
+            
+            <section id="content">
+                <div id="content-header">
+
+                    
+
+                </div>
+
+                <div id="content-area">  <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+<div id="block-nir-pid327-content" class="block--system-main-block block--system-main-block--14986 block--content--system-main-block block--content--system-main-block--14986 block--71a08e88-b1e2-48f7-a54a-2f1d5a7af188 block--71a08e88-b1e2-48f7-a54a-2f1d5a7af188--14986 block block-system block-system-main-block">
+  
+    
+      <article class="node node--type-nir_landing_page node--view-mode-full clearfix">
+  
+      <h1>
+              About GameStop
+          </h1>
+    
+
+  <div>
+    
+<div class="panel-display sutro clearfix " >
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-header panel-panel">
+        <div class="panel-panel-inner">
+          <div class="block-region-header"><div class="block-content--nir-lp-block block-content--nir-lp-block--14981 block--block-contenta3900eb7-0c70-4a75-8d70-6ec8016c09d8 block--block-contenta3900eb7-0c70-4a75-8d70-6ec8016c09d8--14986 block--header--block-content--a3900eb7-0c70-4a75-8d70-6ec8016c09d8 block--header--block-content--a3900eb7-0c70-4a75-8d70-6ec8016c09d8--14986 block--b326de1b-f4ac-4ef0-ac05-7e2c0dd33513 block--b326de1b-f4ac-4ef0-ac05-7e2c0dd33513--14986 block block-block-content block-block-contenta3900eb7-0c70-4a75-8d70-6ec8016c09d8">
+  
+    
+      
+            <div class="field field--name-field-nir-lp-block-node field--type-entity-reference field--label-hidden field__item">  
+            <div class="clearfix text-formatted field field--name-field-nir-lp-block-body field--type-text-long field--label-hidden field__item"><div class="row">
+<div class="large-12 columns about" role="content">
+<h1>About GameStop</h1>
+
+<p>GameStop Corp., a Fortune 500 company headquartered in Grapevine, Texas, is the world’s largest video game retailer, operates over 5,500 stores across 14 countries, and offers the best selection of new and pre-owned video gaming consoles, accessories and video game titles, in both physical and digital formats.</p>
+
+<p>GameStop also offers fans a wide variety of POP! vinyl figures, collectibles, board games and more. Through GameStop’s unique buy-sell-trade program, gamers can trade in video game consoles, games, and accessories, as well as consumer electronics for cash or in-store credit.</p>
+
+<p>The company's global family of brands include GameStop, EB Games, Micromania, Game Informer magazine, and ThinkGeek.</p>
+<!--<div class="row">
+<div class="large-5 columns about" role="content"><img alt="About Overview" data-entity-type="file" data-entity-uuid="63d810ef-168d-4f18-a7f5-925aff714f39" src="/system/files-encrypted/nasdaq_kms/inline-images/about2_0.jpg" /></div>
+
+<div class="large-7 columns about" role="content">
+<p>GameStop is committed to delivering innovation to consumers anywhere, anytime and any way they want it. Whether looking for new or pre-owned, digital or physical video game titles, the latest in video game hardware or accessories or consumer electronics, gaming and technology enthusiasts are invited to discover and enjoy their favorite products in one of GameStop's welcoming retail environments.</p>
+
+<p>Our buy-sell-trade program provides substantial value to customers looking to trade-in video game hardware and software, or smartphones and tablets they no longer use or play. Each year GameStop provides more than $1 billion in trade credits, with more than 70 percent of these trade dollars being applied toward the purchase of new products.</p>
+</div>
+</div>--></div>
+</div>
+</div>
+      
+</div>
+      
+  </div>
+<div class="block-content--nir-lp-block block-content--nir-lp-block--14971 block--block-content8e433eba-1150-4572-958f-69d56f54d508 block--block-content8e433eba-1150-4572-958f-69d56f54d508--14986 block--header--block-content--8e433eba-1150-4572-958f-69d56f54d508 block--header--block-content--8e433eba-1150-4572-958f-69d56f54d508--14986 block--d4bd93db-00c7-499b-a135-5d65970e76ab block--d4bd93db-00c7-499b-a135-5d65970e76ab--14986 block block-block-content block-block-content8e433eba-1150-4572-958f-69d56f54d508">
+  
+    
+      
+            <div class="field field--name-field-nir-lp-block-node field--type-entity-reference field--label-hidden field__item">  
+            <div class="clearfix text-formatted field field--name-field-nir-lp-block-body field--type-text-long field--label-hidden field__item"><section class="gshistory" id="ourhistory"><div class="row">
+<div class="large-12  columns">
+<h3>Our History</h3>
+
+<div class="bar"> </div>
+
+<div class="timeline">
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>1984</h1>
+
+<p>Babbage's, a small educational software retailer opens for business in Dallas, Texas.<br />
+Babbage’s acquires Software Etc., which formed Babbage’s Etc. LLC.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>1999</h1>
+
+<p>Babbage's Etc. was sold to Barnes &amp; Noble, and later merges with Funco, Inc.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2000</h1>
+
+<p>Funco changes name to GameStop.<br />
+GameStop revolutionizes the video game industry by launching its one-of-a-kind buy-sell-trade program.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2002</h1>
+
+<p>GameStop completes the ‘GME’ IPO on the New York Stock Exchange.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2004</h1>
+
+<p>GameStop spun off from Barnes &amp; Noble.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2005</h1>
+
+<p>GameStop acquires Electronics Boutique Games (EB Games), expands international footprint to become world’s largest video game retailer.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2008</h1>
+
+<p>GameStop acquires Micromania, France's leading video game retailer.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2010</h1>
+
+<p>GameStop launches the PowerUp Rewards customer loyalty program; secures more than 10 million members within the first year.<br />
+GameStop introduces new Digital Downloadable Content (DLC) product offering, quickly evolves into industry-wide best practice for video game titles.<br /><br /><i>Game Informer</i> magazine introduces digital edition of the magazine.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2011</h1>
+
+<p>GameStop expands digital gaming presence with launch of PC digital games offering.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2013</h1>
+
+<p>Game Informer magazine becomes the largest digital magazine in the world with 3 million subscribers, and the third largest magazine with a combined circulation of nearly 8 million subscribers.<br />
+GameStop launches new Technology Brands segment with the acquisitions of Spring Mobile AT&amp;T wireless and Simply Mac, the largest certified reseller of Apple products.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2014</h1>
+
+<p>GameStop International opens first pop culture "loot" store in Australia, under the retail brand name Zing Pop Culture; expands collectibles business in all global video game stores.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2015</h1>
+
+<p>GameStop acquires Geeknet, Inc., the parent company of the premier retailer of licensed video game themed merchandise – ThinkGeek.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2016</h1>
+
+<p>Opened our first ThinkGeek retail store in New York City.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2017</h1>
+
+<p>Introduces new 50/50 store concept in select EB Games Canada stores, dedicating 50% of retail space to video games and 50% to collectibles merchandise. Store concept would later be rolled out globally across GameStop, Micromania and EB Games Australia stores.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2018</h1>
+
+<p><i>Game Informer</i> magazine releases its 300ith issue, featuring Top 300 games of all time.</p>
+</div>
+
+<div class="entry">
+<div class="dot"> </div>
+
+<h1>2019</h1>
+
+<p>GameStop enters eSports space; partners with Complexity Gaming to launch the GameStop Performance Center, a state-of-the-art training center at The Star in Frisco, Texas. New center to serve as the premier public headquarters where gamers can unite and share their passions for eSports and celebrate their love for video games.<br />
+Doubles down on retail innovation by launching new GameStop Innovation Store Labs to cultivate innovative customer-centric opportunities and bring video game culture to live in every neighborhood.</p>
+</div>
+</div>
+</div>
+</div>
+</section></div>
+      
+</div>
+      
+  </div>
+<div class="views-element-container block--views-blockwidget-people-widget-assets-ul block--views-blockwidget-people-widget-assets-ul--14986 block--header--views-block--widget-people-widget-assets-ul block--header--views-block--widget-people-widget-assets-ul--14986 block--d040c0ce-a5d8-48ae-827a-11e540adcde5 block--d040c0ce-a5d8-48ae-827a-11e540adcde5--14986 block block-views block-views-blockwidget-people-widget-assets-ul">
+  
+      <h2>The Leaders</h2>
+    
+      <div data-block-uuid="d040c0ce-a5d8-48ae-827a-11e540adcde5"><div class="view view-widget-people view-id-widget_people view-display-id-widget_assets_ul js-view-dom-id-7c87fd0824e96516f8438ed02ae479208426ba39519af30bf811a383b898ff8c">
+  
+    
+        <div class="view-filters">
+      <form class="views-exposed-form" data-drupal-selector="views-exposed-form-widget-people-widget-assets-ul" action="/about-gamestop?cid=afl_10000087&amp;affID=77777&amp;sourceID=lw9MynSeamY-DljkMkylO8TgUMecRbGKsQ" method="get" id="views-exposed-form-widget-people-widget-assets-ul" accept-charset="UTF-8">
+  <div class="form--inline clearfix">
+  
+</div>
+
+</form>
+
+    </div>
+    
+      <div class="view-content">
+      <div class="item-list">
+  
+  <ul>
+
+          <li>    
+<div class="equalHight">
+    <div class="columns leader">
+        <a href="/node/16776" data-reveal-id="modelID16776">
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-29-16/George%20S-%20Headshot%20%281%29.png?itok=fsGhrb0I 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-29-16/George%20S-%20Headshot%20%281%29.png?itok=FpRkTMQn 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/08/20/13-29-16/George%20S-%20Headshot%20%281%29.png?itok=f3wLPolH" alt="George Sherman_IMG" />
+
+  </picture>
+
+</div>
+      </a>
+        <h4>
+            
+              George
+
+            
+              Sherman
+
+            
+        </h4>
+        <p><a href="#" data-reveal-id="modelID16776">READ MORE ›</a></p>
+    </div>
+    <div id="modelID16776" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true"
+         role="dialog">
+        
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-29-16/George%20S-%20Headshot%20%281%29.png?itok=fsGhrb0I 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-29-16/George%20S-%20Headshot%20%281%29.png?itok=FpRkTMQn 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/08/20/13-29-16/George%20S-%20Headshot%20%281%29.png?itok=f3wLPolH" alt="George Sherman_IMG" />
+
+  </picture>
+
+</div>
+      
+        <div class="biocopy">
+            <h2 id="modalTitle">
+                
+                  George
+
+                
+                  Sherman
+
+                </h2>
+            <p> 
+            <div class="clearfix text-formatted field field--name-field-nir-person-bio field--type-text-long field--label-hidden field__item"><p>George E. Sherman is the chief executive officer of GameStop. He was appointed to this role in April 2019.</p>
+
+<p>George brings to GameStop more than 25 years of senior management experience serving in a variety of retail leadership roles for several major retail brands like Advance Auto Parts, Best Buy, Target and Home Depot.</p>
+
+<p>Prior to joining GameStop, George served as CEO of Victra, the largest exclusive authorized retailer for Verizon Wireless products and services. Before this, he served as president and interim CEO for Advance Auto Parts where he was responsible for more than 4,000 stores, merchandising, marketing, IT, supply chain and commercial sales.</p>
+
+<p>George also served as president of Best Buy Services, where he led consumer services, small- and medium-business capabilities, channel partnerships and Best Buy for business. Prior to Best Buy, he ran the operations and home services divisions of Home Depot and spent 14 years with the Target Corporation in various leadership roles.</p>
+
+<p>He received his master’s degree from Central Michigan University and served as an officer in the United States Air Force for nearly seven years. George is an active community volunteer with veteran’s causes and currently serves on the board of directors of Building Homes for Heroes, which builds mortgage free homes catered to the unique needs of disabled veterans.</p></div>
+      </p>
+        </div>
+        <div class="clear"></div>
+                <a class="close-reveal-modal" aria-label="Close">x</a>
+    </div>
+</div></li>
+          <li>    
+<div class="equalHight">
+    <div class="columns leader">
+        <a href="/node/16966" data-reveal-id="modelID16966">
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-30-08/Jim%20B-%20Headshot.png?itok=uHkGHO0T 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-30-08/Jim%20B-%20Headshot.png?itok=8mFNrAoY 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/08/20/13-30-08/Jim%20B-%20Headshot.png?itok=eb6b3v-e" alt="James Bell" />
+
+  </picture>
+
+</div>
+      </a>
+        <h4>
+            
+              Jim
+
+            
+              Bell
+
+            
+        </h4>
+        <p><a href="#" data-reveal-id="modelID16966">READ MORE ›</a></p>
+    </div>
+    <div id="modelID16966" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true"
+         role="dialog">
+        
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-30-08/Jim%20B-%20Headshot.png?itok=uHkGHO0T 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-30-08/Jim%20B-%20Headshot.png?itok=8mFNrAoY 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/08/20/13-30-08/Jim%20B-%20Headshot.png?itok=eb6b3v-e" alt="James Bell" />
+
+  </picture>
+
+</div>
+      
+        <div class="biocopy">
+            <h2 id="modalTitle">
+                
+                  Jim
+
+                
+                  Bell
+
+                </h2>
+            <p> 
+            <div class="clearfix text-formatted field field--name-field-nir-person-bio field--type-text-long field--label-hidden field__item"><p>Jim Bell serves as Executive Vice President and Chief Financial Officer for GameStop, a role he was appointed to in June of 2019. </p>
+
+<p>Prior to joining GameStop, Jim served as CFO and interim CEO of Wok Holdings, Inc., the parent company of P.F. Chang’s, Pei Wei and True Food Kitchen restaurants, where he successfully designed and led the company’s overall strategic plan and omnichannel digital transformation and the successful sale of each of these brands.  Previously, Jim served as EVP and CFO at RLH Corporation and President and CEO of Coldwater Creek, Inc. Earlier in his career he held senior finance roles at Harry &amp; David Holdings, Inc. and The Gap. </p>
+
+<p>Jim received his MBA from the University of Maryland and a B.S. in Economics from the U.S. Naval Academy.  Following graduation, Jim served as a Naval Flight Officer leading squadron and flight operations in the U.S. Navy from 1989 to 1998.<br />
+ </p>
+
+<p> </p></div>
+      </p>
+        </div>
+        <div class="clear"></div>
+                <a class="close-reveal-modal" aria-label="Close">x</a>
+    </div>
+</div></li>
+          <li>    
+<div class="equalHight">
+    <div class="columns leader">
+        <a href="/node/16971" data-reveal-id="modelID16971">
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-30-48/Frank%20H-%20Headshot.png?itok=25IPsQZt 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-30-48/Frank%20H-%20Headshot.png?itok=QazF-86- 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/08/20/13-30-48/Frank%20H-%20Headshot.png?itok=k7xH-LN8" alt="Frank Hamlin" />
+
+  </picture>
+
+</div>
+      </a>
+        <h4>
+            
+              Frank
+
+            
+              Hamlin
+
+            
+        </h4>
+        <p><a href="#" data-reveal-id="modelID16971">READ MORE ›</a></p>
+    </div>
+    <div id="modelID16971" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true"
+         role="dialog">
+        
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-30-48/Frank%20H-%20Headshot.png?itok=25IPsQZt 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-30-48/Frank%20H-%20Headshot.png?itok=QazF-86- 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/08/20/13-30-48/Frank%20H-%20Headshot.png?itok=k7xH-LN8" alt="Frank Hamlin" />
+
+  </picture>
+
+</div>
+      
+        <div class="biocopy">
+            <h2 id="modalTitle">
+                
+                  Frank
+
+                
+                  Hamlin
+
+                </h2>
+            <p> 
+            <div class="clearfix text-formatted field field--name-field-nir-person-bio field--type-text-long field--label-hidden field__item"><p>Frank Hamlin serves as Executive Vice President and Chief Customer Officer for GameStop, a role he was appointed to in June of 2019. </p>
+
+<p>As CCO, Frank is responsible for defining and driving the company’s overall customer-centric initiatives as it relates to Marketing, customer loyalty, the omnichannel business, strategy and innovation. He previously served as GameStop’s Chief Marketing Officer, where he oversaw all aspects of strategic marketing, as well as leading cross-functional teams in delivering consumer- and brand-centric strategies, pursuing new business opportunities, and driving new customer acquisitions and brand affinity programs to help make video game culture come to life in every neighborhood. Frank brings more than 25 years in retail marketing, strategy, customer loyalty and e-commerce expertise to GameStop.</p>
+
+<p>Frank returned to GameStop in 2018, after having served as CMO from 2014 to 2016.  In the interim, he was Executive Vice President and CMO for Tailored Brands, the parent of Men’s Wearhouse, Jos. A Bank, and Joseph Abboud, among others.<br />
+ <br />
+Prior to GameStop, Frank served in Marketing and Operations leadership roles for other notable organizations, including Guitar Center, E-Miles, LLC, H.E. Butt Grocery, and Brierley &amp; Partners to name a few. </p>
+
+<p>Frank is an avid music hobbyist, and presently serves on the Board of Directors of Tuesday Morning, a public upscale retailer that specializes in name-brand closeout merchandise.<br />
+ </p></div>
+      </p>
+        </div>
+        <div class="clear"></div>
+                <a class="close-reveal-modal" aria-label="Close">x</a>
+    </div>
+</div></li>
+          <li>    
+<div class="equalHight">
+    <div class="columns leader">
+        <a href="/node/17026" data-reveal-id="modelID17026">
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-26-11/Untitled%20design%20%2818%29.png?itok=KgzQ3u_E 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-26-11/Untitled%20design%20%2818%29.png?itok=QzIM6ciV 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/08/20/13-26-11/Untitled%20design%20%2818%29.png?itok=srSD4Vtz" alt="Chris Homeister" />
+
+  </picture>
+
+</div>
+      </a>
+        <h4>
+            
+              Chris
+
+            
+              Homeister
+
+            
+        </h4>
+        <p><a href="#" data-reveal-id="modelID17026">READ MORE ›</a></p>
+    </div>
+    <div id="modelID17026" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true"
+         role="dialog">
+        
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-26-11/Untitled%20design%20%2818%29.png?itok=KgzQ3u_E 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-26-11/Untitled%20design%20%2818%29.png?itok=QzIM6ciV 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/08/20/13-26-11/Untitled%20design%20%2818%29.png?itok=srSD4Vtz" alt="Chris Homeister" />
+
+  </picture>
+
+</div>
+      
+        <div class="biocopy">
+            <h2 id="modalTitle">
+                
+                  Chris
+
+                
+                  Homeister
+
+                </h2>
+            <p> 
+            <div class="clearfix text-formatted field field--name-field-nir-person-bio field--type-text-long field--label-hidden field__item"><p>Chris Homeister serves as Executive Vice President and Chief Merchandising Officer for GameStop, a role he was appointed to in June of 2019.</p>
+
+<p>As Chief Merchandising Officer, Chris will be responsible for GameStop’s overall merchandise operations and strategy and all product and visual merchandising functions, including buying, planning, supply chain and logistics, and inventory control efforts.</p>
+
+<p>Prior to joining GameStop, Chris served as President, CEO and a member of the Board of Directors of The Tile Shop, a publicly traded specialty retailer, where he grew the company in terms of product assortment, online and mobile capabilities, store count, employees, revenue and EBITDA.</p>
+
+<p>Earlier in his career, Chris held a number of senior roles at Best Buy, including SVP, Digital Merchandising &amp; Strategic Planning and General Manager and SVP, Entertainment Business Group, where he oversaw the product categories including video games, movies, music, and eReaders and launched Best Buys’ video game trade-in business.</p></div>
+      </p>
+        </div>
+        <div class="clear"></div>
+                <a class="close-reveal-modal" aria-label="Close">x</a>
+    </div>
+</div></li>
+          <li>    
+<div class="equalHight">
+    <div class="columns leader">
+        <a href="/node/16976" data-reveal-id="modelID16976">
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/06/03/13-50-25/Angela%20Venuk%20headshot.png?itok=i71uDfKP 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/06/03/13-50-25/Angela%20Venuk%20headshot.png?itok=o2yIGQT6 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/06/03/13-50-25/Angela%20Venuk%20headshot.png?itok=lcDXf4QI" alt="Angela" />
+
+  </picture>
+
+</div>
+      </a>
+        <h4>
+            
+              Angela
+
+            
+              Venuk
+
+            
+        </h4>
+        <p><a href="#" data-reveal-id="modelID16976">READ MORE ›</a></p>
+    </div>
+    <div id="modelID16976" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true"
+         role="dialog">
+        
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/06/03/13-50-25/Angela%20Venuk%20headshot.png?itok=i71uDfKP 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/06/03/13-50-25/Angela%20Venuk%20headshot.png?itok=o2yIGQT6 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/06/03/13-50-25/Angela%20Venuk%20headshot.png?itok=lcDXf4QI" alt="Angela" />
+
+  </picture>
+
+</div>
+      
+        <div class="biocopy">
+            <h2 id="modalTitle">
+                
+                  Angela
+
+                
+                  Venuk
+
+                </h2>
+            <p> 
+            <div class="clearfix text-formatted field field--name-field-nir-person-bio field--type-text-long field--label-hidden field__item"><p>Angela Venuk serves as Vice President and interim Chief Information Officer for GameStop, a role she was appointed to in May of 2019. </p>
+
+<p>As CIO, Angela oversees all aspects of global information technology including development, infrastructure, data management, and cyber security.  Under her leadership, technology teams deliver business value and enable growth through an agile delivery methodology.</p>
+
+<p>Prior to joining GameStop in 2013, Angela served in a variety of technology roles spanning software development and support, portfolio and project management, and strategic relationship management at MetroPCS, GTESS, Sprint, Nissan Motor Acceptance Corporation, and Computer Sciences Corporation. </p>
+
+<p>Angela received a Bachelor of Business Administration in Management Information Systems from the University of Texas at Austin and a Master of Business Administration from Southern Methodist University.  </p>
+
+<p>When she is not at work, you might find her playing golf or tennis, but most likely at a hockey rink cheering on her boys. She is a board member for a non-profit organization, Texas Tigers Hockey.<br />
+ </p></div>
+      </p>
+        </div>
+        <div class="clear"></div>
+                <a class="close-reveal-modal" aria-label="Close">x</a>
+    </div>
+</div></li>
+          <li>    
+<div class="equalHight">
+    <div class="columns leader">
+        <a href="/node/17066" data-reveal-id="modelID17066">
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-27-04/Lisa%20K-%20Headshot.png?itok=a5yqCoPW 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-27-04/Lisa%20K-%20Headshot.png?itok=nWHzfWos 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/08/20/13-27-04/Lisa%20K-%20Headshot.png?itok=SC7L9yb9" alt="Lisa Keglovitz" />
+
+  </picture>
+
+</div>
+      </a>
+        <h4>
+            
+              Lisa
+
+            
+              Keglovitz
+
+            
+        </h4>
+        <p><a href="#" data-reveal-id="modelID17066">READ MORE ›</a></p>
+    </div>
+    <div id="modelID17066" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true"
+         role="dialog">
+        
+            <div class="field field--name-field-nir-person-headshot field--type-image field--label-hidden field__item">    <picture>
+                  <source srcset="/system/files-encrypted/styles/nir_person_large_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-27-04/Lisa%20K-%20Headshot.png?itok=a5yqCoPW 1x" media="screen and (min-width: 1px)" type="image/png"/>
+              <source srcset="/system/files-encrypted/styles/nir_person_medium_bio_pic/encrypt/nasdaq_kms/people/2019/08/20/13-27-04/Lisa%20K-%20Headshot.png?itok=nWHzfWos 1x" media="screen and (min-width: 481px)" type="image/png"/>
+                  <img src="/system/files-encrypted/styles/large/encrypt/nasdaq_kms/people/2019/08/20/13-27-04/Lisa%20K-%20Headshot.png?itok=SC7L9yb9" alt="Lisa Keglovitz" />
+
+  </picture>
+
+</div>
+      
+        <div class="biocopy">
+            <h2 id="modalTitle">
+                
+                  Lisa
+
+                
+                  Keglovitz
+
+                </h2>
+            <p> 
+            <div class="clearfix text-formatted field field--name-field-nir-person-bio field--type-text-long field--label-hidden field__item"><p>Lisa Keglovitz is Senior Vice President of Human Resources for GameStop. </p>
+
+<p>In this role, she is responsible for developing and executing human resource strategy in support of the overall business plan and strategic direction of the organization, specifically in the areas of succession planning, talent management, change management, organizational and performance management, training and development, and compensation.  Prior to her current role, she served as Vice President of Store Operations, which included communications, process efficiency, and workforce/payroll planning. <br />
+ <br />
+Prior to joining GameStop in July of 2011, Lisa held a variety of positions in HR and operations for Home Depot. In her last role for the home improvement retailer, Lisa served as the Regional HR Director for the Southeast Region and Gulf Region. She provided strategic oversight and execution for all aspects of HR including talent management/OE, associate relations, and staffing. Lisa was also responsible for the Southern Division Diversity and Inclusion Council as well as Women in Leadership programs designed to create awareness, promote hiring initiatives that better served their customers, and to develop, promote, and retain diverse talent.  <br />
+ <br />
+Lisa received a Bachelor of Science in Accounting from the University of Texas at Dallas and a Master of Business Administration from Texas A&amp;M, Commerce. Lisa is a board member of REA- DFW’s Retail Executive Association. REA is the leading professional development and networking organization in North Texas for executives in the retail, restaurant, and hospitality industries.   </p></div>
+      </p>
+        </div>
+        <div class="clear"></div>
+                <a class="close-reveal-modal" aria-label="Close">x</a>
+    </div>
+</div></li>
+    
+  </ul>
+
+</div>
+
+    </div>
+  
+  
+          <div class="view-footer">
+          
+        </div>
+    </div>
+</div>
+
+  </div>
+</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6 radix-layouts-column1 panel-panel">
+        <div class="panel-panel-inner">
+          <div class="block-region-column1"><div class="block-content--nir-lp-block block-content--nir-lp-block--15011 block--block-content35034228-9feb-4cc3-891e-fd0f76892ef3 block--block-content35034228-9feb-4cc3-891e-fd0f76892ef3--14986 block--column1--block-content--35034228-9feb-4cc3-891e-fd0f76892ef3 block--column1--block-content--35034228-9feb-4cc3-891e-fd0f76892ef3--14986 block--64abe973-a6f3-46ad-94ce-3c0b4ad2e7b1 block--64abe973-a6f3-46ad-94ce-3c0b4ad2e7b1--14986 block block-block-content block-block-content35034228-9feb-4cc3-891e-fd0f76892ef3">
+  
+    
+      
+            <div class="field field--name-field-nir-lp-block-node field--type-entity-reference field--label-hidden field__item">  
+            <div class="clearfix text-formatted field field--name-field-nir-lp-block-body field--type-text-long field--label-hidden field__item"><div class="row">
+<hr /><div class="large-6 columns factsheet" role="content">
+<h3>Corporate Fact Sheet</h3>
+
+<p>GameStop Corp., a Fortune 400 and S&amp;P 500 company, is a global family of specialty retail brands that makes the most popular technologies affordable and simple. GameStop operates more than 5,500 stores across 14 countries.</p>
+
+<p><a href="/fact-sheet-0">MORE INFO ›</a></p>
+</div>
+
+<div class="large-6 hide-for-small hide-for-medium columns factsheet" role="content"><img alt="Gamestop img" data-entity-type="file" data-entity-uuid="4cba9063-2d3b-477e-bd4d-6959d301e791" src="/system/files-encrypted/nasdaq_kms/inline-images/factsheet_0.gif" /></div>
+</div>
+</div>
+      
+</div>
+      
+  </div>
+</div>
+        </div>
+      </div>
+      <div class="col-md-6 radix-layouts-column2 panel-panel">
+        <div class="panel-panel-inner">
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-12 radix-layouts-footer panel-panel">
+        <div class="panel-panel-inner">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div><!-- /.sutro -->
+
+  </div>
+</article>
+
+  </div>
+
+  </div>
+</div>
+            </section>
+
+            
+        </div>
+    </div>
+
+        <div class="row bottomlinks">
+        <div class="hrShowHide">
+            <hr>
+        </div>
+        <div class="large-3 columns">
+            <img src="/sites/g/files/knoqqb4551/themes/site/nir_pid327/client/images/btm_news.jpg">
+            <h4>Investor Relations</h4>
+            <p>GameStop is committed to driving exceptional financial performance and creating new opportunities for
+                shareholder value and profitable growth.</p>
+            <p><a href="/home">READ MORE ›</a></p>
+        </div>
+        <div class="large-3 columns">
+            <img src="/sites/g/files/knoqqb4551/themes/site/nir_pid327/client/images/btm_newsroom.jpg">
+            <h4>Newsroom</h4>
+            <p>Access the latest information and news concerning GameStop's strategic initiatives across its family of
+                specialty retail brands.</p>
+            <p><a href="/news-releases-0">READ MORE ›</a></p>
+        </div>
+        <div class="large-3 columns">
+            <img src="/sites/g/files/knoqqb4551/themes/site/nir_pid327/client/images/GameStopGives_Logo-220x110.png">
+            <h4>Social Responsibility</h4>
+            <p>Our family of associates constantly look for opportunities to serve and give back to those communities in
+                which we live, work and play.</p>
+            <p><a href="/social-responsibility">READ MORE ›</a></p>
+        </div>
+        <div class="large-3 columns">
+            <img src="/sites/g/files/knoqqb4551/themes/site/nir_pid327/client/images/btm_careers.jpg">
+            <h4>Careers</h4>
+            <p>GameStop hires the best and brightest talent to manage and grow our family of specialty retail
+                brands.</p>
+            <p><a href="http://careers.gamestop.com/">READ MORE ›</a></p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="large 12 columns footertag">
+            <img src="/sites/g/files/knoqqb4551/themes/site/nir_pid327/client/images/2019_GMEbrands_Line_Color_SM.jpg" style="display:block; margin:0 auto">
+        </div>
+    </div>
+
+
+    <footer class="row">
+        <div class="large-12 columns">
+            <hr>
+            <div class="row">
+                <div class="large-6 columns">
+                    <ul class="inline-list">
+                        <li><a href="https://www.facebook.com/GameStop"><img
+                                        src="/sites/g/files/knoqqb4551/themes/site/nir_pid327/client/images/ftr_fb.jpg"
+                                        class="footerimg"></a></li>
+                        <li><a href="https://plus.google.com/+GameStop"><img
+                                        src="/sites/g/files/knoqqb4551/themes/site/nir_pid327/client/images/ftr_gp.jpg"
+                                        class="footerimg"></a></li>
+                        <li><a href="https://twitter.com/GameStop"><img
+                                        src="/sites/g/files/knoqqb4551/themes/site/nir_pid327/client/images/ftr_tw.jpg"
+                                        class="footerimg"></a></li>
+                        <li><a href="https://www.youtube.com/user/GamestopVideo"><img
+                                        src="/sites/g/files/knoqqb4551/themes/site/nir_pid327/client/images/ftr_yt.jpg"
+                                        class="footerimg last"></a></li>
+                        <li class="footerlnk"><a href="http://careers.gamestop.com/">Careers </a></li>
+                        <li class="footerlnk"> |</li>
+                        <li class="footerlnk"><a href="http://www.gamestop.com/"> Shop gamestop.com </a></li>
+                        <li class="footerlnk"> |</li>
+                        <li class="footerlnk"><a href="http://www.gamestop.com/stores">Find a Store</a></li>
+                    </ul>
+                </div>
+                <div class="large-6 columns">
+                    <ul class="inline-list right">
+                        <li>© 2017 GameStop. All rights reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+  </div>
+
+    
+          <script type="text/javascript">var s_CCSWebHostingAccount = "trcgclientweb1269";</script>
+        <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/14986","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","currentQuery":{"affID":"77777","cid":"afl_10000087","sourceID":"lw9MynSeamY-DljkMkylO8TgUMecRbGKsQ"}},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"classy\/node,core\/html5shiv,core\/picturefill,nir_base\/adobe_omniture,nir_base\/lib,nir_base\/nir_icons,nir_base\/nir_toolbar,nir_ckeditor_datatables\/datatables,nir_market_data_block\/nir_market_data_block.command,nir_market_data_block\/nir_market_data_block.stockQuote,nir_multimedia\/nir_multimedia,nir_pid327\/override,radix_layouts\/radix_layouts,system\/base,views\/views.module","theme":"nir_pid327","theme_token":null},"ajaxTrustedUrl":{"\/about-gamestop":true},"user":{"uid":0,"permissionsHash":"2cb0c395a6a8d37775f387a3054036c50a829687bb04a3678c1e8210898fdaef"}}</script>
+<script src="/sites/g/files/knoqqb4551/files/js/js_xFH4mx6gUbdVOqjcqKWvQMi-ZX05jTFh8UsC-Kmg2lI.js"></script>
+
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"761e715901","applicationID":"60519956,24276188","transactionName":"ZlVXYRcAW0ZRW0QKX18fdFYRCFpbH3xCFkBQXGlbCgVQaXNXXhdCXlxZUBc9e1pUXWYKVUZzWlsRE1pZXF1CTg5HWVBC","queueTime":0,"applicationTime":374,"atts":"ShJUF18aSEg=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

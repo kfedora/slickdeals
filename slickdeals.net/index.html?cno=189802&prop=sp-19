@@ -1,0 +1,304 @@
+HTTP/1.1 200 OK
+X-GUploader-UploadID: ABg5-Uxds6Oo_Jp3DO2Op4oIRgdiuDvckQF9hVD2sfXg5s8io2iqzQ7xT1iEHakZNw6qZaR0RCf5RQBIMWeen_z_-7u5-L_U2g
+Last-Modified: Thu, 06 Feb 2020 22:09:04 GMT
+ETag: "3704679cc737cee3422ff7efb4c13b56"
+x-goog-generation: 1581026944529750
+x-goog-metageneration: 1
+x-goog-stored-content-encoding: identity
+x-goog-stored-content-length: 8268
+Content-Type: text/html
+x-goog-hash: crc32c=V7likg==
+x-goog-hash: md5=NwRnnMc3zuNCL/fvtME7Vg==
+x-goog-storage-class: MULTI_REGIONAL
+Server: UploadServer
+X-Akamai-Transformed: 9 2790 0 pmb=mTOE,1
+Vary: Accept-Encoding
+Cache-Control: public, max-age=14400
+Expires: Mon, 19 Oct 2020 01:00:21 GMT
+Date: Sun, 18 Oct 2020 21:00:21 GMT
+Content-Length: 8566
+Connection: keep-alive
+X-Proto: secure
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Rebate Center</title>
+	<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+	<script>
+		$.fn.myPlugin = function () {
+			console.log('Plugin on Original jQuery')
+		};
+	</script>
+	<script>
+		$(document).on('hfapp-ready', function () {
+			console.log('hfapp-ready detected');
+			$(document).off('hfapp-ready');
+			
+			$('h1').myPlugin();
+		});
+	</script>
+	<script>
+		(function () {
+		  function detectLoad() {
+		    try {
+		      // Look for old one
+		      if (!$.fn.magicHappens) {
+		        // Stop looking for the new jquery
+		        clearInterval(checkLoop);
+
+		        // Restores the old jquery
+		        $.noConflict();
+
+		        // remove the special tagging
+		        delete $.fn.magicHappens;
+
+		        // Start your app
+		        $(document).trigger('hfapp-ready')
+		      }
+		    } catch (e) {
+		      // do nothing - new jquery not loaded
+		    }
+		  }
+
+		  // tag jQuery so we know which one it is;
+		  $.fn.magicHappens = true;
+
+		  // start looking for it at a regular interval
+		  var checkLoop = setInterval(detectLoad, 100);
+		}())
+	</script>
+
+<!-- Ensighten changes -->
+<!-- WCS7UP - Ensighten - Start This page will be used for including the Bootstrapping logic of Ensighten  -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<!-- WCS7UP - Ensighten - End  -->
+<!--      <link rel="stylesheet" type="text/css" media="all" href="styles/base.css" /> -->
+
+<!-- Begin autodetect logic -->
+
+	<script type="text/javascript">var props = function(){
+            var nav = window.navigator;
+            var userAgt = nav.userAgent.toLowerCase();
+            var devicePixelRatio = window.devicePixelRatio;
+            var properties = {
+                android : /android/i.test(userAgt),
+                iphone : /iphone/i.test(userAgt),
+                ipod : /ipod/i.test(userAgt),
+                ipad : /ipad/i.test(userAgt),
+                ios : /ip(ad|hone|od)/i.test(userAgt),
+                blackberry : /blackberry/i.test(userAgt) || /rim/i.test(userAgt),
+                winphone : /windows phone/i.test(userAgt)
+            };
+
+
+            function getFormFactor(){
+                if(properties.mobile){
+                    return properties.small ? "smartphone" : "tablet";
+                }
+                else {
+                    return "desktop";
+                }
+            }
+
+
+            function getSize(){
+                var w = Math.round(window.screen.width / devicePixelRatio);
+                var h = Math.round(window.screen.height / devicePixelRatio);
+
+                if(!properties.ipad && (h < 480 || w < 480 || (properties.android && (userAgt.indexOf("mobile") != -1)))){
+                    return "small";
+                }
+                else if(properties.ipad || h < 801 || w < 801){
+                    return "large";
+                }
+                else{
+                    return "xlarge";
+                }
+            }
+
+
+            properties[getSize()] = true;
+            properties.mobile = properties.android || properties.ios || properties.blackberry || properties.winphone;
+
+
+            var formFactor = getFormFactor();
+
+            if(formFactor != "unknown"){
+                properties[formFactor] = true;
+            }
+
+
+            return properties;
+        }();
+
+
+        var endOfPath = window.location.href.indexOf("index.html") == -1 ? window.location.href.length : window.location.href.indexOf("index.html");
+        var basePath = window.location.href.substring(0, endOfPath);
+
+        if(basePath.charAt(basePath.length - 1) != "/"){
+            basePath += "/";
+        }
+
+
+
+</script>
+
+<!-- <script>
+	if (props.smartphone)
+	{
+		document.write('<'+'script src="//nexus.ensighten.com/homedepotmobile/Bootstrap.js" type="text/javascript"><' + '/script>');
+	}
+	else
+	{
+document.write('<'+'script src="//nexus.ensighten.com/homedepot/Bootstrap.js" type="text/javascript"><' + '/script>');
+	}
+</script> -->
+
+<!-- End Autodetect logic -->
+
+<script>
+  var js = document.createElement("script");
+  js.setAttribute("type", "text/javascript");
+  js.setAttribute("id", "THDHeaderFooter");
+  js.setAttribute("hfapp-callertype", "rebate-center");
+  js.setAttribute("bootstrap", "true");
+
+  if ("https:" == document.location.protocol) {
+  js.setAttribute("src", "https://secure2.homedepot.com/hf/thirdparty/js/thd.include.third_party.js");
+  } else {
+  js.setAttribute("src", "http://www.homedepot.com/hf/thirdparty/js/thd.include.third_party.js");
+  }
+
+  if (props.smartphone)
+  {
+      js.setAttribute("hfapp-version","default");
+      js.setAttribute("channel", "mobile");
+      //document.getElementById("headerimage").setAttribute("class", "stretchy");
+  }
+  else
+  {
+      js.setAttribute("hfapp-version", "default");
+      js.setAttribute("channel", "web");
+  }
+  // document.head.appendChild(sc);
+  // For older browsers (IE < 9 etc.) that doesn't support document.head
+  // head.appendChild(js);
+  document.getElementsByTagName("head")[0].appendChild(js);
+</script>
+
+<script type="text/javascript">
+	// Create a safe reference of digitalData
+	digitalData = window.digitalData ? digitalData : {};
+
+	// Set the DDO
+	if (props.smartphone) {
+		digitalData.page = {
+			pageInfo: {
+				pageName: "tool:Rebate Center",
+				pageLoadEvent: "", 	//only if applicable
+				pageType: "tool:Rebate Center:landing",
+				abTest: "" 		//only if applicable
+			},
+			category: {
+				primaryCategory: "Rebate Center",
+				subCategory1: "",
+				subCategory2: ""
+			},
+				site: {
+				experienceType: "mobile"
+			}
+		};
+	}
+	else {
+		digitalData.page = {
+			pageInfo: {
+				pageName: "tool:Rebate Center",
+				pageLoadEvent: "", 	//only if applicable
+				pageType: "tool:Rebate Center:landing",
+				abTest: "" 		//only if applicable
+			},
+			category: {
+				primaryCategory: "Rebate Center",
+				subCategory1: "",
+				subCategory2: ""
+			},
+				site: {
+				experienceType: "desktop"
+			}
+		};
+	};
+
+	// Create the function
+	function ddoInit() {
+	   _T = window._T ? _T : {};
+
+   if (typeof _T.pageData === 'undefined') {
+             _T.pageData = [];
+    	   }
+    	   _T.pageData.push(digitalData);
+	}
+
+	ddoInit();
+</script>
+
+</head>
+<body>
+	<div id="container" class="grid isBound">
+	  <!--Home Depot Header -->
+	  <div class="col__12-12">
+            <div id="breadcrumb">
+              <ul id="headerCrumb" class="list list--type-plain breadcrumb__header">
+                <li class="list__item--type-inline breadcrumb__item"><a href="//www.homedepot.com/" class="breadcrumb-home list__link breadcrumb__link">Home</a></li>
+                <li class="list__item--type-inline breadcrumb__item">Rebate Center</li>
+               </ul>
+            <div class="clear">&nbsp;</div>
+          </div>
+	  <!-- <h1 class="page-header">Rebate Center</h1> -->
+        </div>
+
+
+	<div class="grid isBound">
+		<div class="col__12-12">
+			<script>
+				if (props.smartphone)
+  				{
+					document.write('<img src="images/rebate-center-header.jpg" class="stretchy" style="margin-bottom:10px;">');
+				}
+				else
+				{
+					document.write('<img src="images/rebate-center-header.jpg" style="margin-bottom:10px;">');
+				}
+			</script>
+    <!-- BEGIN EcoRebates Widget -->
+    <div id="ecorebates" style="display:none;"></div>
+
+    <script type="text/javascript">
+		var _ecr = _ecr || {};
+        _ecr['categoryWidget'] = "ecorebates";
+
+		_ecr.options = {
+            headingText: "",
+            subheadingText: "",
+            hideFiltersOnSelection: true,
+            rebateConsumerTypes: ['residential', 'commercial'],
+        };
+
+        (function(){
+            var ecr = document.createElement('script');
+            ecr.type = 'text/javascript';
+            ecr.async = true;
+            ecr.src = ('https:' == document.location.protocol ? 'https://d39vf9bwtb4sua.cloudfront.net' : 'https://static.ecorebates.com') + "/ui/widgets/thd/rc.js";
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ecr, s);
+        })();
+    </script>
+    <!-- END EcoRebates Widget -->
+		</div>
+	</div>
+
+<script type="text/javascript" >var _cf = _cf || []; _cf.push(['_setFsp', true]);  _cf.push(['_setBm', true]);  _cf.push(['_setAu', '/public/60d8fd94dno2024b1aa2462f35be0be']); </script><script type="text/javascript"  src="https://www.homedepot.com/public/60d8fd94dno2024b1aa2462f35be0be"></script></body>
+</html>
+<!DOCTYPE html><html><head>
