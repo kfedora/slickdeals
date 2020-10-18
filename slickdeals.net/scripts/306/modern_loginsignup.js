@@ -5,15 +5,14 @@ Access-Control-Allow-Origin: *
 ETag: "615610821"
 Last-Modified: Sat, 17 Oct 2020 18:50:45 GMT
 Server: Akamai Resource Optimizer
-X-Akamai-Path-Stats: [1:496:3504]
 Vary: Accept-Encoding
-Cache-Control: max-age=24663
-Expires: Sun, 18 Oct 2020 11:35:38 GMT
-Date: Sun, 18 Oct 2020 04:44:35 GMT
+Cache-Control: max-age=72654
+Expires: Mon, 19 Oct 2020 09:45:19 GMT
+Date: Sun, 18 Oct 2020 13:34:25 GMT
 Content-Length: 5258
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=12
+Server-Timing: edge; dur=1
 Strict-Transport-Security: max-age=86400
 
 // This file should contain the minimal amount of code
