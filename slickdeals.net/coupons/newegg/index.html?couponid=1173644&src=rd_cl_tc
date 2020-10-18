@@ -1,17 +1,26 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
-Content-Type: text/html
+HTTP/1.1 200 OK
+Cache-Control: private, post-check=0, pre-check=0, max-age=0, no-cache
+Content-Type: text/html; charset=UTF-8
+Expires: 0
+Pragma: no-cache
+Referrer-Policy: strict-origin-when-cross-origin
+Server: Apache
+X-Powered-By: PHP/7.2.31
+X-Ua-Compatible: IE=edge
+X-Akamai-Path-Stats: [3:2022:330978]
+X-Akamai-Transformed: 9 - 0 pmb=mRUM,2
+Vary: user-agent
 Vary: Accept-Encoding
-Date: Sun, 18 Oct 2020 00:35:15 GMT
+Date: Sun, 18 Oct 2020 02:17:04 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
-Set-Cookie: auuid=fc952c5c10d811eb80782a70558bfcd6; expires=Mon, 18-Oct-2021 00:35:15 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: bblastactivity=1602981315; expires=Mon, 18-Oct-2021 00:35:15 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net; secure
-Set-Cookie: sd_a=1602981315|fc95a20e10d811eb80782a70558bfcd6-fc95a3e410d811eb80782a70558bfcd6|0|; expires=Mon, 18-Oct-2021 00:35:15 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602980970%7D&count=1&new=1&abt_new=1602980970&abt_uuid=a55186d5f4f04c619b5dd7f0809cefe6&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 00:35:15 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602980970%7D&count=1&new=1&abt_new=1602980970&abt_uuid=a55186d5f4f04c619b5dd7f0809cefe6&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 00:35:15 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602980970%7D&count=1&new=1&abt_new=1602980970&abt_uuid=a55186d5f4f04c619b5dd7f0809cefe6&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 00:35:15 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: auuid=230d2a3410e711eb8a6d7aabb1c97e42; expires=Mon, 18-Oct-2021 02:17:04 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: bblastactivity=1602987424; expires=Mon, 18-Oct-2021 02:17:04 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net; secure
+Set-Cookie: sd_a=1602987424|230dc7aa10e711eb8a6d7aabb1c97e42-230dcaf210e711eb8a6d7aabb1c97e42|0|; expires=Mon, 18-Oct-2021 02:17:04 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602987047%7D&count=1&new=1&abt_new=1602987047&abt_uuid=935dc1ff35cf4505b103412c6156d7b8&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 02:17:04 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602987047%7D&count=1&new=1&abt_new=1602987047&abt_uuid=935dc1ff35cf4505b103412c6156d7b8&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 02:17:04 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1602987047%7D&count=1&new=1&abt_new=1602987047&abt_uuid=935dc1ff35cf4505b103412c6156d7b8&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 02:17:04 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
@@ -19,8 +28,8 @@ Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; 
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=57
-Server-Timing: origin; dur=250
+Server-Timing: edge; dur=129
+Server-Timing: origin; dur=333
 Strict-Transport-Security: max-age=86400
 
 <!DOCTYPE html>
@@ -60,10 +69,10 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 </script>
 <script>
   window.SD=window.SD||{},window.SD.ABTest={extendedData:{},_rSeed:0,execute:function(e,t,n){var i=SD.ABTest._getGroup(e);null!=i&&void 0!==n[i]&&(n[i](),window.SD.ABTest.initDevTools&&window.SD.ABTest.initDevTools(e))},isTest:function(e){return SD.ABTest.data.hasOwnProperty(SD.ABTest._getDataGroupName(e))},_getGroup:function(e){var t,n={link:new RegExp("linked:([0-9]+)","gi"),position:new RegExp("position:([0-9]+)","gi"),split:new RegExp("split:([0-9,]+)","gi")},i={};if(SD.ABTest.isTest(e)){if(-1<e.indexOf("linked:")){for(t in n)if(n.hasOwnProperty(t)){if(i[t]=n[t].exec(e),n[t].lastIndex=0,null===i[t]||0===i[t].length)return null;i[t]=i[t][1]}for(t in window.SD.ABTest.data)if(window.SD.ABTest.data.hasOwnProperty(t)&&-1<t.indexOf(i.link)&&t!=="Test: "+e){if(i.secondPosition=n.position.exec(t),n.position.lastIndex=0,null!==i.secondPosition&&0===i.secondPosition.length)return null;i.secondPosition=i.secondPosition[1]}return SD.ABTest._getExtendedGroup(!1,!1,i)}return SD.ABTest.data[SD.ABTest._getDataGroupName(e)]}return null},_getDataGroupName:function(e){return"Test: "+e.trim()},extendedExecute:function(e,t,n){SD.ABTest.extendedData.hasOwnProperty(e)&&n[SD.ABTest._getExtendedGroup(!1,!1,SD.ABTest.extendedData[e])]()},setupExtendedTest:function(e,t,n,i,o){null!==e&&null!==o&&0<o.length&&0<n&&n<32&&n!=i&&0<i&&i<32&&(SD.ABTest.extendedData[e]={link:t,position:n,secondPosition:i,split:o})},_getExtendedGroup:function(e,t,n,i){var o,s,d,r,u,l,a,p=new RegExp("abt_uuid=([0-9a-f]+)","g"),D=0,S=[];if(n&&(e=n.position,t=n.secondPosition),e--,t--,o=(o=(o=p.exec(document.cookie))[1]).slice(0,12)+o.slice(13,32),i&&console.log({A:e,B:t,UUID:o,Hex:o[e]+o[t]}),s=parseInt(o[e]+o[t],16),!n)return s;for(d=(d=(d=n.split.split(",")).map(function(e){return e=parseInt(e,10),D+=e,e})).map(function(e){return e/D*255<<0}),(r=new Array(255)).fill(0),l=u=0,a=d.length;u<a;u++)r.fill(u,l,l+d[u]),l+=d[u];for(SD.ABTest._rSeed=n.link;S.length<256;)u=SD.ABTest._seededRandom(256,0)<<0,-1===S.indexOf(u)&&S.push(u);return r[S[s]]},_seededRandom:function(e,t){return e=e||1,t=t||0,SD.ABTest._rSeed=(9301*SD.ABTest._rSeed+49297)%233280,t+SD.ABTest._rSeed/233280*(e-t)}};
-  window.SD.ABTest.data = {"logged_in":false,"deviceType":"desktop","scriptIdent":"storepage","Test: Sticky right rail - 30578":"0","Test: Mobile web fp v3 - 29127":"0","Test: Deal Details v7 - 27993":"1","Test: Add In Line Top Coupons Module on FP - 27589":"1","Test: Post a Deal":"0","Test: Category Redesign":"1","Test: Display % off on the Frontpage":"2","Test: SEM LP Redesign Test":"1","Test: Mobile 3 AB Test":"2","Test: Store Page Test":"1","Test: Deal Editors Fire Deal Marker":"0","Test: Redesign of FP and Deal Details":"1","Test: Rolling 24 Hour Time Frame for Deals in Top Section on FP":"1","Test: Search Results Layout and Store Logos Test":"1","view":"redesign","storeTest":null,"mobile":false,"forumid":null};
+  window.SD.ABTest.data = {"logged_in":false,"deviceType":"desktop","scriptIdent":"storepage","Test: Sticky right rail - 30578":"1","Test: Mobile web fp v3 - 29127":"0","Test: Deal Details v7 - 27993":"0","Test: Add In Line Top Coupons Module on FP - 27589":"0","Test: Post a Deal":"1","Test: Category Redesign":"1","Test: Display % off on the Frontpage":"1","Test: SEM LP Redesign Test":"1","Test: Mobile 3 AB Test":"2","Test: Store Page Test":"1","Test: Deal Editors Fire Deal Marker":"0","Test: Redesign of FP and Deal Details":"1","Test: Rolling 24 Hour Time Frame for Deals in Top Section on FP":"1","Test: Search Results Layout and Store Logos Test":"1","view":"redesign","storeTest":null,"mobile":false,"forumid":null};
   </script>
   <script>
-    var dataLayer = {"visitor":{"ipAddress":"40.65.113.150","isMachineIp":true,"isForeignIp":false,"sectionLayout":"StorePage_Redesign","pbSectionLayout":"StorePage_Redesign","asEnabled":false,"confiant":1,"noads":1,"immediateSource":"","layout":"Redesign","uncookiedUser":false,"userId":0,"username":"Unregistered","isLoggedIn":"No","status":"Anonymous","verified":"No","daysRegistered":null,"emailHashes":"","loyalty":"no","abTestInfo":[{"testKey":"65810-gale-desktop-item-to-item.yaml","variantName":"Gale (no yield)","testName":"Gale (Desktop) Item-to-Item Pers V2"}],"gaOptimizeInfo":"","appReferrer":null,"inCheckoutTest":false},"reporting":{"clientID":"fc95a3e410d811eb80782a70558bfcd6","sessionID":"fc95a20e10d811eb80782a70558bfcd6"},"traffic":{"trueReferrer":null,"subSection1":"newegg","subSection2":null,"subSection3":null,"subSection4":null,"corporateDomain":"slickdeals.net","deviceSegment":"desktop","clientHeaders":[]},"page":{"rml":false,"pageName":"StorePage:newegg","section":"StorePage","type":"Store","analyticsTitle":null,"template":"modern\/store\/store.html.twig","publishedDate":null,"pageGroup":"Stores","layout":"Redesign","nps":null},"btt":{"AbTestingSegment":null},"microSite":"Slickdeals","frontpage":{"layout":null},"build":"20201016-155443-PDT-89837ef1296","abTestEventData":null,"gdpr":{"isEu":false,"showPrompt":false},"cdp":{"blueshift_id":"13779bc333ac34fac08a37c930c61e97"},"product":{"forum":null,"title":null,"products":null,"postedBy":null,"comments":null,"votes":null,"brand":null,"store":null,"category":null,"primaryCategory":null,"subCategory":null,"isExpiredDeal":null,"threadId":null,"isCheckoutAvailable":"No","isCheckoutRecallUser":"No","isCheckoutError":"","checkoutPaymentType":null},"checkout":[]};
+    var dataLayer = {"visitor":{"ipAddress":"51.141.174.95","isMachineIp":true,"isForeignIp":true,"sectionLayout":"StorePage_Redesign","pbSectionLayout":"StorePage_Redesign","asEnabled":false,"confiant":1,"noads":1,"immediateSource":"","layout":"Redesign","uncookiedUser":false,"userId":0,"username":"Unregistered","isLoggedIn":"No","status":"Anonymous","verified":"No","daysRegistered":null,"emailHashes":"","loyalty":"no","abTestInfo":[{"testKey":"65810-gale-desktop-item-to-item.yaml","variantName":"Control","testName":"Gale (Desktop) Item-to-Item Pers V2"}],"gaOptimizeInfo":"","appReferrer":null,"inCheckoutTest":false},"reporting":{"clientID":"230dcaf210e711eb8a6d7aabb1c97e42","sessionID":"230dc7aa10e711eb8a6d7aabb1c97e42"},"traffic":{"trueReferrer":null,"subSection1":"newegg","subSection2":null,"subSection3":null,"subSection4":null,"corporateDomain":"slickdeals.net","deviceSegment":"desktop","clientHeaders":[]},"page":{"rml":false,"pageName":"StorePage:newegg","section":"StorePage","type":"Store","analyticsTitle":null,"template":"modern\/store\/store.html.twig","publishedDate":null,"pageGroup":"Stores","layout":"Redesign","nps":null},"btt":{"AbTestingSegment":null},"microSite":"Slickdeals","frontpage":{"layout":null},"build":"20201016-155443-PDT-89837ef1296","abTestEventData":null,"gdpr":{"isEu":false,"showPrompt":false},"cdp":{"blueshift_id":"13779bc333ac34fac08a37c930c61e97"},"product":{"forum":null,"title":null,"products":null,"postedBy":null,"comments":null,"votes":null,"brand":null,"store":null,"category":null,"primaryCategory":null,"subCategory":null,"isExpiredDeal":null,"threadId":null,"isCheckoutAvailable":"No","isCheckoutRecallUser":"No","isCheckoutError":"","checkoutPaymentType":null},"checkout":[]};
 
     // Copy the tests from dataLayer.visitor.ABTestInfo to SD.ABTest.data
     if (typeof dataLayer.visitor !== 'undefined'
@@ -308,7 +317,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       var SECURITYTOKEN = "guest";
       var IMGDIR_MISC = "/images/misc";
       var vb_disable_ajax = parseInt("0", 10);
-      window['\u200BviewSid'] = "ca6d459210d911eb964d22945b031f960000";
+      window['\u200BviewSid'] = "039805f610e811eba05052d99aef8a320000";
     </script>
 
       <script>
@@ -329,7 +338,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           Settings.securityToken = 'guest';
           Settings.email = '',
           Settings.pageDisplayedTimestamp = Math.floor(Date.now() / 1000);
-          Settings.pageGeneratedTimestamp = '1602981315';
+          Settings.pageGeneratedTimestamp = '1602987424';
           Settings.userActivityDealAlertsTrackingEnabled = true;
           Settings.stickyGlobalHeader = true;
           Settings.app = {
@@ -503,11 +512,11 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 			}, false);
 		}
 	</script>
-                      <script src="/forums/userstyles.php?uniq=eF7lWV1v2zYU_SuEsO1hyBp9y_JQDFnTogOSLkiCvSydQUuUQ0QWDZFyEAT577uXkk3RKpLGTpcueRFwSfH78Nx7Lm8dqpyxc6nUYnyxf7EvS55d5YyW8k3F1MV-JpqFqOTFfsWu2Wx2sf9bW8Lzt56XBHEY_kTni19lnb2t80lWTlTm7Dk1K1jN6q5jeX_Pq_-hwaRpeA6toEjxOZMK-nbGXuz66cgLvGjPKXjN8sm6_6opSxyOlm3Z4wbNmeSz6pAq6oxvnakzdvecCsbbc5b6O4Ny5y-P_EI-sWuYE53iXtEo8kZxHhVh4YZZ7KXTKM-Twh25aQZziJ07nGY1Y_VJzStoAb3KK744Ze14pywTdQ4_OGNVN2zP4fNFyWFVjWQ1Lr9d1KoUNl6WTCnYHdlMZVbzheKimpg_4Y8zJiUUOuMCTg66hKJ30CeObkoOlKr5tMHW6-JaT8aqaSdVwCROH7ulOVvyjE3UzYLp-cEeyksKJ4b7S6fncKLSGf9964xCLNFnjeeq93aioFo3w2pAAJoVnTMoOFMAyxtS89mlIjXlJZxJ4EbJCP5bsrpdu-OCtRCStyt0UjDb_WohRctSXMM-wzFcKQHAcrxeqaJT2Oaul9WvczHlJU5Ad01nbDKn8grsf978_AN2r-elT677KQMwKlyw40VeEqVJmuJiAMr1qnNWYTX2SDPFl9g9TqQ9Co0LXbmkZcMmblfbWp5l-ZYVWBZssO61bRdZVmxZiTXeyLJSy8LrYGYG96VnZZa1WmA7-moDW6vo_uRyIhawVRPRtJdkVgO1TKpmPu12Ey5SAjNfAcWL4k2gQLUNlGN9YOSaTUmxIMsAcOKnnp_ch5NgO5z0wbPGCRY-GiduGPtp6OPWPiFO_PXpI05wke3-I07MKSJOjIU4MRbixFjfN07gZqxx4uONswglwXPpE8ohuAxyyBRQiSTLBGECN1Vv0ppO0OrRiaapLfjkizjZik_cIPSDMNZ43YVPzJkO-cSg5qXhxEPHHAG_GZxoDu47Hqi2cXKQ5-SPihzxipFzsSDv2niIHIu8AZ4RFflwosETjdDdGPAgVfXBgyjYAjx6hp3f2s0ZafAEyTcFjwHW0BnZJGNc05BkTN3QGZm6oTMydUNnZOqGzgjrHnJGGjyhIZloNMAO1NrYORFSEQosQ8v7oIFIeU5khKMUIpUwxJv_zWjl5SLDRWSAx1nRih8MkKH9Ud_7vIMQcSbqG7LSBBY-0M_0qMPfMo59Mr8TAtjd0Iu0_9vF75hL-K3iWJs6jIVxrE0dxsI41qYOY-k4fh05rSJ1E8d-NXX4QIgrvzOkDqjdCE-4XJT0hvxIRFGgl1GXjHyoRaUwuLw3StmOTZ4OLCH4mDiJNWh3AcvXBykmtB0Gs7afMcENBrOm3UN-xrRDsJh2D_kZ0w5FD7Z7yM_4yCYezG6tjrEPK0aB2g1x_P6YHJ2suYSgzLYgokWJ0cWt0Hi8MN5e8GDLnjAOIZ0TJGGiPd8uGHnFhOJB3LTGyEAXQ-0XdXFADn4f4mMzVv3P8YED9vEReCHk_OKd8WHuHzocWxDbQsdYyCHGQkFsLIxVbQ4xFnKIsdDhGAtjVZtDjIUcYix0OMZCh2NzCFpfxyEmceJrxWhzyGbe5EyJmpETcC5DeGzEI5p_npU-IFsCWt3fOWB9zfQBOaGOPuJBvOrhzg6yJe9zDiCR5AOk4LWoIce0voJU3T0pWB35rrFyKRTkXXkme6L2gWTs0_kcNxklnudqHb6Lz7HjEmNhks1WOS8uyeb1kmxDlQO1NmpW4gZiWMyS0CpvYdOl3e7TxM9OMRCh-FGc_A9S99-t5DGSOBjkYzcF8akoS3j5IH5IPoqmJufw-gd6Bx5_SCFqDRtJeKVTcGcMXk1AEuncmwUipK1enGtxzzNQTpCmbhTF4c4pt1fsp4xsjgYg2hTNZ4zW2SXoINmUSpIjegMvS5p22ujmSMyEHIY3G6h5yiy_Fl4PvRpuiiNItcS-6-0soF8tau4-Q0TC4VFcQZqtfW-GV9Rbp3tL1qSBT9TgsNf5N1DdGmrdPx-FQq6BUEWHO6bBISsooMu5w0GyRioxP2Pdo3b39vinfm_-BD0AYXVlWpLffb67-xdCJe_-&amp;pv=ca73586a10d911eb964d22945b031f96&amp;au=fc952c5c10d811eb80782a70558bfcd6" async="async" defer="defer"></script>
-<noscript><link rel="stylesheet" href="/forums/userstyles.php?uniq=eF7lWV1v2zYU_SuEsO1hyBp9y_JQDFnTogOSLkiCvSydQUuUQ0QWDZFyEAT577uXkk3RKpLGTpcueRFwSfH78Nx7Lm8dqpyxc6nUYnyxf7EvS55d5YyW8k3F1MV-JpqFqOTFfsWu2Wx2sf9bW8Lzt56XBHEY_kTni19lnb2t80lWTlTm7Dk1K1jN6q5jeX_Pq_-hwaRpeA6toEjxOZMK-nbGXuz66cgLvGjPKXjN8sm6_6opSxyOlm3Z4wbNmeSz6pAq6oxvnakzdvecCsbbc5b6O4Ny5y-P_EI-sWuYE53iXtEo8kZxHhVh4YZZ7KXTKM-Twh25aQZziJ07nGY1Y_VJzStoAb3KK744Ze14pywTdQ4_OGNVN2zP4fNFyWFVjWQ1Lr9d1KoUNl6WTCnYHdlMZVbzheKimpg_4Y8zJiUUOuMCTg66hKJ30CeObkoOlKr5tMHW6-JaT8aqaSdVwCROH7ulOVvyjE3UzYLp-cEeyksKJ4b7S6fncKLSGf9964xCLNFnjeeq93aioFo3w2pAAJoVnTMoOFMAyxtS89mlIjXlJZxJ4EbJCP5bsrpdu-OCtRCStyt0UjDb_WohRctSXMM-wzFcKQHAcrxeqaJT2Oaul9WvczHlJU5Ad01nbDKn8grsf978_AN2r-elT677KQMwKlyw40VeEqVJmuJiAMr1qnNWYTX2SDPFl9g9TqQ9Co0LXbmkZcMmblfbWp5l-ZYVWBZssO61bRdZVmxZiTXeyLJSy8LrYGYG96VnZZa1WmA7-moDW6vo_uRyIhawVRPRtJdkVgO1TKpmPu12Ey5SAjNfAcWL4k2gQLUNlGN9YOSaTUmxIMsAcOKnnp_ch5NgO5z0wbPGCRY-GiduGPtp6OPWPiFO_PXpI05wke3-I07MKSJOjIU4MRbixFjfN07gZqxx4uONswglwXPpE8ohuAxyyBRQiSTLBGECN1Vv0ppO0OrRiaapLfjkizjZik_cIPSDMNZ43YVPzJkO-cSg5qXhxEPHHAG_GZxoDu47Hqi2cXKQ5-SPihzxipFzsSDv2niIHIu8AZ4RFflwosETjdDdGPAgVfXBgyjYAjx6hp3f2s0ZafAEyTcFjwHW0BnZJGNc05BkTN3QGZm6oTMydUNnZOqGzgjrHnJGGjyhIZloNMAO1NrYORFSEQosQ8v7oIFIeU5khKMUIpUwxJv_zWjl5SLDRWSAx1nRih8MkKH9Ud_7vIMQcSbqG7LSBBY-0M_0qMPfMo59Mr8TAtjd0Iu0_9vF75hL-K3iWJs6jIVxrE0dxsI41qYOY-k4fh05rSJ1E8d-NXX4QIgrvzOkDqjdCE-4XJT0hvxIRFGgl1GXjHyoRaUwuLw3StmOTZ4OLCH4mDiJNWh3AcvXBykmtB0Gs7afMcENBrOm3UN-xrRDsJh2D_kZ0w5FD7Z7yM_4yCYezG6tjrEPK0aB2g1x_P6YHJ2suYSgzLYgokWJ0cWt0Hi8MN5e8GDLnjAOIZ0TJGGiPd8uGHnFhOJB3LTGyEAXQ-0XdXFADn4f4mMzVv3P8YED9vEReCHk_OKd8WHuHzocWxDbQsdYyCHGQkFsLIxVbQ4xFnKIsdDhGAtjVZtDjIUcYix0OMZCh2NzCFpfxyEmceJrxWhzyGbe5EyJmpETcC5DeGzEI5p_npU-IFsCWt3fOWB9zfQBOaGOPuJBvOrhzg6yJe9zDiCR5AOk4LWoIce0voJU3T0pWB35rrFyKRTkXXkme6L2gWTs0_kcNxklnudqHb6Lz7HjEmNhks1WOS8uyeb1kmxDlQO1NmpW4gZiWMyS0CpvYdOl3e7TxM9OMRCh-FGc_A9S99-t5DGSOBjkYzcF8akoS3j5IH5IPoqmJufw-gd6Bx5_SCFqDRtJeKVTcGcMXk1AEuncmwUipK1enGtxzzNQTpCmbhTF4c4pt1fsp4xsjgYg2hTNZ4zW2SXoINmUSpIjegMvS5p22ujmSMyEHIY3G6h5yiy_Fl4PvRpuiiNItcS-6-0soF8tau4-Q0TC4VFcQZqtfW-GV9Rbp3tL1qSBT9TgsNf5N1DdGmrdPx-FQq6BUEWHO6bBISsooMu5w0GyRioxP2Pdo3b39vinfm_-BD0AYXVlWpLffb67-xdCJe_-&amp;pv=ca73586a10d911eb964d22945b031f96&amp;au=fc952c5c10d811eb80782a70558bfcd6"></noscript>
+                      <script src="/forums/userstyles.php?uniq=eF7lWW1v2zYQ_iuEsO3DkDV6l-2hGLKkRQckXZAE-7J0hixRDhFZNEjKQRDkv--Okk3RKuLGTpYu-SLgeCJFkQ-fe-5456TKGTlXSs1Hl_uX-7Jk2XVO01K-q6i63M94PeeVvNyv6A2dTi_3f2taWP7e85IgDsOf0tn8Vymy9yIfZ-VYZc6eI2hBBRXtwPLhkZfvQ4dxXbMcekGTYjMqFYztjLzY9YeDJPTDPadggubj1fhVXZb4ubRs2h730ZxKNq2OUpU6oztn4ozcPaeC7-05C_2cQrvzl0d-IZ_pDcwpneBaDYMoz7yiCKKsCCM3mnhuEHp-FntRnCeTgXOP06ymVJwKVkEPGFVes_kZbb53RjMucnjBGSlR0z2HzeYlg7-qJRX4-81PLVth4WVJlYLVkfVEZoLNFePV2LwJb5xTKaHRGRWwczAkNB3CmPh103KglGCTGnuvmoWejOVpJlXAJM4eu6Q5XbCMjtXtnOr5wRrKqxR2DNc3nVzAjkpn9PedMwixRe-1F3iRXtuxArfuhm5AAJpVOqPQcK4AlrdEsOmVIiJlJexJ4EbJAN5bUNH8u-OCNeeSNX_oDMFs1quBVFqW_AbWGbbhWnEAluN1WlU6gWVuR1m-OuMTVuIE9NDplI5nqbwG-593P_-Aw-t56Z1rX8oAjAp_2PEiL4mGyXCIPwNQFsvBaYVuHDHNFFvg8DiRZis0LrRzkZY1Hbutt7E8y_ItK7AsWGA9atMvsqzYshLrewPLGloWHgczMzgvHSuzrOUPNl9fLmBjFe2bTI75HJZqzOvmkEwFUMu4qmcTvZoeHqQEZr4ECpyvdaCA2wbKid4wckMnpJiTRQA48YeenzyEk2A7nHTBs8IJNj4aJ24Y-8PQx6V9Qpz4q91HnOBPNuuPODG7iDgxFuLEWIgTY32vOHE1TuBkrHDi44mzCAXcNk6OIGSQI6qASiRZJAgTOKl6kVZ0glaHTjRNbcEnX8XJVnwCccYPwljjdRc-MXva5xODmleJkwj4zeBEc3A38IDbxslBnpM_KnLMKkou-JwcNnqInPC8Bp7hFfl4qsETDTDcGPAgVXXBgyjYAjx6hm3c2i0YafAEybOCxwCrH4xskjGhqU8yxtcPRsbXD0bG1w9GxtcPRujbFIw0yYSGZKJBDzvgtbFzyqUiKbBMWj4EDUTKSyIjHAxBqYQhnvxno5XXiwwtUyDiLGnFD3rI0PGoK2cPQSJOubgly5zAwgfGmQ51-Fvq2CeLOyGA3Q29SMe_XeKOOYTPpWNt6jAW6libOoyFOtamDmNpHb9STkulbnTst1BHAxAgxGXc6VMHeNfkCZPzMr0lPxJeFBhl1BUlHwWvFIrLB1XKdmzydGAJIcbESaxBuwtYvl2kGGnbF7N2nDHiBsWs6bcpzph-CBbTb1OcMf0w6cF-m-KMBosHs1tlxziGpVHAu5Ycfzghx6crLiGYZlsQ0UmJyYubROPxifH2CQ_27CTGIZRzgiRMdOTbBSNvmFA80E0rjPTyYvB-NS8OyMHvfXysa9X_HB_4wS4-Ai-Eml-8Mz7M-cOAYyfEdqJjLOQQY2FCbCzUqjaHGAs5xFgYcIyFWtXmEGMhhxgLA46xMODYHILWJg7xNYeYwomvM0abQ9brJueKC0pOIbj04bGmRzT_vCh9QLUEcnV_Z8H6lukDakItfcQ9verhynb1qq6WfMgZgESSj1CC10kNOUnFNZTqHijBauW7wsoVV1B3ZZnsJLUbirFPF3PcZJB4nqvz8F1ijq1LjIVFNjvLeXVFNq9TZOtnOeC1UbNMbkDDYpUkrfIGNm3Z7aGc-MUpBhSKH8XJ_6B0_92mPCYlDnr12PWE-IyXJdx8ED8kn3gtyAXc_kG-A5c_pOBCw0YSVukS3DmFWxNIiXTtzQIR0lZH51rc8wKUEwyHbhTF4c4ltzccp0zaHPVAtJ40n9NUZFeQB8m6VJIcp7dws6Rpp1E3x3zKZV_erKHmKav8OvHadGu4nhxBqSX2XW_nBPrNoub-CygSBpfiCspszX0z3KLeOe1dsiYNvKKGgL2qv4Fi1lBr3_nEFXINSBUtd0yHI1qkgC7nHj-S1VLx2TltL7Xbu8c_9X3zZxgBCKtt0yn5_Zf7-38BZDzvXw&amp;pv=039e458810e811eba05052d99aef8a32&amp;au=230d2a3410e711eb8a6d7aabb1c97e42" async="async" defer="defer"></script>
+<noscript><link rel="stylesheet" href="/forums/userstyles.php?uniq=eF7lWW1v2zYQ_iuEsO3DkDV6l-2hGLKkRQckXZAE-7J0hixRDhFZNEjKQRDkv--Okk3RKuLGTpYu-SLgeCJFkQ-fe-5456TKGTlXSs1Hl_uX-7Jk2XVO01K-q6i63M94PeeVvNyv6A2dTi_3f2taWP7e85IgDsOf0tn8Vymy9yIfZ-VYZc6eI2hBBRXtwPLhkZfvQ4dxXbMcekGTYjMqFYztjLzY9YeDJPTDPadggubj1fhVXZb4ubRs2h730ZxKNq2OUpU6oztn4ozcPaeC7-05C_2cQrvzl0d-IZ_pDcwpneBaDYMoz7yiCKKsCCM3mnhuEHp-FntRnCeTgXOP06ymVJwKVkEPGFVes_kZbb53RjMucnjBGSlR0z2HzeYlg7-qJRX4-81PLVth4WVJlYLVkfVEZoLNFePV2LwJb5xTKaHRGRWwczAkNB3CmPh103KglGCTGnuvmoWejOVpJlXAJM4eu6Q5XbCMjtXtnOr5wRrKqxR2DNc3nVzAjkpn9PedMwixRe-1F3iRXtuxArfuhm5AAJpVOqPQcK4AlrdEsOmVIiJlJexJ4EbJAN5bUNH8u-OCNeeSNX_oDMFs1quBVFqW_AbWGbbhWnEAluN1WlU6gWVuR1m-OuMTVuIE9NDplI5nqbwG-593P_-Aw-t56Z1rX8oAjAp_2PEiL4mGyXCIPwNQFsvBaYVuHDHNFFvg8DiRZis0LrRzkZY1Hbutt7E8y_ItK7AsWGA9atMvsqzYshLrewPLGloWHgczMzgvHSuzrOUPNl9fLmBjFe2bTI75HJZqzOvmkEwFUMu4qmcTvZoeHqQEZr4ECpyvdaCA2wbKid4wckMnpJiTRQA48YeenzyEk2A7nHTBs8IJNj4aJ24Y-8PQx6V9Qpz4q91HnOBPNuuPODG7iDgxFuLEWIgTY32vOHE1TuBkrHDi44mzCAXcNk6OIGSQI6qASiRZJAgTOKl6kVZ0glaHTjRNbcEnX8XJVnwCccYPwljjdRc-MXva5xODmleJkwj4zeBEc3A38IDbxslBnpM_KnLMKkou-JwcNnqInPC8Bp7hFfl4qsETDTDcGPAgVXXBgyjYAjx6hm3c2i0YafAEybOCxwCrH4xskjGhqU8yxtcPRsbXD0bG1w9GxtcPRujbFIw0yYSGZKJBDzvgtbFzyqUiKbBMWj4EDUTKSyIjHAxBqYQhnvxno5XXiwwtUyDiLGnFD3rI0PGoK2cPQSJOubgly5zAwgfGmQ51-Fvq2CeLOyGA3Q29SMe_XeKOOYTPpWNt6jAW6libOoyFOtamDmNpHb9STkulbnTst1BHAxAgxGXc6VMHeNfkCZPzMr0lPxJeFBhl1BUlHwWvFIrLB1XKdmzydGAJIcbESaxBuwtYvl2kGGnbF7N2nDHiBsWs6bcpzph-CBbTb1OcMf0w6cF-m-KMBosHs1tlxziGpVHAu5Ycfzghx6crLiGYZlsQ0UmJyYubROPxifH2CQ_27CTGIZRzgiRMdOTbBSNvmFA80E0rjPTyYvB-NS8OyMHvfXysa9X_HB_4wS4-Ai-Eml-8Mz7M-cOAYyfEdqJjLOQQY2FCbCzUqjaHGAs5xFgYcIyFWtXmEGMhhxgLA46xMODYHILWJg7xNYeYwomvM0abQ9brJueKC0pOIbj04bGmRzT_vCh9QLUEcnV_Z8H6lukDakItfcQ9verhynb1qq6WfMgZgESSj1CC10kNOUnFNZTqHijBauW7wsoVV1B3ZZnsJLUbirFPF3PcZJB4nqvz8F1ijq1LjIVFNjvLeXVFNq9TZOtnOeC1UbNMbkDDYpUkrfIGNm3Z7aGc-MUpBhSKH8XJ_6B0_92mPCYlDnr12PWE-IyXJdx8ED8kn3gtyAXc_kG-A5c_pOBCw0YSVukS3DmFWxNIiXTtzQIR0lZH51rc8wKUEwyHbhTF4c4ltzccp0zaHPVAtJ40n9NUZFeQB8m6VJIcp7dws6Rpp1E3x3zKZV_erKHmKav8OvHadGu4nhxBqSX2XW_nBPrNoub-CygSBpfiCspszX0z3KLeOe1dsiYNvKKGgL2qv4Fi1lBr3_nEFXINSBUtd0yHI1qkgC7nHj-S1VLx2TltL7Xbu8c_9X3zZxgBCKtt0yn5_Zf7-38BZDzvXw&amp;pv=039e458810e811eba05052d99aef8a32&amp;au=230d2a3410e711eb8a6d7aabb1c97e42"></noscript>
       
   <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
-  <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="MLLW9-NN3V3-ZFFMF-A4D42-H99AC",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"MLLW9-NN3V3-ZFFMF-A4D42-H99AC";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="fbaxdftikbm5gx4lrxbq-f-33d23739a-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"949601","ak.ai":parseInt("608755",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"4cd6648","ak.r":31387,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"40.65.113.0","ak.cport":1536,"ak.gh":"104.80.89.207","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1602981315","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==zU9NJCgHoGIw4a1/cvAdiFba7vvwYnWjR+orXr87GV5wdKFie+zfqX7EbmM8raCOo3y7Xx3sftJZZ/y/H8GW1xhoGO+FdFhWXlAW9oxhWjU2z0Gp7tuzH2fDR5hVdxfKMpG8nl1Tu94dYWb1WAbAA5/Wt6NW2suK9x9awsKYRNIxubLDGJ1JOtm13ehrb2dmbX2EeDAm3k1BQceUURlvgyKUh9mgt0DO15nQ51Yl2KYO5RFckR1jHkzKdHY6VV/QJWkgUCThnwNV1tAltzJ8+TxFziSf2MCJ7tjTg/SQBjAsLU3VUguRpc47A6kRc198ev3FvwoXZ0KiVnP8Xbo4xKxn2XPDg0wCsGRJjvXfcC5Ms2LjsPyNQ0Ug+Y8Ji3ac8ufrL/kBVheY1D+yzRkHbRY5kOSrD0DfvAsmr3NwGGg=","ak.pv":"47","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+  <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="MLLW9-NN3V3-ZFFMF-A4D42-H99AC",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"MLLW9-NN3V3-ZFFMF-A4D42-H99AC";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="gog24x5ydrotcx4luwqa-f-4a03e14d8-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"949601","ak.ai":parseInt("608755",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"73538380","ak.r":35328,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"51.141.174.0","ak.cport":1920,"ak.gh":"184.28.93.45","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1602987424","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==ic+rMf+RbpVwFdeE957Knj94O2m9WQT8A004arBi/3jCq22t52C4WL7Umq9nsR7tyfVDRxXqiOBg8rW4lg6F1ZOXLLe1deLjDIQwNkBugp+/i7o6IK3eoknXbDgPEe4MprSvCN6tUn+4o15hmX3EOxmT9r2Mp0WI5rC/oXeVi0Su8yUvbxgXgyQkpLpskUGHkImBOUQAde3lVvDCabde1RbMWB4ff78euEUAISK8avqKAqfophSK1HoO6Ms0m6hXFF2mu3MYnFf7TA+atqgIq9unoW9ho2ZAGvPfMlnpp1aEdicWzV1spjKKiSSrM4+Sw8X1FWGb2yXW/mQoXCALjJu1QRbErucnqP+uKff/uUnyd+QZmO7azNkwLa+a2c/Y1M1VuGrVw+h6PKvDi92sRiBZrvbG4oVZzRuRLit/AV0=","ak.pv":"47","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
   <body data-modern="true" id="">
           <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XP5PSM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
@@ -698,7 +707,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         <input type="submit" value="Sign Up" class="button primary" data-reglog-method="email" disabled>
 
                   <div class="captcha">
-            <input id="hash" type="hidden" name="humanverify[hash]" value="0d5f8b122798df4eb89aa0f5d23bd615"/>
+            <input id="hash" type="hidden" name="humanverify[hash]" value="7763f64761c9500886b91097eafa4485"/>
             <script type="text/javascript" src="//www.google.com/recaptcha/api.js" async defer></script>
             <div class="g-recaptcha" data-callback="recaptchaCallback" data-expired-callback="expiredRecaptchaCallback" id="recaptcha"  data-sitekey="6LfjMwsTAAAAAEK9fLB20t4ogbkpWSGnkh94knBe" style="text-align: center"></div>
             <noscript>
@@ -793,7 +802,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">436 Used Today</span>
+                          <span class="numUsed">435 Used Today</span>
               </div>
               <span class="title cpbtn" title="15% Off with Newegg&#039;s Latest Promo Codes for October 2020" >15% Off with Newegg&#039;s Latest Promo Codes for October 2020</span>
             <div class="desc">
@@ -880,7 +889,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
   
   
                   
-  <a href="/f/14443997-fractal-design-focus-g-mystic-atx-mid-tower-computer-case-red-40-free-shipping?src=store_filmstrip" data-href2="/?sdtrk=store_filmstrip&pno=597623" target="" class="bp-c-link"><img class="lazyimg carouselImage" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/1/6/7/9/8/1/2/100x100/9479918.thumb" data-lazy-img="critical" width="100" height="100"><span class="dealTitle">Fractal Design Focus G Mystic ATX Mid Tower Computer Case (Red) $40 + Free Shipping</span><span class="dealInfo"><strong>$40</strong><span class="dealVotes"><span class="icon icon-thumbs-up3"></span><span>32</span></span></span></a></li>              
+  <a href="/f/14443997-fractal-design-focus-g-mystic-atx-mid-tower-computer-case-red-40-free-shipping?src=store_filmstrip" data-href2="/?sdtrk=store_filmstrip&pno=597623" target="" class="bp-c-link"><img class="lazyimg carouselImage" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/1/6/7/9/8/1/2/100x100/9479918.thumb" data-lazy-img="critical" width="100" height="100"><span class="dealTitle">Fractal Design Focus G Mystic ATX Mid Tower Computer Case (Red) $40 + Free Shipping</span><span class="dealInfo"><strong>$40</strong><span class="dealVotes"><span class="icon icon-thumbs-up3"></span><span>33</span></span></span></a></li>              
 <li>
   
   
@@ -953,7 +962,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">204 Used Today</span>
+                          <span class="numUsed">194 Used Today</span>
               </div>
               <span class="title cpbtn" title="Extra 10% Off After Email Sign Up" >Extra 10% Off After Email Sign Up</span>
             <div class="desc">
@@ -1026,7 +1035,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">11 Used Today</span>
+                          <span class="numUsed">8 Used Today</span>
               </div>
               <span class="title cpbtn" title="Extra $10 Off Intel Core i5-10400 Desktop Processor + Free Shipping" >Extra $10 Off Intel Core i5-10400 Desktop Processor + Free Shipping</span>
             <div class="desc">
@@ -1110,7 +1119,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">13 Used Today</span>
+                          <span class="numUsed">12 Used Today</span>
               </div>
               <span class="title cpbtn" title="Extra $30 Off ASUS ROG Strix B550-F Motherboard + Free Shipping" >Extra $30 Off ASUS ROG Strix B550-F Motherboard + Free Shipping</span>
             <div class="desc">
@@ -1333,7 +1342,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">8 Used Today</span>
+                          <span class="numUsed">7 Used Today</span>
               </div>
               <span class="title cpbtn" title="Up to 69% Off Open Box Deals" >Up to 69% Off Open Box Deals</span>
             <div class="desc">
@@ -1403,7 +1412,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         <div class="details">
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
-                                  <span class="numUsed">11 Used Today</span>
+                                  <span class="numUsed">13 Used Today</span>
               </div>
               <span class="title cpbtn" title="Today&#039;s Coupons, Promo Codes, and Promotional Offers" >Today&#039;s Coupons, Promo Codes, and Promotional Offers</span>
             <div class="desc">
@@ -1899,11 +1908,6 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
               
       
-                              
-    
-    
-              
-      
                                                     
 
 <div 
@@ -1915,8 +1919,8 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <a href="/f/14386628-dowinx-gaming-chair-ergonomic-racing-style-recliner-with-massage-lumbar-support-gamer-chairs-with-retractable-footrest-167-99-fs?src=rd_cl_tc" class="bp-c-link"><span class="intro"><span><span class="image"><img alt="" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/5/4/8/0/7/1/100x100/9427310.thumb" data-lazy-img="nonCritical"></span></span></span><div class="details"><div class="detailsTop"><span class="badge deal">DEAL</span></div><span class="title" title="Dowinx Gaming Chair Ergonomic Racing Style Recliner with Massage Lumbar Support Gamer Chairs with Retractable Footrest - $167.99 + FS" >Dowinx Gaming Chair Ergonomic Racing Style Recliner with Massage Lumbar Support Gamer Chairs with Retractable Footrest - $167.99 + FS</span><div class="desc"><span class="price" >$167.99</span></div><div class="detailsBottom"><span class="has_icon" ><span class="icon icon-thumbs-up"></span><span class="link_text">4</span></span><span class="middot"></span><span class="has_icon" ><span class="icon icon-bubble2"></span><span class="link_text">18 Comments</span></span><span class="middot"></span>
             Posted 10/01/2020
                                 </div></div></a>  
-  <div class="buttonRight" data-itemtype="deal" data-itemid="14426981" data-storeid="701" data-couponid="0">
-          <a href="/f/14426981-westinghouse-wh32ux9019-32-ultra-hd-3840-x-2160-4k-low-blue-light-filter-frameless-design-widescreen-led-backlit-monitor-249-99-f-s-dj3?src=rd_cl_tc" class="button success large bp-c-link">Get Deal</a>    
+  <div class="buttonRight" data-itemtype="deal" data-itemid="14386628" data-storeid="701" data-couponid="0">
+          <a href="/f/14386628-dowinx-gaming-chair-ergonomic-racing-style-recliner-with-massage-lumbar-support-gamer-chairs-with-retractable-footrest-167-99-fs?src=rd_cl_tc" class="button success large bp-c-link">Get Deal</a>    
       </div>
 </div>
 
@@ -2074,7 +2078,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
   data-timestamp="1602581039"   data-threadid="14427917">
         
   
-      <a href="/f/14427917-g-skill-tridentz-rgb-series-32gb-2-x-16gb-288-pin-ddr4-sdram-ddr4-3200-pc4-25600-desktop-memory-for-124-99-fs?src=rd_cl_tc" class="bp-c-link"><span class="intro"><span><span class="image"><img alt="" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/5/4/8/0/7/1/100x100/9459230.thumb" data-lazy-img="nonCritical"></span></span></span><div class="details"><div class="detailsTop"><span class="badge deal">DEAL</span></div><span class="title" title="G.SKILL TridentZ RGB Series 32GB (2 x 16GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Desktop Memory for $124.99 + FS" >G.SKILL TridentZ RGB Series 32GB (2 x 16GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Desktop Memory for $124.99 + FS</span><div class="desc"></div><div class="detailsBottom"><span class="has_icon" ><span class="icon icon-thumbs-up"></span><span class="link_text">8</span></span><span class="middot"></span><span class="has_icon" ><span class="icon icon-bubble2"></span><span class="link_text">8 Comments</span></span><span class="middot"></span>
+      <a href="/f/14427917-g-skill-tridentz-rgb-series-32gb-2-x-16gb-288-pin-ddr4-sdram-ddr4-3200-pc4-25600-desktop-memory-for-124-99-fs?src=rd_cl_tc" class="bp-c-link"><span class="intro"><span><span class="image"><img alt="" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/5/4/8/0/7/1/100x100/9459230.thumb" data-lazy-img="nonCritical"></span></span></span><div class="details"><div class="detailsTop"><span class="badge deal">DEAL</span></div><span class="title" title="G.SKILL TridentZ RGB Series 32GB (2 x 16GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Desktop Memory for $124.99 + FS" >G.SKILL TridentZ RGB Series 32GB (2 x 16GB) 288-Pin DDR4 SDRAM DDR4 3200 (PC4 25600) Desktop Memory for $124.99 + FS</span><div class="desc"></div><div class="detailsBottom"><span class="has_icon" ><span class="icon icon-thumbs-up"></span><span class="link_text">8</span></span><span class="middot"></span><span class="has_icon" ><span class="icon icon-bubble2"></span><span class="link_text">10 Comments</span></span><span class="middot"></span>
             Posted 10/13/2020
                                 </div></div></a>  
   <div class="buttonRight" data-itemtype="deal" data-itemid="14427917" data-storeid="701" data-couponid="0">
@@ -2092,6 +2096,27 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 <div 
   class="item showDeals deal  belowOrder" 
   data-bestOrder="22" 
+  data-timestamp="1602834817"   data-threadid="14444009">
+        
+  
+      <a href="/f/14444009-650w-antec-neoeco-classic-ne650c-v2-80-bronze-power-supply-newegg-50-ar-450w-evga-450-br-80-bronze-power-supply-40-ar?src=rd_cl_tc" class="bp-c-link"><span class="intro"><span><span class="image"><img alt="" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/5/0/5/1/4/100x100/9476714.thumb" data-lazy-img="nonCritical"></span></span></span><div class="details"><div class="detailsTop"><span class="badge deal">DEAL</span></div><span class="title" title="650W Antec NeoECO Classic NE650C V2 80+ Bronze Power Supply @Newegg $50 AR;  450W EVGA 450 BR 80+ Bronze Power Supply  $40 AR" >650W Antec NeoECO Classic NE650C V2 80+ Bronze Power Supply @Newegg $50 AR;  450W EVGA 450 BR 80+ Bronze Power Supply  $40 AR</span><div class="desc"><span class="price" >$50.00</span></div><div class="detailsBottom"><span class="has_icon" ><span class="icon icon-thumbs-up"></span><span class="link_text">11</span></span><span class="middot"></span><span class="has_icon" ><span class="icon icon-bubble2"></span><span class="link_text">15 Comments</span></span><span class="middot"></span>
+            Posted 10/16/2020
+                                </div></div></a>  
+  <div class="buttonRight" data-itemtype="deal" data-itemid="14444009" data-storeid="701" data-couponid="0">
+          <a href="/f/14444009-650w-antec-neoeco-classic-ne650c-v2-80-bronze-power-supply-newegg-50-ar-450w-evga-450-br-80-bronze-power-supply-40-ar?src=rd_cl_tc" class="button success large bp-c-link">Get Deal</a>    
+      </div>
+</div>
+
+    
+    
+    
+              
+      
+                                                    
+
+<div 
+  class="item showDeals deal  belowOrder" 
+  data-bestOrder="23" 
   data-timestamp="1601887165"   data-threadid="14393636">
         
   
@@ -2112,7 +2137,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals deal  belowOrder" 
-  data-bestOrder="23" 
+  data-bestOrder="24" 
   data-timestamp="1601406399"   data-threadid="14379506">
         
   
@@ -2133,32 +2158,11 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals deal  belowOrder" 
-  data-bestOrder="24" 
-  data-timestamp="1602834817"   data-threadid="14444009">
-        
-  
-      <a href="/f/14444009-650w-antec-neoeco-classic-ne650c-v2-80-bronze-power-supply-newegg-50-ar-450w-evga-450-br-80-bronze-power-supply-40-ar?src=rd_cl_tc" class="bp-c-link"><span class="intro"><span><span class="image"><img alt="" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/5/0/5/1/4/100x100/9476714.thumb" data-lazy-img="nonCritical"></span></span></span><div class="details"><div class="detailsTop"><span class="badge deal">DEAL</span></div><span class="title" title="650W Antec NeoECO Classic NE650C V2 80+ Bronze Power Supply @Newegg $50 AR;  450W EVGA 450 BR 80+ Bronze Power Supply  $40 AR" >650W Antec NeoECO Classic NE650C V2 80+ Bronze Power Supply @Newegg $50 AR;  450W EVGA 450 BR 80+ Bronze Power Supply  $40 AR</span><div class="desc"><span class="price" >$50.00</span></div><div class="detailsBottom"><span class="has_icon" ><span class="icon icon-thumbs-up"></span><span class="link_text">8</span></span><span class="middot"></span><span class="has_icon" ><span class="icon icon-bubble2"></span><span class="link_text">11 Comments</span></span><span class="middot"></span>
-            Posted 10/16/2020
-                                </div></div></a>  
-  <div class="buttonRight" data-itemtype="deal" data-itemid="14444009" data-storeid="701" data-couponid="0">
-          <a href="/f/14444009-650w-antec-neoeco-classic-ne650c-v2-80-bronze-power-supply-newegg-50-ar-450w-evga-450-br-80-bronze-power-supply-40-ar?src=rd_cl_tc" class="button success large bp-c-link">Get Deal</a>    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals deal  belowOrder" 
   data-bestOrder="25" 
   data-timestamp="1602900766"   data-threadid="14446112">
         
   
-      <a href="/f/14446112-asrock-b550m-pro4-micro-atx-motherboard-for-3rd-gen-ryzen-and-future-zen-3-processors-94-99?src=rd_cl_tc" class="bp-c-link"><span class="intro"><span><span class="image"><img alt="" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/6/5/0/9/2/2/100x100/9478826.thumb" data-lazy-img="nonCritical"></span></span></span><div class="details"><div class="detailsTop"><span class="badge deal">DEAL</span></div><span class="title" title="ASRock B550M PRO4 Micro ATX Motherboard for 3rd Gen Ryzen and Future Zen 3 Processors $94.99" >ASRock B550M PRO4 Micro ATX Motherboard for 3rd Gen Ryzen and Future Zen 3 Processors $94.99</span><div class="desc"><span class="price" >$94.99</span></div><div class="detailsBottom"><span class="has_icon" ><span class="icon icon-thumbs-up"></span><span class="link_text">8</span></span><span class="middot"></span><span class="has_icon" ><span class="icon icon-bubble2"></span><span class="link_text">26 Comments</span></span><span class="middot"></span>
+      <a href="/f/14446112-asrock-b550m-pro4-micro-atx-motherboard-for-3rd-gen-ryzen-and-future-zen-3-processors-94-99?src=rd_cl_tc" class="bp-c-link"><span class="intro"><span><span class="image"><img alt="" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/2/6/5/0/9/2/2/100x100/9478826.thumb" data-lazy-img="nonCritical"></span></span></span><div class="details"><div class="detailsTop"><span class="badge deal">DEAL</span></div><span class="title" title="ASRock B550M PRO4 Micro ATX Motherboard for 3rd Gen Ryzen and Future Zen 3 Processors $94.99" >ASRock B550M PRO4 Micro ATX Motherboard for 3rd Gen Ryzen and Future Zen 3 Processors $94.99</span><div class="desc"><span class="price" >$94.99</span></div><div class="detailsBottom"><span class="has_icon" ><span class="icon icon-thumbs-up"></span><span class="link_text">9</span></span><span class="middot"></span><span class="has_icon" ><span class="icon icon-bubble2"></span><span class="link_text">26 Comments</span></span><span class="middot"></span>
             Posted 10/16/2020
                                 </div></div></a>  
   <div class="buttonRight" data-itemtype="deal" data-itemid="14446112" data-storeid="701" data-couponid="0">
@@ -2593,7 +2597,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/wwe-shop/" id="bp9380-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9380-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/wwe-shop/" id="bp1952-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp1952-Button"} });</script>        </span>
 
       </li>
       
@@ -2618,7 +2622,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/brooks-brothers/" id="bp3265-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp3265-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/brooks-brothers/" id="bp9053-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9053-Button"} });</script>        </span>
 
       </li>
       
@@ -2643,7 +2647,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/sierra/" id="bp4668-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp4668-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/sierra/" id="bp4977-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp4977-Button"} });</script>        </span>
 
       </li>
       
@@ -2668,7 +2672,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/perry-ellis/" id="bp6749-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp6749-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/perry-ellis/" id="bp3089-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp3089-Button"} });</script>        </span>
 
       </li>
       
@@ -2693,7 +2697,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/gnc/" id="bp4618-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp4618-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/gnc/" id="bp3801-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp3801-Button"} });</script>        </span>
 
       </li>
       
@@ -2720,7 +2724,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/oakley/" id="bp8092-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp8092-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/oakley/" id="bp4638-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp4638-Button"} });</script>        </span>
 
       </li>
       
@@ -2745,7 +2749,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/turbotax/" id="bp1788-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp1788-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/turbotax/" id="bp4139-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp4139-Button"} });</script>        </span>
 
       </li>
       
@@ -2770,7 +2774,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/essay-edge/" id="bp9860-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9860-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/essay-edge/" id="bp8127-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp8127-Button"} });</script>        </span>
 
       </li>
       
@@ -2795,7 +2799,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/michaels/" id="bp8981-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp8981-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/michaels/" id="bp8734-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp8734-Button"} });</script>        </span>
 
       </li>
       
@@ -2820,7 +2824,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/pet-street-mall/" id="bp5557-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp5557-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/pet-street-mall/" id="bp7012-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp7012-Button"} });</script>        </span>
 
       </li>
       
@@ -2845,7 +2849,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/hr-block/" id="bp8166-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp8166-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/hr-block/" id="bp2725-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp2725-Button"} });</script>        </span>
 
       </li>
       
@@ -2870,7 +2874,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/life-checks/" id="bp9378-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9378-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/life-checks/" id="bp5331-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp5331-Button"} });</script>        </span>
 
       </li>
       
@@ -2895,7 +2899,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/forever-21/" id="bp9645-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9645-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/forever-21/" id="bp5729-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp5729-Button"} });</script>        </span>
 
       </li>
       
@@ -2920,7 +2924,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/calvinklein/" id="bp6936-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp6936-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/calvinklein/" id="bp1035-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp1035-Button"} });</script>        </span>
 
       </li>
       
@@ -2945,7 +2949,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/zaful/" id="bp1277-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp1277-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/zaful/" id="bp7432-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp7432-Button"} });</script>        </span>
 
       </li>
       
@@ -2999,7 +3003,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           <a href="/coupons/dell-home-outlet/">
                           <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/slickdeals/storelogo/100x100/596.png?8406?8406" width="100" height="100" data-lazy-img="nonCritical">
                         <strong>Dell Home Outlet</strong>
-            <div>38 Coupons</div>
+            <div>35 Coupons</div>
             <span class="icon stars45"></span>
           </a>
         </li>
@@ -3107,7 +3111,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
               <div>
                 <span class="icon icon-shield-check"></span>7 Verified Coupons
               </div>
-              <div>4708 Used Today</div>
+              <div>4693 Used Today</div>
             </div>
           
                       <div id="sortWrapper" class="section sorting ">
@@ -3409,7 +3413,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp7421-Collapsible',
+                id: 'bp3301-Collapsible',
                 expanded: '',
             });
         </script>
@@ -3420,7 +3424,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp7421-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp3301-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">Follow Us</h3>
@@ -3445,7 +3449,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp2889-Collapsible',
+                id: 'bp4939-Collapsible',
                 expanded: '',
             });
         </script>
@@ -3456,7 +3460,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp2889-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp4939-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">About</h3>
@@ -3485,7 +3489,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp3676-Collapsible',
+                id: 'bp4823-Collapsible',
                 expanded: '',
             });
         </script>
@@ -3496,7 +3500,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp3676-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp4823-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">More</h3>
@@ -3521,7 +3525,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp3916-Collapsible',
+                id: 'bp4259-Collapsible',
                 expanded: '',
             });
         </script>
@@ -3532,7 +3536,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp3916-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp4259-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">Legal</h3>
@@ -3635,21 +3639,21 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           </script>
 
         <script>
-                        window.bpHydration.push({ 'LinkableButton': {"id":"bp9380-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp3265-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp4668-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp6749-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp4618-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp8092-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp1788-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp9860-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp8981-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp5557-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp8166-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp9378-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp9645-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp6936-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp1277-Button"} });
+                        window.bpHydration.push({ 'LinkableButton': {"id":"bp1952-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp9053-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp4977-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp3089-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp3801-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp4638-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp4139-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp8127-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp8734-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp7012-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp2725-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp5331-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp5729-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp1035-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp7432-Button"} });
             </script>
     
                   <style>
@@ -3736,7 +3740,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     window.sdLoadQueue.push([function() {
         var elem = document.createElement('img');
 
-        elem.src = "//dpm.demdex.net/ibs:dpid=375988&dpuuid=fc95a3e410d811eb80782a70558bfcd6";
+        elem.src = "//dpm.demdex.net/ibs:dpid=375988&dpuuid=230dcaf210e711eb8a6d7aabb1c97e42";
         document.body.appendChild(elem);
     }, 'analytics']);
 </script>
@@ -3771,11 +3775,11 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       if (0)
       {
         window.heap.resetIdentity();
-        window.heap.identify('fc95a3e410d811eb80782a70558bfcd6', 'Device');
+        window.heap.identify('230dcaf210e711eb8a6d7aabb1c97e42', 'Device');
         document.cookie = "doLogOut=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       
         // For QA only
-        console.log('Heap: just logged out. Device is ' + 'fc95a3e410d811eb80782a70558bfcd6');
+        console.log('Heap: just logged out. Device is ' + '230dcaf210e711eb8a6d7aabb1c97e42');
       }
       else
       {
@@ -3791,10 +3795,10 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           }
           else
           {
-              window.heap.identify('fc95a3e410d811eb80782a70558bfcd6', 'Device');
+              window.heap.identify('230dcaf210e711eb8a6d7aabb1c97e42', 'Device');
               
               // For QA only
-              console.log('Heap: not logged in. Device is ' + 'fc95a3e410d811eb80782a70558bfcd6');
+              console.log('Heap: not logged in. Device is ' + '230dcaf210e711eb8a6d7aabb1c97e42');
           }
       }
     }, 'analytics']);
