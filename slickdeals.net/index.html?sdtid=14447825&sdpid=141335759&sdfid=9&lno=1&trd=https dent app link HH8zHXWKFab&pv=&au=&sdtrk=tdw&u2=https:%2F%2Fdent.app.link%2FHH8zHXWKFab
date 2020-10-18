@@ -1,0 +1,285 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 14147
+Connection: keep-alive
+Server: openresty/1.13.6.2
+Date: Sun, 18 Oct 2020 15:28:28 GMT
+X-Powered-By: Express
+Set-Cookie: _s=2I3VXpeW7tEl8ccwn8qSWauBxu8R1DfiMgrBUBaG1XrWB440Fm2T0%2F8oNaNSzWeX; Max-Age=31536000; Domain=.app.link; Path=/; Expires=Mon, 18 Oct 2021 15:28:28 GMT
+Last-Modified: Sun, 18 Oct 2020 15:28:28 GMT
+ETag: W/"3743-ZyaO5yhZ4Ryw9HmH/zixak4v/g0"
+X-Cache: Miss from cloudfront
+Via: 1.1 ede1802516dab8225770d22f89eefe52.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: IAD66-C2
+X-Amz-Cf-Id: a-KnSWsxvI5LzPmHve4bY9GnbEmHFMUzIrNL2p90001WDAuxp35Y7w==
+
+<!DOCTYPE html>
+ <html amp>
+   <head><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,minimum-scale=1">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700,300" rel="stylesheet" type="text/css">
+     <style amp-custom>#branch-sdk{position:fixed;bottom:0;left:0;right:0;}
+       body {
+         margin: 0;
+         word-wrap: break-word;
+         font-family: "Open Sans", Helvetica, serif;
+       }
+       /* ============ Portrait ============ */
+       .main-image {
+         width: 100%;
+         height: 250px;
+         height: 75vw;
+             background-image: url(http://www.dent.tdsoftware.de/gift.png);
+         background-size: cover;
+         background-position: top center;
+       }
+       #content-container {
+         box-sizing: border-box;
+         padding: 24px;
+         margin: 0 24px;
+         background-color: #fff;
+       }
+       .app-title {
+         font-size: 14px;
+         padding-bottom: 11px;
+         text-transform: uppercase;
+       }
+       .card-title {
+         font-size: 33px;
+         line-height: 36px;
+       }
+       .app-content {
+         padding-top: 10px;
+         padding-bottom: 100px;
+         font-size: 20px;
+       }
+       .input-wrapper {
+         position: fixed;
+         bottom: 0;
+         left: 0;
+         width: 100%;
+         height: 110px;
+         background-color: #fff;
+         box-shadow: 0px -20px 20px -8px rgba(255,255,255,1);
+       }
+       .input-container {
+         width: 100%;
+         padding: 0 24px;
+         text-align: center;
+         box-sizing: border-box;
+       }
+       .form-get-the-app {
+         display: -webkit-box;
+         display: flex;
+         text-align: center;
+         padding-top: 10px;
+         border-top: 2px solid #cecece;
+         min-height: 300px;
+       }
+       .input-label {
+         padding: 4px 10px;
+         font-size: 13px;
+         overflow: hidden;
+         word-wrap: break-word;
+         text-align: center;
+       }
+       .app-icon {
+         width: 62px;
+         height: 62px;
+         line-height: 62px;
+         background-size: 100% auto;
+           background-image: url(http://www.dent.tdsoftware.de/gift.png);
+       }
+       .cta-button {
+         -webkit-box-flex: 1;
+         flex-grow: 1;
+         height: 62px;
+         line-height: 62px;
+         background-color: #444;
+         border-radius: 2px;
+         font-size: 20px;
+         padding: 0 20px;
+         margin-left: 10px;
+         color: #fff;
+         text-align: center;
+         text-decoration: none;
+         display: block;
+       }
+       /* No data (portrait) */
+       @media only screen and (orientation: portrait) {
+         .card--no-data .main-image {
+           background-image: url("http://s3-us-west-1.amazonaws.com/branch-assets/b_stripes-small.png");
+           background-size: auto;
+           background-position: top center;
+           background-repeat: repeat;
+           height: 190px;
+         }
+         .card--no-data > .app-icon {
+           position: absolute;
+           top: 160px;
+           left: 34px;
+         }
+         .card--no-data #content-container {
+           margin-top: 20px;
+         }
+         }
+         @media screen /* >= iPhone 5 */
+         and (min-device-width: 321px) {
+         .input-label {
+           font-size: 14px;
+         }
+       }
+       @media only screen /* >= iPhone 6 */
+         and (min-device-width: 375px)
+         and (orientation: portrait) {
+         .main-image {
+           height: 300px;
+           height: 80vw;
+         }
+         .app-content {
+           padding-bottom: 120px;
+         }
+         .input-wrapper {
+           height: 115px;
+         }
+       }
+       @media only screen /* >= iPhone 6+ */
+       and (min-device-width: 414px)
+       and (orientation: portrait) {
+         .main-image {
+           height: 390px;
+           height: 95vw;
+         }
+       }
+       /* ============ Landscape ============ */
+       @media only screen and (orientation: landscape){
+         .main-image {
+           position: fixed;
+           height: 100%;
+           height: 100vh;
+           width: 50%;
+         }
+         .input-wrapper {
+           right: 0;
+           left: auto;
+           width: 50%;
+         }
+         #content-container {
+           float: left;
+           width: 50%;
+           margin-left: 50%;
+         }
+         .input-wrapper {
+           height: 108px;
+         }
+         .app-content {
+           padding-bottom: 110px;
+         }
+         .form-get-the-app {
+           padding-top: 8px;
+         }
+         .input-container {
+           left: 50%;
+         }
+         .cta-button {
+           height: 44px;
+           line-height: 44px;
+           padding: 0 5px;
+           margin-left: 50px;
+         }
+         .app-icon {
+           width: 44px;
+           height: 44px;
+         }
+         /* No data (landscape) */
+         .card--no-data .main-image {
+           height: 100%;
+         }
+         .card--no-data > .app-icon {
+           display: none;
+         }
+         .card--no-data #content-container {
+           margin-top: 0;
+         }
+       }
+       @media only screen /* >= iPhone 6 */
+       and (min-device-width: 645px)
+       and (orientation: landscape) {
+         .form-get-the-app {
+           padding-top: 8px;
+         }
+         .cta-button {
+           height: 62px;
+           line-height: 62px;
+           padding: 0 20px;
+           margin-left: 70px;
+         }
+         .app-icon {
+           width: 62px;
+           height: 62px;
+           top: -2px;
+         }
+       }
+       /* Reusables */
+       .text-bold {
+         font-weight: 700
+       }
+       .text-light {
+         font-weight: 300;
+       }
+       .cta-button--no-app-icon {
+         margin-left: 0;
+       }
+     </style>
+       <link rel="alternate" href="ios-app://1325019276/dent/open?link_click_id=link-846197459062922295">
+       <link rel="alternate" href="android-app://com.dentwireless.dentapp/dent/open?link_click_id=link-846197459062922295">
+       <link rel="apple-touch-icon" href="http://www.dent.tdsoftware.de/gift.png">
+       <meta property="al:ios:url" content="dent://open?link_click_id=link-846197459062922295-eyIkb2dfdGl0bGUiOiJKb2luIERFTlQgYW5kIHJlY2VpdmUgYSBmcmVlIERhdGEgUGxhbiIsIiRwdWJsaWNseV9pbmRleGFibGUiOiJ0cnVlIiwifmNyZWF0aW9uX3NvdXJjZSI6MCwicmVmZXJyZXItcGhvbmUiOiIrMTc0NzIxNzUwODEiLCIkb2dfZGVzY3JpcHRpb24iOiJTaWduIHVwIGFuZCBidXkgYSBXb3JsZHdpZGUgUGxhbiB0byBnZXQgeW91ciBib251cy4iLCJzb3VyY2UiOiJzZXJ2ZXIiLCIkaWRlbnRpdHlfaWQiOiI4NDYxNjc1NTM1MjAxMzcwMDkiLCJ-ZmVhdHVyZSI6InJlZmVycmFsIiwicmVmZXJyZXItbGFzdC1uYW1lIjoiQ2xhcmsiLCIrdXJsIjoiaHR0cHM6Ly9kZW50LmFwcC5saW5rL0hIOHpIWFdLRmFiIiwiJGNhbm9uaWNhbF9pZGVudGlmaWVyIjoicmVmZXJyZXIvKzE3NDcyMTc1MDgxIiwiJG9uZV90aW1lX3VzZSI6ZmFsc2UsIn5pZCI6Ijg0NjE5NzQ1OTA2MjkyMjI5NSIsIn5jYW1wYWlnbiI6IkluIEFwcCBSZWZlcnJhbCBDYW1wYWlnbiIsIn5jaGFubmVsIjoiREVOVCBTZXJ2ZXIiLCJyZWZlcnJlci1maXJzdC1uYW1lIjoiSmFzb24iLCIrZG9tYWluIjoiZGVudC5hcHAubGluayIsIitjbGlja190aW1lc3RhbXAiOjE2MDMwMzQ5MDgsIityZWZlcnJlciI6Imh0dHBzOi8vc2xpY2tkZWFscy5uZXQvZi8xNDQ0NzgyNS1taW50LW1vYmlsZS0xMi1tb250aC0zZ2ItbHRlLXByZXBhaWQtc2ltLWNhcmQta2l0LWJlc3RidXktMTUwP3NyYz10ZHcifQ">
+       <meta name="twitter:app:url:iphone" content="dent://open?link_click_id=link-846197459062922295-eyIkb2dfdGl0bGUiOiJKb2luIERFTlQgYW5kIHJlY2VpdmUgYSBmcmVlIERhdGEgUGxhbiIsIiRwdWJsaWNseV9pbmRleGFibGUiOiJ0cnVlIiwifmNyZWF0aW9uX3NvdXJjZSI6MCwicmVmZXJyZXItcGhvbmUiOiIrMTc0NzIxNzUwODEiLCIkb2dfZGVzY3JpcHRpb24iOiJTaWduIHVwIGFuZCBidXkgYSBXb3JsZHdpZGUgUGxhbiB0byBnZXQgeW91ciBib251cy4iLCJzb3VyY2UiOiJzZXJ2ZXIiLCIkaWRlbnRpdHlfaWQiOiI4NDYxNjc1NTM1MjAxMzcwMDkiLCJ-ZmVhdHVyZSI6InJlZmVycmFsIiwicmVmZXJyZXItbGFzdC1uYW1lIjoiQ2xhcmsiLCIrdXJsIjoiaHR0cHM6Ly9kZW50LmFwcC5saW5rL0hIOHpIWFdLRmFiIiwiJGNhbm9uaWNhbF9pZGVudGlmaWVyIjoicmVmZXJyZXIvKzE3NDcyMTc1MDgxIiwiJG9uZV90aW1lX3VzZSI6ZmFsc2UsIn5pZCI6Ijg0NjE5NzQ1OTA2MjkyMjI5NSIsIn5jYW1wYWlnbiI6IkluIEFwcCBSZWZlcnJhbCBDYW1wYWlnbiIsIn5jaGFubmVsIjoiREVOVCBTZXJ2ZXIiLCJyZWZlcnJlci1maXJzdC1uYW1lIjoiSmFzb24iLCIrZG9tYWluIjoiZGVudC5hcHAubGluayIsIitjbGlja190aW1lc3RhbXAiOjE2MDMwMzQ5MDgsIityZWZlcnJlciI6Imh0dHBzOi8vc2xpY2tkZWFscy5uZXQvZi8xNDQ0NzgyNS1taW50LW1vYmlsZS0xMi1tb250aC0zZ2ItbHRlLXByZXBhaWQtc2ltLWNhcmQta2l0LWJlc3RidXktMTUwP3NyYz10ZHcifQ">
+       <meta property="al:ios:app_store_id" content="1325019276">
+       <meta name="twitter:app:id:iphone" content="1325019276">
+       <meta property="al:ios:app_name" content="DENT">
+       <meta name="twitter:app:name:iphone" content="DENT">
+       <meta property="al:android:url" content="dent://open?link_click_id=link-846197459062922295-eyIkb2dfdGl0bGUiOiJKb2luIERFTlQgYW5kIHJlY2VpdmUgYSBmcmVlIERhdGEgUGxhbiIsIiRwdWJsaWNseV9pbmRleGFibGUiOiJ0cnVlIiwifmNyZWF0aW9uX3NvdXJjZSI6MCwicmVmZXJyZXItcGhvbmUiOiIrMTc0NzIxNzUwODEiLCIkb2dfZGVzY3JpcHRpb24iOiJTaWduIHVwIGFuZCBidXkgYSBXb3JsZHdpZGUgUGxhbiB0byBnZXQgeW91ciBib251cy4iLCJzb3VyY2UiOiJzZXJ2ZXIiLCIkaWRlbnRpdHlfaWQiOiI4NDYxNjc1NTM1MjAxMzcwMDkiLCJ-ZmVhdHVyZSI6InJlZmVycmFsIiwicmVmZXJyZXItbGFzdC1uYW1lIjoiQ2xhcmsiLCIrdXJsIjoiaHR0cHM6Ly9kZW50LmFwcC5saW5rL0hIOHpIWFdLRmFiIiwiJGNhbm9uaWNhbF9pZGVudGlmaWVyIjoicmVmZXJyZXIvKzE3NDcyMTc1MDgxIiwiJG9uZV90aW1lX3VzZSI6ZmFsc2UsIn5pZCI6Ijg0NjE5NzQ1OTA2MjkyMjI5NSIsIn5jYW1wYWlnbiI6IkluIEFwcCBSZWZlcnJhbCBDYW1wYWlnbiIsIn5jaGFubmVsIjoiREVOVCBTZXJ2ZXIiLCJyZWZlcnJlci1maXJzdC1uYW1lIjoiSmFzb24iLCIrZG9tYWluIjoiZGVudC5hcHAubGluayIsIitjbGlja190aW1lc3RhbXAiOjE2MDMwMzQ5MDgsIityZWZlcnJlciI6Imh0dHBzOi8vc2xpY2tkZWFscy5uZXQvZi8xNDQ0NzgyNS1taW50LW1vYmlsZS0xMi1tb250aC0zZ2ItbHRlLXByZXBhaWQtc2ltLWNhcmQta2l0LWJlc3RidXktMTUwP3NyYz10ZHcifQ">
+       <meta name="twitter:app:url:googleplay" content="dent://open?link_click_id=link-846197459062922295-eyIkb2dfdGl0bGUiOiJKb2luIERFTlQgYW5kIHJlY2VpdmUgYSBmcmVlIERhdGEgUGxhbiIsIiRwdWJsaWNseV9pbmRleGFibGUiOiJ0cnVlIiwifmNyZWF0aW9uX3NvdXJjZSI6MCwicmVmZXJyZXItcGhvbmUiOiIrMTc0NzIxNzUwODEiLCIkb2dfZGVzY3JpcHRpb24iOiJTaWduIHVwIGFuZCBidXkgYSBXb3JsZHdpZGUgUGxhbiB0byBnZXQgeW91ciBib251cy4iLCJzb3VyY2UiOiJzZXJ2ZXIiLCIkaWRlbnRpdHlfaWQiOiI4NDYxNjc1NTM1MjAxMzcwMDkiLCJ-ZmVhdHVyZSI6InJlZmVycmFsIiwicmVmZXJyZXItbGFzdC1uYW1lIjoiQ2xhcmsiLCIrdXJsIjoiaHR0cHM6Ly9kZW50LmFwcC5saW5rL0hIOHpIWFdLRmFiIiwiJGNhbm9uaWNhbF9pZGVudGlmaWVyIjoicmVmZXJyZXIvKzE3NDcyMTc1MDgxIiwiJG9uZV90aW1lX3VzZSI6ZmFsc2UsIn5pZCI6Ijg0NjE5NzQ1OTA2MjkyMjI5NSIsIn5jYW1wYWlnbiI6IkluIEFwcCBSZWZlcnJhbCBDYW1wYWlnbiIsIn5jaGFubmVsIjoiREVOVCBTZXJ2ZXIiLCJyZWZlcnJlci1maXJzdC1uYW1lIjoiSmFzb24iLCIrZG9tYWluIjoiZGVudC5hcHAubGluayIsIitjbGlja190aW1lc3RhbXAiOjE2MDMwMzQ5MDgsIityZWZlcnJlciI6Imh0dHBzOi8vc2xpY2tkZWFscy5uZXQvZi8xNDQ0NzgyNS1taW50LW1vYmlsZS0xMi1tb250aC0zZ2ItbHRlLXByZXBhaWQtc2ltLWNhcmQta2l0LWJlc3RidXktMTUwP3NyYz10ZHcifQ">
+       <meta property="al:android:package" content="com.dentwireless.dentapp">
+       <meta name="twitter:app:id:googleplay" content="com.dentwireless.dentapp">
+       <meta property="al:android:app_name" content="DENT">
+       <meta name="twitter:app:name:googleplay" content="DENT">
+           <meta name="twitter:card" content="summary_large_image">
+       <meta property="og:image" content="http://www.dent.tdsoftware.de/gift.png">
+         <meta name="twitter:image:src" content="http://www.dent.tdsoftware.de/gift.png">
+       <title>Join DENT and receive a free Data Plan</title>
+       <meta property="og:title" content="Join DENT and receive a free Data Plan">
+         <meta name="twitter:title" content="Join DENT and receive a free Data Plan">
+       <meta property="og:description" content="Sign up and buy a Worldwide Plan to get your bonus.">
+         <meta name="twitter:description" content="Sign up and buy a Worldwide Plan to get your bonus.">
+       <meta name="twitter:app:country" content="US">
+   <script async src="https://cdn.ampproject.org/v0.js"></script><script async src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js" custom-element="amp-iframe"></script><script async src="https://cdn.ampproject.org/v0/amp-list-0.1.js" custom-element="amp-list"></script><script async src="https://cdn.ampproject.org/v0/amp-mustache-0.1.js" custom-template="amp-mustache"></script><link rel="canonical" href="https://dent.app.link/HH8zHXWKFab"></head>
+   <body>
+     <div class="card center">
+       <div class="main-image"></div>
+       <div id="content-container">
+         <div class="app-title text-bold">DENT</div>
+         <div class="card-title text-light">Join DENT and receive a free Data Plan</div>
+         <div class="app-content text-light">Sign up and buy a Worldwide Plan to get your bonus.</div>
+       </div>
+       <div class="input-wrapper">
+         <div class="input-container">
+           <div class="input-label text-light">See this content immediately after install</div>
+           <div class="form-get-the-app">
+               <div class="app-icon">&#xA0;</div>
+             <amp-list src="https://dent.app.link/HH8zHXWKFab?__branch_amp_json=1" layout="flex-item">
+      <template type="amp-mustache" id="cta-template">
+        <a href="{{action}}" class="cta-button text-light">
+               Get The App
+             </a>
+      <amp-iframe id="branch-sdk" src="/amp-iframe-redirect?scheme_redirect={{scheme_redirect}}&redirect_strategy={{redirect_strategy}}&app_id=497400990249538345&has_app=false" sandbox="allow-scripts allow-top-navigation" height="11" layout="fixed-height" frameborder="0"></amp-iframe></template>
+    </amp-list>
+           </div>
+         </div>
+       </div>
+     </div>
+   </body>
+ </html>

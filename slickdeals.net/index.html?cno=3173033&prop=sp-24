@@ -1,15 +1,14 @@
 HTTP/1.1 200 OK
-Date: Sun, 18 Oct 2020 13:11:43 GMT
-Vary: Host,Accept-Encoding
 Cache-Control: private, max-age=0, no-cache, no-store, must-revalidate
 Pragma: no-cache
 Expires: Thu, 01 Jan 1970 00:00:00 GMT
 X-Frame-Options: SAMEORIGIN
+Server: Tomcat
 X-Content-Type-Options: nosniff
-Set-Cookie: locale_V6=en_US; Domain=.us.myprotein.com; Expires=Mon, 18-Oct-2021 19:00:29 GMT; Path=/; Secure
-Set-Cookie: utm_source_V6="QVdpbi0xNjY1ODA="; Version=1; Domain=.us.myprotein.com; Max-Age=2592000; Expires=Tue, 17-Nov-2020 13:11:43 GMT; Path=/; Secure; HttpOnly
-Set-Cookie: utm_medium_V6=YWZmaWxpYXRl; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 13:11:43 GMT; Path=/; Secure; HttpOnly
-Set-Cookie: utm_campaign_V6=QWZmaWxpYXRlV2lu; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 13:11:43 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: locale_V6=en_US; Domain=.us.myprotein.com; Expires=Mon, 18-Oct-2021 20:01:16 GMT; Path=/; Secure
+Set-Cookie: utm_source_V6="QVdpbi0xNjY1ODA="; Version=1; Domain=.us.myprotein.com; Max-Age=2592000; Expires=Tue, 17-Nov-2020 14:12:30 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: utm_medium_V6=YWZmaWxpYXRl; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 14:12:30 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: utm_campaign_V6=QWZmaWxpYXRlV2lu; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 14:12:30 GMT; Path=/; Secure; HttpOnly
 Set-Cookie: preservedReferer_V6=""; Domain=.us.myprotein.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
 Set-Cookie: preservedReferer_V6="aHR0cHM6Ly9zbGlja2RlYWxzLm5ldC9jb3Vwb25zL215cHJvdGVpbi11cy8="; Version=1; Domain=.us.myprotein.com; Path=/; Secure
 Set-Cookie: preservedPartnerRef_V6=""; Domain=.us.myprotein.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
@@ -19,12 +18,13 @@ Referrer-Policy: unsafe-url
 X-XSS-Protection: 1; mode=block; report=/xssProtection.txt
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 Report-To: {"group":"report-endpoint","max_age":86400,"endpoints":[{"url":"https://csp.thehut.net/cspReport.txt","priority":1,"weight":1}],"include_subdomains":true}
-Set-Cookie: affil_V6=awin; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 13:11:43 GMT; Path=/; Secure
-Keep-Alive: timeout=5, max=92
-Connection: Keep-Alive
-Transfer-Encoding: chunked
+Set-Cookie: affil_V6=awin; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 14:12:30 GMT; Path=/; Secure
 Content-Type: text/html;charset=UTF-8
-Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a4a423661;expires=Sun, 18-Oct-2020 16:11:43 GMT;path=/;secure;httponly
+Transfer-Encoding: chunked
+vary: accept-encoding
+Date: Sun, 18 Oct 2020 14:12:29 GMT
+Via: 1.1 google
+Alt-Svc: clear
 
 
 
@@ -372,7 +372,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 
 
 
-<!-- Webserver = || us.myprotein.com || LON-WEB-053 || 8.2873.2938 -->
+<!-- Webserver = || us.myprotein.com || WDCC-WEB-003 || 8.2873.2938 -->
 
 
 <head>
@@ -1120,12 +1120,12 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
     siteID: 83,
     siteURL: 'https://us.myprotein.com/',
 	siteTheme: 'myprotein/rebrand',
-    serverIP: 'x.x.x.54',
-    experiments: [{'name':'search_es_upgrade_wave_01','value':'v1|sevensixtwo'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}],
+    serverIP: 'x.x.x.6',
+    experiments: [{'name':'search_es_upgrade_wave_01','value':'c|onesevenzero'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}],
     customerLocation: 'US',
     
     shippingCountry: 'US',
-    nonce: 'c45e46c3-3439-41cd-ac31-6e763ac37ed9',
+    nonce: '9b5143c0-2a4d-47af-a2c6-25e2dd315251',
 	frontendTrackingUrl: 'https://userexperience.thehut.net/Tracker/track',
     pricePerUnit: '',
     
@@ -1153,7 +1153,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 
     
         rrp: '',
-        date: 'Sun Oct 18 14:11:43 BST 2020',
+        date: 'Sun Oct 18 14:12:30 UTC 2020',
         
           social: {
             addthis: {
@@ -1238,8 +1238,8 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
           },
           countdown: {
            
-           servertime: '2020-10-18-07-11-43-Sunday',
-           js_servertime: '2020/10/18 13:11:43'
+           servertime: '2020-10-18-08-12-30-Sunday',
+           js_servertime: '2020/10/18 14:12:30'
           },
           basketUpgrade: false,
           basketUpgradeButtons: {
@@ -1739,7 +1739,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 							chumewe_sess: getCookie("chumewe_sess"),
 							chumewe_user: getCookie("chumewe_user"),
 							product_page_videos: "false",
-							server_id: 'LON-WEB-053'
+							server_id: 'WDCC-WEB-003'
 						}
 					}
 				}
@@ -1883,7 +1883,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 			'pageCategory': 'category'
 			, 'pageAttributes': [{
 				'currency':'USD'
-				, 'server':'x.x.x.54'
+				, 'server':'x.x.x.6'
 				, 'elysiumVersion': '8.2873.2938'
 				, 'site':'myprotein'
 				, 'subsite':'us'
@@ -1897,7 +1897,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 				, 'mobile':'no'
 				
 				
-				, 'experiments': [{'name':'search_es_upgrade_wave_01','value':'v1|sevensixtwo'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}]
+				, 'experiments': [{'name':'search_es_upgrade_wave_01','value':'c|onesevenzero'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}]
 			}]
 			
 				
@@ -5237,7 +5237,7 @@ Gym Leggings
 </h1>
 
 <p class="responsiveProductListHeader_resultsCount" aria-live="polite">
-46 results
+45 results
 </p>
 </div>
 <div class="responsiveProductListHeader_description">
@@ -13855,12 +13855,12 @@ aria-label='Back' title='Back'>
 class="responsiveFacets_sectionItemCheckbox"
 name='en_sportsClothingtype_content'
 data-facet-value="Leggings"
-aria-label="Leggings (46 available products)"
+aria-label="Leggings (45 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_sportsClothingtype_content'
 data-facet-value='Leggings'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-Leggings (46)
+Leggings (45)
 </span>
 </span>
 </label>
@@ -14000,12 +14000,12 @@ L (36)
 class="responsiveFacets_sectionItemCheckbox"
 name='en_myprotein_clothingSize_content'
 data-facet-value="XL"
-aria-label="XL (36 available products)"
+aria-label="XL (35 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_myprotein_clothingSize_content'
 data-facet-value='XL'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-XL (36)
+XL (35)
 </span>
 </span>
 </label>
@@ -14089,12 +14089,12 @@ aria-label='Back' title='Back'>
 class="responsiveFacets_sectionItemCheckbox"
 name='en_myprotein_ColourRange_content'
 data-facet-value="Black"
-aria-label="Black (14 available products)"
+aria-label="Black (13 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_myprotein_ColourRange_content'
 data-facet-value='Black'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-Black (14)
+Black (13)
 </span>
 </span>
 </label>
@@ -14131,12 +14131,12 @@ Green (6)
 class="responsiveFacets_sectionItemCheckbox"
 name='en_myprotein_ColourRange_content'
 data-facet-value="Grey"
-aria-label="Grey (9 available products)"
+aria-label="Grey (8 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_myprotein_ColourRange_content'
 data-facet-value='Grey'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-Grey (9)
+Grey (8)
 </span>
 </span>
 </label>
@@ -14262,12 +14262,12 @@ $10 - $15 (1)
 class="responsiveFacets_sectionItemCheckbox"
 name='myprotein_USD_price'
 data-facet-value="%5B15+TO+30%5D"
-aria-label="$15 - $30 (6 available products)"
+aria-label="$15 - $30 (5 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='myprotein_USD_price'
 data-facet-value='%5B15+TO+30%5D'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-$15 - $30 (6)
+$15 - $30 (5)
 </span>
 </span>
 </label>
@@ -14365,12 +14365,12 @@ aria-label='Back' title='Back'>
 class="responsiveFacets_sectionItemCheckbox"
 name='averageReviewScore_auto_content'
 data-facet-value="%5B2+TO+2.99%5D"
-aria-label="2-3 (3 available products)"
+aria-label="2-3 (2 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='averageReviewScore_auto_content'
 data-facet-value='%5B2+TO+2.99%5D'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-2-3 (3)
+2-3 (2)
 </span>
 </span>
 </label>

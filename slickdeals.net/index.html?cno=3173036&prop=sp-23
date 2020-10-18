@@ -1,15 +1,14 @@
 HTTP/1.1 200 OK
-Date: Sun, 18 Oct 2020 13:11:36 GMT
-Vary: Host,Accept-Encoding
 Cache-Control: private, max-age=0, no-cache, no-store, must-revalidate
 Pragma: no-cache
 Expires: Thu, 01 Jan 1970 00:00:00 GMT
 X-Frame-Options: SAMEORIGIN
+Server: Tomcat
 X-Content-Type-Options: nosniff
-Set-Cookie: locale_V6=en_US; Domain=.us.myprotein.com; Expires=Mon, 18-Oct-2021 19:00:22 GMT; Path=/; Secure
-Set-Cookie: utm_source_V6="QVdpbi0xNjY1ODA="; Version=1; Domain=.us.myprotein.com; Max-Age=2592000; Expires=Tue, 17-Nov-2020 13:11:36 GMT; Path=/; Secure; HttpOnly
-Set-Cookie: utm_medium_V6=YWZmaWxpYXRl; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 13:11:36 GMT; Path=/; Secure; HttpOnly
-Set-Cookie: utm_campaign_V6=QWZmaWxpYXRlV2lu; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 13:11:36 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: locale_V6=en_US; Domain=.us.myprotein.com; Expires=Mon, 18-Oct-2021 20:01:10 GMT; Path=/; Secure
+Set-Cookie: utm_source_V6="QVdpbi0xNjY1ODA="; Version=1; Domain=.us.myprotein.com; Max-Age=2592000; Expires=Tue, 17-Nov-2020 14:12:24 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: utm_medium_V6=YWZmaWxpYXRl; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 14:12:24 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: utm_campaign_V6=QWZmaWxpYXRlV2lu; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 14:12:24 GMT; Path=/; Secure; HttpOnly
 Set-Cookie: preservedReferer_V6=""; Domain=.us.myprotein.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
 Set-Cookie: preservedReferer_V6="aHR0cHM6Ly9zbGlja2RlYWxzLm5ldC9jb3Vwb25zL215cHJvdGVpbi11cy8="; Version=1; Domain=.us.myprotein.com; Path=/; Secure
 Set-Cookie: preservedPartnerRef_V6=""; Domain=.us.myprotein.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
@@ -19,12 +18,13 @@ Referrer-Policy: unsafe-url
 X-XSS-Protection: 1; mode=block; report=/xssProtection.txt
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 Report-To: {"group":"report-endpoint","max_age":86400,"endpoints":[{"url":"https://csp.thehut.net/cspReport.txt","priority":1,"weight":1}],"include_subdomains":true}
-Set-Cookie: affil_V6=awin; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 13:11:36 GMT; Path=/; Secure
-Keep-Alive: timeout=5, max=98
-Connection: Keep-Alive
-Transfer-Encoding: chunked
+Set-Cookie: affil_V6=awin; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 14:12:24 GMT; Path=/; Secure
 Content-Type: text/html;charset=UTF-8
-Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a4a423661;expires=Sun, 18-Oct-2020 16:11:36 GMT;path=/;secure;httponly
+Transfer-Encoding: chunked
+vary: accept-encoding
+Date: Sun, 18 Oct 2020 14:12:24 GMT
+Via: 1.1 google
+Alt-Svc: clear
 
 
 
@@ -372,7 +372,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 
 
 
-<!-- Webserver = || us.myprotein.com || LON-WEB-053 || 8.2873.2938 -->
+<!-- Webserver = || us.myprotein.com || WDCC-WEB-003 || 8.2873.2938 -->
 
 
 <head>
@@ -1120,12 +1120,12 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
     siteID: 83,
     siteURL: 'https://us.myprotein.com/',
 	siteTheme: 'myprotein/rebrand',
-    serverIP: 'x.x.x.54',
-    experiments: [{'name':'search_es_upgrade_wave_01','value':'v1|sevensixtwo'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}],
+    serverIP: 'x.x.x.6',
+    experiments: [{'name':'search_es_upgrade_wave_01','value':'c|onesevenzero'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}],
     customerLocation: 'US',
     
     shippingCountry: 'US',
-    nonce: '1c05bb4b-d10f-4082-99d4-ae9bbb631035',
+    nonce: '53794cac-5fed-4883-815e-1faf998d4034',
 	frontendTrackingUrl: 'https://userexperience.thehut.net/Tracker/track',
     pricePerUnit: '',
     
@@ -1153,7 +1153,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 
     
         rrp: '',
-        date: 'Sun Oct 18 14:11:36 BST 2020',
+        date: 'Sun Oct 18 14:12:24 UTC 2020',
         
           social: {
             addthis: {
@@ -1238,8 +1238,8 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
           },
           countdown: {
            
-           servertime: '2020-10-18-07-11-36-Sunday',
-           js_servertime: '2020/10/18 13:11:36'
+           servertime: '2020-10-18-08-12-24-Sunday',
+           js_servertime: '2020/10/18 14:12:24'
           },
           basketUpgrade: false,
           basketUpgradeButtons: {
@@ -1739,7 +1739,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 							chumewe_sess: getCookie("chumewe_sess"),
 							chumewe_user: getCookie("chumewe_user"),
 							product_page_videos: "false",
-							server_id: 'LON-WEB-053'
+							server_id: 'WDCC-WEB-003'
 						}
 					}
 				}
@@ -1881,7 +1881,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 			'pageCategory': 'category'
 			, 'pageAttributes': [{
 				'currency':'USD'
-				, 'server':'x.x.x.54'
+				, 'server':'x.x.x.6'
 				, 'elysiumVersion': '8.2873.2938'
 				, 'site':'myprotein'
 				, 'subsite':'us'
@@ -1895,7 +1895,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 				, 'mobile':'no'
 				
 				
-				, 'experiments': [{'name':'search_es_upgrade_wave_01','value':'v1|sevensixtwo'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}]
+				, 'experiments': [{'name':'search_es_upgrade_wave_01','value':'c|onesevenzero'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}]
 			}]
 			
 				
@@ -5227,7 +5227,7 @@ All Clothing
 </h1>
 
 <p class="responsiveProductListHeader_resultsCount" aria-live="polite">
-441 results
+438 results
 </p>
 </div>
 <div class="responsiveProductListHeader_description">
@@ -13022,12 +13022,12 @@ aria-label='Back' title='Back'>
 class="responsiveFacets_sectionItemCheckbox"
 name='en_gender_content'
 data-facet-value="Men"
-aria-label="Men (210 available products)"
+aria-label="Men (208 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_gender_content'
 data-facet-value='Men'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-Men (210)
+Men (208)
 </span>
 </span>
 </label>
@@ -13036,12 +13036,12 @@ Men (210)
 class="responsiveFacets_sectionItemCheckbox"
 name='en_gender_content'
 data-facet-value="Women"
-aria-label="Women (228 available products)"
+aria-label="Women (227 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_gender_content'
 data-facet-value='Women'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-Women (228)
+Women (227)
 </span>
 </span>
 </label>
@@ -13237,12 +13237,12 @@ Jumper (2)
 class="responsiveFacets_sectionItemCheckbox"
 name='en_sportsClothingtype_content'
 data-facet-value="Leggings"
-aria-label="Leggings (48 available products)"
+aria-label="Leggings (47 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_sportsClothingtype_content'
 data-facet-value='Leggings'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-Leggings (48)
+Leggings (47)
 </span>
 </span>
 </label>
@@ -13265,12 +13265,12 @@ Shorts (50)
 class="responsiveFacets_sectionItemCheckbox"
 name='en_sportsClothingtype_content'
 data-facet-value="Socks"
-aria-label="Socks (5 available products)"
+aria-label="Socks (4 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_sportsClothingtype_content'
 data-facet-value='Socks'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-Socks (5)
+Socks (4)
 </span>
 </span>
 </label>
@@ -13550,12 +13550,12 @@ M (270)
 class="responsiveFacets_sectionItemCheckbox"
 name='en_myprotein_clothingSize_content'
 data-facet-value="L"
-aria-label="L (236 available products)"
+aria-label="L (235 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_myprotein_clothingSize_content'
 data-facet-value='L'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-L (236)
+L (235)
 </span>
 </span>
 </label>
@@ -13564,12 +13564,12 @@ L (236)
 class="responsiveFacets_sectionItemCheckbox"
 name='en_myprotein_clothingSize_content'
 data-facet-value="XL"
-aria-label="XL (244 available products)"
+aria-label="XL (243 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_myprotein_clothingSize_content'
 data-facet-value='XL'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-XL (244)
+XL (243)
 </span>
 </span>
 </label>
@@ -13681,12 +13681,12 @@ aria-label='Back' title='Back'>
 class="responsiveFacets_sectionItemCheckbox"
 name='en_myprotein_ColourRange_content'
 data-facet-value="Black"
-aria-label="Black (159 available products)"
+aria-label="Black (157 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_myprotein_ColourRange_content'
 data-facet-value='Black'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-Black (159)
+Black (157)
 </span>
 </span>
 </label>
@@ -13751,12 +13751,12 @@ Green (37)
 class="responsiveFacets_sectionItemCheckbox"
 name='en_myprotein_ColourRange_content'
 data-facet-value="Grey"
-aria-label="Grey (69 available products)"
+aria-label="Grey (68 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_myprotein_ColourRange_content'
 data-facet-value='Grey'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-Grey (69)
+Grey (68)
 </span>
 </span>
 </label>
@@ -13863,12 +13863,12 @@ Stone (1)
 class="responsiveFacets_sectionItemCheckbox"
 name='en_myprotein_ColourRange_content'
 data-facet-value="White"
-aria-label="White (52 available products)"
+aria-label="White (51 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='en_myprotein_ColourRange_content'
 data-facet-value='White'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-White (52)
+White (51)
 </span>
 </span>
 </label>
@@ -13938,12 +13938,12 @@ aria-label='Back' title='Back'>
 class="responsiveFacets_sectionItemCheckbox"
 name='myprotein_USD_price'
 data-facet-value="%5B10+TO+15%5D"
-aria-label="$10 - $15 (15 available products)"
+aria-label="$10 - $15 (14 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='myprotein_USD_price'
 data-facet-value='%5B10+TO+15%5D'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-$10 - $15 (15)
+$10 - $15 (14)
 </span>
 </span>
 </label>
@@ -13952,12 +13952,12 @@ $10 - $15 (15)
 class="responsiveFacets_sectionItemCheckbox"
 name='myprotein_USD_price'
 data-facet-value="%5B15+TO+30%5D"
-aria-label="$15 - $30 (230 available products)"
+aria-label="$15 - $30 (228 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='myprotein_USD_price'
 data-facet-value='%5B15+TO+30%5D'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-$15 - $30 (230)
+$15 - $30 (228)
 </span>
 </span>
 </label>
@@ -14083,12 +14083,12 @@ data-facet-value='%5B0.25+TO+0.4999%5D'>
 class="responsiveFacets_sectionItemCheckbox"
 name='myprotein_USD_saving_percent'
 data-facet-value="%5B0.50+TO+0.7499%5D"
-aria-label="50% - 75% (8 available products)"
+aria-label="50% - 75% (7 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='myprotein_USD_saving_percent'
 data-facet-value='%5B0.50+TO+0.7499%5D'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-50% - 75% (8)
+50% - 75% (7)
 </span>
 </span>
 </label>
@@ -14158,12 +14158,12 @@ aria-label='Back' title='Back'>
 class="responsiveFacets_sectionItemCheckbox"
 name='averageReviewScore_auto_content'
 data-facet-value="%5B2+TO+2.99%5D"
-aria-label="2-3 (7 available products)"
+aria-label="2-3 (6 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='averageReviewScore_auto_content'
 data-facet-value='%5B2+TO+2.99%5D'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-2-3 (7)
+2-3 (6)
 </span>
 </span>
 </label>
@@ -14186,12 +14186,12 @@ data-facet-value='%5B3+TO+3.99%5D'>
 class="responsiveFacets_sectionItemCheckbox"
 name='averageReviewScore_auto_content'
 data-facet-value="%5B4+TO+5%5D"
-aria-label="4+ (125 available products)"
+aria-label="4+ (124 available products)"
 />
 <span class="responsiveFacets_sectionItem " data-facet-key='averageReviewScore_auto_content'
 data-facet-value='%5B4+TO+5%5D'>
 <span class="responsiveFacets_sectionItemValue " aria-hidden="true">
-4+ (125)
+4+ (124)
 </span>
 </span>
 </label>

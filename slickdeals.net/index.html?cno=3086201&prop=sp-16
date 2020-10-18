@@ -1,15 +1,14 @@
 HTTP/1.1 200 OK
-Date: Sun, 18 Oct 2020 13:10:51 GMT
-Vary: Host,Accept-Encoding
 Cache-Control: private, max-age=0, no-cache, no-store, must-revalidate
 Pragma: no-cache
 Expires: Thu, 01 Jan 1970 00:00:00 GMT
 X-Frame-Options: SAMEORIGIN
+Server: Tomcat
 X-Content-Type-Options: nosniff
-Set-Cookie: locale_V6=en_US; Domain=.us.myprotein.com; Expires=Mon, 18-Oct-2021 18:59:37 GMT; Path=/; Secure
-Set-Cookie: utm_source_V6="QVdpbi0xNjY1ODA="; Version=1; Domain=.us.myprotein.com; Max-Age=2592000; Expires=Tue, 17-Nov-2020 13:10:51 GMT; Path=/; Secure; HttpOnly
-Set-Cookie: utm_medium_V6=YWZmaWxpYXRl; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 13:10:51 GMT; Path=/; Secure; HttpOnly
-Set-Cookie: utm_campaign_V6=QWZmaWxpYXRlV2lu; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 13:10:51 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: locale_V6=en_US; Domain=.us.myprotein.com; Expires=Mon, 18-Oct-2021 20:00:40 GMT; Path=/; Secure
+Set-Cookie: utm_source_V6="QVdpbi0xNjY1ODA="; Version=1; Domain=.us.myprotein.com; Max-Age=2592000; Expires=Tue, 17-Nov-2020 14:11:54 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: utm_medium_V6=YWZmaWxpYXRl; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 14:11:54 GMT; Path=/; Secure; HttpOnly
+Set-Cookie: utm_campaign_V6=QWZmaWxpYXRlV2lu; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 14:11:54 GMT; Path=/; Secure; HttpOnly
 Set-Cookie: preservedReferer_V6=""; Domain=.us.myprotein.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
 Set-Cookie: preservedReferer_V6="aHR0cHM6Ly9zbGlja2RlYWxzLm5ldC9jb3Vwb25zL215cHJvdGVpbi11cy8="; Version=1; Domain=.us.myprotein.com; Path=/; Secure
 Set-Cookie: preservedPartnerRef_V6=""; Domain=.us.myprotein.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/
@@ -19,12 +18,13 @@ Referrer-Policy: unsafe-url
 X-XSS-Protection: 1; mode=block; report=/xssProtection.txt
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 Report-To: {"group":"report-endpoint","max_age":86400,"endpoints":[{"url":"https://csp.thehut.net/cspReport.txt","priority":1,"weight":1}],"include_subdomains":true}
-Set-Cookie: affil_V6=awin; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 13:10:51 GMT; Path=/; Secure
-Keep-Alive: timeout=5, max=99
-Connection: Keep-Alive
-Transfer-Encoding: chunked
+Set-Cookie: affil_V6=awin; Domain=.us.myprotein.com; Expires=Tue, 17-Nov-2020 14:11:54 GMT; Path=/; Secure
 Content-Type: text/html;charset=UTF-8
-Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a4a423661;expires=Sun, 18-Oct-2020 16:10:51 GMT;path=/;secure;httponly
+Transfer-Encoding: chunked
+vary: accept-encoding
+Date: Sun, 18 Oct 2020 14:11:53 GMT
+Via: 1.1 google
+Alt-Svc: clear
 
 
 
@@ -372,7 +372,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 
 
 
-<!-- Webserver = || us.myprotein.com || LON-WEB-053 || 8.2873.2938 -->
+<!-- Webserver = || us.myprotein.com || WDCC-WEB-003 || 8.2873.2938 -->
 
 
 <head>
@@ -1028,12 +1028,12 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
     siteID: 83,
     siteURL: 'https://us.myprotein.com/',
 	siteTheme: 'myprotein/rebrand',
-    serverIP: 'x.x.x.54',
-    experiments: [{'name':'search_es_upgrade_wave_01','value':'v1|sevensixtwo'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}],
+    serverIP: 'x.x.x.6',
+    experiments: [{'name':'search_es_upgrade_wave_01','value':'c|onesevenzero'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}],
     customerLocation: 'US',
     
     shippingCountry: 'US',
-    nonce: '61417d8a-751e-4591-816f-839cbeb9c662',
+    nonce: 'a24c3d91-93c8-46fe-a70c-499392e538a6',
 	frontendTrackingUrl: 'https://userexperience.thehut.net/Tracker/track',
     pricePerUnit: '',
     
@@ -1061,7 +1061,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 
     
         rrp: '',
-        date: 'Sun Oct 18 14:10:51 BST 2020',
+        date: 'Sun Oct 18 14:11:54 UTC 2020',
         
           social: {
             addthis: {
@@ -1146,8 +1146,8 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
           },
           countdown: {
            
-           servertime: '2020-10-18-07-10-51-Sunday',
-           js_servertime: '2020/10/18 13:10:51'
+           servertime: '2020-10-18-08-11-54-Sunday',
+           js_servertime: '2020/10/18 14:11:54'
           },
           basketUpgrade: false,
           basketUpgradeButtons: {
@@ -1647,7 +1647,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 							chumewe_sess: getCookie("chumewe_sess"),
 							chumewe_user: getCookie("chumewe_user"),
 							product_page_videos: "false",
-							server_id: 'LON-WEB-053'
+							server_id: 'WDCC-WEB-003'
 						}
 					}
 				}
@@ -1789,7 +1789,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 			'pageCategory': 'category'
 			, 'pageAttributes': [{
 				'currency':'USD'
-				, 'server':'x.x.x.54'
+				, 'server':'x.x.x.6'
 				, 'elysiumVersion': '8.2873.2938'
 				, 'site':'myprotein'
 				, 'subsite':'us'
@@ -1803,7 +1803,7 @@ Set-Cookie: NSC_mc_wtsw_efgbvmu_xfctsw_81_I=ffffffff09031f2745525d5f4f58455e445a
 				, 'mobile':'no'
 				
 				
-				, 'experiments': [{'name':'search_es_upgrade_wave_01','value':'v1|sevensixtwo'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}]
+				, 'experiments': [{'name':'search_es_upgrade_wave_01','value':'c|onesevenzero'},{'name':'guest_complete_page_wave_01','value':'v1|new_complete_page'}]
 			}]
 			
 				
