@@ -1,9 +1,9 @@
 HTTP/1.1 200 OK
-Date: Mon, 19 Oct 2020 13:24:07 GMT
+Date: Mon, 19 Oct 2020 14:05:59 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d9bb2e46e019e44da4b3751cfb01cb31b1603113846; expires=Wed, 18-Nov-20 13:24:06 GMT; path=/; domain=.stereophile.com; HttpOnly; SameSite=Lax
+Set-Cookie: __cfduid=dbbae31971bf34539da090b557957b9311603116358; expires=Wed, 18-Nov-20 14:05:58 GMT; path=/; domain=.stereophile.com; HttpOnly; SameSite=Lax
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
 Cache-Control: no-cache, must-revalidate
 X-Content-Type-Options: nosniff
@@ -12,12 +12,12 @@ X-Frame-Options: SAMEORIGIN
 X-Generator: Drupal 7 (http://drupal.org)
 Link: <https://www.stereophile.com/index.html>; rel="canonical",<https://www.stereophile.com/node/3>; rel="shortlink"
 CF-Cache-Status: DYNAMIC
-cf-request-id: 05e2a120610000f4b6eb1b0000000001
+cf-request-id: 05e2c774030000137e1f27e000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=69&lkg-time=1603113848"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=69&lkg-time=1603116360"}],"group":"cf-nel","max_age":604800}
 NEL: {"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 5e4ad1470fc6f4b6-YVR
+CF-RAY: 5e4b0e999ae3137e-YVR
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -56,7 +56,7 @@ CF-RAY: 5e4ad1470fc6f4b6-YVR
 <script type="text/javascript" src="https://www.stereophile.com/images/js/js_crV9Xrw7L_hCo7l4cgqPIRDDxCyZ3ApNku0DuCCqWgk.js"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"hometech","theme_token":"B27G0Cxwb3UUkSrsXwFxA80cbLvX4CHGf1j93F1COvc","jquery_version":"1.7","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/jquery.cookie-1.4.1.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/ignore_user\/ignore_user.js":1,"sites\/all\/modules\/image_caption\/image_caption.min.js":1,"sites\/all\/modules\/quote\/quote.js":1,"sites\/all\/modules\/ultimenu\/js\/ultimenu.js":1,"misc\/progress.js":1,"sites\/all\/modules\/fancy_login\/js\/fancy_login.js":1,"sites\/all\/themes\/hometech\/js\/subad.js":1,"sites\/all\/themes\/hometech\/js\/gptevents.js":1,"sites\/all\/themes\/hometech\/js\/ResizeSensor.js":1,"sites\/all\/themes\/hometech\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/quote\/quote.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/modules\/ultimenu\/css\/ultimenu.css":1,"sites\/all\/modules\/ultimenu\/skins\/ultimenu-basic.css":1,"images\/honeypot\/honeypot.css":1,"sites\/all\/modules\/fancy_login\/css\/fancy_login.css":1,"sites\/all\/themes\/hometech\/css\/style.css":1,"sites\/all\/themes\/hometech\/css\/print.css":1}},"quote_nest":2,"urlIsAjaxTrusted":{"\/":true,"\/system\/ajax":true,"\/index.html?destination=node\/3":true},"ajax":{"edit-submit-1603113846":{"wrapper":"fancy_login_user_login_block_wrapper","callback":"fancy_login_user_login_block_ajax_callback","event":"mousedown","keypress":true,"prevent":"click","url":"\/system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Log in"}}},"fancyLogin":{"screenFadeColor":"black","screenFadeZIndex":"10","loginBoxBackgroundColor":"#ddd","loginBoxTextColor":"black","loginBoxBorderColor":"#fff","loginBoxBorderWidth":"0","loginBoxBorderStyle":"none","loginPath":"user\/login","dimFadeSpeed":500,"boxFadeSpeed":1000,"hideObjects":0,"disableRegistration":1}});
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"hometech","theme_token":"Xt9X6ZjFAp0GhuN0FXKjAUWyvDvaQIQcwC42p_lW4og","jquery_version":"1.7","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/jquery.cookie-1.4.1.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/ignore_user\/ignore_user.js":1,"sites\/all\/modules\/image_caption\/image_caption.min.js":1,"sites\/all\/modules\/quote\/quote.js":1,"sites\/all\/modules\/ultimenu\/js\/ultimenu.js":1,"misc\/progress.js":1,"sites\/all\/modules\/fancy_login\/js\/fancy_login.js":1,"sites\/all\/themes\/hometech\/js\/subad.js":1,"sites\/all\/themes\/hometech\/js\/gptevents.js":1,"sites\/all\/themes\/hometech\/js\/ResizeSensor.js":1,"sites\/all\/themes\/hometech\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/quote\/quote.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/modules\/ultimenu\/css\/ultimenu.css":1,"sites\/all\/modules\/ultimenu\/skins\/ultimenu-basic.css":1,"images\/honeypot\/honeypot.css":1,"sites\/all\/modules\/fancy_login\/css\/fancy_login.css":1,"sites\/all\/themes\/hometech\/css\/style.css":1,"sites\/all\/themes\/hometech\/css\/print.css":1}},"quote_nest":2,"urlIsAjaxTrusted":{"\/":true,"\/system\/ajax":true,"\/index.html?destination=node\/3":true},"ajax":{"edit-submit-1603116358":{"wrapper":"fancy_login_user_login_block_wrapper","callback":"fancy_login_user_login_block_ajax_callback","event":"mousedown","keypress":true,"prevent":"click","url":"\/system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Log in"}}},"fancyLogin":{"screenFadeColor":"black","screenFadeZIndex":"10","loginBoxBackgroundColor":"#ddd","loginBoxTextColor":"black","loginBoxBorderColor":"#fff","loginBoxBorderWidth":"0","loginBoxBorderStyle":"none","loginPath":"user\/login","dimFadeSpeed":500,"boxFadeSpeed":1000,"hideObjects":0,"disableRegistration":1}});
 //--><!]]>
 </script>
 <script type="text/javascript">var AccountName="aumostereophilehub"</script>
@@ -169,7 +169,7 @@ LOG IN | JOIN</span></a></td>
   <label class="element-invisible" for="edit-search-block-form--2">Search </label>
  <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
 </div>
-<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-9I2VaYZdFyvUv1J9D506dczfastMR8HZR2ujJ-5OReI" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-7ds-TMqPU4vY8CpAwviSATW4ZLQqg-02ZpSfJL8lZtY" />
 <input type="hidden" name="form_id" value="search_block_form" />
 </div>
 </div></form><ul class="ultimenu horizontal ultimenu-htb ultimenu-main-menu ultimenu-basic clearfix">
@@ -495,7 +495,7 @@ LOG IN | JOIN</span></a></td>
       
   
   <div class="pane-content">
-    <div class="view view-frontpage view-id-frontpage view-display-id-default view-dom-id-1470ed85875ff92f767d37a70eb68e64">
+    <div class="view view-frontpage view-id-frontpage view-display-id-default view-dom-id-2444d1d4fc763e4834101c07c048afb5">
       <div class="view-header">
       <div class="headhome600"><img src="/sites/all/themes/hometech/images/headiconlarge.png" width="48" height="44" border="0" align="left"></img><h1>LATEST ADDITIONS</h1></div>
 <P>
@@ -1228,13 +1228,13 @@ Forget almost everything you know about Vivaldi performance practice, authentic 
 </div>
 <div class="item-list"><ul><li class="first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
 <li class="last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
-</ul></div><input type="hidden" name="form_build_id" value="form-nP9itpUTs8ttP6Yvi9GIgmu_nX8me00KvZ7sx2RFllM" />
+</ul></div><input type="hidden" name="form_build_id" value="form-LDwE9LmXzuo8VRYe8DWUcGdrQELdd0Xz7kUHj8Mlr44" />
 <input type="hidden" name="form_id" value="fancy_login_user_login_block" />
 <div class="homepage-textfield"><div class="form-item form-type-textfield form-item-homepage">
   <label for="edit-homepage">Leave this field blank </label>
  <input autocomplete="off" type="text" id="edit-homepage" name="homepage" value="" size="20" maxlength="128" class="form-text" />
 </div>
-</div><div class="form-actions form-wrapper" id="edit-actions--3"><input type="submit" id="edit-submit-1603113846" name="op" value="Log in" class="form-submit" /></div></div></form></div></div></div></div></div>
+</div><div class="form-actions form-wrapper" id="edit-actions--3"><input type="submit" id="edit-submit-1603116358" name="op" value="Log in" class="form-submit" /></div></div></form></div></div></div></div></div>
 
 <script>
 var sect = 'homepage';

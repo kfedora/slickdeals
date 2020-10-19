@@ -1,27 +1,27 @@
 HTTP/1.1 200 OK
-Date: Mon, 19 Oct 2020 16:47:41 GMT
+Date: Mon, 19 Oct 2020 17:14:41 GMT
 Content-Type: text/html; charset=ISO-8859-1
 Transfer-Encoding: chunked
 Connection: keep-alive
-CF-Ray: 5e4bfb77fe631366-YVR
+CF-Ray: 5e4c23059b15e08c-SEA
 Cache-Control: private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate
-Set-Cookie: JSESSIONID=fsFBwmdzO10OBV8h2v2mbftnadgDgmei!-1544682821; domain=bhphotovideo.com; path=/; HttpOnly;Secure; SameSite=None
+Set-Cookie: JSESSIONID=UlNB2x_adNRwgOgM33gMif_FdueuK1eG!-1544682821; domain=bhphotovideo.com; path=/; HttpOnly;Secure; SameSite=None
 Vary: Accept-Encoding
 CF-Cache-Status: DYNAMIC
 BH-XDB: 2109465
-cf-request-id: 05e35b7efe000013664f22b000000001
+cf-request-id: 05e374377f0000e08c27955000000001
 Edge-Control: bypass-cache
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Pragma: no-cache
-Set-Cookie: lpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20,ipp=24,view=L,sort=BS,priv=N,state=; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:01:47 GMT; path=/;Secure; SameSite=None
-Set-Cookie: dpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:01:47 GMT; path=/;Secure; SameSite=None
-Set-Cookie: uui=877.579.2732|; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:01:47 GMT; path=/;Secure; SameSite=None
-Set-Cookie: sessionKey=cac3ed85-ac46-4de8-8d97-543e4a405175; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:01:47 GMT; path=/;Secure; SameSite=None
-Set-Cookie: uui=877.579.2732|; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:01:47 GMT; path=/
-Set-Cookie: lpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20,ipp=24,view=L,sort=BS,priv=N,state=; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:01:47 GMT; path=/
-Set-Cookie: dpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:01:47 GMT; path=/
-Set-Cookie: TS01472329=01ec39615f39e0af0374027623dc636715e72f93cad8d40badde997ffab5815d6f89274dbabc86c73cabd100bc190a87bf53bcb4c5debfb79ab4cf135b1ad0491ad733783d; Path=/;Secure; SameSite=None
-Set-Cookie: TS0119d048=01ec39615f78e701e0ec086720c7cc4af4ef0e7167fa10cb0310c103029b0a267907ab264378a1f2317069f57dc60a080db1668a0b3837ef9d1a50dfcef8baa31d9332b8137f99800d29ac07b8fef378b658d1d7ca4aacf0fd99e08efca01afa16c0c71137af2cf28cdbcbfeb37e5443cab363558768cea848830c8c877b9d3713a41b555caf1c013bf4cb755d1fbee83e9a803758d3b0ef59258ee5f334d2f48f65c96fdcdbec33e487f0842ece92b923fb7dabafe7065b18ddd900175f401510154aaa85; path=/; domain=bhphotovideo.com;Secure; SameSite=None
+Set-Cookie: lpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20,ipp=24,view=L,sort=BS,priv=N,state=; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:28:48 GMT; path=/;Secure; SameSite=None
+Set-Cookie: dpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:28:48 GMT; path=/;Secure; SameSite=None
+Set-Cookie: uui=800.894.9703|; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:28:48 GMT; path=/;Secure; SameSite=None
+Set-Cookie: sessionKey=a259cd7d-71cf-4a2d-a417-11de9d0f38d5; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:28:48 GMT; path=/;Secure; SameSite=None
+Set-Cookie: uui=800.894.9703|; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:28:48 GMT; path=/
+Set-Cookie: lpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20,ipp=24,view=L,sort=BS,priv=N,state=; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:28:48 GMT; path=/
+Set-Cookie: dpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 20:28:48 GMT; path=/
+Set-Cookie: TS01472329=01ec39615f0487f541f9fb5d371f3042b2e76f2961264b66fe02b556edf11a59c17ff113261eb680037cb50b6fa7d22648813329e91dc02ec3f93d7dbd57bbcf86f52d773c; Path=/;Secure; SameSite=None
+Set-Cookie: TS0119d048=01ec39615fa8b5bd5156caf914cc7e0b0fb61956a0c65866967d2e7e22696eb61ee3f99af7b5da74bc9f90b99d82c2a8e3d2e7ebd62a5cdec131ca535e53b11d5631d3ad19759b492bb12750657eb39aae2ffb605a7313ee478a9f9bc11f11b017103c0aff5822d9997f15cf8711e46995e9ffc74cef437229ad2af9ce797275af0a174684ea4a8872ae19d4b7ae6185d722b460f759bb33b385c532dfa49dee2351b4afe6ff942cf881c2d148724b02491f852f2076b4e61098e27cd90e0549cf3b7f3569; path=/; domain=bhphotovideo.com;Secure; SameSite=None
 Set-Cookie: D_PID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 Set-Cookie: D_IID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 Set-Cookie: D_UID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
@@ -30,7 +30,7 @@ Set-Cookie: D_HID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 Set-Cookie: D_ZID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 Set-Cookie: D_ZUID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 X-Frame-Options: SAMEORIGIN
-X-ORACLE-DMS-ECID: ee32c6f4-e0ff-4043-af01-3502574ac069-002e2845
+X-ORACLE-DMS-ECID: ee32c6f4-e0ff-4043-af01-3502574ac069-002e650b
 X-ORACLE-DMS-RID: 0
 X-UA-Compatible: IE=edge,chrome=IE6
 Server: cloudflare
@@ -325,7 +325,7 @@ B&H for B2B, Gov, Students &amp More<svg><use xlink:href="#arrowDown"></use></sv
 </span>
 <a data-selenium='exploraLink' class="explora-narrow left" href="https://www.bhphotovideo.com/explora/">Read <span class="exploraSvgWrap"><svg aria-label="Explora: News, Tips, and Reviews"><use xlink:href="#explora-logo"></use></svg></span></a>
 <span class="right">
-<span data-selenium="PhoneNum" id="js-phonenum" class="phone js-phone fs14 c4 smbold">877.579.2732</span>
+<span data-selenium="PhoneNum" id="js-phonenum" class="phone js-phone fs14 c4 smbold">800.894.9703</span>
 <a name="Header-Help Center" target="_self" href="https://www.bhphotovideo.com/find/HelpCenter/helpcenter.jsp" data-selenium='helpLink' class="fs14 smbold"><svg class="chat-icon"><use xlink:href="#info-light"></use></svg>Help</a>
 <div class="callbackStatusContainer js-callbackStatusContainer"></div>
 <a name="Header-About Us" target="_self" href="https://www.bhphotovideo.com/find/HelpCenter/AboutUs.jsp" class="about-us-link fs14 smbold right">About Us</a>
@@ -432,7 +432,7 @@ Sign In Login/Register<svg><use xlink:href="#arrowDown"></use></svg>
 <button class="login">Log In</button>
 </a>
 <a href="https://www.bhphotovideo.com/bnh/controller/home?O=AboutUs.jsp&A=getpage&Q=Login.jsp&isLoginOnly=Y&action=createAcct" data-selenium="createAcc" class="bold logInRel openInOnePopupLayer" rel="noLayerCache" data-modal='{"disableOverlayClick": true}'>
- <button class="create-account">Create a B&amp;H Account</button>
+<button class="create-account">Create a B&amp;H Account</button>
 </a>
 </div>
 <div class="section gray">
@@ -1182,9 +1182,9 @@ var HeaderFooterMLT = {
 <div class="upper inlineBlock">
 <span class="fs14 c37 OpenSans-300-normal">Sales &amp; Expert advice</span>
 <br>
-<span class="fs30 c38 OpenSans-600-normal">877.579.2732</span>
+<span class="fs30 c38 OpenSans-600-normal">800.894.9703</span>
 <br>
-<span class="fs16 OpenSans-300-normal"><span class="c35 lower">or</span> 212.465.4006</span>
+<span class="fs16 OpenSans-300-normal"><span class="c35 lower">or</span> 212.502.6230</span>
 </div>
 <div class="upper inlineBlock" data-selenium="footerContactUs">
 <div class="fs26 OpenSans-600-normal clearfix">
@@ -1348,6 +1348,7 @@ South Korean Won
 Swedish Krona
 </a>
 </li>
+
 <li data-selenium="currncyOption" class="ns-option ">
 <a data-selenium='currencyDropdown' data-currency-code="CHF" class="c36 noUnderline js-setCurrencyButton CHF" href="#" onclick="return false;">
 Swiss Franc
@@ -1549,7 +1550,7 @@ var dlo =
 
             "subLoc":  '',
 
-            "user": {"isTaxExempt":false,"bi":null,"cartID":"23269123116","language":"E","catalogue":"B&H-Regular","isUsed":false,"SSSC_C":"","referrer":"","cartTotal":"","jSessionId":"","cm_mmc":"","b2bCatalogue":"","rememberId":"","cookieId":"","ib":true,"isMobile":false,"dataLayerInfo":""},
+            "user": {"isTaxExempt":false,"bi":null,"cartID":"23269581965","language":"E","catalogue":"B&H-Regular","isUsed":false,"SSSC_C":"","referrer":"","cartTotal":"","jSessionId":"","cm_mmc":"","b2bCatalogue":"","rememberId":"","cookieId":"","ib":true,"isMobile":false,"dataLayerInfo":""},
          "product": {"salesComment":"","isExpertPick":false,"itemCode":"","featuredItemCategory":"","source":"","category":"","sku":""},
          	"used": {
          		"products" :[]
@@ -1680,5 +1681,5 @@ var dlo =
 		embeddedLiveChatProperties.snapins_button_id = '5732L00000005mQ';
 		embeddedLiveChatProperties.snapins_deployment_name = 'Snap_Ins';
 	</script>
-<script type="text/javascript" id="d__inj" class="d__inj_delayed"> setTimeout(function(){ var d = document.createElement('script'); d.type = 'text/javascript';  d.defer = d.async = !0; d.src = '/otohphnbwww-rabebzytaa.js';  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(d, s);  }, 20 ); </script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#uqqwbcezvbrfyv{display:none!important}</style></body>
+<script type="text/javascript" id="d__inj" class="d__inj_delayed"> setTimeout(function(){ var d = document.createElement('script'); d.type = 'text/javascript';  d.defer = d.async = !0; d.src = '/otohphnbwww-zzqvuxqscewetqxtfuvabqac.js';  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(d, s);  }, 20 ); </script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#cbvtfaxtas{display:none!important}</style></body>
 </html>

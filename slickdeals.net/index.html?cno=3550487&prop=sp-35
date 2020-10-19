@@ -1,10 +1,10 @@
 HTTP/1.1 200 OK
 Content-Type: text/html; charset=utf-8
-ETag: "3421230025"
+ETag: "2953921422"
 Server: Microsoft-IIS/8.5
-X-OPNET-Transaction-Trace: a2_da15f020-3092-49a8-9459-2d8be91f604e-31064-18742
+X-OPNET-Transaction-Trace: a2_da99aafc-a89e-4d99-9de3-d47e3badece5-35856-32198
 X-AspNetMvc-Version: 
-X-Dell-Timing: Core Execution 189ms
+X-Dell-Timing: Core Execution 250ms
 X-AspNet-Version: 
 X-Powered-By: 
 X-Frame-Options: DENY
@@ -12,18 +12,16 @@ X-Powered-By:
 P3P: CP=" BUS CAO CNT COM CUR DEV DSP INT NAV OUR PSA PSD SAM STA TAI UNI "
 X-UA-Compatible: IE=edge
 X-Powered-By: 
-X-ARRServer: PWOLARR10
-X-Akamai-Path-Stats: [3:67403:248597]
-X-Akamai-Transformed: 9 32415 0 pmb=mRUM,1
+X-ARRServer: PWOLARR12
 Vary: Accept-Encoding
 Cache-Control: public, max-age=5
-Expires: Mon, 19 Oct 2020 17:02:14 GMT
-Date: Mon, 19 Oct 2020 17:02:09 GMT
+Expires: Mon, 19 Oct 2020 17:28:55 GMT
+Date: Mon, 19 Oct 2020 17:28:50 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Set-Cookie: dell_canary=live;Path=/;Domain=.dell.com;SameSite=None;Secure
-Set-Cookie: akavpau_vp1=1603127229~id=2b7f881221d0399a7777a0920a1adefd; Path=/; Secure; SameSite=None
+Set-Cookie: akavpau_vp1=1603128830~id=8118d7908fcf3c61c6fb6495cb77589a; Path=/; Secure; SameSite=None
 akamai-ttl-rule: landing
 Strict-Transport-Security: max-age=86400
 
@@ -108,9 +106,7 @@ Strict-Transport-Security: max-age=86400
                   var performancedata = {}; function performance_polyfill() { var e, r, n, o, t, a, i; e = window, r = Date.now ? Date.now() : +new Date, n = e.performance || {}, o = [], t = {}, a = function (e, r) { for (var n = 0, t = o.length, a = []; n < t; n++)o[n][e] == r && a.push(o[n]); return a }, i = function (e, r) { for (var n, t = o.length; t--;)(n = o[t]).entryType != e || void 0 !== r && n.name != r || o.splice(t, 1) }, n.now || (n.now = n.webkitNow || n.mozNow || n.msNow || function () { return (Date.now ? Date.now() : +new Date) - r }), n.mark || (n.mark = n.webkitMark || function (e) { var r = { name: e, entryType: "mark", startTime: n.now(), duration: 0 }; o.push(r), t[e] = r }), n.measure || (n.measure = n.webkitMeasure || function (e, r, n) { t[r] && t[n] && (r = t[r].startTime, n = t[n].startTime, o.push({ name: e, entryType: "measure", startTime: r, duration: n - r })) }), n.getEntriesByType || (n.getEntriesByType = n.webkitGetEntriesByType || function (e) { return a("entryType", e) }), n.getEntriesByName || (n.getEntriesByName = n.webkitGetEntriesByName || function (e) { return a("name", e) }), n.clearMarks || (n.clearMarks = n.webkitClearMarks || function (e) { i("mark", e) }), n.clearMeasures || (n.clearMeasures = n.webkitClearMeasures || function (e) { i("measure", e) }), e.performance = n, "function" == typeof define && (define.amd || define.ajs) && define("performance", [], function () { return n }), Dell.perfmetrics.enabled = !0, e.addEventListener("load", function () { e.dispatchEvent(new CustomEvent("winLoad")) }, !1) } if (Dell = window.Dell || {}, Dell.perfmetrics = Dell.perfmetrics || {}, Dell.perfmetrics.measure = function (e, r, n) { performance.measure(e, r, n) }, Dell.perfmetrics.start = function (e) { try { Dell.perfmetrics.enabled && performance.mark(e + "-start") } catch (e) { } }, Dell.perfmetrics.end = function (e) { try { Dell.perfmetrics.enabled && (performance.mark(e + "-end"), Dell.perfmetrics.measure(e, e + "-start", e + "-end")) } catch (e) { } }, "object" == typeof performance && "function" == typeof performance.mark) Dell.perfmetrics.enabled = !0; else try { performance_polyfill() } catch (e) { Dell.perfmetrics.enabled = !1 } Dell = window.Dell || {}, Dell.logger = Dell.logger || {}, function (e) { (function () { "use strict"; var r, o = !0, i = [], n = e.console || {}; function t() { n.log(arguments); var e = ""; for (var r in arguments) arguments.hasOwnProperty(r) && (void 0 !== arguments[r].stack ? e += " " + arguments[r].stack : e += " " + arguments[r]); return e } n.error = n.error || function () { }, n.error = (r = n.error.bind(n), function (e) { o && (t(e), i.push({ message: e, consoleInvoked: !0 })), r(e) }), e.onerror = function (e, r, n, t, a) { return o && i.push({ message: e, fileName: r, lineNumber: n, columnNumber: t, errorObj: a }), !1 }, this.log = function () { n.log(arguments), i.push({ message: t.apply(null, arguments), logInvoked: !0 }) }, this.disableLogger = function () { o = !1 }, this.getLog = function () { return i } }).call(Dell.logger) }(window);
               </script>
           <script src="/bundles/jquery-3-0-1-913?v=9ktsOtIo0upvJP7-7FiXuOoOJe58RLFJ__wIRPL2vGo1"></script>
-      
-                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"548817",ustr:"",originlat:"0",clientrtt:"5",ghostip:"184.27.179.174",ipv6:false,pct:"10",clientip:"51.141.173.163",requestid:"185de18",region:"17728",protocol:"",blver:14,akM:"dscx",akN:"ae",akTT:"O",akTX:"1",akTI:"185de18",ai:"356936",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
-                    </head>
+      </head>
       <body id="dealsLanding" class="destroy-owl filter-active category-page">
               <script data-perf="bodyGlobal">Dell.perfmetrics.start('bodyGlobal');</script>
 
@@ -2928,7 +2924,7 @@ Strict-Transport-Security: max-age=86400
 <input type="hidden" id="startTimerDateTime" value="2020-10-31T12:00:00Z" />
 <input type="hidden" id="numberOfHoursBeforeEvent" value="48" />
 <input type="hidden" id="dateTimeOverrideFlag" value="False" />
-<input type="hidden" id="dateTimeOverride" value="2020-10-19T17:02:09Z" />
+<input type="hidden" id="dateTimeOverride" value="2020-10-19T17:28:49Z" />
 <input type="hidden" id="landingPageUrl" value="/en-us/mpp" />
 <input type="hidden" id="dateTimeOverrideForValuePropBannerTimerFlag" value="True" />
 <input type="hidden" id="hideEventCountdownFlag" value="true" />

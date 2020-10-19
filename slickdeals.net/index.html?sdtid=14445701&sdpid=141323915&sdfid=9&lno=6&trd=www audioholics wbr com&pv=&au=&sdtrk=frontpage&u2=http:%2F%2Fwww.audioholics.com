@@ -1,23 +1,24 @@
 HTTP/1.1 200 OK
-Date: Mon, 19 Oct 2020 13:23:43 GMT
+Date: Mon, 19 Oct 2020 14:05:32 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Frame-Options: SAMEORIGIN
 X-Xss-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-last-modified: Mon, 19 Oct 2020 13:23:43 GMT
-expires: Mon, 19 Oct 2020 13:24:13 GMT
+last-modified: Mon, 19 Oct 2020 14:05:31 GMT
+expires: Mon, 19 Oct 2020 14:06:01 GMT
 x-portal-type: AHHomePage
 cache-control: public, max-age=1800
 Vary: Accept-Encoding
-CF-Cache-Status: MISS
-cf-request-id: 05e2a0c2060000136e21958000000001
+CF-Cache-Status: HIT
+Age: 1
+cf-request-id: 05e2c70d0d00007a0f89af6000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=69&lkg-time=1603113824"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=28&lkg-time=1603116332"}],"group":"cf-nel","max_age":604800}
 NEL: {"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 5e4ad0b00c92136e-YVR
+CF-RAY: 5e4b0df4e9647a0f-SEA
 
 
 <!DOCTYPE html>
@@ -423,12 +424,12 @@ Get the Audioholics AV Gear Guide Ebook FREE! <a href="https://audioholics.us6.l
 Featured Review
 </div>
 <div class="col-md-12 item-box ">
-<a href="/subwoofer-reviews/svs-sb16-ultra" title="SVS SB16-Ultra Sealed Subwoofer Review">
-<img src="/subwoofer-reviews/svs-sb16-ultra/image_feature" alt="SVS SB16-Ultra Sealed Subwoofer Review" />
+<a href="/bookshelf-speaker-reviews/ccb-8-bookshelf" title="Hsu Research CCB-8 Bookshelf Speaker Review">
+<img src="/bookshelf-speaker-reviews/ccb-8-bookshelf/image_feature" alt="Hsu Research CCB-8 Bookshelf Speaker Review" /> 
 <span class="strapline">
-SVS SB16-Ultra Sealed Subwoofer Review
+Hsu Research CCB-8 Bookshelf Speaker Review
 <div class="carSub">
-Read our full review of the SVS SB16-Ultra, a sealed 16" Sub and 1,500 watt amplifier. We were impressed with its unsealed counterpart the PB16-Ultra. But how did the SB-16-Ultra fair? Read on.
+The CCB-8 is an audacious new speaker featuring an 8" woofer utilized as a waveguide for a center-mounted tweeter. Read our review of the Hsu Research CCB-8 bookshelf speakers for our impressions.
 </div>
 </span>
 </a>
@@ -566,7 +567,7 @@ in <a href="/editorials"> Editorials</a></span>
 <div class="col-md-12">
 <div class="post">
 <a href="/av-preamp-processor-reviews/marantz-av7706">
-<h4>Marantz Announces AV7706 11.2Ch 8K Ultra HD AV Surround Pre-Amplifier</h4>
+<h4>Marantz Announces AV7706 11.2Ch 8K Ultra HD AV Surround Pre-Amplifier</h4> 
 <div class="photo"><img src="/static/ph.png" data-src="/av-preamp-processor-reviews/marantz-av7706/image_mini" alt="Marantz Announces AV7706 11.2Ch 8K Ultra HD AV Surround Pre-Amplifier" title="Marantz Announces AV7706 11.2Ch 8K Ultra HD AV Surround Pre-Amplifier" /></div>
 </a>
 <div class="summary">
