@@ -3,16 +3,17 @@ Content-Type: text/javascript
 Access-Control-Allow-Headers: x-requested-with, content-type, accept, sd-extension-client, sd-extension-version, sd-extension-user
 Access-Control-Allow-Origin: *
 ETag: "615610821"
-Last-Modified: Sat, 17 Oct 2020 18:50:45 GMT
+Last-Modified: Sun, 11 Oct 2020 11:35:23 GMT
 Server: Akamai Resource Optimizer
+X-Akamai-Path-Stats: [1:367:2633]
 Vary: Accept-Encoding
-Cache-Control: max-age=334831
-Expires: Thu, 22 Oct 2020 16:37:17 GMT
-Date: Sun, 18 Oct 2020 19:36:46 GMT
+Cache-Control: max-age=72654
+Expires: Tue, 20 Oct 2020 10:47:53 GMT
+Date: Mon, 19 Oct 2020 14:36:59 GMT
 Content-Length: 5258
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=5
+Server-Timing: edge; dur=2
 Strict-Transport-Security: max-age=86400
 
 // This file should contain the minimal amount of code

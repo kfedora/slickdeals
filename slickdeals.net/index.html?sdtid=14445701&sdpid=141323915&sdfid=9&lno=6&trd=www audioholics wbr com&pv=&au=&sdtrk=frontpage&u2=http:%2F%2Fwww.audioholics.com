@@ -1,23 +1,23 @@
 HTTP/1.1 200 OK
-Date: Mon, 19 Oct 2020 08:01:45 GMT
+Date: Mon, 19 Oct 2020 13:23:43 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Frame-Options: SAMEORIGIN
 X-Xss-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-last-modified: Mon, 19 Oct 2020 08:01:45 GMT
-expires: Mon, 19 Oct 2020 08:02:15 GMT
+last-modified: Mon, 19 Oct 2020 13:23:43 GMT
+expires: Mon, 19 Oct 2020 13:24:13 GMT
 x-portal-type: AHHomePage
 cache-control: public, max-age=1800
 Vary: Accept-Encoding
 CF-Cache-Status: MISS
-cf-request-id: 05e179ff3e000002e783290000000001
+cf-request-id: 05e2a0c2060000136e21958000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=16&lkg-time=1603094506"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=69&lkg-time=1603113824"}],"group":"cf-nel","max_age":604800}
 NEL: {"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 5e48f911f97e02e7-IAD
+CF-RAY: 5e4ad0b00c92136e-YVR
 
 
 <!DOCTYPE html>
@@ -423,12 +423,12 @@ Get the Audioholics AV Gear Guide Ebook FREE! <a href="https://audioholics.us6.l
 Featured Review
 </div>
 <div class="col-md-12 item-box ">
-<a href="/subwoofer-reviews/svs-pc2000-subwoofer" title="SVS PC-2000 Cylinder Subwoofer Review">
-<img src="/subwoofer-reviews/svs-pc2000-subwoofer/image_feature" alt="SVS PC-2000 Cylinder Subwoofer Review" />
+<a href="/subwoofer-reviews/svs-sb16-ultra" title="SVS SB16-Ultra Sealed Subwoofer Review">
+<img src="/subwoofer-reviews/svs-sb16-ultra/image_feature" alt="SVS SB16-Ultra Sealed Subwoofer Review" />
 <span class="strapline">
-SVS PC-2000 Cylinder Subwoofer Review
+SVS SB16-Ultra Sealed Subwoofer Review
 <div class="carSub">
-The SVS PC-2000 Cylinder Subwoofer light weight and clean, linear performance earned our Large Bassaholic rating. Their generous risk-free trial policy makes it an easy purchasing decision. Read on.
+Read our full review of the SVS SB16-Ultra, a sealed 16" Sub and 1,500 watt amplifier. We were impressed with its unsealed counterpart the PB16-Ultra. But how did the SB-16-Ultra fair? Read on.
 </div>
 </span>
 </a>
@@ -1011,7 +1011,7 @@ in <a href="/av-receiver-reviews"> AV Receiver Reviews</a></span>
 <div class="col-sm-4">
 <ul id="legal">
 <li id="siteaction-reprints"><a href="/groups/admin/reprints" title="Reprints, Terms &amp; Conditions">Reprints, Terms &amp; Conditions</a></li>
- <li id="siteaction-privacy"><a href="/groups/admin/privacy" title="Privacy Policy">Privacy Policy</a></li>
+<li id="siteaction-privacy"><a href="/groups/admin/privacy" title="Privacy Policy">Privacy Policy</a></li>
 <li id="siteaction-contact"><a href="/contact" title="Contact">Contact</a></li>
 </ul>
 </div>

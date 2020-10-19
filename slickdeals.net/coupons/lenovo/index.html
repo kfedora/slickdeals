@@ -1,17 +1,26 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
-Content-Type: text/html
+HTTP/1.1 200 OK
+Cache-Control: private, post-check=0, pre-check=0, max-age=0, no-cache
+Content-Type: text/html; charset=UTF-8
+Expires: 0
+Pragma: no-cache
+Referrer-Policy: strict-origin-when-cross-origin
+Server: Apache
+X-Powered-By: PHP/7.2.31
+X-Ua-Compatible: IE=edge
+X-Akamai-Path-Stats: [3:7919:270081]
+X-Akamai-Transformed: 9 - 0 pmb=mRUM,2
+Vary: user-agent
 Vary: Accept-Encoding
-Content-Length: 96
-Date: Mon, 19 Oct 2020 15:38:02 GMT
-Connection: keep-alive
+Date: Mon, 19 Oct 2020 15:56:14 GMT
+Transfer-Encoding:  chunked
+Connection: close
 Connection: Transfer-Encoding
-Set-Cookie: auuid=5a7eefa4116c11eba8db2e969d48dfac; expires=Mon, 18-Oct-2021 18:24:43 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: bblastactivity=1603045483; expires=Mon, 18-Oct-2021 18:24:43 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net; secure
-Set-Cookie: sd_a=1603045483|5a7f79ba116c11eba8db2e969d48dfac-5a7f7dde116c11eba8db2e969d48dfac|0|; expires=Mon, 18-Oct-2021 18:24:43 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603044263%7D&count=1&new=1&abt_new=1603044263&abt_uuid=496aa25f33ee463383a0c926657b6aba&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 18:24:43 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603044263%7D&count=1&new=1&abt_new=1603044263&abt_uuid=496aa25f33ee463383a0c926657b6aba&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 18:24:43 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603044263%7D&count=1&new=1&abt_new=1603044263&abt_uuid=496aa25f33ee463383a0c926657b6aba&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 18:24:43 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: auuid=bd7a6efa120511eb863b560a8f91e575; expires=Tue, 19-Oct-2021 15:56:14 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: bblastactivity=1603122974; expires=Tue, 19-Oct-2021 15:56:14 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net; secure
+Set-Cookie: sd_a=1603122974|bd7af2f8120511eb863b560a8f91e575-bd7af654120511eb863b560a8f91e575|0|; expires=Tue, 19-Oct-2021 15:56:14 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603110142%7D&count=1&new=1&abt_new=1603110142&abt_uuid=9e7264048ce74aa29a0d865696ea2b74&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Tue, 19-Oct-2021 15:56:14 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603110142%7D&count=1&new=1&abt_new=1603110142&abt_uuid=9e7264048ce74aa29a0d865696ea2b74&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Tue, 19-Oct-2021 15:56:14 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603110142%7D&count=1&new=1&abt_new=1603110142&abt_uuid=9e7264048ce74aa29a0d865696ea2b74&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Tue, 19-Oct-2021 15:56:14 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
@@ -19,8 +28,8 @@ Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; 
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=52
-Server-Timing: origin; dur=15066
+Server-Timing: edge; dur=63
+Server-Timing: origin; dur=278
 Strict-Transport-Security: max-age=86400
 
 <!DOCTYPE html>
@@ -60,10 +69,10 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 </script>
 <script>
   window.SD=window.SD||{},window.SD.ABTest={extendedData:{},_rSeed:0,execute:function(e,t,n){var i=SD.ABTest._getGroup(e);null!=i&&void 0!==n[i]&&(n[i](),window.SD.ABTest.initDevTools&&window.SD.ABTest.initDevTools(e))},isTest:function(e){return SD.ABTest.data.hasOwnProperty(SD.ABTest._getDataGroupName(e))},_getGroup:function(e){var t,n={link:new RegExp("linked:([0-9]+)","gi"),position:new RegExp("position:([0-9]+)","gi"),split:new RegExp("split:([0-9,]+)","gi")},i={};if(SD.ABTest.isTest(e)){if(-1<e.indexOf("linked:")){for(t in n)if(n.hasOwnProperty(t)){if(i[t]=n[t].exec(e),n[t].lastIndex=0,null===i[t]||0===i[t].length)return null;i[t]=i[t][1]}for(t in window.SD.ABTest.data)if(window.SD.ABTest.data.hasOwnProperty(t)&&-1<t.indexOf(i.link)&&t!=="Test: "+e){if(i.secondPosition=n.position.exec(t),n.position.lastIndex=0,null!==i.secondPosition&&0===i.secondPosition.length)return null;i.secondPosition=i.secondPosition[1]}return SD.ABTest._getExtendedGroup(!1,!1,i)}return SD.ABTest.data[SD.ABTest._getDataGroupName(e)]}return null},_getDataGroupName:function(e){return"Test: "+e.trim()},extendedExecute:function(e,t,n){SD.ABTest.extendedData.hasOwnProperty(e)&&n[SD.ABTest._getExtendedGroup(!1,!1,SD.ABTest.extendedData[e])]()},setupExtendedTest:function(e,t,n,i,o){null!==e&&null!==o&&0<o.length&&0<n&&n<32&&n!=i&&0<i&&i<32&&(SD.ABTest.extendedData[e]={link:t,position:n,secondPosition:i,split:o})},_getExtendedGroup:function(e,t,n,i){var o,s,d,r,u,l,a,p=new RegExp("abt_uuid=([0-9a-f]+)","g"),D=0,S=[];if(n&&(e=n.position,t=n.secondPosition),e--,t--,o=(o=(o=p.exec(document.cookie))[1]).slice(0,12)+o.slice(13,32),i&&console.log({A:e,B:t,UUID:o,Hex:o[e]+o[t]}),s=parseInt(o[e]+o[t],16),!n)return s;for(d=(d=(d=n.split.split(",")).map(function(e){return e=parseInt(e,10),D+=e,e})).map(function(e){return e/D*255<<0}),(r=new Array(255)).fill(0),l=u=0,a=d.length;u<a;u++)r.fill(u,l,l+d[u]),l+=d[u];for(SD.ABTest._rSeed=n.link;S.length<256;)u=SD.ABTest._seededRandom(256,0)<<0,-1===S.indexOf(u)&&S.push(u);return r[S[s]]},_seededRandom:function(e,t){return e=e||1,t=t||0,SD.ABTest._rSeed=(9301*SD.ABTest._rSeed+49297)%233280,t+SD.ABTest._rSeed/233280*(e-t)}};
-  window.SD.ABTest.data = {"logged_in":false,"deviceType":"desktop","scriptIdent":"storepage","Test: Sticky right rail - 30578":"1","Test: Mobile web fp v3 - 29127":"0","Test: Deal Details v7 - 27993":"0","Test: Add In Line Top Coupons Module on FP - 27589":"0","Test: Post a Deal":"0","Test: Category Redesign":"1","Test: Display % off on the Frontpage":"0","Test: SEM LP Redesign Test":"1","Test: Mobile 3 AB Test":"2","Test: Store Page Test":"1","Test: Deal Editors Fire Deal Marker":"0","Test: Redesign of FP and Deal Details":"1","Test: Rolling 24 Hour Time Frame for Deals in Top Section on FP":"1","Test: Search Results Layout and Store Logos Test":"1","view":"redesign","storeTest":null,"mobile":false,"forumid":null};
+  window.SD.ABTest.data = {"logged_in":false,"deviceType":"desktop","scriptIdent":"storepage","Test: Sticky right rail - 30578":"0","Test: Mobile web fp v3 - 29127":"0","Test: Deal Details v7 - 27993":"2","Test: Add In Line Top Coupons Module on FP - 27589":"0","Test: Post a Deal":"0","Test: Category Redesign":"1","Test: Display % off on the Frontpage":"1","Test: SEM LP Redesign Test":"1","Test: Mobile 3 AB Test":"2","Test: Store Page Test":"1","Test: Deal Editors Fire Deal Marker":"0","Test: Redesign of FP and Deal Details":"1","Test: Rolling 24 Hour Time Frame for Deals in Top Section on FP":"1","Test: Search Results Layout and Store Logos Test":"1","view":"redesign","storeTest":null,"mobile":false,"forumid":null};
   </script>
   <script>
-    var dataLayer = {"visitor":{"ipAddress":"20.44.106.43","isMachineIp":true,"isForeignIp":false,"sectionLayout":"StorePage_Redesign","pbSectionLayout":"StorePage_Redesign","asEnabled":false,"confiant":1,"noads":1,"immediateSource":"","layout":"Redesign","uncookiedUser":false,"userId":0,"username":"Unregistered","isLoggedIn":"No","status":"Anonymous","verified":"No","daysRegistered":null,"emailHashes":"","loyalty":"no","abTestInfo":[{"testKey":"65810-gale-desktop-item-to-item.yaml","variantName":"Gale (yield)","testName":"Gale (Desktop) Item-to-Item Pers V2"}],"gaOptimizeInfo":"","appReferrer":null,"inCheckoutTest":false},"reporting":{"clientID":"5a7f7dde116c11eba8db2e969d48dfac","sessionID":"5a7f79ba116c11eba8db2e969d48dfac"},"traffic":{"trueReferrer":null,"subSection1":"lenovo","subSection2":null,"subSection3":null,"subSection4":null,"corporateDomain":"slickdeals.net","deviceSegment":"desktop","clientHeaders":[]},"page":{"rml":false,"pageName":"StorePage:lenovo","section":"StorePage","type":"Store","analyticsTitle":null,"template":"modern\/store\/store.html.twig","publishedDate":null,"pageGroup":"Stores","layout":"Redesign","nps":null},"btt":{"AbTestingSegment":null},"microSite":"Slickdeals","frontpage":{"layout":null},"build":"20201016-155443-PDT-89837ef1296","abTestEventData":null,"gdpr":{"isEu":false,"showPrompt":false},"cdp":{"blueshift_id":"13779bc333ac34fac08a37c930c61e97"},"product":{"forum":null,"title":null,"products":null,"postedBy":null,"comments":null,"votes":null,"brand":null,"store":null,"category":null,"primaryCategory":null,"subCategory":null,"isExpiredDeal":null,"threadId":null,"isCheckoutAvailable":"No","isCheckoutRecallUser":"No","isCheckoutError":"","checkoutPaymentType":null},"checkout":[]};
+    var dataLayer = {"visitor":{"ipAddress":"10.54.19.111","isMachineIp":false,"isForeignIp":false,"sectionLayout":"StorePage_Redesign","pbSectionLayout":"StorePage_Redesign","asEnabled":false,"confiant":1,"noads":1,"immediateSource":"","layout":"Redesign","uncookiedUser":false,"userId":0,"username":"Unregistered","isLoggedIn":"No","status":"Anonymous","verified":"No","daysRegistered":null,"emailHashes":"","loyalty":"no","abTestInfo":[{"testKey":"65810-gale-desktop-item-to-item.yaml","variantName":"Gale (no yield)","testName":"Gale (Desktop) Item-to-Item Pers V2"}],"gaOptimizeInfo":"","appReferrer":null,"inCheckoutTest":false},"reporting":{"clientID":"bd7af654120511eb863b560a8f91e575","sessionID":"bd7af2f8120511eb863b560a8f91e575"},"traffic":{"trueReferrer":null,"subSection1":"lenovo","subSection2":null,"subSection3":null,"subSection4":null,"corporateDomain":"slickdeals.net","deviceSegment":"desktop","clientHeaders":[]},"page":{"rml":false,"pageName":"StorePage:lenovo","section":"StorePage","type":"Store","analyticsTitle":null,"template":"modern\/store\/store.html.twig","publishedDate":null,"pageGroup":"Stores","layout":"Redesign","nps":null},"btt":{"AbTestingSegment":null},"microSite":"Slickdeals","frontpage":{"layout":null},"build":"20201019-082433-PDT-51f64a2b8f2","abTestEventData":null,"gdpr":{"isEu":false,"showPrompt":false},"cdp":{"blueshift_id":"13779bc333ac34fac08a37c930c61e97"},"product":{"forum":null,"title":null,"products":null,"postedBy":null,"comments":null,"votes":null,"brand":null,"store":null,"category":null,"primaryCategory":null,"subCategory":null,"isExpiredDeal":null,"threadId":null,"isCheckoutAvailable":"No","isCheckoutRecallUser":"No","isCheckoutError":"","checkoutPaymentType":null},"checkout":[]};
 
     // Copy the tests from dataLayer.visitor.ABTestInfo to SD.ABTest.data
     if (typeof dataLayer.visitor !== 'undefined'
@@ -159,8 +168,8 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
     
     
-          <meta name="description" content="Save $$$ at Lenovo with coupons and deals like: Extra 5% Off Sitewide + Free Shipping ~ 45% Off Select ThinkPad Laptops ~ Extra 10% Off Accessories ~ 30% Off Office Furniture ~ Extra $35 Off Select PC Orders $649.99+ ~ Extra $60 Off Select PC Orders $949.99+ ~ 10% Off Almost All Tablets ~ and more &amp;gt;&amp;gt;&amp;gt;">
-      <meta name="og:description" content="Save $$$ at Lenovo with coupons and deals like: Extra 5% Off Sitewide + Free Shipping ~ 45% Off Select ThinkPad Laptops ~ Extra 10% Off Accessories ~ 30% Off Office Furniture ~ Extra $35 Off Select PC Orders $649.99+ ~ Extra $60 Off Select PC Orders $949.99+ ~ 10% Off Almost All Tablets ~ and more &amp;gt;&amp;gt;&amp;gt;">
+          <meta name="description" content="Save $$$ at Lenovo with coupons and deals like: Extra 5% Off Sitewide + Free Shipping ~ 45% Off Select ThinkPad Laptops ~ Extra 10% Off Accessories ~ 30% Off Office Furniture ~ 47% Off Select ThinkPad Mobile Workstations or ThinkStation Desktops ~ 10% Off Legion Tower 5i Gaming Desktops ~ and more &amp;gt;&amp;gt;&amp;gt;">
+      <meta name="og:description" content="Save $$$ at Lenovo with coupons and deals like: Extra 5% Off Sitewide + Free Shipping ~ 45% Off Select ThinkPad Laptops ~ Extra 10% Off Accessories ~ 30% Off Office Furniture ~ 47% Off Select ThinkPad Mobile Workstations or ThinkStation Desktops ~ 10% Off Legion Tower 5i Gaming Desktops ~ and more &amp;gt;&amp;gt;&amp;gt;">
     
     
           <meta property="og:url"   content="https://slickdeals.net/coupons/lenovo/">
@@ -299,7 +308,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       var SECURITYTOKEN = "guest";
       var IMGDIR_MISC = "/images/misc";
       var vb_disable_ajax = parseInt("0", 10);
-      window['\u200BviewSid'] = "314c70a4116f11ebba42324be198f5910000";
+      window['\u200BviewSid'] = "9d9d11c8122311eb91c8c2ead178cde80000";
     </script>
 
       <script>
@@ -320,7 +329,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           Settings.securityToken = 'guest';
           Settings.email = '',
           Settings.pageDisplayedTimestamp = Math.floor(Date.now() / 1000);
-          Settings.pageGeneratedTimestamp = '1603045483';
+          Settings.pageGeneratedTimestamp = '1603122974';
           Settings.userActivityDealAlertsTrackingEnabled = true;
           Settings.stickyGlobalHeader = true;
           Settings.app = {
@@ -494,11 +503,11 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 			}, false);
 		}
 	</script>
-                      <script src="/forums/userstyles.php?uniq=eF7lWV1v2zYU_SsEsb0MWaNvWX7LmhYdkLRBEuxl6Qzapm0ismiIlIMgyH_fvZQsilaQtHa6ZOmLgMsrfog8OvfcyzvKNB3Shdar4dXh1aHKxeR6ylmu3hVcXx1OZLWShbo6zHkh1_LqkB7Qks94ycumm3qwnxni6nAhl9z2gU6jqhJT6AnDaLHkSrPlig79xAu9KI4G4QGdiZJPR-0cRZXnOCXL67bvn3jKlZgXx0wzOryjYzr0DmgBcx7QtXnOoZ3-5ZPfyWd-A-tiY9yRKEsYC-JZGHIeJWE4CJk3yYIkidNxwsaM3uNSizkvz0pRQA8YVV2L1Tmv5zvnE1lO4QU61GXFD6hYrnIBX1YpXuIW1B-2aS34jcq51rBDqhqrSSlWWshiZN-ENy64UtBIhzPYXBgSmt7DmDi7bTnSuhTjCnu3zaVZjOOpFzWDRZzvsq1TvhYTPtK3K27WCPuoFgxODveYjS_hZBUd_n1HBxG2mDP3Qz82-zvS4Dbd0A1IQLNgSw4NFxoAeEtKMV9oUjKRw7mEXpwO4L01L-vvpx5YK6lE_ZU0A7PesxpaLM_lDew1HMW1lgAw6ndaNRvDVjejbF5dyrHIcQFmaDbnoyVT12D_8-63X3B4sy5zes1LEwClxg-mfuyncZZmGX4MQLrcDM4LdOOIbKLFGofHhdTHYbBhnGuWV3zkNd7a8h0rcKzQsWCDzah1v9ixEsdKnfkGjpU5Fv4SdmXwz3SsiWNtPrCefbOBtTVr3hRqJFewVSNZ1T_KvARaGRXVcmx208efKYWVb4Dix8k2UMDtAuXUHBi54WMyW5F1CDgJMj9IH8NJuBtOuuBpcYKN340TL0qCLApwa58RJ0F7-ogT_Mh6_xEn9hQRJ9ZCnFgLcWKt14oTz-AE_owWJwH-cQ6hgNvFyTGEDnLMNVCJIusUYQJ_qtmklk7Q6tCJoakd-ORBnOzEJ14YBSGEnX1xYs-0zycWNW8SJzHwm8WJ4eBu4AG3i5Oj6ZT8WZATUXByKVfkfa18yKmcVsAzsiAfzwx44gGGGwsepKoueBAFO4DHrLCJW_sFIwOeMP2h4LHA6gcjl2RsaOqTjPX1g5H19YOR9fWDkfX1gxH6ngpGhmQiSzLxoIcd8LrYOZNKEwYsw_LHoIFIeUlkRIMMlEoU4Z-_V_h5jFbeODIg4mxoJQh7yDDxqCtn34NEnMvylmzyAgcfGGc61BHsqGOfLe5EAHYv8mMT_163jnWpw1qoY13qsBbqWJc6rGV0fKucNkrd6thvoQ6jYwMgxE3c6VMHeLfkiVCrnN2SX4mczTDK6AUnH0tZaBSXj6qU3djk-cASQYxJ0sSAdh-wfLtIsdK2L2bdOGPFDYpZ2--pOGP7IVhsv6fijO2HSQ_2-6Y448Pq2uwYx3A0Cni3kuMPp-TkrOUSgmm2AxGTlNi8uE40vj8x3j3hwZ6dxDgKskGYRqmJfPtgxJ7uj0qMXy2h-KCbWoz08mLwPpgXh-Tojz4-trXqf44PnLCLj9CPEg-qavviw_5_iA83IXYTHWshh1gLE2JroVZ1OcRayCHWwoBjLdSqLodYCznEWhhwrIUBx-UQtJ7ikAADDmSrrSIxGaPLIdt1kwstS07OILj04bGlRwz_vCh9QLUEcvVgb8H6M9MH1IQa-kh6etXHne3qVVMt-TAVABJFPkIp3iQ15JSV11Cqe6QEa5Rvi5WF1FB3FRPVSWqfKMY-X8zx0kHq-57Jw_eJOa4usRYW2dws580V2fxOka2f5YDXRc0muQENi1USVkxr2DRlt8dy4henGFAoQZyk_4PS_atVKDYlDnv12O2E-FzmOdx8kCAin2RVkku4BYR8By5_yEyWBjaKiMKU4C443JpASmRqbw6IkLY6OtfhnhegnDDLvDhOor1Lbj9xnLJpc9wD0XbSfMFZOVlAHqSqXCtywm7hZsnQTq1uTuRcqr682ULNc1b5TeL11K3hdnIEpZYk8Py9E-ifFjX3X0GRCLgY11Bmq--b4Rb1jjZ3yYY08IoaAnZbfwPFbKDWvPNJauQakCpG7tgOx3zGAF30HieZVErL5QVvLrWbu8cv5r75M4wAhNW0mZT8_uv9_b970uec&amp;pv=315233d6116f11ebba42324be198f591&amp;au=5a7eefa4116c11eba8db2e969d48dfac" async="async" defer="defer"></script>
-<noscript><link rel="stylesheet" href="/forums/userstyles.php?uniq=eF7lWV1v2zYU_SsEsb0MWaNvWX7LmhYdkLRBEuxl6Qzapm0ismiIlIMgyH_fvZQsilaQtHa6ZOmLgMsrfog8OvfcyzvKNB3Shdar4dXh1aHKxeR6ylmu3hVcXx1OZLWShbo6zHkh1_LqkB7Qks94ycumm3qwnxni6nAhl9z2gU6jqhJT6AnDaLHkSrPlig79xAu9KI4G4QGdiZJPR-0cRZXnOCXL67bvn3jKlZgXx0wzOryjYzr0DmgBcx7QtXnOoZ3-5ZPfyWd-A-tiY9yRKEsYC-JZGHIeJWE4CJk3yYIkidNxwsaM3uNSizkvz0pRQA8YVV2L1Tmv5zvnE1lO4QU61GXFD6hYrnIBX1YpXuIW1B-2aS34jcq51rBDqhqrSSlWWshiZN-ENy64UtBIhzPYXBgSmt7DmDi7bTnSuhTjCnu3zaVZjOOpFzWDRZzvsq1TvhYTPtK3K27WCPuoFgxODveYjS_hZBUd_n1HBxG2mDP3Qz82-zvS4Dbd0A1IQLNgSw4NFxoAeEtKMV9oUjKRw7mEXpwO4L01L-vvpx5YK6lE_ZU0A7PesxpaLM_lDew1HMW1lgAw6ndaNRvDVjejbF5dyrHIcQFmaDbnoyVT12D_8-63X3B4sy5zes1LEwClxg-mfuyncZZmGX4MQLrcDM4LdOOIbKLFGofHhdTHYbBhnGuWV3zkNd7a8h0rcKzQsWCDzah1v9ixEsdKnfkGjpU5Fv4SdmXwz3SsiWNtPrCefbOBtTVr3hRqJFewVSNZ1T_KvARaGRXVcmx208efKYWVb4Dix8k2UMDtAuXUHBi54WMyW5F1CDgJMj9IH8NJuBtOuuBpcYKN340TL0qCLApwa58RJ0F7-ogT_Mh6_xEn9hQRJ9ZCnFgLcWKt14oTz-AE_owWJwH-cQ6hgNvFyTGEDnLMNVCJIusUYQJ_qtmklk7Q6tCJoakd-ORBnOzEJ14YBSGEnX1xYs-0zycWNW8SJzHwm8WJ4eBu4AG3i5Oj6ZT8WZATUXByKVfkfa18yKmcVsAzsiAfzwx44gGGGwsepKoueBAFO4DHrLCJW_sFIwOeMP2h4LHA6gcjl2RsaOqTjPX1g5H19YOR9fWDkfX1gxH6ngpGhmQiSzLxoIcd8LrYOZNKEwYsw_LHoIFIeUlkRIMMlEoU4Z-_V_h5jFbeODIg4mxoJQh7yDDxqCtn34NEnMvylmzyAgcfGGc61BHsqGOfLe5EAHYv8mMT_163jnWpw1qoY13qsBbqWJc6rGV0fKucNkrd6thvoQ6jYwMgxE3c6VMHeLfkiVCrnN2SX4mczTDK6AUnH0tZaBSXj6qU3djk-cASQYxJ0sSAdh-wfLtIsdK2L2bdOGPFDYpZ2--pOGP7IVhsv6fijO2HSQ_2-6Y448Pq2uwYx3A0Cni3kuMPp-TkrOUSgmm2AxGTlNi8uE40vj8x3j3hwZ6dxDgKskGYRqmJfPtgxJ7uj0qMXy2h-KCbWoz08mLwPpgXh-Tojz4-trXqf44PnLCLj9CPEg-qavviw_5_iA83IXYTHWshh1gLE2JroVZ1OcRayCHWwoBjLdSqLodYCznEWhhwrIUBx-UQtJ7ikAADDmSrrSIxGaPLIdt1kwstS07OILj04bGlRwz_vCh9QLUEcvVgb8H6M9MH1IQa-kh6etXHne3qVVMt-TAVABJFPkIp3iQ15JSV11Cqe6QEa5Rvi5WF1FB3FRPVSWqfKMY-X8zx0kHq-57Jw_eJOa4usRYW2dws580V2fxOka2f5YDXRc0muQENi1USVkxr2DRlt8dy4henGFAoQZyk_4PS_atVKDYlDnv12O2E-FzmOdx8kCAin2RVkku4BYR8By5_yEyWBjaKiMKU4C443JpASmRqbw6IkLY6OtfhnhegnDDLvDhOor1Lbj9xnLJpc9wD0XbSfMFZOVlAHqSqXCtywm7hZsnQTq1uTuRcqr682ULNc1b5TeL11K3hdnIEpZYk8Py9E-ifFjX3X0GRCLgY11Bmq--b4Rb1jjZ3yYY08IoaAnZbfwPFbKDWvPNJauQakCpG7tgOx3zGAF30HieZVErL5QVvLrWbu8cv5r75M4wAhNW0mZT8_uv9_b970uec&amp;pv=315233d6116f11ebba42324be198f591&amp;au=5a7eefa4116c11eba8db2e969d48dfac"></noscript>
+                      <script src="/forums/userstyles.php?uniq=eF7lWV1P4zgU_StWtPuyYoZ8p-kbCzOalWAWAdqXZbZyW7dYpHFlO0UI8d_3XieN4wYB08KygpdK144_en187rnXdx7V3tC70no5vNy_3FcFn1xPGS3U55Lpy_2JqJaiVJf7BSvFSlzue3ueZDMmmWyGqQfHzSpZcl1J9slMZsfBwFFV8SmMhqk0XzCl6WLpDYPUj4IwzLN4z5txyaajdp2yKgpclhZ123aLT5ni8_KIauoN77yxN_T3vBLW3fNW5ncO7d5fAflEvrMb2Bsdo2dyloVp7MeDCctiSsOc-tNBmqR5ymg4zmLvHrdbzpk8lbyEETCruubLM1avd8YmQk7hA2-oZcX2PL5YFhz-XaWYRDfUf27dWrIbVTCtwUuqGquJ5EvNRTmyX8IX50wpaPSGM3AtTAlNhzAnrm5bDrSWfFzh6LZZms04PfWmZrCJs21dO2UrPmEjfbtkZp_gS3VF4QTRz3R8ASesvOHfd94gxhZz9kEUJMbHIw3dZhh2AyLQLOmCQcO5BjDeEsnnV5pIygs4m8hPsgF8t2Ky9oHng7UUitf_1MvBrP1WQ4wWhbgBf8NxXGsBQPOCTqumY3B3M8v604UY8wI3YKamczZaUHUN9j-ff_sFpzf7MifYfDQBcGr8w16QBFmSZ3mOfwagLdeTsxK7cUY60XyF0-NG6iMx-DCdK1pUbOQ3vbUVOFboWJFjgYPNrPW4xLFSx8qc9QaOlTsWXgu7M7g3HWviWOs_WK--dmBtzZovuRqJJbhqJKr6sswlUMyorBbjxptwoTLY-RooQZJuAgW6XaCcmAMjN2xMZkuyigAnYR6E2WM4ibbDSRc8LU6w8adx4sdpmMchuvYFcRK2p484wT9Z-x9xYk8RcWItxIm1ECfW-n_jBG5Gi5MQb5xDKBmeS5dQjiCEkCOmgUoUWWUIE7ipxkktnaDVoRNDU1vwyYM42YpP_CgOozg1eN2FT-yZ9vnEoua94STEAJ0Av1mcGA7uBh7odnFyMJ2SP0pyzEtGLsSSHNYqiJyIaQU8I0ry9dSAJxlguLHgQarqggdRsAV4zA6buLVbMDLgibJXBY8FVj8YuSRjQ1OfZGxfPxjZvn4wsn39YGT7-sEI-54VjGJLMsmghx3odbFzKpQmFFiGFo9BA5HylsiIBzkolTjGm_9qtPLOkQERZ00rYdRDholH3ehzCBJxLuQtWecGDj4wznSoI9xSx75Y3IkB7H4cJCb-7RJ37CV8LR3rUoe1UMe61GEt1LEudVjL6PhWOa2VutWxz6GOAONOCIS4jjt96oDeDXnC1bKgt-RXImYzjDL6ipGvUpQaxeWjKmU7Nnk5sMQQY9IsNaDdBSzPFylW2vbFrBtnrLhBMWvHPRVn7DgEix33VJyx4zDpwXFPxRkDlgB212bHOIejUaB3Izn-ckKOT1suIZhmOxAxSYnNi-tE4-cT4-0THhzZSYzjMB9EWZyZyLcLRj4woQSgm1qM9PJi6H0wL47Iwe99fGxq1f8cH7hgFx9REKd-mO6MD3v_MOC4CbGb6FgLOcRamBBbC7WqyyHWQg6xFgYca6FWdTnEWsgh1sKAYy0MOC6HoPUUh5hEB7LVVpGYjNHlkM26ybkWkpFTCC59eGzoEcM_b0ofUC2BXD3cWbB-ZPqAmlBDH2lPrwbo2V615MuUA0gU-QoleZPUkBMqr6FU90gJ1ijfFitXQkPdlU9UJ6l9ohj7cjHHzwZZEPgmD98l5ri6xFpYZHOznHdXZAs6RbZ-lgO9LmrWyQ1oWKyS0HJaw6Ypuz2WE785xYBCCZMUHnV2RMsHphibEke9euxmQnwmigJePkgYk2-ikuQCXgMh34HHHzIT0sBGEV6aEtw5g1cTSIlM7c0BEdJWR-c63PMGlBPluZ8kabxzye0Dg8imzUkPRJtJ8zmjcnIFeZCqCq3IMb2FlyVDO7W6ORZzofryZgM1L1nlN4nXU6-Gm8kRlFrS0A92TqA_LGruf4Ai4fA4rqHMVr83wyvqnde8JRvSwCdqCNht_Q0Us4Fa8803oZFrQKoYuWMHHLEZBXR597jIpFJaLM5Z86jdvD3-ad6bv8MMQFhNm0nJ73_c3_8Ln_ntFQ&amp;pv=9da31334122311eb91c8c2ead178cde8&amp;au=bd7a6efa120511eb863b560a8f91e575" async="async" defer="defer"></script>
+<noscript><link rel="stylesheet" href="/forums/userstyles.php?uniq=eF7lWV1P4zgU_StWtPuyYoZ8p-kbCzOalWAWAdqXZbZyW7dYpHFlO0UI8d_3XieN4wYB08KygpdK144_en187rnXdx7V3tC70no5vNy_3FcFn1xPGS3U55Lpy_2JqJaiVJf7BSvFSlzue3ueZDMmmWyGqQfHzSpZcl1J9slMZsfBwFFV8SmMhqk0XzCl6WLpDYPUj4IwzLN4z5txyaajdp2yKgpclhZ123aLT5ni8_KIauoN77yxN_T3vBLW3fNW5ncO7d5fAflEvrMb2Bsdo2dyloVp7MeDCctiSsOc-tNBmqR5ymg4zmLvHrdbzpk8lbyEETCruubLM1avd8YmQk7hA2-oZcX2PL5YFhz-XaWYRDfUf27dWrIbVTCtwUuqGquJ5EvNRTmyX8IX50wpaPSGM3AtTAlNhzAnrm5bDrSWfFzh6LZZms04PfWmZrCJs21dO2UrPmEjfbtkZp_gS3VF4QTRz3R8ASesvOHfd94gxhZz9kEUJMbHIw3dZhh2AyLQLOmCQcO5BjDeEsnnV5pIygs4m8hPsgF8t2Ky9oHng7UUitf_1MvBrP1WQ4wWhbgBf8NxXGsBQPOCTqumY3B3M8v604UY8wI3YKamczZaUHUN9j-ff_sFpzf7MifYfDQBcGr8w16QBFmSZ3mOfwagLdeTsxK7cUY60XyF0-NG6iMx-DCdK1pUbOQ3vbUVOFboWJFjgYPNrPW4xLFSx8qc9QaOlTsWXgu7M7g3HWviWOs_WK--dmBtzZovuRqJJbhqJKr6sswlUMyorBbjxptwoTLY-RooQZJuAgW6XaCcmAMjN2xMZkuyigAnYR6E2WM4ibbDSRc8LU6w8adx4sdpmMchuvYFcRK2p484wT9Z-x9xYk8RcWItxIm1ECfW-n_jBG5Gi5MQb5xDKBmeS5dQjiCEkCOmgUoUWWUIE7ipxkktnaDVoRNDU1vwyYM42YpP_CgOozg1eN2FT-yZ9vnEoua94STEAJ0Av1mcGA7uBh7odnFyMJ2SP0pyzEtGLsSSHNYqiJyIaQU8I0ry9dSAJxlguLHgQarqggdRsAV4zA6buLVbMDLgibJXBY8FVj8YuSRjQ1OfZGxfPxjZvn4wsn39YGT7-sEI-54VjGJLMsmghx3odbFzKpQmFFiGFo9BA5HylsiIBzkolTjGm_9qtPLOkQERZ00rYdRDholH3ehzCBJxLuQtWecGDj4wznSoI9xSx75Y3IkB7H4cJCb-7RJ37CV8LR3rUoe1UMe61GEt1LEudVjL6PhWOa2VutWxz6GOAONOCIS4jjt96oDeDXnC1bKgt-RXImYzjDL6ipGvUpQaxeWjKmU7Nnk5sMQQY9IsNaDdBSzPFylW2vbFrBtnrLhBMWvHPRVn7DgEix33VJyx4zDpwXFPxRkDlgB212bHOIejUaB3Izn-ckKOT1suIZhmOxAxSYnNi-tE4-cT4-0THhzZSYzjMB9EWZyZyLcLRj4woQSgm1qM9PJi6H0wL47Iwe99fGxq1f8cH7hgFx9REKd-mO6MD3v_MOC4CbGb6FgLOcRamBBbC7WqyyHWQg6xFgYca6FWdTnEWsgh1sKAYy0MOC6HoPUUh5hEB7LVVpGYjNHlkM26ybkWkpFTCC59eGzoEcM_b0ofUC2BXD3cWbB-ZPqAmlBDH2lPrwbo2V615MuUA0gU-QoleZPUkBMqr6FU90gJ1ijfFitXQkPdlU9UJ6l9ohj7cjHHzwZZEPgmD98l5ri6xFpYZHOznHdXZAs6RbZ-lgO9LmrWyQ1oWKyS0HJaw6Ypuz2WE785xYBCCZMUHnV2RMsHphibEke9euxmQnwmigJePkgYk2-ikuQCXgMh34HHHzIT0sBGEV6aEtw5g1cTSIlM7c0BEdJWR-c63PMGlBPluZ8kabxzye0Dg8imzUkPRJtJ8zmjcnIFeZCqCq3IMb2FlyVDO7W6ORZzofryZgM1L1nlN4nXU6-Gm8kRlFrS0A92TqA_LGruf4Ai4fA4rqHMVr83wyvqnde8JRvSwCdqCNht_Q0Us4Fa8803oZFrQKoYuWMHHLEZBXR597jIpFJaLM5Z86jdvD3-ad6bv8MMQFhNm0nJ73_c3_8Ln_ntFQ&amp;pv=9da31334122311eb91c8c2ead178cde8&amp;au=bd7a6efa120511eb863b560a8f91e575"></noscript>
       
   <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
-  <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="MLLW9-NN3V3-ZFFMF-A4D42-H99AC",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"MLLW9-NN3V3-ZFFMF-A4D42-H99AC";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="cqwguk3aayvoex4mrbvq-f-54dd57842-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"949601","ak.ai":parseInt("608755",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"a9722f5","ak.r":38266,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"20.44.106.0","ak.cport":1984,"ak.gh":"96.6.42.222","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1603045483","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==zwOR4VVTXaynLy03mY4a8DCMZSRgNkAfPtV0ROq3KxrTa99X8xbSM3doPF0Q+tP52cIGMIVLj54Of2CJUq5lby1tpQWBkXvg8WXFaStqC9IQk6scNyYbAjUAC8KN7Ea5o897FeonQdSw+jProP+WL0dbvgn/McTM27cNUHg2xRiWqDNItaTHBc8wc/4k8ADuBWLph6FGeF1tYJlZ8XtJbWCFyqFUP6mp8kbAec73e5wMGCSlb6fC6/MsNLRsT5kDXx9vxHazaWoo6pFpLRr1C0AaSJoLgmRFUmSLBJ7UA04sNUyOKndf5nv0dmjMuRzSVpULO56Msdj0l2kqavDvQw9HDqEyP0ZHn2b8brh90IOIbuGJ3Xh6P0lkDx1rQijC0RCzML8e/YB2XCKVHbm+a+ZA4etb2yVzIdPKk4GGnWI=","ak.pv":"47","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+  <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="MLLW9-NN3V3-ZFFMF-A4D42-H99AC",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"MLLW9-NN3V3-ZFFMF-A4D42-H99AC";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="bi3bg3ykgyjy2x4nw4pa-f-12e54edbe-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"949601","ak.ai":parseInt("608755",10),"ak.ol":"0","ak.cr":0,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"84b80443","ak.r":29234,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"10.54.19.0","ak.cport":55638,"ak.gh":"23.54.19.141","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1603122974","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==GqvUMwiOHJA83ypX5V3eEDlejAcWsZe4d4xcijl4e5KibOvqBuW9543YwW+AfR6xJohuBWd8biiZZxohZ245Vd50F7W+2xuq+Kz3d6HXZJQbzNo25Mm2hg6VASmk69ev09AUgrmtPVGBs/g7557ETZPz3wf2A9rTcU1pThnvp20ItYpLDZycdlBsFlm3ohHBS2wdpY+EmuLlEv3+z03VdkYzXXPJsngFQNcSI7WH/c18brgerZQsLWiBoJmJXizxoyVcWK71PUN2vfwKq3wz0VC6aY7y1KVM3k/xcXBzOxDlOGlYFPVgLtjtbfUSNm4c/NNqWfgseR0o30Qp1tI3nVvZ3bPZFLpeCWMTp/sz0u4+nXDNfJtoL05Rj1sKTzFKjtV9wGmCIlc9z7mr3PZfQG8MavxvMnSxAP7yH5OPbSw=","ak.pv":"47","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
   <body data-modern="true" id="">
           <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XP5PSM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
@@ -596,7 +605,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">27 Used Today</span>
+                          <span class="numUsed">24 Used Today</span>
               </div>
               <span class="title cpbtn" title="Extra 5% Off Sitewide + Free Shipping" >Extra 5% Off Sitewide + Free Shipping</span>
             <div class="desc">
@@ -650,19 +659,14 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     <ul class="carouselItems" data-role="carouselItems">
               
 <li>
-  
-  
-  
-                  
-  <a href="/f/14394728-lenovo-smart-tab-m8-8-tablet-including-dock-w-google-assistant-90?src=store_filmstrip" data-href2="/?sdtrk=store_filmstrip&pno=597581" target="" class="bp-c-link"><img class="lazyimg carouselImage" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/1/6/7/9/8/1/2/100x100/9479471.thumb" data-lazy-img="critical" width="100" height="100"><span class="dealTitle">Lenovo Smart Tab M8 8" Tablet including Dock /w Google Assistant $90</span><span class="dealInfo"><strong>$90</strong><span class="dealVotes"><span class="icon icon-thumbs-up3"></span><span>52</span></span></span></a></li>              
-<li>
       <div class="cornerBadge coupon" data-text="COUPON"></div>
   
   
   
                   
-  <a href="/f/14446490-workpro-quantum-9000-ergonomic-mesh-high-back-executive-chair-with-headrest-308?src=store_filmstrip" data-href2="/?sdtrk=store_filmstrip&tid=14446490" target="" class="bp-c-link"><img class="lazyimg carouselImage" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/1/3/9/3/8/5/100x100/9479231.thumb" data-lazy-img="critical" width="100" height="100"><span class="dealTitle">WorkPro Quantum 9000 Ergonomic Mesh High-Back Executive Chair With Headrest $308</span><span class="dealInfo"><strong>$307.99</strong><span class="dealVotes"><span class="icon icon-thumbs-up3"></span><span>15</span></span></span></a></li>              
+  <a href="/f/14446490-workpro-quantum-9000-ergonomic-mesh-high-back-executive-chair-with-headrest-308?src=store_filmstrip" data-href2="/?sdtrk=store_filmstrip&tid=14446490" target="" class="bp-c-link"><img class="lazyimg carouselImage" src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/attachment/1/3/9/3/8/5/100x100/9479231.thumb" data-lazy-img="critical" width="100" height="100"><span class="dealTitle">WorkPro Quantum 9000 Ergonomic Mesh High-Back Executive Chair With Headrest $308</span><span class="dealInfo"><strong>$307.99</strong><span class="dealVotes"><span class="icon icon-thumbs-up3"></span><span>16</span></span></span></a></li>              
 <li>
+      <div class="cornerBadge coupon" data-text="COUPON"></div>
   
   
   
@@ -703,7 +707,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">20 Used Today</span>
+                          <span class="numUsed">15 Used Today</span>
               </div>
               <span class="title cpbtn" title="Lenovo Coupons and Promo Codes for October" >Lenovo Coupons and Promo Codes for October</span>
             <div class="desc">
@@ -776,7 +780,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">14 Used Today</span>
+                          <span class="numUsed">13 Used Today</span>
               </div>
               <span class="title cpbtn" title="45% Off Select ThinkPad Laptops" >45% Off Select ThinkPad Laptops</span>
             <div class="desc">
@@ -834,87 +838,13 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
                                                     
 
 <div 
-  class="item showDeals discount  aboveOrder" 
-  data-bestOrder="3" 
-  data-timestamp="1601920952" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4149947&amp;prop=sp-4"
-      data-product-forum="Coupon"
-      data-product-products="c4149947"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Discount Tile Link"
-      data-href2="?couponid=4149947"
-      title="Semi-Annual Sale: Up to 69% Off"
-      data-storeid="590" data-couponid="4149947"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">69%</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge discount">SALES &amp; OFFERS</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">17 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="Semi-Annual Sale: Up to 69% Off" >Semi-Annual Sale: Up to 69% Off</span>
-            <div class="desc">
-                                                            <span class="extra" title="Save with up to a 69% discount on clearance PCs, electronics, and more when you click this Lenovo coupon. Prices as marked with these featured doorbuster deals.">Save with up to a 69% discount on clearance PCs, electronics, and more when you click this Lenovo coupon. Prices as marked with these featured doorbuster deals.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4149947"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4149947" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603079940">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4149947" data-storeid="590" data-couponid="4149947">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4149947"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=4149947&amp;prop=sp-4"
-        data-href2="?couponid=4149947"
-                data-storeid="590"
-        data-couponid="4149947"
-        class="cpbtn button large discount success "
-      >Get Offer</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
   class="item showDeals code  aboveOrder" 
-  data-bestOrder="4" 
+  data-bestOrder="3" 
   data-timestamp="1601516132" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4137161&amp;prop=sp-5"
+      href="https://slickdeals.net/?cno=4137161&amp;prop=sp-4"
       data-product-forum="Coupon"
       data-product-products="c4137161"
       data-product-exitWebsite="lenovo.com"
@@ -965,7 +895,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4137161"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4137161&amp;prop=sp-5"
+        href="https://slickdeals.net/?cno=4137161&amp;prop=sp-4"
         data-href2="?couponid=4137161"
                   data-clipboard-text="ACCEXTRA10"
                 data-storeid="590"
@@ -981,21 +911,16 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
               
       
-                                              
-    
-    
-              
-      
                                                     
 
 <div 
-  class="item showDeals discount  belowOrder" 
-  data-bestOrder="5" 
+  class="item showDeals discount  aboveOrder" 
+  data-bestOrder="4" 
   data-timestamp="1498234853" >
         
   
       <a
-      href="https://slickdeals.net/?cno=1189104&amp;prop=sp-6"
+      href="https://slickdeals.net/?cno=1189104&amp;prop=sp-5"
       data-product-forum="Coupon"
       data-product-products="c1189104"
       data-product-exitWebsite="lenovo.com"
@@ -1014,7 +939,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">15 Used Today</span>
+                          <span class="numUsed">10 Used Today</span>
               </div>
               <span class="title cpbtn" title="Lenovo Outlet: Up to 75% Off Laptops, Tablets, Workstations and More" >Lenovo Outlet: Up to 75% Off Laptops, Tablets, Workstations and More</span>
             <div class="desc">
@@ -1043,7 +968,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c1189104"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=1189104&amp;prop=sp-6"
+        href="https://slickdeals.net/?cno=1189104&amp;prop=sp-5"
         data-href2="?couponid=1189104"
                 data-storeid="590"
         data-couponid="1189104"
@@ -1058,16 +983,21 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
               
       
+                                              
+    
+    
+              
+      
                                                                   
 
 <div 
   class="item showDeals code  belowOrder" 
-  data-bestOrder="6" 
+  data-bestOrder="5" 
   data-timestamp="1601516293" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4137167&amp;prop=sp-7"
+      href="https://slickdeals.net/?cno=4137167&amp;prop=sp-6"
       data-product-forum="Coupon"
       data-product-products="c4137167"
       data-product-exitWebsite="lenovo.com"
@@ -1118,7 +1048,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4137167"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4137167&amp;prop=sp-7"
+        href="https://slickdeals.net/?cno=4137167&amp;prop=sp-6"
         data-href2="?couponid=4137167"
                   data-clipboard-text="OFFICEDEPOT30"
                 data-storeid="590"
@@ -1130,15 +1060,15 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 </div>
 
       <div class="moreDealsBox "
-       data-amRegion="Deal Threads - Position 6"
-       data-bestOrder="6"
+       data-amRegion="Deal Threads - Position 5"
+       data-bestOrder="5"
        data-timestamp="1601516293"
        data-module-name="dealThreads4137167">
     <div class="moreDealsContainer first" data-role="moreDealsContainer"></div>
 
     <div class="dealUsage">
           <span data-role="dealUsageText">1 Deal Uses This Coupon.</span>
-<button class="buttonUnstyled" data-amlink="See More" data-role="seeDeals" data-couponid="4137167" data-coupon-position="6">See Deal</button>.    </div>
+<button class="buttonUnstyled" data-amlink="See More" data-role="seeDeals" data-couponid="4137167" data-coupon-position="5">See Deal</button>.    </div>
   </div>
     
     
@@ -1149,12 +1079,12 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals discount  belowOrder" 
-  data-bestOrder="7" 
+  data-bestOrder="6" 
   data-timestamp="1601346278" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4126922&amp;prop=sp-8"
+      href="https://slickdeals.net/?cno=4126922&amp;prop=sp-7"
       data-product-forum="Coupon"
       data-product-products="c4126922"
       data-product-exitWebsite="lenovo.com"
@@ -1173,7 +1103,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
+                          <span class="numUsed">2 Used Today</span>
               </div>
               <span class="title cpbtn" title="Extra 5% Off Sitewide for Doctors, Nurses and First Responders" >Extra 5% Off Sitewide for Doctors, Nurses and First Responders</span>
             <div class="desc">
@@ -1202,10 +1132,84 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4126922"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=4126922&amp;prop=sp-8"
+        href="https://slickdeals.net/?cno=4126922&amp;prop=sp-7"
         data-href2="?couponid=4126922"
                 data-storeid="590"
         data-couponid="4126922"
+        class="cpbtn button large discount success "
+      >Get Offer</a>
+    
+      </div>
+</div>
+
+    
+    
+    
+              
+      
+                                                    
+
+<div 
+  class="item showDeals discount  belowOrder" 
+  data-bestOrder="7" 
+  data-timestamp="1601346233" >
+        
+  
+      <a
+      href="https://slickdeals.net/?cno=4126919&amp;prop=sp-8"
+      data-product-forum="Coupon"
+      data-product-products="c4126919"
+      data-product-exitWebsite="lenovo.com"
+      data-outclick-typeofoutclick="Discount Tile Link"
+      data-href2="?couponid=4126919"
+      title="Extra 5% Off Sitewide for Students and Teachers"
+      data-storeid="590" data-couponid="4126919"
+    >
+                <span class="intro">
+        <span>
+                  <span class="top">5%</span>
+          <span>Off</span>
+                </span>
+      </span>
+        <div class="details">
+      <div class="detailsTop">
+                  <span class="badge discount">SALES &amp; OFFERS</span>
+                          <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
+                          <span class="numUsed">1 Used Today</span>
+              </div>
+              <span class="title cpbtn" title="Extra 5% Off Sitewide for Students and Teachers" >Extra 5% Off Sitewide for Students and Teachers</span>
+            <div class="desc">
+                                                            <span class="extra" title="Get an 5% discount off your purchase when you verify your status as a student or teacher with this limited time Lenovo coupon.">Get an 5% discount off your purchase when you verify your status as a student or teacher with this limited time Lenovo coupon.</span>
+              </div>
+      <div class="detailsBottom">
+                              <span class="buttongroup inline" data-couponid="4126919"  data-role="couponrating" >
+              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
+                              ></span>
+              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
+                              ></span>
+              </span>
+                                            <span class="workForYou">
+                  Did this work for you?
+                </span>
+                                      <span class="middot"></span>
+            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4126919" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
+                          <span class="middot"></span>
+              <span data-expiredate="1603684740">Expires 10/25/20</span>
+                                            </div>
+    </div>
+  
+    </a>
+  
+  <div class="buttonRight" data-itemtype="coupon" data-itemid="4126919" data-storeid="590" data-couponid="4126919">
+          <a
+        data-product-forum="Coupon"
+        data-product-products="c4126919"
+        data-product-exitWebsite="lenovo.com"
+        data-outclick-typeofoutclick="Discount Buy Now Link"
+        href="https://slickdeals.net/?cno=4126919&amp;prop=sp-8"
+        data-href2="?couponid=4126919"
+                data-storeid="590"
+        data-couponid="4126919"
         class="cpbtn button large discount success "
       >Get Offer</a>
     
@@ -1238,320 +1242,13 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
                                                     
 
 <div 
-  class="item showDeals code  belowOrder" 
+  class="item showDeals discount  belowOrder" 
   data-bestOrder="8" 
-  data-timestamp="1602810652" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4185056&amp;prop=sp-9"
-      data-product-forum="Coupon"
-      data-product-products="c4185056"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4185056"
-      title="Extra $35 Off Select PC Orders $649.99+"
-              data-clipboard-text="WEEKENDFUN"
-      data-storeid="590" data-couponid="4185056"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">$35</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">12 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="Extra $35 Off Select PC Orders $649.99+" >Extra $35 Off Select PC Orders $649.99+</span>
-            <div class="desc">
-                                                            <span class="extra" title="Receive up to an additional $35 discount off IdeaPad, IdeaCentre, Legion, and Yoga PCs when you use this Lenovo coupon. Item exclusions apply with this offer.">Receive up to an additional $35 discount off IdeaPad, IdeaCentre, Legion, and Yoga PCs when you use this Lenovo coupon. Item exclusions apply with this offer.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4185056"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4185056" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603080000">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4185056" data-storeid="590" data-couponid="4185056">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4185056"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4185056&amp;prop=sp-9"
-        data-href2="?couponid=4185056"
-                  data-clipboard-text="WEEKENDFUN"
-                data-storeid="590"
-        data-couponid="4185056"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="9" 
-  data-timestamp="1602810608" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4185053&amp;prop=sp-10"
-      data-product-forum="Coupon"
-      data-product-products="c4185053"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4185053"
-      title="Extra $60 Off Select PC Orders $949.99+"
-              data-clipboard-text="WEEKENDFUN"
-      data-storeid="590" data-couponid="4185053"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">$60</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">9 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="Extra $60 Off Select PC Orders $949.99+" >Extra $60 Off Select PC Orders $949.99+</span>
-            <div class="desc">
-                                                            <span class="extra" title="Save with up to a $60 discount off select IdeaPad, IdeaCentre, Legion, and Yoga PCs when you apply this Lenovo promo code during checkout.">Save with up to a $60 discount off select IdeaPad, IdeaCentre, Legion, and Yoga PCs when you apply this Lenovo promo code during checkout.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4185053"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4185053" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603080000">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4185053" data-storeid="590" data-couponid="4185053">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4185053"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4185053&amp;prop=sp-10"
-        data-href2="?couponid=4185053"
-                  data-clipboard-text="WEEKENDFUN"
-                data-storeid="590"
-        data-couponid="4185053"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                              
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="10" 
-  data-timestamp="1602810504" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4185050&amp;prop=sp-11"
-      data-product-forum="Coupon"
-      data-product-products="c4185050"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4185050"
-      title="Extra $90 Off Select PC Orders $1249.99+"
-              data-clipboard-text="WEEKENDFUN"
-      data-storeid="590" data-couponid="4185050"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">$90</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">10 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="Extra $90 Off Select PC Orders $1249.99+" >Extra $90 Off Select PC Orders $1249.99+</span>
-            <div class="desc">
-                                                            <span class="extra" title="Receive up to an additional $90 discount off IdeaPad, IdeaCentre, Legion, and Yoga PCs when you enter this Lenovo coupon code after meeting the price requirement.">Receive up to an additional $90 discount off IdeaPad, IdeaCentre, Legion, and Yoga PCs when you enter this Lenovo coupon code after meeting the price requirement.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4185050"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4185050" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603080000">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4185050" data-storeid="590" data-couponid="4185050">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4185050"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4185050&amp;prop=sp-11"
-        data-href2="?couponid=4185050"
-                  data-clipboard-text="WEEKENDFUN"
-                data-storeid="590"
-        data-couponid="4185050"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals discount  belowOrder" 
-  data-bestOrder="11" 
-  data-timestamp="1601346233" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4126919&amp;prop=sp-12"
-      data-product-forum="Coupon"
-      data-product-products="c4126919"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Discount Tile Link"
-      data-href2="?couponid=4126919"
-      title="Extra 5% Off Sitewide for Students and Teachers"
-      data-storeid="590" data-couponid="4126919"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">5%</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge discount">SALES &amp; OFFERS</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="Extra 5% Off Sitewide for Students and Teachers" >Extra 5% Off Sitewide for Students and Teachers</span>
-            <div class="desc">
-                                                            <span class="extra" title="Get an 5% discount off your purchase when you verify your status as a student or teacher with this limited time Lenovo coupon.">Get an 5% discount off your purchase when you verify your status as a student or teacher with this limited time Lenovo coupon.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4126919"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4126919" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603684740">Expires 10/25/20</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4126919" data-storeid="590" data-couponid="4126919">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4126919"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=4126919&amp;prop=sp-12"
-        data-href2="?couponid=4126919"
-                data-storeid="590"
-        data-couponid="4126919"
-        class="cpbtn button large discount success "
-      >Get Offer</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals discount  belowOrder" 
-  data-bestOrder="12" 
   data-timestamp="1601930597" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4150160&amp;prop=sp-13"
+      href="https://slickdeals.net/?cno=4150160&amp;prop=sp-9"
       data-product-forum="Coupon"
       data-product-products="c4150160"
       data-product-exitWebsite="lenovo.com"
@@ -1570,7 +1267,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
+                          <span class="numUsed">2 Used Today</span>
               </div>
               <span class="title cpbtn" title="Extra 7% Off Sitewide for Military" >Extra 7% Off Sitewide for Military</span>
             <div class="desc">
@@ -1601,7 +1298,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4150160"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=4150160&amp;prop=sp-13"
+        href="https://slickdeals.net/?cno=4150160&amp;prop=sp-9"
         data-href2="?couponid=4150160"
                 data-storeid="590"
         data-couponid="4150160"
@@ -1620,177 +1317,12 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals code  belowOrder" 
-  data-bestOrder="13" 
-  data-timestamp="1602894825" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4189118&amp;prop=sp-14"
-      data-product-forum="Coupon"
-      data-product-products="c4189118"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4189118"
-      title="10% Off Almost All Tablets"
-              data-clipboard-text="LENOVOTAB10"
-      data-storeid="590" data-couponid="4189118"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">10%</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">8 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="10% Off Almost All Tablets" >10% Off Almost All Tablets</span>
-            <div class="desc">
-                                                            <span class="extra" title="Save with a 10% discount on Tab Series purchases when you use this Lenovo promo code.">Save with a 10% discount on Tab Series purchases when you use this Lenovo promo code.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4189118"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4189118" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603090740">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4189118" data-storeid="590" data-couponid="4189118">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4189118"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4189118&amp;prop=sp-14"
-        data-href2="?couponid=4189118"
-                  data-clipboard-text="LENOVOTAB10"
-                data-storeid="590"
-        data-couponid="4189118"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                  <div id="injected-728-B2" class="storePageAdSlot adunit ">
-  <script type="text/javascript">
-      window.sdLoadQueue.push([function ()
-      {
-          gaPubadsReadyCallback('injected-728-B2');
-      }, 'revenueGenerating']);
-  </script>
-      <span class="bt-uid-tg" data-uid="5c4a0132ca-226" style="display: none !important"></span>
-  </div>                                        
-
-<div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="14" 
+  data-bestOrder="9" 
   data-timestamp="1601516554" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4137173&amp;prop=sp-15"
-      data-product-forum="Coupon"
-      data-product-products="c4189118"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4189118"
-      title="10% Off Almost All Tablets"
-              data-clipboard-text="LENOVOTAB10"
-      data-storeid="590" data-couponid="4189118"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">10%</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">7 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="10% Off Almost All Tablets" >10% Off Almost All Tablets</span>
-            <div class="desc">
-                                                            <span class="extra" title="Save with a 10% discount on Tab Series purchases when you use this Lenovo promo code.">Save with a 10% discount on Tab Series purchases when you use this Lenovo promo code.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4189118"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4189118" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603090740">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4189118" data-storeid="590" data-couponid="4189118">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4189118"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4137173&amp;prop=sp-15"
-        data-href2="?couponid=4137173"
-                  data-clipboard-text="PHOLIDAY2020"
-                data-storeid="590"
-        data-couponid="4189118"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                              
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="15" 
-  data-timestamp="1601516059" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4137158&amp;prop=sp-16"
+      href="https://slickdeals.net/?cno=4137173&amp;prop=sp-10"
       data-product-forum="Coupon"
       data-product-products="c4137173"
       data-product-exitWebsite="lenovo.com"
@@ -1810,7 +1342,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">7 Used Today</span>
+                          <span class="numUsed">1 Used Today</span>
               </div>
               <span class="title cpbtn" title="47% Off Select ThinkPad Mobile Workstations or ThinkStation Desktops" >47% Off Select ThinkPad Mobile Workstations or ThinkStation Desktops</span>
             <div class="desc">
@@ -1841,7 +1373,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4137173"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4137173&amp;prop=sp-15"
+        href="https://slickdeals.net/?cno=4137173&amp;prop=sp-10"
         data-href2="?couponid=4137173"
                   data-clipboard-text="PHOLIDAY2020"
                 data-storeid="590"
@@ -1866,12 +1398,12 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals code  belowOrder" 
-  data-bestOrder="15" 
+  data-bestOrder="10" 
   data-timestamp="1601516059" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4137158&amp;prop=sp-16"
+      href="https://slickdeals.net/?cno=4137158&amp;prop=sp-11"
       data-product-forum="Coupon"
       data-product-products="c4137158"
       data-product-exitWebsite="lenovo.com"
@@ -1891,7 +1423,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">7 Used Today</span>
+                          <span class="numUsed">1 Used Today</span>
               </div>
               <span class="title cpbtn" title="42% Off All ThinkCentre Desktops + Free Shipping!" >42% Off All ThinkCentre Desktops + Free Shipping!</span>
             <div class="desc">
@@ -1920,7 +1452,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4137158"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4137158&amp;prop=sp-16"
+        href="https://slickdeals.net/?cno=4137158&amp;prop=sp-11"
         data-href2="?couponid=4137158"
                   data-clipboard-text="THINKDESK42"
                 data-storeid="590"
@@ -1940,12 +1472,12 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals discount  belowOrder" 
-  data-bestOrder="16" 
+  data-bestOrder="11" 
   data-timestamp="1602721715" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4180904&amp;prop=sp-17"
+      href="https://slickdeals.net/?cno=4180904&amp;prop=sp-12"
       data-product-forum="Coupon"
       data-product-products="c4180904"
       data-product-exitWebsite="lenovo.com"
@@ -1964,7 +1496,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
+                          <span class="numUsed">1 Used Today</span>
               </div>
               <span class="title cpbtn" title="Clearance Sale: Up to 69% Off PCs - From $399" >Clearance Sale: Up to 69% Off PCs - From $399</span>
             <div class="desc">
@@ -1995,7 +1527,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4180904"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=4180904&amp;prop=sp-17"
+        href="https://slickdeals.net/?cno=4180904&amp;prop=sp-12"
         data-href2="?couponid=4180904"
                 data-storeid="590"
         data-couponid="4180904"
@@ -2014,88 +1546,12 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals code  belowOrder" 
-  data-bestOrder="17" 
-  data-timestamp="1602530854" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4171769&amp;prop=sp-18"
-      data-product-forum="Coupon"
-      data-product-products="c4171769"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4171769"
-      title="60% Off ThinkPad T490s"
-              data-clipboard-text="THINKSEMI"
-      data-storeid="590" data-couponid="4171769"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">60%</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">7 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="60% Off ThinkPad T490s" >60% Off ThinkPad T490s</span>
-            <div class="desc">
-                                                            <span class="extra" title="Save 60% off the ThinkPad T490s. Enter this Lenovo code at checkout. Limited time offer.">Save 60% off the ThinkPad T490s. Enter this Lenovo code at checkout. Limited time offer.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4171769"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4171769" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603090740">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4171769" data-storeid="590" data-couponid="4171769">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4171769"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4171769&amp;prop=sp-18"
-        data-href2="?couponid=4171769"
-                  data-clipboard-text="THINKSEMI"
-                data-storeid="590"
-        data-couponid="4171769"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="18" 
+  data-bestOrder="12" 
   data-timestamp="1602721408" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4180895&amp;prop=sp-19"
+      href="https://slickdeals.net/?cno=4180895&amp;prop=sp-13"
       data-product-forum="Coupon"
       data-product-products="c4180895"
       data-product-exitWebsite="lenovo.com"
@@ -2115,7 +1571,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">5 Used Today</span>
+                          <span class="numUsed">2 Used Today</span>
               </div>
               <span class="title cpbtn" title="10% Off Legion Tower 5i Gaming Desktops" >10% Off Legion Tower 5i Gaming Desktops</span>
             <div class="desc">
@@ -2146,7 +1602,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4180895"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4180895&amp;prop=sp-19"
+        href="https://slickdeals.net/?cno=4180895&amp;prop=sp-13"
         data-href2="?couponid=4180895"
                   data-clipboard-text="LEGION10"
                 data-storeid="590"
@@ -2166,12 +1622,12 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals code  belowOrder" 
-  data-bestOrder="19" 
+  data-bestOrder="13" 
   data-timestamp="1602721369" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4180892&amp;prop=sp-20"
+      href="https://slickdeals.net/?cno=4180892&amp;prop=sp-14"
       data-product-forum="Coupon"
       data-product-products="c4180892"
       data-product-exitWebsite="lenovo.com"
@@ -2191,7 +1647,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
+                          <span class="numUsed">2 Used Today</span>
               </div>
               <span class="title cpbtn" title="15% Off Yoga 2-in-1 Laptops" >15% Off Yoga 2-in-1 Laptops</span>
             <div class="desc">
@@ -2222,7 +1678,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4180892"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4180892&amp;prop=sp-20"
+        href="https://slickdeals.net/?cno=4180892&amp;prop=sp-14"
         data-href2="?couponid=4180892"
                   data-clipboard-text="YOGASAVE15"
                 data-storeid="590"
@@ -2238,11 +1694,11 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
               
       
-                                  <div id="injected-728-B3" class="storePageAdSlot adunit ">
+                                  <div id="injected-728-B2" class="storePageAdSlot adunit ">
   <script type="text/javascript">
       window.sdLoadQueue.push([function ()
       {
-          gaPubadsReadyCallback('injected-728-B3');
+          gaPubadsReadyCallback('injected-728-B2');
       }, 'revenueGenerating']);
   </script>
       <span class="bt-uid-tg" data-uid="5c4a0132ca-226" style="display: none !important"></span>
@@ -2250,88 +1706,12 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals code  belowOrder" 
-  data-bestOrder="20" 
-  data-timestamp="1602623565" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4176404&amp;prop=sp-21"
-      data-product-forum="Coupon"
-      data-product-products="c4176404"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4176404"
-      title="61% Off 13&quot; ThinkPad X390 Laptop: Now $1,044.99"
-              data-clipboard-text="EXTRAFIVE"
-      data-storeid="590" data-couponid="4176404"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">61%</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">16 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="61% Off 13&quot; ThinkPad X390 Laptop: Now $1,044.99" >61% Off 13&quot; ThinkPad X390 Laptop: Now $1,044.99</span>
-            <div class="desc">
-                                                            <span class="extra" title="Save 61% off the 13&quot; ThinkPad X390 Laptop  20Q0004VUS with Intel I7, 16GB Memory, 512GB SSD, now $1,044.99. Enter this Lenovo promo code at checkout.">Save 61% off the 13&quot; ThinkPad X390 Laptop  20Q0004VUS with Intel I7, 16GB Memory, 512GB SSD, now $1,044.99. Enter this Lenovo promo code at checkout.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4176404"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4176404" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603080000">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4176404" data-storeid="590" data-couponid="4176404">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4176404"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4176404&amp;prop=sp-21"
-        data-href2="?couponid=4176404"
-                  data-clipboard-text="EXTRAFIVE"
-                data-storeid="590"
-        data-couponid="4176404"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="21" 
+  data-bestOrder="14" 
   data-timestamp="1601516644" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4137176&amp;prop=sp-22"
+      href="https://slickdeals.net/?cno=4137176&amp;prop=sp-15"
       data-product-forum="Coupon"
       data-product-products="c4137176"
       data-product-exitWebsite="lenovo.com"
@@ -2351,7 +1731,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
+                          <span class="numUsed">1 Used Today</span>
               </div>
               <span class="title cpbtn" title="Up to 66% Off Select Mobile Workstations" >Up to 66% Off Select Mobile Workstations</span>
             <div class="desc">
@@ -2382,7 +1762,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4137176"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4137176&amp;prop=sp-22"
+        href="https://slickdeals.net/?cno=4137176&amp;prop=sp-15"
         data-href2="?couponid=4137176"
                   data-clipboard-text="PHOLIDAY2020"
                 data-storeid="590"
@@ -2398,16 +1778,21 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
               
       
+                              
+    
+    
+              
+      
                                                     
 
 <div 
   class="item showDeals code  belowOrder" 
-  data-bestOrder="22" 
+  data-bestOrder="15" 
   data-timestamp="1601516442" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4137170&amp;prop=sp-23"
+      href="https://slickdeals.net/?cno=4137170&amp;prop=sp-16"
       data-product-forum="Coupon"
       data-product-products="c4137170"
       data-product-exitWebsite="lenovo.com"
@@ -2427,7 +1812,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
+                          <span class="numUsed">1 Used Today</span>
               </div>
               <span class="title cpbtn" title="Businesses Get Over 50% Off any Rack or Tower Servers" >Businesses Get Over 50% Off any Rack or Tower Servers</span>
             <div class="desc">
@@ -2456,7 +1841,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4137170"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4137170&amp;prop=sp-23"
+        href="https://slickdeals.net/?cno=4137170&amp;prop=sp-16"
         data-href2="?couponid=4137170"
                   data-clipboard-text="HOLIDAY32"
                 data-storeid="590"
@@ -2476,12 +1861,12 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals discount  belowOrder" 
-  data-bestOrder="23" 
+  data-bestOrder="16" 
   data-timestamp="1578615162" >
         
   
       <a
-      href="https://slickdeals.net/?cno=3139994&amp;prop=sp-24"
+      href="https://slickdeals.net/?cno=3139994&amp;prop=sp-17"
       data-product-forum="Coupon"
       data-product-products="c3139994"
       data-product-exitWebsite="lenovo.com"
@@ -2500,7 +1885,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
+                          <span class="numUsed">2 Used Today</span>
               </div>
               <span class="title cpbtn" title="Get 3% Back on All Orders + $15 Off Orders $500+ with Rewards" >Get 3% Back on All Orders + $15 Off Orders $500+ with Rewards</span>
             <div class="desc">
@@ -2529,7 +1914,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c3139994"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=3139994&amp;prop=sp-24"
+        href="https://slickdeals.net/?cno=3139994&amp;prop=sp-17"
         data-href2="?couponid=3139994"
                 data-storeid="590"
         data-couponid="3139994"
@@ -2547,165 +1932,13 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
                                                     
 
 <div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="24" 
-  data-timestamp="1601686977" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4144799&amp;prop=sp-25"
-      data-product-forum="Coupon"
-      data-product-products="c4144799"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4144799"
-      title="6% Off Tab M8 HD Tablet - Now $93.99"
-              data-clipboard-text="TABM8DEAL"
-      data-storeid="590" data-couponid="4144799"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">6%</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="6% Off Tab M8 HD Tablet - Now $93.99" >6% Off Tab M8 HD Tablet - Now $93.99</span>
-            <div class="desc">
-                                                            <span class="extra" title="Save with a 6% discount off the Tab M8 Next-Level Family Tablet while supplies last with this Lenovo voucher code.">Save with a 6% discount off the Tab M8 Next-Level Family Tablet while supplies last with this Lenovo voucher code.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4144799"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4144799" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603079940">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4144799" data-storeid="590" data-couponid="4144799">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4144799"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4144799&amp;prop=sp-25"
-        data-href2="?couponid=4144799"
-                  data-clipboard-text="TABM8DEAL"
-                data-storeid="590"
-        data-couponid="4144799"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="25" 
-  data-timestamp="1602623439" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4176398&amp;prop=sp-26"
-      data-product-forum="Coupon"
-      data-product-products="c4176398"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4176398"
-      title="27% Off 22&quot; IdeaCentre A340 Desktop F0ES0001US with Intel I3: $474.99"
-              data-clipboard-text="EXTRAFIVE"
-      data-storeid="590" data-couponid="4176398"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">27%</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="27% Off 22&quot; IdeaCentre A340 Desktop F0ES0001US with Intel I3: $474.99" >27% Off 22&quot; IdeaCentre A340 Desktop F0ES0001US with Intel I3: $474.99</span>
-            <div class="desc">
-                                                            <span class="extra" title="Save 27% Off the 22&quot; IdeaCentre A340 Desktop F0ES0001US with Intel I3, 4GB Memory, 128GB SSD, now $474.99. Enter this Lenovo code at checkout.">Save 27% Off the 22&quot; IdeaCentre A340 Desktop F0ES0001US with Intel I3, 4GB Memory, 128GB SSD, now $474.99. Enter this Lenovo code at checkout.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4176398"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4176398" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603080000">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4176398" data-storeid="590" data-couponid="4176398">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4176398"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4176398&amp;prop=sp-26"
-        data-href2="?couponid=4176398"
-                  data-clipboard-text="EXTRAFIVE"
-                data-storeid="590"
-        data-couponid="4176398"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
   class="item showDeals discount  belowOrder" 
-  data-bestOrder="26" 
+  data-bestOrder="17" 
   data-timestamp="1601931123" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4150181&amp;prop=sp-27"
+      href="https://slickdeals.net/?cno=4150181&amp;prop=sp-18"
       data-product-forum="Coupon"
       data-product-products="c4150181"
       data-product-exitWebsite="lenovo.com"
@@ -2723,7 +1956,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Offer Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
+                          <span class="numUsed">1 Used Today</span>
               </div>
               <span class="title cpbtn" title="PRO Members: Free Shipping + 1 Year Support on Think PCs" >PRO Members: Free Shipping + 1 Year Support on Think PCs</span>
             <div class="desc">
@@ -2752,7 +1985,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4150181"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=4150181&amp;prop=sp-27"
+        href="https://slickdeals.net/?cno=4150181&amp;prop=sp-18"
         data-href2="?couponid=4150181"
                 data-storeid="590"
         data-couponid="4150181"
@@ -2771,24 +2004,24 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals code  belowOrder" 
-  data-bestOrder="27" 
-  data-timestamp="1602033055" >
+  data-bestOrder="18" 
+  data-timestamp="1602894390" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4155122&amp;prop=sp-28"
+      href="https://slickdeals.net/?cno=4189115&amp;prop=sp-19"
       data-product-forum="Coupon"
-      data-product-products="c4155122"
+      data-product-products="c4189115"
       data-product-exitWebsite="lenovo.com"
       data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4155122"
-      title="$190 Off Ideapad 3i Gaming Laptop - Now $799.99"
-              data-clipboard-text="GAMEON"
-      data-storeid="590" data-couponid="4155122"
+      data-href2="?couponid=4189115"
+      title="6% Off Tab M8 - Now $93.99"
+              data-clipboard-text="SMART8DEAL"
+      data-storeid="590" data-couponid="4189115"
     >
                 <span class="intro">
         <span>
-                  <span class="top">$190</span>
+                  <span class="top">6%</span>
           <span>Off</span>
                 </span>
       </span>
@@ -2796,14 +2029,14 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
                           <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
+                          <span class="numUsed">1 Used Today</span>
               </div>
-              <span class="title cpbtn" title="$190 Off Ideapad 3i Gaming Laptop - Now $799.99" >$190 Off Ideapad 3i Gaming Laptop - Now $799.99</span>
+              <span class="title cpbtn" title="6% Off Tab M8 - Now $93.99" >6% Off Tab M8 - Now $93.99</span>
             <div class="desc">
-                                                            <span class="extra" title="Save with a $190 discount off your Ideapad 3i Gaming Laptop purchase when you enter this Lenovo coupon code to your cart. Item exclusions apply with this offer.">Save with a $190 discount off your Ideapad 3i Gaming Laptop purchase when you enter this Lenovo coupon code to your cart. Item exclusions apply with this offer.</span>
+                                                            <span class="extra" title="Enter this Lenovo coupon code to receive a 6% discount off the Tab M8 Next Level Family Tablet while supplies last.">Enter this Lenovo coupon code to receive a 6% discount off the Tab M8 Next Level Family Tablet while supplies last.</span>
               </div>
       <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4155122"  data-role="couponrating" >
+                              <span class="buttongroup inline" data-couponid="4189115"  data-role="couponrating" >
               <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
                               ></span>
               <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
@@ -2813,253 +2046,25 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
                   Did this work for you?
                 </span>
                                       <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4155122" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
+            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4189115" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
                           <span class="middot"></span>
-              <span data-expiredate="1603080000">Expires Today</span>
+              <span data-expiredate="1603771140">Expires 10/26/20</span>
                                             </div>
     </div>
   
     </a>
   
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4155122" data-storeid="590" data-couponid="4155122">
+  <div class="buttonRight" data-itemtype="coupon" data-itemid="4189115" data-storeid="590" data-couponid="4189115">
           <a
         data-product-forum="Coupon"
-        data-product-products="c4155122"
+        data-product-products="c4189115"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4155122&amp;prop=sp-28"
-        data-href2="?couponid=4155122"
-                  data-clipboard-text="GAMEON"
+        href="https://slickdeals.net/?cno=4189115&amp;prop=sp-19"
+        data-href2="?couponid=4189115"
+                  data-clipboard-text="SMART8DEAL"
                 data-storeid="590"
-        data-couponid="4155122"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="28" 
-  data-timestamp="1602033091" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4155125&amp;prop=sp-29"
-      data-product-forum="Coupon"
-      data-product-products="c4155125"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4155125"
-      title="$250 Off IdeaPad Slim 7 Laptop - Now $969.99"
-              data-clipboard-text="SLIM7GTX"
-      data-storeid="590" data-couponid="4155125"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">$250</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="$250 Off IdeaPad Slim 7 Laptop - Now $969.99" >$250 Off IdeaPad Slim 7 Laptop - Now $969.99</span>
-            <div class="desc">
-                                                            <span class="extra" title="Item exclusions apply with this limited time Lenovo promo code.">Item exclusions apply with this limited time Lenovo promo code.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4155125"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4155125" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603080000">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4155125" data-storeid="590" data-couponid="4155125">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4155125"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4155125&amp;prop=sp-29"
-        data-href2="?couponid=4155125"
-                  data-clipboard-text="SLIM7GTX"
-                data-storeid="590"
-        data-couponid="4155125"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="29" 
-  data-timestamp="1602623780" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4176410&amp;prop=sp-30"
-      data-product-forum="Coupon"
-      data-product-products="c4176410"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4176410"
-      title="16% Off 15&quot; IdeaPad 3i Gaming Laptop: Now $829.99"
-              data-clipboard-text="GAMINGDB2"
-      data-storeid="590" data-couponid="4176410"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">16%</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">6 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="16% Off 15&quot; IdeaPad 3i Gaming Laptop: Now $829.99" >16% Off 15&quot; IdeaPad 3i Gaming Laptop: Now $829.99</span>
-            <div class="desc">
-                                                            <span class="extra" title="Save 16% off the 15&quot; IdeaPad 3i Gaming Laptop with Intel I7, 8GB Memory, 512GB SSD, NVIDIA GTX 1650, Now $829.99. Enter this code at checkout.">Save 16% off the 15&quot; IdeaPad 3i Gaming Laptop with Intel I7, 8GB Memory, 512GB SSD, NVIDIA GTX 1650, Now $829.99. Enter this code at checkout.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4176410"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4176410" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603080000">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4176410" data-storeid="590" data-couponid="4176410">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4176410"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4176410&amp;prop=sp-30"
-        data-href2="?couponid=4176410"
-                  data-clipboard-text="GAMINGDB2"
-                data-storeid="590"
-        data-couponid="4176410"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="30" 
-  data-timestamp="1602210007" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4163507&amp;prop=sp-31"
-      data-product-forum="Coupon"
-      data-product-products="c4163507"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4163507"
-      title="Black Friday Deal: 58% Off ThinkPad X1 Carbon Gen 8 Laptop - $949.99"
-              data-clipboard-text="X1BLACKFRIDAY"
-      data-storeid="590" data-couponid="4163507"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">58%</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                          <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
-                          <span class="numUsed">7 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="Black Friday Deal: 58% Off ThinkPad X1 Carbon Gen 8 Laptop - $949.99" >Black Friday Deal: 58% Off ThinkPad X1 Carbon Gen 8 Laptop - $949.99</span>
-            <div class="desc">
-                                                            <span class="extra" title="Shop this early LenovoPRO Black Friday offer and save with a 58% off your purchase of a featured 14&quot; ThinkPad X1 Carbon Gen 8 Laptop now available when you use this Lenovo coupon code.">Shop this early LenovoPRO Black Friday offer and save with a 58% off your purchase of a featured 14&quot; ThinkPad X1 Carbon Gen 8 Laptop now available when you use this Lenovo coupon code.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4163507"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4163507" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1603079940">Expires Today</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4163507" data-storeid="590" data-couponid="4163507">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4163507"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4163507&amp;prop=sp-31"
-        data-href2="?couponid=4163507"
-                  data-clipboard-text="X1BLACKFRIDAY"
-                data-storeid="590"
-        data-couponid="4163507"
+        data-couponid="4189115"
         class="cpbtn button large code cornerPeel success "
       >Get Coupon Code</a>
     
@@ -3075,12 +2080,12 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals discount  belowOrder" 
-  data-bestOrder="31" 
+  data-bestOrder="19" 
   data-timestamp="1373119583" >
         
   
       <a
-      href="https://slickdeals.net/?cno=226816&amp;prop=sp-32"
+      href="https://slickdeals.net/?cno=226816&amp;prop=sp-20"
       data-product-forum="Coupon"
       data-product-products="c226816"
       data-product-exitWebsite="lenovo.com"
@@ -3126,7 +2131,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c226816"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=226816&amp;prop=sp-32"
+        href="https://slickdeals.net/?cno=226816&amp;prop=sp-20"
         data-href2="?couponid=226816"
                 data-storeid="590"
         data-couponid="226816"
@@ -3141,16 +2146,24 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
               
       
-                                                    
+                                  <div id="injected-728-B3" class="storePageAdSlot adunit ">
+  <script type="text/javascript">
+      window.sdLoadQueue.push([function ()
+      {
+          gaPubadsReadyCallback('injected-728-B3');
+      }, 'revenueGenerating']);
+  </script>
+      <span class="bt-uid-tg" data-uid="5c4a0132ca-226" style="display: none !important"></span>
+  </div>                                        
 
 <div 
   class="item showDeals discount  belowOrder" 
-  data-bestOrder="32" 
+  data-bestOrder="20" 
   data-timestamp="1601930929" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4150175&amp;prop=sp-33"
+      href="https://slickdeals.net/?cno=4150175&amp;prop=sp-21"
       data-product-forum="Coupon"
       data-product-products="c4150175"
       data-product-exitWebsite="lenovo.com"
@@ -3167,7 +2180,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         <div class="details">
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
-                                  <span class="numUsed">4 Used Today</span>
+                                  <span class="numUsed">1 Used Today</span>
               </div>
               <span class="title cpbtn" title="Earn 3x MyLenovo Rewards on Select PC and Accessory Purchases" >Earn 3x MyLenovo Rewards on Select PC and Accessory Purchases</span>
             <div class="desc">
@@ -3198,7 +2211,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4150175"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=4150175&amp;prop=sp-33"
+        href="https://slickdeals.net/?cno=4150175&amp;prop=sp-21"
         data-href2="?couponid=4150175"
                 data-storeid="590"
         data-couponid="4150175"
@@ -3216,13 +2229,13 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
                                                     
 
 <div 
-  class="item showDeals code  belowOrder" 
-  data-bestOrder="33" 
-  data-timestamp="1602721751" >
+  class="item showDeals discount  belowOrder" 
+  data-bestOrder="21" 
+  data-timestamp="1601930789" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4180907&amp;prop=sp-34"
+      href="https://slickdeals.net/?cno=4150169&amp;prop=sp-22"
       data-product-forum="Coupon"
       data-product-products="c4180907"
       data-product-exitWebsite="lenovo.com"
@@ -3240,8 +2253,8 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       </span>
         <div class="details">
       <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                                  <span class="numUsed">5 Used Today</span>
+                  <span class="badge discount">SALES &amp; OFFERS</span>
+                                  <span class="numUsed">1 Used Today</span>
               </div>
               <span class="title cpbtn" title="$350 Off 14&quot; Yoga C940 2-In-1 Laptop - Now $899.99" >$350 Off 14&quot; Yoga C940 2-In-1 Laptop - Now $899.99</span>
             <div class="desc">
@@ -3271,10 +2284,9 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-forum="Coupon"
         data-product-products="c4180907"
         data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4180907&amp;prop=sp-34"
-        data-href2="?couponid=4180907"
-                  data-clipboard-text="SEMISALE2020"
+        data-outclick-typeofoutclick="Discount Buy Now Link"
+        href="https://slickdeals.net/?cno=4150169&amp;prop=sp-22"
+        data-href2="?couponid=4150169"
                 data-storeid="590"
         data-couponid="4180907"
         class="cpbtn button large code cornerPeel success "
@@ -3292,84 +2304,12 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals discount  belowOrder" 
-  data-bestOrder="34" 
-  data-timestamp="1601930789" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=4150169&amp;prop=sp-35"
-      data-product-forum="Coupon"
-      data-product-products="c4150169"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Discount Tile Link"
-      data-href2="?couponid=4150169"
-      title="Extra $50 in MyLenovo Rewards + Virtual Visa with PC Trade In."
-      data-storeid="590" data-couponid="4150169"
-    >
-                <span class="intro">
-        <span>
-                  <span class="icon icon-tag8 offer"></span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge discount">SALES &amp; OFFERS</span>
-                                  <span class="numUsed">4 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="Extra $50 in MyLenovo Rewards + Virtual Visa with PC Trade In." >Extra $50 in MyLenovo Rewards + Virtual Visa with PC Trade In.</span>
-            <div class="desc">
-                                                            <span class="extra" title="Receive a Lenovo Virtual Visa along with $50 in rewards when you trade in an eligible PC.">Receive a Lenovo Virtual Visa along with $50 in rewards when you trade in an eligible PC.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="buttongroup inline" data-couponid="4150169"  data-role="couponrating" >
-              <span role="button" class="thumbsUp button xsmall icon icon-thumbs-up3" data-vote="1"
-                              ></span>
-              <span role="button" class="thumbsDown button xsmall icon icon-thumbs-down" data-vote="-1"
-                              ></span>
-              </span>
-                                            <span class="workForYou">
-                  Did this work for you?
-                </span>
-                                      <span class="middot"></span>
-            <span class="share" data-role="sendToFriend" data-thread-id="0" data-coupon-id="4150169" data-seo-link="" title="Email this  to a friend!" data-platform="email" data-link="socialsharing:Share by Email">Share</span>
-                          <span class="middot"></span>
-              <span data-expiredate="1604203140">Expires 10/31/20</span>
-                                            </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4150169" data-storeid="590" data-couponid="4150169">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c4150169"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=4150169&amp;prop=sp-35"
-        data-href2="?couponid=4150169"
-                data-storeid="590"
-        data-couponid="4150169"
-        class="cpbtn button large discount success "
-      >Get Offer</a>
-    
-      </div>
-</div>
-
-    
-    
-    
-              
-      
-                                                    
-
-<div 
-  class="item showDeals discount  belowOrder" 
-  data-bestOrder="35" 
+  data-bestOrder="22" 
   data-timestamp="1602032932" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4155116&amp;prop=sp-36"
+      href="https://slickdeals.net/?cno=4155116&amp;prop=sp-23"
       data-product-forum="Coupon"
       data-product-products="c4155116"
       data-product-exitWebsite="lenovo.com"
@@ -3386,7 +2326,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         <div class="details">
       <div class="detailsTop">
                   <span class="badge discount">SALES &amp; OFFERS</span>
-                                  <span class="numUsed">4 Used Today</span>
+                                  <span class="numUsed">1 Used Today</span>
               </div>
               <span class="title cpbtn" title="Earn 3x MyLenovo Rewards on Oculus Rift 3D Virtual Reality Headset" >Earn 3x MyLenovo Rewards on Oculus Rift 3D Virtual Reality Headset</span>
             <div class="desc">
@@ -3417,7 +2357,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         data-product-products="c4155116"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Discount Buy Now Link"
-        href="https://slickdeals.net/?cno=4155116&amp;prop=sp-36"
+        href="https://slickdeals.net/?cno=4155116&amp;prop=sp-23"
         data-href2="?couponid=4155116"
                 data-storeid="590"
         data-couponid="4155116"
@@ -3432,7 +2372,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
               
       
-                                  
+                                
 
   
     <div class="recentBlogPosts relatedDeals relatedArticle_store
@@ -3520,17 +2460,6 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </tr>
                                       <tr class="PopularCouponTableRow_ popularPromoCodeRow">
           <td class="PopularCouponTableCell popularPromoCodeSimpleCell">
-                          69% Off
-                      </td>
-          <td class="PopularCouponTableCell popularPromoCodeSimpleCell">
-            Semi-Annual Sale: Up to 69% Off
-          </td>
-          <td class="PopularCouponTableCell popularPromoCodeSimpleCell">
-                          10/18/2020
-                      </td>
-        </tr>
-                                      <tr class="PopularCouponTableRow_ popularPromoCodeRow">
-          <td class="PopularCouponTableCell popularPromoCodeSimpleCell">
                           10% Off
                       </td>
           <td class="PopularCouponTableCell popularPromoCodeSimpleCell">
@@ -3540,7 +2469,18 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
                           10/25/2020
                       </td>
         </tr>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </tbody>
+                                      <tr class="PopularCouponTableRow_ popularPromoCodeRow">
+          <td class="PopularCouponTableCell popularPromoCodeSimpleCell">
+                          75% Off
+                      </td>
+          <td class="PopularCouponTableCell popularPromoCodeSimpleCell">
+            Lenovo Outlet: Up to 75% Off Laptops, Tablets, Workstations and More
+          </td>
+          <td class="PopularCouponTableCell popularPromoCodeSimpleCell">
+                          Ongoing
+                      </td>
+        </tr>
+                                                                                                                                                                                                                                                                                                                                                                                                                    </tbody>
   </table>
               </div>
             </div>
@@ -3548,60 +2488,58 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
                           <div id="expiredItems" class="expiredItems " data-role="expiredDeals">
   <div class="expiredHead">Expired Deals</div>
   <p>Some coupons may work beyond their expiration date.</p>
-                                                                                                                                                                                                                                                          
+                                                                                                                                                                            
 
 <div 
-  class="item showDeals code expired belowOrder" 
-  data-bestOrder="36" 
-  data-timestamp="1594141354" >
+  class="item showDeals discount expired belowOrder" 
+  data-bestOrder="23" 
+  data-timestamp="1601920952" >
         
   
       <a
-      href="https://slickdeals.net/?cno=3740753&amp;prop=sp-37"
+      href="https://slickdeals.net/?cno=4149947&amp;prop=sp-24"
       data-product-forum="Coupon"
-      data-product-products="c3740753"
+      data-product-products="c4149947"
       data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=3740753"
-      title="Extra 10% Off Office Furniture"
-              data-clipboard-text="OFFICEDEPOTXTRA10"
-      data-storeid="590" data-couponid="3740753"
+      data-outclick-typeofoutclick="Discount Tile Link"
+      data-href2="?couponid=4149947"
+      title="Semi-Annual Sale: Up to 69% Off"
+      data-storeid="590" data-couponid="4149947"
     >
                 <span class="intro">
         <span>
-                  <span class="top">10%</span>
+                  <span class="top">69%</span>
           <span>Off</span>
                 </span>
       </span>
         <div class="details">
       <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                                  <span class="numUsed">5 Used Today</span>
+                  <span class="badge discount">SALES &amp; OFFERS</span>
+                                  <span class="numUsed">3 Used Today</span>
               </div>
-              <span class="title cpbtn" title="Extra 10% Off Office Furniture" >Extra 10% Off Office Furniture</span>
+              <span class="title cpbtn" title="Semi-Annual Sale: Up to 69% Off" >Semi-Annual Sale: Up to 69% Off</span>
             <div class="desc">
-                                                            <span class="extra" title="Browse the Lenovo Center Furniture deals and use this promo code for a 10% discount off standing desks, gaming chairs, storage, and office furniture with this limited time deal. Item exclusions apply.">Browse the Lenovo Center Furniture deals and use this promo code for a 10% discount off standing desks, gaming chairs, storage, and office furniture with this limited time deal. Item exclusions apply.</span>
+                                                            <span class="extra" title="Save with up to a 69% discount on clearance PCs, electronics, and more when you click this Lenovo coupon. Prices as marked with these featured doorbuster deals.">Save with up to a 69% discount on clearance PCs, electronics, and more when you click this Lenovo coupon. Prices as marked with these featured doorbuster deals.</span>
               </div>
       <div class="detailsBottom">
-                              <span class="expiredDateLabel" data-expiredate="1595644515">Expired 07/24/20</span>
+                              <span class="expiredDateLabel" data-expiredate="1603079940">Expired 10/18/20</span>
                                 </div>
     </div>
   
     </a>
   
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="3740753" data-storeid="590" data-couponid="3740753">
+  <div class="buttonRight" data-itemtype="coupon" data-itemid="4149947" data-storeid="590" data-couponid="4149947">
           <a
         data-product-forum="Coupon"
-        data-product-products="c3740753"
+        data-product-products="c4149947"
         data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=3740753&amp;prop=sp-37"
-        data-href2="?couponid=3740753"
-                  data-clipboard-text="OFFICEDEPOTXTRA10"
+        data-outclick-typeofoutclick="Discount Buy Now Link"
+        href="https://slickdeals.net/?cno=4149947&amp;prop=sp-24"
+        data-href2="?couponid=4149947"
                 data-storeid="590"
-        data-couponid="3740753"
-        class="cpbtn button large code cornerPeel success  overLength "
-      >Get Coupon Code</a>
+        data-couponid="4149947"
+        class="cpbtn button large discount success "
+      >Get Offer</a>
     
       </div>
 </div>
@@ -3611,54 +2549,54 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals code expired belowOrder" 
-  data-bestOrder="37" 
-  data-timestamp="1599504931" >
+  data-bestOrder="24" 
+  data-timestamp="1602810652" >
         
   
       <a
-      href="https://slickdeals.net/?cno=4046621&amp;prop=sp-38"
+      href="https://slickdeals.net/?cno=4185056&amp;prop=sp-25"
       data-product-forum="Coupon"
-      data-product-products="c4046621"
+      data-product-products="c4185056"
       data-product-exitWebsite="lenovo.com"
       data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=4046621"
-      title="15% Off Most Legion Gaming Laptops and Desktops"
-              data-clipboard-text="SAVE15NOW"
-      data-storeid="590" data-couponid="4046621"
+      data-href2="?couponid=4185056"
+      title="Extra $35 Off Select PC Orders $649.99+"
+              data-clipboard-text="WEEKENDFUN"
+      data-storeid="590" data-couponid="4185056"
     >
                 <span class="intro">
         <span>
-                  <span class="top">15%</span>
+                  <span class="top">$35</span>
           <span>Off</span>
                 </span>
       </span>
         <div class="details">
       <div class="detailsTop">
                   <span class="badge coupon">COUPON</span>
-                                  <span class="numUsed">4 Used Today</span>
+                                  <span class="numUsed">3 Used Today</span>
               </div>
-              <span class="title cpbtn" title="15% Off Most Legion Gaming Laptops and Desktops" >15% Off Most Legion Gaming Laptops and Desktops</span>
+              <span class="title cpbtn" title="Extra $35 Off Select PC Orders $649.99+" >Extra $35 Off Select PC Orders $649.99+</span>
             <div class="desc">
-                                                            <span class="extra" title="Get a 15% discount on most Legion series PC purchases when you apply this Lenovo discount code to your cart.">Get a 15% discount on most Legion series PC purchases when you apply this Lenovo discount code to your cart.</span>
+                                                            <span class="extra" title="Receive up to an additional $35 discount off IdeaPad, IdeaCentre, Legion, and Yoga PCs when you use this Lenovo coupon. Item exclusions apply with this offer.">Receive up to an additional $35 discount off IdeaPad, IdeaCentre, Legion, and Yoga PCs when you use this Lenovo coupon. Item exclusions apply with this offer.</span>
               </div>
       <div class="detailsBottom">
-                              <span class="expiredDateLabel" data-expiredate="1601524740">Expired 09/30/20</span>
+                              <span class="expiredDateLabel" data-expiredate="1603080000">Expired 10/18/20</span>
                                 </div>
     </div>
   
     </a>
   
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="4046621" data-storeid="590" data-couponid="4046621">
+  <div class="buttonRight" data-itemtype="coupon" data-itemid="4185056" data-storeid="590" data-couponid="4185056">
           <a
         data-product-forum="Coupon"
-        data-product-products="c4046621"
+        data-product-products="c4185056"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=4046621&amp;prop=sp-38"
-        data-href2="?couponid=4046621"
-                  data-clipboard-text="SAVE15NOW"
+        href="https://slickdeals.net/?cno=4185056&amp;prop=sp-25"
+        data-href2="?couponid=4185056"
+                  data-clipboard-text="WEEKENDFUN"
                 data-storeid="590"
-        data-couponid="4046621"
+        data-couponid="4185056"
         class="cpbtn button large code cornerPeel success "
       >Get Coupon Code</a>
     
@@ -3670,24 +2608,24 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <div 
   class="item showDeals code expired belowOrder" 
-  data-bestOrder="38" 
-  data-timestamp="1593114769" >
+  data-bestOrder="25" 
+  data-timestamp="1602810608" >
         
   
       <a
-      href="https://slickdeals.net/?cno=3673589&amp;prop=sp-39"
+      href="https://slickdeals.net/?cno=4185053&amp;prop=sp-26"
       data-product-forum="Coupon"
-      data-product-products="c3673589"
+      data-product-products="c4185053"
       data-product-exitWebsite="lenovo.com"
       data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=3673589"
-      title="40% Off Select ThinkPad Laptops and PCs + Free Shipping"
-              data-clipboard-text="THINKJULY"
-      data-storeid="590" data-couponid="3673589"
+      data-href2="?couponid=4185053"
+      title="Extra $60 Off Select PC Orders $949.99+"
+              data-clipboard-text="WEEKENDFUN"
+      data-storeid="590" data-couponid="4185053"
     >
                 <span class="intro">
         <span>
-                  <span class="top">40%</span>
+                  <span class="top">$60</span>
           <span>Off</span>
                 </span>
       </span>
@@ -3696,87 +2634,28 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
                   <span class="badge coupon">COUPON</span>
                                   <span class="numUsed">4 Used Today</span>
               </div>
-              <span class="title cpbtn" title="40% Off Select ThinkPad Laptops and PCs + Free Shipping" >40% Off Select ThinkPad Laptops and PCs + Free Shipping</span>
+              <span class="title cpbtn" title="Extra $60 Off Select PC Orders $949.99+" >Extra $60 Off Select PC Orders $949.99+</span>
             <div class="desc">
-                                                            <span class="extra" title="Browse this limited time sale and apply this Lenovo coupon code to save with a 40% discount on X, T, and P Series ThinkPad Laptops, ThinkBooks and ThinkStation Desktops with this special offer. Supplies limited with this sale.">Browse this limited time sale and apply this Lenovo coupon code to save with a 40% discount on X, T, and P Series ThinkPad Laptops, ThinkBooks and ThinkStation Desktops with this special offer. Supplies limited with this sale.</span>
+                                                            <span class="extra" title="Save with up to a $60 discount off select IdeaPad, IdeaCentre, Legion, and Yoga PCs when you apply this Lenovo promo code during checkout.">Save with up to a $60 discount off select IdeaPad, IdeaCentre, Legion, and Yoga PCs when you apply this Lenovo promo code during checkout.</span>
               </div>
       <div class="detailsBottom">
-                              <span class="expiredDateLabel" data-expiredate="1596254340">Expired 07/31/20</span>
+                              <span class="expiredDateLabel" data-expiredate="1603080000">Expired 10/18/20</span>
                                 </div>
     </div>
   
     </a>
   
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="3673589" data-storeid="590" data-couponid="3673589">
+  <div class="buttonRight" data-itemtype="coupon" data-itemid="4185053" data-storeid="590" data-couponid="4185053">
           <a
         data-product-forum="Coupon"
-        data-product-products="c3673589"
+        data-product-products="c4185053"
         data-product-exitWebsite="lenovo.com"
         data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=3673589&amp;prop=sp-39"
-        data-href2="?couponid=3673589"
-                  data-clipboard-text="THINKJULY"
+        href="https://slickdeals.net/?cno=4185053&amp;prop=sp-26"
+        data-href2="?couponid=4185053"
+                  data-clipboard-text="WEEKENDFUN"
                 data-storeid="590"
-        data-couponid="3673589"
-        class="cpbtn button large code cornerPeel success "
-      >Get Coupon Code</a>
-    
-      </div>
-</div>
-
-
-                          
-
-<div 
-  class="item showDeals code expired belowOrder" 
-  data-bestOrder="39" 
-  data-timestamp="1596065614" >
-        
-  
-      <a
-      href="https://slickdeals.net/?cno=3906320&amp;prop=sp-40"
-      data-product-forum="Coupon"
-      data-product-products="c3906320"
-      data-product-exitWebsite="lenovo.com"
-      data-outclick-typeofoutclick="Code Tile Link"
-      data-href2="?couponid=3906320"
-      title="40% Off Select ThinkPad Laptops and PCs + Free Shipping"
-              data-clipboard-text="THINKAUG"
-      data-storeid="590" data-couponid="3906320"
-    >
-                <span class="intro">
-        <span>
-                  <span class="top">40%</span>
-          <span>Off</span>
-                </span>
-      </span>
-        <div class="details">
-      <div class="detailsTop">
-                  <span class="badge coupon">COUPON</span>
-                                  <span class="numUsed">4 Used Today</span>
-              </div>
-              <span class="title cpbtn" title="40% Off Select ThinkPad Laptops and PCs + Free Shipping" >40% Off Select ThinkPad Laptops and PCs + Free Shipping</span>
-            <div class="desc">
-                                                            <span class="extra" title="Browse this limited time sale and apply this Lenovo coupon code to save with a 40% discount on X, T, and P Series ThinkPad Laptops, ThinkBooks and ThinkStation Desktops with this special offer. Supplies limited with this sale.">Browse this limited time sale and apply this Lenovo coupon code to save with a 40% discount on X, T, and P Series ThinkPad Laptops, ThinkBooks and ThinkStation Desktops with this special offer. Supplies limited with this sale.</span>
-              </div>
-      <div class="detailsBottom">
-                              <span class="expiredDateLabel" data-expiredate="1598932740">Expired 08/31/20</span>
-                                </div>
-    </div>
-  
-    </a>
-  
-  <div class="buttonRight" data-itemtype="coupon" data-itemid="3906320" data-storeid="590" data-couponid="3906320">
-          <a
-        data-product-forum="Coupon"
-        data-product-products="c3906320"
-        data-product-exitWebsite="lenovo.com"
-        data-outclick-typeofoutclick="Code Buy Now Link"
-        href="https://slickdeals.net/?cno=3906320&amp;prop=sp-40"
-        data-href2="?couponid=3906320"
-                  data-clipboard-text="THINKAUG"
-                data-storeid="590"
-        data-couponid="3906320"
+        data-couponid="4185053"
         class="cpbtn button large code cornerPeel success "
       >Get Coupon Code</a>
     
@@ -3812,7 +2691,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/big-dogs/" id="bp8087-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp8087-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/big-dogs/" id="bp7266-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp7266-Button"} });</script>        </span>
 
       </li>
       
@@ -3837,7 +2716,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/sierra/" id="bp9422-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9422-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/sierra/" id="bp2390-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp2390-Button"} });</script>        </span>
 
       </li>
       
@@ -3862,7 +2741,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/boscovs/" id="bp4976-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp4976-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/boscovs/" id="bp3403-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp3403-Button"} });</script>        </span>
 
       </li>
       
@@ -3887,7 +2766,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/perry-ellis/" id="bp4052-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp4052-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/perry-ellis/" id="bp9244-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9244-Button"} });</script>        </span>
 
       </li>
       
@@ -3901,7 +2780,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
             <span class="badge coupon">Coupon</span>
             <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
           </div>
-          <h4 class="title">10% Off Sitewide</h4>
+          <h4 class="title">$10 Off Orders $50+</h4>
           <p class="description extra">
             View 32 ways to save using these
             <span class="blueprint">
@@ -3912,7 +2791,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/gnc/" id="bp6234-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp6234-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/gnc/" id="bp9656-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9656-Button"} });</script>        </span>
 
       </li>
       
@@ -3939,7 +2818,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/oakley/" id="bp1797-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp1797-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/oakley/" id="bp6965-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp6965-Button"} });</script>        </span>
 
       </li>
       
@@ -3964,7 +2843,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/turbotax/" id="bp2078-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp2078-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/turbotax/" id="bp3808-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp3808-Button"} });</script>        </span>
 
       </li>
       
@@ -3989,7 +2868,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/extended-stay-america/" id="bp9462-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9462-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/extended-stay-america/" id="bp4998-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp4998-Button"} });</script>        </span>
 
       </li>
       
@@ -4014,7 +2893,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/michaels/" id="bp4959-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp4959-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/michaels/" id="bp3519-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp3519-Button"} });</script>        </span>
 
       </li>
       
@@ -4039,7 +2918,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/pinemeadow-golf/" id="bp8411-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp8411-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/pinemeadow-golf/" id="bp1659-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp1659-Button"} });</script>        </span>
 
       </li>
       
@@ -4064,7 +2943,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/hr-block/" id="bp7010-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp7010-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/hr-block/" id="bp7672-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp7672-Button"} });</script>        </span>
 
       </li>
       
@@ -4078,7 +2957,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
             <span class="badge coupon">Coupon</span>
             <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
           </div>
-          <h4 class="title">25% Off Sitewide</h4>
+          <h4 class="title">Gift Card Starting $5</h4>
           <p class="description extra">
             View 71 ways to save using these
             <span class="blueprint">
@@ -4089,7 +2968,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/lovelyskin/" id="bp9253-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9253-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/lovelyskin/" id="bp7146-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp7146-Button"} });</script>        </span>
 
       </li>
       
@@ -4114,7 +2993,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/forever-21/" id="bp3311-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp3311-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/forever-21/" id="bp6914-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp6914-Button"} });</script>        </span>
 
       </li>
       
@@ -4128,9 +3007,9 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
             <span class="badge coupon">Coupon</span>
             <span class="verified"><span class="icon icon-shield-check"></span>Coupon Verified!</span>
           </div>
-          <h4 class="title">Extra 40% Off Sale items</h4>
+          <h4 class="title">20% Off Any Order</h4>
           <p class="description extra">
-            View 60 ways to save using these
+            View 59 ways to save using these
             <span class="blueprint">
               
   <a href="/coupons/calvinklein/" class="bp-p-storeLink bp-c-link">Calvin Klein coupons</a>.
@@ -4139,7 +3018,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/calvinklein/" id="bp5741-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp5741-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/calvinklein/" id="bp8804-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp8804-Button"} });</script>        </span>
 
       </li>
       
@@ -4155,7 +3034,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           </div>
           <h4 class="title">$25 Off Ordes $125+</h4>
           <p class="description extra">
-            View 177 ways to save using these
+            View 166 ways to save using these
             <span class="blueprint">
               
   <a href="/coupons/zaful/" class="bp-p-storeLink bp-c-link">Zaful coupons</a>.
@@ -4164,7 +3043,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
         </div>
         <span class="blueprint">
           
-  <button data-no-linkable="data-no-linkable" data-href="/coupons/zaful/" id="bp3141-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp3141-Button"} });</script>        </span>
+  <button data-no-linkable="data-no-linkable" data-href="/coupons/zaful/" id="bp8206-Button" class="callToAction success bp-p-storeLink bp-c-linkableButton  bp-c-button bp-c-button--link">See Coupon</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp8206-Button"} });</script>        </span>
 
       </li>
       
@@ -4210,7 +3089,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           <a href="/coupons/office-depot/">
                           <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/slickdeals/storelogo/100x100/219.png?8406?8406" width="100" height="100" data-lazy-img="nonCritical">
                         <strong>Office Depot and OfficeMax</strong>
-            <div>32 Coupons</div>
+            <div>31 Coupons</div>
             <span class="icon stars40"></span>
           </a>
         </li>
@@ -4218,7 +3097,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           <a href="/coupons/dell-epp/">
                           <img src="https://static.slickdealscdn.com/images/slickdeals/blank.gif" data-original="https://static.slickdealscdn.com/images/slickdeals/storelogo/100x100/692.png?8406?8406" width="100" height="100" data-lazy-img="nonCritical">
                         <strong>Dell EPP</strong>
-            <div>11 Coupons</div>
+            <div>8 Coupons</div>
             <span class="icon stars50"></span>
           </a>
         </li>
@@ -4318,15 +3197,15 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
               </div>
                       
                       <div class="couponsAvailable">
-              <div class="num">39</div>
+              <div class="num">25</div>
               <div>OFFERS AVAILABLE</div>
             </div>
           
                       <div class="verifiedUsed section">
               <div>
-                <span class="icon icon-shield-check"></span>32 Verified Coupons
+                <span class="icon icon-shield-check"></span>19 Verified Coupons
               </div>
-              <div>2887 Used Today</div>
+              <div>2682 Used Today</div>
             </div>
           
                       <div id="sortWrapper" class="section sorting ">
@@ -4384,12 +3263,12 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
   <tbody>
           <tr>
         <td>Total Offers</td>
-        <td>39</td>
+        <td>25</td>
       </tr>
     
           <tr>
         <td>Coupon Codes</td>
-        <td>24</td>
+        <td>11</td>
       </tr>
     
           <tr>
@@ -4611,7 +3490,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp3322-Collapsible',
+                id: 'bp6345-Collapsible',
                 expanded: '',
             });
         </script>
@@ -4622,7 +3501,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp3322-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp6345-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">Follow Us</h3>
@@ -4647,7 +3526,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp4700-Collapsible',
+                id: 'bp8835-Collapsible',
                 expanded: '',
             });
         </script>
@@ -4658,7 +3537,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp4700-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp8835-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">About</h3>
@@ -4687,7 +3566,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp3027-Collapsible',
+                id: 'bp1305-Collapsible',
                 expanded: '',
             });
         </script>
@@ -4698,7 +3577,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp3027-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp1305-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">More</h3>
@@ -4723,7 +3602,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp8654-Collapsible',
+                id: 'bp7817-Collapsible',
                 expanded: '',
             });
         </script>
@@ -4734,7 +3613,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp8654-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp7817-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">Legal</h3>
@@ -4796,10 +3675,10 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 <!-- Polyfill 2 - need more pollyfills -->
 <script nomodule src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-    <link href="/build/css/store.3b17c73f.css" rel="stylesheet" integrity="sha512-i1PTUML1olb+HbodnBEq5KFOenlTweuewlqD1peC6JDih5qlKc6DlCzqZVXjfZVVGhpOVKzPDqHoolgeUtwGJw==">
+    <link href="/build/css/store.c5a9d7c0.css" rel="stylesheet" integrity="sha512-5jGfeXPzgkAHiRAMGt69o3Ij0nVA7MrZZe5JMFzg12FrCskHXwgtkaVYm57e5zhxKwz4BRqlkTlsSxB7U69z1A==">
     <script>
   (async () => {
-          await import('/build/js/store.es.335a950a.js');
+          await import('/build/js/store.es.00e961ad.js');
       })();
   window.supportsDynamicImport = true;
 </script>
@@ -4809,7 +3688,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     const systemJsLoaderTag = document.createElement('script');
     systemJsLoaderTag.src = 'https://cdnjs.cloudflare.com/ajax/libs/systemjs/6.3.2/s.min.js';
     systemJsLoaderTag.addEventListener('load', function () {
-              System.import('/build/js/store.iife.368cb059.js');
+              System.import('/build/js/store.iife.d57849d4.js');
           });
     document.head.appendChild(systemJsLoaderTag);
   }
@@ -4837,21 +3716,21 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           </script>
 
         <script>
-                        window.bpHydration.push({ 'LinkableButton': {"id":"bp8087-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp9422-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp4976-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp4052-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp6234-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp1797-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp2078-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp9462-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp4959-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp8411-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp7010-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp9253-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp3311-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp5741-Button"} });
-                                window.bpHydration.push({ 'LinkableButton': {"id":"bp3141-Button"} });
+                        window.bpHydration.push({ 'LinkableButton': {"id":"bp7266-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp2390-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp3403-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp9244-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp9656-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp6965-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp3808-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp4998-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp3519-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp1659-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp7672-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp7146-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp6914-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp8804-Button"} });
+                                window.bpHydration.push({ 'LinkableButton': {"id":"bp8206-Button"} });
             </script>
     
                   <style>
@@ -4912,7 +3791,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
                         title: decodeURI(title),
                         copy: decodeURI(copy),
                         ctaText: decodeURI(ctaText),
-                        requireCaptcha: true,
+                        requireCaptcha: false,
                         googleRegistrationVersion: "",
                     });
                 });
@@ -4938,7 +3817,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     window.sdLoadQueue.push([function() {
         var elem = document.createElement('img');
 
-        elem.src = "//dpm.demdex.net/ibs:dpid=375988&dpuuid=5a7f7dde116c11eba8db2e969d48dfac";
+        elem.src = "//dpm.demdex.net/ibs:dpid=375988&dpuuid=bd7af654120511eb863b560a8f91e575";
         document.body.appendChild(elem);
     }, 'analytics']);
 </script>
@@ -4973,11 +3852,11 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       if (0)
       {
         window.heap.resetIdentity();
-        window.heap.identify('5a7f7dde116c11eba8db2e969d48dfac', 'Device');
+        window.heap.identify('bd7af654120511eb863b560a8f91e575', 'Device');
         document.cookie = "doLogOut=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       
         // For QA only
-        console.log('Heap: just logged out. Device is ' + '5a7f7dde116c11eba8db2e969d48dfac');
+        console.log('Heap: just logged out. Device is ' + 'bd7af654120511eb863b560a8f91e575');
       }
       else
       {
@@ -4993,10 +3872,10 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           }
           else
           {
-              window.heap.identify('5a7f7dde116c11eba8db2e969d48dfac', 'Device');
+              window.heap.identify('bd7af654120511eb863b560a8f91e575', 'Device');
               
               // For QA only
-              console.log('Heap: not logged in. Device is ' + '5a7f7dde116c11eba8db2e969d48dfac');
+              console.log('Heap: not logged in. Device is ' + 'bd7af654120511eb863b560a8f91e575');
           }
       }
     }, 'analytics']);

@@ -1,11 +1,11 @@
 HTTP/1.1 200 OK
-Date: Mon, 19 Oct 2020 08:01:59 GMT
+Date: Mon, 19 Oct 2020 13:24:01 GMT
 Server: Apache
 P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM", CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
 Expires: Wed, 17 Aug 2005 00:00:00 GMT
 Pragma: no-cache
 Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-cache
-Last-Modified: Mon, 19 Oct 2020 07:58:22 GMT
+Last-Modified: Mon, 19 Oct 2020 13:12:07 GMT
 ETag: "83d5b2af9541cc5f430888d44e7f38e9"
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
@@ -51,7 +51,7 @@ Content-Type: text/html; charset=utf-8
 		}	
 	
 	</style>
-	<script type="application/json" class="joomla-script-options new">{"csrf.token":"e89968f1d04f691ddd803eb21eb5b5c0","system.paths":{"root":"","base":""}}</script>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"d93c40772804b7dfe94ac2c0f3f4f242","system.paths":{"root":"","base":""}}</script>
 	<script src="/media/system/js/mootools-core.js?a36c79ff249c9b948560f07848ed679e"></script>
 	<script src="/media/system/js/core.js?a36c79ff249c9b948560f07848ed679e"></script>
 	<script src="/media/system/js/mootools-more.js?a36c79ff249c9b948560f07848ed679e"></script>
@@ -132,7 +132,7 @@ if (typeof RokBoxSettings == 'undefined') RokBoxSettings = {pc: '100'};
              <div class="g-content">
                                     <div class="platform-content"><div class="moduletable ">
 						
-    <span class="mod_datetime">New York: <time datetime="2020-10-19T03:58:21-04:00">Oct 19, 2020 - 
+    <span class="mod_datetime">New York: <time datetime="2020-10-19T09:12:06-04:00">Oct 19, 2020 - 
 		<span id="mod_datetime_custom_time_142"></span>
 		<script type="text/javascript">
 			<!--
@@ -183,7 +183,7 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
              <div class="g-content">
                                     <div class="platform-content"><div class="moduletable ">
 						
-    <span class="mod_datetime">London: <time datetime="2020-10-19T08:58:21+01:00">Oct 19, 2020 - 
+    <span class="mod_datetime">London: <time datetime="2020-10-19T14:12:06+01:00">Oct 19, 2020 - 
 		<span id="mod_datetime_custom_time_143"></span>
 		<script type="text/javascript">
 			<!--
@@ -234,7 +234,7 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
              <div class="g-content">
                                     <div class="platform-content"><div class="moduletable ">
 						
-    <span class="mod_datetime">Tokyo: <time datetime="2020-10-19T16:58:21+09:00">Oct 19, 2020 - 
+    <span class="mod_datetime">Tokyo: <time datetime="2020-10-19T22:12:06+09:00">Oct 19, 2020 - 
 		<span id="mod_datetime_custom_time_144"></span>
 		<script type="text/javascript">
 			<!--
@@ -289,11 +289,11 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=68" target="_blank" rel="noopener noreferrer"
-							title="Paradigm Crafted in Canada Desktop (20180728)">
+							href="/index.php?option=com_banners&amp;task=click&amp;id=69" target="_blank" rel="noopener noreferrer"
+							title="Anthem Future of Audio Desktop (20180728)">
 							<img
-								src="https://www.soundstagenetwork.com/images/banners/201808_paradigmgroup/Paradigm-Crafted-in-Canada-1200x200-07-18.jpg"
-								alt="Paradigm Crafted in Canada"
+								src="https://www.soundstagenetwork.com/images/banners/201808_paradigmgroup/Anthem-Future-of-Audio-1200x200-07-18.jpg"
+								alt="Anthem Future of Audio"
 																							/>
 						</a>
 																<div class="clr"></div>
@@ -1087,10 +1087,10 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=90" target="_blank" rel="noopener noreferrer"
-							title="Desktop Lumin U1 Silver (201906)">
+							href="/index.php?option=com_banners&amp;task=click&amp;id=89" target="_blank" rel="noopener noreferrer"
+							title="Desktop Lumin U1 Black (201906)">
 							<img
-								src="https://www.soundstagenetwork.com/images/banners/201906_lumin/1200x200_lumin_u1s.jpg"
+								src="https://www.soundstagenetwork.com/images/banners/201906_lumin/1200x200_lumin_u1b.jpg"
 								alt="Lumin"
 																							/>
 						</a>
@@ -1814,10 +1814,10 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=120" target="_blank" rel="noopener noreferrer"
-							title="767x500 MSB (202007) 5">
+							href="/index.php?option=com_banners&amp;task=click&amp;id=119" target="_blank" rel="noopener noreferrer"
+							title="767x500 MSB (202007) 4">
 							<img
-								src="https://www.soundstagenetwork.com/images/banners/202007_msb/Soundstage-Mobile-adverts5.gif"
+								src="https://www.soundstagenetwork.com/images/banners/202007_msb/Soundstage-Mobile-adverts4.gif"
 								alt="MSB Technology"
 																							/>
 						</a>
@@ -1883,11 +1883,11 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=74" target="_blank" rel="noopener noreferrer"
-							title="767x500 Vivid Audio Kaya (January 2019)">
+							href="/index.php?option=com_banners&amp;task=click&amp;id=63" target="_blank" rel="noopener noreferrer"
+							title="Mobile JL Audio (November 2017)">
 							<img
-								src="https://www.soundstagenetwork.com/images/banners/201901_vividaudio/JoA2775-VA_Sound-Stage-767x500_KAYA_banner.jpg"
-								alt="Vivid Audio Kaya"
+								src="https://www.soundstagenetwork.com/images/banners/201711_jlaudio/JLA_Home_IWS_8_767x500_Mobile.jpg"
+								alt="JL Audio"
 																							/>
 						</a>
 																<div class="clr"></div>
@@ -1978,7 +1978,7 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
         
     <script src="/media/com_ingallery/js/masonry.pkgd.min.js?v=1.208.1"></script><script src="/media/com_ingallery/js/frontend.js?v=1.208.1"></script>
-<div class="rstboxes" data-t="e89968f1d04f691ddd803eb21eb5b5c0" data-baseurl="https://www.soundstagenetwork.com/" data-site="26add730cbb2d91c661a8f97fd6529ad" data-debug="0" >
+<div class="rstboxes" data-t="d93c40772804b7dfe94ac2c0f3f4f242" data-baseurl="https://www.soundstagenetwork.com/" data-site="26add730cbb2d91c661a8f97fd6529ad" data-debug="0" >
 
 	
 	
