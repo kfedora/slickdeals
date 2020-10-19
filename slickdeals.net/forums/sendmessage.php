@@ -1,24 +1,32 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
-Content-Type: text/html
-Content-Length: 96
-Date: Mon, 19 Oct 2020 02:06:38 GMT
+HTTP/1.1 200 OK
+X-Powered-By: PHP/7.2.31
+Expires: 0
+Cache-Control: private, post-check=0, pre-check=0, max-age=0, no-cache
+Pragma: no-cache
+Content-Type: text/html; charset=UTF-8
+X-UA-Compatible: IE=edge
+Referrer-Policy: strict-origin-when-cross-origin
+Server: Apache
+X-Akamai-Transformed: 9 29385 0 pmb=mRUM,2
+Vary: Accept-Encoding
+Date: Mon, 19 Oct 2020 00:12:10 GMT
+Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
-Set-Cookie: auuid=5a7eefa4116c11eba8db2e969d48dfac; expires=Mon, 18-Oct-2021 18:06:54 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: bblastactivity=1603044414; expires=Mon, 18-Oct-2021 18:06:54 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net; secure
-Set-Cookie: sd_a=1603044414|5a7f79ba116c11eba8db2e969d48dfac-5a7f7dde116c11eba8db2e969d48dfac|0|; expires=Mon, 18-Oct-2021 18:06:54 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603044263%7D&count=1&new=1&abt_new=1603044263&abt_uuid=496aa25f33ee463383a0c926657b6aba&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 18:06:54 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603044263%7D&count=1&new=1&abt_new=1603044263&abt_uuid=496aa25f33ee463383a0c926657b6aba&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 18:06:54 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
-Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603044263%7D&count=1&new=1&abt_new=1603044263&abt_uuid=496aa25f33ee463383a0c926657b6aba&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Mon, 18-Oct-2021 18:06:54 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: auuid=692b802a119f11ebbd2da2e14e098be5; expires=Tue, 19-Oct-2021 00:12:10 GMT; Max-Age=31536000; path=/; domain=.slickdeals.net
+Set-Cookie: bblastactivity=1603066329; expires=Tue, 19-Oct-2021 00:12:09 GMT; Max-Age=31535999; path=/; domain=.slickdeals.net; secure
+Set-Cookie: sd_a=1603066329|692c07a2119f11ebbd2da2e14e098be5-692c09f0119f11ebbd2da2e14e098be5|0|; expires=Tue, 19-Oct-2021 00:12:09 GMT; Max-Age=31535999; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603066192%7D&count=1&new=1&abt_new=1603066192&abt_uuid=69fae87493e54f428e834e1f101c5d54&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Tue, 19-Oct-2021 00:12:09 GMT; Max-Age=31535999; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603066192%7D&count=1&new=1&abt_new=1603066192&abt_uuid=69fae87493e54f428e834e1f101c5d54&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Tue, 19-Oct-2021 00:12:09 GMT; Max-Age=31535999; path=/; domain=.slickdeals.net
+Set-Cookie: sd_p=nps_tracking=%7B%22last_reset%22%3A1603066192%7D&count=1&new=1&abt_new=1603066192&abt_uuid=69fae87493e54f428e834e1f101c5d54&sticky=132-263-130-34-54-60&sd_modern_opt_in=3&sd_modern_opt_out=0; expires=Tue, 19-Oct-2021 00:12:09 GMT; Max-Age=31535999; path=/; domain=.slickdeals.net
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Set-Cookie: fmessage=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=33
-Server-Timing: origin; dur=15007
+Server-Timing: edge; dur=31
+Server-Timing: origin; dur=110
 Strict-Transport-Security: max-age=86400
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -33,7 +41,7 @@ Strict-Transport-Security: max-age=86400
  {
  window.SD = window.SD || {};
  window.SD.ABTest = {
- data: {"logged_in":false,"deviceType":"desktop","scriptIdent":"sendmessage","Test: Sticky right rail - 30578":"1","Test: Mobile web fp v3 - 29127":"0","Test: Deal Details v7 - 27993":"0","Test: Add In Line Top Coupons Module on FP - 27589":"0","Test: Post a Deal":"0","Test: Category Redesign":"1","Test: Display % off on the Frontpage":"0","Test: SEM LP Redesign Test":"1","Test: Mobile 3 AB Test":"2","Test: Store Page Test":"1","Test: Deal Editors Fire Deal Marker":"0","Test: Redesign of FP and Deal Details":"1","Test: Rolling 24 Hour Time Frame for Deals in Top Section on FP":"1","Test: Search Results Layout and Store Logos Test":"1","view":"redesign","storeTest":null,"mobile":false,"forumid":null},
+ data: {"logged_in":false,"deviceType":"desktop","scriptIdent":"sendmessage","Test: Sticky right rail - 30578":"0","Test: Mobile web fp v3 - 29127":"0","Test: Deal Details v7 - 27993":"2","Test: Add In Line Top Coupons Module on FP - 27589":"0","Test: Post a Deal":"0","Test: Category Redesign":"1","Test: Display % off on the Frontpage":"2","Test: SEM LP Redesign Test":"1","Test: Mobile 3 AB Test":"2","Test: Store Page Test":"1","Test: Deal Editors Fire Deal Marker":"0","Test: Redesign of FP and Deal Details":"1","Test: Rolling 24 Hour Time Frame for Deals in Top Section on FP":"1","Test: Search Results Layout and Store Logos Test":"1","view":"redesign","storeTest":null,"mobile":false,"forumid":null},
  extendedData: {},
  _rSeed: 0,
  execute: function(groupName, eVar, tests)
@@ -213,7 +221,7 @@ Strict-Transport-Security: max-age=86400
  })();
 </script>
   <script>
-    var dataLayer = {"visitor":{"ipAddress":"20.44.106.43","isMachineIp":true,"isForeignIp":false,"sectionLayout":"UNKNOWN_Redesign","pbSectionLayout":"UNKNOWN_Redesign","asEnabled":false,"confiant":1,"noads":0,"immediateSource":"","layout":"Redesign","uncookiedUser":false,"userId":0,"username":"Unregistered","isLoggedIn":"No","status":"Anonymous","verified":"No","daysRegistered":null,"emailHashes":"","loyalty":"no","abTestInfo":[{"testKey":"65810-gale-desktop-item-to-item.yaml","variantName":"Gale (yield)","testName":"Gale (Desktop) Item-to-Item Pers V2"}],"gaOptimizeInfo":"","appReferrer":null},"reporting":{"clientID":"5a7f7dde116c11eba8db2e969d48dfac","sessionID":"5a7f79ba116c11eba8db2e969d48dfac"},"traffic":{"trueReferrer":null,"subSection1":null,"subSection2":null,"subSection3":null,"subSection4":null,"corporateDomain":"slickdeals.net","deviceSegment":"desktop","clientHeaders":[]},"page":{"rml":false,"pageName":"UNKNOWN:\/forums\/sendmessage.php","section":"UNKNOWN","type":null,"analyticsTitle":null,"template":null,"publishedDate":null,"pageGroup":null,"layout":"Redesign","nps":null},"btt":{"AbTestingSegment":null},"microSite":"Slickdeals","frontpage":{"layout":null},"build":"20201016-155443-PDT-89837ef1296","abTestEventData":null,"gdpr":{"isEu":false,"showPrompt":false},"cdp":{"blueshift_id":"13779bc333ac34fac08a37c930c61e97"}};
+    var dataLayer = {"visitor":{"ipAddress":"52.156.112.142","isMachineIp":true,"isForeignIp":true,"sectionLayout":"UNKNOWN_Redesign","pbSectionLayout":"UNKNOWN_Redesign","asEnabled":false,"confiant":1,"noads":0,"immediateSource":"","layout":"Redesign","uncookiedUser":false,"userId":0,"username":"Unregistered","isLoggedIn":"No","status":"Anonymous","verified":"No","daysRegistered":null,"emailHashes":"","loyalty":"no","abTestInfo":[{"testKey":"65810-gale-desktop-item-to-item.yaml","variantName":"Gale (beta value 2)","testName":"Gale (Desktop) Item-to-Item Pers V2"}],"gaOptimizeInfo":"","appReferrer":null},"reporting":{"clientID":"692c09f0119f11ebbd2da2e14e098be5","sessionID":"692c07a2119f11ebbd2da2e14e098be5"},"traffic":{"trueReferrer":null,"subSection1":null,"subSection2":null,"subSection3":null,"subSection4":null,"corporateDomain":"slickdeals.net","deviceSegment":"desktop","clientHeaders":[]},"page":{"rml":false,"pageName":"UNKNOWN:\/forums\/sendmessage.php","section":"UNKNOWN","type":null,"analyticsTitle":null,"template":null,"publishedDate":null,"pageGroup":null,"layout":"Redesign","nps":null},"btt":{"AbTestingSegment":null},"microSite":"Slickdeals","frontpage":{"layout":null},"build":"20201016-155443-PDT-89837ef1296","abTestEventData":null,"gdpr":{"isEu":false,"showPrompt":false},"cdp":{"blueshift_id":"13779bc333ac34fac08a37c930c61e97"}};
 
     // Copy the tests from dataLayer.visitor.ABTestInfo to SD.ABTest.data
     if (typeof dataLayer.visitor !== 'undefined'
@@ -283,7 +291,7 @@ Strict-Transport-Security: max-age=86400
   
 <script>
     var googletag = googletag || {};
-    googletag.ebdaBuckets = {"10":6,"%10":6};
+    googletag.ebdaBuckets = {"10":4,"%10":4};
 </script>
 
 <!-- Needed before any of our own code potentially calls ad providers -->
@@ -434,7 +442,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
  var IMGDIR_MISC = "/images/misc";
  var vb_disable_ajax = parseInt("0", 10);
  var cookieDomain = '.slickdeals.net';
- window['\u200BviewSid'] = "b4612d7a116c11ebade39e46292aae400000";
+ window['\u200BviewSid'] = "baffa17e119f11ebae608e1f5ac956b70000";
   sdfacebook.fb_options = 0;
    </script>
 <script>
@@ -522,7 +530,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
  <title>Slickdeals.net - Contact Us</title>
  
   <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
-  <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="MLLW9-NN3V3-ZFFMF-A4D42-H99AC",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"MLLW9-NN3V3-ZFFMF-A4D42-H99AC";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="cqwguk3aayvoex4mqq7a-f-f5107b695-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"949601","ak.ai":parseInt("608755",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"a662eb0","ak.r":38266,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"20.44.106.0","ak.cport":1984,"ak.gh":"96.6.42.222","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1603044414","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==S9U6sVZ5zO2uWdHvpXMyAmVk/sR3uziagbmHt2HltGhV18K6q4O4+m2IzRc9Z3cIeZP2+rJzGZBDvOHSqzsEuDwWiV6nS+1DTsTtly8dLzQO1CbQaSHllUe1u6px+gh1DpxtpQAWLVp66Z+ejAVSJ+g4zK38lLSAAXIbrRn+OYPFCkiTU5d5Z91+XX6ulsdpzWl+N7/jkypsvV6pZcaxbi/SzMnxNYPZL1zXZAj2Yfag4L7kowqozFwX/Q0Cb+edKWGIrMqWiHbshZsvusRgwytDY/00CTJUhu3AlvAQVovXR0Thy53l0qLbhgWP4tWrTdbT0nDXlsBYHLEXPCoVdgZBGb0NDigk9j1htZJBJAwmks7w3YSKKnfDEjjSGFkbFxsN1NiNnW8r1nEXuTGLqjauuu6FRbvtWv4ke0mwvoI=","ak.pv":"47","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+  <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="MLLW9-NN3V3-ZFFMF-A4D42-H99AC",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"MLLW9-NN3V3-ZFFMF-A4D42-H99AC";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="gsohbdqxgyjxux4m3hmq-f-38d2dfd0c-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"949601","ak.ai":parseInt("608755",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"404a45c","ak.r":29234,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"52.156.112.0","ak.cport":1856,"ak.gh":"23.54.19.118","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1603066329","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==MckX9olFzeNe4w1mLUTjRmZmZl4FxcWzdZlOX7woLY3NsME8dzTDI4ISVZHqOCFWehVNgodYObyAXOKACXMXvIICD6H2JswTQYdFHU1wQxZVd5RentZU3qO4wbip7iNYdhyCUCMAqPXpyk0ADvK5olwqJwDpdaLPnuK5waMzRxy1FPFyWdB8MjlZJFixtuHsjtWw+4GZF6nUcKVwcrhpVmjDQ7psftV6OKreGTsb6G94wuE36CFvUlUiFWFQz+0KXMCWoaDkK7GMhRaRb/5PCH0mMKAK0FRo6tIIdfz4DBb5WBi/MrBhotdZRNUq0BxxaPD/K+XXr7D/spZNzFhu2kqdHcud8fw6chCVCOSUXixnR883JEZvcIlUpOA5fm6iSpNK8o5GPyvVj5Z6uY97NyXEvujEcKiFTxXuRhKcDn0=","ak.pv":"47","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
  <body>
        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XP5PSM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
@@ -536,7 +544,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 </script>
 
 <input type="hidden" name="user_is_mod" id="user_is_mod" value="0" />
- <link type="text/css" rel="stylesheet" href="https://slickdeals.net/forums/userstyles.php?uniq=eF7lWdtu20YQ_ZUF0b4UrsM7Jb2lcYIUsBPDDvrSpMJKWkmEKZLgLmUYhv-9Z5akVisGtiM5tZu8EJi9Xw7PnJm9dbhyRs5SqXL0-dXnVzJLp1czwTN5nAv1-dW8qOqVRLnIZyshJV-I43JZOkdOJeaiElXbWX61d9cM7cZ1nc7QGEUqxUiKr0pn5MVu4IZh6IVHzjytxGy8GTavs4xm4VlT9qi5ZkKmi_yEK-6Mbp2JM3KPnBzTHDlr_V2g3PnLY7-zD-IaS-ET2n04jDn3o3kQCBHGQTAIuDsd-nEcJZOYT7hzR6vLF6I6r9IcPTCqvErLC9HMdyGmRTVDA2ekqlocOemqzFJsppaiol03e-lKc3EtM6EUDkXWEzmt0lKlRT42LdHiEoeNQmc0x11gSBS9wZg0uyl5rVSVTmrqvSmu9GKsmmZRcyzi4pEnORPrdCrG6qYUelk4OrnkuB86Vj75hPuTzujvW2cQUom-WS_wIn2kY4Vq3Y2qcd9k5nwlUHCpgK8bVqWLpWIVTzNcReBGyQDt1qJqtuy4sMpCps3GnCHM5pgaAPEsK65xvDj9K1UARo63Var4BKfbjtI1XRWTNKMF6KGB4vGKyyvY_xz_9gsNr9elL6xtNAX0FG3Y8SIviYbJcEibAXCrbnD8E900U5WuaXhaSHMDGg56ujXPajF229rG8izLt6zAsnDAetSmX2RZsWUl1nwDyxpaFv0FZmX4TbasqWV1G2xm7w6wseZty1SOixJHNS7q5t9YVEVdjvN6NdGn6dH_k2DlHVC8KN4FCqptoJzpC2PXYsLmJVsHwIk_9PzkPpwE--FkGzwbnFDhN-PEDWN_GPp0tE-IE39z-4QT2mRz_oQTc4uEE2MRToxFODHWS8WJq3GCP2ODE5_-OItQUG3j5AQOgp0IBSqRbJ0QTPCn6kPa0AlZW3SiaWoPPvkqTvbiEzcI_QCe5lCcmDvt84lBzQ-Jkwj8ZnBCB2HhBNU2Tl7PZuzPnJ2muWCfipK9AUUVuWRnxawGzxQ5e3euwRMNyN0Y8BBVbYOHULAHePQKW791mDPS4AmS7woeA6y-M7JJxrimPsmYur4zMnV9Z2Tq-s7I1PWdEdU95Iw0yYSGZKJBDzuotbFzXkjFOFiGZ_dBg5DynMgIB0MolTCkP_8g93MfrfzgyIDH6WjFD3rI0P5oW86-gURcFNUN60IBCx_kZ7aow99Txz6Z3wkBdjf0Iu3_XraOtanDWKRjbeowFulYmzqMpXX8Rjl1St3o2MdQh9axPgix8zt96kDtjjxJZZnxG_YrK-Zz8jJqKdi7qsgVict7Vcp-bPJ0YAnhY-Ik1qA9BCyPFylG2vbFrO1njLghMWv6PeRnTD8Ci-n3kJ8x_SjooX6P8jMeVreJjmkMS6Ogdic4fnvGTs83XMIozLYgooMSExc3gca3B8b7BzzUcyswDv3hIEjCRHu-QzBibvd7BcYvllA86KYNRnpxMWq_GhcH7PUffXzsatX_HB804TY-Ai-MXSTSDsWH-f8IH3ZAbAc6xiIOMRYFxMYirWpziLGIQ4xFDsdYpFVtDjEWcYixyOEYixyOzSFkPcQhPjkcRKsbRaIjRptDdvMml6qoBDuHc-nDY0ePaP55VvpAtgSxun-wYP2Z6QM5oZY-4p5e9ehkt_Wqzpa8naUAiWTvkHDXQQ0749UVUnX3pGC18t1gZVko5F3TqdwKah9Ixj6dz3GTQeJ5ro7DD_E5ti4xFiXZ7Cjnh0uyeVtJtn6Ug1obNV1wAw1LWRKezxrYtGm3-2LiZ6cYKBQ_ipP_Qer-xSoUExIHvXzsbkB8UWQZXj6YH7L3RV2xT3jrQ7yDxx-Gp0QNG8nSXKfgLgVeTRAS6dybBSKirS2da3HPM1BOMBy6URSHB6fcfmI_ZcLmqAei3aD5UvBqukQcJOtMSXbKb_CypGmnUTenxaKQfXmzg5qnzPLrwOuhV8Pd4Aiplth3vYMD6J8WNXdfoEhSvIUrpNma92a8ot467VuyJg16oobD3uTfoJg11No27wtFXAOpouWO6XAi5hzocu5okmktVbG6FO2jdvv2-FG_N3_ACCCstkyH5Hdf7u7-BYyp27k&amp;pv=b46789f4116c11ebade39e46292aae40&amp;au=5a7eefa4116c11eba8db2e969d48dfac" />
+ <link type="text/css" rel="stylesheet" href="https://slickdeals.net/forums/userstyles.php?uniq=eF7lWV1v2zYU_SsEsb0MWapvWX7rmhYdkLRBUuxl7QzZomwisiiIlIMgyH_fvZRkilaRpHa6dM2LgMtvkYfnnnt5S1NFp3SlVDX9_OrzK1nwxVXG0kIel0x9fpWLullLKGdltmZSpkt2XK0qekRrlrOa1V1n-dXefTNoN2sankFjKFIcRlLpuqJTN3J8J4p8LzmiOa9ZNtsOWzZFgbOkRVv2qLkyJvmyPElVSqe3dE6nzhEtYZojutHfJZTTv1zyO_nArmEp6Rz_PkrylE3iIPFZGOSBN2ETP2Bu7jruIszCgN7h6solq89rXkIPGFVe8eqCtfNdsIWoM2hAp6pu2BHl66rg8DONZDX-dfsvfWnJrmXBlIJNkc1cLmpeKS7KmWkJLS5hs6GQTnM4CxgSit7AmDi7KXmtVM3nDfbeFtd6MVZNu6gcFnHxyJ3M2IYv2EzdVEwvC7ZOrlI4H9zWdP4Jzk_S6d-3dBJgiT5Z13dDvaUzBdW6G1bDeaNZpmsGBZcK8HVDar5cKVKnvICj8J0wnkC7DavbX6YOWJWQvP0xmoDZblMLoLQoxDVsL-z-lRIAI-oOSlU6h93tRumbrsWcF7gAPTSgeLZO5RXY_xz_9gsOr9elD6xrtADoKfxh6oZuHCZxkuDPAHDrfnC4E_00C8U3ODwupD0BDQc93SYtGjZzutrWci3LsyzfsmCD9ahtv9CyIsuKrfkmlpVYFt4CszK4JgNrYVn9D7az9xvYWnnXksuZqGCrZqJp78ayFk01K5v1vNtNuD8xrLwHihtGu0CBahsoZ_rAyDWbk7wiGx9w4iWuF9-HE38_nAzBs8UJFn4zTpwg8pLAw619Qpx429NHnOBPtvuPODGniDgxFuLEWIgTY_3YOIGbscWJhzfOIpQYz2VIKCfgIMgJU0AlkmxihAncVL1JWzpBa0Anmqb24JOv4mQvPnH8wPODSOP1ED4xZzrmE4Oanw0nHvrjEPjN4AQ3wsIJVNs4eZ1l5M-SnPKSkU-iIm-AokQpyZnIGuAZUZJ35xo84QTdjQEPUtUQPIiCPcCjV9j5rcOckQaPH39X8BhgjZ2RTTLGNY1JxtSNnZGpGzsjUzd2RqZu7Iyw7lHOKDAkE05G2IFaGzvnQiqSAsukxX3QQKQ8JzKCSQJKJQjw5n83WvnJkQEep6cVzx8hQ_ujofd5AxJxKeob0ocCFj7Qzwyow9tTxz6Z3wkA7E7ghtr_HeJ3zCX8XjrWpg5joY61qcNYqGNt6jCW1vFb5dQrdaNjH0MdLvodDwix9ztj6oDaHXnCZVWkN-RXIvIcvYxaMfKuFqVCcXmvStmPTZ4OLAH4mCiONGgPAcvjRYqRtmMxa_sZI25QzJp-D_kZ0w_BYvo95GdMPwx6sN9DfkaLFBdWt42OcQxLo0DtTnD89oycnm-5hGCYbUFEByUmLm4DjW8PjPcPeLDnIDAOvGTix0GsPd8hGHnBhOKCbtpiZBQXQ-1X42KfvP5jjI9drfqf4wMnHOLDd4PI8aKD8WHuHzocOyC2Ax1jIYcYCwNiY6FWtTnEWMghxkKHYyzUqjaHGAs5xFjocIyFDsfmELQexyEmceLpiNHmkN28yaUSNSPn4FzG8NjRI5p_npU-IFsCsbp3sGB9yfQBOaGOPqKRXnVxZ0fZkrcZB5BI8g4S7jqoIWdpfQWpuntSsFr5brGyEgryrnwhB0HtA8nYp_M5TjyJXUjNH-pzbF1iLEyy2VHOT5dkcwdJtnGUA7U2avrgBjQsZknSMmth06Xd7ouJn51iQKF4YRT_D1L3P2zIY0Jif5SP3Q2IL0RRwMsH8QLyXjQ1-QRvfRDvwOMPgadEDRtJeKlTcJcMXk0gJNK5NwtESFsDnWtxzzNQjp8kThhGwcEptxfsp0zYDO-pOyJmN2i-ZGm9WEEcJJtCSXKa3sDLkqadVt2ciqWQY3mzg5qnzPLrwOuhV8Pd4AhSLZHnuAcH0C8WNXdfQJFweAtXkGZr35vhFfWWdm_JmjTwiRoc9jb_BlG3hlrX5r1QyDUgVbTcMR1OWJ4CuugdTrJopBLrS9Y9andvjx_1e_MHGAEIqyvTIfndl7u7fwFIONuo&amp;pv=bb06b61c119f11ebae608e1f5ac956b7&amp;au=692b802a119f11ebbd2da2e14e098be5" />
  <!-- header -->
 <noscript>
  <style type="text/css">
@@ -1285,7 +1293,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
  </div>
   </div>
  </fieldset>
- <input id="hash" type="hidden" name="humanverify[hash]" value="f15e88363b02b13c17a51b2e999ff005" />
+ <input id="hash" type="hidden" name="humanverify[hash]" value="24b41fa4dd71d4d8eff1883943c1a092" />
 <script type="text/javascript">
  var recaptchaQueue = recaptchaQueue || [];
  recaptchaQueue.push(['hv_recaptcha', {'sitekey': '6LfjMwsTAAAAAEK9fLB20t4ogbkpWSGnkh94knBe'}]);
@@ -1390,7 +1398,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp3534-Collapsible',
+                id: 'bp7079-Collapsible',
                 expanded: '',
             });
         </script>
@@ -1401,7 +1409,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp3534-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp7079-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">Follow Us</h3>
@@ -1426,7 +1434,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp7241-Collapsible',
+                id: 'bp6208-Collapsible',
                 expanded: '',
             });
         </script>
@@ -1437,7 +1445,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp7241-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp6208-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">About</h3>
@@ -1466,7 +1474,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp5030-Collapsible',
+                id: 'bp3494-Collapsible',
                 expanded: '',
             });
         </script>
@@ -1477,7 +1485,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp5030-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp3494-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">More</h3>
@@ -1502,7 +1510,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     
             <script>
             bpHydrate('Collapsible', {
-                id: 'bp3510-Collapsible',
+                id: 'bp5277-Collapsible',
                 expanded: '',
             });
         </script>
@@ -1513,7 +1521,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
 
 
     
-<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp3510-Collapsible">
+<div class="bp-c-collapsible js-collapsible bp-c-visibilityToggle--lockedDesktop" id="bp5277-Collapsible">
     <header class="bp-c-collapsible_header">
         <button class="bp-c-button bp-c-button--unstyled js-collapsible_trigger">
             <div class="bp-c-collapsible_headerContent">                    <h3 class="bp-p-slickdealsFooter_listHeader">Legal</h3>
@@ -1552,7 +1560,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
                 Copyright 1999 – 2020. Slickdeals, LLC. All Rights Reserved.
             </span>
                   <div class="bp-p-experienceSwitcher">
-        <ul class="bp-c-unorderedList--horizontalBulleted"><li><button data-href="/styleSwitch.php?no_mobile=true&modern_opt_in=1&redirectUrl=%2Fforums%2Fsendmessage.php&modern_opt_out=1" id="bp1090-Button" class="bp-p-experienceSwitcher_link bp-p-experienceSwitcher_link--current bp-c-linkableButton  bp-c-button bp-c-button--link">Redesign</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp1090-Button"} });</script></li><li><button data-href="/styleSwitch.php?redirectUrl=%252Fforums%252Fsendmessage.php&no_mobile=false" id="bp8259-Button" class="bp-p-experienceSwitcher_link bp-c-linkableButton  bp-c-button bp-c-button--link">Mobile</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp8259-Button"} });</script></li><li><button data-href="/forums/register.php?action_source=Switch%20to%20Classic&url=%2FstyleSwitch.php%3FredirectUrl%3D%25252Fforums%25252Fsendmessage.php%26modern_opt_out%3D1" id="bp1041-Button" class="bp-p-experienceSwitcher_link bp-c-linkableButton  bp-c-button bp-c-button--link">Classic</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp1041-Button"} });</script></li></ul>    </div>
+        <ul class="bp-c-unorderedList--horizontalBulleted"><li><button data-href="/styleSwitch.php?no_mobile=true&modern_opt_in=1&redirectUrl=%2Fforums%2Fsendmessage.php&modern_opt_out=1" id="bp4182-Button" class="bp-p-experienceSwitcher_link bp-p-experienceSwitcher_link--current bp-c-linkableButton  bp-c-button bp-c-button--link">Redesign</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp4182-Button"} });</script></li><li><button data-href="/styleSwitch.php?redirectUrl=%252Fforums%252Fsendmessage.php&no_mobile=false" id="bp3625-Button" class="bp-p-experienceSwitcher_link bp-c-linkableButton  bp-c-button bp-c-button--link">Mobile</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp3625-Button"} });</script></li><li><button data-href="/forums/register.php?action_source=Switch%20to%20Classic&url=%2FstyleSwitch.php%3FredirectUrl%3D%25252Fforums%25252Fsendmessage.php%26modern_opt_out%3D1" id="bp9738-Button" class="bp-p-experienceSwitcher_link bp-c-linkableButton  bp-c-button bp-c-button--link">Classic</button><script>window.bpHydration.push({ 'LinkableButton': {"id":"bp9738-Button"} });</script></li></ul>    </div>
         </div>
     
     </div>
@@ -1629,7 +1637,14 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
  Password: <span class="req_error">&nbsp;</span><br />
  <input id="regform_password" name="vb_login_password" type="password" class="required tooltip" tabindex="111">
  </div>
-  <div class="regform_row_submit">
+  <input id="hash" type="hidden" name="humanverify[hash]" value="24b41fa4dd71d4d8eff1883943c1a092" />
+   <script type="text/javascript">
+ var recaptchaQueue = recaptchaQueue || [];
+ recaptchaQueue.push(['login_recaptcha', {'sitekey': '6LfjMwsTAAAAAEK9fLB20t4ogbkpWSGnkh94knBe'}]);
+ </script>
+ <script type="text/javascript" src="https://www.google.com/recaptcha/api.js?onload=recaptchaCb&render=explicit" async defer></script>
+ <div id="login_recaptcha" class="g-recaptcha"></div>
+   <div class="regform_row_submit">
  <input name="cookieuser" type="checkbox" checked="checked" value="1" tabindex="112">
  <div class="rememberme">Remember Me<br />
  <span>Not recommended for shared or public computers.</span>
@@ -1666,11 +1681,11 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
       if (0)
       {
         window.heap.resetIdentity();
-        window.heap.identify('5a7f7dde116c11eba8db2e969d48dfac', 'Device');
+        window.heap.identify('692c09f0119f11ebbd2da2e14e098be5', 'Device');
         document.cookie = "doLogOut=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       
         // For QA only
-        console.log('Heap: just logged out. Device is ' + '5a7f7dde116c11eba8db2e969d48dfac');
+        console.log('Heap: just logged out. Device is ' + '692c09f0119f11ebbd2da2e14e098be5');
       }
       else
       {
@@ -1686,10 +1701,10 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
           }
           else
           {
-              window.heap.identify('5a7f7dde116c11eba8db2e969d48dfac', 'Device');
+              window.heap.identify('692c09f0119f11ebbd2da2e14e098be5', 'Device');
               
               // For QA only
-              console.log('Heap: not logged in. Device is ' + '5a7f7dde116c11eba8db2e969d48dfac');
+              console.log('Heap: not logged in. Device is ' + '692c09f0119f11ebbd2da2e14e098be5');
           }
       }
     }, 'analytics']);
@@ -1749,7 +1764,7 @@ window.sdLoadQueue=window.sdLoadQueue||[],window.SD=window.SD||{},window.SD.Even
     window.sdLoadQueue.push([function() {
         var elem = document.createElement('img');
 
-        elem.src = "//dpm.demdex.net/ibs:dpid=375988&dpuuid=5a7f7dde116c11eba8db2e969d48dfac";
+        elem.src = "//dpm.demdex.net/ibs:dpid=375988&dpuuid=692c09f0119f11ebbd2da2e14e098be5";
         document.body.appendChild(elem);
     }, 'analytics']);
 </script>
