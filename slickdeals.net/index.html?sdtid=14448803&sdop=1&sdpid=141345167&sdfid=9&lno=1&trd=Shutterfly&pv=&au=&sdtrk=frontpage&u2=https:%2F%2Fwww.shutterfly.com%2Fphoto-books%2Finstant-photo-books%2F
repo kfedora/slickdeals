@@ -1,0 +1,381 @@
+HTTP/1.1 200 OK
+Date: Mon, 19 Oct 2020 07:39:45 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: Bob
+X-ServiceName: Bob
+Content-Security-Policy: frame-ancestors 'self' *.shutterfly.com *.tinyprints.com *.onehippo.io;
+Access-Control-Allow-Origin: *
+service-uuid: bob-20201013-1093-ae4f191a-875e39256
+cache-control: no-cache, no-store, max-age=0
+expires: 0
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script>
+      (function() {
+        var attempt = 0;
+        var pageViewCalled = false;
+        function InjectHook() {
+          if (window.__satelliteLoaded) {
+            var originalTrack = window._satellite.track;
+            window._satellite.track = function() {
+              var args = [].slice.apply(arguments);
+              if (args[0] === 'delayed_page_load') {
+                pageViewCalled = true;
+              }
+              window._satellite.pageBottom();
+              return originalTrack.apply(window._satellite, args);
+            }
+            window.addEventListener("load",
+              function(event) {
+                setTimeout(function() {
+                  if (!pageViewCalled) {
+                    originalTrack('delayed_page_load');
+                  }
+                }, 5000);
+              }
+            );
+          } else {
+            attempt++;
+            if (attempt < 40) {
+              setTimeout(InjectHook, 50);
+            } else {
+              console.warn('failed to hook satellite');
+            }
+          }
+        }
+        InjectHook();
+      })();
+      // default DTL
+      window.SFLY_DTL = {
+        delayedPageLoad: true,
+        page: {
+          pageInfo: {
+            pageName: window.location.pathname,
+            pageType: 'other store pages',
+            siteExperience: 'd.web',
+          },
+        },
+        session: {
+          partner: {
+            id: 'SFLY',
+            subId: 'WEB',
+          },
+          visitorDetails: {
+            customerId: '',
+            visitorId: 'df1dae3f-6a53-48a6-9cdc-c22f33765b15',
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" crossorigin href="//cdn.staticsfly.com">
+    <link rel="preconnect" crossorigin href="//cdn-image.staticsfly.com">
+    <link rel="preconnect" crossorigin href="//api2.shutterfly.com">
+    <link rel="preconnect" crossorigin href="//accounts.shutterfly.com">
+    <link rel="preconnect" crossorigin href="//assets.adobedtm.com">
+    <link rel="preconnect" crossorigin href="//cld1.staticsfly.com">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="https://www.shutterfly.com/favicon.ico">
+    <link rel="apple-touch-icon" href="logo192.png">
+    <meta name="description" content="Create photo books, personalize photo cards &amp; stationery, and share photos with family and friends at Shutterfly.com.">
+    <meta name="keywords" content="photos, photo prints, digital photos, digital photo prints, photo books, photo cards, personalized cards, personalized stationery, custom cards, custom stationery, photo calendars, personalized calendars, custom calendars, photo gifts, share photos, photo sharing, photo sharing sites, photo sharing websites, shutterfly, shutterfly.com">
+    <title>Photo Books, Holiday Cards, Photo Cards, Birth Announcements, Photo Printing | Shutterfly</title>
+    <script src="https://cld1.staticsfly.com/uigpolyfills.abaaa2fd54.js"></script><script>
+      window.BSL = {
+        errs: [],
+        rejects: [],
+        onError: function(e) {
+          if (window.BSL && window.BSL.errs) {
+            window.BSL.errs.push(e);
+          } else {
+            console.error(e)
+          };
+        },
+        onReject: function(e) {
+          if (window.BSL && window.BSL.rejects) {
+            window.BSL.rejects.push(e);
+          } else {
+            console.error(e)
+          };
+        }
+      };
+      window.addEventListener('error', function() {
+        try {
+          BSL.onError
+        } catch (e) {}
+      });
+      window.addEventListener('unhandledrejection', function() {
+        try {
+          BSL.onReject
+        } catch (e) {}
+      });
+    </script>
+    <script>
+      window.SFLY_DTL = {
+        delayedPageLoad: !0
+      }
+    </script>
+    <meta bob use-adobe-launch>
+    <script src="https://cld1.staticsfly.com/uigreact.6919f800d0.js"></script>
+    <link href="https://cld1.staticsfly.com/storefront2020.f2c01556f8.css" rel="stylesheet">
+    <link href="https://cld1.staticsfly.com/storefront2020.7ba1229e1a.css" rel="stylesheet">
+    <meta name="user-browser" content="undefined undefined">
+    <meta name="user-device" content="DESKTOP">
+    <meta name="user-platform" content="linux undefined">
+    <meta name="bob-sso-sync" content="data-needed">
+    <script>
+      var MasterTmsUdo = {
+        "appserverUrl": "www.shutterfly.com",
+        "browser": "undefined undefined",
+        "campaignid": "",
+        "categoryCode": null,
+        "categoryName": null,
+        "country": "US",
+        "currency": "USD",
+        "customerLoggedIn": false,
+        "device": "DESKTOP",
+        "deviceName": "COMPUTER",
+        "escapedPagename": "_entry_home",
+        "isConversion": 0,
+        "isPaid": 0,
+        "load_criteo": true,
+        "pageType": "other store pages",
+        "partnerid": "SFLY",
+        "partnersubid": "WEB",
+        "platform": "linux undefined",
+        "productId": null,
+        "productName": null,
+        "refid": "",
+        "searchTerm": "",
+        "sessionId": "",
+        "siteExperience": "d.web",
+        "skuCode": null,
+        "storeType": "shutterfly",
+        "uid": null,
+        "userId": null,
+        "visitorid": "df1dae3f-6a53-48a6-9cdc-c22f33765b15",
+        "dotomi_abandon": {
+          "DTMC_CUSTOMER_TYPE": false,
+          "DTMC_PLATFORM": "COMPUTER",
+          "DTMC_PROD_ID": null,
+          "DTM_CONV_VAL": null,
+          "DTM_ITEMS": null,
+          "DTM_USER_ID": "df1dae3f-6a53-48a6-9cdc-c22f33765b15",
+          "DTMC_SUB_CATEGORY": null,
+          "DTMC_TRANSACTION_ID": null
+        }
+      }
+    </script>
+    <meta name="tealium-script-src" content="https://tags.tiqcdn.com/utag/sfly/main/prod/utag.js">
+    <script>
+      (function() {
+        if (window.BOOMR && window.BOOMR.version) {
+          return;
+        }
+        var dom, doc, where, iframe = document.createElement('iframe');
+        iframe.src = "javascript:false";
+        iframe.title = "";
+        iframe.role = "presentation";
+        (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+        where = document.getElementsByTagName('script')[0];
+        where.parentNode.insertBefore(iframe, where);
+        try {
+          doc = iframe.contentWindow.document;
+        } catch (e) {
+          dom = document.domain;
+          iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+          doc = iframe.contentWindow.document;
+        }
+        doc.open()._l = function() {
+          var js = this.createElement("script");
+          if (dom) this.domain = dom;
+          js.id = "boomr-if-as";
+          js.defer = true;
+          js.src = '//c.go-mpulse.net/boomerang/' +
+            'L36VQ-JFTDE-3P6NR-B6Q8U-8ZNC6';
+          BOOMR_lstart = new Date().getTime();
+          this.body.appendChild(js);
+        };
+        doc.write('<body onload="document._l();">');
+        doc.close();
+      })();
+    </script>
+    <script id="fs">
+      function getCookieFS(name) {
+        try {
+          var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+          if (match !== null && match.length === 3) {
+            return match[2];
+          } else {
+            return null;
+          }
+        } catch (err) {
+          console.warn("FS: unexpected exception in getcookie : " + err);
+          return null;
+        }
+      }
+      if (getCookieFS('FSreal') !== null) {
+        // FS code start
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = 'HZB6B';
+        window['_fs_namespace'] = 'FS';
+        (function(m, n, e, t, l, o, g, y) {
+          if (e in m) {
+            if (m.console && m.console.log) {
+              m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+            }
+            return;
+          }
+          g = m[e] = function(a, b, s) {
+            g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+          };
+          g.q = [];
+          o = n.createElement(t);
+          o.defer = 1;
+          o.src = 'https://' + _fs_host + '/s/fs.js';
+          y = n.getElementsByTagName(t)[0];
+          y.parentNode.insertBefore(o, y);
+          g.identify = function(i, v, s) {
+            g(l, {
+              uid: i
+            }, s);
+            if (v) g(l, v, s)
+          };
+          g.setUserVars = function(v, s) {
+            g(l, v, s)
+          };
+          g.event = function(i, v, s) {
+            g('event', {
+              n: i,
+              p: v
+            }, s)
+          };
+          g.shutdown = function() {
+            g("rec", !1)
+          };
+          g.restart = function() {
+            g("rec", !0)
+          };
+          g.consent = function(a) {
+            g("consent", !arguments.length || a)
+          };
+          g.identifyAccount = function(i, v) {
+            o = 'account';
+            v = v || {};
+            v.acctId = i;
+            g(o, v)
+          };
+          g.clearUserCookie = function() {};
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+      }
+    </script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.2b0db7633f.js"></script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.2ac3b5b3d4.js"></script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.40e1102e7c.js"></script>
+    <meta name="web-server" content="bob" server-uuid="bob-20201013-1093-ae4f191a-875e39256" rendered-at="Mon Oct 19 2020 00:39:16 GMT-0700 (Pacific Daylight Time)">
+    <meta name="sfly-env" content="production">
+    <meta name="main-client-version" app="storefront-2020" content="storefront-20201001-888-d65d9406-e680" version-source="main">
+    <meta name="sfly-brand" content="SFLY">
+    <script>
+      let loadScript = (src) => {
+        return new Promise(function(resolve, reject) {
+          let s = window.document.createElement("SCRIPT");
+          s.onload = () => resolve(s);
+          s.onerror = () => reject(new Error(src));
+          s.src = src;
+          // don't bounce to global handler on 404.
+          s.addEventListener('error', function() {});
+          window.document.head.append(s);
+        });
+      }
+      if (!window.load_adobe_analytics) {
+        window.load_adobe_analytics = {};
+      }
+      if (!window.load_adobe_analytics.usingLaunch) {
+        window.load_adobe_analytics.usingLaunch = true;
+      }
+      let successCallback = (result) => {
+        console.log("//assets.adobedtm.com/528526b3f782/ddfab9399b13/launch-1480b4cd5321.min.js loaded.");
+      }
+      let failureCallback = (error) => {
+        console.log("load failed: " + error.message);
+      }
+      loadScript("//assets.adobedtm.com/528526b3f782/ddfab9399b13/launch-1480b4cd5321.min.js").then(successCallback, failureCallback);
+    </script>
+  </head>
+  <body>
+    <link href="https://cld1.staticsfly.com/uigsflyfonts.f10de71110.css" rel="stylesheet">
+    <div class="body-wrapper">
+      <div id="header_container_element"></div>
+      <div id="univeral-header-promo-ssr" style="display:none">
+
+        <!-- ContentSpaceName: home_prospect_promo_cs -->
+
+        <!-- HTML Content Wrapper -->
+        <style type="text/css">
+          a[data-link-id=Holiday],
+          a[data-link-id=Holiday] span {
+            color: #c21700
+          }
+          #banner-wrapper a {
+            color: #000
+          }
+          #headerTestContainer br {
+            display: none
+          }
+        </style>
+        <div id="banner-container">
+          <div id="banner-wrapper" style="left:0;right:0">
+            <div class="desktop-promo">
+              <div id="offer-banner">
+                <div id="banner-content">
+                  <div class="promo-flex-wrapper" style="display:flex;justify-content:space-between">
+                    <div id="desktop-offer-banner-1" class="desktop-offer-banner avenir85Heavy" style="margin-right:10px"><a href="/promotions_details/#economy" target="_blank" id="desktop-offer-url-1" data-link-id="::" data-link-module-position="1" data-link-position="1"><span class="hidden" id="desktop-offer-expiration-1">1/5/20</span> <span></span> <span class="avenir95Black orangecontent">FREE SHIPPING</span> <span>on orders $39+* code: SHIP39</span><br><span class="avenir95Black orangecontent">FREE SHIPPING</span> <span>on cards* code: BESTCARDS</span> <span class="hidden" id="desktop-offer-code-1">SHIP39</span> <span class="hidden" id="desktop-offer-promoid-1">40ALL_DEFAULT</span></a></div>
+                    <div id="desktop-offer-banner-2" class="desktop-offer-banner avenir85Heavy" style="margin-right:10px"><a href="/special-offers" target="_blank" id="desktop-offer-url-2" data-link-id="::" data-link-module-position="1" data-link-position="2"><span>Ends Wed, Oct 21</span> <span class="hidden" id="desktop-offer-expiration-2">1/5/20</span> <span class="avenir95Black orangecontent">50% OFF PREMIUM CARDS &amp; HARDCOVER BOOKS + 40% OFF ALMOST EVERYTHING*</span> <span>no code needed</span> <span class="hidden" id="desktop-offer-code-2">no code needed</span> <span class="hidden" id="desktop-offer-promoid-2">no code needed</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-promo mobile-only promo-type" data-promo-type="mobile">
+              <div class="global-promo mobile-offer-banner" id="mobile-offer-banner-1"><a href="/special-offers" id="mobile-offer-url-1" data-link-id="::" data-link-module-position="1" data-link-position="3"><span class="hidden" id="mobile-offer-expiration-1">1/5/20</span>
+                  <div class="fleft offer">FREE SHIPPING on orders $39+*</div>
+                  <div class="fleft seperator">|</div><span class="fleft offerCode">code: SHIP39</span> <span class="hidden" id="mobile-offer-code-1">SHIP39</span> <span class="hidden" id="mobile-offer-promoid-1">40ALL_DEFAULT</span></a></div>
+            </div>
+          </div>
+        </div> <!-- /HTML Content Wrapper -->
+
+        <!-- End of ContentSpaceName: home_prospect_promo_cs -->
+      </div>
+      <link href="https://cld1.staticsfly.com/universalheader.b748c916a9.css" rel="stylesheet">
+      <script src="https://cld1.staticsfly.com/universalheader.2284815458.js"></script>
+      <script src="https://cld1.staticsfly.com/universalheader.f87db7a1e3.js"></script>
+      <script src="https://cld1.staticsfly.com/universalheader.e95686c97a.js"></script>
+      <div id="root"></div>
+      <div id="footer_container_element"></div>
+    </div>
+    <script src="https://cld1.staticsfly.com/storefront2020.7352de5ea9.js"></script>
+    <script src="https://cld1.staticsfly.com/storefront2020.2da3a4359c.js"></script>
+    <script src="https://cld1.staticsfly.com/storefront2020.a3e5672d63.js"></script>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var tag = document.createElement('script');
+          var tealiumSrc = document.querySelector('meta[name="tealium-script-src"]').getAttribute('content');
+          tag.setAttribute('src', tealiumSrc);
+          document.querySelector('body').appendChild(tag);
+        }, 500);
+      });
+    </script>
+    <script src="https://cld1.staticsfly.com/bobstdlib.e574aae531.js" defer></script>
+    <script>
+      if (typeof window._satellite != 'undefined') {
+        window._satellite.pageBottom();
+      }
+    </script>
+  </body>
+</html>
