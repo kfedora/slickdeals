@@ -1,0 +1,378 @@
+HTTP/1.1 200 OK
+Date: Sun, 18 Oct 2020 19:27:52 GMT
+Server: Apache/2.4.43 (cPanel) OpenSSL/1.1.1g mod_bwlimited/1.4
+X-Powered-By: PHP/5.6.40
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: PHPSESSID=0a2df3e4abf073cd79a2e7d1b50f86d9; path=/
+Keep-Alive: timeout=2, max=200
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+		
+	
+<html lang="en-US" prefix="og: http://ogp.me/ns#" >
+	<head>
+		<title>VVCap Image</title>
+		<meta name="description" content="Image captured with VVCap">
+		<meta name="keywords" content="vvcap,screenshot,open">
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico" />
+		
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/css/main-style.css">
+		
+		<meta property="og:site_name" content="VVCap"/> 
+		<meta property="og:title" content="VVCap Image"/> 
+		<meta property="og:image" content="https://vvcap.com/img/uZMuVICie.png"/> 
+		<meta property="og:description" content="Image captured with VVCap"/> 
+		<meta property="og:url" content="https://vvcap.com/uZMuVICie"/> 
+		<meta property="og:type" content="website"/>
+		
+		<meta name="twitter:card" content="photo"/> 
+		<meta name="twitter:title" content="VVCap Image"/> 
+		<meta name="twitter:site" content="@vvcapdotcom"/> 
+		<meta name="twitter:description" content="Image captured with VVCap"/> 
+		<meta name="twitter:image:src" content="https://vvcap.com/img/uZMuVICie.png"/>
+		
+		<meta property="fb:app_id" content="1755216484714772"/>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src='/javascript/client.js' ></script>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+	</head>
+
+	<body>
+	
+		<!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-60516610-1', 'auto');
+		  ga('send', 'pageview');
+		</script>	
+				<!--<div id="extend-color-left" ></div>
+		<div id="extend-color-right" ></div>-->
+		<style id="lights-mode" type="text/css" >
+					</style>
+		
+		<!--<div id="header-menu" >
+			<div id="menu-container" >
+				<a href="/" id="main" ><img src="/images/vvcap-logo-2.png" ></a>
+				<button id="lights-button" type="button" onclick="LightsOnOff()"></button>
+				<a href="/download" id="icons" >
+				<t>
+				<img src="/images/download-on.png" style="
+					height: 24px;
+					vertical-align:  middle;
+					margin-bottom: 3px;
+				">
+				Download VVCap
+				</t>
+				</a>
+			</div>
+		</div>-->
+		
+		<div id="cssmenu" >
+			<ul>
+							    <li>
+					<a href="/" title="Home Page" style="
+						background: url('/images/vvcap-logo.png');
+						background-repeat: no-repeat;
+						background-position: center;
+						background-size: 40px 20px;
+						height: 40px;
+						width: 40px;
+					"></a>
+				</li>
+			   
+				<!--<u id="lights-button-container" ><li><a id="lights-button" onclick="LightsOnOff()" ></a></li></u>-->
+			   
+				<u class="desktop-only" ><li><a href="/" title="Upload image" >Upload</a></li></u>
+				<u class="desktop-only" ><li><a href="/download" title="Download VVCap" >Download</a></li></u>
+			   
+			   <li class="last" id="mobile-menu" ><a onClick="ShowMobileMenu()" title="Site Menu" ><!--<div id="icon-img" ></div>-->&#8226;&#8226;&#8226;</a></li>
+
+									<u class="desktop-only" ><li class="last" ><a href="/login"><span>Sign in</span></a></li></u>
+							   <!--
+			   <u id="download-button-notmal" ><li class="last" ><a href='/download'><span>Download VVCap</span></a></li></u>
+			   -->
+			</ul>
+		</div>
+		
+		<div id="mobile-menu-wrapper" >
+			<div id="cssmenu">
+				<ul><li><a href="/" title="Upload image" >Upload Image</a></li></ul>
+				<ul><li><a href="/download" title="Download VVCap" >Download VVCap</a></li></ul>
+				<ul>
+											<li class="last" style="float:  left; width:  100%;" ><a href='/login'><span>Sign in</span></a></li>
+									</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript" >
+			/*var lights = ;
+			var lightsOffCss = "";
+			
+			function LightsOnOff () {
+				lights = !lights;
+				
+				var days = 35;	
+				if(lights){
+					days = -35;
+				}
+				var date = new Date();			
+				date.setTime(date.getTime()+(days*24*60*60*1000));			
+				var expires = "; expires="+date.toGMTString();			
+				document.cookie = "LightsOnOff=true"+expires+"; path=/";
+				
+				if(lights){
+					document.querySelector("html").removeAttribute("style");
+					document.getElementById("lights-button").innerHTML = "<span>Lights: On</span>";
+					document.getElementById("lights-mode").innerHTML = "";
+				}else{
+					document.querySelector("html").setAttribute("style", "background-color: #3D3D3D");
+					document.getElementById("lights-button").innerHTML = "<span>Lights: Off</span>";
+					document.getElementById("lights-mode").innerHTML = lightsOffCss;
+				}
+			}*/
+			
+			var mobileMenu = false;
+			
+			function ShowMobileMenuHover(show){
+				mobileMenu = !show;
+				ShowMobileMenu ();
+			}
+			
+			function ShowMobileMenu () {
+				mobileMenu = !mobileMenu;
+				
+				if(mobileMenu){
+					document.getElementById("mobile-menu-wrapper").querySelectorAll("#cssmenu")[0].setAttribute("style", "width: 300px");
+				}else{
+					document.getElementById("mobile-menu-wrapper").querySelectorAll("#cssmenu")[0].setAttribute("style", "width: 0px");
+				}
+			}
+		</script>		<div id="share-buttons" >
+		<a href="https://www.facebook.com/sharer/sharer.php?u=https://vvcap.com/uZMuVICie" target="_blank" title="Share on Facebook" 
+		style="background-image: url('/images/share-buttons/facebook-share.png');" ></a>
+	<a href="https://twitter.com/home?status=VVCap Image https://vvcap.com/uZMuVICie" target="_blank" title="Share on Twitter" 
+		style="background-image: url('/images/share-buttons/twitter-share.png');" ></a>
+	<a href="https://plus.google.com/share?url=https://vvcap.com/uZMuVICie" target="_blank" title="Share on Google+" 
+		style="background-image: url('/images/share-buttons/google-plus-share.png');" ></a>
+	<a href="//www.reddit.com/submit?url=https://vvcap.com/uZMuVICie" target="_blank" title="Share on Reddit" 
+	style="background-image: url('/images/share-buttons/reddit-share.png');" ></a>
+</div>
+		<div id="main-screenshot" style="padding-left: 0; padding-right: 0px;" >
+			
+						
+			<div id="img-parent-wrapper" >
+			
+										
+				
+									
+					<img rel="image_src" src="https://vvcap.com/img/uZMuVICie.png" id="main-image" style="max-height: 725px;" >
+
+					<script type="text/javascript">
+						var zoomed = false;
+						
+						$("#main-image").click(function(){
+							zoomed = !zoomed;
+							
+							if(zoomed){
+								$("#main-image").removeAttr('style');
+								
+								$("#img-parent-wrapper").css({
+								   "max-width" : "100%",
+								   "max-height" : "none"
+								});
+								
+								$("#main-image").css("cursor", "-webkit-zoom-out");
+								$("#main-image").css("cursor", "-moz-zoom-out");
+								$("#main-image").css({
+								   "max-width" : "none",
+								   "max-height" : "none"
+								});
+							}else{
+								$("#img-parent-wrapper").removeAttr('style');
+								$("#main-image").removeAttr('style');
+								$("#main-image").css("max-height", "725px");
+							}
+						});
+							
+					</script>
+							</div>
+			
+			<center>
+				<div id="screenshot-menu" style="margin-left: 10px" >
+																	<a class="menu-button" onClick="ShowReportForm()" style="background-image: url('/images/report.png');" >REPORT</a>
+											
+									</div>
+				
+				<!--<hr style="margin-top: 0; margin-bottom: 25px; max-width: 850px;" >-->
+				
+			</center>
+			
+											
+				<div id="report-screenshot" style="display: none;" >
+					<form id="report-form-main" action="/php/public/report.php" method="POST">
+					
+						<div id="report-form" >
+							<!-- Ref fields -->
+							<input id="ref" type="hidden" name="ref" value="uZMuVICie">
+							<!-- Incase Javascript is disabled -->
+							<input type="hidden" name="nojs" value="1"> 
+						
+							<b style="color: #18ab29;" >Please state the reason for reporting this image</b><br><br>
+							<div id="error-text-data" class="error-text" style="display: none;" >Error text</div>
+							<input type="radio" name="reason" value="1" checked />Personal info<br>
+							<input type="radio" name="reason" value="2" />Offensive material<br><br>
+							<!--<input id="email" type="text"  name="email" value="" placeholder="Your email" size="30" maxlength="254" />-->
+							<div style="margin-top: 15px;" id="recaptcha" class="g-recaptcha" data-sitekey="6LfwpQgTAAAAADlSVwO2z17ptqygunLaBNfyrtD-"></div>
+							
+							<br><br>
+							
+							<input id="submit" type="submit" value="Send Report">
+						</div>
+						
+						<div id="sending-report" style="display: none;" >
+							<b style="color: #18ab29;" >Sending report, please wait...</b> <img src="/images/loading.gif" >
+						</div>
+						
+						<div id="report-done" style="display: none;" >
+							<b style="color: #18ab29;" >Thank you, this image will be reviewed by our moderators as soon as possible</b>
+						</div>
+						
+					</form>
+				</div>
+						
+			
+					</div>
+		
+					
+			<!-- Custom JS -->
+			<script type="text/javascript">
+				//var showMenus = false;
+				var showEmbedLinks = false;
+				var showReportMenu = false;
+
+				function ShowEmbedLinks() {
+					//showMenus = false;
+					
+					showReportMenu = false;
+					document.getElementById("report-screenshot").style.display = "none";
+					
+					showEmbedLinks = !showEmbedLinks;
+					if(showEmbedLinks){
+						document.getElementById("screenshot-embed-links").style.display = "block";
+					}else{
+						document.getElementById("screenshot-embed-links").style.display = "none";
+					}
+
+					//document.getElementById("menus").style.display = "none";
+				}
+				
+				function ShowReportForm() {
+					//showMenus = false;
+					//showEmbedLinks = false;
+					//document.getElementById("screenshot-embed-links").style.display = "none";
+					
+					showReportMenu = !showReportMenu;
+					
+					if(showReportMenu){
+						document.getElementById("report-screenshot").style.display = "block";
+					}else{
+						document.getElementById("report-screenshot").style.display = "none";
+					}
+					
+					//document.getElementById("menus").style.display = "none";
+				}
+				
+				//Prevent form from submitting, call jQuery function instead
+				$("#report-form-main").submit(function( event ) {
+					//alert( "Handler for .submit() called." );
+					event.preventDefault();
+					
+					var screenshotReference = $("#ref").val();
+					var reason =  $("input[name='reason']:checked", "#report-form-main").val(); 
+					//var email = $("#email").val();
+					var captcha = $("#g-recaptcha-response").val();
+					ReportScreenshot(screenshotReference, reason/*, email*/, captcha);
+				});
+				
+				//Focus on embed link we click
+				$("#screenshot-embed-links input").click(function() {
+					$(this).select();
+				});
+			</script>
+				
+		
+		
+		</body>
+		</html>
+		
+				<div id="footer-area" >
+			<div id="footer-links" >
+				<t>Copyright &copy; 2020</t>
+				<a href="/privacy" >Privacy</a>
+				<a href="/terms" >Terms of Use</a>
+				<!--<a href="/" >Upload Image</a>-->
+				<a href="/contact" >Contact Us</a>
+			</div>
+
+			<div id="social" >
+				<a href="https://twitter.com/vvcapdotcom" target="_blank" ><img src="/images/twitter-icon.png" ></a>
+				<a href="https://www.facebook.com/vvcap" target="_blank" ><img src="/images/facebook-icon.png" ></a>
+			</div>
+		</div>
+	</body>
+	
+		
+	<style>		
+		#cookieclearbar {			
+			color: #DDD;			
+			font: normal 13px/28px sans-serif;			
+			min-height: 30px;			
+			position: fixed;			
+			bottom: 0;			
+			left: 0;			
+			width: 100%;			
+			z-index: 99999;			
+			padding: 2px 3px 0;			
+			background-color: #464646;		
+		}				
+		
+		button#CookieClear {			
+			margin: 0 20px;			
+			line-height: 20px;			
+			background: #45AE52;			
+			border: none;			
+			color: #fff;			
+			padding: 0 12px;			
+			border-radius: 3px;			
+			cursor: pointer;			
+			font-size: 13px;			
+			font-weight: bold;			
+			font-family: sans-serif;			
+			text-shadow: #555 1px 1px;		
+		}				
+		
+		#cookieclearbar a {			
+			color: #fff;		
+		}		
+	</style>	
+	
+	<div id="notification-handler" >
+	
+	</div>
+	
+	
+</html>

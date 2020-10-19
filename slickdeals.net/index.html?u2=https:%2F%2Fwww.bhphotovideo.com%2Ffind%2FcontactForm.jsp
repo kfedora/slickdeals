@@ -1,18 +1,28 @@
 HTTP/1.1 200 OK
-Date: Sun, 18 Oct 2020 20:19:39 GMT
+Date: Sun, 18 Oct 2020 21:51:57 GMT
 Content-Type: text/html; charset=ISO-8859-1
 Transfer-Encoding: chunked
 Connection: keep-alive
-CF-Ray: 5e44f49aaa5b0310-IAD
+CF-Ray: 5e457bd00dd1eaa2-IAD
 Cache-Control: private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate
-Set-Cookie: D_PID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
+Set-Cookie: JSESSIONID=QEg9sp49yhrJX1kmBfuEPADukh3OvRCJ!2105657854; domain=bhphotovideo.com; path=/; HttpOnly;Secure; SameSite=None
 Vary: Accept-Encoding
 CF-Cache-Status: DYNAMIC
 BH-XDB: 2109465
-cf-request-id: 05def734a60000031020090000000001
+cf-request-id: 05df4bb6090000eaa2f5964000000001
 Edge-Control: bypass-cache
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Pragma: no-cache
+Set-Cookie: lpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20,ipp=24,view=L,sort=BS,priv=N,state=VA; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 01:06:04 GMT; path=/;Secure; SameSite=None
+Set-Cookie: dpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 01:06:04 GMT; path=/;Secure; SameSite=None
+Set-Cookie: uui=877.818.2218|; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 01:06:04 GMT; path=/;Secure; SameSite=None
+Set-Cookie: sessionKey=edc65c39-d7dc-4bf7-bdf7-54b088d0e88d; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 01:06:04 GMT; path=/;Secure; SameSite=None
+Set-Cookie: uui=877.818.2218|; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 01:06:04 GMT; path=/
+Set-Cookie: lpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20,ipp=24,view=L,sort=BS,priv=N,state=VA; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 01:06:04 GMT; path=/
+Set-Cookie: dpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20; domain=bhphotovideo.com; expires=Sat, 06-Nov-2088 01:06:04 GMT; path=/
+Set-Cookie: TS01472329=01ec39615ff96a69a669c5ba4ca52220a89b52c7d0076428c2de6a8b2eff3d1add3f4232eeadeffc5157b824573bb34f8c3cd672969f03c7c910662307cd988dc58aa99867; Path=/;Secure; SameSite=None
+Set-Cookie: TS0119d048=01ec39615f2252ea386748f7c6252870904316d305024378c0c776222997b331dd25e778ecfcc4550ef5c24ffd38eed2224c0b7264ae3bcf46fe11d71665c5415e46006aba33998d912d44022c7e0e8198e4ba95f9bc850e6da5ed687e44626a690a678db375d0430abff1abdd294da56c93122fb4f9b8321efc51a8119157ee047f67ffe2ecd090767d2ea504c7859a38ea10478d621239f0e0d5177f784180d30d25188a5e4cafbf0135436ce5f0d3dced76524ff79eaae34974ba3d6a99a173bc58c9f7; path=/; domain=bhphotovideo.com;Secure; SameSite=None
+Set-Cookie: D_PID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 Set-Cookie: D_IID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 Set-Cookie: D_UID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 Set-Cookie: D_SID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
@@ -376,7 +386,7 @@ B&H for B2B, Gov, Students &amp More<svg><use xlink:href="#arrowDown"></use></sv
 </span>
 <a data-selenium='exploraLink' class="explora-narrow left" href="https://www.bhphotovideo.com/explora/">Read <span class="exploraSvgWrap"><svg aria-label="Explora: News, Tips, and Reviews"><use xlink:href="#explora-logo"></use></svg></span></a>
 <span class="right">
-<span data-selenium="PhoneNum" id="js-phonenum" class="phone js-phone fs14 c4 smbold">866.617.7712</span>
+<span data-selenium="PhoneNum" id="js-phonenum" class="phone js-phone fs14 c4 smbold">877.818.2218</span>
 <a name="Header-Help Center" target="_self" href="https://www.bhphotovideo.com/find/HelpCenter/helpcenter.jsp" data-selenium='helpLink' class="fs14 smbold"><svg class="chat-icon"><use xlink:href="#info-light"></use></svg>Help</a>
 <div class="callbackStatusContainer js-callbackStatusContainer"></div>
 <a name="Header-About Us" target="_self" href="https://www.bhphotovideo.com/find/HelpCenter/AboutUs.jsp" class="about-us-link fs14 smbold right">About Us</a>
@@ -645,7 +655,7 @@ Specials
 <div class="specials_bottom_container">
 <div class="specials_bottom_text">
 Specials & Rebates <a href="https://www.bhphotovideo.com/c/buy/rebates-promotions/ci/22144/N/4019732813" class="specials_bottom_text_link" data-selenium="specials_bottom_text_link">See All Specials ></a>
- </div>
+</div>
 <div class="specials_bottom_dest">
 </div>
 </div>
@@ -1065,7 +1075,7 @@ Name
 </div>
 <div class="leftCol">
 Email<b>*</b>
- </div>
+</div>
 <div class="rightCol">
 <input id="emailField" name="email" data-pi="email" size="88" ng-model="contact.email" ng-class="{'invalid':(state.showInvalids && contactForm.email.$invalid) || (contactForm.email.$touched && (contactForm.email.$error.email || contactForm.email.$invalid)) }" required type="email">
 <svg class="bh-icon bh-icon-error-light absolute inline-error" ng-show="contactForm.email.$touched && contactForm.email.$invalid" data-selenium="error-light"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#error-light"></use></svg>
@@ -1098,7 +1108,7 @@ Message<b>*</b>
 <div ng-if="state.showConfirm" class="thankyou">
 <h1>Thank You for Contacting Us</h1>
 <br>
-<p class="notify">We'll email your ticket number within the next 15 minutes. If you do not receive an email within that time, please email <a href="/cdn-cgi/l/email-protection#d7b4a497b5bfa7bfb8a3b8f9b4b8ba"><span class="__cf_email__" data-cfemail="3c5f4f7c5e544c54534853125f5351">[email&#160;protected]</span></a> or call Customer Service at 800.221.5743/212.239.7765.</p><br>
+<p class="notify">We'll email your ticket number within the next 15 minutes. If you do not receive an email within that time, please email <a href="/cdn-cgi/l/email-protection#7f1c0c3f1d170f17100b10511c1012"><span class="__cf_email__" data-cfemail="c7a4b487a5afb7afa8b3a8e9a4a8aa">[email&#160;protected]</span></a> or call Customer Service at 800.221.5743/212.239.7765.</p><br>
 <p>Your Email Address: {{contact.email}}</p>
 <p>Your Name: {{contact.name}}</p>
 <p>Order/Confirmation Number: {{contact.order}}</p>
@@ -1110,7 +1120,7 @@ Message<b>*</b>
 <p>CUSTOMER SERVICE</p>
 <h2 class="sep">800.221.5743</h2>
 <p>SALES &AMP; EXPERT ADVICE</p>
-<h2 class="sep">866.617.7712</h2>
+<h2 class="sep">877.818.2218</h2>
 <a class="c31 fs18 bold" href="https://www.bhphotovideo.com/find/liveChat.jsp" data-selenium='liveChat' onclick="window.open(this.href, this.target, 'height=353,width=553,resizable=yes,scrollbars=yes');" target="livechat">
 <svg><use xlink:href="#chat-square"></use></svg>Live Chat
 </a>
@@ -1211,12 +1221,12 @@ Message<b>*</b>
 <div class="upper inlineBlock">
 <span class="fs14 c37 OpenSans-300-normal">Sales &amp; Expert advice</span>
 <br>
-<span class="fs30 c38 OpenSans-600-normal">866.617.7712</span>
+<span class="fs30 c38 OpenSans-600-normal">877.818.2218</span>
 <br>
-<span class="fs16 OpenSans-300-normal"><span class="c35 lower">or</span> 212.502.6329</span>
+<span class="fs16 OpenSans-300-normal"><span class="c35 lower">or</span> 212.239.5376</span>
 </div>
 <div class="upper inlineBlock" data-selenium="footerContactUs">
-<div class="fs26 OpenSans-600-normal clearfix">
+ <div class="fs26 OpenSans-600-normal clearfix">
 <a class="c38 inlineBlock" href="https://www.bhphotovideo.com/find/contactForm.jsp" data-selenium='contactUs' target="_self">
 <svg style="width:35px;height:26px;" class="left"><use xlink:href="#envelope-light"></use></svg><span class="left">Contact Us</span>
 </a>
@@ -1341,7 +1351,7 @@ Indian Rupee
 <a data-selenium='currencyDropdown' data-currency-code="ILS" class="c36 noUnderline js-setCurrencyButton ILS" href="#" onclick="return false;">
 Israeli Shekel
 </a>
-</li>
+ </li>
 <li data-selenium="currncyOption" class="ns-option ">
 <a data-selenium='currencyDropdown' data-currency-code="JPY" class="c36 noUnderline js-setCurrencyButton JPY" href="#" onclick="return false;">
 Japanese Yen
@@ -1425,6 +1435,7 @@ Send Us your Feedback
 </div>
 </div>
 <div class="show-more-customer-informaion">
+
 <div class="c37 fs16 upper cursor-pointer OpenSans-600-normal inlineBlock show-more-btn">
 More Helpful Links <span class="fs18">&nbsp;&nbsp;+</span><span class="fs18 btn-open">&nbsp;&nbsp;&macr;</span>
 </div>
@@ -1546,7 +1557,6 @@ Create a B&amp;H Account
 </noscript>
 <a id="hazScript" href="https://static.bhphoto.com/images/weCanHazJS.gif" style="display:none;"></a>
 
-<img width="1" height="1" src="https://mer54715.datafeedfile.com/clickthrough_remote_pixel.php?bi=865&kbid=1173&referrer_url=https%3A%2F%2Fslickdeals.net%2Fcoupons%2Fbh-photo-video%2F" />
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 if(window.lazyLoad){
 	lazyLoad.lazyRunJs(function(){
@@ -1579,7 +1589,7 @@ var dlo =
 
             "subLoc":  '',
 
-            "user": {"isTaxExempt":false,"bi":null,"cartID":"23243736821","language":"E","catalogue":"B&H-Regular","isUsed":false,"SSSC_C":"","referrer":"","cartTotal":"","jSessionId":"","cm_mmc":"","b2bCatalogue":"","rememberId":"","cookieId":"","ib":true,"isMobile":false,"dataLayerInfo":""},
+            "user": {"isTaxExempt":false,"bi":null,"cartID":"23245627078","language":"E","catalogue":"B&H-Regular","isUsed":false,"SSSC_C":"","referrer":"","cartTotal":"","jSessionId":"","cm_mmc":"","b2bCatalogue":"","rememberId":"","cookieId":"","ib":true,"isMobile":false,"dataLayerInfo":""},
          "product": {"salesComment":"","isExpertPick":false,"itemCode":"","featuredItemCategory":"","source":"","category":"","sku":""},
          	"used": {
          		"products" :[]
@@ -1655,7 +1665,7 @@ var dlo =
 		lazyLoad.jsOnReady('//ensighten.bhphoto.com/bhfoto/Bootstrap.js');
 	</script>
 <script>window.forterSiteID = '07c0aec6173f'</script>
-<script>lazyLoad.lazyJs('https://www.bhphotovideo.com/find/javascripts.jsp?files=3rdParty/forter.js&min=Y&site=reg&vr=-115587270');</script>
+<script>lazyLoad.lazyJs('https://www.bhphotovideo.com/find/javascripts.jsp?files=3rdParty/forter.js&min=Y&site=reg&vr=-1765451250');</script>
 <script type="text/javascript">
 		lazyLoad.setOdUrl("https://www.bhphotovideo.com/find/javascripts.jsp?&min=Y&site=reg&v=release-WEB-20201014v10-BHJ-DVB25516-20&module=");
 	</script>
@@ -1710,5 +1720,5 @@ var dlo =
 		embeddedLiveChatProperties.snapins_button_id = '5732L00000005mQ';
 		embeddedLiveChatProperties.snapins_deployment_name = 'Snap_Ins';
 	</script>
-<script type="text/javascript" id="d__inj" class="d__inj_delayed"> setTimeout(function(){ var d = document.createElement('script'); d.type = 'text/javascript';  d.defer = d.async = !0; d.src = '/otohphnbwww-abauxzusewdyzrbrdsstbxueczfuyuvcrvsz.js';  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(d, s);  }, 20 ); </script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#zddddssfaesreyuteccbrd{display:none!important}</style></body>
+<script type="text/javascript" id="d__inj" class="d__inj_delayed"> setTimeout(function(){ var d = document.createElement('script'); d.type = 'text/javascript';  d.defer = d.async = !0; d.src = '/otohphnbwww-wfzybudeaqxbyccuuswufxtbzffbcy.js';  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(d, s);  }, 20 ); </script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#saybvqeqsbzusuzyzutxuq{display:none!important}</style></body>
 </html>
