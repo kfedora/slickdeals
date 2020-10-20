@@ -1,10 +1,10 @@
 HTTP/1.1 200 OK
 Content-Type: text/html; charset=utf-8
-ETag: "3843061554"
+ETag: "310043282"
 Server: Microsoft-IIS/8.5
-X-OPNET-Transaction-Trace: a2_7ee8ce20-0780-4d86-8e3f-47e99007d3bf-13196-110314
+X-OPNET-Transaction-Trace: a2_179c148b-33ad-4588-a16b-98b0dff78375-48840-108342
 X-AspNetMvc-Version: 
-X-Dell-Timing: Core Execution 480ms
+X-Dell-Timing: Core Execution 294ms
 X-AspNet-Version: 
 X-Powered-By: 
 X-Frame-Options: DENY
@@ -12,16 +12,18 @@ X-Powered-By:
 P3P: CP=" BUS CAO CNT COM CUR DEV DSP INT NAV OUR PSA PSD SAM STA TAI UNI "
 X-UA-Compatible: IE=edge
 X-Powered-By: 
-X-ARRServer: PWOLARR03
+X-ARRServer: PWOLARR02
+X-Akamai-Path-Stats: [3:38097:367903]
+X-Akamai-Transformed: 9 32457 0 pmb=mRUM,1
 Vary: Accept-Encoding
 Cache-Control: public, max-age=5
-Expires: Tue, 20 Oct 2020 05:19:04 GMT
-Date: Tue, 20 Oct 2020 05:18:59 GMT
+Expires: Tue, 20 Oct 2020 15:19:45 GMT
+Date: Tue, 20 Oct 2020 15:19:40 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Set-Cookie: dell_canary=live;Path=/;Domain=.dell.com;SameSite=None;Secure
-Set-Cookie: akavpau_vp1=1603171439~id=ea444f15fbb179404e2334d883cb7924; Path=/; Secure; SameSite=None
+Set-Cookie: akavpau_vp1=1603207480~id=325510bf0cf00183e210ad7ac2791d71; Path=/; Secure; SameSite=None
 akamai-ttl-rule: landing
 Strict-Transport-Security: max-age=86400
 
@@ -106,7 +108,9 @@ Strict-Transport-Security: max-age=86400
                   var performancedata = {}; function performance_polyfill() { var e, r, n, o, t, a, i; e = window, r = Date.now ? Date.now() : +new Date, n = e.performance || {}, o = [], t = {}, a = function (e, r) { for (var n = 0, t = o.length, a = []; n < t; n++)o[n][e] == r && a.push(o[n]); return a }, i = function (e, r) { for (var n, t = o.length; t--;)(n = o[t]).entryType != e || void 0 !== r && n.name != r || o.splice(t, 1) }, n.now || (n.now = n.webkitNow || n.mozNow || n.msNow || function () { return (Date.now ? Date.now() : +new Date) - r }), n.mark || (n.mark = n.webkitMark || function (e) { var r = { name: e, entryType: "mark", startTime: n.now(), duration: 0 }; o.push(r), t[e] = r }), n.measure || (n.measure = n.webkitMeasure || function (e, r, n) { t[r] && t[n] && (r = t[r].startTime, n = t[n].startTime, o.push({ name: e, entryType: "measure", startTime: r, duration: n - r })) }), n.getEntriesByType || (n.getEntriesByType = n.webkitGetEntriesByType || function (e) { return a("entryType", e) }), n.getEntriesByName || (n.getEntriesByName = n.webkitGetEntriesByName || function (e) { return a("name", e) }), n.clearMarks || (n.clearMarks = n.webkitClearMarks || function (e) { i("mark", e) }), n.clearMeasures || (n.clearMeasures = n.webkitClearMeasures || function (e) { i("measure", e) }), e.performance = n, "function" == typeof define && (define.amd || define.ajs) && define("performance", [], function () { return n }), Dell.perfmetrics.enabled = !0, e.addEventListener("load", function () { e.dispatchEvent(new CustomEvent("winLoad")) }, !1) } if (Dell = window.Dell || {}, Dell.perfmetrics = Dell.perfmetrics || {}, Dell.perfmetrics.measure = function (e, r, n) { performance.measure(e, r, n) }, Dell.perfmetrics.start = function (e) { try { Dell.perfmetrics.enabled && performance.mark(e + "-start") } catch (e) { } }, Dell.perfmetrics.end = function (e) { try { Dell.perfmetrics.enabled && (performance.mark(e + "-end"), Dell.perfmetrics.measure(e, e + "-start", e + "-end")) } catch (e) { } }, "object" == typeof performance && "function" == typeof performance.mark) Dell.perfmetrics.enabled = !0; else try { performance_polyfill() } catch (e) { Dell.perfmetrics.enabled = !1 } Dell = window.Dell || {}, Dell.logger = Dell.logger || {}, function (e) { (function () { "use strict"; var r, o = !0, i = [], n = e.console || {}; function t() { n.log(arguments); var e = ""; for (var r in arguments) arguments.hasOwnProperty(r) && (void 0 !== arguments[r].stack ? e += " " + arguments[r].stack : e += " " + arguments[r]); return e } n.error = n.error || function () { }, n.error = (r = n.error.bind(n), function (e) { o && (t(e), i.push({ message: e, consoleInvoked: !0 })), r(e) }), e.onerror = function (e, r, n, t, a) { return o && i.push({ message: e, fileName: r, lineNumber: n, columnNumber: t, errorObj: a }), !1 }, this.log = function () { n.log(arguments), i.push({ message: t.apply(null, arguments), logInvoked: !0 }) }, this.disableLogger = function () { o = !1 }, this.getLog = function () { return i } }).call(Dell.logger) }(window);
               </script>
           <script src="/bundles/jquery-3-0-1-913?v=9ktsOtIo0upvJP7-7FiXuOoOJe58RLFJ__wIRPL2vGo1"></script>
-      </head>
+      
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"548817",ustr:"",originlat:"0",clientrtt:"5",ghostip:"184.25.96.92",ipv6:false,pct:"10",clientip:"20.186.155.209",requestid:"54b6a71",region:"34480",protocol:"",blver:14,akM:"dscx",akN:"ae",akTT:"O",akTX:"1",akTI:"54b6a71",ai:"356936",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
       <body id="dealsLanding" class="destroy-owl filter-active category-page">
               <script data-perf="bodyGlobal">Dell.perfmetrics.start('bodyGlobal');</script>
 
@@ -492,7 +496,7 @@ Strict-Transport-Security: max-age=86400
                                     <a href="//www.dell.com/en-us/member/shop/sfc/sf/g-series-desktops?~ck=mn" class="mh-tier4-link mh-nav-hover" data-testid="header-navigation-menu-t3-item">View All Dell G Series Desktops</a>
                                 </li>
                                 <li>
-                                    <a href="//www.dell.com/en-us/member/shop/cty/pdp/spd/g-series-5000-desktop?~ck=mn" class="mh-tier4-link mh-nav-hover" data-testid="header-navigation-menu-t3-item">New G5 Gaming Desktop</a>
+                                    <a href="//www.dell.com/en-us/member/shop/cty/pdp/spd/g-series-5000-desktop?~ck=mn" class="mh-tier4-link mh-nav-hover" data-testid="header-navigation-menu-t3-item">G5 Gaming Desktop</a>
                                 </li>
                         </ul>
                     </li>
@@ -639,7 +643,7 @@ Strict-Transport-Security: max-age=86400
                                     <a href="//www.dell.com/en-us/member/shop/sfc/sf/g-series-desktops?~ck=mn" class="mh-tier4-link mh-nav-hover" data-testid="header-navigation-menu-t3-item">View All Dell G Series Desktops</a>
                                 </li>
                                 <li>
-                                    <a href="//www.dell.com/en-us/member/shop/cty/pdp/spd/g-series-5000-desktop?~ck=mn" class="mh-tier4-link mh-nav-hover" data-testid="header-navigation-menu-t3-item">New G5 Gaming Desktop</a>
+                                    <a href="//www.dell.com/en-us/member/shop/cty/pdp/spd/g-series-5000-desktop?~ck=mn" class="mh-tier4-link mh-nav-hover" data-testid="header-navigation-menu-t3-item">G5 Gaming Desktop</a>
                                 </li>
                         </ul>
                     </li>
@@ -2924,7 +2928,7 @@ Strict-Transport-Security: max-age=86400
 <input type="hidden" id="startTimerDateTime" value="2020-10-31T12:00:00Z" />
 <input type="hidden" id="numberOfHoursBeforeEvent" value="48" />
 <input type="hidden" id="dateTimeOverrideFlag" value="False" />
-<input type="hidden" id="dateTimeOverride" value="2020-10-20T05:18:59Z" />
+<input type="hidden" id="dateTimeOverride" value="2020-10-20T15:19:40Z" />
 <input type="hidden" id="landingPageUrl" value="/en-us/mpp" />
 <input type="hidden" id="dateTimeOverrideForValuePropBannerTimerFlag" value="True" />
 <input type="hidden" id="hideEventCountdownFlag" value="true" />
@@ -3535,7 +3539,7 @@ Strict-Transport-Security: max-age=86400
     <script type="text/javascript">
     var notFoundImage = '/Content/images/NotFound.png';
     var noReservationTooltip = decodeHtml("Claimed products include items in customers&amp;#39; carts, so more may become available if they aren&amp;#39;t purchased.");
-    var claimApi = "/api/mpp/claim?dealIds=5tyc-5tye-5tyg-5tz6-5tz8-5tza-5tzc-5tze-5tzg-5tzi-5tzk-5tzm-5u0k-5u0m-5u0o-5u0q";
+    var claimApi = "/api/mpp/claim?dealIds=5qqi-5qqq-5qr2-5tyc-5tye-5tyg-5tz6-5tz8-5tza-5tzc-5tze-5tzg-5tzi-5tzk-5tzm-5u0k-5u0m-5u0o-5u0q";
     var dealTimerJson = [];
     var timerEndsInLabel = "Ends in";
     var timerStartsInLabel = "Starts in";
