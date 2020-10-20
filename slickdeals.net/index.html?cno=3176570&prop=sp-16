@@ -1,10 +1,10 @@
 HTTP/1.1 200 OK
 Content-Type: text/html; charset=utf-8
-ETag: "2845343145"
+ETag: "1243639378"
 Server: Microsoft-IIS/8.5
-X-OPNET-Transaction-Trace: a2_c01bc474-dfd7-4802-a295-dff88fed9296-46856-922
+X-OPNET-Transaction-Trace: a2_952e0d4f-cdd1-4c09-b8a4-2e0f47b4d36b-48120-28384
 X-AspNetMvc-Version: 
-X-Dell-Timing: Core Execution 433ms
+X-Dell-Timing: Core Execution 256ms
 X-AspNet-Version: 
 X-Powered-By: 
 X-Frame-Options: DENY
@@ -12,16 +12,17 @@ X-Powered-By:
 P3P: CP=" BUS CAO CNT COM CUR DEV DSP INT NAV OUR PSA PSD SAM STA TAI UNI "
 X-UA-Compatible: IE=edge
 X-Powered-By: 
-X-ARRServer: PWOLARR02
+X-ARRServer: PWOLARR01
+X-Akamai-Transformed: 9 38648 0 pmb=mRUM,1
 Vary: Accept-Encoding
 Cache-Control: public, max-age=5
-Expires: Tue, 20 Oct 2020 15:16:57 GMT
-Date: Tue, 20 Oct 2020 15:16:52 GMT
+Expires: Tue, 20 Oct 2020 20:27:37 GMT
+Date: Tue, 20 Oct 2020 20:27:32 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Set-Cookie: dell_canary=live;Path=/;Domain=.dell.com;SameSite=None;Secure
-Set-Cookie: akavpau_vp1=1603207312~id=33a257a695866a34af4ebfbc9a9688df; Path=/; Secure; SameSite=None
+Set-Cookie: akavpau_vp1=1603225952~id=da4cb63ee104ac5062fefc2bc319d509; Path=/; Secure; SameSite=None
 akamai-ttl-rule: landing
 Strict-Transport-Security: max-age=86400
 
@@ -76,7 +77,7 @@ Strict-Transport-Security: max-age=86400
           <link rel="preload" as="font" href="//fcs.dellcdn.com/fonts/roboto-300.woff2" type="font/woff2" crossorigin="anonymous">
           <link rel="preload" as="font" href="//fcs.dellcdn.com/fonts/icon-brand.woff2" type="font/woff2" crossorigin="anonymous">
 
-        <meta name="description" content="Dell Black Friday TV Deals Sneak Peak: Save on the latest OLED, QLED, 4K, Ultra HD, HDR, Smart TVs. FREE DELIVERY ✓"/>
+        <meta name="description" content="Dell Black Friday TV Deals Sneak Peek: Save on the latest OLED, QLED, 4K, Ultra HD, HDR, Smart TVs. FREE DELIVERY ✓"/>
                         
     <link rel="canonical" href="https://deals.dell.com/en-us/category/televisions" />
           <title>TVs on Sale | Dell USA</title>
@@ -108,7 +109,9 @@ Strict-Transport-Security: max-age=86400
                   var performancedata = {}; function performance_polyfill() { var e, r, n, o, t, a, i; e = window, r = Date.now ? Date.now() : +new Date, n = e.performance || {}, o = [], t = {}, a = function (e, r) { for (var n = 0, t = o.length, a = []; n < t; n++)o[n][e] == r && a.push(o[n]); return a }, i = function (e, r) { for (var n, t = o.length; t--;)(n = o[t]).entryType != e || void 0 !== r && n.name != r || o.splice(t, 1) }, n.now || (n.now = n.webkitNow || n.mozNow || n.msNow || function () { return (Date.now ? Date.now() : +new Date) - r }), n.mark || (n.mark = n.webkitMark || function (e) { var r = { name: e, entryType: "mark", startTime: n.now(), duration: 0 }; o.push(r), t[e] = r }), n.measure || (n.measure = n.webkitMeasure || function (e, r, n) { t[r] && t[n] && (r = t[r].startTime, n = t[n].startTime, o.push({ name: e, entryType: "measure", startTime: r, duration: n - r })) }), n.getEntriesByType || (n.getEntriesByType = n.webkitGetEntriesByType || function (e) { return a("entryType", e) }), n.getEntriesByName || (n.getEntriesByName = n.webkitGetEntriesByName || function (e) { return a("name", e) }), n.clearMarks || (n.clearMarks = n.webkitClearMarks || function (e) { i("mark", e) }), n.clearMeasures || (n.clearMeasures = n.webkitClearMeasures || function (e) { i("measure", e) }), e.performance = n, "function" == typeof define && (define.amd || define.ajs) && define("performance", [], function () { return n }), Dell.perfmetrics.enabled = !0, e.addEventListener("load", function () { e.dispatchEvent(new CustomEvent("winLoad")) }, !1) } if (Dell = window.Dell || {}, Dell.perfmetrics = Dell.perfmetrics || {}, Dell.perfmetrics.measure = function (e, r, n) { performance.measure(e, r, n) }, Dell.perfmetrics.start = function (e) { try { Dell.perfmetrics.enabled && performance.mark(e + "-start") } catch (e) { } }, Dell.perfmetrics.end = function (e) { try { Dell.perfmetrics.enabled && (performance.mark(e + "-end"), Dell.perfmetrics.measure(e, e + "-start", e + "-end")) } catch (e) { } }, "object" == typeof performance && "function" == typeof performance.mark) Dell.perfmetrics.enabled = !0; else try { performance_polyfill() } catch (e) { Dell.perfmetrics.enabled = !1 } Dell = window.Dell || {}, Dell.logger = Dell.logger || {}, function (e) { (function () { "use strict"; var r, o = !0, i = [], n = e.console || {}; function t() { n.log(arguments); var e = ""; for (var r in arguments) arguments.hasOwnProperty(r) && (void 0 !== arguments[r].stack ? e += " " + arguments[r].stack : e += " " + arguments[r]); return e } n.error = n.error || function () { }, n.error = (r = n.error.bind(n), function (e) { o && (t(e), i.push({ message: e, consoleInvoked: !0 })), r(e) }), e.onerror = function (e, r, n, t, a) { return o && i.push({ message: e, fileName: r, lineNumber: n, columnNumber: t, errorObj: a }), !1 }, this.log = function () { n.log(arguments), i.push({ message: t.apply(null, arguments), logInvoked: !0 }) }, this.disableLogger = function () { o = !1 }, this.getLog = function () { return i } }).call(Dell.logger) }(window);
               </script>
           <script src="/bundles/jquery-3-0-1-913?v=9ktsOtIo0upvJP7-7FiXuOoOJe58RLFJ__wIRPL2vGo1"></script>
-      </head>
+      
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"548817",ustr:"",originlat:"0",clientrtt:"4",ghostip:"23.64.3.205",ipv6:false,pct:"10",clientip:"20.191.79.99",requestid:"1bab911",region:"35327",protocol:"",blver:14,akM:"dscx",akN:"ae",akTT:"O",akTX:"1",akTI:"1bab911",ai:"356936",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
       <body id="dealsLanding" class="destroy-owl filter-active category-page">
               <script data-perf="bodyGlobal">Dell.perfmetrics.start('bodyGlobal');</script>
 
@@ -202,7 +205,7 @@ Strict-Transport-Security: max-age=86400
                     <a href="//www.dell.com/Identity/global/Login/75814991-4252-4cc4-a977-670cc21309a7?~ck=mn" class="mh-si-links mh-si-cold-state ">Premier Sign In</a>
                     <a href="//www.dell.com/en-us/myaccount/?~ck=mn" class="mh-si-links mh-si-hot-state mh-first">My Account</a>
                     <a href="//www.dell.com/support/orders?~ck=mn" class="mh-si-links mh-si-hot-state ">Order Status</a>
-                    <a href="//www.dell.com/support/assets-online/?~ck=mn" class="mh-si-links mh-si-hot-state ">My Products</a>
+                    <a href="//www.dell.com/support/mps/?~ck=mn" class="mh-si-links mh-si-hot-state ">My Products</a>
                     <a href="//dfs.dell.com/Pages/DFSHomePage.aspx?~ck=mn" class="mh-si-links mh-si-hot-state ">Dell Financial Services</a>
                     <a href="//www.dell.com/en-us/shop/dell-rewards-program/cp/dell-rewards-program?~ck=mn" class="mh-si-links mh-si-hot-state ">Dell Rewards</a>
                     <a href="//www.dell.com/Identity/global/Login/75814991-4252-4cc4-a977-670cc21309a7?~ck=mn" class="mh-si-links mh-si-hot-state ">Premier Sign In</a>
@@ -2924,7 +2927,7 @@ Strict-Transport-Security: max-age=86400
 <input type="hidden" id="startTimerDateTime" value="2020-10-31T12:00:00Z" />
 <input type="hidden" id="numberOfHoursBeforeEvent" value="48" />
 <input type="hidden" id="dateTimeOverrideFlag" value="False" />
-<input type="hidden" id="dateTimeOverride" value="2020-10-20T15:16:51Z" />
+<input type="hidden" id="dateTimeOverride" value="2020-10-20T20:27:32Z" />
 <input type="hidden" id="landingPageUrl" value="/en-us" />
 <input type="hidden" id="dateTimeOverrideForValuePropBannerTimerFlag" value="True" />
 <input type="hidden" id="hideEventCountdownFlag" value="true" />
@@ -3328,19 +3331,19 @@ Strict-Transport-Security: max-age=86400
         </div>
         <div class="col-sm-6 col-lg-7">
             <select id="deal-type-filter" class="form-control" data-style="btn-default">
-                    <option value="/en-us" >All Sneak Peek Deals (211)</option>
-                    <option value="/en-us/category/laptops" >Laptop Deals (15)</option>
-                    <option value="/en-us/category/desktops" >Desktop Computer Deals (11)</option>
-                    <option value="/en-us/category/gamingpcs" >Gaming PC Deals &amp; XPS Deals (26)</option>
-                    <option value="/en-us/category/shipsfast" >Fast Shipping PCs (21)</option>
+                    <option value="/en-us" >All Sneak Peek Deals (226)</option>
+                    <option value="/en-us/category/laptops" >Laptop Deals (19)</option>
+                    <option value="/en-us/category/desktops" >Desktop Computer Deals (12)</option>
+                    <option value="/en-us/category/gamingpcs" >Gaming PC Deals &amp; XPS Deals (27)</option>
+                    <option value="/en-us/category/shipsfast" >Fast Shipping PCs (23)</option>
                     <option value="/en-us/category/ena" >Black Friday Electronics Deals (16)</option>
                     <option value="/en-us/category/monitors" >Monitor Deals (8)</option>
                     <option value="/en-us/category/televisions" selected=&#39;selected&#39;>TVs on Sale (21)</option>
                     <option value="/en-us/category/keyboardsmice" >Keyboards, Mice and Bag Deals (15)</option>
-                    <option value="/en-us/category/gamingaccessories" >Gaming Accessories Deals (16)</option>
+                    <option value="/en-us/category/gamingaccessories" >Gaming Accessories Deals (17)</option>
                     <option value="/en-us/category/accessories" >PC Accessories Deals (13)</option>
                     <option value="/en-us/category/audio" >Audio Deals (12)</option>
-                    <option value="/en-us/category/intelpcs" >Intel&#174; PCs (37)</option>
+                    <option value="/en-us/category/intelpcs" >Intel&#174; PCs (43)</option>
             </select>
         </div>
         <div class="col-sm-3 col-lg-3 currently-viewing clear-all hidden-xs">
@@ -3452,7 +3455,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$75</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -3534,7 +3537,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$120</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -3616,7 +3619,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$60</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -3698,7 +3701,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$60</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -3780,7 +3783,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$45</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -3862,7 +3865,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$51</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -3944,7 +3947,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$66</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4026,7 +4029,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$45</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4108,7 +4111,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$42</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4190,7 +4193,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$30</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4272,7 +4275,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$27</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4354,7 +4357,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$21</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4436,7 +4439,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$54</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4518,7 +4521,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$60</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4600,7 +4603,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$33</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4682,7 +4685,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$24</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4764,7 +4767,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$27</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4846,7 +4849,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$20</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -4928,7 +4931,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$20</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -5006,7 +5009,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$51</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -5084,7 +5087,7 @@ Strict-Transport-Security: max-age=86400
             <div>Financing</div>
             <span class="dell-blue">
                 <a target="_blank" href="//www.dell.com/downloads/global/services/sd/dpa_payoff_chart.pdf?dfsref=dfsmsg">As low as <span class="dpaPrice">$20</span>/mo.^</a> |
-                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3d4511042912e711eb823a04d50a24060d%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-43e2289812e711ebaebedafb51a005200INT%26dclid%3dCOfskcK7w-wCFX7PKAUd__APow" target="_self">Apply for credit</a>
+                <a href="https://www.dell.com/financing/comm/dpamarcom?s=dhs&amp;l=en&amp;cs=19&amp;c=us&amp;ptype=dpa&amp;returnurl=http%3a%2f%2fdeals.dell.com%2fen-us%2fcategory%2ftelevisions%3fref%3dp13n_hpr_dhs_hero_3_cta_1%26AID%3d1225267%26cjevent%3dabe0c8c7131211eb828602cc0a1c0e0b%26gacd%3d9694607-23736398-5750457-266319267-127795103%26dgc%3daf%26VEN1%3d12578053-1225267-aa407c36131211ebb2e5e61b785c285b0INT%26dclid%3dCOCA7fqAxOwCFUy-ZAodqPYLoQ" target="_self">Apply for credit</a>
             </span>
         </div>
 
@@ -5345,7 +5348,7 @@ Strict-Transport-Security: max-age=86400
     <script type="text/javascript">
     var notFoundImage = '/Content/images/NotFound.png';
     var noReservationTooltip = decodeHtml("Claimed products include items in customers&amp;#39; carts, so more may become available if they aren&amp;#39;t purchased.");
-    var claimApi = "/api/claim?dealIds=5qoc-5qok-5qow-5txy-5ty0-5ty2-5tzo-5tzq-5tzs-5tzu-5tzw-5tzy-5u00-5u02-5u04-5u0c-5u0e-5u0g-5u0i";
+    var claimApi = "/api/claim?dealIds=5qoc-5qok-5qow-5txy-5ty0-5ty2-5tzo-5tzq-5tzs-5tzu-5tzw-5tzy-5u00-5u02-5u04-5u0c-5u0e-5u0g-5u0i-5ud8-5uda-5ury-5us0-5us2";
     var dealTimerJson = [];
     var timerEndsInLabel = "Ends in";
     var timerStartsInLabel = "Starts in";
