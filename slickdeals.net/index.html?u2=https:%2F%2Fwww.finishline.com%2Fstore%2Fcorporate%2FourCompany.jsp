@@ -1,24 +1,13 @@
-HTTP/1.1 200 OK
-Server: Apache
-X-Frame-Options: SAMEORIGIN
-Pragma: no-cache
-X-Powered-By: Servlet/3.0 JSP/2.2
-X-Content-Type-Options: nosniff
-X-XSS-Protection: 1; mode=block
-Content-Type: text/html; charset=UTF-8
-X-Akamai-Transformed: 9 29025 0 pmb=mRUM,2
-Vary: Accept-Encoding
-Cache-Control: max-age=3600
-Expires: Tue, 20 Oct 2020 16:33:47 GMT
-Date: Tue, 20 Oct 2020 15:33:47 GMT
-Transfer-Encoding:  chunked
+HTTP/1.1 500 Internal Server Error
+Cache-Control: no-cache
+Content-Type: text/html
+Content-Length: 96
+Date: Tue, 20 Oct 2020 18:54:04 GMT
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=499
-Server-Timing: origin; dur=594
-X-Akam-SW-Version: 0.5.0
-Strict-Transport-Security: max-age=31536000
-Set-Cookie: akavpau_wwwvpfs=1603208327~id=27da66db3d6de18f066143ecdffd6e23; Domain=www.finishline.com; Path=/; Secure; SameSite=None
+Server-Timing: edge; dur=37
+Server-Timing: origin; dur=15033
+Strict-Transport-Security: max-age=86400
 
 
 
