@@ -1,9 +1,8 @@
 HTTP/1.1 200 OK
-Date: Mon, 19 Oct 2020 14:05:59 GMT
+Date: Tue, 20 Oct 2020 02:42:45 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=dbbae31971bf34539da090b557957b9311603116358; expires=Wed, 18-Nov-20 14:05:58 GMT; path=/; domain=.stereophile.com; HttpOnly; SameSite=Lax
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
 Cache-Control: no-cache, must-revalidate
 X-Content-Type-Options: nosniff
@@ -12,12 +11,12 @@ X-Frame-Options: SAMEORIGIN
 X-Generator: Drupal 7 (http://drupal.org)
 Link: <https://www.stereophile.com/index.html>; rel="canonical",<https://www.stereophile.com/node/3>; rel="shortlink"
 CF-Cache-Status: DYNAMIC
-cf-request-id: 05e2c774030000137e1f27e000000001
+cf-request-id: 05e57c494e0000137eaebc5000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=69&lkg-time=1603116360"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=69&lkg-time=1603161765"}],"group":"cf-nel","max_age":604800}
 NEL: {"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 5e4b0e999ae3137e-YVR
+CF-RAY: 5e4f63221d87137e-YVR
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -56,7 +55,7 @@ CF-RAY: 5e4b0e999ae3137e-YVR
 <script type="text/javascript" src="https://www.stereophile.com/images/js/js_crV9Xrw7L_hCo7l4cgqPIRDDxCyZ3ApNku0DuCCqWgk.js"></script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"hometech","theme_token":"Xt9X6ZjFAp0GhuN0FXKjAUWyvDvaQIQcwC42p_lW4og","jquery_version":"1.7","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/jquery.cookie-1.4.1.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/ignore_user\/ignore_user.js":1,"sites\/all\/modules\/image_caption\/image_caption.min.js":1,"sites\/all\/modules\/quote\/quote.js":1,"sites\/all\/modules\/ultimenu\/js\/ultimenu.js":1,"misc\/progress.js":1,"sites\/all\/modules\/fancy_login\/js\/fancy_login.js":1,"sites\/all\/themes\/hometech\/js\/subad.js":1,"sites\/all\/themes\/hometech\/js\/gptevents.js":1,"sites\/all\/themes\/hometech\/js\/ResizeSensor.js":1,"sites\/all\/themes\/hometech\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/quote\/quote.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/modules\/ultimenu\/css\/ultimenu.css":1,"sites\/all\/modules\/ultimenu\/skins\/ultimenu-basic.css":1,"images\/honeypot\/honeypot.css":1,"sites\/all\/modules\/fancy_login\/css\/fancy_login.css":1,"sites\/all\/themes\/hometech\/css\/style.css":1,"sites\/all\/themes\/hometech\/css\/print.css":1}},"quote_nest":2,"urlIsAjaxTrusted":{"\/":true,"\/system\/ajax":true,"\/index.html?destination=node\/3":true},"ajax":{"edit-submit-1603116358":{"wrapper":"fancy_login_user_login_block_wrapper","callback":"fancy_login_user_login_block_ajax_callback","event":"mousedown","keypress":true,"prevent":"click","url":"\/system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Log in"}}},"fancyLogin":{"screenFadeColor":"black","screenFadeZIndex":"10","loginBoxBackgroundColor":"#ddd","loginBoxTextColor":"black","loginBoxBorderColor":"#fff","loginBoxBorderWidth":"0","loginBoxBorderStyle":"none","loginPath":"user\/login","dimFadeSpeed":500,"boxFadeSpeed":1000,"hideObjects":0,"disableRegistration":1}});
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"hometech","theme_token":"vP2Dsb8hMgsJHTd6ZVTiUWJAZl56EbrZPH7mvdq-ABk","jquery_version":"1.7","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/jquery.cookie-1.4.1.min.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/ignore_user\/ignore_user.js":1,"sites\/all\/modules\/image_caption\/image_caption.min.js":1,"sites\/all\/modules\/quote\/quote.js":1,"sites\/all\/modules\/ultimenu\/js\/ultimenu.js":1,"misc\/progress.js":1,"sites\/all\/modules\/fancy_login\/js\/fancy_login.js":1,"sites\/all\/themes\/hometech\/js\/subad.js":1,"sites\/all\/themes\/hometech\/js\/gptevents.js":1,"sites\/all\/themes\/hometech\/js\/ResizeSensor.js":1,"sites\/all\/themes\/hometech\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/quote\/quote.css":1,"sites\/all\/modules\/panels\/plugins\/layouts\/onecol\/onecol.css":1,"sites\/all\/modules\/ultimenu\/css\/ultimenu.css":1,"sites\/all\/modules\/ultimenu\/skins\/ultimenu-basic.css":1,"images\/honeypot\/honeypot.css":1,"sites\/all\/modules\/fancy_login\/css\/fancy_login.css":1,"sites\/all\/themes\/hometech\/css\/style.css":1,"sites\/all\/themes\/hometech\/css\/print.css":1}},"quote_nest":2,"urlIsAjaxTrusted":{"\/":true,"\/system\/ajax":true,"\/index.html?destination=node\/3":true},"ajax":{"edit-submit-1603161764":{"wrapper":"fancy_login_user_login_block_wrapper","callback":"fancy_login_user_login_block_ajax_callback","event":"mousedown","keypress":true,"prevent":"click","url":"\/system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Log in"}}},"fancyLogin":{"screenFadeColor":"black","screenFadeZIndex":"10","loginBoxBackgroundColor":"#ddd","loginBoxTextColor":"black","loginBoxBorderColor":"#fff","loginBoxBorderWidth":"0","loginBoxBorderStyle":"none","loginPath":"user\/login","dimFadeSpeed":500,"boxFadeSpeed":1000,"hideObjects":0,"disableRegistration":1}});
 //--><!]]>
 </script>
 <script type="text/javascript">var AccountName="aumostereophilehub"</script>
@@ -169,7 +168,7 @@ LOG IN | JOIN</span></a></td>
   <label class="element-invisible" for="edit-search-block-form--2">Search </label>
  <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
 </div>
-<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-7ds-TMqPU4vY8CpAwviSATW4ZLQqg-02ZpSfJL8lZtY" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-LGx_eE6MBvcpclknnBtiBiaHGeay9zjbIXrP5TODZZo" />
 <input type="hidden" name="form_id" value="search_block_form" />
 </div>
 </div></form><ul class="ultimenu horizontal ultimenu-htb ultimenu-main-menu ultimenu-basic clearfix">
@@ -495,7 +494,7 @@ LOG IN | JOIN</span></a></td>
       
   
   <div class="pane-content">
-    <div class="view view-frontpage view-id-frontpage view-display-id-default view-dom-id-2444d1d4fc763e4834101c07c048afb5">
+    <div class="view view-frontpage view-id-frontpage view-display-id-default view-dom-id-16ac5d103765c1801e26cee78f80fb24">
       <div class="view-header">
       <div class="headhome600"><img src="/sites/all/themes/hometech/images/headiconlarge.png" width="48" height="44" border="0" align="left"></img><h1>LATEST ADDITIONS</h1></div>
 <P>
@@ -506,32 +505,46 @@ LOG IN | JOIN</span></a></td>
       <div class="view-content">
         <div class="views-row views-row-1 views-row-odd views-row-first">
       
+  <div class="views-field views-field-taxonomy-vocabulary-2">        <div class="field-content"><a href="/category/re-tales">Re-Tales</a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/content/re-tales-2-dealerships-forge-ahead-during-pandemic">Re-Tales #2: Dealerships forge ahead during the pandemic</a>
+</span>  </div>  
+  <span class="views-field views-field-field-authors">        <!-- 227397 --><!-- 227397; --><a title="View more from Julie Mullins" href="/writer/227397">Julie Mullins</a>  </span>      <span class="seperator">&nbsp;&#124;&nbsp;</span>  
+  <span class="views-field views-field-created">        <span class="field-content">Oct 19, 2020</span>  </span>      <span class="seperator">&nbsp;&#124;&nbsp;</span>  
+  <span class="views-field views-field-php-1">        <span class="field-content"><span class="views-field-comment-count"><span class="field-content"><a href="/content/re-tales-2-dealerships-forge-ahead-during-pandemic#comments">1 comments</a></span></span></span>  </span>  
+  <div class="views-field views-field-field-promo-image">        <div class="field-content"><a href="/content/re-tales-2-dealerships-forge-ahead-during-pandemic"><img src="https://www.stereophile.com/images/styles/600_wide/public/1020retails.promosn.jpg" width="600" height="392" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-field-promo-teaser">        <div class="field-content">The sense of hope I've been feeling may have started with those Sinatra swells, the on-hold music I heard when I called to interview the first audio dealer I talked to for this story. I wanted to know what's been happening with their businesses during the pandemic. Are there reasons for at least cautious optimism?
+</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content">
+<a href="/content/re-tales-2-dealerships-forge-ahead-during-pandemic">Continue Reading »</a>
+</span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
   <div class="views-field views-field-taxonomy-vocabulary-2">        <div class="field-content"><a href="/category/integrated-amp-reviews">Integrated Amp Reviews</a></div>  </div>  
   <div class="views-field views-field-title">        <span class="field-content"><a href="/content/grandinote-shinai-integrated-amplifier">Grandinote Shinai integrated amplifier</a>
 </span>  </div>  
   <span class="views-field views-field-field-authors">        <!-- 147419 --><!-- 147419; --><a title="View more from Robert Schryer" href="/writer/147419">Robert Schryer</a>  </span>      <span class="seperator">&nbsp;&#124;&nbsp;</span>  
   <span class="views-field views-field-created">        <span class="field-content">Oct 16, 2020</span>  </span>      <span class="seperator">&nbsp;&#124;&nbsp;</span>  
-  <span class="views-field views-field-php-1">        <span class="field-content"><span class="views-field-comment-count"><span class="field-content"><a href="/content/grandinote-shinai-integrated-amplifier#comments">9 comments</a></span></span></span>  </span>  
+  <span class="views-field views-field-php-1">        <span class="field-content"><span class="views-field-comment-count"><span class="field-content"><a href="/content/grandinote-shinai-integrated-amplifier#comments">15 comments</a></span></span></span>  </span>  
   <div class="views-field views-field-field-promo-image">        <div class="field-content"><a href="/content/grandinote-shinai-integrated-amplifier"><img src="https://www.stereophile.com/images/styles/600_wide/public/1020grand.promo_.jpg" width="600" height="407" alt="" /></a></div>  </div>  
   <div class="views-field views-field-field-promo-teaser">        <div class="field-content">I was doing my press beat for <I>Stereophile</I> in the hallway of Montreal's 2019 Audiofest when I glimpsed something that stopped me in my tracks. It was a marketing slogan, across the room on importer/exhibitor Goerner Audio's floorstanding banner: "Tubes or semiconductors? Magneto-solid technology amplifies emotions."
 </div>  </div>  
   <div class="views-field views-field-view-node">        <span class="field-content">
 <a href="/content/grandinote-shinai-integrated-amplifier">Continue Reading »</a>
 </span>  </div>  </div>
-  <div class="views-row views-row-2 views-row-even">
+  <div class="views-row views-row-3 views-row-odd">
       
   <div class="views-field views-field-taxonomy-vocabulary-2">        <div class="field-content"><a href="/category/we-see-it">As We See It</a></div>  </div>  
   <div class="views-field views-field-title">        <span class="field-content"><a href="/content/you-too-can-listen-pro">You, too, can listen like a pro!</a>
 </span>  </div>  
   <span class="views-field views-field-field-authors">        <!-- 111 --><!-- 111; --><a title="View more from Jim Austin" href="/writer/111">Jim Austin</a>  </span>      <span class="seperator">&nbsp;&#124;&nbsp;</span>  
   <span class="views-field views-field-created">        <span class="field-content">Oct 15, 2020</span>  </span>      <span class="seperator">&nbsp;&#124;&nbsp;</span>  
-  <span class="views-field views-field-php-1">        <span class="field-content"><span class="views-field-comment-count"><span class="field-content"><a href="/content/you-too-can-listen-pro#comments">31 comments</a></span></span></span>  </span>  
+  <span class="views-field views-field-php-1">        <span class="field-content"><span class="views-field-comment-count"><span class="field-content"><a href="/content/you-too-can-listen-pro#comments">33 comments</a></span></span></span>  </span>  
   <div class="views-field views-field-field-promo-image">        <div class="field-content"><a href="/content/you-too-can-listen-pro"><img src="https://www.stereophile.com/images/styles/600_wide/public/1020awsi.promok_0.jpg" width="600" height="401" alt="" /></a></div>  </div>  
   <div class="views-field views-field-field-promo-teaser">        <div class="field-content">I've <A HREF="https://www.stereophile.com/content/how-does-music-make-you-feel">written before in this space</A> that to me the most wondrous aspect of our avocation (apart from the music) is the way it exists at the intersection of logic and emotion, of science and art. The equipment we use is made by engineers applying scientific principles, yet its goal is to deliver sensual pleasure. Both viewpoints are valid.</div>  </div>  
   <div class="views-field views-field-view-node">        <span class="field-content">
 <a href="/content/you-too-can-listen-pro">Continue Reading »</a>
 </span>  </div>  </div>
-  <div class="views-row views-row-3 views-row-odd">
+  <div class="views-row views-row-4 views-row-even">
       
   <div class="views-field views-field-taxonomy-vocabulary-2">        <div class="field-content"><a href="/category/stand-loudspeaker-reviews">Stand Loudspeaker Reviews</a></div>  </div>  
   <div class="views-field views-field-title">        <span class="field-content"><a href="/content/marten-oscar-duo-loudspeaker">Marten Oscar Duo loudspeaker</a>
@@ -545,7 +558,7 @@ LOG IN | JOIN</span></a></td>
   <div class="views-field views-field-view-node">        <span class="field-content">
 <a href="/content/marten-oscar-duo-loudspeaker">Continue Reading »</a>
 </span>  </div>  </div>
-  <div class="views-row views-row-4 views-row-even">
+  <div class="views-row views-row-5 views-row-odd">
       
   <div class="views-field views-field-taxonomy-vocabulary-2">        <div class="field-content"><a href="/category/sponsored-webinar">Sponsored Webinar</a></div>  </div>  
   <div class="views-field views-field-title">        <span class="field-content"><a href="/content/ta-presents-discussion-their-ha-200-headphone-amp-hv-series-technology-and-solitaire-p">T+A Presents a Discussion of Their HA 200 Headphone Amp, HV Series Technology, and Solitaire P Headphones!</a>
@@ -561,7 +574,7 @@ Join us when T+A discusses their strategy, history and future, along with an in-
   <div class="views-field views-field-view-node">        <span class="field-content">
 <a href="/content/ta-presents-discussion-their-ha-200-headphone-amp-hv-series-technology-and-solitaire-p">Continue Reading »</a>
 </span>  </div>  </div>
-  <div class="views-row views-row-5 views-row-odd">
+  <div class="views-row views-row-6 views-row-even">
       
   <div class="views-field views-field-taxonomy-vocabulary-2">        <div class="field-content"><a href="/category/recording-month">Recording of the Month</a></div>  </div>  
   <div class="views-field views-field-title">        <span class="field-content"><a href="/content/recording-november-2020-whats-next-vivaldi">Recording of November 2020: <I>What's Next Vivaldi?</I></a>
@@ -583,7 +596,7 @@ Forget almost everything you know about Vivaldi performance practice, authentic 
   <div class="views-field views-field-view-node">        <span class="field-content">
 <a href="/content/recording-november-2020-whats-next-vivaldi">Continue Reading »</a>
 </span>  </div>  </div>
-  <div class="views-row views-row-6 views-row-even">
+  <div class="views-row views-row-7 views-row-odd">
       
   <div class="views-field views-field-taxonomy-vocabulary-2">        <div class="field-content"><a href="/category/digital-processor-reviews">Digital Processor Reviews</a><a href="/category/integrated-amp-reviews">Integrated Amp Reviews</a></div>  </div>  
   <div class="views-field views-field-title">        <span class="field-content"><a href="/content/two-november-issue-followups">Two November Issue FollowUps</a>
@@ -596,7 +609,7 @@ Forget almost everything you know about Vivaldi performance practice, authentic 
   <div class="views-field views-field-view-node">        <span class="field-content">
 <a href="/content/two-november-issue-followups">Continue Reading »</a>
 </span>  </div>  </div>
-  <div class="views-row views-row-7 views-row-odd">
+  <div class="views-row views-row-8 views-row-even">
       
   <div class="views-field views-field-taxonomy-vocabulary-2">        <div class="field-content"><a href="/category/integrated-amp-reviews">Integrated Amp Reviews</a></div>  </div>  
   <div class="views-field views-field-title">        <span class="field-content"><a href="/content/musical-fidelity-m8xi-integrated-amplifier">Musical Fidelity M8xi integrated amplifier</a>
@@ -610,7 +623,7 @@ Forget almost everything you know about Vivaldi performance practice, authentic 
   <div class="views-field views-field-view-node">        <span class="field-content">
 <a href="/content/musical-fidelity-m8xi-integrated-amplifier">Continue Reading »</a>
 </span>  </div>  </div>
-  <div class="views-row views-row-8 views-row-even">
+  <div class="views-row views-row-9 views-row-odd">
       
   <div class="views-field views-field-taxonomy-vocabulary-2">        <div class="field-content"><a href="/category/interviews">Interviews</a><a href="/category/music-and-recording-features">Music and Recording Features</a></div>  </div>  
   <div class="views-field views-field-title">        <span class="field-content"><a href="/content/maria-schneider-there-anybody-out-there">Maria Schneider: Is There Anybody Out There?</a>
@@ -624,7 +637,7 @@ Forget almost everything you know about Vivaldi performance practice, authentic 
   <div class="views-field views-field-view-node">        <span class="field-content">
 <a href="/content/maria-schneider-there-anybody-out-there">Continue Reading »</a>
 </span>  </div>  </div>
-  <div class="views-row views-row-9 views-row-odd">
+  <div class="views-row views-row-10 views-row-even views-row-last">
       
   <div class="views-field views-field-taxonomy-vocabulary-2">        <div class="field-content"><a href="/category/cd-playertransport-reviews">CD Player/Transport Reviews</a></div>  </div>  
   <div class="views-field views-field-title">        <span class="field-content"><a href="/content/california-audio-labs-tercet-mkiii-cd-player">California Audio Labs Tercet Mk.III CD player</a>
@@ -637,21 +650,6 @@ Forget almost everything you know about Vivaldi performance practice, authentic 
   <div class="views-field views-field-field-promo-teaser">        <div class="field-content">At $1295, the Tercet Mk.III represents a step up from CAL's $750 Icon, which I enthusiastically recommended back in April 1990 (Vol.13 No 4, footnote 1). Externally, with the exception of a wider and slightly thicker front panel, it appears to be a carbon copy of that unit. Like the other products in California Audio Lab's stable, the Tercet Mk.III is designed from the ground up in-house.</div>  </div>  
   <div class="views-field views-field-view-node">        <span class="field-content">
 <a href="/content/california-audio-labs-tercet-mkiii-cd-player">Continue Reading »</a>
-</span>  </div>  </div>
-  <div class="views-row views-row-10 views-row-even views-row-last">
-      
-  <div class="views-field views-field-taxonomy-vocabulary-2">        <div class="field-content"><a href="/category/analog-corner">Analog Corner</a><a href="/category/audacious-audio">Audacious Audio</a><a href="/category/tonearm-reviews">Tonearm Reviews</a><a href="/category/turntable-reviews">Turntable Reviews</a></div>  </div>  
-  <div class="views-field views-field-title">        <span class="field-content"><a href="/content/analog-corner-294-techdas-air-force-one-premium-turntable-graham-engineering-elite-tonearm">Analog Corner #294: TechDAS Air Force One Premium turntable & Graham Engineering Elite tonearm</a>
-</span>  </div>  
-  <span class="views-field views-field-field-authors">        <!-- 90 --><!-- 90; --><a title="View more from Michael Fremer" href="/writer/90">Michael Fremer</a>  </span>      <span class="seperator">&nbsp;&#124;&nbsp;</span>  
-  <span class="views-field views-field-created">        <span class="field-content">Oct 06, 2020</span>  </span>      <span class="seperator">&nbsp;&#124;&nbsp;</span>  
-  <span class="views-field views-field-php">        <span class="field-content">First Published: Feb 01, 2020</span>  </span>      <span class="seperator">&nbsp;&#124;&nbsp;</span>  
-  <span class="views-field views-field-php-1">        <span class="field-content"><span class="views-field-comment-count"><span class="field-content"><a href="/content/analog-corner-294-techdas-air-force-one-premium-turntable-graham-engineering-elite-tonearm#comments">47 comments</a></span></span></span>  </span>  
-  <div class="views-field views-field-field-promo-image">        <div class="field-content"><a href="/content/analog-corner-294-techdas-air-force-one-premium-turntable-graham-engineering-elite-tonearm"><img src="https://www.stereophile.com/images/styles/600_wide/public/220ap.promo_.jpg" width="600" height="450" alt="" /></a></div>  </div>  
-  <div class="views-field views-field-field-promo-teaser">        <div class="field-content">In 2013, when I first wrote about it (footnote 1), the TechDAS Air Force One ($105,000) was that company's best and most expensive turntable; it joined the handful of products that have earned an A+ in our semiannual Recommended Components feature&#151;a rating that remained in place for six years. But too much time has passed since the Air Force One was auditioned by a <I>Stereophile</I> writer, so it has now fallen from that list.
-</div>  </div>  
-  <div class="views-field views-field-view-node">        <span class="field-content">
-<a href="/content/analog-corner-294-techdas-air-force-one-premium-turntable-graham-engineering-elite-tonearm">Continue Reading »</a>
 </span>  </div>  </div>
     </div>
   
@@ -1228,13 +1226,13 @@ Forget almost everything you know about Vivaldi performance practice, authentic 
 </div>
 <div class="item-list"><ul><li class="first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
 <li class="last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
-</ul></div><input type="hidden" name="form_build_id" value="form-LDwE9LmXzuo8VRYe8DWUcGdrQELdd0Xz7kUHj8Mlr44" />
+</ul></div><input type="hidden" name="form_build_id" value="form-OBq-LQhDq8jQ24113JOqVmGEZSog1QYcGumKwOEseGA" />
 <input type="hidden" name="form_id" value="fancy_login_user_login_block" />
 <div class="homepage-textfield"><div class="form-item form-type-textfield form-item-homepage">
   <label for="edit-homepage">Leave this field blank </label>
  <input autocomplete="off" type="text" id="edit-homepage" name="homepage" value="" size="20" maxlength="128" class="form-text" />
 </div>
-</div><div class="form-actions form-wrapper" id="edit-actions--3"><input type="submit" id="edit-submit-1603116358" name="op" value="Log in" class="form-submit" /></div></div></form></div></div></div></div></div>
+</div><div class="form-actions form-wrapper" id="edit-actions--3"><input type="submit" id="edit-submit-1603161764" name="op" value="Log in" class="form-submit" /></div></div></form></div></div></div></div></div>
 
 <script>
 var sect = 'homepage';

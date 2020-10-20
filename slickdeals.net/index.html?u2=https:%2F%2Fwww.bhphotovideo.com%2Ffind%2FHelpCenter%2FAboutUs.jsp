@@ -1,15 +1,15 @@
 HTTP/1.1 200 OK
-Date: Mon, 19 Oct 2020 17:14:41 GMT
+Date: Tue, 20 Oct 2020 05:04:38 GMT
 Content-Type: text/html; charset=ISO-8859-1
 Transfer-Encoding: chunked
 Connection: keep-alive
-CF-Ray: 5e4c23059b15e08c-SEA
+CF-Ray: 5e5032fd4918f4ba-YVR
 Cache-Control: private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate
 Set-Cookie: JSESSIONID=UlNB2x_adNRwgOgM33gMif_FdueuK1eG!-1544682821; domain=bhphotovideo.com; path=/; HttpOnly;Secure; SameSite=None
 Vary: Accept-Encoding
 CF-Cache-Status: DYNAMIC
 BH-XDB: 2109465
-cf-request-id: 05e374377f0000e08c27955000000001
+cf-request-id: 05e5fe324f0000f4ba4ca90000000001
 Edge-Control: bypass-cache
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Pragma: no-cache
@@ -465,7 +465,7 @@ Sign In Login/Register<svg><use xlink:href="#arrowDown"></use></svg>
 </form>
 <div class="section">
 <span class="notification-tab-link left">
-<a secure="true" name="Header-My Account" target="_self" href="https://www.bhphotovideo.com/find/MyAccount.jsp" data-selenium='myAccountLink'>
+ <a secure="true" name="Header-My Account" target="_self" href="https://www.bhphotovideo.com/find/MyAccount.jsp" data-selenium='myAccountLink'>
 <svg><use xlink:href="#idcard"></use></svg>
 <span class="f10">My Account</span>
 </a>
@@ -832,6 +832,10 @@ BH.globals.isExplora = false;
 <span class="shipTimerText"></span><span class="shipTimer"></span><span class="shipDay"> </span>
 <span class="shipChev shipDetails displayNone"></span>
 </div>
+<div class="returnPolicy cursor-pointer js-return-policy">
+<span>&nbsp;&nbsp;Extended Returns thru Feb 01, 2021</span>
+<span class="shipChev returnDetail"></span>
+</div>
 </div>
 </div>
 <div class="js-storePickupInfoItem store-pickup-info-separator displayNone"></div>
@@ -863,6 +867,14 @@ BH.globals.isExplora = false;
 				<div class="shipDetails close-inner-banner cursor-pointer fs12 c35"><svg><use xlink:href="#arrow-up-light"></use></svg>Close</div>
 			</div>
 			</script>
+</div>
+<div class='extendedReturnDetailWrapper'>
+<div id="extendedReturnDetail">
+<h3 class='c41 fs20 returnDetailHeader'>Enjoy Extended Returns thru Feb 01, 2021!</h3>
+<p class='returnDetailText'>You have until Feb 01, 2021 to return or exchange items bought after Oct 19, 2020.
+</br> All other <a href="https://www.bhphotovideo.com/find/HelpCenter/ReturnExchange.jsp" class="returnPolicyLink">standard return policy</a> conditions apply.</p>
+<p class='returnDetailClose cursor-pointer'>Close</p>
+</div>
 </div>
 </div>
 <div class="shippingZipWrapper">
@@ -1010,7 +1022,7 @@ var HeaderFooterMLT = {
 </div>
 </div>
 </div>
-<div class="au_techCorner">
+ <div class="au_techCorner">
 <div class="new-page-width">
 <div class="au_InnerTechCorner">
 <h2 class="au_InnerTechCorner_head">Tech Corner</h2>
@@ -1352,7 +1364,7 @@ Swedish Krona
 <li data-selenium="currncyOption" class="ns-option ">
 <a data-selenium='currencyDropdown' data-currency-code="CHF" class="c36 noUnderline js-setCurrencyButton CHF" href="#" onclick="return false;">
 Swiss Franc
-</a>
+ </a>
 </li>
 </ul>
 </div>
@@ -1550,7 +1562,7 @@ var dlo =
 
             "subLoc":  '',
 
-            "user": {"isTaxExempt":false,"bi":null,"cartID":"23269581965","language":"E","catalogue":"B&H-Regular","isUsed":false,"SSSC_C":"","referrer":"","cartTotal":"","jSessionId":"","cm_mmc":"","b2bCatalogue":"","rememberId":"","cookieId":"","ib":true,"isMobile":false,"dataLayerInfo":""},
+            "user": {"isTaxExempt":false,"bi":null,"cartID":"23282970746","language":"E","catalogue":"B&H-Regular","isUsed":false,"SSSC_C":"","referrer":"","cartTotal":"","jSessionId":"","cm_mmc":"","b2bCatalogue":"","rememberId":"","cookieId":"","ib":true,"isMobile":false,"dataLayerInfo":""},
          "product": {"salesComment":"","isExpertPick":false,"itemCode":"","featuredItemCategory":"","source":"","category":"","sku":""},
          	"used": {
          		"products" :[]
@@ -1622,6 +1634,7 @@ var dlo =
 
 </script>
 
+
 <script>
 		lazyLoad.jsOnReady('//ensighten.bhphoto.com/bhfoto/Bootstrap.js');
 	</script>
@@ -1681,5 +1694,5 @@ var dlo =
 		embeddedLiveChatProperties.snapins_button_id = '5732L00000005mQ';
 		embeddedLiveChatProperties.snapins_deployment_name = 'Snap_Ins';
 	</script>
-<script type="text/javascript" id="d__inj" class="d__inj_delayed"> setTimeout(function(){ var d = document.createElement('script'); d.type = 'text/javascript';  d.defer = d.async = !0; d.src = '/otohphnbwww-zzqvuxqscewetqxtfuvabqac.js';  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(d, s);  }, 20 ); </script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#cbvtfaxtas{display:none!important}</style></body>
+<script type="text/javascript" id="d__inj" class="d__inj_delayed"> setTimeout(function(){ var d = document.createElement('script'); d.type = 'text/javascript';  d.defer = d.async = !0; d.src = '/otohphnbwww-befbcaxqctbfdvurrxxcbubtwfbxsdy.js';  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(d, s);  }, 20 ); </script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#yfzatqvsfywqczctvtaxseaqtw{display:none!important}</style></body>
 </html>

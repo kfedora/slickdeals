@@ -1,13 +1,12 @@
 HTTP/1.1 200 OK
-Date: Mon, 19 Oct 2020 14:05:06 GMT
+Date: Tue, 20 Oct 2020 02:42:00 GMT
 Server: Apache
 Expires: Thu, 19 Nov 1981 08:52:00 GMT
 Cache-control: private, max-age=0
-Set-Cookie: xf_session=03f750cfecc623482d0c6c89ba68229a; path=/; secure; httponly
 X-Frame-Options: SAMEORIGIN
 X-Xss-Protection: 1
-Last-Modified: Mon, 19 Oct 2020 14:05:07 GMT
-Content-Length: 141439
+Last-Modified: Tue, 20 Oct 2020 02:42:00 GMT
+Content-Length: 144067
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: text/html; charset=UTF-8
@@ -380,7 +379,7 @@ advally.cmd.push(function(){
 				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14198983/" title="Has something recently changed on AK?">Has something recently changed on AK?</a></span>
 				<span class="lastThreadMeta">
 					<span class="lastThreadUser"><a href="index.php?members/dr-ears.296243/" class="username" dir="auto">Dr. Ears</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602955577" data-diff="160729" data-datestring="Oct 17, 2020" data-timestring="12:26 PM">Oct 17, 2020 at 12:26 PM</abbr>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602955577" data-diff="206143" data-datestring="Oct 17, 2020" data-timestring="12:26 PM">Oct 17, 2020 at 12:26 PM</abbr>
 				</span>
 			
 		</div>
@@ -604,7 +603,7 @@ advally.cmd.push(function(){
 				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14202157/" title="What reaction do you receive when people first see and/or hear your system?">What reaction do you receive when people first see and/or hear your system?</a></span>
 				<span class="lastThreadMeta">
 					<span class="lastThreadUser"><a href="index.php?members/egellings.154428/" class="username" dir="auto">egellings</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603062636" data-diff="53670" data-datestring="Oct 18, 2020" data-timestring="6:10 PM">Oct 18, 2020 at 6:10 PM</abbr>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603062636" data-diff="99084" data-datestring="Oct 18, 2020" data-timestring="6:10 PM">Oct 18, 2020 at 6:10 PM</abbr>
 				</span>
 			
 		</div>
@@ -660,8 +659,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>12,372</dd></dl>
-				<dl><dt>Messages:</dt> <dd>222,465</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>12,376</dd></dl>
+				<dl><dt>Messages:</dt> <dd>222,512</dd></dl>
 				
 			</div>
 			
@@ -674,10 +673,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203214/" title="Hello from Brooklyn">Hello from Brooklyn</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204824/" title="Hello to All from Raytown, Mo.   I&#039;m New to Forums and asking for Help!">Hello to All from Raytown, Mo.   I&#039;m New to Forums and asking for Help!</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/rome.38467/" class="username" dir="auto">Rome</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603114004" data-diff="2302" data-datestring="Oct 19, 2020" data-timestring="8:26 AM">Oct 19, 2020 at 8:26 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/grillebilly.35342/" class="username" dir="auto">grillebilly</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603160876" data-diff="844" data-datestring="Oct 19, 2020" data-timestring="9:27 PM">Oct 19, 2020 at 9:27 PM</abbr>
 				</span>
 			
 		</div>
@@ -709,8 +708,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>5,075</dd></dl>
-				<dl><dt>Messages:</dt> <dd>167,903</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>5,076</dd></dl>
+				<dl><dt>Messages:</dt> <dd>167,951</dd></dl>
 				
 			</div>
 			
@@ -723,10 +722,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203068/" title="What are you listening to right now and on what speakers">What are you listening to right now and on what speakers</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204845/" title="What are you listening to right now and on what speakers">What are you listening to right now and on what speakers</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/musicfan-51.201606/" class="username" dir="auto">Musicfan#51</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603106425" data-diff="9881" data-datestring="Oct 19, 2020" data-timestring="6:20 AM">Oct 19, 2020 at 6:20 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/yellowfox.158009/" class="username" dir="auto">yellowfox</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603161615" data-diff="105" data-datestring="Oct 19, 2020" data-timestring="9:40 PM">Oct 19, 2020 at 9:40 PM</abbr>
 				</span>
 			
 		</div>
@@ -805,8 +804,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>593</dd></dl>
-				<dl><dt>Messages:</dt> <dd>11,047</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>594</dd></dl>
+				<dl><dt>Messages:</dt> <dd>11,051</dd></dl>
 				
 					<div class="Popup subForumsPopup">
 						<a href="index.php?forums/regional-clubs.202/" rel="Menu" class="cloaked" data-closemenu="true"><span class="dt">Sub-Forums:</span> 3</a>
@@ -858,10 +857,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14183128/" title="Any audiophiles in the Rochester NY area?">Any audiophiles in the Rochester NY area?</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204108/" title="North Carolina anyone?">North Carolina anyone?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/jimimac.54583/" class="username" dir="auto">jimimac</a>,</span>
-					<span class="DateTime muted lastThreadDate" data-latest="Latest: " title="Oct 11, 2020 at 6:49 AM">Oct 11, 2020</span>
+					<span class="lastThreadUser"><a href="index.php?members/wyn-palmer.281333/" class="username" dir="auto">wyn palmer</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603141264" data-diff="20456" data-datestring="Oct 19, 2020" data-timestring="4:01 PM">Oct 19, 2020 at 4:01 PM</abbr>
 				</span>
 			
 		</div>
@@ -917,8 +916,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>23,833</dd></dl>
-				<dl><dt>Messages:</dt> <dd>1,869,366</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>23,834</dd></dl>
+				<dl><dt>Messages:</dt> <dd>1,869,704</dd></dl>
 				
 					<div class="Popup subForumsPopup">
 						<a href="index.php?forums/music-forums.29/" rel="Menu" class="cloaked" data-closemenu="true"><span class="dt">Sub-Forums:</span> 3</a>
@@ -966,10 +965,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203300/" title="What are you Listening To Right Now? - and more">What are you Listening To Right Now? - and more</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204849/" title="What are you Listening To Right Now? - and more">What are you Listening To Right Now? - and more</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/vinylfreak78.333346/" class="username" dir="auto">VinylFreak78</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603116292" data-diff="14" data-datestring="Oct 19, 2020" data-timestring="9:04 AM">Oct 19, 2020 at 9:04 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/7whales7.254728/" class="username" dir="auto">7whales7</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603161679" data-diff="41" data-datestring="Oct 19, 2020" data-timestring="9:41 PM">Oct 19, 2020 at 9:41 PM</abbr>
 				</span>
 			
 		</div>
@@ -1002,7 +1001,7 @@ advally.cmd.push(function(){
 
 			<div class="nodeStats pairsInline">
 				<dl><dt>Discussions:</dt> <dd>3,960</dd></dl>
-				<dl><dt>Messages:</dt> <dd>92,372</dd></dl>
+				<dl><dt>Messages:</dt> <dd>92,380</dd></dl>
 				
 			</div>
 			
@@ -1015,10 +1014,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203236/" title="When you watch a movie TOO MANY TIMES">When you watch a movie TOO MANY TIMES</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204817/" title="So.... I&#039;m watching Johnny Carson from 1973!!">So.... I&#039;m watching Johnny Carson from 1973!!</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/loiter-sack.312458/" class="username" dir="auto">Loiter Sack</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603114620" data-diff="1686" data-datestring="Oct 19, 2020" data-timestring="8:37 AM">Oct 19, 2020 at 8:37 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/tealc.235252/" class="username" dir="auto">teal'c</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603160565" data-diff="1155" data-datestring="Oct 19, 2020" data-timestring="9:22 PM">Oct 19, 2020 at 9:22 PM</abbr>
 				</span>
 			
 		</div>
@@ -1074,8 +1073,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>60,522</dd></dl>
-				<dl><dt>Messages:</dt> <dd>1,149,476</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>60,527</dd></dl>
+				<dl><dt>Messages:</dt> <dd>1,149,599</dd></dl>
 				
 			</div>
 			
@@ -1088,10 +1087,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203291/" title="Can someone recommend 1 foot long RCA cables that are FLEXIBLE?">Can someone recommend 1 foot long RCA cables that are FLEXIBLE?</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204848/" title="Anyone ever win an auction and the seller cancelled?">Anyone ever win an auction and the seller cancelled?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/the-shocker.251289/" class="username" dir="auto">The Shocker</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603116086" data-diff="220" data-datestring="Oct 19, 2020" data-timestring="9:01 AM">Oct 19, 2020 at 9:01 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/beat_truck.122834/" class="username" dir="auto">beat_truck</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603161665" data-diff="55" data-datestring="Oct 19, 2020" data-timestring="9:41 PM">Oct 19, 2020 at 9:41 PM</abbr>
 				</span>
 			
 		</div>
@@ -1123,8 +1122,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>58,892</dd></dl>
-				<dl><dt>Messages:</dt> <dd>693,382</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>58,897</dd></dl>
+				<dl><dt>Messages:</dt> <dd>693,440</dd></dl>
 				
 			</div>
 			
@@ -1137,10 +1136,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203301/" title="Nad 3020a">Nad 3020a</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204812/" title="Heathkit AR-29 freebie!">Heathkit AR-29 freebie!</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/gytisbal.332845/" class="username" dir="auto">GytisBal</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603116303" data-diff="3" data-datestring="Oct 19, 2020" data-timestring="9:05 AM">Oct 19, 2020 at 9:05 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/doug-g.9815/" class="username" dir="auto">Doug G.</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603160370" data-diff="1350" data-datestring="Oct 19, 2020" data-timestring="9:19 PM">Oct 19, 2020 at 9:19 PM</abbr>
 				</span>
 			
 		</div>
@@ -1172,8 +1171,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>42,645</dd></dl>
-				<dl><dt>Messages:</dt> <dd>622,617</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>42,646</dd></dl>
+				<dl><dt>Messages:</dt> <dd>622,665</dd></dl>
 				
 			</div>
 			
@@ -1186,10 +1185,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203096/" title="No Sound from RCA RS-203A Amp">No Sound from RCA RS-203A Amp</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204790/" title="Dave&#039;s Magnavox circuit build using Voice of Music hardware">Dave&#039;s Magnavox circuit build using Voice of Music hardware</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/gadget73.20854/" class="username" dir="auto">gadget73</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603107888" data-diff="8418" data-datestring="Oct 19, 2020" data-timestring="6:44 AM">Oct 19, 2020 at 6:44 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/grindfix.240464/" class="username" dir="auto">grindfix</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603159562" data-diff="2158" data-datestring="Oct 19, 2020" data-timestring="9:06 PM">Oct 19, 2020 at 9:06 PM</abbr>
 				</span>
 			
 		</div>
@@ -1221,8 +1220,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>8,228</dd></dl>
-				<dl><dt>Messages:</dt> <dd>96,944</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>8,229</dd></dl>
+				<dl><dt>Messages:</dt> <dd>96,952</dd></dl>
 				
 					<div class="Popup subForumsPopup">
 						<a href="index.php?forums/digital-sources.25/" rel="Menu" class="cloaked" data-closemenu="true"><span class="dt">Sub-Forums:</span> 3</a>
@@ -1270,10 +1269,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203088/" title="I&#039;m old.  Need help setting up computer music!!!">I&#039;m old.  Need help setting up computer music!!!</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204801/" title="Streaming">Streaming</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/classic-carl.29033/" class="username" dir="auto">classic carl</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603107344" data-diff="8962" data-datestring="Oct 19, 2020" data-timestring="6:35 AM">Oct 19, 2020 at 6:35 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/dswankey.89073/" class="username" dir="auto">Dswankey</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603159897" data-diff="1823" data-datestring="Oct 19, 2020" data-timestring="9:11 PM">Oct 19, 2020 at 9:11 PM</abbr>
 				</span>
 			
 		</div>
@@ -1305,8 +1304,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>1,761</dd></dl>
-				<dl><dt>Messages:</dt> <dd>27,236</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>1,762</dd></dl>
+				<dl><dt>Messages:</dt> <dd>27,253</dd></dl>
 				
 			</div>
 			
@@ -1319,10 +1318,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14202988/" title="Considering a Soncoz LA-QXD1">Considering a Soncoz LA-QXD1</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204830/" title="Anybody using a &quot;vintage&quot; DAC?">Anybody using a &quot;vintage&quot; DAC?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/poultrygeist.66334/" class="username" dir="auto">Poultrygeist</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603099527" data-diff="16779" data-datestring="Oct 19, 2020" data-timestring="4:25 AM">Oct 19, 2020 at 4:25 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/tedrick.15446/" class="username" dir="auto">Tedrick</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603161048" data-diff="672" data-datestring="Oct 19, 2020" data-timestring="9:30 PM">Oct 19, 2020 at 9:30 PM</abbr>
 				</span>
 			
 		</div>
@@ -1354,8 +1353,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>85,565</dd></dl>
-				<dl><dt>Messages:</dt> <dd>1,380,535</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>85,572</dd></dl>
+				<dl><dt>Messages:</dt> <dd>1,380,696</dd></dl>
 				
 			</div>
 			
@@ -1368,10 +1367,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203278/" title="Technics SL-B2 speed/pitch problem?">Technics SL-B2 speed/pitch problem?</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204841/" title="Vinyl Flat (and other similar devices) vs glass panels for fixing warped records?">Vinyl Flat (and other similar devices) vs glass panels for fixing warped records?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/fcm44.208497/" class="username" dir="auto">fcm44</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603115855" data-diff="451" data-datestring="Oct 19, 2020" data-timestring="8:57 AM">Oct 19, 2020 at 8:57 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/grillebilly.35342/" class="username" dir="auto">grillebilly</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603161463" data-diff="257" data-datestring="Oct 19, 2020" data-timestring="9:37 PM">Oct 19, 2020 at 9:37 PM</abbr>
 				</span>
 			
 		</div>
@@ -1404,7 +1403,7 @@ advally.cmd.push(function(){
 
 			<div class="nodeStats pairsInline">
 				<dl><dt>Discussions:</dt> <dd>6,008</dd></dl>
-				<dl><dt>Messages:</dt> <dd>64,609</dd></dl>
+				<dl><dt>Messages:</dt> <dd>64,615</dd></dl>
 				
 			</div>
 			
@@ -1417,10 +1416,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203271/" title="Why is quality FM reception so difficult and unpredictable?">Why is quality FM reception so difficult and unpredictable?</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204667/" title="Why is quality FM reception so difficult and unpredictable?">Why is quality FM reception so difficult and unpredictable?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/bander.304535/" class="username" dir="auto">Bander</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603115771" data-diff="535" data-datestring="Oct 19, 2020" data-timestring="8:56 AM">Oct 19, 2020 at 8:56 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/k6sti.293988/" class="username" dir="auto">k6sti</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603155793" data-diff="5927" data-datestring="Oct 19, 2020" data-timestring="8:03 PM">Oct 19, 2020 at 8:03 PM</abbr>
 				</span>
 			
 		</div>
@@ -1452,8 +1451,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>17,191</dd></dl>
-				<dl><dt>Messages:</dt> <dd>178,949</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>17,192</dd></dl>
+				<dl><dt>Messages:</dt> <dd>178,957</dd></dl>
 				
 			</div>
 			
@@ -1466,10 +1465,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203195/" title="Came with the house">Came with the house</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204742/" title="Akai X-1810 v. X-1810D">Akai X-1810 v. X-1810D</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/beatnik.49185/" class="username" dir="auto">Beatnik</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603113284" data-diff="3022" data-datestring="Oct 19, 2020" data-timestring="8:14 AM">Oct 19, 2020 at 8:14 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/mwbrassart.332334/" class="username" dir="auto">Mwbrassart</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603158312" data-diff="3408" data-datestring="Oct 19, 2020" data-timestring="8:45 PM">Oct 19, 2020 at 8:45 PM</abbr>
 				</span>
 			
 		</div>
@@ -1501,8 +1500,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>3,422</dd></dl>
-				<dl><dt>Messages:</dt> <dd>42,308</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>3,424</dd></dl>
+				<dl><dt>Messages:</dt> <dd>42,314</dd></dl>
 				
 			</div>
 			
@@ -1515,10 +1514,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14202738/" title="Who&#039;s listening with headphone tonight? To what?">Who&#039;s listening with headphone tonight? To what?</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204562/" title="Master and Dynamic MH40/headphone care and storage">Master and Dynamic MH40/headphone care and storage</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/imral3.281511/" class="username" dir="auto">imral3</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603077709" data-diff="38597" data-datestring="Oct 18, 2020" data-timestring="10:21 PM">Oct 18, 2020 at 10:21 PM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/bambino.317077/" class="username" dir="auto">bambino</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603152732" data-diff="8988" data-datestring="Oct 19, 2020" data-timestring="7:12 PM">Oct 19, 2020 at 7:12 PM</abbr>
 				</span>
 			
 		</div>
@@ -1550,8 +1549,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>93,914</dd></dl>
-				<dl><dt>Messages:</dt> <dd>1,274,753</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>93,919</dd></dl>
+				<dl><dt>Messages:</dt> <dd>1,274,846</dd></dl>
 				
 			</div>
 			
@@ -1564,10 +1563,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203293/" title="Athena Technologies Floorstanders">Athena Technologies Floorstanders</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204846/" title="Carillon 400 - what is this?">Carillon 400 - what is this?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/ramzilla.57360/" class="username" dir="auto">ramzilla</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603116114" data-diff="192" data-datestring="Oct 19, 2020" data-timestring="9:01 AM">Oct 19, 2020 at 9:01 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/guido57.253679/" class="username" dir="auto">Guido57</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603161642" data-diff="78" data-datestring="Oct 19, 2020" data-timestring="9:40 PM">Oct 19, 2020 at 9:40 PM</abbr>
 				</span>
 			
 		</div>
@@ -1600,7 +1599,7 @@ advally.cmd.push(function(){
 
 			<div class="nodeStats pairsInline">
 				<dl><dt>Discussions:</dt> <dd>1,196</dd></dl>
-				<dl><dt>Messages:</dt> <dd>24,578</dd></dl>
+				<dl><dt>Messages:</dt> <dd>24,596</dd></dl>
 				
 			</div>
 			
@@ -1613,10 +1612,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203188/" title="New Home. Where to place speakers?">New Home. Where to place speakers?</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204833/" title="New Home. Where to place speakers?">New Home. Where to place speakers?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/todd-keith.264513/" class="username" dir="auto">Todd Keith</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603112984" data-diff="3322" data-datestring="Oct 19, 2020" data-timestring="8:09 AM">Oct 19, 2020 at 8:09 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/old-guy8.236998/" class="username" dir="auto">Old Guy8</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603161081" data-diff="639" data-datestring="Oct 19, 2020" data-timestring="9:31 PM">Oct 19, 2020 at 9:31 PM</abbr>
 				</span>
 			
 		</div>
@@ -1649,7 +1648,7 @@ advally.cmd.push(function(){
 
 			<div class="nodeStats pairsInline">
 				<dl><dt>Discussions:</dt> <dd>5,105</dd></dl>
-				<dl><dt>Messages:</dt> <dd>53,603</dd></dl>
+				<dl><dt>Messages:</dt> <dd>53,606</dd></dl>
 				
 			</div>
 			
@@ -1662,10 +1661,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14202333/" title="7.2.4 atmos help.">7.2.4 atmos help.</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204745/" title="7.2.4 atmos help.">7.2.4 atmos help.</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/sansuibutch.213236/" class="username" dir="auto">sansuibutch</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603066769" data-diff="49537" data-datestring="Oct 18, 2020" data-timestring="7:19 PM">Oct 18, 2020 at 7:19 PM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/tcdriver.999/" class="username" dir="auto">tcdriver</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603158441" data-diff="3279" data-datestring="Oct 19, 2020" data-timestring="8:47 PM">Oct 19, 2020 at 8:47 PM</abbr>
 				</span>
 			
 		</div>
@@ -1722,7 +1721,7 @@ advally.cmd.push(function(){
 
 			<div class="nodeStats pairsInline">
 				<dl><dt>Discussions:</dt> <dd>2,571</dd></dl>
-				<dl><dt>Messages:</dt> <dd>80,371</dd></dl>
+				<dl><dt>Messages:</dt> <dd>80,373</dd></dl>
 				
 			</div>
 			
@@ -1735,10 +1734,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14202699/" title="Looking for 200wpc solution ($700 budget)">Looking for 200wpc solution ($700 budget)</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204323/" title="TPA325x amps: the next step in Class D?">TPA325x amps: the next step in Class D?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/spark1.276475/" class="username" dir="auto">spark1</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603076228" data-diff="40078" data-datestring="Oct 18, 2020" data-timestring="9:57 PM">Oct 18, 2020 at 9:57 PM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/e-man.108227/" class="username" dir="auto">E.Man</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603147019" data-diff="14701" data-datestring="Oct 19, 2020" data-timestring="5:36 PM">Oct 19, 2020 at 5:36 PM</abbr>
 				</span>
 			
 		</div>
@@ -1788,7 +1787,7 @@ advally.cmd.push(function(){
 				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14200603/" title="Parasound A21+ good bad ugly?">Parasound A21+ good bad ugly?</a></span>
 				<span class="lastThreadMeta">
 					<span class="lastThreadUser"><a href="index.php?members/frank-sol.64880/" class="username" dir="auto">Frank Sol</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603011776" data-diff="104530" data-datestring="Oct 18, 2020" data-timestring="4:02 AM">Oct 18, 2020 at 4:02 AM</abbr>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603011776" data-diff="149944" data-datestring="Oct 18, 2020" data-timestring="4:02 AM">Oct 18, 2020 at 4:02 AM</abbr>
 				</span>
 			
 		</div>
@@ -1837,7 +1836,7 @@ advally.cmd.push(function(){
 				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14199181/" title="Who made the best vintage audio?">Who made the best vintage audio?</a></span>
 				<span class="lastThreadMeta">
 					<span class="lastThreadUser"><a href="index.php?members/blue-shadow.4989/" class="username" dir="auto">Blue Shadow</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602959938" data-diff="156368" data-datestring="Oct 17, 2020" data-timestring="1:38 PM">Oct 17, 2020 at 1:38 PM</abbr>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602959938" data-diff="201782" data-datestring="Oct 17, 2020" data-timestring="1:38 PM">Oct 17, 2020 at 1:38 PM</abbr>
 				</span>
 			
 		</div>
@@ -1870,7 +1869,7 @@ advally.cmd.push(function(){
 
 			<div class="nodeStats pairsInline">
 				<dl><dt>Discussions:</dt> <dd>1,514</dd></dl>
-				<dl><dt>Messages:</dt> <dd>40,561</dd></dl>
+				<dl><dt>Messages:</dt> <dd>40,567</dd></dl>
 				
 			</div>
 			
@@ -1883,10 +1882,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14202475/" title="The case for making DIY interconnects using KLEI RCA plugs 4 / $32">The case for making DIY interconnects using KLEI RCA plugs 4 / $32</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204258/" title="how to upgrade power cable?">how to upgrade power cable?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/onemug.2937/" class="username" dir="auto">onemug</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603069882" data-diff="46424" data-datestring="Oct 18, 2020" data-timestring="8:11 PM">Oct 18, 2020 at 8:11 PM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/rob-f.41259/" class="username" dir="auto">Rob-F</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603145470" data-diff="16250" data-datestring="Oct 19, 2020" data-timestring="5:11 PM">Oct 19, 2020 at 5:11 PM</abbr>
 				</span>
 			
 		</div>
@@ -1935,7 +1934,7 @@ advally.cmd.push(function(){
 				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14199632/" title="Stereo Review Magazine">Stereo Review Magazine</a></span>
 				<span class="lastThreadMeta">
 					<span class="lastThreadUser"><a href="index.php?members/egellings.154428/" class="username" dir="auto">egellings</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602970919" data-diff="145387" data-datestring="Oct 17, 2020" data-timestring="4:41 PM">Oct 17, 2020 at 4:41 PM</abbr>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602970919" data-diff="190801" data-datestring="Oct 17, 2020" data-timestring="4:41 PM">Oct 17, 2020 at 4:41 PM</abbr>
 				</span>
 			
 		</div>
@@ -1967,8 +1966,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>2,087</dd></dl>
-				<dl><dt>Messages:</dt> <dd>20,516</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>2,088</dd></dl>
+				<dl><dt>Messages:</dt> <dd>20,517</dd></dl>
 				
 			</div>
 			
@@ -1981,10 +1980,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203254/" title="NAD 7140 Stereo Receiver">NAD 7140 Stereo Receiver</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204644/" title="can anyone help id my &quot;18&quot; jbl  ive never seen a white one  aftermarket cone??">can anyone help id my &quot;18&quot; jbl  ive never seen a white one  aftermarket cone??</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/buanadha.330281/" class="username" dir="auto">Buanadha</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603115233" data-diff="1073" data-datestring="Oct 19, 2020" data-timestring="8:47 AM">Oct 19, 2020 at 8:47 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/toe.333495/" class="username" dir="auto">toe</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603155011" data-diff="6709" data-datestring="Oct 19, 2020" data-timestring="7:50 PM">Oct 19, 2020 at 7:50 PM</abbr>
 				</span>
 			
 		</div>
@@ -2016,8 +2015,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>753</dd></dl>
-				<dl><dt>Messages:</dt> <dd>17,007</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>754</dd></dl>
+				<dl><dt>Messages:</dt> <dd>17,014</dd></dl>
 				
 			</div>
 			
@@ -2030,10 +2029,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14202795/" title="KEF owners thread">KEF owners thread</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204660/" title="Leak 30 or Armstrong 521 amps">Leak 30 or Armstrong 521 amps</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/thoft8.285415/" class="username" dir="auto">Thoft8</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603080970" data-diff="35336" data-datestring="Oct 18, 2020" data-timestring="11:16 PM">Oct 18, 2020 at 11:16 PM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/tube-a-lou.91601/" class="username" dir="auto">tube-a-lou</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603155564" data-diff="6156" data-datestring="Oct 19, 2020" data-timestring="7:59 PM">Oct 19, 2020 at 7:59 PM</abbr>
 				</span>
 			
 		</div>
@@ -2089,8 +2088,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>21,289</dd></dl>
-				<dl><dt>Messages:</dt> <dd>257,937</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>21,290</dd></dl>
+				<dl><dt>Messages:</dt> <dd>257,959</dd></dl>
 				
 			</div>
 			
@@ -2103,10 +2102,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203137/" title="Who do you trust - Schematic versus Parts List Harmon Kardon 75+">Who do you trust - Schematic versus Parts List Harmon Kardon 75+</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204703/" title="Capacitor Fitting to JVC A-X3">Capacitor Fitting to JVC A-X3</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/gadget73.20854/" class="username" dir="auto">gadget73</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603110291" data-diff="6015" data-datestring="Oct 19, 2020" data-timestring="7:24 AM">Oct 19, 2020 at 7:24 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/redk9258.119458/" class="username" dir="auto">redk9258</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603157022" data-diff="4698" data-datestring="Oct 19, 2020" data-timestring="8:23 PM">Oct 19, 2020 at 8:23 PM</abbr>
 				</span>
 			
 		</div>
@@ -2179,7 +2178,7 @@ advally.cmd.push(function(){
 				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14201828/" title="Eico HF-22 AC wiring">Eico HF-22 AC wiring</a></span>
 				<span class="lastThreadMeta">
 					<span class="lastThreadUser"><a href="index.php?members/dpan.191452/" class="username" dir="auto">dpan</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603053833" data-diff="62473" data-datestring="Oct 18, 2020" data-timestring="3:43 PM">Oct 18, 2020 at 3:43 PM</abbr>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603053833" data-diff="107887" data-datestring="Oct 18, 2020" data-timestring="3:43 PM">Oct 18, 2020 at 3:43 PM</abbr>
 				</span>
 			
 		</div>
@@ -2211,8 +2210,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>19,885</dd></dl>
-				<dl><dt>Messages:</dt> <dd>288,159</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>19,887</dd></dl>
+				<dl><dt>Messages:</dt> <dd>288,193</dd></dl>
 				
 			</div>
 			
@@ -2225,10 +2224,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203161/" title="Quick answer needed: Diameter of knobs: MC2205/2200/2255/2250">Quick answer needed: Diameter of knobs: MC2205/2200/2255/2250</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204805/" title="McIntosh MA6300 phono stage problem">McIntosh MA6300 phono stage problem</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/boersch1.333455/" class="username" dir="auto">boersch1</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603111795" data-diff="4511" data-datestring="Oct 19, 2020" data-timestring="7:49 AM">Oct 19, 2020 at 7:49 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/robert-james.311476/" class="username" dir="auto">Robert james</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603160061" data-diff="1659" data-datestring="Oct 19, 2020" data-timestring="9:14 PM">Oct 19, 2020 at 9:14 PM</abbr>
 				</span>
 			
 		</div>
@@ -2260,8 +2259,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>15,419</dd></dl>
-				<dl><dt>Messages:</dt> <dd>170,168</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>15,421</dd></dl>
+				<dl><dt>Messages:</dt> <dd>170,207</dd></dl>
 				
 			</div>
 			
@@ -2274,10 +2273,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203190/" title="1152DC Mode Switch Not Working">1152DC Mode Switch Not Working</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204778/" title="Incoming Model 16">Incoming Model 16</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/mburas.205734/" class="username" dir="auto">MBuras</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603113130" data-diff="3176" data-datestring="Oct 19, 2020" data-timestring="8:12 AM">Oct 19, 2020 at 8:12 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/bodyblue.248433/" class="username" dir="auto">Bodyblue</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603159173" data-diff="2547" data-datestring="Oct 19, 2020" data-timestring="8:59 PM">Oct 19, 2020 at 8:59 PM</abbr>
 				</span>
 			
 		</div>
@@ -2310,7 +2309,7 @@ advally.cmd.push(function(){
 
 			<div class="nodeStats pairsInline">
 				<dl><dt>Discussions:</dt> <dd>5,461</dd></dl>
-				<dl><dt>Messages:</dt> <dd>88,929</dd></dl>
+				<dl><dt>Messages:</dt> <dd>88,946</dd></dl>
 				
 					<div class="Popup subForumsPopup">
 						<a href="index.php?forums/fisher.172/" rel="Menu" class="cloaked" data-closemenu="true"><span class="dt">Sub-Forums:</span> 1</a>
@@ -2344,10 +2343,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203200/" title="21R chassis, no left channel">21R chassis, no left channel</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204733/" title="Is this the Original 800c Rectifier?">Is this the Original 800c Rectifier?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/jazzbow.327572/" class="username" dir="auto">Jazzbow</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603113376" data-diff="2930" data-datestring="Oct 19, 2020" data-timestring="8:16 AM">Oct 19, 2020 at 8:16 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/rs-steve.127765/" class="username" dir="auto">RS Steve</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603158010" data-diff="3710" data-datestring="Oct 19, 2020" data-timestring="8:40 PM">Oct 19, 2020 at 8:40 PM</abbr>
 				</span>
 			
 		</div>
@@ -2379,8 +2378,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>3,589</dd></dl>
-				<dl><dt>Messages:</dt> <dd>38,255</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>3,590</dd></dl>
+				<dl><dt>Messages:</dt> <dd>38,265</dd></dl>
 				
 			</div>
 			
@@ -2393,10 +2392,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203249/" title="Advice on my new Model Eleven III">Advice on my new Model Eleven III</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204591/" title="Kenwood KA-8100 Recap issue">Kenwood KA-8100 Recap issue</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/drex.5206/" class="username" dir="auto">DREX</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603115149" data-diff="1157" data-datestring="Oct 19, 2020" data-timestring="8:45 AM">Oct 19, 2020 at 8:45 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/brett027.311417/" class="username" dir="auto">Brett027</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603153495" data-diff="8225" data-datestring="Oct 19, 2020" data-timestring="7:24 PM">Oct 19, 2020 at 7:24 PM</abbr>
 				</span>
 			
 		</div>
@@ -2428,8 +2427,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>22,040</dd></dl>
-				<dl><dt>Messages:</dt> <dd>257,225</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>22,043</dd></dl>
+				<dl><dt>Messages:</dt> <dd>257,260</dd></dl>
 				
 					<div class="Popup subForumsPopup">
 						<a href="index.php?forums/pioneer-audio.90/" rel="Menu" class="cloaked" data-closemenu="true"><span class="dt">Sub-Forums:</span> 1</a>
@@ -2463,10 +2462,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203177/" title="Pioneer SX-1010 diagnosis of  FM muting">Pioneer SX-1010 diagnosis of  FM muting</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204704/" title="Drew&#039;s SX-737 Experience">Drew&#039;s SX-737 Experience</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/rcs16.148469/" class="username" dir="auto">rcs16</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603112660" data-diff="3646" data-datestring="Oct 19, 2020" data-timestring="8:04 AM">Oct 19, 2020 at 8:04 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/fromnowon.219343/" class="username" dir="auto">fromnowon</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603157027" data-diff="4693" data-datestring="Oct 19, 2020" data-timestring="8:23 PM">Oct 19, 2020 at 8:23 PM</abbr>
 				</span>
 			
 		</div>
@@ -2498,8 +2497,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>20,908</dd></dl>
-				<dl><dt>Messages:</dt> <dd>261,318</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>20,910</dd></dl>
+				<dl><dt>Messages:</dt> <dd>261,337</dd></dl>
 				
 					<div class="Popup subForumsPopup">
 						<a href="index.php?forums/exclusively-sansui.39/" rel="Menu" class="cloaked" data-closemenu="true"><span class="dt">Sub-Forums:</span> 1</a>
@@ -2533,10 +2532,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14202967/" title="Show Me Your Sansui!">Show Me Your Sansui!</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204803/" title="AU-717 Relay Replacement Access">AU-717 Relay Replacement Access</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/johnian1984.308122/" class="username" dir="auto">JohnIan1984</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603095941" data-diff="20365" data-datestring="Oct 19, 2020" data-timestring="3:25 AM">Oct 19, 2020 at 3:25 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/bobsblkwax.261689/" class="username" dir="auto">Bobsblkwax</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603159992" data-diff="1728" data-datestring="Oct 19, 2020" data-timestring="9:13 PM">Oct 19, 2020 at 9:13 PM</abbr>
 				</span>
 			
 		</div>
@@ -2568,8 +2567,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>6,017</dd></dl>
-				<dl><dt>Messages:</dt> <dd>93,854</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>6,019</dd></dl>
+				<dl><dt>Messages:</dt> <dd>93,869</dd></dl>
 				
 			</div>
 			
@@ -2582,10 +2581,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203110/" title="Amplifier Series best to worst">Amplifier Series best to worst</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204847/" title="A-1000/A-1020 info/repair thread">A-1000/A-1020 info/repair thread</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/wkewinw.331659/" class="username" dir="auto">wkewinw</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603108818" data-diff="7488" data-datestring="Oct 19, 2020" data-timestring="7:00 AM">Oct 19, 2020 at 7:00 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/avionic.14955/" class="username" dir="auto">avionic</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603161662" data-diff="58" data-datestring="Oct 19, 2020" data-timestring="9:41 PM">Oct 19, 2020 at 9:41 PM</abbr>
 				</span>
 			
 		</div>
@@ -2617,8 +2616,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>4,296</dd></dl>
-				<dl><dt>Messages:</dt> <dd>57,757</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>4,297</dd></dl>
+				<dl><dt>Messages:</dt> <dd>57,761</dd></dl>
 				
 			</div>
 			
@@ -2631,10 +2630,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203253/" title="INFINITY RSIIB are these any good">INFINITY RSIIB are these any good</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204433/" title="Power Recommendation For New (to me) Kappa 8&#039;s">Power Recommendation For New (to me) Kappa 8&#039;s</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/mitchell184.205304/" class="username" dir="auto">Mitchell184</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603115197" data-diff="1109" data-datestring="Oct 19, 2020" data-timestring="8:46 AM">Oct 19, 2020 at 8:46 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/seifreit.282851/" class="username" dir="auto">seifreit</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603149821" data-diff="11899" data-datestring="Oct 19, 2020" data-timestring="6:23 PM">Oct 19, 2020 at 6:23 PM</abbr>
 				</span>
 			
 		</div>
@@ -2683,7 +2682,7 @@ advally.cmd.push(function(){
 				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14199290/" title="Fortes ave chorus together??">Fortes ave chorus together??</a></span>
 				<span class="lastThreadMeta">
 					<span class="lastThreadUser"><a href="index.php?members/twiiii.34363/" class="username" dir="auto">twiiii</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602962665" data-diff="153641" data-datestring="Oct 17, 2020" data-timestring="2:24 PM">Oct 17, 2020 at 2:24 PM</abbr>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602962665" data-diff="199055" data-datestring="Oct 17, 2020" data-timestring="2:24 PM">Oct 17, 2020 at 2:24 PM</abbr>
 				</span>
 			
 		</div>
@@ -2715,8 +2714,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>1,155</dd></dl>
-				<dl><dt>Messages:</dt> <dd>20,073</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>1,157</dd></dl>
+				<dl><dt>Messages:</dt> <dd>20,075</dd></dl>
 				
 			</div>
 			
@@ -2729,10 +2728,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203135/" title="JBL ID please">JBL ID please</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204535/" title="Lansing Heritage forums registration problems">Lansing Heritage forums registration problems</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/elitopus.184029/" class="username" dir="auto">elitopus</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603110261" data-diff="6045" data-datestring="Oct 19, 2020" data-timestring="7:24 AM">Oct 19, 2020 at 7:24 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/failer.192727/" class="username" dir="auto">Failer</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603152133" data-diff="9587" data-datestring="Oct 19, 2020" data-timestring="7:02 PM">Oct 19, 2020 at 7:02 PM</abbr>
 				</span>
 			
 		</div>
@@ -2788,8 +2787,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>78,585</dd></dl>
-				<dl><dt>Messages:</dt> <dd>704,603</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>78,590</dd></dl>
+				<dl><dt>Messages:</dt> <dd>704,656</dd></dl>
 				
 			</div>
 			
@@ -2802,10 +2801,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203231/" title="Luxman R115 Receiver + B&amp;W DM602 Speakers">Luxman R115 Receiver + B&amp;W DM602 Speakers</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204835/" title="Best Thrift Store/Goodwill/SA Finds">Best Thrift Store/Goodwill/SA Finds</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/arh.333359/" class="username" dir="auto">arh</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603114384" data-diff="1922" data-datestring="Oct 19, 2020" data-timestring="8:33 AM">Oct 19, 2020 at 8:33 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/axel340band.18181/" class="username" dir="auto">axel340band</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603161205" data-diff="515" data-datestring="Oct 19, 2020" data-timestring="9:33 PM">Oct 19, 2020 at 9:33 PM</abbr>
 				</span>
 			
 		</div>
@@ -2854,7 +2853,7 @@ advally.cmd.push(function(){
 				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14194716/" title="NEW &amp; IMPROVED HoltHill.com Web Site is Up and Running!">NEW &amp; IMPROVED HoltHill.com Web Site is Up and Running!</a></span>
 				<span class="lastThreadMeta">
 					<span class="lastThreadUser"><a href="index.php?members/holthill.314227/" class="username" dir="auto">HoltHill</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602806103" data-diff="310203" data-datestring="Oct 15, 2020" data-timestring="6:55 PM">Oct 15, 2020 at 6:55 PM</abbr>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602806103" data-diff="355617" data-datestring="Oct 15, 2020" data-timestring="6:55 PM">Oct 15, 2020 at 6:55 PM</abbr>
 				</span>
 			
 		</div>
@@ -2903,7 +2902,7 @@ advally.cmd.push(function(){
 				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14193015/" title="How active is Barter Town?">How active is Barter Town?</a></span>
 				<span class="lastThreadMeta">
 					<span class="lastThreadUser"><a href="index.php?members/pustelniakr.6682/" class="username" dir="auto">pustelniakr</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602738861" data-diff="377445" data-datestring="Oct 15, 2020" data-timestring="12:14 AM">Oct 15, 2020 at 12:14 AM</abbr>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602738861" data-diff="422859" data-datestring="Oct 15, 2020" data-timestring="12:14 AM">Oct 15, 2020 at 12:14 AM</abbr>
 				</span>
 			
 		</div>
@@ -2935,8 +2934,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>10,575</dd></dl>
-				<dl><dt>Messages:</dt> <dd>25,303</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>10,578</dd></dl>
+				<dl><dt>Messages:</dt> <dd>25,310</dd></dl>
 				
 			</div>
 			
@@ -2949,10 +2948,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14198541/" title="@Bryans12v is an outstanding member">@Bryans12v is an outstanding member</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204413/" title="captouch">captouch</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/bryans12v.206616/" class="username" dir="auto">bryans12v</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602943453" data-diff="172853" data-datestring="Oct 17, 2020" data-timestring="9:04 AM">Oct 17, 2020 at 9:04 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/captouch.119385/" class="username" dir="auto">captouch</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603149307" data-diff="12413" data-datestring="Oct 19, 2020" data-timestring="6:15 PM">Oct 19, 2020 at 6:15 PM</abbr>
 				</span>
 			
 		</div>
@@ -2984,8 +2983,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>1,307</dd></dl>
-				<dl><dt>Messages:</dt> <dd>15,674</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>1,308</dd></dl>
+				<dl><dt>Messages:</dt> <dd>15,678</dd></dl>
 				
 			</div>
 			
@@ -2998,10 +2997,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14202714/" title="usps tracking?">usps tracking?</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204510/" title="I need a headshell for Elac Miracord 770H">I need a headshell for Elac Miracord 770H</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/dly66.191833/" class="username" dir="auto">dly66</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603076873" data-diff="39433" data-datestring="Oct 18, 2020" data-timestring="10:07 PM">Oct 18, 2020 at 10:07 PM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/alanst.247150/" class="username" dir="auto">alanst</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603151400" data-diff="10320" data-datestring="Oct 19, 2020" data-timestring="6:50 PM">Oct 19, 2020 at 6:50 PM</abbr>
 				</span>
 			
 		</div>
@@ -3050,7 +3049,7 @@ advally.cmd.push(function(){
 				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14200214/" title="Kevin D: The George Washington on AK&#039;s Pony Express Version of Mount Rushmore">Kevin D: The George Washington on AK&#039;s Pony Express Version of Mount Rushmore</a></span>
 				<span class="lastThreadMeta">
 					<span class="lastThreadUser"><a href="index.php?members/kevin-d.167816/" class="username" dir="auto">Kevin D</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602986882" data-diff="129424" data-datestring="Oct 17, 2020" data-timestring="9:08 PM">Oct 17, 2020 at 9:08 PM</abbr>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1602986882" data-diff="174838" data-datestring="Oct 17, 2020" data-timestring="9:08 PM">Oct 17, 2020 at 9:08 PM</abbr>
 				</span>
 			
 		</div>
@@ -3147,8 +3146,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>34,024</dd></dl>
-				<dl><dt>Messages:</dt> <dd>776,115</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>34,026</dd></dl>
+				<dl><dt>Messages:</dt> <dd>776,189</dd></dl>
 				
 					<div class="Popup subForumsPopup">
 						<a href="index.php?forums/general-off-topic-forums.20/" rel="Menu" class="cloaked" data-closemenu="true"><span class="dt">Sub-Forums:</span> 2</a>
@@ -3189,10 +3188,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203287/" title="It&#039;s the &quot;Put A Smile On Your Face&quot; thread, please contribute">It&#039;s the &quot;Put A Smile On Your Face&quot; thread, please contribute</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204761/" title="Any cat lovers here?">Any cat lovers here?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/zebra03.82825/" class="username" dir="auto">zebra03</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603115981" data-diff="325" data-datestring="Oct 19, 2020" data-timestring="8:59 AM">Oct 19, 2020 at 8:59 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/beat_truck.122834/" class="username" dir="auto">beat_truck</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603158753" data-diff="2967" data-datestring="Oct 19, 2020" data-timestring="8:52 PM">Oct 19, 2020 at 8:52 PM</abbr>
 				</span>
 			
 		</div>
@@ -3224,8 +3223,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>5,875</dd></dl>
-				<dl><dt>Messages:</dt> <dd>143,358</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>5,876</dd></dl>
+				<dl><dt>Messages:</dt> <dd>143,382</dd></dl>
 				
 			</div>
 			
@@ -3238,10 +3237,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203241/" title="Air cooled Volkswagen appreciation thread">Air cooled Volkswagen appreciation thread</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204739/" title="For Oldsmobile fans, a new Rocket V8 !">For Oldsmobile fans, a new Rocket V8 !</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/small-fuses.326231/" class="username" dir="auto">Small Fuses</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603114831" data-diff="1475" data-datestring="Oct 19, 2020" data-timestring="8:40 AM">Oct 19, 2020 at 8:40 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/maxxvolume.173409/" class="username" dir="auto">MaxxVolume</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603158188" data-diff="3532" data-datestring="Oct 19, 2020" data-timestring="8:43 PM">Oct 19, 2020 at 8:43 PM</abbr>
 				</span>
 			
 		</div>
@@ -3273,8 +3272,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>2,445</dd></dl>
-				<dl><dt>Messages:</dt> <dd>61,897</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>2,447</dd></dl>
+				<dl><dt>Messages:</dt> <dd>61,915</dd></dl>
 				
 					<div class="Popup subForumsPopup">
 						<a href="index.php?forums/sports-outdoor-adventure.56/" rel="Menu" class="cloaked" data-closemenu="true"><span class="dt">Sub-Forums:</span> 1</a>
@@ -3308,10 +3307,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203162/" title="Where I Am At Home; One A Day">Where I Am At Home; One A Day</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204838/" title="Official AK fishing thread">Official AK fishing thread</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/shominy.215129/" class="username" dir="auto">Shominy</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603111942" data-diff="4364" data-datestring="Oct 19, 2020" data-timestring="7:52 AM">Oct 19, 2020 at 7:52 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/www-records.8152/" class="username" dir="auto">www.records</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603161354" data-diff="366" data-datestring="Oct 19, 2020" data-timestring="9:35 PM">Oct 19, 2020 at 9:35 PM</abbr>
 				</span>
 			
 		</div>
@@ -3343,8 +3342,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>3,519</dd></dl>
-				<dl><dt>Messages:</dt> <dd>100,809</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>3,520</dd></dl>
+				<dl><dt>Messages:</dt> <dd>100,827</dd></dl>
 				
 			</div>
 			
@@ -3357,10 +3356,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203250/" title="Taste review of the Weri Weri Chili of South America">Taste review of the Weri Weri Chili of South America</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204802/" title="Show Us Your Dinner! (Home Cooking ONLY please!)">Show Us Your Dinner! (Home Cooking ONLY please!)</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/2526.57040/" class="username" dir="auto">2526</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603115158" data-diff="1148" data-datestring="Oct 19, 2020" data-timestring="8:45 AM">Oct 19, 2020 at 8:45 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/elcoholic.39970/" class="username" dir="auto">elcoholic</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603159922" data-diff="1798" data-datestring="Oct 19, 2020" data-timestring="9:12 PM">Oct 19, 2020 at 9:12 PM</abbr>
 				</span>
 			
 		</div>
@@ -3392,8 +3391,8 @@ advally.cmd.push(function(){
 			
 
 			<div class="nodeStats pairsInline">
-				<dl><dt>Discussions:</dt> <dd>1,478</dd></dl>
-				<dl><dt>Messages:</dt> <dd>22,277</dd></dl>
+				<dl><dt>Discussions:</dt> <dd>1,479</dd></dl>
+				<dl><dt>Messages:</dt> <dd>22,279</dd></dl>
 				
 			</div>
 			
@@ -3406,10 +3405,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14200552/" title="Lets see all them Amplifiers!">Lets see all them Amplifiers!</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203653/" title="Silvertone 1454 hollowbody mini-pot knobs??">Silvertone 1454 hollowbody mini-pot knobs??</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/cratz2.151078/" class="username" dir="auto">cratz2</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603003050" data-diff="113256" data-datestring="Oct 18, 2020" data-timestring="1:37 AM">Oct 18, 2020 at 1:37 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/lazarus-long.229814/" class="username" dir="auto">Lazarus Long</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603126492" data-diff="35228" data-datestring="Oct 19, 2020" data-timestring="11:54 AM">Oct 19, 2020 at 11:54 AM</abbr>
 				</span>
 			
 		</div>
@@ -3442,7 +3441,7 @@ advally.cmd.push(function(){
 
 			<div class="nodeStats pairsInline">
 				<dl><dt>Discussions:</dt> <dd>1,979</dd></dl>
-				<dl><dt>Messages:</dt> <dd>64,806</dd></dl>
+				<dl><dt>Messages:</dt> <dd>64,810</dd></dl>
 				
 			</div>
 			
@@ -3455,10 +3454,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203033/" title="POST AN IMAGE. (No comments, no words, no text, no emoticons, just pics) *Respectful">POST AN IMAGE. (No comments, no words, no text, no emoticons, just pics) *Respectful</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204528/" title="POST AN IMAGE. (No comments, no words, no text, no emoticons, just pics) *Respectful">POST AN IMAGE. (No comments, no words, no text, no emoticons, just pics) *Respectful</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/mystic.16265/" class="username" dir="auto">Mystic</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603103992" data-diff="12314" data-datestring="Oct 19, 2020" data-timestring="5:39 AM">Oct 19, 2020 at 5:39 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/linderk.282116/" class="username" dir="auto">LinderK</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603151872" data-diff="9848" data-datestring="Oct 19, 2020" data-timestring="6:57 PM">Oct 19, 2020 at 6:57 PM</abbr>
 				</span>
 			
 		</div>
@@ -3491,7 +3490,7 @@ advally.cmd.push(function(){
 
 			<div class="nodeStats pairsInline">
 				<dl><dt>Discussions:</dt> <dd>360</dd></dl>
-				<dl><dt>Messages:</dt> <dd>453,295</dd></dl>
+				<dl><dt>Messages:</dt> <dd>453,390</dd></dl>
 				
 			</div>
 			
@@ -3504,10 +3503,10 @@ advally.cmd.push(function(){
 
 		<div class="nodeLastPost secondaryContent">
 			
-				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14203302/" title="Countdown to 2021">Countdown to 2021</a></span>
+				<span class="lastThreadTitle"><span>Latest:</span> <a href="index.php?posts/14204754/" title="What&#039;s The Last Thing That You Put Into Your Mouth?">What&#039;s The Last Thing That You Put Into Your Mouth?</a></span>
 				<span class="lastThreadMeta">
-					<span class="lastThreadUser"><a href="index.php?members/hyperion.25078/" class="username" dir="auto">Hyperion</a>,</span>
-					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603116303" data-diff="3" data-datestring="Oct 19, 2020" data-timestring="9:05 AM">Oct 19, 2020 at 9:05 AM</abbr>
+					<span class="lastThreadUser"><a href="index.php?members/noogies.103241/" class="username" dir="auto">noogies</a>,</span>
+					<abbr class="DateTime muted lastThreadDate" data-latest="Latest: " data-time="1603158615" data-diff="3105" data-datestring="Oct 19, 2020" data-timestring="8:50 PM">Oct 19, 2020 at 8:50 PM</abbr>
 				</span>
 			
 		</div>
@@ -3659,6 +3658,12 @@ advally.cmd.push(function(){
 			<h3><a href="index.php?members/&amp;type=staff">Admins Online Now</a></h3>
 			<ul>
 				
+					
+						
+					
+						
+					
+						
 					
 						
 					
@@ -4160,6 +4165,176 @@ advally.cmd.push(function(){
 					
 						
 					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
+						
+					
 				
 			</ul>
 		</div>
@@ -4181,8 +4356,392 @@ advally.cmd.push(function(){
 					
 						<li>
 						
-							<a href="index.php?members/ppstereo.90127/"
-								class="username"><span class="style18">PPstereo</span></a>,						
+							<a href="index.php?members/bobdod.7072/"
+								class="username">bobdod</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/rally555.120654/"
+								class="username">Rally555</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/churchill127.328801/"
+								class="username"><span class="style18">churchill127</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/muziekfreak.20377/"
+								class="username">muziekfreak</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/markshan.27692/"
+								class="username"><span class="style18">markshan</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/pgena.9077/"
+								class="username">pgena</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/aud10file.315955/"
+								class="username"><span class="style18">Aud10file</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/lfd75.328955/"
+								class="username">lfd75</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/mburas.205734/"
+								class="username"><span class="style18">MBuras</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/adnick.307828/"
+								class="username"><span class="style18">adnick</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/bobsblkwax.261689/"
+								class="username"><span class="style18">Bobsblkwax</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/7whales7.254728/"
+								class="username">7whales7</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/loiter-sack.312458/"
+								class="username">Loiter Sack</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/toe.333495/"
+								class="username">toe</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/rob2010.111002/"
+								class="username">rob2010</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/leviasean15.301444/"
+								class="username">Leviasean15</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/opnly-bafld.255934/"
+								class="username"><span class="style18">opnly bafld</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/tube-a-lou.91601/"
+								class="username">tube-a-lou</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/dhmcclain1.129988/"
+								class="username"><span class="style18">dhmcclain1</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/e-man.108227/"
+								class="username">E.Man</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/myheresyisme.137453/"
+								class="username"><span class="style18">MyHeresyIsMe</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/reddodge053.219487/"
+								class="username"><span class="style18">reddodge053</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/sensei91.132306/"
+								class="username">sensei91</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/nerdorama.4085/"
+								class="username"><span class="style18">nerdorama</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/eastpoint.45975/"
+								class="username"><span class="style18">EastPoint</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/robertop.290387/"
+								class="username">RobertoP</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/taketheflame.247410/"
+								class="username">Taketheflame</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/redstarjedi.332636/"
+								class="username">redstarjedi</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/doug-g.9815/"
+								class="username">Doug G.</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/slipstream55.31663/"
+								class="username">slipstream55</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/nolasally.106345/"
+								class="username"><span class="style18">nolasally</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/fastocker.303254/"
+								class="username"><span class="style18">Fastocker</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/jhc71.333229/"
+								class="username">JHC71</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/tedrick.15446/"
+								class="username"><span class="style18">Tedrick</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/robert-james.311476/"
+								class="username">Robert james</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/old-guy8.236998/"
+								class="username"><span class="style18">Old Guy8</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/lwb.2789/"
+								class="username">LWB</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/eric-n-kc.143238/"
+								class="username"><span class="style18">Eric n Kc</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/yellowfox.158009/"
+								class="username">yellowfox</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/mazinkaiser.293113/"
+								class="username">mazinkaiser</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/valicious.156683/"
+								class="username">valicious</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/hthman.97623/"
+								class="username">HTHMAN</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/kfa888.8303/"
+								class="username">kfa888</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/guido57.253679/"
+								class="username">Guido57</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/jenkster.27362/"
+								class="username"><span class="style18">Jenkster</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/steevg.105485/"
+								class="username">SteevG</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/fast996.43381/"
+								class="username">Fast996</a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/the-skipper.233966/"
+								class="username"><span class="style18">the skipper</span></a>,						
+						</li>
+					
+				
+					
+						<li>
+						
+							<a href="index.php?members/brubs.333206/"
+								class="username">Brubs</a>,						
 						</li>
 					
 				
@@ -4190,391 +4749,7 @@ advally.cmd.push(function(){
 						<li>
 						
 							<a href="index.php?members/russel1972.95373/"
-								class="username">russel1972</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/wolverine.29445/"
-								class="username"><span class="style18">Wolverine</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/steven-tate.240223/"
-								class="username"><span class="style18">Steven Tate</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/gytisbal.332845/"
-								class="username">GytisBal</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/hyperion.25078/"
-								class="username"><span class="style18">Hyperion</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/swechsler.34564/"
-								class="username">swechsler</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/ramzilla.57360/"
-								class="username">ramzilla</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/jkellner.31705/"
-								class="username">jkellner</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/heyraz.116750/"
-								class="username"><span class="style18">heyraz</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/bberkom.245409/"
-								class="username"><span class="style18">bberkom</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/vinylfreak78.333346/"
-								class="username">VinylFreak78</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/racca.189342/"
-								class="username">racca</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/rajoo.78303/"
-								class="username"><span class="style18">rajoo</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/grindfix.240464/"
-								class="username"><span class="style18">grindfix</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/buck-rogers.236510/"
-								class="username">Buck Rogers</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/bigbeard.326120/"
-								class="username">Bigbeard</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/pkcain.98373/"
-								class="username">pkcain</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/tlryan456.239998/"
-								class="username">tlryan456</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/bigcaddy64.258206/"
-								class="username">bigcaddy64</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/jhs2rt.22811/"
-								class="username"><span class="style18">JHS2RT</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/mrk229.317845/"
-								class="username"><span class="style18">mrk229</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/ckburgher.333459/"
-								class="username">CKBurgher</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/llwhtt.47977/"
-								class="username">llwhtt</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/john-james.41926/"
-								class="username"><span class="style18">John James</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/zedex.144821/"
-								class="username">zedex</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/nyjblbob.310137/"
-								class="username"><span class="style18">Nyjblbob</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/bander.304535/"
-								class="username">Bander</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/binkman.147925/"
-								class="username">Binkman</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/10ear.3939/"
-								class="username">10ear</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/chazix.45379/"
-								class="username"><span class="style18">chazix</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/andre-garcia.287884/"
-								class="username">Andre Garcia</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/samplexample.83074/"
-								class="username">samplexample</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/fenacious.11506/"
-								class="username"><span class="style18">fenacious</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/dusty-olman.257693/"
-								class="username"><span class="style18">Dusty Ol'Man</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/no-money.200523/"
-								class="username">No Money</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/maxp.276608/"
-								class="username"><span class="style18">MaxP</span></a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/rellik76.333108/"
-								class="username">Rellik76</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/justrideit.28234/"
-								class="username">justrideit</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/stonegarden.306919/"
-								class="username">Stonegarden</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/mij_pioneer.301075/"
-								class="username">MIJ_Pioneer</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/skersvejis1.330035/"
-								class="username">skersvejis1</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/tothmes.230116/"
-								class="username">tothmes</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/boltss.138067/"
-								class="username">Boltss</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/ocdecio.333370/"
-								class="username">ocdecio</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/zebra03.82825/"
-								class="username">zebra03</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/jesuschrysler.20309/"
-								class="username">JesusChrysler</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/bouxy.64292/"
-								class="username">BOUXY</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/ethorn66.252097/"
-								class="username">EThorn66</a>,						
-						</li>
-					
-				
-					
-						<li>
-						
-							<a href="index.php?members/yy1.323532/"
-								class="username">YY1</a>						
+								class="username">russel1972</a>						
 						</li>
 					
 				
@@ -4972,14 +5147,190 @@ advally.cmd.push(function(){
 				
 					
 				
+					
 				
-					<li class="moreLink">... <a href="index.php?online/" title="See all visitors">and 197 more</a></li>
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+					
+				
+				
+					<li class="moreLink">... <a href="index.php?online/" title="See all visitors">and 285 more</a></li>
 				
 			</ol>
 		
 		
 		<div class="footnote">
-			Total: 1,550 (members: 303, guests: 1,093, robots: 154)
+			Total: 1,863 (members: 389, guests: 1,293, robots: 181)
 		</div>
 	</div>
 </div>
@@ -4994,70 +5345,22 @@ advally.cmd.push(function(){
 
 <ul>
 
-	<li id="thread-932800" class="threadListItem" data-author="GytisBal">
+	<li id="thread-278564" class="threadListItem" data-author="7whales7">
 
-		<a href="index.php?members/gytisbal.332845/" class="avatar Av332845s" data-avatarhtml="true"><img src="styles/default/xenforo/avatars/avatar_male_s.png" width="48" height="48" alt="GytisBal" /></a>
+		<a href="index.php?members/7whales7.254728/" class="avatar Av254728s" data-avatarhtml="true"><img src="data/avatars/s/254/254728.jpg?1558576366" width="48" height="48" alt="7whales7" /></a>
 		
 		<div class="messageInfo">
 			
 			<div class="messageContent">
 				<div class="title">
 				
-					<a href="index.php?posts/14203301/">Nad 3020a</a>
+					<a href="index.php?posts/14204849/">What are you Listening To Right Now? - and more</a>
 				
 				</div>
 			</div>
 
 			<div class="additionalRow muted">
-				Latest: GytisBal, <abbr class="DateTime" data-time="1603116303" data-diff="3" data-datestring="Oct 19, 2020" data-timestring="9:05 AM">Oct 19, 2020 at 9:05 AM</abbr>
-			</div>
-			
-			<div class="additionalRow muted">
-				<a href="index.php?forums/solid-state.13/" class="forumLink">Solid State</a>
-			</div>
-		</div>
-	</li>
-
-	<li id="thread-898467" class="threadListItem" data-author="Hyperion">
-
-		<a href="index.php?members/hyperion.25078/" class="avatar Av25078s" data-avatarhtml="true"><img src="data/avatars/s/25/25078.jpg?1509526274" width="48" height="48" alt="Hyperion" /></a>
-		
-		<div class="messageInfo">
-			
-			<div class="messageContent">
-				<div class="title">
-				
-					<a href="index.php?posts/14203302/">Countdown to 2021</a>
-				
-				</div>
-			</div>
-
-			<div class="additionalRow muted">
-				Latest: Hyperion, <abbr class="DateTime" data-time="1603116303" data-diff="3" data-datestring="Oct 19, 2020" data-timestring="9:05 AM">Oct 19, 2020 at 9:05 AM</abbr>
-			</div>
-			
-			<div class="additionalRow muted">
-				<a href="index.php?forums/gaming.209/" class="forumLink">Gaming</a>
-			</div>
-		</div>
-	</li>
-
-	<li id="thread-278564" class="threadListItem" data-author="VinylFreak78">
-
-		<a href="index.php?members/vinylfreak78.333346/" class="avatar Av333346s" data-avatarhtml="true"><img src="data/avatars/s/333/333346.jpg?1602957761" width="48" height="48" alt="VinylFreak78" /></a>
-		
-		<div class="messageInfo">
-			
-			<div class="messageContent">
-				<div class="title">
-				
-					<a href="index.php?posts/14203300/">What are you Listening To Right Now? - and more</a>
-				
-				</div>
-			</div>
-
-			<div class="additionalRow muted">
-				Latest: VinylFreak78, <abbr class="DateTime" data-time="1603116292" data-diff="14" data-datestring="Oct 19, 2020" data-timestring="9:04 AM">Oct 19, 2020 at 9:04 AM</abbr>
+				Latest: 7whales7, <abbr class="DateTime" data-time="1603161679" data-diff="41" data-datestring="Oct 19, 2020" data-timestring="9:41 PM">Oct 19, 2020 at 9:41 PM</abbr>
 			</div>
 			
 			<div class="additionalRow muted">
@@ -5066,50 +5369,98 @@ advally.cmd.push(function(){
 		</div>
 	</li>
 
-	<li id="thread-931667" class="threadListItem" data-author="Hyperion">
+	<li id="thread-933867" class="threadListItem" data-author="beat_truck">
 
-		<a href="index.php?members/hyperion.25078/" class="avatar Av25078s" data-avatarhtml="true"><img src="data/avatars/s/25/25078.jpg?1509526274" width="48" height="48" alt="Hyperion" /></a>
+		<a href="index.php?members/beat_truck.122834/" class="avatar Av122834s" data-avatarhtml="true"><img src="data/avatars/s/122/122834.jpg?1602927904" width="48" height="48" alt="beat_truck" /></a>
 		
 		<div class="messageInfo">
 			
 			<div class="messageContent">
 				<div class="title">
 				
-					<a href="index.php?posts/14203299/">Z ⇢ A Words That End in a Vowel</a>
+					<a href="index.php?posts/14204848/">Anyone ever win an auction and the seller cancelled?</a>
 				
 				</div>
 			</div>
 
 			<div class="additionalRow muted">
-				Latest: Hyperion, <abbr class="DateTime" data-time="1603116273" data-diff="33" data-datestring="Oct 19, 2020" data-timestring="9:04 AM">Oct 19, 2020 at 9:04 AM</abbr>
+				Latest: beat_truck, <abbr class="DateTime" data-time="1603161665" data-diff="55" data-datestring="Oct 19, 2020" data-timestring="9:41 PM">Oct 19, 2020 at 9:41 PM</abbr>
 			</div>
 			
 			<div class="additionalRow muted">
-				<a href="index.php?forums/gaming.209/" class="forumLink">Gaming</a>
+				<a href="index.php?forums/general-audio-discussion.12/" class="forumLink">General Audio Discussion</a>
 			</div>
 		</div>
 	</li>
 
-	<li id="thread-798962" class="threadListItem" data-author="highvoltage_">
+	<li id="thread-674864" class="threadListItem" data-author="avionic">
 
-		<a href="index.php?members/highvoltage_.173576/" class="avatar Av173576s" data-avatarhtml="true"><img src="data/avatars/s/173/173576.jpg?1520646359" width="48" height="48" alt="highvoltage_" /></a>
+		<a href="index.php?members/avionic.14955/" class="avatar Av14955s" data-avatarhtml="true"><img src="data/avatars/s/14/14955.jpg?1514246114" width="48" height="48" alt="avionic" /></a>
 		
 		<div class="messageInfo">
 			
 			<div class="messageContent">
 				<div class="title">
 				
-					<a href="index.php?posts/14203297/">Count To 2018 BEFORE 2018</a>
+					<a href="index.php?posts/14204847/">A-1000/A-1020 info/repair thread</a>
 				
 				</div>
 			</div>
 
 			<div class="additionalRow muted">
-				Latest: highvoltage_, <abbr class="DateTime" data-time="1603116241" data-diff="65" data-datestring="Oct 19, 2020" data-timestring="9:04 AM">Oct 19, 2020 at 9:04 AM</abbr>
+				Latest: avionic, <abbr class="DateTime" data-time="1603161662" data-diff="58" data-datestring="Oct 19, 2020" data-timestring="9:41 PM">Oct 19, 2020 at 9:41 PM</abbr>
 			</div>
 			
 			<div class="additionalRow muted">
-				<a href="index.php?forums/gaming.209/" class="forumLink">Gaming</a>
+				<a href="index.php?forums/yamaha.173/" class="forumLink">Yamaha</a>
+			</div>
+		</div>
+	</li>
+
+	<li id="thread-933851" class="threadListItem" data-author="Guido57">
+
+		<a href="index.php?members/guido57.253679/" class="avatar Av253679s" data-avatarhtml="true"><img src="data/avatars/s/253/253679.jpg?1519597657" width="48" height="48" alt="Guido57" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="index.php?posts/14204846/">Carillon 400 - what is this?</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: Guido57, <abbr class="DateTime" data-time="1603161642" data-diff="78" data-datestring="Oct 19, 2020" data-timestring="9:40 PM">Oct 19, 2020 at 9:40 PM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="index.php?forums/speakers.27/" class="forumLink">Speakers</a>
+			</div>
+		</div>
+	</li>
+
+	<li id="thread-488845" class="threadListItem" data-author="yellowfox">
+
+		<a href="index.php?members/yellowfox.158009/" class="avatar Av158009s" data-avatarhtml="true"><img src="styles/default/xenforo/avatars/avatar_s.png" width="48" height="48" alt="yellowfox" /></a>
+		
+		<div class="messageInfo">
+			
+			<div class="messageContent">
+				<div class="title">
+				
+					<a href="index.php?posts/14204845/">What are you listening to right now and on what speakers</a>
+				
+				</div>
+			</div>
+
+			<div class="additionalRow muted">
+				Latest: yellowfox, <abbr class="DateTime" data-time="1603161615" data-diff="105" data-datestring="Oct 19, 2020" data-timestring="9:40 PM">Oct 19, 2020 at 9:40 PM</abbr>
+			</div>
+			
+			<div class="additionalRow muted">
+				<a href="index.php?forums/members-systems.175/" class="forumLink">Members&#039; Systems</a>
 			</div>
 		</div>
 	</li>
@@ -5128,13 +5479,13 @@ advally.cmd.push(function(){
 				<h3>Forum Statistics</h3>
 				<div class="pairsJustified">
 					<dl class="discussionCount"><dt>Discussions:</dt>
-						<dd>764,277</dd></dl>
+						<dd>764,367</dd></dl>
 					<dl class="messageCount"><dt>Messages:</dt>
-						<dd>12,927,624</dd></dl>
+						<dd>12,929,150</dd></dl>
 					<dl class="memberCount"><dt>Members:</dt>
-						<dd>292,470</dd></dl>
+						<dd>292,508</dd></dl>
 					<dl><dt>Latest Member:</dt>
-						<dd><a href="index.php?members/ckburgher.333459/" class="username" dir="auto">CKBurgher</a></dd></dl>
+						<dd><a href="index.php?members/infrasound.333497/" class="username" dir="auto">Infrasound</a></dd></dl>
 					<!-- slot: forum_stats_extra -->
 				</div>
 			</div>
@@ -5163,7 +5514,7 @@ advally.cmd.push(function(){
 
 				<dl class="ctrlUnit">
 					<dt>Uploaded Media:</dt>
-					<dd>21,895</dd>
+					<dd>21,902</dd>
 				</dl>
 
 				<dl class="ctrlUnit">
@@ -5593,7 +5944,7 @@ jQuery.extend(true, XenForo,
 	visitor: { user_id: 0 },
 	serverTimeInfo:
 	{
-		now: 1603116306,
+		now: 1603161720,
 		today: 1603083600,
 		todayDow: 1
 	},

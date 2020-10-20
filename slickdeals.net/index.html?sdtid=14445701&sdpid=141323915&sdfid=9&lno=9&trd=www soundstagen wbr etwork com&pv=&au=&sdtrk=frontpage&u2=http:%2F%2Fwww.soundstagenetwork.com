@@ -1,11 +1,11 @@
 HTTP/1.1 200 OK
-Date: Mon, 19 Oct 2020 14:05:51 GMT
+Date: Tue, 20 Oct 2020 02:42:39 GMT
 Server: Apache
 P3P: CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM", CP="NOI ADM DEV PSAi COM NAV OUR OTRo STP IND DEM"
 Expires: Wed, 17 Aug 2005 00:00:00 GMT
 Pragma: no-cache
 Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0, no-cache
-Last-Modified: Mon, 19 Oct 2020 13:58:24 GMT
+Last-Modified: Tue, 20 Oct 2020 02:29:22 GMT
 ETag: "83d5b2af9541cc5f430888d44e7f38e9"
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
@@ -28,7 +28,6 @@ Content-Type: text/html; charset=utf-8
 	<link href="/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 	<link href="/plugins/system/jce/css/content.css?a36c79ff249c9b948560f07848ed679e" rel="stylesheet" />
 	<link href="/plugins/system/rokbox/assets/styles/rokbox.css" rel="stylesheet" />
-	<link href="/media/com_rstbox/css/engagebox.css?a36c79ff249c9b948560f07848ed679e" rel="stylesheet" />
 	<link href="https://www.soundstagenetwork.com/modules/mod_datetime/tmpl/default.css" rel="stylesheet" />
 	<link href="/media/gantry5/assets/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="/media/gantry5/engines/nucleus/css-compiled/nucleus.css" rel="stylesheet" />
@@ -44,14 +43,7 @@ Content-Type: text/html; charset=utf-8
 	<link href="https://www.soundstagenetwork.com/media/plg_system_youtuber/assets/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic&subset=latin,cyrillic" rel="stylesheet" />
 	<link href="https://www.soundstagenetwork.com/media/plg_system_youtuber/assets/css/frontend.css" rel="stylesheet" />
-	<style>
-
-		#rstbox_3 .rstbox-close:hover {
-			color: rgba(128, 128, 128, 1) !important;
-		}	
-	
-	</style>
-	<script type="application/json" class="joomla-script-options new">{"csrf.token":"f6517f4412e674993586526b0d82b82b","system.paths":{"root":"","base":""}}</script>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"31bc7543078bb5846453221f6d5156ce","system.paths":{"root":"","base":""}}</script>
 	<script src="/media/system/js/mootools-core.js?a36c79ff249c9b948560f07848ed679e"></script>
 	<script src="/media/system/js/core.js?a36c79ff249c9b948560f07848ed679e"></script>
 	<script src="/media/system/js/mootools-more.js?a36c79ff249c9b948560f07848ed679e"></script>
@@ -59,9 +51,6 @@ Content-Type: text/html; charset=utf-8
 	<script src="/media/jui/js/jquery.min.js?a36c79ff249c9b948560f07848ed679e"></script>
 	<script src="/media/jui/js/jquery-noconflict.js?a36c79ff249c9b948560f07848ed679e"></script>
 	<script src="/media/jui/js/jquery-migrate.min.js?a36c79ff249c9b948560f07848ed679e"></script>
-	<script src="/media/com_rstbox/js/vendor/velocity.js?a36c79ff249c9b948560f07848ed679e"></script>
-	<script src="/media/com_rstbox/js/vendor/velocity.ui.js?a36c79ff249c9b948560f07848ed679e"></script>
-	<script src="/media/com_rstbox/js/engagebox.js?a36c79ff249c9b948560f07848ed679e"></script>
 	<script src="/media/jui/js/bootstrap.min.js?a36c79ff249c9b948560f07848ed679e"></script>
 	<script src="/templates/rt_xenon/js/flexslider.js"></script>
 	<script src="https://www.soundstagenetwork.com/media/plg_system_youtuber/assets/fancybox/jquery.fancybox.min.js"></script>
@@ -132,7 +121,7 @@ if (typeof RokBoxSettings == 'undefined') RokBoxSettings = {pc: '100'};
              <div class="g-content">
                                     <div class="platform-content"><div class="moduletable ">
 						
-    <span class="mod_datetime">New York: <time datetime="2020-10-19T09:58:23-04:00">Oct 19, 2020 - 
+    <span class="mod_datetime">New York: <time datetime="2020-10-19T22:29:21-04:00">Oct 19, 2020 - 
 		<span id="mod_datetime_custom_time_142"></span>
 		<script type="text/javascript">
 			<!--
@@ -183,7 +172,7 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
              <div class="g-content">
                                     <div class="platform-content"><div class="moduletable ">
 						
-    <span class="mod_datetime">London: <time datetime="2020-10-19T14:58:23+01:00">Oct 19, 2020 - 
+    <span class="mod_datetime">London: <time datetime="2020-10-20T03:29:21+01:00">Oct 20, 2020 - 
 		<span id="mod_datetime_custom_time_143"></span>
 		<script type="text/javascript">
 			<!--
@@ -234,7 +223,7 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
              <div class="g-content">
                                     <div class="platform-content"><div class="moduletable ">
 						
-    <span class="mod_datetime">Tokyo: <time datetime="2020-10-19T22:58:23+09:00">Oct 19, 2020 - 
+    <span class="mod_datetime">Tokyo: <time datetime="2020-10-20T11:29:21+09:00">Oct 20, 2020 - 
 		<span id="mod_datetime_custom_time_144"></span>
 		<script type="text/javascript">
 			<!--
@@ -289,11 +278,11 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=68" target="_blank" rel="noopener noreferrer"
-							title="Paradigm Crafted in Canada Desktop (20180728)">
+							href="/index.php?option=com_banners&amp;task=click&amp;id=69" target="_blank" rel="noopener noreferrer"
+							title="Anthem Future of Audio Desktop (20180728)">
 							<img
-								src="https://www.soundstagenetwork.com/images/banners/201808_paradigmgroup/Paradigm-Crafted-in-Canada-1200x200-07-18.jpg"
-								alt="Paradigm Crafted in Canada"
+								src="https://www.soundstagenetwork.com/images/banners/201808_paradigmgroup/Anthem-Future-of-Audio-1200x200-07-18.jpg"
+								alt="Anthem Future of Audio"
 																							/>
 						</a>
 																<div class="clr"></div>
@@ -314,11 +303,11 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=71" target="_blank" rel="noopener noreferrer"
-							title="Paradigm Crafted in Canada Mobile (20180728)">
+							href="/index.php?option=com_banners&amp;task=click&amp;id=72" target="_blank" rel="noopener noreferrer"
+							title="Anthem Future of Audio Mobile (20180728)">
 							<img
-								src="https://www.soundstagenetwork.com/images/banners/201808_paradigmgroup/Paradigm-Crafted-in-Canada-767x500-07-18.jpg"
-								alt="Paradigm Crafted in Canada"
+								src="https://www.soundstagenetwork.com/images/banners/201808_paradigmgroup/Anthem-Future-of-Audio-767x500-07-18.jpg"
+								alt="Anthem Future of Audio"
 																							/>
 						</a>
 																<div class="clr"></div>
@@ -1087,11 +1076,11 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=91" target="_blank" rel="noopener noreferrer"
-							title="Desktop iFi Audio Pro iDSD (201906)">
+							href="/index.php?option=com_banners&amp;task=click&amp;id=89" target="_blank" rel="noopener noreferrer"
+							title="Desktop Lumin U1 Black (201906)">
 							<img
-								src="https://www.soundstagenetwork.com/images/banners/201906_ifiaudio/1200x200_ifi_pro_idsd.jpg"
-								alt="iFi Audio"
+								src="https://www.soundstagenetwork.com/images/banners/201906_lumin/1200x200_lumin_u1b.jpg"
+								alt="Lumin"
 																							/>
 						</a>
 																<div class="clr"></div>
@@ -1214,11 +1203,11 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=107"
-							title="1200x200 Kii Audio Katz (202006)">
+							href="/index.php?option=com_banners&amp;task=click&amp;id=83"
+							title="1200x200 Luxman (201906)">
 							<img
-								src="https://www.soundstagenetwork.com/images/banners/202006_kii_audio/Kii_red_BobKatz_1200_200_EN.jpg"
-								alt="Kii Audio"
+								src="https://www.soundstagenetwork.com/images/banners/201906_luxman/1200x200_luxman.jpg"
+								alt="Luxman"
 																							/>
 						</a>
 																<div class="clr"></div>
@@ -1239,11 +1228,11 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=108"
-							title="767x500 Kii Audio Katz (202006)">
+							href="/index.php?option=com_banners&amp;task=click&amp;id=84"
+							title="767x500 Luxman (201906)">
 							<img
-								src="https://www.soundstagenetwork.com/images/banners/202006_kii_audio/Kii_red_Bob_Katz_767_500_ENb.jpg"
-								alt="Kii Audio"
+								src="https://www.soundstagenetwork.com/images/banners/201906_luxman/765x500_mobile.jpg"
+								alt="Luxman"
 																							/>
 						</a>
 																<div class="clr"></div>
@@ -1655,6 +1644,11 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 			<ul class="newsfeed">
 									<li>
 											<span class="feed-link">
+						<a href="https://www.soundstagesolo.com/index.php/equipment/earphones/260-technics-eah-tz700-earphones" target="_blank">
+						Technics EAH-TZ700 Earphones</a></span>
+																			</li>
+									<li>
+											<span class="feed-link">
 						<a href="https://www.soundstagesolo.com/index.php/equipment/amplifiers/259-earmen-tr-amp-dac-headphone-amplifier" target="_blank">
 						EarMen TR-Amp DAC-Headphone Amplifier</a></span>
 																			</li>
@@ -1672,11 +1666,6 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 											<span class="feed-link">
 						<a href="https://www.soundstagesolo.com/index.php/equipment/headphones/256-schiit-audio-magnius-headphone-amplifier" target="_blank">
 						Schiit Audio Magnius Headphone Amplifier</a></span>
-																			</li>
-									<li>
-											<span class="feed-link">
-						<a href="https://www.soundstagesolo.com/index.php/equipment/headphones/255-hedd-audio-heddphone-headphones" target="_blank">
-						HEDD Audio HEDDphone Headphones</a></span>
 																			</li>
 				</ul>
 		</div>
@@ -1789,10 +1778,10 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=112" target="_blank" rel="noopener noreferrer"
-							title="1200x200 MSB (202007) 2">
+							href="/index.php?option=com_banners&amp;task=click&amp;id=111" target="_blank" rel="noopener noreferrer"
+							title="1200x200 MSB (202007) 1">
 							<img
-								src="https://www.soundstagenetwork.com/images/banners/202007_msb/MSB-Banner-Soundstage2.gif"
+								src="https://www.soundstagenetwork.com/images/banners/202007_msb/MSB-Banner-Soundstage1.gif"
 								alt="MSB Technology"
 																							/>
 						</a>
@@ -1814,10 +1803,10 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
 
 	<div class="banneritem">
 																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=120" target="_blank" rel="noopener noreferrer"
-							title="767x500 MSB (202007) 5">
+							href="/index.php?option=com_banners&amp;task=click&amp;id=116" target="_blank" rel="noopener noreferrer"
+							title="767x500 MSB (202007) 1">
 							<img
-								src="https://www.soundstagenetwork.com/images/banners/202007_msb/Soundstage-Mobile-adverts5.gif"
+								src="https://www.soundstagenetwork.com/images/banners/202007_msb/Soundstage-Mobile-adverts1.gif"
 								alt="MSB Technology"
 																							/>
 						</a>
@@ -1977,40 +1966,5 @@ var finaltime=hr2+":"+((mins < 10)?"0"+mins:mins)+" "+statusampm;
     
 
         
-    <script src="/media/com_ingallery/js/masonry.pkgd.min.js?v=1.208.1"></script><script src="/media/com_ingallery/js/frontend.js?v=1.208.1"></script>
-<div class="rstboxes" data-t="f6517f4412e674993586526b0d82b82b" data-baseurl="https://www.soundstagenetwork.com/" data-site="26add730cbb2d91c661a8f97fd6529ad" data-debug="0" >
-
-	
-	
-	<div id="rstbox_3"  class="rstbox rstbox_center rstbox_module  eb-popup rstbox-acm rstbox-acc  formVer" data-settings='{"delay":"0","transitionin":"rstbox.slideUpIn","transitionout":"rstbox.slideUpOut","duration":"400","autohide":"1","closeopened":"1","preventpagescroll":"0","log":"1","testmode":"0","autoclose":false}' data-trigger="pageload" data-cookietype="session" data-cookietime="30" data-title="Focal Pop-Up Ad" style="max-width:777px;height:510px;background-color:rgba(5, 5, 5, 1);color:rgba(51, 51, 51, 1);border:solid 2px rgba(10, 10, 10, 1);border-radius:0px;padding:0px;z-index:99999" role="dialog" tabindex="-1">
-		
-		
-<button type="button" data-ebox-cmd="closeKeep" class="rstbox-close" aria-label="Close" style="color:rgba(252, 8, 8, 1);font-size:40px">
-			<span aria-hidden="true">&times;</span>
-	</button>
-	
-
-		<div class="rstbox-container">
-						<div class="rstbox-content">
-				<div class="bannergroup">
-
-	<div class="banneritem">
-																																																																			<a
-							href="/index.php?option=com_banners&amp;task=click&amp;id=122" target="_blank" rel="noopener noreferrer"
-							title="767x500 Focal Sopra (202008)">
-							<img
-								src="https://www.soundstagenetwork.com/images/banners/202008_focal/SoundStage_HiFi_Sopra_Finishes_767x500.jpg"
-								alt="Focal Sopra"
-																							/>
-						</a>
-																<div class="clr"></div>
-	</div>
-
-</div>
-			</div>
-		</div>
-			</div>	
-	</div>
-
-</body>
+    <script src="/media/com_ingallery/js/masonry.pkgd.min.js?v=1.208.1"></script><script src="/media/com_ingallery/js/frontend.js?v=1.208.1"></script></body>
 </html>

@@ -1,16 +1,15 @@
 HTTP/1.1 200 OK
-Date: Mon, 19 Oct 2020 14:05:37 GMT
+Date: Tue, 20 Oct 2020 02:42:28 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 Server: nginx/1.12.1
 Vary: Accept-Encoding
 X-Powered-By: PHP/5.6.36
-Set-Cookie: PHPSESSID=r6oqcbfruke0mhkkph2apqep14; path=/
 Expires: Thu, 19 Nov 1981 08:52:00 GMT
 Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
 Pragma: no-cache
-Set-Cookie: bb_pre_url=http%3A%2F%2Fwww.audioreview.com%2F; expires=Tue, 20-Oct-2020 06:45:37 GMT; Max-Age=60000; path=/; domain=.audioreview.com
+Set-Cookie: bb_pre_url=http%3A%2F%2Fwww.audioreview.com%2F; expires=Tue, 20-Oct-2020 19:22:27 GMT; Max-Age=60000; path=/; domain=.audioreview.com
 
 <!DOCTYPE html>
 

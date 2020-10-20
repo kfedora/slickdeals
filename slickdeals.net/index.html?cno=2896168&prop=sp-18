@@ -1,15 +1,69 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
+HTTP/1.1 200 OK
+Cache-Control: public, must-revalidate,max-age=0
+Content-Length: 2785
 Content-Type: text/html
-Content-Length: 96
-X-Akamai-Path-Stats: [3:36540:14996460]
-Date: Sun, 18 Oct 2020 07:09:26 GMT
-Connection: keep-alive
-Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=3
-Server-Timing: origin; dur=15033
-Strict-Transport-Security: max-age=86400
+Last-Modified: Thu, 08 Oct 2020 04:10:48 GMT
+Accept-Ranges: bytes
+ETag: "d581cf0299dd61:0"
+X-UA-Compatible: IE=edge,chrome=1
+X-Azure-Ref: 0yXCOXwAAAABYIeKNVx45RItPJyLdwsYqV1NURURHRTA4MTcAMDMzZjBjYTYtM2RmMy00YjljLThhMTItYjhhMTUyNWI0NmY1
+Date: Tue, 20 Oct 2020 05:08:24 GMT
 
-<html><body><h1>500 Internal Server Error</h1>
-An internal server error occured.
-</body></html>
+﻿<!DOCTYPE html>
+<html ng-app="zeus">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Best Buy Trade-In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+<link href="/Client/lib/bootstrap/css/bootstrap-scoped.min.css" rel="stylesheet" />
+<link href="/Client/lib/bootstrap-glyphicons/css/bootstrap-glyphicons.css" rel="stylesheet" />
+<link href="/Client/css/bestbuy.tradein.online-bundle.min.css" rel="stylesheet" />
+      
+    <link rel="shortcut icon" href="//tradein.bestbuy.com/client/img/favicon.ico" />
+    <link rel="icon" href="//tradein.bestbuy.com/client/img/favicon.ico" />
+    <script src="https://nexus.ensighten.com/bestbuy/privacy_init/Bootstrap.js"></script>
+</head>
+<body>
+    <div ng-include src="'/client/partials/layout/header.html'"></div>
+    <div mad-browser="//tradein.bestbuy.com" class="container mad-container" id="main-container">
+        <div id="tradein-header" class="clearfix">
+            <div style="float: left; display: inline">
+                <div mad-view for-hint="urn:bestbuy:tradein:home-link">
+                    <div mad-link>
+                        <a href="{{node.value.uri}}" tabindex="-1">Trade-In</a>
+                    </div>
+                </div>
+            </div>
+            <div style="float: right; display: inline">
+                <div ng-show="node.hasChildrenWithHint('urn:bestbuy:tradein:online:cart-link')">
+                    <div ng-include src="'/client/partials/default/urn-bestbuy-tradein-online-cart-link.html'"></div>
+                </div>
+            </div>
+        </div>
+        <div id="header-divider">
+            <img src="/client/img/shadowLine.png" />
+            <hr />
+        </div>
+        <div id="connection-error" ng-cloak class="visible-on-connection-error alert alert-danger">Connection failed</div>
+        <div id="body-container">
+            <div mad-view></div>
+        </div>
+        <div id="loading-screen" class="visible-on-loading">
+            <div class="modal-backdrop in"></div>
+        </div>
+        <div mad-view for-hint="urn:bestbuy:tradein:online:legal-index-link">
+            <div mad-embedded-link-container></div>
+        </div>
+    </div>
+    <div ng-include src="'/client/partials/layout/footer.html'"></div>
+    
+<script src="/Client/lib/jquery-1.9.1.min.js"></script>
+<script src="/Client/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="/Client/lib/angular/angular.min.js"></script>
+<script src="/Client/lib/angular/angular-ui-bootstrap.min.js"></script>
+<script src="/Client/js/bestbuy.tradein.online-bundle.js"></script>
+      
+</body>
+</html>

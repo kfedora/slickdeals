@@ -4,15 +4,14 @@ ETag: "15159747"
 Last-Modified: Sat, 17 Oct 2020 18:52:02 GMT
 Referrer-Policy: strict-origin-when-cross-origin
 Server: Akamai Resource Optimizer
-X-Akamai-Path-Stats: [1:368:2632]
 Vary: Accept-Encoding
 Cache-Control: max-age=227794
-Expires: Thu, 22 Oct 2020 06:21:17 GMT
-Date: Mon, 19 Oct 2020 15:04:43 GMT
+Expires: Thu, 22 Oct 2020 18:01:25 GMT
+Date: Tue, 20 Oct 2020 02:44:51 GMT
 Content-Length: 9372
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=47
+Server-Timing: edge; dur=7
 Strict-Transport-Security: max-age=86400
 
 /*!

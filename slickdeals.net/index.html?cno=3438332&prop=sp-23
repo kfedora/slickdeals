@@ -1,0 +1,924 @@
+HTTP/1.1 200 OK
+Date: Tue, 20 Oct 2020 02:29:04 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: Bob
+X-ServiceName: Bob
+Content-Security-Policy: frame-ancestors 'self' *.shutterfly.com *.tinyprints.com *.onehippo.io;
+Access-Control-Allow-Origin: *
+service-uuid: bob-20201013-1093-ae4f191a-875e39256
+cache-control: no-cache, no-store, max-age=0
+expires: 0
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script>
+      (function() {
+        var attempt = 0;
+        var pageViewCalled = false;
+        function InjectHook() {
+          if (window.__satelliteLoaded) {
+            var originalTrack = window._satellite.track;
+            window._satellite.track = function() {
+              var args = [].slice.apply(arguments);
+              if (args[0] === 'delayed_page_load') {
+                pageViewCalled = true;
+              }
+              window._satellite.pageBottom();
+              return originalTrack.apply(window._satellite, args);
+            }
+            window.addEventListener("load",
+              function(event) {
+                setTimeout(function() {
+                  if (!pageViewCalled) {
+                    originalTrack('delayed_page_load');
+                  }
+                }, 5000);
+              }
+            );
+          } else {
+            attempt++;
+            if (attempt < 40) {
+              setTimeout(InjectHook, 50);
+            } else {
+              console.warn('failed to hook satellite');
+            }
+          }
+        }
+        InjectHook();
+      })();
+      // default DTL
+      window.SFLY_DTL = {
+        delayedPageLoad: true,
+        page: {
+          pageInfo: {
+            pageName: window.location.pathname,
+            pageType: 'other store pages',
+            siteExperience: 'd.web',
+          },
+        },
+        session: {
+          partner: {
+            id: 'SFLY',
+            subId: 'WEB',
+          },
+          visitorDetails: {
+            customerId: '',
+            visitorId: '7249ea7c-81f9-4d0b-9ce0-23f48dc22eba',
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" crossorigin href="//cdn.staticsfly.com">
+    <link rel="preconnect" crossorigin href="//cdn-image.staticsfly.com">
+    <link rel="preconnect" crossorigin href="//api2.shutterfly.com">
+    <link rel="preconnect" crossorigin href="//accounts.shutterfly.com">
+    <link rel="preconnect" crossorigin href="//assets.adobedtm.com">
+    <link rel="preconnect" crossorigin href="//cld1.staticsfly.com">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="SHORTCUT ICON" href="https://www.shutterfly.com/favicon.ico">
+
+    <!-- ContentSpaceName: sfly_mobile_metadata_cs -->
+
+    <!-- HTML Content Wrapper -->
+    <title>Photos App | Print and Share Pictures for Free | Shutterfly</title>
+    <meta name="description" content="Enjoy free unlimited photo storage and prints exclusively on the Shutterfly App. Our app allows you to access your pictures from any device and print photos from your phone.">
+    <meta name="keywords" content> <!-- /HTML Content Wrapper -->
+
+    <!-- End of ContentSpaceName: sfly_mobile_metadata_cs -->
+
+    <!-- An issue with the fragment css file generation (always points to beta env) need to be fixed before using it -->
+
+    <!-- <meta bob include-fragment app="gbundles" fragment-name="sms-template-2019"> -->
+
+    <!-- ContentSpaceName: sfly_mobile_scripts_cs -->
+
+    <!-- HTML Content Wrapper -->
+    <link type="text/css" rel="stylesheet" href="https://cdn.staticsfly.com/gbundles/builds/gbundles-20200609-1204-9012f3b8-2ab7/dist/css/sms-template-2019.css">
+    <script src="https://cld1.staticsfly.com/uigpolyfills.abaaa2fd54.js"></script><script>
+      window.BSL = {
+        errs: [],
+        rejects: [],
+        onError: function(e) {
+          if (window.BSL && window.BSL.errs) {
+            window.BSL.errs.push(e);
+          } else {
+            console.error(e)
+          };
+        },
+        onReject: function(e) {
+          if (window.BSL && window.BSL.rejects) {
+            window.BSL.rejects.push(e);
+          } else {
+            console.error(e)
+          };
+        }
+      };
+      window.addEventListener('error', function() {
+        try {
+          BSL.onError
+        } catch (e) {}
+      });
+      window.addEventListener('unhandledrejection', function() {
+        try {
+          BSL.onReject
+        } catch (e) {}
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.staticsfly.com/gbundles/builds/gbundles-20200609-1204-9012f3b8-2ab7/dist/js/sms-template-2019.js"></script> <!-- /HTML Content Wrapper -->
+
+    <!-- End of ContentSpaceName: sfly_mobile_scripts_cs -->
+
+    <!-- ContentSpaceName: sfly_mobile_css_1_cs -->
+
+    <!-- HTML Content Wrapper -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticsfly.com/i/css/sfly-template/sfly-core-final.css">
+    <style>
+      #header_container_element,
+      #template-wrap,
+      .template-wrap {
+        max-width: 1600px;
+        margin: 0 auto
+      }
+      .totallyNonConflictingWrapper {
+        max-width: 1600px;
+        margin: 0 auto;
+        color: #2D3137;
+        font: normal normal 400 1em Montserrat, Verdana, Arial, sans-serif
+      }
+      #mob-print-promo {
+        display: none
+      }
+      #mobile_app_promo {
+        background: transparent url(https://cdn.staticsfly.com/i/landingpages/2017/P40687_Marquee_desktop.jpg) no-repeat 0 0;
+        width: 980px;
+        height: 500px;
+        margin-bottom: 50px
+      }
+      #mobile_form_container {
+        color: #58595b;
+        width: 439px
+      }
+      #mobile_form_container #mfc_title {
+        font: normal normal 200 34px 'Avenir LT', Verdana, Arial, sans-serif;
+        margin: 0 auto 20px auto;
+        text-align: center;
+        width: 255px
+      }
+      #mobile_form_container p:first-of-type {
+        font: normal normal 400 14px 'Avenir LT', Verdana, Arial, sans-serif;
+        margin: 0 auto 30px auto;
+        width: 290px;
+        text-align: center
+      }
+      #mobile_form_container #mfc_form {
+        width: 290px;
+        margin: 0 auto 30px auto
+      }
+      #mobile_form_container #mfc_form p {
+        text-align: left;
+        margin: 0;
+        width: 100%
+      }
+      #mobile_form_container #mfc_form #label_mfc_phone {
+        font: normal normal 200 18px 'Avenir LT', Verdana, Arial, sans-serif;
+        margin-bottom: 7px;
+        text-align: center;
+        display: block
+      }
+      #mobile_form_container #mfc_form #mfc_phone {
+        margin: 0 10px 6px 0;
+        width: 201px
+      }
+      #mobile_form_container #mfc_form .mfc_error {
+        font: normal normal 400 12px 'Avenir LT', Verdana, Arial, sans-serif;
+        color: red;
+        margin-bottom: 6px;
+        display: none
+      }
+      #mobile_form_container #mfc_form .mfc_success {
+        font: normal normal 800 14px 'Avenir LT', Verdana, Arial, sans-serif;
+        margin-bottom: 7px;
+        display: none;
+        color: #00ad68
+      }
+      #mobile_form_container #mfc_form #mfc_disclaimer {
+        font: normal normal 400 12px 'Avenir LT', Verdana, Arial, sans-serif;
+        color: #929497;
+        margin-bottom: 30px
+      }
+      #pb_cat_1 .category_1_copy {
+        background: #F9F9F9;
+        opacity: 100%;
+        padding: 80px 0
+      }
+      #pb_cat_1.template_row_category_1_text_left .row-flex-cat-1 {
+        padding-left: 0
+      }
+      @media(max-width:768px) {
+        .hide-on-mobile {
+          display: none
+        }
+      }
+      #mobile-print-sms-template .sms-template-wrapper .sms-template-banner-image img {
+        height: auto !important
+      }
+      #mobile-print-sms-template .sms-template-wrapper .sms-template-form-container.top-left {
+        top: 18%
+      }
+      .sms-template-cta-section a#template_cta_btn {
+        color: #fff
+      }
+      .sfly-2up-left {
+        background: #f5f6f8
+      }
+      .app-container {
+        display: flex;
+        max-width: 1600px;
+        margin: 0 auto
+      }
+      .app-picture,
+      .app-picture img {
+        max-width: 100%
+      }
+      .mobile-container {
+        padding: 1.5em 1em 1.5em;
+        flex-basis: 50%;
+        background-color: #f5f6f8
+      }
+      .row-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-around
+      }
+      .row-flex {
+        max-width: 1000px;
+        margin: 2.5em auto 0
+      }
+      .row-flex-3 {
+        box-sizing: border-box;
+        width: 45%;
+        text-align: center
+      }
+      .row-flex-copy-block {
+        padding: 0 10px;
+        margin: 45px 0 0
+      }
+      .row-flex-3 img {
+        margin: 0 auto
+      }
+      .row-flex-copy-block p.template-headline.row-flex-head {
+        text-transform: uppercase;
+        font-size: .769em;
+        font-weight: 700;
+        color: #000
+      }
+      .row-flex-copy-block p {
+        font-size: 1em;
+        color: #2D3137;
+        line-height: 1.231em
+      }
+      .row-flex-copy-block .cta-text {
+        font-size: .6154em;
+        font-weight: 800
+      }
+      @media (min-width:768px) and (max-width:991px) {
+        #mobile-print-sms-template .sms-template-wrapper .sms-template-form-container {
+          width: 42%
+        }
+      }
+    </style> <!-- /HTML Content Wrapper -->
+
+    <!-- End of ContentSpaceName: sfly_mobile_css_1_cs -->
+
+    <!-- ContentSpaceName: sfly_mobile_css_2_cs -->
+
+    <!-- HTML Content Wrapper -->
+    <style>
+      .sms-template-wrapper .sms-template-form-container.top-center {
+        top: 3em
+      }
+      .sms-template-wrapper .sms-template-form-container .sms-template-form .sms-template-info h2.heading {
+        font-family: Montserrat, Verdana, Arial, sans-serif;
+        font-size: 3.833em !important;
+        line-height: 1.2em;
+        max-width: 65%;
+        margin: 0 auto;
+        font-weight: 400
+      }
+      .sms-template-wrapper .sms-template-form-container .sms-template-form .sms-template-info p.sub-heading {
+        font-family: Montserrat, Verdana, Arial, sans-serif;
+        font-size: 1.916em !important;
+        color: #2D3137;
+        line-height: 2.416;
+        max-width: 65%;
+        margin: 0 auto;
+        line-height: 1.416
+      }
+      .sms-template-info {
+        margin-bottom: 30px
+      }
+      .sms-template-wrapper .sms-template-form-container .sms-template-form #app_download_links a {
+        display: inline-block
+      }
+      .sms-template-wrapper .sms-template-form-container .sms-template-form #label_tfc_phone {
+        font-family: Montserrat, Verdana, Arial, sans-serif;
+        font-size: 1.95em;
+        font-weight: 700
+      }
+      .sms-template-wrapper .sms-template-form-container .sms-template-form .sms-template-cta-section .tfc-cta-section {
+        margin-top: 20px
+      }
+      .sms-template-wrapper .sms-template-form-container .sms-template-form #app_download_links {
+        margin-top: 35px
+      }
+      .app-container {
+        margin: 0 auto 2.083em
+      }
+      .sfly-2up-two-third .copy-inner h4 {
+        color: #000;
+        font-size: 1.538em
+      }
+      .template_row_icon_3 {
+        margin: 3.5em 0
+      }
+      @media (max-width:1350px) {
+        .mobile-container {
+          padding: 1em .5em 1em;
+          min-width: 50%
+        }
+        .sms-template-wrapper .sms-template-form-container.top-center {
+          top: 0
+        }
+        .sms-template-wrapper .sms-template-form-container .sms-template-form .sms-template-info h2.heading {
+          max-width: 100%;
+          line-height: 1em;
+          margin: 0 auto .5em
+        }
+        .sms-template-wrapper .sms-template-form-container .sms-template-form .sms-template-info p.sub-heading {
+          max-width: 80%
+        }
+        .sfly-2up-two-third .copy-inner {
+          max-width: 80%
+        }
+      }
+      @media (max-width:1200px) {
+        .sms-template-wrapper .sms-template-form-container .sms-template-form .sms-template-info h2.heading {
+          font-size: 3.33em !important
+        }
+        .sms-template-wrapper .sms-template-form-container .sms-template-form .sms-template-info p.sub-heading {
+          font-size: 1.516em !important
+        }
+        .sms-template-info {
+          margin-bottom: 15px
+        }
+        .sms-template-wrapper .sms-template-form-container .sms-template-form #label_tfc_phone {
+          font-size: 1.65em
+        }
+        .sms-template-wrapper .sms-template-form-container .sms-template-form #app_download_links {
+          margin-top: 20px
+        }
+      }
+      @media (max-width:992px) {
+        .app-container {
+          flex-flow: row wrap
+        }
+        .mobile-container {
+          flex-basis: 100%;
+          min-width: 100%;
+          min-height: 420px;
+          order: 1
+        }
+        #mobile-print-sms-template .sms-template-wrapper .sms-template-form-container {
+          width: 100%;
+          top: 3.5em;
+          order: 1
+        }
+        .app-picture,
+        .app-picture img {
+          width: 100%
+        }
+        .sfly-2up-left {
+          background: #fff
+        }
+      }
+      @media (max-width:768px) {
+        .row-flex {
+          flex-flow: row wrap;
+          margin: 1.5em auto 0
+        }
+        .row-flex-3 {
+          width: 100%;
+          margin-bottom: 2em
+        }
+        .row-flex-copy-block {
+          margin: 45px auto 0;
+          max-width: 70%
+        }
+        .template_row_icon_3 {
+          margin: 2.5em 0 1em
+        }
+        .template_row_icon_3 .transition h2 {
+          max-width: 85%;
+          margin: 0 auto
+        }
+        .sms-template-cta-section {
+          display: none
+        }
+        .sms-template-wrapper .sms-template-form-container .sms-template-form {
+          text-align: center
+        }
+        .sms-template-wrapper .sms-template-form-container .sms-template-form .sms-template-info p.sub-heading {
+          max-width: 70%
+        }
+        .mobile-container {
+          min-height: 350px
+        }
+        .sms-template-wrapper .sms-template-form-container .sms-template-form #app_download_links a img {
+          width: 100%
+        }
+      }
+    </style> <!-- /HTML Content Wrapper -->
+
+    <!-- End of ContentSpaceName: sfly_mobile_css_2_cs -->
+    <link href="https://cld1.staticsfly.com/uigsflyfonts.f10de71110.css" rel="stylesheet">
+    <meta name="user-browser" content="undefined undefined">
+    <meta name="user-device" content="DESKTOP">
+    <meta name="user-platform" content="linux undefined">
+    <meta name="bob-sso-sync" content="data-needed">
+    <script>
+      var MasterTmsUdo = {
+        "appserverUrl": "www.shutterfly.com",
+        "browser": "undefined undefined",
+        "campaignid": "",
+        "categoryCode": null,
+        "categoryName": null,
+        "country": "US",
+        "currency": "USD",
+        "customerLoggedIn": false,
+        "device": "DESKTOP",
+        "deviceName": "COMPUTER",
+        "escapedPagename": "_entry_home",
+        "isConversion": 0,
+        "isPaid": 0,
+        "load_criteo": true,
+        "pageType": "other store pages",
+        "partnerid": "SFLY",
+        "partnersubid": "WEB",
+        "platform": "linux undefined",
+        "productId": null,
+        "productName": null,
+        "refid": "",
+        "searchTerm": "",
+        "sessionId": "",
+        "siteExperience": "d.web",
+        "skuCode": null,
+        "storeType": "shutterfly",
+        "uid": null,
+        "userId": null,
+        "visitorid": "7249ea7c-81f9-4d0b-9ce0-23f48dc22eba",
+        "dotomi_abandon": {
+          "DTMC_CUSTOMER_TYPE": false,
+          "DTMC_PLATFORM": "COMPUTER",
+          "DTMC_PROD_ID": null,
+          "DTM_CONV_VAL": null,
+          "DTM_ITEMS": null,
+          "DTM_USER_ID": "7249ea7c-81f9-4d0b-9ce0-23f48dc22eba",
+          "DTMC_SUB_CATEGORY": null,
+          "DTMC_TRANSACTION_ID": null
+        }
+      }
+    </script>
+    <meta name="tealium-script-src" content="https://tags.tiqcdn.com/utag/sfly/main/prod/utag.js">
+    <script>
+      (function() {
+        if (window.BOOMR && window.BOOMR.version) {
+          return;
+        }
+        var dom, doc, where, iframe = document.createElement('iframe');
+        iframe.src = "javascript:false";
+        iframe.title = "";
+        iframe.role = "presentation";
+        (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+        where = document.getElementsByTagName('script')[0];
+        where.parentNode.insertBefore(iframe, where);
+        try {
+          doc = iframe.contentWindow.document;
+        } catch (e) {
+          dom = document.domain;
+          iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+          doc = iframe.contentWindow.document;
+        }
+        doc.open()._l = function() {
+          var js = this.createElement("script");
+          if (dom) this.domain = dom;
+          js.id = "boomr-if-as";
+          js.defer = true;
+          js.src = '//c.go-mpulse.net/boomerang/' +
+            'L36VQ-JFTDE-3P6NR-B6Q8U-8ZNC6';
+          BOOMR_lstart = new Date().getTime();
+          this.body.appendChild(js);
+        };
+        doc.write('<body onload="document._l();">');
+        doc.close();
+      })();
+    </script>
+    <script id="fs">
+      function getCookieFS(name) {
+        try {
+          var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+          if (match !== null && match.length === 3) {
+            return match[2];
+          } else {
+            return null;
+          }
+        } catch (err) {
+          console.warn("FS: unexpected exception in getcookie : " + err);
+          return null;
+        }
+      }
+      if (getCookieFS('FSreal') !== null) {
+        // FS code start
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = 'HZB6B';
+        window['_fs_namespace'] = 'FS';
+        (function(m, n, e, t, l, o, g, y) {
+          if (e in m) {
+            if (m.console && m.console.log) {
+              m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+            }
+            return;
+          }
+          g = m[e] = function(a, b, s) {
+            g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+          };
+          g.q = [];
+          o = n.createElement(t);
+          o.defer = 1;
+          o.src = 'https://' + _fs_host + '/s/fs.js';
+          y = n.getElementsByTagName(t)[0];
+          y.parentNode.insertBefore(o, y);
+          g.identify = function(i, v, s) {
+            g(l, {
+              uid: i
+            }, s);
+            if (v) g(l, v, s)
+          };
+          g.setUserVars = function(v, s) {
+            g(l, v, s)
+          };
+          g.event = function(i, v, s) {
+            g('event', {
+              n: i,
+              p: v
+            }, s)
+          };
+          g.shutdown = function() {
+            g("rec", !1)
+          };
+          g.restart = function() {
+            g("rec", !0)
+          };
+          g.consent = function(a) {
+            g("consent", !arguments.length || a)
+          };
+          g.identifyAccount = function(i, v) {
+            o = 'account';
+            v = v || {};
+            v.acctId = i;
+            g(o, v)
+          };
+          g.clearUserCookie = function() {};
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+      }
+    </script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.2b0db7633f.js"></script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.2ac3b5b3d4.js"></script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.40e1102e7c.js"></script>
+    <meta name="web-server" content="bob" server-uuid="bob-20201013-1093-ae4f191a-875e39256" rendered-at="Mon Oct 19 2020 19:28:22 GMT-0700 (Pacific Daylight Time)">
+    <meta name="sfly-env" content="production">
+    <meta name="main-client-version" app="landing-pages" content="landing-20201008-138-b297995c-2e207d" version-source="main">
+    <meta name="sfly-brand" content="SFLY">
+    <script>
+      let loadScript = (src) => {
+        return new Promise(function(resolve, reject) {
+          let s = window.document.createElement("SCRIPT");
+          s.onload = () => resolve(s);
+          s.onerror = () => reject(new Error(src));
+          s.src = src;
+          // don't bounce to global handler on 404.
+          s.addEventListener('error', function() {});
+          window.document.head.append(s);
+        });
+      }
+      if (!window.load_adobe_analytics) {
+        window.load_adobe_analytics = {};
+      }
+      if (!window.load_adobe_analytics.usingLaunch) {
+        window.load_adobe_analytics.usingLaunch = true;
+      }
+      let successCallback = (result) => {
+        console.log("//assets.adobedtm.com/528526b3f782/ddfab9399b13/launch-1480b4cd5321.min.js loaded.");
+      }
+      let failureCallback = (error) => {
+        console.log("load failed: " + error.message);
+      }
+      loadScript("//assets.adobedtm.com/528526b3f782/ddfab9399b13/launch-1480b4cd5321.min.js").then(successCallback, failureCallback);
+    </script>
+  </head>
+  <body>
+    <div id="header_container_element"></div>
+    <div id="univeral-header-promo-ssr" style="display:none">
+
+      <!-- ContentSpaceName: home_prospect_promo_cs -->
+
+      <!-- HTML Content Wrapper -->
+      <style type="text/css">
+        a[data-link-id=Holiday],
+        a[data-link-id=Holiday] span {
+          color: #c21700
+        }
+        #banner-wrapper a {
+          color: #000
+        }
+        #headerTestContainer br {
+          display: none
+        }
+      </style>
+      <div id="banner-container">
+        <div id="banner-wrapper" style="left:0;right:0">
+          <div class="desktop-promo">
+            <div id="offer-banner">
+              <div id="banner-content">
+                <div class="promo-flex-wrapper" style="display:flex;justify-content:space-between">
+                  <div id="desktop-offer-banner-1" class="desktop-offer-banner avenir85Heavy" style="margin-right:10px"><a href="/promotions_details/#economy" target="_blank" id="desktop-offer-url-1" data-link-id="::" data-link-module-position="1" data-link-position="1"><span class="hidden" id="desktop-offer-expiration-1">1/5/20</span> <span></span> <span class="avenir95Black orangecontent">FREE SHIPPING</span> <span>on orders $39+* code: SHIP39</span><br><span class="avenir95Black orangecontent">FREE SHIPPING</span> <span>on cards* code: BESTCARDS</span> <span class="hidden" id="desktop-offer-code-1">SHIP39</span> <span class="hidden" id="desktop-offer-promoid-1">40ALL_DEFAULT</span></a></div>
+                  <div id="desktop-offer-banner-2" class="desktop-offer-banner avenir85Heavy" style="margin-right:10px"><a href="/special-offers" target="_blank" id="desktop-offer-url-2" data-link-id="::" data-link-module-position="1" data-link-position="2"><span>Ends Wed, Oct 21</span> <span class="hidden" id="desktop-offer-expiration-2">1/5/20</span> <span class="avenir95Black orangecontent">50% OFF PREMIUM CARDS &amp; HARDCOVER BOOKS + 40% OFF ALMOST EVERYTHING*</span> <span>no code needed</span> <span class="hidden" id="desktop-offer-code-2">no code needed</span> <span class="hidden" id="desktop-offer-promoid-2">no code needed</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-promo mobile-only promo-type" data-promo-type="mobile">
+            <div class="global-promo mobile-offer-banner" id="mobile-offer-banner-1"><a href="/special-offers" id="mobile-offer-url-1" data-link-id="::" data-link-module-position="1" data-link-position="3"><span class="hidden" id="mobile-offer-expiration-1">1/5/20</span>
+                <div class="fleft offer">FREE SHIPPING on orders $39+*</div>
+                <div class="fleft seperator">|</div><span class="fleft offerCode">code: SHIP39</span> <span class="hidden" id="mobile-offer-code-1">SHIP39</span> <span class="hidden" id="mobile-offer-promoid-1">40ALL_DEFAULT</span></a></div>
+          </div>
+        </div>
+      </div> <!-- /HTML Content Wrapper -->
+
+      <!-- End of ContentSpaceName: home_prospect_promo_cs -->
+    </div>
+    <script src="https://cld1.staticsfly.com/react168.f1b8b481c0.js"></script>
+    <script>
+      window.react_and_react_dom = window.react_16_8;
+    </script>
+    <link href="https://cld1.staticsfly.com/universalheader.b748c916a9.css" rel="stylesheet">
+    <script src="https://cld1.staticsfly.com/universalheader.2284815458.js"></script>
+    <script src="https://cld1.staticsfly.com/universalheader.f87db7a1e3.js"></script>
+    <script src="https://cld1.staticsfly.com/universalheader.e95686c97a.js"></script>
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+      .totallyNonConflictingWrapper {
+        width: 100% !important;
+      }
+    </style>
+    <div class="totallyNonConflictingWrapper" style="width: 100% !important;">
+      <div id="template-wrap">
+
+        <!-- ContentSpaceName: mobile_free_prints_cs -->
+
+        <!-- HTML Content Wrapper -->
+
+        <!-- Change to 'yes' or 'no' - lower case -->
+        <div id="mob-print-promo">yes</div> <!-- /HTML Content Wrapper -->
+
+        <!-- End of ContentSpaceName: mobile_free_prints_cs -->
+
+        <!-- ContentSpaceName: sfly_mobile_section_1_cs -->
+
+        <!-- HTML Content Wrapper -->
+        <div class="app-container hide-mobile">
+          <div class="mobile-container col-2up">
+            <div id="mobile-print-sms-template" class="row-no-border"></div>
+            <script type="text/javascript">
+              function addEvent(t, o, i) {
+                t.addEventListener ? t.addEventListener(o, i, !1) : t.attachEvent && t.attachEvent("on" + o, i)
+              }
+              var initComponent = function() {
+                var t = {
+                  keyword: "SFLY_MOBILE_PAGE",
+                  formPosition: "top-center",
+                  hideDownloadAppSection: !1,
+                  hideOptInCheckBox: !0,
+                  hideOnMobile: !1,
+                  desktopTitle: "Shutterfly at your fingertips",
+                  desktopShortInfo: "Easily upload your photos and make custom creations in minutes.",
+                  mobileTitle: "Shutterfly at your fingertips",
+                  mobileShortInfo: "Easily upload your photos and make custom creations in minutes.",
+                  imageURLs: {
+                    defaultImage: ""
+                  },
+                  styling: "custom",
+                  customStyling: {
+                    titleColor: "#000000",
+                    shortInfoColor: "#2D3137",
+                    textBoxLabelColor: "#2D3137",
+                    mobileFormBGColor: "#f5f6f8 !important"
+                  },
+                  appDownloadLinks: {
+                    iosLink: "https://link.shutterfly.com/Wb3XQX0LL5",
+                    androidLink: "https://link.shutterfly.com/Ijq8VUYML5",
+                    iosButtonImage: "https://cdn-image.staticsfly.com/i/landingpages/2017/P40687_Button_App_Store.png?impolicy=resize&width=135",
+                    androidButtonImage: "https://cdn-image.staticsfly.com/i/landingpages/2017/P40687_Button_Google_Play.png?impolicy=resize&width=134"
+                  }
+                };
+                window.SMSTemplate(t, "mobile-print-sms-template")
+              };
+              addEvent(window, "load", function() {
+                initComponent()
+              })
+            </script>
+          </div>
+          <div class="app-picture">
+            <picture>
+              <source media="(max-width: 768px)" data-srcset="https://cdn.staticsfly.com/i/landingpages/2020/shutterfly-at-your-fingertips-mobile.jpg">
+              <source media="(max-width: 992px)" data-srcset="https://cdn.staticsfly.com/i/landingpages/2020/shutterfly-at-your-fingertips.jpg?impolicy=resize&amp;width=992">
+              <source media="(max-width: 1200px)" data-srcset="https://cdn.staticsfly.com/i/landingpages/2020/shutterfly-at-your-fingertips.jpg?impolicy=resize&amp;width=1200">
+              <img src="https://cdn.staticsfly.com/i/landingpages/2020/shutterfly-at-your-fingertips.jpg" class="img-responsive" alt="Shutterfly at your fingerprints">
+            </picture>
+          </div>
+        </div> <!-- /HTML Content Wrapper -->
+
+        <!-- End of ContentSpaceName: sfly_mobile_section_1_cs -->
+
+        <!-- no data found for ContentSpaceName: sfly_mobile_section_2_cs -->
+
+        <!-- ContentSpaceName: sfly_mobile_section_3_cs -->
+
+        <!-- HTML Content Wrapper -->
+        <section>
+          <div class="sfly-2up sfly-2up-two-third sfly-2up-right">
+            <div class="sfly-2up-block image-block">
+              <div class="tp-2up-img">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="https://cdn.staticsfly.com/i/landingpages/2020/unlimited-free-prints-mobile.jpg"><img src="https://cdn.staticsfly.com/i/landingpages/2020/unlimited-free-prints.jpg" style="width:100%" alt="Unlimited Free Prints" class="loading" data-was-processed="true"></picture>
+              </div>
+            </div>
+            <div class="sfly-2up-block content-block">
+              <div class="copy-inner">
+                <h4 class="font-light">Unlimited Free Prints</h4>
+                <p>Don&#x2019;t miss out. Get all the 4x6 and 4x4 prints you want &#x2013; for free! Only on the app.</p>
+              </div>
+            </div>
+          </div>
+        </section> <!-- /HTML Content Wrapper -->
+
+        <!-- End of ContentSpaceName: sfly_mobile_section_3_cs -->
+
+        <!-- ContentSpaceName: sfly_mobile_section_4_cs -->
+
+        <!-- HTML Content Wrapper -->
+        <section>
+          <div class="sfly-2up sfly-2up-two-third sfly-2up-left">
+            <div class="sfly-2up-block content-block">
+              <div class="copy-inner">
+                <h4 class="font-light">Unlimited Free Photo Storage</h4>
+                <p>Get your photos off your phone, store them with us for free and access them from any device.</p>
+              </div>
+            </div>
+            <div class="sfly-2up-block image-block">
+              <div class="tp-2up-img">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="https://cdn.staticsfly.com/i/landingpages/2020/unlimited-free-photo-storage-mobile.jpg"><img src="https://cdn.staticsfly.com/i/landingpages/2020/unlimited-free-photo-storage.jpg" style="width:100%" alt="Unlimited Free Photo Storage" class="loading" data-was-processed="true"></picture>
+              </div>
+            </div>
+          </div>
+        </section> <!-- /HTML Content Wrapper -->
+
+        <!-- End of ContentSpaceName: sfly_mobile_section_4_cs -->
+
+        <!-- ContentSpaceName: sfly_mobile_section_5_cs -->
+
+        <!-- HTML Content Wrapper -->
+        <section>
+          <div class="sfly-2up sfly-2up-two-third sfly-2up-right">
+            <div class="sfly-2up-block image-block">
+              <div class="tp-2up-img">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="https://cdn.staticsfly.com/i/landingpages/2020/easy-to-use-mobile.jpg"><img src="https://cdn.staticsfly.com/i/landingpages/2020/easy-to-use.jpg" style="width:100%" alt="Easy to Use" class="loading" data-was-processed="true"></picture>
+              </div>
+            </div>
+            <div class="sfly-2up-block content-block">
+              <div class="copy-inner">
+                <h4 class="font-light">Easy to Use</h4>
+                <p>Find and make the unique products you want in just a few taps. It&#x2019;s that simple.</p>
+              </div>
+            </div>
+          </div>
+        </section> <!-- /HTML Content Wrapper -->
+
+        <!-- End of ContentSpaceName: sfly_mobile_section_5_cs -->
+
+        <!-- ContentSpaceName: sfly_mobile_section_6_cs -->
+
+        <!-- HTML Content Wrapper -->
+        <section>
+          <div class="sfly-2up sfly-2up-two-third sfly-2up-left">
+            <div class="sfly-2up-block content-block">
+              <div class="copy-inner">
+                <h4 class="font-light">Special Offers</h4>
+                <p>Stay in the know about all our app exclusives, great offers and fun freebies.</p>
+              </div>
+            </div>
+            <div class="sfly-2up-block image-block">
+              <div class="tp-2up-img">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="https://cdn.staticsfly.com/i/landingpages/2020/special-offer-mobile.jpg">
+                  <img src="https://cdn.staticsfly.com/i/landingpages/2020/special-offer.jpg" style="width:100%" alt="Special Offers" class="loading" data-was-processed="true">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="template_row_icon_3 row-no-border">
+          <div class="transition">
+            <h2>Meet our other photo apps</h2>
+          </div>
+          <div class="row-flex flex-row-around">
+            <div class="row-flex-3">
+              <img src="https://cdn.staticsfly.com/i/landingpages/2017/P40687_App_Icon_Groovebook.png" srcset="https://cdn.staticsfly.com/i/landingpages/2017/P40687_App_Icon_Groovebook.png 1x, https://cdn.staticsfly.com/i/landingpages/2017/P40687_App_Icon_Groovebook_2x.png 2x" alt>
+              <div class="row-flex-copy-block">
+                <p class="template-headline row-flex-head">Groovebook</p>
+                <p>The photo app that delivers a book of tear + share prints for $3.99/month.</p>
+                <a href="https://apps.apple.com/us/app/groovebook-book-of-prints/id561452319" class="cta-text" style="display: inline-block;" data-link-id="::" data-link-module-type="template_row_icon_3 row-no-border" data-link-module-position="11" data-link-position="1">iPhone</a>&#xA0;&#xA0;&#xA0;<a href="https://play.google.com/store/apps/details?id=com.photoupload" class="cta-text" style="display: inline-block;" data-link-id="::" data-link-module-type="template_row_icon_3 row-no-border" data-link-module-position="11" data-link-position="2">Android</a>
+              </div>
+            </div>
+            <div class="row-flex-3">
+              <img src="https://cdn.staticsfly.com/i/landingpages/2017/P40687_App_Icon_ShareSites.png" srcset="https://cdn.staticsfly.com/i/landingpages/2017/P40687_App_Icon_ShareSites.png 1x, https://cdn.staticsfly.com/i/landingpages/2017/P40687_App_Icon_ShareSites_2x.png 2x" alt>
+              <div class="row-flex-copy-block">
+                <p class="template-headline row-flex-head">Share Sites</p>
+                <p>Privately organize and share photos and calendar events with a group.</p>
+                <a href="https://itunes.apple.com/us/app/shutterfly-share-sites/id567273381?ls=1&amp;mt=8" class="cta-text" style="display: inline-block;" data-link-id="::" data-link-module-type="template_row_icon_3 row-no-border" data-link-module-position="11" data-link-position="3">iPhone</a>&#xA0;&#xA0;&#xA0;<a href="https://play.google.com/store/apps/details?id=com.shutterfly.android.sharesites" class="cta-text" style="display: inline-block;" data-link-id="::" data-link-module-type="template_row_icon_3 row-no-border" data-link-module-position="11" data-link-position="4">Android</a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /HTML Content Wrapper -->
+
+        <!-- End of ContentSpaceName: sfly_mobile_section_6_cs -->
+
+        <!-- ContentSpaceName: sfly_mobile_section_7_cs -->
+
+        <!-- HTML Content Wrapper -->
+        <section>
+          <div class="seo-footer">
+            <p class="seof-title">Unlimited Free Photo Storage</p>
+            <p>Download the Shutterfly app on iPhone and Android for safe and secure photo storage. Shutterfly provides the only photo storage service that is completely free and unlimited - and we will never delete your pictures. Photos capture your favorite moments
+              and remind you of the important milestones in your life. Shutterfly can help you protect those important memories. With the app, you can capture, preserve, and share life&apos;s joy with your family and friends. Instead of deleting photos to create
+              additional room on your phone, you can store as many photos as you want and cherish your memories longer - for free. Our photo apps allow you to easily upload photos, start a project, and access them from any device.</p>
+            <p class="seof-title">Print Photos on Your Phone - in just a few taps!</p>
+            <p>Bring the photos on your phone to life with the simplicity of Shutterfly&apos;s mobile app. Easily upload your photos with the Shutterfly app and enjoy unlimited FREE 4x6 and 4x4 prints. In minutes, you can transform moments into creations that are uniquely
+              yours.</p>
+            <p>In addition to prints, you&apos;ll find that you can personalize a variety of products with your photos, including custom mugs, magnets, iPhone and Android cases, canvas prints, decorative pillows and much more. Whether you&apos;re looking for home decor items
+              or a custom gift for a Mother&apos;s Day, Father&apos;s Day, birthdays or other special occasions (or for yourself!), the Shutterfly app allows you to design, personalize, and order products right from your phone or tablet.</p>
+            <p class="seof-title">Photo App Exclusives</p>
+            <p>Make sure to never miss another deal from Shutterfly. Stay in the know and get special offers and
+              <a href="/special-offers" data-link-id="::" data-link-module-position="12" data-link-position="1">coupons</a> on your phone.</p>
+          </div>
+          <section> <!-- /HTML Content Wrapper -->
+          </section>
+        </section>
+
+        <!-- End of ContentSpaceName: sfly_mobile_section_7_cs -->
+      </div>
+    </div>
+
+    <!-- no data found for ContentSpaceName: sfly_mobile_scripts_1_cs -->
+
+    <!-- no data found for ContentSpaceName: sfly_mobile_scripts_2_cs -->
+    <div id="footer_container_element"></div>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var tag = document.createElement('script');
+          var tealiumSrc = document.querySelector('meta[name="tealium-script-src"]').getAttribute('content');
+          tag.setAttribute('src', tealiumSrc);
+          document.querySelector('body').appendChild(tag);
+        }, 500);
+      });
+    </script>
+    <script src="https://cld1.staticsfly.com/bobstdlib.e574aae531.js" defer></script>
+    <script>
+      if (typeof window._satellite != 'undefined') {
+        window._satellite.pageBottom();
+      }
+    </script>
+  </body>
+</html>

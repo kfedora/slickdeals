@@ -1,0 +1,1174 @@
+HTTP/1.1 200 OK
+Date: Tue, 20 Oct 2020 02:27:03 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: Bob
+X-ServiceName: Bob
+Content-Security-Policy: frame-ancestors 'self' *.shutterfly.com *.tinyprints.com *.onehippo.io;
+Access-Control-Allow-Origin: *
+service-uuid: bob-20201013-1093-ae4f191a-875e39256
+cache-control: no-cache, no-store, max-age=0
+expires: 0
+Set-Cookie: visitor="7249ea7c-81f9-4d0b-9ce0-23f48dc22eba"; Max-Age=31536; Domain=.shutterfly.com; Path=/; Expires=Tue, 20 Oct 2020 11:12:39 GMT
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <script>
+      (function() {
+        var attempt = 0;
+        var pageViewCalled = false;
+        function InjectHook() {
+          if (window.__satelliteLoaded) {
+            var originalTrack = window._satellite.track;
+            window._satellite.track = function() {
+              var args = [].slice.apply(arguments);
+              if (args[0] === 'delayed_page_load') {
+                pageViewCalled = true;
+              }
+              window._satellite.pageBottom();
+              return originalTrack.apply(window._satellite, args);
+            }
+            window.addEventListener("load",
+              function(event) {
+                setTimeout(function() {
+                  if (!pageViewCalled) {
+                    originalTrack('delayed_page_load');
+                  }
+                }, 5000);
+              }
+            );
+          } else {
+            attempt++;
+            if (attempt < 40) {
+              setTimeout(InjectHook, 50);
+            } else {
+              console.warn('failed to hook satellite');
+            }
+          }
+        }
+        InjectHook();
+      })();
+      // default DTL
+      window.SFLY_DTL = {
+        delayedPageLoad: true,
+        page: {
+          pageInfo: {
+            pageName: window.location.pathname,
+            pageType: 'other store pages',
+            siteExperience: 'd.web',
+          },
+        },
+        session: {
+          partner: {
+            id: 'SFLY',
+            subId: 'WEB',
+          },
+          visitorDetails: {
+            customerId: '',
+            visitorId: '7249ea7c-81f9-4d0b-9ce0-23f48dc22eba',
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" crossorigin href="//cdn.staticsfly.com">
+    <link rel="preconnect" crossorigin href="//cdn-image.staticsfly.com">
+    <link rel="preconnect" crossorigin href="//api2.shutterfly.com">
+    <link rel="preconnect" crossorigin href="//accounts.shutterfly.com">
+    <link rel="preconnect" crossorigin href="//assets.adobedtm.com">
+    <link rel="preconnect" crossorigin href="//cld1.staticsfly.com">
+
+    <!-- ContentSpaceName: addressing_metadata_cs -->
+
+    <!-- HTML Content Wrapper -->
+    <title>Addressing | Custom Envelopes</title>
+    <meta name="description" content="Addressing your cards is free with the purchase of custom envelopes. We&apos;ll address envelopes for you so you can send your custom cards with ease. Elevate your personal stationery with beautiful custom envelopes that complement your cards. Both recipient and return addressing is included, free of charge. Easily import contacts into your free address book, and your envelopes will arrive ready to send.">
+    <meta name="keywords" content="address book, custom envelopes, address an envelope, online address book, custom envelope printing, personalized address book, digital address book, envelope liners, address printing, custom cards">
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticsfly.com/i/css/sfly-template/slick-slider_v2.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticsfly.com/i/css/sfly-template/sfly-core-final.css">
+    <link rel="stylesheet" type="text/css" href="https://www.shutterfly.com/css/fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticsfly.com/i/css/font-gt-super-display.css">
+    <script src="https://cld1.staticsfly.com/uigpolyfills.abaaa2fd54.js"></script><script>
+      window.BSL = {
+        errs: [],
+        rejects: [],
+        onError: function(e) {
+          if (window.BSL && window.BSL.errs) {
+            window.BSL.errs.push(e);
+          } else {
+            console.error(e)
+          };
+        },
+        onReject: function(e) {
+          if (window.BSL && window.BSL.rejects) {
+            window.BSL.rejects.push(e);
+          } else {
+            console.error(e)
+          };
+        }
+      };
+      window.addEventListener('error', function() {
+        try {
+          BSL.onError
+        } catch (e) {}
+      });
+      window.addEventListener('unhandledrejection', function() {
+        try {
+          BSL.onReject
+        } catch (e) {}
+      });
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.staticsfly.com/i/jquery/slick/slick.min.js"></script> <!-- /HTML Content Wrapper -->
+
+    <!-- End of ContentSpaceName: addressing_metadata_cs -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/fonts/fonts.css">
+    <link re l="stylesheet" type="text/css" href="/css/global/global_sfly.css">
+    <link rel="stylesheet" type="text/css" href="/evergreen/css/template.css">
+
+    <!-- ContentSpaceName: addressing_scripts_cs -->
+
+    <!-- HTML Content Wrapper -->
+
+    <!-- Dynamic Pricing Code Start -->
+    <script type="text/javascript">
+      $(function() {
+        $.ajax({
+          url: "/priceLookup/skuPricesByProductCode.sfly?productCodes=1271898,1160097,1144320",
+          dataType: "json"
+        }).done(function(e) {
+          for (var a = e, r = 0, s = a.length; s > r; ++r) {
+            var n = a[r].skuCode,
+              o = Number(a[r].orginalPrice).toFixed(2).toString(),
+              p = Number(a[r].salePrice).toFixed(2).toString();
+            "9999.00" != o && (o !== p && "" !== p ? $("." + n).append("<span class='strikethru'>$" + o + "</span>").append(" <span class='salePrice'>$" + p + "</span>") : $("." + n).append("<span class='regularPrice'>$" + o + "</span>"))
+          }
+        })
+      })
+    </script>
+<!-- END Dynamic Pricing Code --> <!-- /HTML Content Wrapper -->
+
+    <!-- End of ContentSpaceName: addressing_scripts_cs -->
+
+    <!-- ContentSpaceName: addressing_css_cs -->
+
+    <!-- HTML Content Wrapper -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.staticsfly.com/i/css/sfly-template/sfly-core-final.css">
+    <style type="text/css">
+      #returnToMobileSite {
+        display: none
+      }
+      #siteSubNavContainer.siteSubNav3_0 {
+        height: auto !important
+      }
+      #storeBreadcrumb,
+      .pageTitleContainer {
+        max-width: 980px;
+        margin-left: auto;
+        margin-right: auto
+      }
+      #template-wrap {
+        max-width: 1600px
+      }
+      #headerContainer {
+        margin: 0 auto;
+        max-width: 1600px
+      }
+      @media screen and (max-width:768px) {
+        body {
+          padding-top: 0 !important
+        }
+        #storeBreadcrumb,
+        .pageTitleContainer {
+          display: none
+        }
+      }
+      #header_container_element {
+        max-width: 1600px;
+        margin: 0 auto
+      }
+      #storeBreadcrumb {
+        margin-bottom: 15px;
+        font: 12px "Avenir LT W01 55 Roman", Verdana, Arial, sans-serif;
+        color: #939598
+      }
+      #storeBreadcrumb a {
+        color: #369;
+        text-decoration: none
+      }
+      #storeBreadcrumb h1 {
+        display: inline
+      }
+      #storeBreadcrumb a:hover {
+        text-decoration: underline
+      }
+      div.pageTitleContainer {
+        overflow: auto;
+        overflow-y: hidden;
+        margin-bottom: 5px
+      }
+      .dividedSection {
+        border-bottom: 1px solid #c6c7c9;
+        padding-bottom: 5px
+      }
+      div.pageTitleContainer H1 {
+        float: left;
+        margin: 0
+      }
+      div.pageTitleContainer span {
+        float: right;
+        margin-top: 4px
+      }
+      div.pageTitleContainer a,
+      div.pageTitleContainer a.link {
+        text-decoration: none;
+        color: #369;
+        font: 13px "Avenir LT W01 55 Roman", Verdana, Arial, sans-serif
+      }
+      div.pageTitleContainer a:hover {
+        text-decoration: underline
+      }
+      div.pageTitleContainer a.primary:hover {
+        text-decoration: none
+      }
+      #csThumbnailTitleContainer {
+        padding-bottom: 0
+      }
+      div.standaloneHeading {
+        margin-bottom: 10px
+      }
+      div.pageTitleContainer .vertDivider {
+        margin: 4px 10px 0;
+        color: #58595b
+      }
+      div.pageTitleContainer #ipadAppLink a {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: top
+      }
+      div.pageTitleContainer #ViewSuiteHyperlinkContainer {
+        line-height: 1.5
+      }
+      div.pageTitleContainer #ViewSuiteHyperlinkContainer a {
+        margin-left: 20px;
+        cursor: pointer;
+        text-decoration: underline;
+        font-size: 14px
+      }
+      div.pageTitleContainer #weddingAlbumLink a {
+        display: inline-block;
+        margin-right: 5px;
+        vertical-align: top
+      }
+      .orangeTitle {
+        text-transform: uppercase;
+        color: #f05323;
+        font-size: 12px
+      }
+      .pagetitletext {
+        font-family: "Avenir LT W01 35 Light", Verdana, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #58595b
+      }
+      .totallyNonConflictingWrapper {
+        margin: 0 auto;
+        color: #2D3137;
+        font: normal normal 400 1em Montserrat, Verdana, Arial, sans-serif
+      }
+      .page-color {
+        color: #812337
+      }
+      .main-title {
+        padding: unset;
+        margin-bottom: unset
+      }
+      .main-title .inner-text {
+        background-color: #a6152b;
+        color: #fff;
+        font-weight: 100;
+        font-size: 2.5rem;
+        padding: 1em
+      }
+      @media screen and (max-width:480px) {
+        .main-title .inner-text {
+          font-size: 1.5rem;
+          padding: 30px
+        }
+      }
+      .sfly-3qualities-numbers .quantities-blocks .quantity-block {
+        padding: 0 .5em
+      }
+      .sfly-3qualities-numbers .quantities-blocks .rectangular-cta {
+        font-weight: 550
+      }
+      .sfly-3qualities-numbers .transition h2 {
+        color: #812337;
+        margin-bottom: unset
+      }
+      .sfly-3qualities-numbers {
+        background: 0 0
+      }
+      .sfly-3qualities-numbers .quantities-blocks .quantity-block .number-headline {
+        color: #812337
+      }
+      .sfly-3qualities-numbers h4,
+      .sfly-3up h4 {
+        color: #812337;
+        font-weight: 700
+      }
+      .sfly-3qualities-numbers .quantities-blocks .quantity-block p {
+        font-family: Montserrat;
+        color: #812337;
+        margin: 10px auto
+      }
+      .rectangular-cta {
+        background: #812337;
+        color: #fff
+      }
+      .sfly-3qualities-numbers .cta-row {
+        margin-top: 80px;
+        text-align: center
+      }
+      @media screen and (max-width:1600px) {
+        .sfly-3qualities-numbers .quantities-blocks .quantity-block {
+          padding: 0 .5em
+        }
+        .sfly-3qualities-numbers .quantities-blocks .rectangular-cta {
+          font-weight: 550
+        }
+      }
+      @media screen and (max-width:1340px) {
+        .sfly-3qualities-numbers .quantities-blocks .quantity-block {
+          padding: 0 1em
+        }
+        .sfly-3qualities-numbers {
+          padding: 30px 1rem
+        }
+        .sfly-3qualities-numbers .quantities-blocks .quantity-block p {
+          margin: 10px 10px
+        }
+      }
+      .sfly-faq-answer a {
+        text-decoration: underline
+      }
+    </style> <!-- /HTML Content Wrapper -->
+
+    <!-- End of ContentSpaceName: addressing_css_cs -->
+
+    <!-- ContentSpaceName: addressing_css_extra_cs -->
+
+    <!-- HTML Content Wrapper -->
+    <style>
+      .marquee .marquee-inner .marquee-copy h2 {
+        font-size: 2.3125rem;
+        color: #fff;
+        max-width: 1600px
+      }
+      .marquee .marquee-inner .marquee-copy p {
+        font-size: 1.625rem;
+        font-weight: 100;
+        color: #fff;
+        line-height: 2rem
+      }
+      .marquee .marquee-inner .marquee-copy .inner-inner-text {
+        font-weight: 500
+      }
+      .marquee .cta-row .cta-button span {
+        font-size: 1.1875rem;
+        background-color: #fff;
+        color: #812337
+      }
+      .title-display {
+        display: block
+      }
+      @media screen and (max-width:991px) {
+        .marquee .marquee-inner .marquee-copy h2 {
+          color: #812337
+        }
+        .marquee .marquee-inner .marquee-copy p {
+          color: #812337;
+          margin: 1em 3em
+        }
+        .marquee .marquee-inner .marquee-copy p span {
+          color: #812337
+        }
+        .marquee .marquee-inner .marquee-copy .inner-inner-text {
+          font-weight: 500
+        }
+        .marquee .cta-row .cta-button span {
+          font-size: 1.1875rem;
+          background-color: #812337;
+          color: #fff
+        }
+        .marquee .marquee-inner .marquee-copy .inner-inner-text {
+          color: #812337
+        }
+        .title-display {
+          display: inline
+        }
+      }
+      @media screen and (max-width:460px) {
+        .marquee .marquee-inner .marquee-copy p {
+          margin: unset
+        }
+      }
+      .carousel-wrap3 .carousel-favorites {
+        background: unset
+      }
+      .carousel-wrap3 .carousel-outer .carousel-favorites {
+        padding: unset
+      }
+      .carousel-wrap3 .carousel-outer .carousel-favorites .transition h2 {
+        color: #812337;
+        margin: auto
+      }
+      .carousel-wrap3 .product-content .cta-text {
+        font-size: 1rem !important
+      }
+      @media screen and (max-width:768px) {
+        .carousel-favorites .slick-slider {
+          max-width: 90%
+        }
+        .carousel-favorites .slick-arrow {
+          padding-top: 16%
+        }
+      }
+      .carousel-favorites .slick-slider .product-content {
+        padding: unset
+      }
+      .cta-text {
+        color: #000
+      }
+      .local-margin {
+        margin-top: -30px !important
+      }
+      .seo-footer {
+        max-width: 1400px;
+        width: unset
+      }
+      @media screen and (max-width:1600px) {
+        .seo-footer {
+          margin: 0 4rem
+        }
+      }
+      @media screen and (max-width:767px) {
+        .seo-footer {
+          width: 100%;
+          margin: unset
+        }
+      }
+      .sfly-faqs {
+        max-width: 1400px;
+        margin: 0 auto;
+        text-align: left;
+        padding-bottom: 1em;
+        cursor: pointer
+      }
+      @media screen and (max-width:1600px) {
+        .sfly-faqs {
+          margin: 0 4rem
+        }
+      }
+      @media screen and (max-width:991px) {
+        .sfly-faqs {
+          margin: 0 2.7168em
+        }
+      }
+      @media screen and (max-width:768px) {
+        .sfly-faqs {
+          margin: 0 1.5rem
+        }
+      }
+      @media screen and (max-width:550px) {
+        .sfly-faqs {
+          margin: 0 2.5rem
+        }
+      }
+      @media screen and (max-width:480px) {
+        .sfly-faqs {
+          margin: 0 1.1111em
+        }
+      }
+      .sfly-faqs h1 {
+        font-size: 47px;
+        line-height: 52px;
+        margin: 0 0 .7234em 0;
+        color: #000;
+        text-align: center;
+        font-weight: 400
+      }
+      @media screen and (max-width:1600px) {
+        .sfly-faqs h1 {
+          margin: 0 0 .7234em 0
+        }
+      }
+      @media screen and (max-width:768px) {
+        .sfly-faqs h1 {
+          font-size: 30px;
+          line-height: 34px;
+          margin: 0 0 1.1333em 0
+        }
+      }
+      .sfly-faqs .nowrap {
+        white-space: nowrap
+      }
+      .sfly-faqs .sfly-faq-arrow {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        background: transparent url(https://cdn-image.staticsfly.com/i/landingpages/2017/P54948_tpb_address_arrow_sprite.jpg) no-repeat 0 0;
+        margin-left: .625em;
+        position: relative;
+        top: .08333em
+      }
+      .sfly-faq-answer,
+      .sfly-faq-question {
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: .05em;
+        font-weight: 400;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start
+      }
+      @media screen and (max-width:768px) {
+        .sfly-faq-answer,
+        .sfly-faq-question {
+          font-size: 18px;
+          line-height: 22px
+        }
+      }
+      .sfly-faq-question {
+        color: #000;
+        margin-bottom: .5769em
+      }
+      @media screen and (max-width:1200px) {
+        .sfly-faq-question {
+          margin-bottom: .5769em
+        }
+      }
+      @media screen and (max-width:768px) {
+        .sfly-faq-question {
+          margin-bottom: .8333em
+        }
+      }
+      .sfly-faq-answer {
+        color: #929497;
+        margin-bottom: 1em
+      }
+      @media screen and (max-width:1600px) {
+        .sfly-faq-answer {
+          margin-bottom: 1.8077em
+        }
+      }
+      @media screen and (max-width:1200px) {
+        .sfly-faq-answer {
+          margin-bottom: .5769em
+        }
+      }
+      @media screen and (max-width:768px) {
+        .sfly-faq-answer {
+          margin-bottom: .8333em
+        }
+      }
+      .sfly-faq-answer div p {
+        margin: 0
+      }
+      .sfly-faq-answer div p strong {
+        font-weight: 600;
+        color: #000
+      }
+      .sfly-faq-answer div a {
+        color: #000;
+        text-decoration: underline
+      }
+      .sfly-faqs .transition h2 {
+        color: #812337;
+        padding: 0 2rem
+      }
+    </style> <!-- /HTML Content Wrapper -->
+
+    <!-- End of ContentSpaceName: addressing_css_extra_cs -->
+    <link href="https://cld1.staticsfly.com/uigsflyfonts.f10de71110.css" rel="stylesheet">
+    <meta name="user-browser" content="undefined undefined">
+    <meta name="user-device" content="DESKTOP">
+    <meta name="user-platform" content="linux undefined">
+    <meta name="bob-sso-sync" no-sync-needed>
+    <script>
+      var MasterTmsUdo = {
+        "appserverUrl": "www.shutterfly.com",
+        "browser": "undefined undefined",
+        "campaignid": "",
+        "categoryCode": null,
+        "categoryName": null,
+        "country": "US",
+        "currency": "USD",
+        "customerLoggedIn": false,
+        "device": "DESKTOP",
+        "deviceName": "COMPUTER",
+        "escapedPagename": "_entry_home",
+        "isConversion": 0,
+        "isPaid": 0,
+        "load_criteo": true,
+        "pageType": "other store pages",
+        "partnerid": "SFLY",
+        "partnersubid": "WEB",
+        "platform": "linux undefined",
+        "productId": null,
+        "productName": null,
+        "refid": "",
+        "searchTerm": "",
+        "sessionId": "",
+        "siteExperience": "d.web",
+        "skuCode": null,
+        "storeType": "shutterfly",
+        "uid": null,
+        "userId": null,
+        "visitorid": "7249ea7c-81f9-4d0b-9ce0-23f48dc22eba",
+        "dotomi_abandon": {
+          "DTMC_CUSTOMER_TYPE": false,
+          "DTMC_PLATFORM": "COMPUTER",
+          "DTMC_PROD_ID": null,
+          "DTM_CONV_VAL": null,
+          "DTM_ITEMS": null,
+          "DTM_USER_ID": "7249ea7c-81f9-4d0b-9ce0-23f48dc22eba",
+          "DTMC_SUB_CATEGORY": null,
+          "DTMC_TRANSACTION_ID": null
+        }
+      }
+    </script>
+    <meta name="tealium-script-src" content="https://tags.tiqcdn.com/utag/sfly/main/prod/utag.js">
+    <script>
+      (function() {
+        if (window.BOOMR && window.BOOMR.version) {
+          return;
+        }
+        var dom, doc, where, iframe = document.createElement('iframe');
+        iframe.src = "javascript:false";
+        iframe.title = "";
+        iframe.role = "presentation";
+        (iframe.frameElement || iframe).style.cssText = "width:0;height:0;border:0;display:none;";
+        where = document.getElementsByTagName('script')[0];
+        where.parentNode.insertBefore(iframe, where);
+        try {
+          doc = iframe.contentWindow.document;
+        } catch (e) {
+          dom = document.domain;
+          iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+          doc = iframe.contentWindow.document;
+        }
+        doc.open()._l = function() {
+          var js = this.createElement("script");
+          if (dom) this.domain = dom;
+          js.id = "boomr-if-as";
+          js.defer = true;
+          js.src = '//c.go-mpulse.net/boomerang/' +
+            'L36VQ-JFTDE-3P6NR-B6Q8U-8ZNC6';
+          BOOMR_lstart = new Date().getTime();
+          this.body.appendChild(js);
+        };
+        doc.write('<body onload="document._l();">');
+        doc.close();
+      })();
+    </script>
+    <script id="fs">
+      function getCookieFS(name) {
+        try {
+          var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+          if (match !== null && match.length === 3) {
+            return match[2];
+          } else {
+            return null;
+          }
+        } catch (err) {
+          console.warn("FS: unexpected exception in getcookie : " + err);
+          return null;
+        }
+      }
+      if (getCookieFS('FSreal') !== null) {
+        // FS code start
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'fullstory.com';
+        window['_fs_org'] = 'HZB6B';
+        window['_fs_namespace'] = 'FS';
+        (function(m, n, e, t, l, o, g, y) {
+          if (e in m) {
+            if (m.console && m.console.log) {
+              m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');
+            }
+            return;
+          }
+          g = m[e] = function(a, b, s) {
+            g.q ? g.q.push([a, b, s]) : g._api(a, b, s);
+          };
+          g.q = [];
+          o = n.createElement(t);
+          o.defer = 1;
+          o.src = 'https://' + _fs_host + '/s/fs.js';
+          y = n.getElementsByTagName(t)[0];
+          y.parentNode.insertBefore(o, y);
+          g.identify = function(i, v, s) {
+            g(l, {
+              uid: i
+            }, s);
+            if (v) g(l, v, s)
+          };
+          g.setUserVars = function(v, s) {
+            g(l, v, s)
+          };
+          g.event = function(i, v, s) {
+            g('event', {
+              n: i,
+              p: v
+            }, s)
+          };
+          g.shutdown = function() {
+            g("rec", !1)
+          };
+          g.restart = function() {
+            g("rec", !0)
+          };
+          g.consent = function(a) {
+            g("consent", !arguments.length || a)
+          };
+          g.identifyAccount = function(i, v) {
+            o = 'account';
+            v = v || {};
+            v.acctId = i;
+            g(o, v)
+          };
+          g.clearUserCookie = function() {};
+        })(window, document, window['_fs_namespace'], 'script', 'user');
+      }
+    </script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.2b0db7633f.js"></script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.2ac3b5b3d4.js"></script>
+    <script src="https://cld1.staticsfly.com/sflyssoclient.40e1102e7c.js"></script>
+    <meta name="web-server" content="bob" server-uuid="bob-20201013-1093-ae4f191a-875e39256" rendered-at="Mon Oct 19 2020 19:26:41 GMT-0700 (Pacific Daylight Time)">
+    <meta name="sfly-env" content="production">
+    <meta name="main-client-version" app="landing-pages" content="landing-20201008-138-b297995c-2e207d" version-source="main">
+    <meta name="sfly-brand" content="SFLY">
+    <script>
+      let loadScript = (src) => {
+        return new Promise(function(resolve, reject) {
+          let s = window.document.createElement("SCRIPT");
+          s.onload = () => resolve(s);
+          s.onerror = () => reject(new Error(src));
+          s.src = src;
+          // don't bounce to global handler on 404.
+          s.addEventListener('error', function() {});
+          window.document.head.append(s);
+        });
+      }
+      if (!window.load_adobe_analytics) {
+        window.load_adobe_analytics = {};
+      }
+      if (!window.load_adobe_analytics.usingLaunch) {
+        window.load_adobe_analytics.usingLaunch = true;
+      }
+      let successCallback = (result) => {
+        console.log("//assets.adobedtm.com/528526b3f782/ddfab9399b13/launch-1480b4cd5321.min.js loaded.");
+      }
+      let failureCallback = (error) => {
+        console.log("load failed: " + error.message);
+      }
+      loadScript("//assets.adobedtm.com/528526b3f782/ddfab9399b13/launch-1480b4cd5321.min.js").then(successCallback, failureCallback);
+    </script>
+  </head>
+  <body>
+    <div id="header_container_element"></div>
+    <div id="univeral-header-promo-ssr" style="display:none">
+
+      <!-- ContentSpaceName: home_prospect_promo_cs -->
+
+      <!-- HTML Content Wrapper -->
+      <style type="text/css">
+        a[data-link-id=Holiday],
+        a[data-link-id=Holiday] span {
+          color: #c21700
+        }
+        #banner-wrapper a {
+          color: #000
+        }
+        #headerTestContainer br {
+          display: none
+        }
+      </style>
+      <div id="banner-container">
+        <div id="banner-wrapper" style="left:0;right:0">
+          <div class="desktop-promo">
+            <div id="offer-banner">
+              <div id="banner-content">
+                <div class="promo-flex-wrapper" style="display:flex;justify-content:space-between">
+                  <div id="desktop-offer-banner-1" class="desktop-offer-banner avenir85Heavy" style="margin-right:10px"><a href="/promotions_details/#economy" target="_blank" id="desktop-offer-url-1" data-link-id="::" data-link-module-position="1" data-link-position="1"><span class="hidden" id="desktop-offer-expiration-1">1/5/20</span> <span></span> <span class="avenir95Black orangecontent">FREE SHIPPING</span> <span>on orders $39+* code: SHIP39</span><br><span class="avenir95Black orangecontent">FREE SHIPPING</span> <span>on cards* code: BESTCARDS</span> <span class="hidden" id="desktop-offer-code-1">SHIP39</span> <span class="hidden" id="desktop-offer-promoid-1">40ALL_DEFAULT</span></a></div>
+                  <div id="desktop-offer-banner-2" class="desktop-offer-banner avenir85Heavy" style="margin-right:10px"><a href="/special-offers" target="_blank" id="desktop-offer-url-2" data-link-id="::" data-link-module-position="1" data-link-position="2"><span>Ends Wed, Oct 21</span> <span class="hidden" id="desktop-offer-expiration-2">1/5/20</span> <span class="avenir95Black orangecontent">50% OFF PREMIUM CARDS &amp; HARDCOVER BOOKS + 40% OFF ALMOST EVERYTHING*</span> <span>no code needed</span> <span class="hidden" id="desktop-offer-code-2">no code needed</span> <span class="hidden" id="desktop-offer-promoid-2">no code needed</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-promo mobile-only promo-type" data-promo-type="mobile">
+            <div class="global-promo mobile-offer-banner" id="mobile-offer-banner-1"><a href="/special-offers" id="mobile-offer-url-1" data-link-id="::" data-link-module-position="1" data-link-position="3"><span class="hidden" id="mobile-offer-expiration-1">1/5/20</span>
+                <div class="fleft offer">FREE SHIPPING on orders $39+*</div>
+                <div class="fleft seperator">|</div><span class="fleft offerCode">code: SHIP39</span> <span class="hidden" id="mobile-offer-code-1">SHIP39</span> <span class="hidden" id="mobile-offer-promoid-1">40ALL_DEFAULT</span></a></div>
+          </div>
+        </div>
+      </div> <!-- /HTML Content Wrapper -->
+
+      <!-- End of ContentSpaceName: home_prospect_promo_cs -->
+    </div>
+    <script src="https://cld1.staticsfly.com/react168.f1b8b481c0.js"></script>
+    <script>
+      window.react_and_react_dom = window.react_16_8;
+    </script>
+    <link href="https://cld1.staticsfly.com/universalheader.b748c916a9.css" rel="stylesheet">
+    <script src="https://cld1.staticsfly.com/universalheader.2284815458.js"></script>
+    <script src="https://cld1.staticsfly.com/universalheader.f87db7a1e3.js"></script>
+    <script src="https://cld1.staticsfly.com/universalheader.e95686c97a.js"></script>
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+      .totallyNonConflictingWrapper {
+        width: 100% !important;
+      }
+    </style>
+    <div class="totallyNonConflictingWrapper" style="width: 100% !important;">
+      <div id="docWide">
+        <div id="template-wrap">
+
+          <!-- no data found for ContentSpaceName: addressing_over_marq_promo_cs -->
+
+          <!-- no data found for ContentSpaceName: addressing_over_marq_promo_mobile_cs -->
+
+          <!-- ContentSpaceName: addressing_hero_cs -->
+
+          <!-- HTML Content Wrapper -->
+          <div class="transition main-title">
+            <h1 class="inner-text">CUSTOM ENVELOPES</h1>
+          </div>
+          <section>
+            <div class="sfly-3qualities-numbers">
+              <div class="transition">
+                <h2>How It Works</h2>
+              </div>
+              <div class="quantities-blocks">
+                <div class="quantity-block">
+                  <div class="number-headline font-gt">1</div>
+                  <h4 class="uppercase">Start with your card</h4>
+                  <p>Find your favorite card from our range of beautiful designs.</p>
+                </div>
+                <div class="quantity-block">
+                  <div class="number-headline font-gt">2</div>
+                  <h4 class="uppercase">Choose your custom envelope</h4>
+                  <p>Pick a perfectly coordinated envelope to stand out in the mailbox.</p>
+                </div>
+                <div class="quantity-block">
+                  <div class="number-headline font-gt">3</div>
+                  <h4 class="uppercase">Use our free addressing</h4>
+                  <p>Easily import contacts into your address book, and your envelopes will arrive ready to send.
+                  </p>
+                </div>
+              </div>
+              <div class="cta-row">
+                <a href="/addressbook/management.sfly#/contacts" class="cta-button" data-link-id="::" data-link-module-position="7" data-link-position="1">
+                  <span class="rectangular-cta uppercase page-color">
+                    GET STARTED
+                </span>
+                </a>
+              </div>
+            </div>
+          </section> <!-- /HTML Content Wrapper -->
+
+          <!-- End of ContentSpaceName: addressing_hero_cs -->
+
+          <!-- ContentSpaceName: addressing_section_1_cs -->
+
+          <!-- HTML Content Wrapper -->
+          <section>
+            <div class="marquee marquee-left-functional">
+              <picture>
+                <source media="(max-width: 767px)" srcset="https://cdn-image.staticsfly.com/i/landingpages/2020/P266203_SY_ECM_0929_1_UP_Left_Mobile.jpg">
+                <source media="(max-width: 991px)" srcset="https://cdn-image.staticsfly.com/i/landingpages/2020/P266203_SY_ECM_0929_1_UP_Left_Mobile.jpg?impolicy=resize&amp;width=991">
+                <source media="(max-width: 1200px)" srcset="https://cdn-image.staticsfly.com/i/landingpages/2020/P266203_SY_ECM_0929_1_UP_Left_1600.jpg?impolicy=resize&amp;width=1200"><img src="https://cdn-image.staticsfly.com/i/landingpages/2020/P266203_SY_ECM_0929_1_UP_Left_1600.jpg" style="width:100%" alt="Try our FREE personal address book service and get it in just 4 days." class="loaded" data-was-processed="true"></picture>
+              <div class="marquee-inner">
+                <div class="marquee-copy left">
+                  <div class="copy-inner">
+                    <h2 class="uppercase font-light">Save the Hassle</h2>
+                    <p>Try our <span class="inner-inner-text">FREE</span> personal address <span class="title-display">book service and get it in just</span> 4 days.</p>
+                    <div class="cta-row"><a href="/address-book-service/" class="cta-button" data-link-id="::" data-link-module-position="8" data-link-position="1"><span class="rectangular-cta uppercase page-color">LEARN MORE</span></a></div>
+                  </div>
+                </div>
+              </div><a href="/address-book-service/" class="full-link" data-link-id="::" data-link-module-position="8" data-link-position="2"></a>
+            </div>
+          </section>
+          <div class="dyncontent">
+            <section class="carousel-wrap3 arrow-up">
+              <div class="carousel-outer">
+                <div class="carousel-favorites carousel-wrap">
+                  <div class="transition">
+                    <h2>Custom Cards For Every Occasion</h2>
+                  </div>
+                  <div>
+                    <div class="carousel-favorites-wrap2">
+                      <div class="product-content">
+                        <picture><img src="https://cdn-image.staticsfly.com/i/landingpages/2020/P266203_SY_ECM_0929_4up_Holiday.png" alt="tiny little you photo book" class="loading" data-was-processed="true"></picture>
+                        <div class="copy-inner"><span class="cta-text uppercase">holiday</span></div><a href="/cards-stationery/holiday-cards" data-link-id="::" data-link-module-type="dyncontent" data-link-module-position="8" data-link-position="3"></a>
+                      </div>
+                      <div class="product-content">
+                        <picture><img src="https://cdn-image.staticsfly.com/i/landingpages/2020/P266203_SY_ECM_0929_4up_Christmas.png" alt="Classic Wedding photo book" class="loading" data-was-processed="true"></picture>
+                        <div class="copy-inner"><span class="cta-text uppercase">christmas</span></div><a href="/cards-stationery/christmas-cards" data-link-id="::" data-link-module-type="dyncontent" data-link-module-position="8" data-link-position="4"></a>
+                      </div>
+                      <div class="product-content">
+                        <picture><img src="https://cdn-image.staticsfly.com/i/landingpages/2020/P266203_SY_ECM_0929_4up_NewYears.png" alt="A Year in Color photo book" class="loading" data-was-processed="true"></picture>
+                        <div class="copy-inner"><span class="cta-text uppercase">new year&apos;s</span></div><a href="/cards-stationery/new-years-cards/new-years-cards" data-link-id="::" data-link-module-type="dyncontent" data-link-module-position="8" data-link-position="5"></a>
+                      </div>
+                      <div class="product-content">
+                        <picture><img src="https://cdn-image.staticsfly.com/i/landingpages/2020/P266203_SY_ECM_0929_4up_ThankYou.png" alt="Modern Baby photo book" class="loading" data-was-processed="true"></picture>
+                        <div class="copy-inner"><span class="cta-text uppercase">thank you</span></div><a href="/cards-stationery/thank-you-cards" data-link-id="::" data-link-module-type="dyncontent" data-link-module-position="8" data-link-position="6"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div> <!-- /HTML Content Wrapper -->
+
+          <!-- End of ContentSpaceName: addressing_section_1_cs -->
+
+          <!-- no data found for ContentSpaceName: addressing_section_2_cs -->
+
+          <!-- ContentSpaceName: addressing_section_3_cs -->
+
+          <!-- HTML Content Wrapper -->
+          <section>
+            <div class="sfly-faqs">
+              <div class="transition">
+                <h2>Frequently Asked Questions</h2>
+              </div>
+              <div class="sfly-faq-wrap">
+                <div class="sfly-faq-question">
+                  <div>Q:&#xA0;</div>
+                  <div>How do I get Custom <span class="nowrap">Envelopes? <span class="sfly-faq-arrow"></span></span></div>
+                </div>
+                <div class="sfly-faq-answer" style="display:none">
+                  <div>A:&#xA0;</div>
+                  <div>
+                    <p>The way to add custom envelopes is while personalizing your cards. Just follow the steps to personalize your cards and you&apos;ll be prompted to choose your custom envelopes under the &quot;Envelopes&quot; step.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sfly-faq-wrap">
+                <div class="sfly-faq-question">
+                  <div>Q:&#xA0;</div>
+                  <div>Do you print both recipient and return <span class="nowrap">addresses? <span class="sfly-faq-arrow"></span></span></div>
+                </div>
+                <div class="sfly-faq-answer" style="display:none">
+                  <div>A:&#xA0;</div>
+                  <div>
+                    <p>Yes! Recipient and return address printing are included free with your purchase of custom envelopes. After choosing your custom envelope, you&apos;ll have a chance to select.<br><br>1. Whether you want return address, recipient address, or both printed.<br><br>2. Select recipients for recipient address printing from your address book.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sfly-faq-wrap">
+                <div class="sfly-faq-question">
+                  <div>Q:&#xA0;</div>
+                  <div>Is the new Address Book Service available for custom <span class="nowrap">envelopes? <span class="sfly-faq-arrow"></span></span></div>
+                </div>
+                <div class="sfly-faq-answer" style="display:none">
+                  <div>A:&#xA0;</div>
+                  <div>
+                    <p>Yes, simply email us at <a href="mailto:ADDRESSBOOK.SUPPORT@SHUTTERFLY.COM" style="color:#929497;text-decoration:underline" data-link-id="::" data-link-module-position="10" data-link-position="1">ADDRESSBOOK.SUPPORT@SHUTTERFLY.COM</a> with your full name, the email address associated with your account and an attachment with your addresses in an acceptable digital format (Excel, Word or PDF). We do not accept photos of envelopes or handwritten addresses. You will receive an automatic email reply confirming that we have received your request, followed by an email within 4 business days telling you that your address book is complete and uploaded to your account. Questions? Call us at <a href="tel:+18772849609" style="color:#929497;text-decoration:underline" data-link-id="::" data-link-module-position="10" data-link-position="2">(877) 284-9609</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> <!-- /HTML Content Wrapper -->
+
+          <!-- End of ContentSpaceName: addressing_section_3_cs -->
+
+          <!-- ContentSpaceName: addressing_section_4_cs -->
+
+          <!-- HTML Content Wrapper -->
+          <section>
+            <div class="sfly-faqs local-margin">
+              <div class="sfly-faq-wrap">
+                <div class="sfly-faq-question">
+                  <div>Q:&#xA0;</div>
+                  <div>Can I upload my own addresses? <span class="nowrap"><span class="sfly-faq-arrow"></span></span></div>
+                </div>
+                <div class="sfly-faq-answer" style="display:none">
+                  <div>A:&#xA0;</div>
+                  <div>
+                    <p>You can upload your own addresses by clicking on <a href="https://www.shutterfly.com/addressbook/management.sfly" style="color:#929497;text-decoration:underline" data-link-id="::" data-link-module-position="11" data-link-position="1">the following link here</a>. The Personal Address Book Service is designed to save you time by updating your address book for you, but you are welcome to make updates yourself at any time. You can also change the size and font when personalizing your envelopes. Just keep in mind that any changes you make will apply to every envelope.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sfly-faq-wrap">
+                <div class="sfly-faq-question">
+                  <div>Q:&#xA0;</div>
+                  <div>Are Custom Envelopes available for all cards? <span class="nowrap"><span class="sfly-faq-arrow"></span></span></div>
+                </div>
+                <div class="sfly-faq-answer" style="display:none">
+                  <div>A:&#xA0;</div>
+                  <div>
+                    <p>Custom envelopes are available on certain card sizes and types, for certain occasions.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sfly-faq-wrap">
+                <div class="sfly-faq-question">
+                  <div>Q:&#xA0;</div>
+                  <div>Can you mail my cards with custom envelopes for me? <span class="nowrap"><span class="sfly-faq-arrow"></span></span></div>
+                </div>
+                <div class="sfly-faq-answer" style="display:none">
+                  <div>A:&#xA0;</div>
+                  <div>
+                    <p>Unfortunately, our mailing service is not available with custom envelopes. Addressed custom envelopes will arrive to your selected shipping address &#x2013;just add postage and mail. Cards ordered with standard plain envelopes can be addressed and mailed to your recipients using our Mail for Me service.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sfly-faqs local-margin">
+              <div class="sfly-faq-wrap">
+                <div class="sfly-faq-question">
+                  <div>Q:&#xA0;</div>
+                  <div>What are my shipping options for custom envelopes? <span class="nowrap"><span class="sfly-faq-arrow"></span></span></div>
+                </div>
+                <div class="sfly-faq-answer" style="display:none">
+                  <div>A:&#xA0;</div>
+                  <div>
+                    <p>You can choose from Economy, Standard, Expedited, Rush and Super Rush Shipping. Click <a href="/shipping_guidelines" style="color:#929497;text-decoration:underline" data-link-id="::" data-link-module-position="11" data-link-position="2">here</a> for shipping guidelines.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> <!-- /HTML Content Wrapper -->
+
+          <!-- End of ContentSpaceName: addressing_section_4_cs -->
+
+          <!-- ContentSpaceName: addressing_section_5_cs -->
+
+          <!-- HTML Content Wrapper -->
+          <section>
+            <div class="seo-footer">
+              <p class="seof-title">Send Your Mail in Style With Custom Envelopes</p>
+              <p>Whether you&apos;re sending holiday cards, wedding invitations, thank you cards, or birthday greetings, custom envelopes will bring your mail to life. Add a festive touch to your holiday greetings or an elegant look to your wedding stationery with envelope designs, liners, and custom colors. You can also pre-print your return address, get matching return address labels, or use personalized stamps to save time when mailing greeting cards, party invitations, and more. With Shutterfly, sending chic correspondence has never been easier with our custom envelopes and free online address book service.</p>
+              <p class="seof-title">The Perfect Custom Envelopes and Cards for Any Occasion</p>
+              <p>At Shutterfly, we offer high-quality printed envelopes to complete your custom cards and stationery. An elegant envelope will elevate your personalized stationery and make your cards and invitations stand out in your recipients&apos; mailboxes. Whether you&apos;re sending Christmas cards, baby shower invitations, save the date cards, or anything in between, with Shutterfly&apos;s custom envelopes you can send your mail in style.</p>
+              <p class="seof-title">Design Your Custom Envelopes to Suit Your Style</p>
+              <p>Browse through Shutterfly&apos;s wide range of beautiful card designs and pick a template that fits the occasion and your style. Pick your card and envelope size, with options such as 5x7, 6x8, and more. After you complete your personalized card with photos, details, and a special message, it&#x2019;s time to customize your envelope design. Choose from several colored envelope options to complement your card. For some card occasions, like wedding invitations and holiday cards, you can choose from custom envelopes decorated with beautiful designs and themes. Get festive with your holiday cards by using colored envelopes and themed decor that make your card one-of-a-kind. If you&apos;re sending wedding invitations to your loved ones before your big day, add an elegant touch to your envelopes with botanical designs and gorgeous calligraphy. Then, choose a unique envelope liner designed with patterns or solid colors to make your piece of mail stand out.</p>
+              <p class="seof-title">Mailing Your Cards is Easy With Our Free Address Printing</p>
+              <p>Once you&apos;ve completed your custom cards and envelopes, it&apos;s time to send them off to your loved ones. Shutterfly offers free return address and recipient address printing on your custom envelopes. Need a place to gather addresses for all of your family and friends? Shutterfly&apos;s free online address book service is the perfect way to organize your intended recipients&apos; addresses. Simply send us your addresses, let us make your online address book, and mail your cards with ease whenever you&apos;re ready. For holidays, birthdays, weddings, and everything in between &#x2014; sending correspondence has never been easier with Shutterfly&apos;s custom envelopes and free address printing.</p>
+            </div>
+          </section> <!-- /HTML Content Wrapper -->
+
+          <!-- End of ContentSpaceName: addressing_section_5_cs -->
+
+          <!-- no data found for ContentSpaceName: addressing_section_6_cs -->
+
+          <!-- no data found for ContentSpaceName: addressing_section_7_cs -->
+        </div>
+      </div>
+    </div>
+
+    <!-- ContentSpaceName: addressing_scripts_bottom_cs -->
+
+    <!-- HTML Content Wrapper -->
+    <script src="https://cdn.staticsfly.com/i/youtube/youtube-player.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        function t() {
+          function t() {
+            var t = $(".template_row_category_1 img").height();
+            0 === t && (t = $(".template_row_category_1 img").not(":first").height()), $(".template_row_category_1 .row-flex-cat-1").css("padding-top", t + 16)
+          }
+          "none" === $(".jsTrigger").css("float") && $(".template_row_category_1")[0] && (t(), $(window).resize(function() {
+            t()
+          }))
+        }
+        t(), $(window).resize(t), $(".template_row_faq")[0] && $("#faq-title").click(function() {
+          $("#faq-main").slideToggle("slow"), $("#faq-title .faq-carrot").toggleClass("rotate-carrot")
+        })
+      })
+    </script>
+    <script>
+      $(document).ready(function() {
+        $(".sfly-faq-wrap").click(function() {
+          $(".sfly-faq-arrow").css("background-position", "0 0"), $(this).hasClass("open") ? ($(".sfly-faq-answer", this).slideToggle("fast"), $(".sfly-faq-wrap").removeClass("open")) : ($(".sfly-faq-wrap").removeClass("open"), $(".sfly-faq-answer").slideUp("fast"), $("#na-mobile").is(":visible") ? $(".sfly-faq-arrow", this).css("background-position", "-10px 0") : $(".sfly-faq-arrow", this).css("background-position", "-13px 0"), $(".sfly-faq-answer", this).slideToggle("fast"), $(this).addClass("open"))
+        })
+      })
+    </script>
+    <script>
+      function composeSlickCarouselPrimary(s) {
+        s.slick({
+          autoplay: 0,
+          slidesToShow: 5,
+          prevArrow: '<div class="slick-prev slick-arrow" style="display: block;"><img src="https://cdn-image.staticsfly.com/i/landingpages/graphics/arrow-orange-left.png"></div>',
+          nextArrow: '<div class="slick-next slick-arrow" style="display: block;"><img src="https://cdn-image.staticsfly.com/i/landingpages/graphics/arrow-orange-right.png"></div>',
+          responsive: [{
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          }, {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }]
+        })
+      }
+      function composeSlickCarouselSecondary(s) {
+        s.slick({
+          autoplay: 0,
+          slidesToShow: 4,
+          prevArrow: '<div class="slick-prev slick-arrow" style="display: block;"><img src="https://cdn-image.staticsfly.com/i/landingpages/graphics/arrow-orange-left.png"></div>',
+          nextArrow: '<div class="slick-next slick-arrow" style="display: block;"><img src="https://cdn-image.staticsfly.com/i/landingpages/graphics/arrow-orange-right.png"></div>',
+          responsive: [{
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          }, {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }]
+        })
+      }
+      $(window).on("load", function() {
+        composeSlickCarouselPrimary($(".carousel-favorites-wrap")), composeSlickCarouselSecondary($(".carousel-favorites-wrap2"))
+      })
+    </script> <!-- /HTML Content Wrapper -->
+
+    <!-- End of ContentSpaceName: addressing_scripts_bottom_cs -->
+    <div id="footer_container_element"></div>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var tag = document.createElement('script');
+          var tealiumSrc = document.querySelector('meta[name="tealium-script-src"]').getAttribute('content');
+          tag.setAttribute('src', tealiumSrc);
+          document.querySelector('body').appendChild(tag);
+        }, 500);
+      });
+    </script>
+    <script src="https://cld1.staticsfly.com/bobstdlib.e574aae531.js" defer></script>
+    <script>
+      if (typeof window._satellite != 'undefined') {
+        window._satellite.pageBottom();
+      }
+    </script>
+  </body>
+</html>

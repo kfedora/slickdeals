@@ -1,24 +1,24 @@
 HTTP/1.1 200 OK
-Date: Mon, 19 Oct 2020 14:05:32 GMT
+Date: Tue, 20 Oct 2020 02:42:23 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Frame-Options: SAMEORIGIN
 X-Xss-Protection: 1; mode=block
 X-Content-Type-Options: nosniff
-last-modified: Mon, 19 Oct 2020 14:05:31 GMT
-expires: Mon, 19 Oct 2020 14:06:01 GMT
+last-modified: Tue, 20 Oct 2020 02:40:03 GMT
+expires: Tue, 20 Oct 2020 02:40:33 GMT
 x-portal-type: AHHomePage
 cache-control: public, max-age=1800
 Vary: Accept-Encoding
 CF-Cache-Status: HIT
-Age: 1
-cf-request-id: 05e2c70d0d00007a0f89af6000000001
+Age: 139
+cf-request-id: 05e57bf9610000e462d30bd000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=28&lkg-time=1603116332"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?lkg-colo=28&lkg-time=1603161744"}],"group":"cf-nel","max_age":604800}
 NEL: {"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 5e4b0df4e9647a0f-SEA
+CF-RAY: 5e4f62a23e46e462-SEA
 
 
 <!DOCTYPE html>
@@ -424,12 +424,12 @@ Get the Audioholics AV Gear Guide Ebook FREE! <a href="https://audioholics.us6.l
 Featured Review
 </div>
 <div class="col-md-12 item-box ">
-<a href="/bookshelf-speaker-reviews/ccb-8-bookshelf" title="Hsu Research CCB-8 Bookshelf Speaker Review">
-<img src="/bookshelf-speaker-reviews/ccb-8-bookshelf/image_feature" alt="Hsu Research CCB-8 Bookshelf Speaker Review" /> 
+<a href="/soundbar-and-satellite-speaker-reviews/polk-sb1-plus" title="Polk Audio SB1 Plus Sound Bar Preview">
+<img src="/soundbar-and-satellite-speaker-reviews/polk-sb1-plus/image_feature" alt="Polk Audio SB1 Plus Sound Bar Preview" />
 <span class="strapline">
-Hsu Research CCB-8 Bookshelf Speaker Review
+Polk Audio SB1 Plus Sound Bar Preview
 <div class="carSub">
-The CCB-8 is an audacious new speaker featuring an 8" woofer utilized as a waveguide for a center-mounted tweeter. Read our review of the Hsu Research CCB-8 bookshelf speakers for our impressions.
+Looking for a sound bar for your TV? Check out the preview of the SB1 Plus from Polk audio. The SB1 Plus was announced at CES this week and caused quite a stir with its wireless sub and new upgrades.
 </div>
 </span>
 </a>
@@ -567,7 +567,7 @@ in <a href="/editorials"> Editorials</a></span>
 <div class="col-md-12">
 <div class="post">
 <a href="/av-preamp-processor-reviews/marantz-av7706">
-<h4>Marantz Announces AV7706 11.2Ch 8K Ultra HD AV Surround Pre-Amplifier</h4> 
+<h4>Marantz Announces AV7706 11.2Ch 8K Ultra HD AV Surround Pre-Amplifier</h4>
 <div class="photo"><img src="/static/ph.png" data-src="/av-preamp-processor-reviews/marantz-av7706/image_mini" alt="Marantz Announces AV7706 11.2Ch 8K Ultra HD AV Surround Pre-Amplifier" title="Marantz Announces AV7706 11.2Ch 8K Ultra HD AV Surround Pre-Amplifier" /></div>
 </a>
 <div class="summary">
@@ -633,7 +633,7 @@ We recently broke the news on Denon's 110th Anniversary Edition AVR-A110 8K AV R
 </div>
 <div class="summary-sm">
 <p>
-Denon has expanded its 110th anniversary components with the PMA-A110 Integrated Amplifier, DCD-A110 SACD Player, and DL-A110 Phono Cartridge. Read on to see what makes these audiophile products so special.
+ Denon has expanded its 110th anniversary components with the PMA-A110 Integrated Amplifier, DCD-A110 SACD Player, and DL-A110 Phono Cartridge. Read on to see what makes these audiophile products so special.
 </p>
 </div>
 <p class="meta">

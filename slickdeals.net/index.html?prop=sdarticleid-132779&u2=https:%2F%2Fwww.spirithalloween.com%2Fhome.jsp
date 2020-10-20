@@ -3,18 +3,18 @@ Server: Apache
 X-Frame-Options: sameorigin
 Content-Type: text/html;charset=UTF-8
 Content-Language: en-US
-serverid: web08
-X-Akamai-Transformed: 9 40536 0 pmb=mRUM,1
+serverid: web06
+X-Akamai-Transformed: 9 40571 0 pmb=mRUM,1
 Vary: Accept-Encoding
-Date: Mon, 19 Oct 2020 15:06:34 GMT
+Date: Tue, 20 Oct 2020 02:46:52 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
-Set-Cookie: JSESSIONID=0FB17B94F50AC2E2A2A93BF5F4121A4E; Path=/; Secure; HttpOnly
-Set-Cookie: PIPELINE_SESSION_ID=691f8622c480414aaccfae7f0119632c; Domain=www.spirithalloween.com; Max-Age=2147483647; Expires=Sat, 06-Nov-2088 18:20:41 GMT; Path=/; Version=1; HttpOnly
+Set-Cookie: JSESSIONID=93017E462895655B95442DB712F76251; Path=/; Secure; HttpOnly
+Set-Cookie: PIPELINE_SESSION_ID=ded1c519f6874c209fdf44003ff66688; Domain=www.spirithalloween.com; Max-Age=2147483647; Expires=Sun, 07-Nov-2088 06:00:59 GMT; Path=/; Version=1; HttpOnly
 Set-Cookie: LOCALE_ID=1; Domain=www.spirithalloween.com; Path=/; Version=1; HttpOnly
 Set-Cookie: LANGUAGE_ID=1; Domain=www.spirithalloween.com; Path=/; Version=1; HttpOnly
-Set-Cookie: SITE_VISITED_DATE=10/19/2020; Max-Age=2147483647; Expires=Sat, 06-Nov-2088 18:20:41 GMT; Path=/; Version=1; HttpOnly
+Set-Cookie: SITE_VISITED_DATE=10/19/2020; Max-Age=2147483647; Expires=Sun, 07-Nov-2088 06:00:59 GMT; Path=/; Version=1; HttpOnly
 
 
 
@@ -67,7 +67,7 @@ Set-Cookie: SITE_VISITED_DATE=10/19/2020; Max-Age=2147483647; Expires=Sat, 06-No
     <meta name="keywords" content="Spirit Halloween"/>
     <meta name="description" content="Shop Spirit Halloween for an incredible selection of Halloween Costumes, Halloween Decorations, Halloween Accessories, and Halloween Makeup. Fast shipping &amp; huge selection! *Shop Now &amp; Save*"/>
     <link href="https://www.spirithalloween.com" rel="canonical"/>
-                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"684918",ustr:"",originlat:"0",clientrtt:"4",ghostip:"23.194.212.189",ipv6:false,pct:"10",clientip:"52.156.121.27",requestid:"3baa304",region:"33086",protocol:"",blver:14,akM:"g",akN:"ae",akTT:"O",akTX:"1",akTI:"3baa304",ai:"239460",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"684918",ustr:"",originlat:"0",clientrtt:"5",ghostip:"23.64.3.69",ipv6:false,pct:"10",clientip:"20.187.32.137",requestid:"10e7cde5",region:"35326",protocol:"",blver:14,akM:"g",akN:"ae",akTT:"O",akTX:"1",akTI:"10e7cde5",ai:"239460",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
                     </head>
 <body id="home" class="desktop notMobile" data-userAgent='Wget/1.19.4 (linux&#45;gnu)' data-deviceType="Desktop" data-siteCode="spt">
 
@@ -183,7 +183,7 @@ Set-Cookie: SITE_VISITED_DATE=10/19/2020; Max-Age=2147483647; Expires=Sat, 06-No
                 // If current url is a command, we need to append the params submitted along with that command
                 
                     if (curURL.indexOf(".cmd") >=0 && curURL.indexOf(".cmd") == curURL.length - ".cmd".length) {
-                        destParam += '?' + 'affiliate_id=18097&utm_campaign=AFF%3APJ&utm_source=pepperjam&utm_medium=affiliate&utm_inex=e&utm_content=2-236930&click_id=3317626527&clickId=3317626527';
+                        destParam += '?' + 'affiliate_id=18097&utm_campaign=AFF%3APJ&utm_source=pepperjam&utm_medium=affiliate&utm_inex=e&utm_content=2-236930&click_id=3318560344&clickId=3318560344';
                     }
                 
 
@@ -270,7 +270,7 @@ Set-Cookie: SITE_VISITED_DATE=10/19/2020; Max-Age=2147483647; Expires=Sat, 06-No
     </div>
 
     <style>#countdownWrap{display:inline-block;line-height:14px;padding-right:15px;margin-right:15px;border-right:1px solid #d9d9d9}body.tablet #countdownWrap{padding-right:0;border-right:0 none}#itsScaryImg{display:block;width:188px}body.tablet #itsScaryImg{display:inline-block;margin-right:4px}#countdownTxt{display:inline-block;font-weight:700;vertical-align:middle}body.tablet #countdownTxt{height:24px}span.SHIBDaysnumero{color:#f16531}</style><div id=countdownWrap><div id=itsScaryImg><img alt="So Much Fun It's Scary!®"class=image-scale src=//spirit.scene7.com/is/image/Spirit/so%5Fmuch%5Ffun%5Fits%5Fscary%5F2017?$PNG8$></div><div id=countdownText></div></div><script>(function(){var a=new Date;a.setUTCMonth(9);a.setUTCDate(31);a.setUTCFullYear(a.getFullYear());a.getTime()<=Date.now()&&a.setUTCFullYear(a.getFullYear()+1);a=Math.ceil((Date.parse(a)-Date.now())/864E5);a=0!==a?'Only <span style="color:#f16531;font-weight:bold;">'+a+"</span> Day"+(2<=a?"s":"")+" Until HALLOWEEN!":"Happy Halloween";document.querySelector("#countdownText").insertAdjacentHTML("afterbegin",a)})();</script><div class="cmsWrapper" id="Header-Area4" data-content-name="Header &#45; Area 4"><div id="spt_default_offer"></div></div><ul id="secondary-nav">
-            <input type="hidden" id="artGunURL" value='http://design-a-tee.spencersonline.com/apps/spencersonline/v32/index.php?s=e&k=spencersonline&b=h&g=123&c=4165d49dac18302c0756cdffff3e4887' />
+            <input type="hidden" id="artGunURL" value='http://design-a-tee.spencersonline.com/apps/spencersonline/v32/index.php?s=e&k=spencersonline&b=h&g=123&c=43e6fce5ac18302a74e800c8d7001436' />
 </ul>
     </div>
 <div class="clr"></div>
@@ -1261,7 +1261,29 @@ Set-Cookie: SITE_VISITED_DATE=10/19/2020; Max-Age=2147483647; Expires=Sat, 06-No
 
                                 </ul></div></li>
                         <li id="hdrParentCat-1921" class='' data-nav-column-size="9">
-                                <a data-qaAutomationId="hdrNav-Accessories" href="/section/accessories/1921.uts">Accessories</a><div class='subnav' aria-hidden='true'><ul><li id="hdrCat-2199" class='hasSubs '>
+                                <a data-qaAutomationId="hdrNav-Accessories" href="/section/accessories/1921.uts">Accessories</a><div class='subnav' aria-hidden='true'><ul><li id="hdrCat-950" class='hasSubs '>
+                                        <a href="/category/accessories/wigs/pc/1921/950.uts">Wigs</a><div class='subnav' aria-hidden='true'><ul><li id="hdrSubCat-951" class=''>
+                                                    <a href="/thumbnail/accessories/wigs/women-s/pc/1921/c/950/951.uts">Women's Wigs</a></li>
+                                            <li id="hdrSubCat-952" class=''>
+                                                    <a href="/thumbnail/accessories/wigs/men-s/pc/1921/c/950/952.uts">Men's Wigs</a></li>
+                                            <li id="hdrSubCat-953" class=''>
+                                                    <a href="/thumbnail/accessories/wigs/kids/pc/1921/c/950/953.uts">Kids Wigs</a></li>
+                                            <li id="hdrSubCat-956" class=''>
+                                                    <a href="/thumbnail/accessories/wigs/time-periods/pc/1921/c/950/956.uts">Time Period Wigs</a></li>
+                                            <li id="hdrSubCat-957" class=''>
+                                                    <a href="/thumbnail/accessories/wigs/humor/pc/1921/c/950/957.uts">Funny Wigs</a></li>
+                                            <li id="hdrSubCat-955" class=''>
+                                                    <a href="/thumbnail/accessories/wigs/gothic-horror/pc/1921/c/950/955.uts">Gothic & Horror Wigs</a></li>
+                                            <li id="hdrSubCat-958" class=''>
+                                                    <a href="/thumbnail/accessories/wigs/fashion-color/pc/1921/c/950/958.uts">Fashion Color Wigs</a></li>
+                                            <li id="hdrSubCat-959" class=''>
+                                                    <a href="/thumbnail/accessories/wigs/hair-color/pc/1921/c/950/959.uts">Hair Color</a></li>
+                                            <li id="hdrSubCat-960" class=''>
+                                                    <a href="/thumbnail/accessories/wigs/hair-accessories/pc/1921/c/950/960.uts">Hair Accessories</a></li>
+                                            <li id="hdrSubCat-961" class=''>
+                                                    <a href="/thumbnail/accessories/wigs/hair-extensions/pc/1921/c/950/961.uts">Hair Extensions</a></li>
+                                            </ul></div></li>
+                                    <li id="hdrCat-2199" class='hasSubs '>
                                         <a href="/category/accessories/masks/pc/1921/2199.uts">Masks</a><div class='subnav' aria-hidden='true'><ul><li id="hdrSubCat-2200" class=''>
                                                     <a href="/thumbnail/accessories/masks/animals/pc/1921/c/2199/2200.uts">Animal Masks</a></li>
                                             <li id="hdrSubCat-2201" class=''>
@@ -1287,8 +1309,6 @@ Set-Cookie: SITE_VISITED_DATE=10/19/2020; Max-Age=2147483647; Expires=Sat, 06-No
                                             <li id="hdrSubCat-3910" class=''>
                                                     <a href="/thumbnail/accessories/masks/tate-steinsiek-masks/pc/1921/c/2199/3910.uts">Tate Steinsiek Masks</a></li>
                                             </ul></div></li>
-                                    <li id="hdrCat-5177" class=''>
-                                        <a href="/category/accessories/face-masks-gaitors/pc/1921/5177.uts">Face masks & Gaitors</a></li>
                                     <li id="hdrCat-2190" class='hasSubs '>
                                         <a href="/category/accessories/makeup/pc/1921/2190.uts">Halloween Makeup</a><div class='subnav' aria-hidden='true'><ul><li id="hdrSubCat-2191" class=''>
                                                     <a href="/thumbnail/accessories/makeup/creams-greases/pc/1921/c/2190/2191.uts">Halloween Face Paint</a></li>
@@ -1307,28 +1327,10 @@ Set-Cookie: SITE_VISITED_DATE=10/19/2020; Max-Age=2147483647; Expires=Sat, 06-No
                                             <li id="hdrSubCat-2198" class=''>
                                                     <a href="/thumbnail/accessories/makeup/tattoos-body-jewels/pc/1921/c/2190/2198.uts">Tattoos & Body Jewels</a></li>
                                             </ul></div></li>
-                                    <li id="hdrCat-950" class='hasSubs '>
-                                        <a href="/category/accessories/wigs/pc/1921/950.uts">Wigs</a><div class='subnav' aria-hidden='true'><ul><li id="hdrSubCat-951" class=''>
-                                                    <a href="/thumbnail/accessories/wigs/women-s/pc/1921/c/950/951.uts">Women's Wigs</a></li>
-                                            <li id="hdrSubCat-952" class=''>
-                                                    <a href="/thumbnail/accessories/wigs/men-s/pc/1921/c/950/952.uts">Men's Wigs</a></li>
-                                            <li id="hdrSubCat-953" class=''>
-                                                    <a href="/thumbnail/accessories/wigs/kids/pc/1921/c/950/953.uts">Kids Wigs</a></li>
-                                            <li id="hdrSubCat-956" class=''>
-                                                    <a href="/thumbnail/accessories/wigs/time-periods/pc/1921/c/950/956.uts">Time Period Wigs</a></li>
-                                            <li id="hdrSubCat-957" class=''>
-                                                    <a href="/thumbnail/accessories/wigs/humor/pc/1921/c/950/957.uts">Funny Wigs</a></li>
-                                            <li id="hdrSubCat-955" class=''>
-                                                    <a href="/thumbnail/accessories/wigs/gothic-horror/pc/1921/c/950/955.uts">Gothic & Horror Wigs</a></li>
-                                            <li id="hdrSubCat-958" class=''>
-                                                    <a href="/thumbnail/accessories/wigs/fashion-color/pc/1921/c/950/958.uts">Fashion Color Wigs</a></li>
-                                            <li id="hdrSubCat-959" class=''>
-                                                    <a href="/thumbnail/accessories/wigs/hair-color/pc/1921/c/950/959.uts">Hair Color</a></li>
-                                            <li id="hdrSubCat-960" class=''>
-                                                    <a href="/thumbnail/accessories/wigs/hair-accessories/pc/1921/c/950/960.uts">Hair Accessories</a></li>
-                                            <li id="hdrSubCat-961" class=''>
-                                                    <a href="/thumbnail/accessories/wigs/hair-extensions/pc/1921/c/950/961.uts">Hair Extensions</a></li>
-                                            </ul></div></li>
+                                    <li id="hdrCat-5177" class=''>
+                                        <a href="/category/accessories/face-masks-gaitors/pc/1921/5177.uts">Face masks & Gaitors</a></li>
+                                    <li id="hdrCat-981" class=''>
+                                        <a href="/category/accessories/costume-kits/pc/1921/981.uts">Costume Kits</a></li>
                                     <li id="hdrCat-962" class='hasSubs '>
                                         <a href="/category/accessories/hats/pc/1921/962.uts">Hats</a><div class='subnav' aria-hidden='true'><ul><li id="hdrSubCat-4109" class=''>
                                                     <a href="/thumbnail/accessories/hats/view-all-hats-headbands/pc/1921/c/962/4109.uts">View All Hats & Headbands</a></li>
@@ -1423,8 +1425,6 @@ Set-Cookie: SITE_VISITED_DATE=10/19/2020; Max-Age=2147483647; Expires=Sat, 06-No
                                             <li id="hdrSubCat-3286" class=''>
                                                     <a href="/thumbnail/accessories/weapons-armor/staffs-brooms/pc/1921/c/973/3286.uts">Staffs & Brooms</a></li>
                                             </ul></div></li>
-                                    <li id="hdrCat-981" class=''>
-                                        <a href="/category/accessories/costume-kits/pc/1921/981.uts">Costume Kits</a></li>
                                     <div class="closeCSSIcon"></div>
 
                                 </ul></div></li>
