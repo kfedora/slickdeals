@@ -1,0 +1,565 @@
+HTTP/1.1 200 OK
+Content-Type: text/javascript
+ETag: "50516950"
+Last-Modified: Wed, 21 Oct 2020 01:07:34 GMT
+Referrer-Policy: strict-origin-when-cross-origin
+Server: Akamai Resource Optimizer
+X-Akamai-Path-Stats: [1:154:11846]
+Vary: Accept-Encoding
+Cache-Control: max-age=533799
+Expires: Wed, 28 Oct 2020 01:08:31 GMT
+Date: Wed, 21 Oct 2020 20:51:52 GMT
+Content-Length: 16883
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=HIT
+Server-Timing: edge; dur=18
+Strict-Transport-Security: max-age=86400
+
+/**
+ * Needs to be compatible with both Classic and Redesign
+ */
+
+/* global googletag */
+(function (factory)
+{
+    'use strict';
+
+    if (typeof define === 'function' && define.amd)
+    {
+        define([
+            'jquery',
+            'sd/libs/isInViewport',
+        ], factory);
+    }
+    else if (!window.RefreshAdSet)
+    {
+        window.RefreshAdSet = factory(window.jQuery);
+    }
+}(function ($)
+{
+    'use strict';
+
+    window.RASLog = window.RASLog || [];
+
+    function RefreshAdSet(options)
+    {
+        this.options = $.extend({}, {
+            'globalAdObjectKey': 'adSlot2',
+            'intervalQueue': [],
+            'universalRefreshTolerance': 0,
+            'autoStart': true,
+        }, options);
+
+        this.elementsBeenAboveViewPort = [];
+
+        if (typeof window[this.options.globalAdObjectKey] !== 'object')
+        {
+            window.RASLog.push([new Date(), 'Invalid ad object key provided. Ad refresh will not operate on this page.']);
+
+            return;
+        }
+
+        this.elements = [];
+
+        this.ignoreVisibilityStateChange = false;
+
+        if (typeof document.visibilityState === 'undefined')
+        {
+            this.ignoreVisibilityStateChange = true;
+            this.visibilityState = true;
+        }
+        else
+        {
+            this.visibilityState = document.visibilityState === 'visible';
+        }
+
+        this.initEventListeners();
+    }
+
+    /**
+     * Bind up ad containing element to be responsible for itself - and expose functionality that can be called
+     * from the dom node itself.
+     */
+    RefreshAdSet.prototype.prepareUnit = function (elementId, slot)
+    {
+        let $elm = $('#' + elementId);
+        const elmThis = {
+            'RefreshAdSet': this,
+            'slot': slot,
+        };
+
+        if ($elm.length === 0)
+        {
+            return;
+        }
+
+        $elm = $elm[0];
+        elmThis.elm = $elm;
+
+        $elm.start = this.elementStart.bind(elmThis);
+        $elm.stop = this.elementStop.bind(elmThis);
+        $elm.resume = this.elementResume.bind(elmThis);
+        $elm.refresh = this.elementRefresh.bind(elmThis);
+        $elm.canResume = this.elementCanResume.bind(elmThis);
+        $elm.secondsUntilNextRefresh = this.elementSecondsUntilNextRefresh.bind(elmThis);
+        $elm.resetSequence = this.elementResetSequence.bind(elmThis);
+        $elm.getRemainingRefreshes = this.elementGetRemainingRefreshes.bind(elmThis);
+        $elm.setQueueSequence = this.elementSetQueueSequence.bind(elmThis);
+        $elm.getQueueSequence = this.elementGetQueueSequence.bind(elmThis);
+        $elm.getIgnoreVisibility = this.elementGetIgnoreVisibility.bind(elmThis);
+        $elm.getCurrentSequence = this.elementGetCurrentSequence.bind(elmThis);
+        $elm.getPercentInView = this.elementGetPercentInView.bind(elmThis);
+        $elm.refreshTargeting = 2;
+
+        this.elements.push($elm);
+    };
+
+    /**
+     * Start the clock for automagic refresh
+     */
+    RefreshAdSet.prototype.elementStart = function ()
+    {
+        if (this.workingSequence.length > 0 && !('started' in this))
+        {
+            if ('stopped' in this)
+            {
+                delete this.stopped;
+            }
+
+            if (!('currentSequenceItem' in this))
+            {
+                this.currentSequenceItem = this.workingSequence.shift();
+            }
+
+            this.timerId = setTimeout(this.elm.refresh, this.currentSequenceItem.delay * 1000);
+            this.started = (new Date()).getTime();
+
+            window.RASLog.push([new Date(), 'Started refresh timer for id: ' + this.elm.id]);
+        }
+    };
+
+    /**
+     * Stop the click for automatic refresh
+     *
+     * @param boolean hardStop
+     */
+    RefreshAdSet.prototype.elementStop = function (hardStop)
+    {
+        if (this.timerId)
+        {
+            clearTimeout(this.timerId);
+
+            if (!hardStop)
+            {
+                this.stopped = (new Date()).getTime();
+            }
+
+            delete this.timerId;
+
+            window.RASLog.push([new Date(), 'Stopped refresh timer for id: ' + this.elm.id]);
+        }
+    };
+
+    /**
+     * If unit is stopped, try to resume with remaining time left
+     */
+    RefreshAdSet.prototype.elementResume = function ()
+    {
+        if ('stopped' in this && 'currentSequenceItem' in this)
+        {
+            const remainingMicros = this.stopped - this.started;
+
+            this.timerId = setTimeout(this.elm.refresh, remainingMicros);
+
+            delete this.stopped;
+
+            window.RASLog.push([new Date(), 'Resumed refresh timer for id: ' + this.elm.id + ' from ' + remainingMicros + 'ms']);
+        }
+    };
+
+    /**
+     * Trigger refresh of ad unit - provided it is within viewport ---- compute tolerance here?
+     *
+     * @param boolean skipRestart - for manual calls
+     */
+    RefreshAdSet.prototype.elementRefresh = function (skipRestart)
+    {
+        if (this.workingSequence.length === 0 && !('currentSequenceItem' in this))
+        {
+            return;
+        }
+
+        window.RASLog.push([new Date(), 'Refresh fired for id: ' + this.elm.id]);
+
+        if ('started' in this)
+        {
+            delete this.timerId;
+            delete this.started;
+        }
+
+        if ('stopped' in this)
+        {
+            delete this.stopped;
+        }
+
+        if ('currentSequenceItem' in this)
+        {
+            delete this.currentSequenceItem;
+        }
+
+        this.RefreshAdSet.evaluateViewportVisibilityAndRefresh(this.elm.id, this.slot);
+
+        if (!skipRestart)
+        {
+            this.elm.start();
+        }
+    };
+
+    /**
+     * Can element resume or not?
+     *
+     * @return boolean
+     */
+    RefreshAdSet.prototype.elementCanResume = function ()
+    {
+        return 'started' in this && 'stopped' in this && 'currentSequenceItem' in this;
+    };
+
+    /**
+     * Get number of seconds until refresh occurs
+     *
+     * @return number
+     */
+    RefreshAdSet.prototype.elementSecondsUntilNextRefresh = function ()
+    {
+        if ('started' in this)
+        {
+            return (((this.currentSequenceItem.delay * 1000) - ((new Date()).getTime() - this.started)) / 1000) << 0;
+        }
+
+        return -1;
+    };
+
+    /**
+     * Resets refresh queue - ideally for replay
+     */
+    RefreshAdSet.prototype.elementResetSequence = function ()
+    {
+        this.workingSequence = this.refreshSequence.slice(0);
+        delete this.started;
+        delete this.currentSequenceItem;
+    };
+
+    /**
+     * Get remaining number of refreshes allowed
+     *
+     * @return ?number
+     */
+    RefreshAdSet.prototype.elementGetRemainingRefreshes = function ()
+    {
+        return this.workingSequence.length + ('currentSequenceItem' in this ? 1 : 0);
+    };
+
+    /**
+     * Sets the refresh sequence rules
+     *
+     * Expected format:
+     * [{
+     *   'delay': <seconds>,
+     *   'ignoreTabBlur': <boolean>,
+         'tolerance': <0.0 - 1.0>
+     * }, ...]
+     *
+     * @param array sequence
+     */
+    RefreshAdSet.prototype.elementSetQueueSequence = function (sequence)
+    {
+        this.refreshSequence = sequence.slice(0);
+        this.workingSequence = sequence.slice(0);
+    };
+
+    /**
+     * Get the main copy of the refresh sequence
+     */
+    RefreshAdSet.prototype.elementGetQueueSequence = function ()
+    {
+        return this.refreshSequence;
+    };
+
+    /**
+     * Get the current copy of the sequence
+     */
+    RefreshAdSet.prototype.elementGetCurrentSequence = function ()
+    {
+        return this.currentSequenceItem;
+    };
+
+    /**
+     * Get current queue item's blur ignore state
+     *
+     * @return ?boolean
+     */
+    RefreshAdSet.prototype.elementGetIgnoreVisibility = function ()
+    {
+        return this.workingSequence.ignoreTabBlur;
+    };
+
+    /**
+     * Sets up necessary listeners for mostly automated usage
+     */
+    RefreshAdSet.prototype.initEventListeners = function ()
+    {
+        window.RASLog.push([new Date(), 'Listening...']);
+
+        window.addEventListener('onAdsReady', this.startUnitTimers.bind(this));
+        document.addEventListener('visibilitychange', this.handleVisibilityChange.bind(this));
+    };
+
+    /**
+     * Initializes elements - starts timers for refresh if tab is visible, otherwise handleVisibilityChange
+     * does the thing
+     */
+    RefreshAdSet.prototype.startUnitTimers = function ()
+    {
+        for (let unitElementId in window[this.options.globalAdObjectKey])
+        {
+            if (window[this.options.globalAdObjectKey].hasOwnProperty(unitElementId))
+            {
+                this.prepareUnit(unitElementId, window[this.options.globalAdObjectKey][unitElementId]);
+
+                if (window.adRefreshTest)
+                {
+                    this.setObserver(unitElementId);
+                }
+            }
+        }
+
+        if (this.options.autoStart)
+        {
+            this.elements.forEach(function (elm)
+            {
+                elm.setQueueSequence(this.options.intervalQueue);
+
+                if (this.visibilityState)
+                {
+                    elm.start();
+                }
+            }.bind(this));
+        }
+
+        this.adElementSetupDone = true;
+    };
+
+    /**
+     * Deal with tab visibility. Optionally halts the timer on blur and resumes where it left off on focus.
+     */
+    RefreshAdSet.prototype.handleVisibilityChange = function ()
+    {
+        if (!('adElementSetupDone' in this))
+        {
+            return;
+        }
+
+        const notifiedState = document.visibilityState === 'visible';
+
+        window.RASLog.push([new Date(), 'Tab visibility changed', document.visibilityState]);
+
+        this.elements.forEach(function (elm)
+        {
+            if (elm.getIgnoreVisibility())
+            {
+                window.RASLog.push([new Date(), 'Ignoring follow-up to visibility change as requested for id: ' + elm.id]);
+            }
+            else if (notifiedState !== this.visibilityState)
+            {
+                if (document.visibilityState === 'visible')
+                {
+                    if (elm.canResume())
+                    {
+                        window.RASLog.push([new Date(), 'Resuming unit timer for id: ' + elm.id]);
+                        elm.resume();
+                    }
+                    else
+                    {
+                        window.RASLog.push([new Date(), 'Starting unit timer for id: ' + elm.id]);
+                        elm.start();
+                    }
+                }
+                else
+                {
+                    window.RASLog.push([new Date(), 'Halting unit timer for id: ' + elm.id]);
+                    elm.stop();
+                }
+            }
+        }.bind(this));
+
+        this.visibilityState = notifiedState;
+    };
+
+    /**
+     * Runs the jQuery plugin check and refreshes conditionally
+     *
+     * @param string unitId
+     * @param googletag.Slot slot
+     */
+    RefreshAdSet.prototype.evaluateViewportVisibilityAndRefresh = function (unitId, slot)
+    {
+        const $element = $('#' + unitId).isInViewport();
+        const A9Slots = [];
+        const A9UnitSizes = [];
+        let iterator;
+        let GPTSizes;
+
+        window.RASLog.push([new Date(), 'Evaluate check result for Unit ID', $element.length > 0, unitId]);
+
+        if ($element.length > 0)
+        {
+            googletag.cmd.push(function ()
+            {
+                window.RASLog.push([new Date(), 'Setting targeting for refresh to ' + $element[0].refreshTargeting + ' and refreshing Unit ID', unitId]);
+
+                slot.setTargeting('refresh', $element[0].refreshTargeting++);
+
+                // Special A9 handling:
+                if (typeof window.apstag !== 'undefined')
+                {
+                    GPTSizes = slot.getSizes();
+
+                    for (iterator = GPTSizes.length - 1; iterator > -1; iterator--)
+                    {
+                        if (GPTSizes[iterator].getWidth)
+                        {
+                            A9UnitSizes.push([
+                                GPTSizes[iterator].getWidth(),
+                                GPTSizes[iterator].getHeight()
+                            ]);
+                        }
+                    }
+
+                    A9Slots.push({
+                        'slotID': unitId,
+                        'slotName': slot.getAdUnitPath(),
+                        'sizes': A9UnitSizes
+                    });
+
+                    window.apstag.fetchBids({
+                        'slots': A9Slots
+                    }, function ()
+                    {
+                        window.apstag.setDisplayBids();
+
+                        // This should be safe given to be here, ads must have loaded one way or another and fired the proper
+                        // event
+                        if (typeof window.pbjs !== 'undefined' && 'refreshAds' in window.pbjs)
+                        {
+                            window.pbjs.refreshAds([slot.getAdUnitPath()]);
+                        }
+                        else
+                        {
+                            googletag.pubads().refresh([slot]);
+                            optimeraRefresh(unitId);
+                        }
+                    });
+                }
+                else
+                {
+                    googletag.pubads().refresh([slot]);
+                    optimeraRefresh(unitId);
+                }
+            });
+        }
+    };
+
+    RefreshAdSet.prototype.elementGetPercentInView = function ($element)
+    {
+        const elementHeight = $element.height();
+        const scrollTop = $(window).scrollTop();
+        const elementTop = $element.offset().top - scrollTop;
+        const elementBottom = elementTop + elementHeight;
+        const windowHeight = $(window).height();
+
+        if (elementTop >= 0 && elementBottom >= 0 && elementTop <= windowHeight && elementBottom <= windowHeight)
+        {
+            return 100;
+        }
+        else if (elementBottom <= 0 || elementTop >= windowHeight || elementHeight <= 0)
+        {
+            return 0;
+        }
+        else if (elementBottom > windowHeight)
+        {
+            return (windowHeight - elementTop) / elementHeight * 100;
+        }
+
+        return (elementTop + elementHeight) / elementHeight * 100;
+    };
+
+    RefreshAdSet.prototype.setObserver = function (elementId)
+    {
+        const element = document.getElementById(elementId);
+        const observer = new IntersectionObserver(this.refreshOnScrollUp.bind(this), {
+            'threshold': 1.0
+        });
+
+        observer.observe(element);
+    };
+
+    RefreshAdSet.prototype.refreshOnScrollUp = function (entry)
+    {
+        const id = entry[0].target.id;
+        const hasBeenAboveViewPort = this.elementsBeenAboveViewPort.indexOf(id) > -1;
+
+        // Set the timeout on the window
+        window.sdAdRefresh65203Timeout = window.sdAdRefresh65203Timeout || {};
+
+        if (entry[0].boundingClientRect.y >= 0 && entry[0].isIntersecting && entry[0].intersectionRatio === 1 && hasBeenAboveViewPort)
+        {
+            // If it fires again clear the timeout
+            if (window.sdAdRefresh65203Timeout[entry]) {
+                clearTimeout(window.sdAdRefresh65203Timeout[entry]);
+            }
+
+            // Reset the timeout for execution if it's not cleared
+            window.sdAdRefresh65203Timeout[entry] = setTimeout(function ()
+            {
+                const adUnit = entry[0].target;
+                const adUnitHeight = adUnit.offsetHeight;
+                const adUnitWidth = adUnit.offsetWidth;
+                const adUnitBounding = adUnit.getBoundingClientRect();
+
+                // If it's not vertically in the viewport breakout
+                if (adUnitBounding.top < -adUnitHeight) {
+                    return;
+                }
+
+                // If it's not horizontally in the viewport breakout
+                if (adUnitBounding.left < -adUnitWidth) {
+                    return;
+                }
+
+                // Calculate the width and height of the window
+                const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+                const windowHeight = window.innerHeight || document.documentElement.clientHight;
+
+                // If it's no horizontally in the bounds of the window breakout
+                if (adUnitBounding.right > windowWidth + adUnitWidth) {
+                    return;
+                }
+
+                // If it's not vertically in the bounds of the window breakout
+                if (adUnitBounding.bottom > windowHeight + adUnitHeight) {
+                    return;
+                }
+
+                entry[0].target.refresh();
+            }, 1000);
+        }
+
+        if (!hasBeenAboveViewPort && entry[0].boundingClientRect.y < 0)
+        {
+            this.elementsBeenAboveViewPort.push(id);
+        }
+    };
+
+    return RefreshAdSet;
+}));
