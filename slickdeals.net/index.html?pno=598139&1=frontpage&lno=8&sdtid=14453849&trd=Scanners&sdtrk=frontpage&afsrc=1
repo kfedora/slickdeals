@@ -1,0 +1,1346 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Date: Tue, 20 Oct 2020 23:40:43 GMT
+Server: Apache
+Cache-Control: no-cache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: XSRF-TOKEN=4YfTimwuVAkVawJudLjCMpzVXDlPcemfCapXMKmD; expires=Fri, 23-Oct-2020 23:40:43 GMT; Max-Age=259200; path=/
+Set-Cookie: laravel_session=fJEl3MEI3SIYMvNqJr700de9cuBKkQf6Q8EmB2lh; expires=Fri, 23-Oct-2020 23:40:43 GMT; Max-Age=259200; path=/; HttpOnly
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+Via: 1.1 vegur
+
+<!DOCTYPE html>
+  <html class="no-js" lang="en">
+
+<head>
+			<!-- Segment Analtyics -->
+		<script>
+		  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+		  analytics.load("BIs6R95bL0l1gVbS6wNWGOYItiiFkY9e");
+		  analytics.page();
+		  }}();
+		</script>
+		<!-- End Segment Analtyics -->
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-N5VDQ85');</script>
+		<!-- End Google Tag Manager -->
+	
+	
+	
+	<meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-08583c234ea7b9f4cbc",applicationID:"771840878"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+
+				
+	<title>Scanners (1981) | The Criterion Collection</title>
+
+		<meta name="description" content="With Scanners, David Cronenberg plunges us into one of his most terrifying and thrilling sci-fi worlds. After a man with extraordinary—and frighteningly destructive—telepathic abilities is nabbed by agents from a mysterious rogue corporation, he discovers he is far from the only possessor of such strange powers, and that some of the other “scanners” have their minds set on world domination, while others are trying to stop them. A trademark Cronenberg combination of the visceral and the cerebral, this phenomenally gruesome and provocative film about the expanses and limits of the human mind was the Canadian director’s breakout hit in the United States." />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="index, follow" />
+
+	<meta property="fb:app_id" content="121335962047"/>
+<meta property="fb:admins" content="801630"/> 
+<meta property="fb:admins" content="690555828"/> 
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="The Criterion Collection" />
+<meta property="og:title" content="Scanners" />
+<meta property="og:url" content="https://www.criterion.com/films/28043-scanners" />
+<meta property="og:description" content="With Scanners, David Cronenberg plunges us into one of his most terrifying and thrilling sci-fi worlds. After a man with extraordinary—and frighteningly destructive—telepathic abilities is nabbed by agents from a mysterious rogue corporation, he discovers he is far from the only possessor of such strange powers, and that some of the other “scanners” have their minds set on world domination, while others are trying to stop them. A trademark Cronenberg combination of the visceral and the cerebral, this phenomenally gruesome and provocative film about the expanses and limits of the human mind was the Canadian director’s breakout hit in the United States." />
+<meta property="og:image" content="https://s3.amazonaws.com/criterion-production/films/72be64c7e0fe2adc28ae31719d0c4d88/6tMtPzuwVeGlo4qEXwaxq1vZa2eZca_original.jpg" />
+<meta content="https://s3.amazonaws.com/criterion-production/films/72be64c7e0fe2adc28ae31719d0c4d88/6tMtPzuwVeGlo4qEXwaxq1vZa2eZca_original.jpg" property="thumbnail" />
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Criterion">
+<meta name="twitter:creator" content="@Criterion">
+<meta name="twitter:title" content="Scanners">
+<meta name="twitter:description" content="With Scanners, David Cronenberg plunges us into one of his most terrifying and thrilling sci-fi worlds. After a man with extraordinary—and frighteningly destructive—telepathic abilities is nabbed by agents from a mysterious rogue corporation, he discovers he is far from the only possessor of such strange powers, and that some of the other “scanners” have their minds set on world domination, while others are trying to stop them. A trademark Cronenberg combination of the visceral and the cerebral, this phenomenally gruesome and provocative film about the expanses and limits of the human mind was the Canadian director’s breakout hit in the United States.">
+<meta name="twitter:image" content="https://s3.amazonaws.com/criterion-production/films/72be64c7e0fe2adc28ae31719d0c4d88/6tMtPzuwVeGlo4qEXwaxq1vZa2eZca_original.jpg">
+	<meta class="swiftype" name="type" data-type="enum" content="Film" />
+
+    <meta class="swiftype" name="title" data-type="string" content="Scanners" />
+
+    <meta class="swiftype" name="original_title" data-type="string" content="Scanners" />
+
+<meta class="swiftype" name="meta" data-type="string" content="1981, <i>David Cronenberg</i>" />
+
+    <meta class="swiftype" name="director" data-type="string" content="david cronenberg" />
+
+    <meta class="swiftype" name="directors_display" data-type="string" content="David Cronenberg" />
+
+
+    <meta class="swiftype" name="year" data-type="enum" content="1981" />
+
+<meta class="swiftype" name="description" data-type="text" content="With Scanners, David Cronenberg plunges us into one of his most terrifying and thrilling sci-fi worlds. After a man with extraordinary—and frighteningly destructive—telepathic abilities is nabbed by agents from a mysterious rogue corporation, he discovers he is far from the only possessor of such strange powers, and that some of the other “scanners” have their minds set on world domination, while others are trying to stop them. A trademark Cronenberg combination of the visceral and the cerebral, this phenomenally gruesome and provocative film about the expanses and limits of the human mind was the Canadian director’s breakout hit in the United States." />
+
+    <meta class="swiftype" name="image" data-type="enum" content="https://s3.amazonaws.com/criterion-production/films/72be64c7e0fe2adc28ae31719d0c4d88/6tMtPzuwVeGlo4qEXwaxq1vZa2eZca_original.jpg" />
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://www.criterion.com/assets/img/icons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://www.criterion.com/assets/img/icons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://www.criterion.com/assets/img/icons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.criterion.com/assets/img/icons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://www.criterion.com/assets/img/icons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://www.criterion.com/assets/img/icons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://www.criterion.com/assets/img/icons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://www.criterion.com/assets/img/icons/apple-touch-icon-152x152.png" />
+
+<link rel="icon" type="image/png" href="https://www.criterion.com/assets/img/icons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="https://www.criterion.com/assets/img/icons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://www.criterion.com/assets/img/icons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://www.criterion.com/assets/img/icons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="https://www.criterion.com/assets/img/icons/favicon-128.png" sizes="128x128" />
+
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="https://www.criterion.com/assets/img/icons/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="https://www.criterion.com/assets/img/icons/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="https://www.criterion.com/assets/img/icons/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="https://www.criterion.com/assets/img/icons/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="https://www.criterion.com/assets/img/icons/mstile-310x310.png" />
+
+
+<link rel="mask-icon" href="https://www.criterion.com/assets/img/icons/safari-pinned-tab.svg" color="#737373">
+<link rel="shortcut icon" href="https://www.criterion.com/assets/img/icons/favicon-32x32.ico">
+<meta name="theme-color" content="#ffffff">
+
+
+<link rel="manifest" href="https://www.criterion.com/icons/manifest.json">
+<meta name="msapplication-config" content="https://www.criterion.com/icons/browserconfig.xml">
+	<meta name="csrf-token" content="4YfTimwuVAkVawJudLjCMpzVXDlPcemfCapXMKmD">
+	<meta name="google-site-verification" content="rsCUNvTgbggfu8XFDrWon5M--7gbt63PnKP3eICVAqk" />
+
+	<link rel="alternate" type="application/rss+xml" href="https://www.criterion.com/feeds/the-daily" title="The Criterion Collection: On Film / The Daily">
+
+			<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6649734/6554552/css/fonts.css" />
+	
+	<link rel="stylesheet" href="https://www.criterion.com/assets/css/screen.min.css?v=1.31"  type="text/css" />
+
+		<link rel="canonical" href="https://www.criterion.com/films/28043-scanners">
+	
+	<script>var FACEBOOK_APP_ID="121335962047";</script>
+	<script>var CRITERON_LOGGING_ENABLED = false;</script>
+	<script>var CRITERON_DEBUG_LEVEL = "DEBUG";</script>
+
+	
+	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+
+<body class="criterion-collection page__filmdetail flashSale ">
+	<div class="u-mobile-flag" data-mobile-flag></div>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5VDQ85" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<div class="page-contain">
+  <a href="/sale">
+            <div class="flashSale-banner  flashSale-banner--stick   caribbeangreen__bg ">
+                        <span class="flashSale-banner-countdown" data-countdown-banner data-countdown data-ending-on="2020-10-21 16:00:00+00"></span>
+                        <span class="flashSale-banner-label">
+                                    50% OFF IN-STOCK DISCS
+                            </span>
+        </div>
+    </a>
+  <header class="headerSite absolute hideC  " role="banner">
+  <p class="vh">The Criterion Collection</p>
+
+  <div class="headContain">
+    <div class="headLogo">
+        <a href="/" class="homelink">
+            <span class="vh">Home</span>
+            <div class="logo-c">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M7.1 16.8C-1.2 31 3.5 49.3 17.7 57.6c.1 0 .1.1.2.1 6 3.5 13.1 4.8 19.9 3.7l-2.2-13.3c-.8.1-1.5.2-2.3.2-3 0-6-.8-8.6-2.3-7.8-4.5-10.5-14.5-6-22.3 0 0 0-.1.1-.1 4.6-7.8 14.8-10.4 22.6-5.8 3.3 1.9 5.8 4.9 7.1 8.5l12.8-4.6C55.6 6.1 38.3-1.9 22.7 3.9c-6.6 2.4-12 6.9-15.6 12.9"/></svg>
+            </div><!-- logo-c -->
+
+            <div class="logo-type">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 24"><path d="M12.22 17.414H10.8v-6.716H8.25v-1.31h6.512v1.31H12.22zm9.45-3.383v3.383h1.41V9.387h-1.41v3.337h-3.832V9.387h-1.405v8.026h1.405V14.03zm9.175-4.643h-5.948v8.027h6.006v-1.26h-4.595v-2.155h4.022v-1.264h-4.022v-2.088h4.537zm12.128 8.163a4.146 4.146 0 0 0 3.257-1.42l-.906-.92a3.13 3.13 0 0 1-2.303 1.045 2.714 2.714 0 0 1-2.648-2.863 2.695 2.695 0 0 1 2.65-2.845 3.194 3.194 0 0 1 2.244.998l.91-1.043a4.19 4.19 0 0 0-3.147-1.252 4.065 4.065 0 0 0-4.138 4.164 4.035 4.035 0 0 0 4.08 4.136m8.3-6.876c1.044 0 1.666.458 1.666 1.343 0 .824-.644 1.348-1.652 1.348h-2.063v-2.69h2.05m3.353 6.74l-2.172-3.038a2.404 2.404 0 0 0 1.917-2.44c0-1.573-1.134-2.55-2.98-2.55h-3.58v8.027h1.413v-2.797h1.766l1.97 2.797zm3.056 0V9.386h-1.41v8.027zm5.527-6.717h2.543v-1.31H59.24v1.31h2.55v6.716h1.42zm10.018-1.31h-5.954v8.026h6.012v-1.26h-4.6v-2.155h4.023v-1.264h-4.024v-2.088h4.542zm5.32 1.286c1.04 0 1.662.458 1.662 1.343 0 .824-.643 1.348-1.652 1.348h-2.063v-2.69h2.052m3.347 6.74l-2.167-3.038a2.404 2.404 0 0 0 1.91-2.44c0-1.573-1.13-2.55-2.975-2.55h-3.58v8.027h1.413v-2.797h1.762l1.975 2.797zm3.115 0V9.386H83.6v8.027zm5.8-6.868a2.754 2.754 0 0 1 2.73 2.867 2.715 2.715 0 0 1-2.71 2.84 2.752 2.752 0 0 1-2.724-2.862 2.715 2.715 0 0 1 2.705-2.845m0 7.003a4.15 4.15 0 1 0-4.18-4.136 4.11 4.11 0 0 0 4.18 4.136m11.112-2.612l-4.3-5.55h-1.308v8.025h1.39v-5.71l4.425 5.71h1.182V9.387h-1.39zm14.586 2.612a4.14 4.14 0 0 0 3.254-1.42l-.905-.92a3.137 3.137 0 0 1-2.306 1.045 2.718 2.718 0 0 1-2.65-2.863 2.7 2.7 0 0 1 2.65-2.845 3.184 3.184 0 0 1 2.25.998l.904-1.043a4.173 4.173 0 0 0-3.138-1.252 4.066 4.066 0 0 0-4.143 4.164 4.04 4.04 0 0 0 4.085 4.136m8.423-7.003a2.75 2.75 0 0 1 2.73 2.867 2.712 2.712 0 0 1-2.705 2.84 2.752 2.752 0 0 1-2.728-2.862 2.716 2.716 0 0 1 2.704-2.845m0 7.003a4.15 4.15 0 1 0-4.183-4.136 4.11 4.11 0 0 0 4.184 4.136m5.582-.137h5.632V16.13h-4.22V9.387h-1.412zm7.144 0h5.627V16.13h-4.222V9.387h-1.404zm13.085-8.026h-5.948v8.027h6.007v-1.26h-4.597v-2.155h4.022v-1.264h-4.022v-2.088h4.538zm5.468 8.163a4.145 4.145 0 0 0 3.255-1.42l-.906-.92a3.133 3.133 0 0 1-2.303 1.045 2.715 2.715 0 0 1-2.645-2.863 2.695 2.695 0 0 1 2.644-2.845 3.177 3.177 0 0 1 2.245.998l.91-1.043a4.187 4.187 0 0 0-3.142-1.252 4.066 4.066 0 0 0-4.142 4.164 4.037 4.037 0 0 0 4.082 4.136m8.434-6.852h2.55v-1.31h-6.512v1.31h2.544v6.716h1.418zm5.52 6.716V9.387h-1.413v8.027zm5.854-6.867a2.754 2.754 0 0 1 2.73 2.867 2.71 2.71 0 0 1-2.705 2.84 2.755 2.755 0 0 1-2.73-2.862 2.716 2.716 0 0 1 2.706-2.845m0 7.003a4.15 4.15 0 1 0-4.18-4.136 4.11 4.11 0 0 0 4.18 4.136m11.307-2.612l-4.298-5.55h-1.31v8.025h1.39v-5.71l4.425 5.71h1.183V9.387h-1.39z" /></svg>
+            </div><!-- logo-type -->
+        </a>
+    </div>
+        <div class="headControls">
+        <a class="headControls__icons but-search" href="/" data-sidebar-toggle="search">
+        <span class="vh">Search</span>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><rect id="a" width="24" height="24"/></defs><g fill="none" fill-rule="evenodd"><path d="M18,9 C18,5.13428475 14.8657153,2 11,2 C7.13428475,2 4,5.13428475 4,9 C4,12.8657153 7.13428475,16 11,16 C14.8657153,16 18,12.8657153 18,9 Z M20,9 C20,13.9702847 15.9702847,18 11,18 C6.02971525,18 2,13.9702847 2,9 C2,4.02971525 6.02971525,0 11,0 C15.9702847,0 20,4.02971525 20,9 Z" fill="#252525" fill-rule="nonzero" /><path d="M15.1484325,15.9124888 C14.8084522,15.4772511 14.8856735,14.8488128 15.3209112,14.5088325 C15.7561489,14.1688522 16.3845872,14.2460735 16.7245675,14.6813112 L22.5635675,22.1563112 C22.9035478,22.5915489 22.8263265,23.2199872 22.3910888,23.5599675 C21.9558511,23.8999478 21.3274128,23.8227265 20.9874325,23.3874888 L15.1484325,15.9124888 Z" fill="#252525" fill-rule="nonzero" /></g></svg>
+        </a><!-- but-search -->
+
+        <a class="headControls__icons but-cart is-status-off" href="/">
+        <span class="vh">Cart</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><defs><path id="a" d="M0 24h24V0H0z"/></defs><g fill="none" fill-rule="evenodd"><path fill="#FFF" d="M7.5 21a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm11 0a1.5 1.5 0 110 3.001 1.5 1.5 0 010-3.001zM4 .002a1 1 0 01.987.835L5.679 5H23a1 1 0 01.977 1.217l-2 9A1 1 0 0121 16H7.514l.332 2H20v2H7a1 1 0 01-.987-.835L3.153 2.002H1a1 1 0 110-2zM21.753 7H6.013l1.167 7h13.018l1.555-7z"/></g></svg>
+        <span class="statusnat"></span>
+        </a><!-- but-cart -->
+
+        <div class="nav-dropdown" data-nav-dropdown-container>
+        <a data-nav-dropdown-toggle class="headControls__icons but-account" href="/" aria-expanded="false" aria-haspopup="true">
+            <span class="vh">Account</span>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><polygon id="a" points="0 24.0002 24 24.0002 24 0.0002 0 0.0002"/></defs><g fill="none" fill-rule="evenodd"><g fill="#252525" fill-rule="nonzero"><path d="M14,4.5 C14,2.56704297 12.4331735,1 10.5,1 C8.56682649,1 7,2.56704297 7,4.5 C7,6.43295703 8.56682649,8 10.5,8 C12.4331735,8 14,6.43295703 14,4.5 Z M16,4.5 C16,7.53746469 13.5378049,10 10.5,10 C7.46219514,10 5,7.53746469 5,4.5 C5,1.46253531 7.46219514,-1 10.5,-1 C13.5378049,-1 16,1.46253531 16,4.5 Z" transform="translate(2 1.011)"/><path d="M1,21 C1,21.5522847 0.55228475,22 0,22 C-0.55228475,22 -1,21.5522847 -1,21 L-1,19.399 C-1,14.8335963 4.41085344,12 10,12 C15.5891466,12 21,14.8335963 21,19.399 L21,21 C21,21.5522847 20.5522847,22 20,22 C19.4477153,22 19,21.5522847 19,21 L19,19.399 C19,16.2885287 14.6299727,14 10,14 C5.37002733,14 1,16.2885287 1,19.399 L1,21 Z" transform="translate(2 1.011)"/></g></g></svg>
+        </a><!-- but-account -->
+
+        <div class="global-nav__subgroup-panel panel panel--expanded" data-nav-dropdown>
+	<a href="https://www.criterion.com/account" data-click-tracking='{ "category": "Panel", "action": "click", "label": "Dashboard" }' class="global-nav__item global-nav__item--header global-nav__item--header-dropdown">My Criterion</a>
+
+	<ul role="menu" class="global-nav__subgroup-items">
+		<li class="global-nav__subgroup-item">
+			<a class="global-nav__subgroup-link" href="https://www.criterion.com/account" data-click-tracking='{ "category": "Panel", "action": "click", "label": "Dashboard" }'>Dashboard</a>
+		</li>
+		<li class="global-nav__subgroup-item">
+			<a class="global-nav__subgroup-link" href="https://www.criterion.com/account/orders" data-click-tracking='{ "category": "Panel", "action": "click", "label": "Orders" }'>Orders</a>
+		</li>
+		<li class="global-nav__subgroup-item">
+			<a class="global-nav__subgroup-link" href="https://www.criterion.com/account/wishlist" data-click-tracking='{ "category": "Panel", "action": "click", "label": "Wishlist" }'>Wish List</a>
+		</li>
+		<li class="global-nav__subgroup-item">
+			<a class="global-nav__subgroup-link" href="https://www.criterion.com/account/my-collection" data-click-tracking='{ "category": "Panel", "action": "click", "label": "My Collection" }'>My Collection</a>
+		</li>
+		<li class="global-nav__subgroup-item">
+
+						<a class="global-nav__subgroup-link" href="https://www.criterion.com/login">Log In</a>
+					</li>
+	</ul>
+</div>
+
+        </div>
+
+        <a class="headControls__icons but-mobi" href="/" data-sidebar-toggle="nav">
+        <span class="vh">Menu</span>
+        <svg class="burger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 11h24v2H0zM0 3h24v2H0zM0 19h24v2H0z"/></svg>
+        </a><!-- but-mobi -->
+
+        <a class="headControls__icons but-close" href="/" data-sidebar-toggle="close">
+        <span class="vh">Close Menu</span>
+        <svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="11" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9704 12.0004)" width="2" height="24"/><rect x="0" y="11" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9704 12.0004)" width="24" height="2"/></svg>
+        </a>
+    </div><!-- headControls -->
+  </div><!-- headContain -->
+</header>
+  
+
+<main role="main">
+  <article class="product__details" itemscope itemtype="http://schema.org/Movie" data-sticky-columns>
+    <div class="content-container product-primary-content-container">
+
+      <div class="content-left">
+        <div class="left" data-sticky-column-left>
+
+          <div class="content" data-sticky-left-content-end>
+            <div class="product__details_contain_a" data-segment-analtyics-tracking data-product-id="1057" data-product-sku="" data-product-name="Scanners" data-product-image-url="https://s3.amazonaws.com/criterion-production/films/72be64c7e0fe2adc28ae31719d0c4d88/6tMtPzuwVeGlo4qEXwaxq1vZa2eZca_large.jpg">
+              <header class="product-detail-header">
+  <div class="product-detail-title">
+    <p class="header_lvl2 tussock"><a href="/shop/browse?director=cronenberg-david">David Cronenberg</a></p>
+    <h1 class="header__primarytitle" itemprop="name">Scanners</h1>
+  </div>
+</header>
+              <div class="product-box-art">
+	<img src="https://s3.amazonaws.com/criterion-production/films/72be64c7e0fe2adc28ae31719d0c4d88/6tMtPzuwVeGlo4qEXwaxq1vZa2eZca_large.jpg" alt="Scanners" itemprop="image" />      
+</div>              <div class="product-summary" itemprop="description">
+        <p>With <i>Scanners,</i> David Cronenberg plunges us into one of his most terrifying and thrilling sci-fi worlds. After a man with extraordinary—and frighteningly destructive—telepathic abilities is nabbed by agents from a mysterious rogue corporation, he discovers he is far from the only possessor of such strange powers, and that some of the other “scanners” have their minds set on world domination, while others are trying to stop them. A trademark Cronenberg combination of the visceral and the cerebral, this phenomenally gruesome and provocative film about the expanses and limits of the human mind was the Canadian director’s breakout hit in the United States.</p>
+    </div>
+              <div class="sharetools ">
+	<p class="header_lvl2 quillgray">Share</p>
+	<ul class="shareList " data-share-link="https://www.criterion.com/films/28043-scanners">
+
+	<li>
+		<a href="#" data-share-type="facebook" data-click-tracking='{ "category": "Share", "action": "Facebook", "label": "Share Button" }' title="Share on Facebook">
+			<svg width="8" height="16" viewBox="0 0 8 16" role="img" aria-labelledby="share_fb">
+				<title id="share_fb">Share on Facebook</title>
+				<path d="M4.964 16V8h2.21l.292-2.758H4.964l.004-1.38c0-.72.068-1.105 1.1-1.105H7.45V0H5.24C2.59 0 1.655 1.338 1.655 3.587v1.655H0V8h1.654v8h3.31z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="#" data-share-type="twitter" data-click-tracking='{ "category": "Share", "action": "Twitter", "label": "Share Button" }' title="Share on Twitter">
+			<svg width="16" height="14" viewBox="0 0 16 14" role="img" aria-labelledby="share_tw">
+				<title id="share_tw">Share on Twitter</title>
+				<path d="M7.77 4.295l.034.572-.578-.07c-2.105-.27-3.943-1.18-5.503-2.708L.96 1.33l-.197.56C.347 3.14.613 4.46 1.48 5.346c.462.49.358.56-.44.27-.277-.094-.52-.164-.543-.13-.08.082.197 1.144.416 1.565.3.583.914 1.155 1.584 1.493l.567.27-.67.01c-.648 0-.67.012-.602.257.23.76 1.144 1.564 2.162 1.914l.717.246-.624.373c-.925.537-2.01.84-3.098.864-.52.01-.948.058-.948.093 0 .117 1.41.77 2.23 1.027 2.464.76 5.39.432 7.585-.863 1.56-.923 3.122-2.755 3.85-4.53.393-.944.786-2.672.786-3.5 0-.537.036-.607.683-1.25.382-.373.74-.78.81-.898.115-.222.104-.222-.486-.023-.983.35-1.122.303-.636-.222.36-.373.787-1.05.787-1.248 0-.035-.173.023-.37.128-.208.117-.67.292-1.017.397l-.624.2-.567-.386c-.313-.21-.752-.443-.984-.513-.59-.163-1.49-.14-2.023.047-1.445.525-2.358 1.88-2.254 3.36z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="#" data-share-type="google" data-click-tracking='{ "category": "Share", "action": "Google", "label": "Share Button" }' title="Share on Google+">
+			<svg width="22" height="15" viewBox="0 0 22 15" role="img" aria-labelledby="share_gp">
+				<title id="share_gp">Share on Google+</title>
+				<path d="M17.984 6.766H15.99V8.75h1.994v2.012h2.014v-2.01h1.994V6.765h-1.994V4.76h-2.014v2.006zM.02 7.413C.08 3.815 3.386.663 6.984.783c1.724-.08 3.345.67 4.666 1.725-.563.64-1.146 1.257-1.77 1.834-1.587-1.097-3.845-1.41-5.433-.144-2.27 1.57-2.374 5.28-.19 6.97 2.125 1.928 6.14.97 6.727-1.98-1.33-.02-2.665 0-3.995-.044-.005-.793-.008-1.587-.005-2.38 2.225-.008 4.45-.01 6.677.006.133 1.867-.114 3.855-1.26 5.4-1.738 2.443-5.227 3.157-7.948 2.11C1.724 13.24-.212 10.355.02 7.413z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="#" data-share-type="tumblr" data-click-tracking='{ "category": "Share", "action": "Tumblr", "label": "Share Button" }' title="Share on Tumblr">
+			<svg width="10" height="17" viewBox="0 0 10 17" role="img" aria-labelledby="share_tm">
+				<title id="share_tm">Share on Tumblr</title>
+				<path d="M0 7.383h1.493v4.472c.118 3.656 2.13 4.42 4.478 4.67 1.366-.067 3.038-.572 3.883-1.242V12.75c-1.088 1.054-4.005 2.088-4.53-.895l-.048-4.522 4.578.05v-3.03H5.275l.1-3.828-1.842.05C3.66 3.84 1.923 4.275 0 4.4v2.983z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+
+		</a>
+	</li>
+	<li>
+		<a href="#" data-share-type="email" data-click-tracking='{ "category": "Share", "action": "Email", "label": "Share Button" }' title="Share via email">
+			<svg width="18" height="14" viewBox="0 0 18 14" role="img" aria-labelledby="share_em">
+				<title id="share_em">Mail Icon</title>
+				<path d="M18 12.293c0 .66-.54 1.21-1.142 1.21H1.142c-.602 0-1.142-.55-1.142-1.21V1.557C0 .92.498.39 1.1.37l.02-.067h15.717l.02.066h.27-.27C17.482.37 18 .896 18 1.556v10.736zm-1.39-1.716V3.23L12.06 6.902l4.547 3.674zm0-8.8H1.39C3.925 3.8 6.458 5.825 8.99 7.87c2.532-2.045 5.065-4.07 7.62-6.093zm0 10.252l-5.482-4.38-1.453 1.19h-1.39L6.85 7.672 1.39 12.03h15.22zM5.916 6.902L1.39 3.23v7.347l4.527-3.674z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="#" data-share-type="clipboard" data-click-tracking='{ "category": "Share", "action": "Copy Link", "label": "Share Button" }' title="Copy a Link">
+			<svg width="16" height="17" viewBox="0 0 16 17" role="img" aria-labelledby="share_ln">
+				<title id="share_ln">Copy Link</title>
+				<path d="M11.065 7.295c-.2-.447-.478-.868-.844-1.234s-.787-.645-1.234-.844l-.554.554-.384.384-.4.4c-.074.074-.137.154-.192.238.53.035 1.026.25 1.405.628.39.39.594.89.627 1.402.02.284-.016.568-.107.84-.1.304-.263.59-.5.833-.007.007-.012.016-.018.023l-.454.453-.63.63-.586.588-1.53 1.53c-.414.413-.963.64-1.55.64-.584 0-1.135-.227-1.548-.64-.414-.414-.642-.965-.642-1.55 0-.585.228-1.136.642-1.55l1.532-1.532c-.088-.27-.15-.55-.19-.83-.027-.21-.047-.42-.048-.63-.003-.388.045-.776.135-1.155l-2.79 2.79c-1.604 1.606-1.604 4.21 0 5.816.804.803 1.857 1.205 2.91 1.205 1.052 0 2.105-.4 2.908-1.204l2.785-2.784.415-.414c.237-.238.435-.5.602-.774.263-.43.442-.898.53-1.38.047-.247.072-.498.072-.75 0-.307-.037-.613-.105-.914-.06-.26-.144-.517-.255-.765zm3.73-5.81C13.994.683 12.94.28 11.89.28c-1.053 0-2.106.403-2.91 1.206L6.196 4.27l-.415.415c-.237.237-.435.5-.602.773-.263.43-.442.898-.532 1.38-.046.248-.07.5-.07.75 0 .307.037.613.105.914.06.26.145.517.255.765.2.447.478.868.845 1.234.367.368.787.647 1.234.846l.554-.553.385-.385.4-.4c.073-.073.136-.153.19-.238-.53-.035-1.025-.248-1.404-.628-.392-.39-.594-.893-.628-1.405-.018-.283.017-.565.108-.837.1-.304.263-.59.5-.833.007-.007.012-.016.02-.023l.452-.453.63-.63.587-.586 1.528-1.53c.414-.413.964-.64 1.55-.64.585 0 1.135.227 1.548.64.855.855.855 2.245 0 3.1l-1.532 1.532c.088.272.15.55.19.83.028.21.047.42.048.63.003.388-.045.776-.135 1.155l2.79-2.788c1.604-1.606 1.604-4.21 0-5.817z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+		</a>
+	</li>
+</ul>
+</div>
+
+              <section class="film-meta">
+
+                <h4 class="header_lvl2 quillgray">Film Info</h4>
+
+                <ul class="film-meta-list">
+                  <li itemprop="director" itemscope itemtype="http://schema.org/Person"><b itemprop="name" class="tussock"><a href="/shop/browse?director=cronenberg-david">David Cronenberg</a></b></li>
+                  <li itemprop="countryOfOrigin" itemscope itemtype="http://schema.org/Country">
+                    <span itemprop="name">
+                                              Canada                                          </span>
+                  </li>
+                                    <li><meta itemprop="datePublished" content="1955">1981</li>
+                                    <li><meta itemprop="duration" content="T117M0S">103 minutes</li>
+                                    <li>Color</li>
+                                    <li>1.78:1</li>
+
+                  <li itemprop="inLanguage" itemscope itemtype="http://schema.org/Language">
+                    <span itemprop="name">
+                                          English                                        </span>
+                  </li>
+
+                  
+                  <li><b>Spine #712</b></li>
+
+                                  </ul>
+
+              </section>
+
+                              <section class="product-features collapse" data-sticky-left-end data-sticky-left-content-end>
+
+                  <input type="checkbox"class="collapse-check" id="features-check">
+                  <label for="features-check" class="collapse-trig">Special Features</label>
+
+                  <div class="collapse-contain">
+                    <h4 class="header_lvl2 hideSmall">
+                                          Director-Approved Special Edition Features
+                                        </h4>
+                    <div class="product-features-list">
+                      <ul><li>New, restored 2K digital film transfer, supervised by director David Cronenberg, with uncompressed monaural soundtrack on the Blu-ray </li>
+<li><i>The “Scanners” Way,</i> a new documentary by Michael Lennick on the film’s special effects, featuring interviews with Cronenberg’s collaborators</li>
+<li><i>Mental Saboteur,</i> a new interview with actor Michael Ironside</li>
+<li><i>The Ephemerol Diaries,</i> a 2012 interview with actor and artist Stephen Lack</li>
+<li>Excerpt from a 1981 interview with Cronenberg on the CBC’s <i>The Bob McLean Show</i></li>
+<li>New, restored 2K digital transfer of <i>Stereo</i> (1969), Cronenberg’s first feature film</li>
+<li>Trailer and radio spots</li><li>English subtitles for the deaf and hard of hearing</li><li>PLUS: An essay by critic Kim Newman </li></ul><p><em>New cover by Connor Willumsen</em></p>
+                    </div>
+                  </div><!-- collapse-contain -->
+
+                </section>
+              
+            </div>
+          </div>
+        </div><!-- product__details_contain_a -->
+
+        <div class="right" data-sticky-column-right>
+          <div class="content" data-sticky-right-content-end>
+            <div class="product__details_contain_b">
+
+                              <section class="purchase-options" data-purchase-options>
+        <h4 class="header_lvl2" >Purchase Options</h4>
+            <p data-inventory-status></p>
+    
+    <form action="#">
+
+                    <fieldset class="purchase-buttons">
+
+                            <div class="purchase-option">
+                    <input id="radio_1717" name="purchase-option" type="radio" class="radio" value="2822" data-film-id="1057" data-release-id=1717  checked  data-inventory='{&quot;status&quot;:&quot;in-stock&quot;,&quot;available&quot;:&quot;Ships within 3 business days&quot;,&quot;ship_date&quot;:&quot;Oct 20, 2020&quot;,&quot;button_text&quot;:&quot;Add to Cart&quot;}' data-inventory-status-updater='{ "event": "click", "target" : "[data-inventory-status]" }'   data-collection-info>
+                    <label for="radio_1717" class="">
+
+                        <span class="meta-item">
+                            <span class="item">Blu-Ray</span>
+
+                                <span class="item-descrip">1 Disc</span>
+                        </span>
+
+                        <span class="meta-prices">
+                            <span class="item-price">
+                                                                    $19.97
+                                                            </span>
+
+                            <span class="item-price-srp">
+                                <abbr class="strike" title="Suggested Retail Price">SRP:</abbr>
+                                <span class="strike">$39.95</span>
+                            </span>
+                        </span>
+
+                    </label>
+
+                </div>
+                            <div class="purchase-option">
+                    <input id="radio_1167" name="purchase-option" type="radio" class="radio" value="2231" data-film-id="1057" data-release-id=1167  data-inventory='{&quot;status&quot;:&quot;out-of-stock&quot;,&quot;available&quot;:&quot;On back-order&quot;,&quot;ship_date&quot;:&quot;Nov 11, 2020&quot;,&quot;button_text&quot;:&quot;Back-Order&quot;}' data-inventory-status-updater='{ "event": "click", "target" : "[data-inventory-status]" }'  disabled   data-collection-info>
+                    <label for="radio_1167" class=" sold-out ">
+
+                        <span class="meta-item">
+                            <span class="item">DVD</span>
+
+                                <span class="item-descrip">2 Discs</span>
+                        </span>
+
+                        <span class="meta-prices">
+                            <span class="item-price">
+                                                                    Currently Unavailable
+                                                            </span>
+
+                            <span class="item-price-srp">
+                                <abbr class="strike" title="Suggested Retail Price">SRP:</abbr>
+                                <span class="strike">$29.95</span>
+                            </span>
+                        </span>
+
+                    </label>
+
+                </div>
+            
+            </fieldset>
+        
+        <fieldset class="purchase-behaviors">
+                            <button type="button" class="button__primary"  data-add-to-cart-submit  data-add-to-cart-selector=".purchase-option input[data-film-id='1057']:checked"  >
+                                    Add To Cart
+                                </button>
+            
+                                                <button type="button" class="button__secondary" data-add-to-wishlist-submit  data-add-to-wishlist-selector=".purchase-option input[type=radio]:checked"  >Add To Wishlist</button>
+                            
+        </fieldset>
+
+    </form>
+
+</section>
+              
+              
+              <div class="share-deux">
+	<ul class="shareList " data-share-link="https://www.criterion.com/films/28043-scanners">
+
+	<li>
+		<a href="#" data-share-type="facebook" data-click-tracking='{ "category": "Share", "action": "Facebook", "label": "Share Button" }' title="Share on Facebook">
+			<svg width="8" height="16" viewBox="0 0 8 16" role="img" aria-labelledby="share_fb">
+				<title id="share_fb">Share on Facebook</title>
+				<path d="M4.964 16V8h2.21l.292-2.758H4.964l.004-1.38c0-.72.068-1.105 1.1-1.105H7.45V0H5.24C2.59 0 1.655 1.338 1.655 3.587v1.655H0V8h1.654v8h3.31z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="#" data-share-type="twitter" data-click-tracking='{ "category": "Share", "action": "Twitter", "label": "Share Button" }' title="Share on Twitter">
+			<svg width="16" height="14" viewBox="0 0 16 14" role="img" aria-labelledby="share_tw">
+				<title id="share_tw">Share on Twitter</title>
+				<path d="M7.77 4.295l.034.572-.578-.07c-2.105-.27-3.943-1.18-5.503-2.708L.96 1.33l-.197.56C.347 3.14.613 4.46 1.48 5.346c.462.49.358.56-.44.27-.277-.094-.52-.164-.543-.13-.08.082.197 1.144.416 1.565.3.583.914 1.155 1.584 1.493l.567.27-.67.01c-.648 0-.67.012-.602.257.23.76 1.144 1.564 2.162 1.914l.717.246-.624.373c-.925.537-2.01.84-3.098.864-.52.01-.948.058-.948.093 0 .117 1.41.77 2.23 1.027 2.464.76 5.39.432 7.585-.863 1.56-.923 3.122-2.755 3.85-4.53.393-.944.786-2.672.786-3.5 0-.537.036-.607.683-1.25.382-.373.74-.78.81-.898.115-.222.104-.222-.486-.023-.983.35-1.122.303-.636-.222.36-.373.787-1.05.787-1.248 0-.035-.173.023-.37.128-.208.117-.67.292-1.017.397l-.624.2-.567-.386c-.313-.21-.752-.443-.984-.513-.59-.163-1.49-.14-2.023.047-1.445.525-2.358 1.88-2.254 3.36z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="#" data-share-type="google" data-click-tracking='{ "category": "Share", "action": "Google", "label": "Share Button" }' title="Share on Google+">
+			<svg width="22" height="15" viewBox="0 0 22 15" role="img" aria-labelledby="share_gp">
+				<title id="share_gp">Share on Google+</title>
+				<path d="M17.984 6.766H15.99V8.75h1.994v2.012h2.014v-2.01h1.994V6.765h-1.994V4.76h-2.014v2.006zM.02 7.413C.08 3.815 3.386.663 6.984.783c1.724-.08 3.345.67 4.666 1.725-.563.64-1.146 1.257-1.77 1.834-1.587-1.097-3.845-1.41-5.433-.144-2.27 1.57-2.374 5.28-.19 6.97 2.125 1.928 6.14.97 6.727-1.98-1.33-.02-2.665 0-3.995-.044-.005-.793-.008-1.587-.005-2.38 2.225-.008 4.45-.01 6.677.006.133 1.867-.114 3.855-1.26 5.4-1.738 2.443-5.227 3.157-7.948 2.11C1.724 13.24-.212 10.355.02 7.413z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="#" data-share-type="tumblr" data-click-tracking='{ "category": "Share", "action": "Tumblr", "label": "Share Button" }' title="Share on Tumblr">
+			<svg width="10" height="17" viewBox="0 0 10 17" role="img" aria-labelledby="share_tm">
+				<title id="share_tm">Share on Tumblr</title>
+				<path d="M0 7.383h1.493v4.472c.118 3.656 2.13 4.42 4.478 4.67 1.366-.067 3.038-.572 3.883-1.242V12.75c-1.088 1.054-4.005 2.088-4.53-.895l-.048-4.522 4.578.05v-3.03H5.275l.1-3.828-1.842.05C3.66 3.84 1.923 4.275 0 4.4v2.983z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+
+		</a>
+	</li>
+	<li>
+		<a href="#" data-share-type="email" data-click-tracking='{ "category": "Share", "action": "Email", "label": "Share Button" }' title="Share via email">
+			<svg width="18" height="14" viewBox="0 0 18 14" role="img" aria-labelledby="share_em">
+				<title id="share_em">Mail Icon</title>
+				<path d="M18 12.293c0 .66-.54 1.21-1.142 1.21H1.142c-.602 0-1.142-.55-1.142-1.21V1.557C0 .92.498.39 1.1.37l.02-.067h15.717l.02.066h.27-.27C17.482.37 18 .896 18 1.556v10.736zm-1.39-1.716V3.23L12.06 6.902l4.547 3.674zm0-8.8H1.39C3.925 3.8 6.458 5.825 8.99 7.87c2.532-2.045 5.065-4.07 7.62-6.093zm0 10.252l-5.482-4.38-1.453 1.19h-1.39L6.85 7.672 1.39 12.03h15.22zM5.916 6.902L1.39 3.23v7.347l4.527-3.674z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+		</a>
+	</li>
+	<li>
+		<a href="#" data-share-type="clipboard" data-click-tracking='{ "category": "Share", "action": "Copy Link", "label": "Share Button" }' title="Copy a Link">
+			<svg width="16" height="17" viewBox="0 0 16 17" role="img" aria-labelledby="share_ln">
+				<title id="share_ln">Copy Link</title>
+				<path d="M11.065 7.295c-.2-.447-.478-.868-.844-1.234s-.787-.645-1.234-.844l-.554.554-.384.384-.4.4c-.074.074-.137.154-.192.238.53.035 1.026.25 1.405.628.39.39.594.89.627 1.402.02.284-.016.568-.107.84-.1.304-.263.59-.5.833-.007.007-.012.016-.018.023l-.454.453-.63.63-.586.588-1.53 1.53c-.414.413-.963.64-1.55.64-.584 0-1.135-.227-1.548-.64-.414-.414-.642-.965-.642-1.55 0-.585.228-1.136.642-1.55l1.532-1.532c-.088-.27-.15-.55-.19-.83-.027-.21-.047-.42-.048-.63-.003-.388.045-.776.135-1.155l-2.79 2.79c-1.604 1.606-1.604 4.21 0 5.816.804.803 1.857 1.205 2.91 1.205 1.052 0 2.105-.4 2.908-1.204l2.785-2.784.415-.414c.237-.238.435-.5.602-.774.263-.43.442-.898.53-1.38.047-.247.072-.498.072-.75 0-.307-.037-.613-.105-.914-.06-.26-.144-.517-.255-.765zm3.73-5.81C13.994.683 12.94.28 11.89.28c-1.053 0-2.106.403-2.91 1.206L6.196 4.27l-.415.415c-.237.237-.435.5-.602.773-.263.43-.442.898-.532 1.38-.046.248-.07.5-.07.75 0 .307.037.613.105.914.06.26.145.517.255.765.2.447.478.868.845 1.234.367.368.787.647 1.234.846l.554-.553.385-.385.4-.4c.073-.073.136-.153.19-.238-.53-.035-1.025-.248-1.404-.628-.392-.39-.594-.893-.628-1.405-.018-.283.017-.565.108-.837.1-.304.263-.59.5-.833.007-.007.012-.016.02-.023l.452-.453.63-.63.587-.586 1.528-1.53c.414-.413.964-.64 1.55-.64.585 0 1.135.227 1.548.64.855.855.855 2.245 0 3.1l-1.532 1.532c.088.272.15.55.19.83.028.21.047.42.048.63.003.388-.045.776-.135 1.155l2.79-2.788c1.604-1.606 1.604-4.21 0-5.817z" fill="#b4841e" fill-rule="evenodd"/>
+			</svg>
+		</a>
+	</li>
+</ul>
+</div>    
+
+              
+              <aside class="film-streaming collapse full streaming-services-count-4" data-sticky-right-end>
+               
+                                       
+                      <div class="collapse-contain" data-sticky-right-content-end>
+                        <h4 class="header_lvl2">Digital Options</h4>
+                        <div class="watchBut_contain">
+                                                      <a href="https://www.criterionchannel.com/scanners" class="film-streaming__channel-link" target="_blank">
+                              <span class="film-streaming__channel-link-text">Watch Now On </span>
+                              <img class="film-streaming__channel-logo" src="/assets/img/svg/criterion-channel-logo-white.svg" alt="Criterion Channel Logo">
+                            </a>
+                                                                                                                                                                                                                        <a class="watchBut half" href="http://itunes.apple.com/us/movie/id591259470?at=10layR" data-click-tracking='{ "category": "Watch", "action": "iTunes", "label": "Scanners (28043)" }' target="_blank">
+                              <div>
+                                <img src="https://www.criterion.com/assets/img/svg/itunesGet.svg" alt="Watch Now on iTunes" width="110" />
+                              </div>
+                            </a>
+                                                                                                            
+                                                                                                                                        <a class="watchBut half" href="https://www.amazon.com/dp/B00DYQJBNO" data-click-tracking='{ "category": "Watch", "action": "Amazon", "label": "Scanners (28043)" }' target="_blank">
+                              <div>
+                                <img src="https://www.criterion.com/assets/img/svg/amazonGet.svg" alt="Watch Now on Amazon" width="110" />
+                              </div>
+                            </a>
+                                                                                                                                                                                          </div>
+                      </div><!-- collapse-contain -->
+                                            
+              </aside>
+
+                              <section class="product-features collapse">
+
+                  <input type="checkbox" class="collapse-check" id="features-b-check">
+                  <label for="features-b-check" class="collapse-trig">Special Features</label>
+
+                  <div class="collapse-contain">
+                    <h4 class="header_lvl2 hideSmall">Special Features</h4>
+                    <div class="product-features-list">
+                      <ul><li>New, restored 2K digital film transfer, supervised by director David Cronenberg, with uncompressed monaural soundtrack on the Blu-ray </li>
+<li><i>The “Scanners” Way,</i> a new documentary by Michael Lennick on the film’s special effects, featuring interviews with Cronenberg’s collaborators</li>
+<li><i>Mental Saboteur,</i> a new interview with actor Michael Ironside</li>
+<li><i>The Ephemerol Diaries,</i> a 2012 interview with actor and artist Stephen Lack</li>
+<li>Excerpt from a 1981 interview with Cronenberg on the CBC’s <i>The Bob McLean Show</i></li>
+<li>New, restored 2K digital transfer of <i>Stereo</i> (1969), Cronenberg’s first feature film</li>
+<li>Trailer and radio spots</li><li>English subtitles for the deaf and hard of hearing</li><li>PLUS: An essay by critic Kim Newman </li></ul><p><em>New cover by Connor Willumsen</em></p>
+                    </div>
+                  </div><!-- collapse-contain -->
+
+                </section>
+              
+
+              <div class="product-box-art">
+	<img src="https://s3.amazonaws.com/criterion-production/films/72be64c7e0fe2adc28ae31719d0c4d88/6tMtPzuwVeGlo4qEXwaxq1vZa2eZca_large.jpg" alt="Scanners" itemprop="image" />      
+</div>
+            </div><!-- product__details_contain_b -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-container product-secondary-content-container">
+
+      <div class="content-left" >
+        <div class="left" data-sticky-column-left>
+          <div class="content" data-sticky-left-content-end>
+
+                          <section class="film-credits collapse">
+
+                <input type="checkbox" class="collapse-check" id="credits-check">
+                <label for="credits-check" class="collapse-trig">Cast &amp; Credits</label>
+
+                <div class="collapse-contain">
+
+                                      <h5 class="header_lvl2">Cast</h5>
+
+                    <dl class="creditList">
+
+                                            <dt><span>Jennifer O’Neill</span></dt>
+                      <dd itemprop="actor" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">Kim Obrist</span>
+                      </dd>
+                                            <dt><span>Stephen Lack</span></dt>
+                      <dd itemprop="actor" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">Cameron Vale</span>
+                      </dd>
+                                            <dt><span>Patrick McGoohan</span></dt>
+                      <dd itemprop="actor" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">Dr. Paul Ruth</span>
+                      </dd>
+                                            <dt><span>Lawrence Dane</span></dt>
+                      <dd itemprop="actor" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">Braedon Keller</span>
+                      </dd>
+                                            <dt><span>Michael Ironside</span></dt>
+                      <dd itemprop="actor" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">Darryl Revok</span>
+                      </dd>
+                                            <dt><span>Robert Silverman</span></dt>
+                      <dd itemprop="actor" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">Benjamin Pierce</span>
+                      </dd>
+                                            <dt><span>Louis Del Grande</span></dt>
+                      <dd itemprop="actor" itemscope itemtype="http://schema.org/Person">
+                        <span itemprop="name">First Scanner</span>
+                      </dd>
+                      
+                    </dl>
+                  
+                                      <h5 class="header_lvl2">Credits</h5>
+
+                    <dl class="creditList">
+                                            <dt><span>Director</span></dt>
+                      <dd>David Cronenberg</dd>
+                                            <dt><span>Written by</span></dt>
+                      <dd>David Cronenberg</dd>
+                                            <dt><span>Produced by</span></dt>
+                      <dd>Claude Héroux</dd>
+                                            <dt><span>Executive producers</span></dt>
+                      <dd>Victor Solnicki</dd>
+                                            <dt><span>Executive producers</span></dt>
+                      <dd>Pierre David</dd>
+                                            <dt><span>Director of photography</span></dt>
+                      <dd>Mark Irwin</dd>
+                                            <dt><span>Music</span></dt>
+                      <dd>Howard Shore</dd>
+                                            <dt><span>Editor</span></dt>
+                      <dd>Ronald Sanders</dd>
+                                            <dt><span>Art director</span></dt>
+                      <dd>Carol Spier</dd>
+                                            <dt><span>Special effects</span></dt>
+                      <dd>Gary Zeller</dd>
+                                            <dt><span>Micro effects</span></dt>
+                      <dd>Dennis Pike</dd>
+                                            <dt><span>Consultant for special makeup effects</span></dt>
+                      <dd>Dick Smith</dd>
+                                          </dl>
+                  
+                </div><!-- collapse-contain -->
+
+              </section>
+            
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="content" data-sticky-column-right>
+            <section class="product-relatedfilms collapse" data-sticky-right-content-end>
+
+              <input type="checkbox"class="collapse-check" id="related-check">
+              <label for="related-check" class="collapse-trig">Related Films</label>
+
+              <div class="collapse-contain">
+
+                <h4 class="header_lvl2 hideSmall">Related Films</h4>
+
+                <ul class="list__resize">
+
+                                    <li>
+                    <div class="filmWrap">
+	<a href="https://www.criterion.com/films/541-dead-ringers">
+		<figure class="basicFilm">
+
+			<img src="https://s3.amazonaws.com/criterion-production/films/ae6a820ec6ae64f3fdee2462bc053d1c/mBCC4seMjkFwpIEHWHslNU9zliMIDy_small.jpg" alt="Dead Ringers" />  
+
+			<figcaption>
+				<dl>
+					<dt>Dead Ringers</dt>
+					<dd>David Cronenberg</dd>
+				</dl>
+			</figcaption>
+
+		</figure>
+	</a>
+
+	
+</div><!-- filmWrap -->                  </li>
+                                    <li>
+                    <div class="filmWrap">
+	<a href="https://www.criterion.com/films/634-naked-lunch">
+		<figure class="basicFilm">
+
+			<img src="https://s3.amazonaws.com/criterion-production/films/90d418713a2e7ecc053c7cea7f3edc07/BmQGbMPdDYJ7IwGNosdZiWUsJXh3EI_small.jpg" alt="Naked Lunch" />  
+
+			<figcaption>
+				<dl>
+					<dt>Naked Lunch</dt>
+					<dd>David Cronenberg</dd>
+				</dl>
+			</figcaption>
+
+		</figure>
+	</a>
+
+	
+</div><!-- filmWrap -->                  </li>
+                                    <li>
+                    <div class="filmWrap">
+	<a href="https://www.criterion.com/films/240-videodrome">
+		<figure class="basicFilm">
+
+			<img src="https://s3.amazonaws.com/criterion-production/films/b1acc787b82d1bd9e39e5dd96f243d63/jkueXM73fZA1DQY0EKuLEGXvAOjcVB_small.jpg" alt="Videodrome" />  
+
+			<figcaption>
+				<dl>
+					<dt>Videodrome</dt>
+					<dd>David Cronenberg</dd>
+				</dl>
+			</figcaption>
+
+		</figure>
+	</a>
+
+	
+</div><!-- filmWrap -->                  </li>
+                  
+                </ul>
+
+              </div><!-- collapse-contain -->
+
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <div class="film-gallery">
+	<div class="mobile-caption-container">
+		<div class="mobile-caption">
+
+			<div class="gallery-caption">
+				<div class="caption-contain"></div>
+			</div>			
+		</div>
+	</div>
+
+	<div class="filmdetail-gallery " data-film-detail-gallery>		
+		
+					<div class="gallery-cell">			
+				<div class="gallery-contents">
+					<div class="gallery-item ">	
+													<img src="https://s3.amazonaws.com/criterion-production/carousel-files/1dd24c8b448a5d0f8fc95315ae0e5eee.jpeg" alt="">
+						
+						
+											</div>
+
+					<div class="gallery-tools">
+						<div class="gal-index">1/5</div>
+					</div>
+
+					<div class="gallery-caption">
+						<div class="caption-contain">
+													</div>
+					</div>
+				</div>
+			</div>
+					<div class="gallery-cell">			
+				<div class="gallery-contents">
+					<div class="gallery-item ">	
+													<img src="https://s3.amazonaws.com/criterion-production/carousel-files/8795b21f37dde3bb34f871a1eb87a49f.jpeg" alt="">
+						
+						
+											</div>
+
+					<div class="gallery-tools">
+						<div class="gal-index">2/5</div>
+					</div>
+
+					<div class="gallery-caption">
+						<div class="caption-contain">
+													</div>
+					</div>
+				</div>
+			</div>
+					<div class="gallery-cell">			
+				<div class="gallery-contents">
+					<div class="gallery-item ">	
+													<img src="https://s3.amazonaws.com/criterion-production/carousel-files/2e9107f738d7a8ff8a58e6716c8db5f8.jpeg" alt="">
+						
+						
+											</div>
+
+					<div class="gallery-tools">
+						<div class="gal-index">3/5</div>
+					</div>
+
+					<div class="gallery-caption">
+						<div class="caption-contain">
+													</div>
+					</div>
+				</div>
+			</div>
+					<div class="gallery-cell">			
+				<div class="gallery-contents">
+					<div class="gallery-item ">	
+													<img src="https://s3.amazonaws.com/criterion-production/carousel-files/09f22995638037f8ab2189db7af529a3.jpeg" alt="">
+						
+						
+											</div>
+
+					<div class="gallery-tools">
+						<div class="gal-index">4/5</div>
+					</div>
+
+					<div class="gallery-caption">
+						<div class="caption-contain">
+													</div>
+					</div>
+				</div>
+			</div>
+					<div class="gallery-cell">			
+				<div class="gallery-contents">
+					<div class="gallery-item ">	
+													<img src="https://s3.amazonaws.com/criterion-production/carousel-files/f42a007892f276c0daad53cd8cc3bedd.jpeg" alt="">
+						
+						
+											</div>
+
+					<div class="gallery-tools">
+						<div class="gal-index">5/5</div>
+					</div>
+
+					<div class="gallery-caption">
+						<div class="caption-contain">
+													</div>
+					</div>
+				</div>
+			</div>
+			</div>
+</div>
+    
+    
+  </article>
+
+    <section class="the-latest content-container c-touts">
+    <div class="max-width-container">
+      <div class="content">
+
+        <h3 class="header_lvl2">From The Current</h3>
+
+        <div class="c-touts__list">
+    <div class="c-touts__list-inner" data-is-load-more-container>
+        <div data-aos="slide-up" data-aos-once="true" data-aos-delay="200" data-aos-duration="750" class="c-tout c-tout--small" data-article-type="article" data-article-id="3220" data-href="https://www.criterion.com/current/posts/3220-creating-scanners-explosive-effect" data-click-tracking='{ "category": "Related Article", "action": "click", "label": "Creating Scanners’ Explosive Effect" }' data-tout-size="small">
+            <a class="c-tout__media c-tout__media--small" href="https://www.criterion.com/current/posts/3220-creating-scanners-explosive-effect">
+                <div class="c-tout__media-aspect-ratio--small"></div>
+<div class="c-tout__img-wrap c-tout__img-wrap--small" style="background: url(https://s3.amazonaws.com/criterion-production/posts/3220-901fbf93c70de2bf69b79a3c717ce3ac/SCANNERS_HEAD_FEATURE_original.jpg) no-repeat center; background-size: cover;">
+            <img class="c-tout__img c-tout__img--small" src="https://s3.amazonaws.com/criterion-production/posts/3220-901fbf93c70de2bf69b79a3c717ce3ac/SCANNERS_HEAD_FEATURE_original.jpg" alt="Creating Scanners’ Explosive Effect" >
+    </div>
+
+            </a>
+            <div class="c-tout__text-container c-tout__text-container--small">
+                <div class="c-tout__text-aspect-ratio--small"></div>
+                <div class="c-tout__text-container-inner c-tout__text-container-inner--small">
+                    <div class="c-tout__main-text c-tout__main-text--small">
+    
+    <a class="c-tout__title-link c-tout__title-link--small" href="https://www.criterion.com/current/posts/3220-creating-scanners-explosive-effect" data-click-tracking='{ "category": "Related Article", "action": "click", "label": "Creating Scanners’ Explosive Effect" }' data-clamp-lines='{ "disable_at": 768, "lines": 3 }'>
+
+        <h5 class="c-tout__title c-tout__title--small">
+                            Creating <i>Scanners</i>’ Explosive Effect
+                    </h5>
+    </a>
+            <div class="c-tout__desc c-tout__desc--small">
+            A warning is probably in order, both for those who want to avoid spoilers and those who don’t want to lose their lunch. For everyone else, watch this fascinating clip from a new Criterion documentary about Scanners’ special effects, directed by M&hellip;
+        </div>
+    </div>
+                    <div class="c-tout__meta-text c-tout__meta-text--small">
+    
+                    <a class="c-tout__byline  c-tout__byline--block " href="https://www.criterion.com/current/category/12-sneak-peeks" data-click-tracking='{ "category": "Category", "action": "click", "label": "Sneak Peeks" }'>Sneak Peeks</a>
+    
+    <span class="c-tout__byline-dash c-tout__byline-dash--small">
+        &mdash;
+    </span>
+    <span class="c-tout__byline  c-tout__byline--block ">
+        Jul 11, 2014
+    </span>
+</div>
+                </div>
+            </div>
+        </div>
+    
+    
+            <div data-aos="slide-up" data-aos-once="true" data-aos-delay="200" data-aos-duration="750" class="c-tout c-tout--medium" data-article-type="article" data-article-id="3225" data-href="https://www.criterion.com/current/posts/3225-scanners-mind-and-matter" data-click-tracking='{ "category": "Related Article", "action": "click", "label": "Scanners: Mind and Matter" }' data-tout-size="medium">
+            <a class="c-tout__media c-tout__media--medium" href="https://www.criterion.com/current/posts/3225-scanners-mind-and-matter">
+                <div class="c-tout__media-aspect-ratio--medium"></div>
+<div class="c-tout__img-wrap c-tout__img-wrap--medium" style="background: url(https://s3.amazonaws.com/criterion-production/images/4148-5e82c5442d9c2c08efe915db08518e1b/ScannersTwist_T_medium.jpg) no-repeat center; background-size: cover;">
+            <img class="c-tout__img c-tout__img--medium" src="https://s3.amazonaws.com/criterion-production/images/4148-5e82c5442d9c2c08efe915db08518e1b/ScannersTwist_T_medium.jpg" alt="Scanners: Mind and Matter" >
+    </div>
+
+            </a>
+            <div class="c-tout__text-container c-tout__text-container--medium">
+                <div class="c-tout__text-aspect-ratio--medium"></div>
+                <div class="c-tout__text-container-inner c-tout__text-container-inner--medium">
+                    <div class="c-tout__main-text c-tout__main-text--medium">
+    
+    <a class="c-tout__title-link c-tout__title-link--medium" href="https://www.criterion.com/current/posts/3225-scanners-mind-and-matter" data-click-tracking='{ "category": "Related Article", "action": "click", "label": "Scanners: Mind and Matter" }' data-clamp-lines='{ "disable_at": 768, "lines": 3 }'>
+
+        <h5 class="c-tout__title c-tout__title--medium">
+                            <i>Scanners:</i> Mind and Matter
+                    </h5>
+    </a>
+            <div class="c-tout__desc c-tout__desc--medium">
+            <p>Among the brainiest of all horror movies, David Cronenberg’s film goes beyond  shock to investigate a disturbing world of psychic mutation.</p>
+        </div>
+    </div>
+                    <div class="c-tout__meta-text c-tout__meta-text--medium">
+            <p class="c-tout__author">
+            By <a class="c-tout__author-link" href="https://www.criterion.com/current/author/98-kim-newman" data-click-tracking='{ "category": "Author", "action": "click", "label": "Kim Newman" }'>Kim Newman</a>
+        </p>
+    
+                    <a class="c-tout__byline " href="https://www.criterion.com/current/category/2-essays" data-click-tracking='{ "category": "Category", "action": "click", "label": "Essays" }'>Essays</a>
+    
+    <span class="c-tout__byline-dash c-tout__byline-dash--medium">
+        &mdash;
+    </span>
+    <span class="c-tout__byline ">
+        Jul 15, 2014
+    </span>
+</div>
+                </div>
+            </div>
+        </div>
+    
+    
+            <div data-aos="slide-up" data-aos-once="true" data-aos-delay="200" data-aos-duration="750" class="c-tout c-tout--top-ten" data-article-type="top10" data-article-id="346" data-href="https://www.criterion.com/current/top-10-lists/346-john-grant-s-top-10" data-click-tracking='{ "category": "Related Article", "action": "click", "label": "John Grant’s Top 10" }' data-tout-size="top-ten">
+            <a class="c-tout__media c-tout__media--top-ten" href="https://www.criterion.com/current/top-10-lists/346-john-grant-s-top-10">
+                <div class="c-tout__media-aspect-ratio--top-ten"></div>
+<div class="c-tout__img-wrap c-tout__img-wrap--top-ten" style="background: url(https://s3.amazonaws.com/criterion-production/explore_images/1146-d3b7d4c004e8a784a4bf9212e34e0367/mSHfquEnwx86hqMO9QcidbYjPvptQK_small.jpg) no-repeat center; background-size: cover;">
+            <img class="c-tout__img c-tout__img--top-ten" src="https://s3.amazonaws.com/criterion-production/explore_images/1146-d3b7d4c004e8a784a4bf9212e34e0367/mSHfquEnwx86hqMO9QcidbYjPvptQK_small.jpg" alt="John Grant’s Top 10" >
+    </div>
+
+            </a>
+            <div class="c-tout__text-container c-tout__text-container--top-ten">
+                <div class="c-tout__text-aspect-ratio--top-ten"></div>
+                <div class="c-tout__text-container-inner c-tout__text-container-inner--top-ten">
+                    <div class="c-tout__main-text c-tout__main-text--top-ten">
+    
+    <a class="c-tout__title-link c-tout__title-link--top-ten" href="https://www.criterion.com/current/top-10-lists/346-john-grant-s-top-10" data-click-tracking='{ "category": "Related Article", "action": "click", "label": "John Grant’s Top 10" }' data-clamp-lines='{ "disable_at": 768, "lines": 3 }'>
+
+        <h5 class="c-tout__title c-tout__title--top-ten">
+                            <span class="c-tout__title-block c-tout__title-block--small">
+                    John Grant’s Top
+                </span>
+                <span class="c-tout__title-block c-tout__title-block--large">
+                    10
+                </span>
+                    </h5>
+    </a>
+            <div class="c-tout__desc c-tout__desc--top-ten">
+            <p>John Grant is an Iceland-based musician whose most recent album, <em>Love Is Magic,</em> is now available via Partisan Records.</p>
+        </div>
+    </div>
+                    <div class="c-tout__meta-text c-tout__meta-text--top-ten">
+    
+    
+    <span class="c-tout__byline-dash c-tout__byline-dash--top-ten">
+        &mdash;
+    </span>
+    <span class="c-tout__byline ">
+        Oct 15, 2018
+    </span>
+</div>
+                </div>
+            </div>
+        </div>
+    
+    
+            <div data-aos="slide-up" data-aos-once="true" data-aos-delay="200" data-aos-duration="750" class="c-tout c-tout--small" data-article-type="article" data-article-id="5036" data-href="https://www.criterion.com/current/posts/5036-gruesome-cronenberg-in-montana" data-click-tracking='{ "category": "Related Article", "action": "click", "label": "Gruesome Cronenberg in Montana" }' data-tout-size="small">
+            <a class="c-tout__media c-tout__media--small" href="https://www.criterion.com/current/posts/5036-gruesome-cronenberg-in-montana">
+                <div class="c-tout__media-aspect-ratio--small"></div>
+<div class="c-tout__img-wrap c-tout__img-wrap--small" style="background: url(https://s3.amazonaws.com/criterion-production/images/9127-706fb02ad1dfe40fb09fea8768576ae0/scanners_small.jpg) no-repeat center; background-size: cover;">
+            <img class="c-tout__img c-tout__img--small" src="https://s3.amazonaws.com/criterion-production/images/9127-706fb02ad1dfe40fb09fea8768576ae0/scanners_small.jpg" alt="Gruesome Cronenberg in Montana" >
+    </div>
+
+            </a>
+            <div class="c-tout__text-container c-tout__text-container--small">
+                <div class="c-tout__text-aspect-ratio--small"></div>
+                <div class="c-tout__text-container-inner c-tout__text-container-inner--small">
+                    <div class="c-tout__main-text c-tout__main-text--small">
+            <p class="c-tout__eyebrow c-tout__eyebrow--small">
+            <a href="https://www.criterion.com/current/series/big-theater" data-click-tracking='{ "category": "Related Series", "action": "click", "label": "Big Theater" }'>Big Theater
+            </a>
+        </p>
+    
+    <a class="c-tout__title-link c-tout__title-link--small" href="https://www.criterion.com/current/posts/5036-gruesome-cronenberg-in-montana" data-click-tracking='{ "category": "Related Article", "action": "click", "label": "Gruesome Cronenberg in Montana" }' data-clamp-lines='{ "disable_at": 768, "lines": 3 }'>
+
+        <h5 class="c-tout__title c-tout__title--small">
+                            Gruesome Cronenberg in Montana
+                    </h5>
+    </a>
+            <div class="c-tout__desc c-tout__desc--small">
+            <p>The Roxy Theater in Missoula, Montana, pays tribute to one of the masters of body horror with a screening of the 1981 film <i>Scanners.</i></p>
+        </div>
+    </div>
+                    <div class="c-tout__meta-text c-tout__meta-text--small">
+    
+                    <a class="c-tout__byline  c-tout__byline--block " href="https://www.criterion.com/current/category/18-in-theaters" data-click-tracking='{ "category": "Category", "action": "click", "label": "In Theaters" }'>In Theaters</a>
+    
+    <span class="c-tout__byline-dash c-tout__byline-dash--small">
+        &mdash;
+    </span>
+    <span class="c-tout__byline  c-tout__byline--block ">
+        Oct 12, 2017
+    </span>
+</div>
+                </div>
+            </div>
+        </div>
+    
+    
+            <div data-aos="slide-up" data-aos-once="true" data-aos-delay="200" data-aos-duration="750" class="c-tout c-tout--small" data-article-type="article" data-article-id="3972" data-href="https://www.criterion.com/current/posts/3972-from-the-cronenberg-archives" data-click-tracking='{ "category": "Related Article", "action": "click", "label": "From the Cronenberg Archives" }' data-tout-size="small">
+            <a class="c-tout__media c-tout__media--small" href="https://www.criterion.com/current/posts/3972-from-the-cronenberg-archives">
+                <div class="c-tout__media-aspect-ratio--small"></div>
+<div class="c-tout__img-wrap c-tout__img-wrap--small" style="background: url(https://s3.amazonaws.com/criterion-production/editorial_content_posts/hero/3972-/LNmzoPTrrOw8jW4Q2AsQrGU6S6q9fY_small.jpg) no-repeat center; background-size: cover;">
+            <img class="c-tout__img c-tout__img--small" src="https://s3.amazonaws.com/criterion-production/editorial_content_posts/hero/3972-/LNmzoPTrrOw8jW4Q2AsQrGU6S6q9fY_small.jpg" alt="From the Cronenberg Archives" >
+    </div>
+
+            </a>
+            <div class="c-tout__text-container c-tout__text-container--small">
+                <div class="c-tout__text-aspect-ratio--small"></div>
+                <div class="c-tout__text-container-inner c-tout__text-container-inner--small">
+                    <div class="c-tout__main-text c-tout__main-text--small">
+    
+    <a class="c-tout__title-link c-tout__title-link--small" href="https://www.criterion.com/current/posts/3972-from-the-cronenberg-archives" data-click-tracking='{ "category": "Related Article", "action": "click", "label": "From the Cronenberg Archives" }' data-clamp-lines='{ "disable_at": 768, "lines": 3 }'>
+
+        <h5 class="c-tout__title c-tout__title--small">
+                            From the Cronenberg Archives
+                    </h5>
+    </a>
+            <div class="c-tout__desc c-tout__desc--small">
+            <p>Today, we’re celebrating horror maestro David Cronenberg’s seventy-third birthday with a look back at his brilliantly twisted oeuvre.</p>
+        </div>
+    </div>
+                    <div class="c-tout__meta-text c-tout__meta-text--small">
+    
+                    <a class="c-tout__byline  c-tout__byline--block " href="https://www.criterion.com/current/category/5-short-takes" data-click-tracking='{ "category": "Category", "action": "click", "label": "Short Takes" }'>Short Takes</a>
+    
+    <span class="c-tout__byline-dash c-tout__byline-dash--small">
+        &mdash;
+    </span>
+    <span class="c-tout__byline  c-tout__byline--block ">
+        Mar 15, 2016
+    </span>
+</div>
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+  
+  
+  </main>
+
+
+    <footer data-scrollify class="global-footer">
+
+  <div class="site-footer-contain">
+
+    <div class="logo-c-foot">
+      <a href="https://www.criterion.com">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M7.1 16.8C-1.2 31 3.5 49.3 17.7 57.6c.1 0 .1.1.2.1 6 3.5 13.1 4.8 19.9 3.7l-2.2-13.3c-.8.1-1.5.2-2.3.2-3 0-6-.8-8.6-2.3-7.8-4.5-10.5-14.5-6-22.3 0 0 0-.1.1-.1 4.6-7.8 14.8-10.4 22.6-5.8 3.3 1.9 5.8 4.9 7.1 8.5l12.8-4.6C55.6 6.1 38.3-1.9 22.7 3.9c-6.6 2.4-12 6.9-15.6 12.9"/></svg>
+      </a>
+    </div><!-- logo-c -->
+
+    <div class="footer-inner-contain">
+
+        <nav class="nav-footer">
+            <div class="nav-group-footer nav-group-footer--medium nav-foot-shop">
+                <h6><a href="https://www.criterion.com/shop" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Shop" }'>Shop the Collection</a></h6>
+                <ul>
+                    <li>
+                    <a href="https://www.criterion.com/shop/browse/list" data-click-tracking='{ "category": "Footer", "action": "click", "label": "All Films" }'>All Films</a>
+                    </li>
+                    <li>
+                    <a href="https://www.criterion.com/shop/browse?popular=new-releases" data-click-tracking='{ "category": "Footer", "action": "click", "label": "New Releases" }'>New Releases</a>
+                    </li>
+                    <li>
+                    <a href="https://www.criterion.com/shop/browse?popular=coming-soon" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Coming Soon" }'>Coming Soon</a>
+                    </li>
+                    <li>
+                    <a href="https://www.criterion.com/shop/collection/325-gift-shop" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Gift Shop" }'>Gift Shop</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-group-footer nav-group-footer--medium nav-foot-current">
+                <h6><a href="https://www.criterion.com/current/posts" data-click-tracking='{ "category": "Footer", "action": "click", "label": "The Current" }'><i>The Current</i></a></h6>
+                <ul>
+                    <li><a href="https://www.criterion.com/current/top-10-lists" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Top 10 Lists" }'>Top 10 Lists</a></li>
+                    <li><a href="https://www.criterion.com/current/category/2-essays" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Essays" }'>Essays</a></li>
+                    <li><a href="https://www.criterion.com/current/category/3-features" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Features" }'>Features</a></li>
+                    <li><a href="https://www.criterion.com/current/category/20-the-daily" data-click-tracking='{ "category": "Footer", "action": "click", "label": "The Daily" }'>The Daily</a></li>
+                </ul>
+            </div>
+            <div class="nav-group-footer nav-group-footer--medium nav-foot-about">
+                <h6 class="orphan"><a href="https://www.criterion.com/about" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Our Mission" }'>Our Mission</a></h6>
+                <h6 class="orphan"><a href="https://www.criterion.com/contact_us" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Contact Us" }'>Contact Us</a></h6>
+                <h6 class="orphan"><a href="https://www.criterion.com/privacy" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Privacy Policy" }'>Privacy Policy</a></h6>
+            </div>
+            <div class="nav-group-footer nav-group-footer--medium nav-foot-account">
+                <h6><a href="https://www.criterion.com/account" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Account" }'>My Criterion</a></h6>
+                <ul>
+                
+                <li><a href="https://www.criterion.com/login" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Login" }'>Login</a>
+
+                                    </ul>
+            </div>
+            <div class="nav-group-footer nav-group-footer--large nav-foot-faq">
+                <h6><a href="https://www.criterion.com/faq" data-click-tracking='{ "category": "Footer", "action": "click", "label": "FAQ" }'>FAQ</a></h6>
+                <ul>
+                <li><a href="https://www.criterion.com/faq" data-click-tracking='{ "category": "Footer", "action": "click", "label": "FAQ" }'>General</a></li>
+                <li><a href="https://www.criterion.com/faq/orders" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Order Support" }'>Order Support</a></li>
+                <li><a href="https://www.criterion.com/faq/tech-support" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Tech Support" }'>Tech Support</a></li>
+                <li><a href="https://www.criterion.com/faq/channel" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Channel Support" }'>Channel Support</a></li>
+                
+                </ul>
+            </div>
+            <div class="nav-group-footer nav-group-footer--logos nav-group-footer--medium nav-foot-faq">
+                <a class="nav-group-footer--janus" href="http://www.janusfilms.com/" target="_blank" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Janus" }'>
+                    <img src="https://www.criterion.com/assets/img/svg/logo_janusfilms_white.svg" alt="Janus Films" />
+                </a>
+                <a class="nav-group-footer--channel" href="https://www.criterionchannel.com/browse" target="_blank" data-click-tracking='{ "category": "Footer", "action": "click", "label": "The Criterion Channel" }'>
+                    <img src="https://www.criterion.com/assets/img/svg/CRICHANNEL_logo_white.svg" alt="The Criterion Channel" />
+                </a>
+            </div>
+        </nav>
+
+        <div class="footer-extras">
+
+            <div class="newsletter">
+            <p class="header_lvl2">Sign Up for Our Newsletter</p>
+
+            <div class="newsletter-intro">
+                <p>Get info about new releases, essays and interviews on the Current, Top 10 lists, and sales.</p>
+            </div>
+
+            <div class="signup-form" data-newsletter-signup>
+                <label for="email" class="vh">Email:</label>
+                <input type="email" name="email" placeholder="E-mail Address" data-newsletter-signup-input />
+                <input type="submit" value="Sign Up" data-newsletter-signup-submit-button />
+            </div>
+
+            </div>
+
+            <div class="foot-follow">
+            <p class="header_lvl2">Follow Us</p>
+
+            <ul class="social-buttons">
+
+                <li>
+                <a href="https://www.facebook.com/CriterionCollection" target="_blank" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Facebook" }'>
+                    <svg viewBox="0 0 8 16" role="img" aria-labelledby="follow_fb">
+                    <title id="follow_fb">Follow Criterion Collection on Facebook</title>
+                    <path d="M4.964 16V8h2.21l.292-2.758H4.964l.004-1.38c0-.72.068-1.105 1.1-1.105H7.45V0H5.24C2.59 0 1.655 1.338 1.655 3.587v1.655H0V8h1.654v8h3.31z" fill="#979797" fill-rule="evenodd"/>
+                    </svg>
+                </a>
+                </li>
+
+                <li>
+                <a href="https://twitter.com/Criterion" target="_blank" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Twitter" }'>
+                    <svg viewBox="0 0 16 14" role="img" aria-labelledby="follow_tw">
+                    <title id="follow_tw">Follow Criterion Collection on Twitter</title>
+                    <path d="M7.77 4.295l.034.572-.578-.07c-2.105-.27-3.943-1.18-5.503-2.708L.96 1.33l-.197.56C.347 3.14.613 4.46 1.48 5.346c.462.49.358.56-.44.27-.277-.094-.52-.164-.543-.13-.08.082.197 1.144.416 1.565.3.583.914 1.155 1.584 1.493l.567.27-.67.01c-.648 0-.67.012-.602.257.23.76 1.144 1.564 2.162 1.914l.717.246-.624.373c-.925.537-2.01.84-3.098.864-.52.01-.948.058-.948.093 0 .117 1.41.77 2.23 1.027 2.464.76 5.39.432 7.585-.863 1.56-.923 3.122-2.755 3.85-4.53.393-.944.786-2.672.786-3.5 0-.537.036-.607.683-1.25.382-.373.74-.78.81-.898.115-.222.104-.222-.486-.023-.983.35-1.122.303-.636-.222.36-.373.787-1.05.787-1.248 0-.035-.173.023-.37.128-.208.117-.67.292-1.017.397l-.624.2-.567-.386c-.313-.21-.752-.443-.984-.513-.59-.163-1.49-.14-2.023.047-1.445.525-2.358 1.88-2.254 3.36z" fill="#979797" fill-rule="evenodd"/>
+                    </svg>
+                </a>
+                </li>
+
+                <li>
+                <a href="http://criterioncollection.tumblr.com/" target="_blank" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Tumblr" }'>
+                    <svg viewBox="0 0 10 17" role="img" aria-labelledby="follow_tb">
+                    <title id="follow_tb">Follow Criterion Collection on Tumblr</title>
+                    <path d="M0 7.383h1.493v4.472c.118 3.656 2.13 4.42 4.478 4.67 1.366-.067 3.038-.572 3.883-1.242V12.75c-1.088 1.054-4.005 2.088-4.53-.895l-.048-4.522 4.578.05v-3.03H5.275l.1-3.828-1.842.05C3.66 3.84 1.923 4.275 0 4.4v2.983z" fill="#979797" fill-rule="evenodd"/>
+                    </svg>
+                </a>
+                </li>
+
+
+                <li>
+                <a href="https://www.youtube.com/user/criterioncollection" target="_blank" data-click-tracking='{ "category": "Footer", "action": "click", "label": "YouTube" }'>
+                    <svg viewBox="0 0 27 18" role="img" aria-labelledby="follow_yt">
+                    <title id="follow_yt">Follow Criterion Collection on YouTube</title>
+                    <path d="M10.41 11.982l-.002-6.986 7.09 3.505-7.09 3.482zm15.564-8.196s-.257-1.713-1.043-2.467C23.934.327 22.816.322 22.303.265c-3.67-.252-9.178-.252-9.178-.252h-.012s-5.507 0-9.178.252c-.513.057-1.63.062-2.63 1.053C.52 2.072.263 3.785.263 3.785S0 5.798 0 7.81v1.886c0 2.012.262 4.024.262 4.024s.256 1.713 1.043 2.468c.998.99 2.31.958 2.893 1.062 2.1.19 8.92.25 8.92.25s5.513-.008 9.184-.26c.513-.057 1.63-.062 2.63-1.052.785-.755 1.042-2.468 1.042-2.468s.262-2.012.262-4.024V7.81c0-2.012-.262-4.024-.262-4.024z" fill="#979797" fill-rule="evenodd"/>
+                    </svg>
+                </a>
+                </li>
+
+                <li>
+                <a href="https://www.instagram.com/criterioncollection/" target="_blank" data-click-tracking='{ "category": "Footer", "action": "click", "label": "Instagram" }'>
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 32 32">
+                    <path d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z" fill="#979797"></path>
+                    <path d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z" fill="#979797"></path>
+                    <path d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z" fill="#979797"></path>
+                    </svg>
+                </a>
+                </li>
+
+            </ul>
+            </div>
+
+        </div>
+
+    </div><!-- footer-inner-contain -->
+
+    </div>
+
+  </footer>
+  <div class="global_cart panel--expanded panel--large panel" data-expanded-cart>
+	<div class="global_cart_contain  global_cart_contain_flash_sale " data-segment-event-data='{}' >
+	<div class="items">
+		<p class="header_lvl2"><span class="item-count">0</span> Items</p>
+	</div>
+
+	<ul class="list-of-titles panel__scroll">
+			</ul>
+			<p class="global_cart_contain__empty-text">You have no items in your shopping cart</p>
+		<div class="global_cart_contain__bottom">
+				<div class="actions">
+			<a href="https://www.criterion.com/shop/cart" class="but but-b" data-click-tracking='{ "category": "Expanded Cart", "action": "Click", "label": "View Cart" }'>View Cart</a>
+			<a href="https://www.criterion.com/shop/checkout" class="but but-a" data-click-tracking='{ "category": "Expand Cart", "action": "Click", "label": "Checkout" }'>Check Out</a>
+		</div>
+	</div>
+</div>
+</div>
+
+</div> <!-- page-contain -->
+
+<div class="global-nav sidebar" data-sidebar="nav">
+	<div class="global-nav__container sidebar__container">
+
+		<div class="global-nav__sidebar sidebar__bar" data-sidebar-click-container>
+
+			<nav class="global-nav__nav">
+				<ul class="global-nav__group">
+					<li class="global-nav__group-item global-nav__subgroup">
+						<a class="global-nav__item global-nav__item--header" href="https://www.criterion.com/shop" data-click-tracking='{ "category": "Nav", "action": "click", "label": "Shop" }'>Shop the Collection</a>
+
+						<ul class="global-nav__subgroup-items">
+								<li class="global-nav__subgroup-item">
+								<a class="global-nav__subgroup-link" href="https://www.criterion.com/shop/browse/list" data-click-tracking='{ "category": "Nav", "action": "click", "label": "All Films" }'>All Films</a>
+								</li>
+								<li class="global-nav__subgroup-item">
+									<a class="global-nav__subgroup-link" href="https://www.criterion.com/shop/browse?popular=new-releases" data-click-tracking='{ "category": "Nav", "action": "click", "label": "New Releases" }'>New Releases</a>
+								</li>
+								<li class="global-nav__subgroup-item">
+									<a class="global-nav__subgroup-link" href="https://www.criterion.com/shop/browse?popular=coming-soon" data-click-tracking='{ "category": "Nav", "action": "click", "label": "Coming Soon" }'>Coming Soon</a>
+								</li>
+								<li class="global-nav__subgroup-item">
+									<a class="global-nav__subgroup-link" href="https://www.criterion.com/shop/collection/325-gift-shop" data-click-tracking='{ "category": "Nav", "action": "click", "label": "Gift Shop" }'>Gift Shop</a>
+								</li>
+							</ul>
+					</li>
+
+					<li class="global-nav__subgroup global-nav__group-item">
+						<a class="global-nav__item global-nav__item--header" href="https://www.criterion.com/current/posts" data-click-tracking='{ "category": "Nav", "action": "click", "label": "The Current" }'><em>The Current</em></a>
+
+						<ul class="global-nav__subgroup-items">
+								<li class="global-nav__subgroup-item">
+									<a class="global-nav__subgroup-link" href="https://www.criterion.com/current/top-10-lists" data-click-tracking='{ "category": "Nav", "action": "click", "label": "Top 10 Lists" }'>Top 10 Lists</a>
+								</li>
+								<li class="global-nav__subgroup-item">
+									<a class="global-nav__subgroup-link" href=https://www.criterion.com/current/category/2-essays data-click-tracking='{ "category": "Nav", "action": "click", "label": "Essays" }'>Essays</a>
+								</li>
+								<li class="global-nav__subgroup-item">
+									<a class="global-nav__subgroup-link" href=https://www.criterion.com/current/category/3-features data-click-tracking='{ "category": "Nav", "action": "click", "label": "Features" }'>Features</a>
+								</li>
+								<li class="global-nav__subgroup-item">
+									<a class="global-nav__subgroup-link" href=https://www.criterion.com/current/category/20-the-daily data-click-tracking='{ "category": "Nav", "action": "click", "label": "The Daily" }'>The Daily</a>
+								</li>
+							</ul>
+					</li>
+				</ul>
+
+				<ul class="global-nav__group">
+					<li class="global-nav__group-item">
+						<a class="global-nav__item global-nav__item--header" href="https://www.criterionchannel.com/browse" data-click-tracking='{ "category": "Nav", "action": "click", "label": "The Criterion Channel" }'>The Criterion Channel</a>
+					</li>
+					<li class="global-nav__group-item">
+							<a class="global-nav__item global-nav__item--header" href="https://www.criterion.com/about" data-click-tracking='{ "category": "Nav", "action": "click", "label": "Our Mission" }'>Our Mission</a>
+					</li>
+					<li class="global-nav__group-item">
+							<a class="global-nav__item global-nav__item--header" href="https://www.criterion.com/contact_us" data-click-tracking='{ "category": "Nav", "action": "click", "label": "Contact Us" }'>Contact Us</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+
+	</div>
+</div>
+<div class="global-search sidebar sidebar--light" data-global-search data-sidebar="search">
+
+	<div class="global-search__container sidebar__container">
+
+		<div class="global-search__sidebar sidebar__bar" data-sidebar-click-container>
+			<a class="sidebar__close" href="/" data-sidebar-close="search">
+				<span class="vh">Close Menu</span>
+				<svg class="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="11" y="0" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9704 12.0004)" width="2" height="24"/><rect x="0" y="11" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -4.9704 12.0004)" width="24" height="2"/></svg>
+			</a>
+
+			<h3 class="global-search__heading" data-global-search-result-autocomplete-header data-global-search-result-header>Search Criterion.com</h3>
+
+			<form class="global-search__field" action="/search">
+				<input class="global-search__input" name="stq" type="text" placeholder="Search" data-global-search-user-input />
+				<input class="global-search__input u-sr-only" type="text" data-global-search-swiftype-input disabled />
+				<button type="submit" class="global-search__submit">
+					<span class="vh">Submit</span>
+					<svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg"><path d="M20.59961,10 L3.81445,10 L11.707,2.10693 C11.9622537,1.85487952 12.0629256,1.48540534 11.9708151,1.1387073 C11.8787045,0.792009252 11.607928,0.521221298 11.2612339,0.429096022 C10.9145398,0.336970745 10.5450613,0.437627004 10.293,0.69287 L0.69409,10.2923 C0.304586135,10.6837093 0.304586135,11.3162907 0.69409,11.7077 L10.293,21.30664 C10.6841917,21.6929226 11.313858,21.690928 11.7025947,21.3021749 C12.0913314,20.9134217 12.0932992,20.2837553 11.707,19.89258 L3.81445,12 L20.59961,12 C21.1518947,12 21.59961,11.5522847 21.59961,11 C21.59961,10.4477153 21.1518947,10 20.59961,10 Z" transform="rotate(-180 11 11)" fill-rule="evenodd" /></svg>
+				</button>
+			</form>
+
+			<div class="global-search__channel-note pk-o-caption-text pk-o-caption-text--sm pk-o-type--grey"><span class="global-search__channel-note--italic">For streaming, search the&nbsp;&nbsp;</span><a class="pk-c-global-search__channel-link pk-o-label-text pk-o-label-text--md pk-o-type--golden" href="https://www.criterionchannel.com/search" target="_blank">Criterion Channel</a></div>
+
+			<div class="global-search__results" data-global-search-autocomplete-results>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<script src="https://www.criterion.com/assets/js/main-public.js?v=1.28"></script>
+
+
+
+
+
+<script id="dsq-count-scr" src="//the-criterion-collection.disqus.com/count.js" async></script>
+
+
+<script>
+	var $buoop = {vs:{i:12,f:-4,o:-4,s:8,c:-4},api:4};
+	function $buo_f(){
+	 var e = document.createElement("script");
+	 e.src = "//browser-update.org/update.min.js";
+	 document.body.appendChild(e);
+	};
+	try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+	catch(e){window.attachEvent("onload", $buo_f)}
+</script>
+
+
+<script data-stripe-public-key="pk_live_hpmNO7T9hJVPIei1PP0TCLcI00EdDHjCq7" src="https://js.stripe.com/v3/"></script>
+
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '121335962047',
+      xfbml      : true,
+      version    : 'v2.8',
+      cookie     : true
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"NRJS-08583c234ea7b9f4cbc","applicationID":"771840878","transactionName":"b1dRNkBXWRIHUhBYW1YdcgFGX1gPSVcNXVlLHFYMRkRO","queueTime":3,"applicationTime":375,"atts":"QxBSQAhNShw=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>

@@ -5,13 +5,13 @@ Last-Modified: Mon, 12 Oct 2020 18:53:33 GMT
 Server: Akamai Resource Optimizer
 Vary: Accept-Encoding
 Cache-Control: max-age=191699
-Expires: Thu, 22 Oct 2020 22:38:45 GMT
-Date: Tue, 20 Oct 2020 17:23:46 GMT
+Expires: Fri, 23 Oct 2020 06:34:28 GMT
+Date: Wed, 21 Oct 2020 01:19:29 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=17
+Server-Timing: edge; dur=2
 Strict-Transport-Security: max-age=86400
 
 /*! jQuery v1.12.4 | (c) jQuery Foundation | jquery.org/license | WordPress 2019-05-16 */

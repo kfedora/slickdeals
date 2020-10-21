@@ -1,15 +1,16 @@
-HTTP/1.1 400 Bad Request
+HTTP/1.1 502 Bad Gateway
 Cache-Control: no-cache
 Content-Type: text/html
 Vary: Accept-Encoding
 Content-Length: 107
-Date: Tue, 20 Oct 2020 19:22:03 GMT
+X-Akamai-Path-Stats: [3:1958:417042]
+Date: Wed, 21 Oct 2020 02:32:14 GMT
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=25
-Server-Timing: origin; dur=485
+Server-Timing: edge; dur=4
+Server-Timing: origin; dur=419
 Strict-Transport-Security: max-age=86400
 
-<html><body><h1>400 Bad request</h1>
-Your browser sent an invalid request.
+<html><body><h1>502 Bad Gateway</h1>
+The server returned an invalid or incomplete response.
 </body></html>

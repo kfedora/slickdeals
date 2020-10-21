@@ -1,28 +1,26 @@
 HTTP/1.1 200 OK
-Date: Tue, 20 Oct 2020 20:15:59 GMT
+Date: Wed, 21 Oct 2020 03:25:54 GMT
 Content-Type: text/html; charset=ISO-8859-1
 Transfer-Encoding: chunked
 Connection: keep-alive
-CF-Ray: 5e5569febe4813ae-SEA
+CF-Ray: 5e57dfbe18410d82-IAD
 Cache-Control: private, max-age=0, proxy-revalidate, no-store, no-cache, must-revalidate
-Set-Cookie: JSESSIONID=m5tHp3uGl0eRiXiUIcg7M4_pWFKNjgif!-423751200; domain=bhphotovideo.com; path=/; HttpOnly;Secure; SameSite=None
+Set-Cookie: JSESSIONID=eA5JMRL85EDgs4V8_FmaajgcsUpY6gKu!-919539485; domain=bhphotovideo.com; path=/; HttpOnly;Secure; SameSite=None
 Vary: Accept-Encoding
 CF-Cache-Status: DYNAMIC
 BH-XDB: 2109465
-cf-request-id: 05e9409333000013ae123fc000000001
+cf-request-id: 05eaca2ace00000d824533b000000001
 Edge-Control: bypass-cache
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Pragma: no-cache
-Set-Cookie: lpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20,ipp=24,view=L,sort=BS,priv=N,state=; domain=bhphotovideo.com; expires=Sun, 07-Nov-2088 23:30:06 GMT; path=/;Secure; SameSite=None
-Set-Cookie: dpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20; domain=bhphotovideo.com; expires=Sun, 07-Nov-2088 23:30:06 GMT; path=/;Secure; SameSite=None
-Set-Cookie: uui=800.606.6969|; domain=bhphotovideo.com; expires=Sun, 07-Nov-2088 23:30:06 GMT; path=/;Secure; SameSite=None
-Set-Cookie: TopBarCart=0|0.00; domain=bhphotovideo.com; path=/;Secure; SameSite=None
-Set-Cookie: sessionKey=96ada0f5-4b7d-4852-9d9d-e4c66d48c868; domain=bhphotovideo.com; expires=Sun, 07-Nov-2088 23:30:06 GMT; path=/;Secure; SameSite=None
-Set-Cookie: lpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20,ipp=24,view=L,sort=BS,priv=N,state=; domain=bhphotovideo.com; expires=Sun, 07-Nov-2088 23:30:06 GMT; path=/
-Set-Cookie: dpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20; domain=bhphotovideo.com; expires=Sun, 07-Nov-2088 23:30:06 GMT; path=/
-Set-Cookie: TopBarCart=0|0.00; domain=bhphotovideo.com; path=/
-Set-Cookie: TS01472329=01ec39615f753182bcf75faed5c9fa3976f8783e0f027e2201d067267c1900f1c2a2c4952f88884b3ce77f91f550ddf525e240c1cdbd81ea635f626f41af05091e055eb91c; Path=/;Secure; SameSite=None
-Set-Cookie: TS0119d048=01ec39615f107c34be8cc7fdfed996501827aa7231452028bb572e0f3ac81d7dd6ed002426e094e3531d29f8243af04e7e694d7a6dba306fa63076ea4e36ca1a7f6e954e684b3b31dcb9571ac5892911f75321055e44e31e2a036858d8c335b24a0edb7505deb36c0bc294e26b3367bb8dc9b23a2f16222bfab686ad93dac9130200640b45edef836a14b4b1c6eca37c7fcf0f7339eb5485d61521b8cd3790a465384fd2348d0408116810a8ba81d6f9b8a4b9ee7a6e261e43511cc1d983f65796f7540e50; path=/; domain=bhphotovideo.com;Secure; SameSite=None
+Set-Cookie: lpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20,ipp=24,view=L,sort=BS,priv=N,state=VA; domain=bhphotovideo.com; expires=Mon, 08-Nov-2088 06:40:01 GMT; path=/;Secure; SameSite=None
+Set-Cookie: dpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20; domain=bhphotovideo.com; expires=Mon, 08-Nov-2088 06:40:01 GMT; path=/;Secure; SameSite=None
+Set-Cookie: uui=800.606.6969|; domain=bhphotovideo.com; expires=Mon, 08-Nov-2088 06:40:01 GMT; path=/;Secure; SameSite=None
+Set-Cookie: sessionKey=f6eab620-6305-45ac-bbfd-4faf26cdf532; domain=bhphotovideo.com; expires=Mon, 08-Nov-2088 06:40:01 GMT; path=/;Secure; SameSite=None
+Set-Cookie: lpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20,ipp=24,view=L,sort=BS,priv=N,state=VA; domain=bhphotovideo.com; expires=Mon, 08-Nov-2088 06:40:01 GMT; path=/
+Set-Cookie: dpi=cat=2,cur=USD,app=D,lang=E,view=L,lgdin=N,cache=release-WEB-20201014v10-BHJ-DVB25516-20; domain=bhphotovideo.com; expires=Mon, 08-Nov-2088 06:40:01 GMT; path=/
+Set-Cookie: TS01472329=01ec39615fd7f1500206aa5a3744db41d005371fdc802d3e192a7f5e175c236133f0333f30615bc009a9402cf1bbf836ea033099cac25f6580076befb1651ad8f47952ffe6; Path=/;Secure; SameSite=None
+Set-Cookie: TS0119d048=01ec39615f879d7344138b7c14461413ff0248c1ba75eb3f4f9bf1464a1bb55b15355bf66276b0207a8898dedee3623c0f7ca75e4bbb735e834a8aa8cd96b663c83ced3d8233ecb3f104507b29c40f528612580b825ac8ad6c2e41a4d6bb5721b4cef0f9434d89f7bbdc821ffb700b4cba27d0223ca83b99ed6a1009b7ae05afd806c14632f7cc1e17eac8d07943322632e02fc86eca4a33812f6a2316e1b6685ab0847f215a92040cbd884054706135c0eb5bdb8b; path=/; domain=bhphotovideo.com;Secure; SameSite=None
 Set-Cookie: D_PID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 Set-Cookie: D_IID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 Set-Cookie: D_UID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
@@ -31,8 +29,6 @@ Set-Cookie: D_HID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 Set-Cookie: D_ZID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 Set-Cookie: D_ZUID=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/;
 X-Frame-Options: SAMEORIGIN
-X-ORACLE-DMS-ECID: ee32c6f4-e0ff-4043-af01-3502574ac069-002e650b
-X-ORACLE-DMS-RID: 0
 X-UA-Compatible: IE=edge,chrome=IE6
 Server: cloudflare
 
@@ -821,7 +817,7 @@ BH.globals.isExplora = false;
 			"get_order_tomorrow":"to get your order tomorrow"}
 			
 </script>
-<div id="freeShippingWrapper" class='displayNone'>
+<div id="freeShippingWrapper" class=''>
 <div class="freeShippingContainer new-page-width" data-deliverby="">
 <div class="freeShippingMsgWrapper">
 <div class="ship-estimates-return-policy">
@@ -1362,7 +1358,6 @@ South Korean Won
 Swedish Krona
 </a>
 </li>
-
 <li data-selenium="currncyOption" class="ns-option ">
 <a data-selenium='currencyDropdown' data-currency-code="CHF" class="c36 noUnderline js-setCurrencyButton CHF" href="#" onclick="return false;">
 Swiss Franc
@@ -1430,7 +1425,7 @@ More Helpful Links <span class="fs18">&nbsp;&nbsp;+</span><span class="fs18 btn-
 <div class="js-footer_createAccount footer_createAccount">
 <p class="no-account-rel OpenSans-300-normal fs14" data-selenium='no-account'>Speed up future orders, see order history, create wish lists, and more.
 <a href="https://www.bhphotovideo.com/bnh/controller/home?O=AboutUs.jsp&A=getpage&Q=Login.jsp&isLoginOnly=Y&action=createAcct" data-selenium="emailSignupCreateAccount" class="openInOnePopupLayer" rel="noLayerCache">
-Create a B&amp;H Account
+ Create a B&amp;H Account
 </a>
 </p>
 </div>
@@ -1564,7 +1559,7 @@ var dlo =
 
             "subLoc":  '',
 
-            "user": {"isTaxExempt":false,"bi":null,"cartID":"23300382200","language":"E","catalogue":"B&H-Regular","isUsed":false,"SSSC_C":"","referrer":"","cartTotal":"","jSessionId":"","cm_mmc":"","b2bCatalogue":"","rememberId":"","cookieId":"","ib":true,"isMobile":false,"dataLayerInfo":""},
+            "user": {"isTaxExempt":false,"bi":null,"cartID":"23308355252","language":"E","catalogue":"B&H-Regular","isUsed":false,"SSSC_C":"","referrer":"","cartTotal":"","jSessionId":"","cm_mmc":"","b2bCatalogue":"","rememberId":"","cookieId":"","ib":true,"isMobile":false,"dataLayerInfo":""},
          "product": {"salesComment":"","isExpertPick":false,"itemCode":"","featuredItemCategory":"","source":"","category":"","sku":""},
          	"used": {
          		"products" :[]
@@ -1696,5 +1691,5 @@ var dlo =
 		embeddedLiveChatProperties.snapins_button_id = '5732L00000005mQ';
 		embeddedLiveChatProperties.snapins_deployment_name = 'Snap_Ins';
 	</script>
-<script type="text/javascript" id="d__inj" class="d__inj_delayed"> setTimeout(function(){ var d = document.createElement('script'); d.type = 'text/javascript';  d.defer = d.async = !0; d.src = '/otohphnbwww-sdyfrwbedcuqwcttbd.js';  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(d, s);  }, 20 ); </script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#scxxasazaxvretcwbbdxeuasfyz{display:none!important}</style></body>
+<script type="text/javascript" id="d__inj" class="d__inj_delayed"> setTimeout(function(){ var d = document.createElement('script'); d.type = 'text/javascript';  d.defer = d.async = !0; d.src = '/otohphnbwww-evzzfwzdcafzrf.js';  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(d, s);  }, 20 ); </script><style type="text/css">#d__fFH{position:absolute;top:-5000px;left:-5000px}#d__fF{font-family:serif;font-size:200px;visibility:hidden}#zcsqueqtcwuecafvbzd{display:none!important}</style></body>
 </html>
