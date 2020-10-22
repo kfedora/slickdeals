@@ -1,0 +1,660 @@
+HTTP/1.1 200 OK
+server: envoy
+date: Wed, 21 Oct 2020 23:21:59 GMT
+content-type: text/html; charset=UTF-8
+vary: Accept-Encoding
+expires: Wed, 21 Oct 2020 23:21:59 GMT
+cache-control: no-cache
+x-frame-options: SAMEORIGIN
+content-security-policy: frame-ancestors 'self';
+x-envoy-upstream-service-time: 1
+transfer-encoding: chunked
+Via: 1.1 google
+Alt-Svc: clear
+
+<!doctype html>
+<html class="no-js no-filters fahrenheit autumn region-WA dma-0 country-US locale-mismatch" lang="en-US" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+    <script>dataLayer=[{dimPixelRatio:window.devicePixelRatio}]</script>
+
+    
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  (function() {
+    
+    var ap = ['q', 'gclid', 'app', 'utm_source', 'utm_medium', 'utm_campaign',
+              'utm_content', 'utm_term', 'referrer', 'mode', 'page', 'dclid', 'dropcam'];
+
+    
+    function path(pathname) {
+      
+      var replacements = [
+        [/\/order\//, '/order/'],
+        [/\/orders\//, '/orders/'],
+        [/\/checkout\//, '/checkout/'],
+        [/\/thank-you\//, '/thank-you/'],
+        [/\/homeserve\//, '/homeserve/'],
+      ];
+      for (var i = 0; i < replacements.length; i++) {
+        if (replacements[i][0].test(pathname)) {
+          pathname = replacements[i][1];
+          break;
+        }
+      }
+
+      
+      pathname = pathname.replace(/\S+@\S+/g, 'filtered');
+
+      return pathname;
+    }
+
+    
+    function search(query) {
+      query = query.substring(1);
+      try {
+        query = query.split('&')
+            .map(function(p) {return p.split('=')})
+            .filter(function(p) {return ap.indexOf(p[0]) > -1})
+            .map(function(p) {return p.map(function(_) {
+                return excludeEmail(_)}).join('=');
+            })
+            .join('&');
+      } catch(e){}
+      return query ? '?' + query : '';
+    }
+
+    
+    function excludeEmail(str) {
+      return encodeURIComponent(
+        decodeURIComponent(str).replace(/\S+@\S+/g, '(filtered)')
+      );
+    }
+
+    
+    function cleanUpLocation(L) {
+      return [L.protocol, '//', L.host, path(L.pathname), search(L.search)].join('');
+    }
+
+    var url = cleanUpLocation(location);
+
+    
+    ga(function() {
+      var orig = ga.create;
+      ga.create = function() {orig.apply(ga, arguments).set({'location': url})};
+    });
+
+    ga('create', 'UA-19609914-2', 'auto');
+    ga('require', 'GTM-K4R78T');
+  })();
+</script>
+
+    
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PDQVFC');</script>
+
+    
+<script>
+  window.dataLayer.push({'event': 'optimize.activate.route:application'});
+</script>
+
+
+    <!--[if !IE]> <!--> 
+      <script>
+        if (navigator.appVersion.indexOf('MSIE 10') !== -1) document.documentElement.className += 'is-ie ie' + document.documentMode + ' lte-ie' + document.documentMode;
+      </script>
+    <!--<![endif]-->
+
+    <title>Check compatibility | Nest</title>
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="https://nest.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//ajax.googleapis.com">
+<link rel="dns-prefetch" href="//3870569.fls.doubleclick.net">
+<link rel="dns-prefetch" href="//www.facebook.com">
+<link rel="dns-prefetch" href="//connect.facebook.net/">
+<link rel="dns-prefetch" href="//platform.twitter.com">
+<link rel="dns-prefetch" href="//analytics.twitter.com">
+<link rel="dns-prefetch" href="//ad.doubleclick.net">
+
+
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="author" content="Nest" />
+    <meta name="description" itemprop="description" content="Check compatibility" />
+    <meta name="creator" itemprop="publisher" content="Nest Labs, Inc." />
+    <meta name="build-id" content="www-25471-1eb2cdd" />
+    <meta name="locale-root" id="locale-root" content="/" />
+    <meta name="referrer" content="always" />
+    
+    <meta name="format-detection" content="telephone=no" />
+    
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!--[if IE]>
+      <meta name="msapplication-TileImage" content="https://nest.com/images/global/ms-app-icon-767284496.png" />
+      <meta name="msapplication-TileColor" content="#00AFD8" />
+    <![endif]-->
+
+    <meta property="fb:app_id" content="128769660533433" /><meta property="og:type" content="website" /><meta property="og:url" content="https://www.nest.com/works/" /><meta property="og:title" content="Check compatibility" /><meta property="og:image" content="https://nest.com/images/social/nest_default_share_icon.jpg" /><meta property="og:description" content="Check compatibility" /><meta property="og:site_name" content="Nest" /><meta property="og:locale" content="en_US" />
+    <meta property="twitter:card" content="summary" /><meta property="twitter:site" content="@nest" /><meta property="twitter:title" content="Check compatibility" /><meta property="twitter:description" content="Check compatibility" /><meta property="twitter:image" content="https://nest.com/images/social/nest_default_share_icon.jpg" />
+    <meta itemprop="name" content="Check compatibility | Nest" /><meta itemprop="image" content="https://nest.com/images/social/nest_default_share_icon.jpg" /><meta itemprop="copyrightHolder" content="Nest Labs" /><meta itemprop="copyrightYear" content="2020" /><meta itemprop="isFamilyFriendly" content="true" />
+    
+    
+
+    <link rel="shortcut icon" href="/images/global/favicon.ico" />
+    <link rel="apple-touch-icon" href="/images/global/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/global/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/global/apple-touch-icon-114x114.png" />
+    
+      <link rel="canonical" itemprop="url" href="https://nest.com/works/" />
+    
+
+    
+
+<style type='text/css'>
+  
+      
+      @font-face {
+        font-family: "Akkurat";
+        src: url('/fonts/lineto_akkurat_pro/regular.woff') format("woff"),
+            url('/fonts/lineto_akkurat_pro/regular.svg') format("svg"),
+            url('/fonts/lineto_akkurat_pro/regular.eot') format("embedded-opentype"),
+            url('/fonts/lineto_akkurat_pro/regular.ttf') format('truetype');
+      }
+  
+      
+      @font-face {
+        font-family: "Akkurat Italic";
+        src: url('/fonts/lineto_akkurat_pro/italic.woff') format("woff"),
+            url('/fonts/lineto_akkurat_pro/italic.svg') format("svg"),
+            url('/fonts/lineto_akkurat_pro/italic.eot') format("embedded-opentype"),
+            url('/fonts/lineto_akkurat_pro/italic.ttf') format('truetype');
+      }
+  
+      
+      @font-face {
+        font-family: "Akkurat Light";
+        src: url('/fonts/lineto_akkurat_pro/light.woff') format("woff"),
+            url('/fonts/lineto_akkurat_pro/light.svg') format("svg"),
+            url('/fonts/lineto_akkurat_pro/light.eot') format("embedded-opentype"),
+            url('/fonts/lineto_akkurat_pro/light.ttf') format('truetype');
+      }
+  
+      
+      @font-face {
+        font-family: "Akkurat Light Italic";
+        src: url('/fonts/lineto_akkurat_pro/light_italic.woff') format("woff"),
+            url('/fonts/lineto_akkurat_pro/light_italic.svg') format("svg"),
+            url('/fonts/lineto_akkurat_pro/light_italic.eot') format("embedded-opentype"),
+            url('/fonts/lineto_akkurat_pro/light_italic.ttf') format('truetype');
+      }
+  
+      
+      @font-face {
+        font-family: "Akkurat Book";
+        src: url('/fonts/lineto_akkurat_pro/book.woff') format("woff"),
+            url('/fonts/lineto_akkurat_pro/book.svg') format("svg"),
+            url('/fonts/lineto_akkurat_pro/book.eot') format("embedded-opentype"),
+            url('/fonts/lineto_akkurat_pro/book.ttf') format('truetype');
+      }
+  
+      
+      @font-face {
+        font-family: "Akkurat Book Italic";
+        src: url('/fonts/lineto_akkurat_pro/book_italic.woff') format("woff"),
+            url('/fonts/lineto_akkurat_pro/book_italic.svg') format("svg"),
+            url('/fonts/lineto_akkurat_pro/book_italic.eot') format("embedded-opentype"),
+            url('/fonts/lineto_akkurat_pro/book_italic.ttf') format('truetype');
+      }
+  
+      
+      @font-face {
+        font-family: "Akkurat Medium";
+        src: url('/fonts/lineto_akkurat_pro/medium.woff') format("woff"),
+            url('/fonts/lineto_akkurat_pro/medium.svg') format("svg"),
+            url('/fonts/lineto_akkurat_pro/medium.eot') format("embedded-opentype"),
+            url('/fonts/lineto_akkurat_pro/medium.ttf') format('truetype');
+      }
+  
+      
+      @font-face {
+        font-family: "Akkurat Medium Italic";
+        src: url('/fonts/lineto_akkurat_pro/medium_italic.woff') format("woff"),
+            url('/fonts/lineto_akkurat_pro/medium_italic.svg') format("svg"),
+            url('/fonts/lineto_akkurat_pro/medium_italic.eot') format("embedded-opentype"),
+            url('/fonts/lineto_akkurat_pro/medium_italic.ttf') format('truetype');
+      }
+  
+      
+      @font-face {
+        font-family: "Akkurat Bold";
+        src: url('/fonts/lineto_akkurat_pro/bold.woff') format("woff"),
+            url('/fonts/lineto_akkurat_pro/bold.svg') format("svg"),
+            url('/fonts/lineto_akkurat_pro/bold.eot') format("embedded-opentype"),
+            url('/fonts/lineto_akkurat_pro/bold.ttf') format('truetype');
+      }
+  
+      
+      @font-face {
+        font-family: "Akkurat Bold Italic";
+        src: url('/fonts/lineto_akkurat_pro/bold_italic.woff') format("woff"),
+            url('/fonts/lineto_akkurat_pro/bold_italic.svg') format("svg"),
+            url('/fonts/lineto_akkurat_pro/bold_italic.eot') format("embedded-opentype"),
+            url('/fonts/lineto_akkurat_pro/bold_italic.ttf') format('truetype');
+      }
+  
+</style>
+
+
+    
+      <script defer type="text/javascript" src="/nest-web-components.bundle.min.js?10142020203101980"></script>
+    
+
+    
+      <link href="https://nest.com/styles/global-2375410370.css" rel="stylesheet" media="screen" />
+<link href="https://nest.com/styles/requirements-2059134271.css" rel="stylesheet" media="screen" />
+    
+
+    <link href="https://nest.com/styles/print-1375822725.css" rel="stylesheet" media="print" />
+
+    <script>
+/*! modernizr 3.3.0 (Custom Build) | MIT *
+ * http://modernizr.com/download/?-touchevents-video-setclasses !*/
+!function(e,n,o){function t(e,n){return typeof e===n}function a(){var e,n,o,a,s,i,r;for(var l in d)if(d.hasOwnProperty(l)){if(e=[],n=d[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(o=0;o<n.options.aliases.length;o++)e.push(n.options.aliases[o].toLowerCase());for(a=t(n.fn,"function")?n.fn():n.fn,s=0;s<e.length;s++)i=e[s],r=i.split("."),1===r.length?Modernizr[r[0]]=a:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=a),c.push((a?"":"no-")+r.join("-"))}}function s(e){var n=p.className,o=Modernizr._config.classPrefix||"";if(u&&(n=n.baseVal),Modernizr._config.enableJSClass){var t=new RegExp("(^|\\s)"+o+"no-js(\\s|$)");n=n.replace(t,"$1"+o+"js$2")}Modernizr._config.enableClasses&&(n+=" "+o+e.join(" "+o),u?p.className.baseVal=n:p.className=n)}function i(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):u?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function r(){var e=n.body;return e||(e=i(u?"svg":"body"),e.fake=!0),e}function l(e,o,t,a){var s,l,c,d,f="modernizr",u=i("div"),v=r();if(parseInt(t,10))for(;t--;)c=i("div"),c.id=a?a[t]:f+(t+1),u.appendChild(c);return s=i("style"),s.type="text/css",s.id="s"+f,(v.fake?v:u).appendChild(s),v.appendChild(u),s.styleSheet?s.styleSheet.cssText=e:s.appendChild(n.createTextNode(e)),u.id=f,v.fake&&(v.style.background="",v.style.overflow="hidden",d=p.style.overflow,p.style.overflow="hidden",p.appendChild(v)),l=o(u,e),v.fake?(v.parentNode.removeChild(v),p.style.overflow=d,p.offsetHeight):u.parentNode.removeChild(u),!!l}var c=[],d=[],f={_version:"3.3.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var o=this;setTimeout(function(){n(o[e])},0)},addTest:function(e,n,o){d.push({name:e,fn:n,options:o})},addAsyncTest:function(e){d.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=f,Modernizr=new Modernizr;var p=n.documentElement,u="svg"===p.nodeName.toLowerCase(),v=f._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):[];f._prefixes=v;var h=f.testStyles=l;Modernizr.addTest("touchevents",function(){var o;if("ontouchstart"in e||e.DocumentTouch&&n instanceof DocumentTouch)o=!0;else{var t=["@media (",v.join("touch-enabled),("),"heartz",")","{#modernizr{top:9px;position:absolute}}"].join("");h(t,function(e){o=9===e.offsetTop})}return o}),Modernizr.addTest("video",function(){var e=i("video"),n=!1;try{(n=!!e.canPlayType)&&(n=new Boolean(n),n.ogg=e.canPlayType('video/ogg; codecs="theora"').replace(/^no$/,""),n.h264=e.canPlayType('video/mp4; codecs="avc1.42E01E"').replace(/^no$/,""),n.webm=e.canPlayType('video/webm; codecs="vp8, vorbis"').replace(/^no$/,""),n.vp9=e.canPlayType('video/webm; codecs="vp9"').replace(/^no$/,""),n.hls=e.canPlayType('application/x-mpegURL; codecs="avc1.42E01E"').replace(/^no$/,""))}catch(o){}return n}),a(),s(c),delete f.addTest,delete f.addAsyncTest;for(var m=0;m<Modernizr._q.length;m++)Modernizr._q[m]();e.Modernizr=Modernizr}(window,document);
+</script>
+
+
+    <script type="text/javascript">
+  var SITE_URLS = window.SITE_URLS = {};
+
+  
+      SITE_URLS['corp.where_to_buy'] = '/where-to-buy/';
+  
+      SITE_URLS['incentives.api'] = '//offers.nest.com/api/v1/incentives/';
+  
+      SITE_URLS['js.certified_finder_url'] = '/widget/pro-finder/';
+  
+      SITE_URLS['js.coming_soon_url'] = '/coming-soon/';
+  
+      SITE_URLS['js.compatibility_url'] = '/widget/thermostat-compatibility/';
+  
+      SITE_URLS['js.five_hundred_error'] = 'https://store.nest.com/500?embedded=1';
+  
+      SITE_URLS['js.eu_thermostat_compatibility_url'] = '/widget/thermostat-compatibility/';
+  
+      SITE_URLS['js.login_popup'] = 'https://store.nest.com/sso/login/?style=popup';
+  
+      SITE_URLS['login_url'] = 'https://home.nest.com/login';
+  
+      SITE_URLS['modal.be_the_first'] = '/modal/be-the-first/';
+  
+      SITE_URLS['modal.be_the_first_announce'] = '/modal/be-the-first-announce/';
+  
+      SITE_URLS['modal.be_the_first_wwn'] = '/modal/be-the-first-wwn/';
+  
+      SITE_URLS['nest_pro_installation.main'] = '/nest-pro-installation/';
+  
+      SITE_URLS['registria_store_url'] = 'https://store.learningthermostat.nest.com';
+  
+      SITE_URLS['store.doorbell'] = 'https://store.nest.com/product/nest-hello/';
+  
+      SITE_URLS['store.rebates'] = 'https://store.nest.com/rebates/';
+  
+      SITE_URLS['store.stand'] = 'https://store.nest.com/product/stand-for-thermostat/';
+  
+      SITE_URLS['store.thermostat'] = 'https://store.nest.com/product/thermostat/';
+  
+      SITE_URLS['store.thermostat_e'] = 'https://store.nest.com/product/thermostat-e/';
+  
+      SITE_URLS['store_url'] = 'https://store.nest.com';
+  
+      SITE_URLS['support.backup-battery-critical'] = '/support/article/How-do-I-replace-my-Nest-Protect-s-batteries';
+  
+      SITE_URLS['support.backup-battery-dead'] = '/support/article/How-do-I-replace-my-Nest-Protect-s-batteries';
+  
+      SITE_URLS['support.backup-battery-low'] = '/support/article/How-do-I-replace-my-Nest-Protect-s-batteries';
+  
+      SITE_URLS['support.battery-critical'] = '/support/article/How-do-I-replace-my-Nest-Protect-s-batteries';
+  
+      SITE_URLS['support.battery-low'] = '/support/article/How-do-I-replace-my-Nest-Protect-s-batteries';
+  
+      SITE_URLS['support.co-sensor-fail'] = '/support/article/When-do-I-need-to-replace-my-Nest-Protect';
+  
+      SITE_URLS['support.contact_us'] = '/support/contact-us';
+  
+      SITE_URLS['support.led-fail'] = '/support/article/When-do-I-need-to-replace-my-Nest-Protect';
+  
+      SITE_URLS['support.main'] = '/support/';
+  
+      SITE_URLS['support.offline'] = '/support/article/Troubleshooting-Offline-Nest-Protect';
+  
+      SITE_URLS['support.power-out'] = '/support/article/What-should-I-do-if-I-have-a-wired-Nest-Protect-and-the-Nest-app-notified-me-that-the-power-is-out';
+  
+      SITE_URLS['support.profinder'] = '/profinder';
+  
+      SITE_URLS['support.protect-expired'] = '/support/article/When-do-I-need-to-replace-my-Nest-Protect';
+  
+      SITE_URLS['support.smoke-sensor-fail'] = '/support/article/Nest-Protect-sounds-false-smoke-alarms-or-my-Nest-app-says-The-smoke-sensor-has-failed';
+  
+      SITE_URLS['support.sound-check-sensor'] = '/support/article/Learn-more-about-Sound-Check/';
+  
+      SITE_URLS['thermostat.save_energy'] = '/thermostat/saving-energy/';
+  
+      SITE_URLS['widgets.thermostat-install-guide'] = '/widget/thermostat-install-guide/';
+  
+      SITE_URLS['widgets.pro'] = '/widget/pro-finder/';
+  
+      SITE_URLS['widgets.rebates'] = '/widget/rebates/';
+  
+      SITE_URLS['widgets.status'] = '/widget/status/';
+  
+      SITE_URLS['widgets.troubleshooting'] = '/widget/thermostat-troubleshooting/';
+  
+      SITE_URLS['widgets.utility'] = '/widget/utility/';
+  
+      SITE_URLS['widgets.doorbell-compatibility'] = '/widget/doorbell-compatibility/';
+  
+      SITE_URLS['www_url'] = '//nest.com';
+  
+
+  SITE_URLS['hosts'] = {};
+  SITE_URLS['hosts']['www'] = 'nest.com';
+  SITE_URLS['hosts']['cdn'] = 'https://nest.com';
+</script>
+
+  </head>
+
+  <body id="works" class="works">
+    
+    <noscript><iframe src="https://www.google-analytics.com/gtm/ns?id=GTM-K4R78T"
+    style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
+    
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PDQVFC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    
+<div id="main">
+  <header id="main-header" class="floating-nav-spacer">
+  <nl-header
+    data-locale="en-US"
+    data-www-domain="//nest.com"
+    data-store-domain="https://store.nest.com"
+    data-home-domain="//home.nest.com/"
+    data-page-id="works"
+  ></nl-header>
+</header>
+
+  <div class="content wrapper main-wrapper" role="main">
+    
+<section id="requirements-container" class="container">
+  <h1 class="page-heading">Check&nbsp;compatibility</h1>
+
+  <div class="product-chooser-module">
+    <h1 class="section-heading">Choose a&nbsp;product</h1>
+
+    
+
+    <ul id="product-chooser">
+      
+        <li>
+          <a href="#" id="product-chooser--thermostats" class="product-chooser-option" title="Nest&nbsp;Thermostat" itemprop="url" data-device-url="//nest.com/thermostat-works-modal">
+            <span class="product-glyph"></span>
+            <span class="product-label">Nest&nbsp;Thermostat</span>
+          </a>
+        </li>
+      
+        <li>
+          <a href="#" id="product-chooser--doorbell" class="product-chooser-option" title="Nest&nbsp;Hello" itemprop="url" data-device-url="//nest.com/doorbell-compatibility-modal">
+            <span class="product-glyph"></span>
+            <span class="product-label">Nest&nbsp;Hello</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+</section>
+
+
+<span id="scroll-marker"></span>
+
+<script>
+  
+
+  window.AVAILABILITY_LIST = {
+    
+      thermostats: ["en-US","en-CA","fr-CA","es-MX","en-AE","fr-FR","en-GB","en-IE","nl-NL","fr-BE","nl-BE","it-IT","es-ES","fr-LU"],
+    
+      thermostatsCategory: ["en-US","en-CA","fr-CA"],
+    
+      cameras: ["en-US","fr-FR","en-CA","fr-CA","en-GB","en-IE","nl-NL","fr-BE","nl-BE","de-DE","de-AT","it-IT","es-ES","es-MX","en-AU","en-NZ","en-SE","en-FI","en-DK","en-NO","fr-CH","de-CH","en-AE","fr-LU"],
+    
+      camerasCategory: ["en-US","fr-FR","en-CA","fr-CA","en-GB","en-IE","nl-NL","fr-BE","nl-BE","de-DE","de-AT","it-IT","es-ES","es-MX","en-AU","en-NZ","en-SE","en-FI","en-DK","en-NO","fr-CH","de-CH","en-AE","fr-LU"],
+    
+      alarmSystem: ["en-US"],
+    
+      protect: ["en-US","fr-FR","en-CA","fr-CA","en-GB","en-IE","nl-NL","fr-BE","nl-BE","de-DE","de-AT","it-IT","es-ES","es-MX","en-AU","en-NZ","en-SE","en-FI","en-DK","en-NO","fr-CH","de-CH","fr-LU"],
+    
+      doorbell: ["en-US","fr-FR","en-CA","fr-CA","en-GB","en-IE","nl-NL","fr-BE","nl-BE","de-DE","de-AT","it-IT","es-ES","en-SE","en-FI","en-DK","en-NO","fr-CH","de-CH","fr-LU"],
+    
+      lock: ["en-US","en-CA","fr-CA"],
+    
+      temperatureSensor: ["en-US","en-CA","fr-CA"],
+    
+  };
+</script>
+
+<section id="country-selector-container">
+  <div class="container">
+
+    <div class="country-module"
+      data-www-url="//nest.com"
+      data-pro-url="//pro.nest.com">
+
+      <div class="module">
+        <h1 class="large-header">Choose your&nbsp;country</h1>
+
+        
+
+        
+          
+          <ul class="country-list country-list_north-america">
+            <li class="country-list-heading">
+              <h2>North&nbsp;America</h2>
+            </li>
+
+            
+              
+              <li class="country-item country-ca"  >
+                <a data-locale="en-CA" data-locale-path="/ca/" itemprop="url" title="Canada (English)" href="/ca/"><span class="flag"></span>Canada<span class="language"> (English)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-ca"  >
+                <a data-locale="fr-CA" data-locale-path="/ca/fr/" itemprop="url" title="Canada (Fran&ccedil;ais)" href="/ca/fr/"><span class="flag"></span>Canada<span class="language"> (Fran&ccedil;ais)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-mx"  >
+                <a data-locale="es-MX" data-locale-path="/mx/" itemprop="url" title="México (Español)" href="/mx/"><span class="flag"></span>México<span class="language"> (Español)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-us"  >
+                <a data-locale="en-US" data-locale-path="/" itemprop="url" title="United States (English)" href="/"><span class="flag"></span>United&nbsp;States<span class="language"> (English)</span></a>
+              </li>
+            
+          </ul>
+        
+          
+          <ul class="country-list country-list_europe">
+            <li class="country-list-heading">
+              <h2>Europe and Middle&nbsp;East</h2>
+            </li>
+
+            
+              
+              <li class="country-item country-be"  >
+                <a data-locale="nl-BE" data-locale-path="/be/nl/" itemprop="url" title="België (Nederlands)" href="/be/nl/"><span class="flag"></span>België<span class="language"> (Nederlands)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-be"  >
+                <a data-locale="fr-BE" data-locale-path="/be/fr/" itemprop="url" title="Belgique (Fran&ccedil;ais)" href="/be/fr/"><span class="flag"></span>Belgique<span class="language"> (Fran&ccedil;ais)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-dk"  >
+                <a data-locale="en-DK" data-locale-path="/dk/" itemprop="url" title="Denmark (English)" href="/dk/"><span class="flag"></span>Denmark<span class="language"> (English)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-de"  >
+                <a data-locale="de-DE" data-locale-path="/de/" itemprop="url" title="Deutschland (Deutsch)" href="/de/"><span class="flag"></span>Deutschland<span class="language"> (Deutsch)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-es"  >
+                <a data-locale="es-ES" data-locale-path="/es/" itemprop="url" title="España (Español)" href="/es/"><span class="flag"></span>España<span class="language"> (Español)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-fi"  >
+                <a data-locale="en-FI" data-locale-path="/fi/" itemprop="url" title="Finland (English)" href="/fi/"><span class="flag"></span>Finland<span class="language"> (English)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-fr"  >
+                <a data-locale="fr-FR" data-locale-path="/fr/" itemprop="url" title="France (Fran&ccedil;ais)" href="/fr/"><span class="flag"></span>France<span class="language"> (Fran&ccedil;ais)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-ie"  >
+                <a data-locale="en-IE" data-locale-path="/ie/" itemprop="url" title="Ireland (English)" href="/ie/"><span class="flag"></span>Ireland<span class="language"> (English)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-it"  >
+                <a data-locale="it-IT" data-locale-path="/it/" itemprop="url" title="Italia (Italiano)" href="/it/"><span class="flag"></span>Italia<span class="language"> (Italiano)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-lu"  >
+                <a data-locale="fr-LU" data-locale-path="/lu/" itemprop="url" title="Luxembourg (Fran&ccedil;ais)" href="/lu/"><span class="flag"></span>Luxembourg<span class="language"> (Fran&ccedil;ais)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-nl"  >
+                <a data-locale="nl-NL" data-locale-path="/nl/" itemprop="url" title="Nederland (Nederlands)" href="/nl/"><span class="flag"></span>Nederland<span class="language"> (Nederlands)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-no"  >
+                <a data-locale="en-NO" data-locale-path="/no/" itemprop="url" title="Norway (English)" href="/no/"><span class="flag"></span>Norway<span class="language"> (English)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-at"  >
+                <a data-locale="de-AT" data-locale-path="/at/" itemprop="url" title="Österreich (Deutsch)" href="/at/"><span class="flag"></span>Österreich<span class="language"> (Deutsch)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-ch"  >
+                <a data-locale="de-CH" data-locale-path="/ch/de/" itemprop="url" title="Schweiz (Deutsch)" href="/ch/de/"><span class="flag"></span>Schweiz<span class="language"> (Deutsch)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-ch"  >
+                <a data-locale="fr-CH" data-locale-path="/ch/fr/" itemprop="url" title="Suisse (Fran&ccedil;ais)" href="/ch/fr/"><span class="flag"></span>Suisse<span class="language"> (Fran&ccedil;ais)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-se"  >
+                <a data-locale="en-SE" data-locale-path="/se/" itemprop="url" title="Sweden (English)" href="/se/"><span class="flag"></span>Sweden<span class="language"> (English)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-ae"  >
+                <a data-locale="en-AE" data-locale-path="/ae/" itemprop="url" title="United Arab Emirates (English)" href="/ae/"><span class="flag"></span>United Arab&nbsp;Emirates<span class="language"> (English)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-gb"  >
+                <a data-locale="en-GB" data-locale-path="/uk/" itemprop="url" title="United Kingdom (English)" href="/uk/"><span class="flag"></span>United&nbsp;Kingdom<span class="language"> (English)</span></a>
+              </li>
+            
+          </ul>
+        
+          
+          <ul class="country-list country-list_asia-pacific">
+            <li class="country-list-heading">
+              <h2>Asia&nbsp;Pacific</h2>
+            </li>
+
+            
+              
+              <li class="country-item country-au"  >
+                <a data-locale="en-AU" data-locale-path="/au/" itemprop="url" title="Australia (English)" href="/au/"><span class="flag"></span>Australia<span class="language"> (English)</span></a>
+              </li>
+            
+              
+              <li class="country-item country-nz"  >
+                <a data-locale="en-NZ" data-locale-path="/nz/" itemprop="url" title="New Zealand (English)" href="/nz/"><span class="flag"></span>New&nbsp;Zealand<span class="language"> (English)</span></a>
+              </li>
+            
+          </ul>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <nl-footer
+      data-locale="en-US"
+      data-www-domain="//nest.com"
+      data-store-domain="https://store.nest.com"
+      data-home-domain="//home.nest.com/"
+      data-page-id=""
+      data-postal-code="Missing key: geoip_postal_code"
+    ></nl-footer>
+  </div>
+</div>
+
+
+    
+      <nl-configurator data-cart-url="https://store.nest.com/cart/"></nl-configurator>
+    
+
+    
+
+    <script>var GEO_IP={"area_code":"0","city":"Missing key: geoip_city","continent":"NA","coordinates":{"latitude":"47.6032","longitude":"-122.3412"},"country":{"code":"US","name":"United States"},"dma_code":"0","language":"en","postal_code":"Missing key: geoip_postal_code","region":"WA","ip":"40.65.108.112"}</script>
+
+    <script type="text/javascript">
+      var optimal_pixel_code = "DyawS3h0abGwF1S";
+    </script>
+
+    
+      <script src="https://nest.com/scripts/nest-2413553518.js" defer="true"></script>
+    
+
+    
+
+
+
+  </body>
+</html>

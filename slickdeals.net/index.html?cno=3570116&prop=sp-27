@@ -1,0 +1,3096 @@
+HTTP/1.1 200 OK
+X-Backside-Transport: OK OK
+Connection: Keep-Alive
+Transfer-Encoding: chunked
+Date: Wed, 21 Oct 2020 21:49:34 GMT
+Server: IBM_HTTP_Server
+Pragma: No-cache
+Cache-Control: no-cache,no-store,max-age=0, public
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Set-Cookie: REFERRER=https%3a%2f%2fslickdeals%2enet%2fcoupons%2ftotal%2dwireless%2f; Path=/
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, HEAD, POST, OPTIONS, PUT, DELETE
+Access-Control-Allow-Headers: x-requested-with, Content-Type, origin, authorization, accept, client-security-token, WCToken, WCTrustedToken
+Vary: User-Agent,Accept-Encoding
+Content-Type: text/html;charset=UTF-8
+Content-Language: en-US
+X-Global-Transaction-ID: 944760aa5f90acee63e0090f
+X-CDN: Incapsula
+X-Iinfo: 3-5605507-5605510 NNNY CT(0 0 0) RT(1603316974058 15) q(0 0 0 -1) r(25 25) U12
+
+<!-- Begin ProductDisplay.jsp -->
+<!doctype HTML>
+	
+		<input type="hidden" id="noPlanCatId" value="73089"/>
+	<!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+<head>
+<!-- BEGIN ProductDisplayContainer.jsp --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  --> 
+<link rel="icon" href="/wcsstore/TotalWireless/images/icons/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/wcsstore/TotalWireless/images/icons/favicon.ico" type="image/x-icon" />
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<html lang="en">
+	
+
+<link rel="stylesheet" type="text/css" href="/wcsstore/TFAuroraStorefrontAssetStore/css/slick.css?tf_ver_37.0">
+<link rel="stylesheet" type="text/css" href="/wcsstore/TFAuroraStorefrontAssetStore/css/slick-theme.css?tf_ver_37.0">
+	
+<!-- get catgroup id: -->
+<input hidden id="categoryIdZTT" value="31001"/>
+<input hidden id="pageNameforZTT" value="Top Deals"/>
+
+<input hidden id="specialOfferCodeZTT" value=""/>
+<input hidden id="parentPartNumberZTT" value="TWALA405DCR_P"/>
+
+
+		<title>ALCATEL MYFLIP&trade; (A405DL) - RECONDITIONED|TotalWir</title>
+		<meta name="description" content="RECONDITIONED. The Alcatel MYFLIP&trade; is more than just a basic phone. It delivers the essential features to be productive - including access to email, calendar and we"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	    <link rel="canonical" href="https://shop.totalwireless.com/shop/en/totalwireless/phones/tw-alcatel-my-flip-a405dl-reconditioned" />
+	    
+	    	
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<link  rel="stylesheet" type="text/css" href="/wcsstore/TotalWireless/css/TFTotalwireless.css?tf_ver_37.0">	
+
+
+<style>
+ 
+.ui-dialog {
+    left: 25% !important;
+    right: 25% !important;
+    top: 15% !important;
+}
+.QAS_RightDetails {
+  Border: 1px solid #fff;
+}
+
+@media (max-width: 767px) {
+  .ui-dialog {
+     max-width: 90% !important;
+  margin-left: 15px !important;
+  }
+}
+		
+</style><script>
+function rightRotate(value, amount) {
+    return (value>>>amount) | (value<<(32 - amount));
+  }
+  
+function sha256(ascii) { 
+  var mathPow = Math.pow;
+  var maxWord = mathPow(2, 32);
+  var lengthProperty = 'length'
+  var i, j; // Used as a counter across the whole file
+  var result = ''
+
+  var words = [];
+  var asciiBitLength = ascii[lengthProperty]*8;
+  
+  //* caching results is optional - remove/add slash from front of this line to toggle
+  // Initial hash value: first 32 bits of the fractional parts of the square roots of the first 8 primes
+  // (we actually calculate the first 64, but extra values are just ignored)
+  var hash = sha256.h = sha256.h || [];
+  // Round constants: first 32 bits of the fractional parts of the cube roots of the first 64 primes
+  var k = sha256.k = sha256.k || [];
+  var primeCounter = k[lengthProperty];
+  /*/
+  var hash = [], k = [];
+  var primeCounter = 0;
+  //*/
+
+  var isComposite = {};
+  for (var candidate = 2; primeCounter < 64; candidate++) {
+    if (!isComposite[candidate]) {
+      for (i = 0; i < 313; i += candidate) {
+        isComposite[i] = candidate;
+      }
+      hash[primeCounter] = (mathPow(candidate, .5)*maxWord)|0;
+      k[primeCounter++] = (mathPow(candidate, 1/3)*maxWord)|0;
+    }
+  }
+  
+  ascii += '\x80'
+  while (ascii[lengthProperty]%64 - 56) ascii += '\x00' // More zero padding
+  for (i = 0; i < ascii[lengthProperty]; i++) {
+    j = ascii.charCodeAt(i);
+    if (j>>8) return; // ASCII check: only accept characters in range 0-255
+   words[i>>2] |= j << ((3 - i)%4)*8;
+  }
+  words[words[lengthProperty]] = ((asciiBitLength/maxWord)|0);
+  words[words[lengthProperty]] = (asciiBitLength)
+  
+  // process each chunk
+  for (j = 0; j < words[lengthProperty];) {
+    var w = words.slice(j, j += 16); // The message is expanded into 64 words as part of the iteration
+    var oldHash = hash;
+    // This is now the undefinedworking hash", often labelled as variables a...g
+    // (we have to truncate as well, otherwise extra entries at the end accumulate
+    hash = hash.slice(0, 8);
+    
+    for (i = 0; i < 64; i++) {
+      var i2 = i + j;
+      // Expand the message into 64 words
+      // Used below if 
+      var w15 = w[i - 15], w2 = w[i - 2];
+
+      // Iterate
+      var a = hash[0], e = hash[4];
+      var temp1 = hash[7]
+        + (rightRotate(e, 6) ^ rightRotate(e, 11) ^ rightRotate(e, 25)) // S1
+        + ((e&hash[5])^((~e)&hash[6])) // ch
+        + k[i]
+        // Expand the message schedule if needed
+        + (w[i] = (i < 16) ? w[i] : (
+            w[i - 16]
+            + (rightRotate(w15, 7) ^ rightRotate(w15, 18) ^ (w15>>>3)) // s0
+            + w[i - 7]
+            + (rightRotate(w2, 17) ^ rightRotate(w2, 19) ^ (w2>>>10)) // s1
+          )|0
+        );
+      // This is only used once, so *could* be moved below, but it only saves 4 bytes and makes things unreadble
+      var temp2 = (rightRotate(a, 2) ^ rightRotate(a, 13) ^ rightRotate(a, 22)) // S0
+        + ((a&hash[1])^(a&hash[2])^(hash[1]&hash[2])); // maj
+      
+      hash = [(temp1 + temp2)|0].concat(hash); // We don't bother trimming off the extra ones, they're harmless as long as we're truncating when we do the slice()
+      hash[4] = (hash[4] + temp1)|0;
+    }
+    
+    for (i = 0; i < 8; i++) {
+      hash[i] = (hash[i] + oldHash[i])|0;
+    }
+  }
+  
+  for (i = 0; i < 8; i++) {
+    for (j = 3; j + 1; j--) {
+      var b = (hash[i]>>(j*8))&255;
+      result += ((b < 16) ? 0 : '') + b.toString(16);
+    }
+  }
+  return result;
+}
+
+</script>
+
+<script type="text/javascript">
+	function htmlDecode(encodedString) {
+	    		var y = document.createElement('textarea');
+	    		y.innerHTML = encodedString;
+	    		return y.value;
+			}
+			
+	var digitalData = digitalData || {}
+	
+	digitalData.page = {};
+	digitalData.page.pageInfo = {};
+	digitalData.page.pageInfo.pageName = window.document.title;
+	digitalData.page.pageInfo.destinationURL = window.location.href;
+	digitalData.page.pageInfo.referringURL = window.document.referrer;
+	
+	digitalData.user = {};
+	digitalData.user.segment = {};
+	digitalData.user.profile = {};
+	digitalData.user.profile.profileInfo = {};
+	
+	
+	
+	digitalData.user.segment.type = "guest user";
+	
+		
+		digitalData.product = [];
+		digitalData.product.push(
+		{
+				        "productInfo": {
+				            "productID": "281001",
+				            "productName":htmlDecode("ALCATEL MYFLIP&trade; (A405DL) - RECONDITIONED"),
+				        	"category":"Top Deals",
+				        	"productType":"Top Deals",
+							"manufacturer":"ALCATEL", 
+							"color":"Black", 
+							"productPartNumber":"TWALA405DCR_P", 
+							"availability":"Available",
+							"productRetailPrice:":"9.99"
+				   		 }
+		}); 
+	
+</script>
+
+
+	   	<script src="//assets.adobedtm.com/launch-ENb3a80a60ef1a43f38c365fa43abde841.min.js"></script>
+	    <!-- GTM -->
+		<script>
+			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-N8P7GT');
+		</script>
+	<!-- GTMNoScript.jspf Begin -->
+		<noscript>
+			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8P7GT"
+				height="0" width="0" style="display:none;visibility:hidden">
+			</iframe>
+		</noscript>
+	<!-- GTMNoScript.jspf End --> 
+		<script type="text/javascript">
+			var djConfig = {parseOnLoad: true, isDebug: false,  modulePaths: {storetext: '/wcsstore/TFAuroraStorefrontAssetStore/'}, useCommentedJson: true,locale: 'en-us' };
+		</script>
+	    
+		
+		
+		
+		<script type="text/javascript">
+			// Convert the WCParam object which contains request properties into javascript object
+			var WCParamJS = {
+				"storeId":'20003',
+				"catalogId":'12051',
+				"langId":'-1',
+				"pageView":'',
+				"orderBy":'',
+				"orderByContent":'',
+				"searchTerm":''
+			};
+			var absoluteURL = "https://shop.totalwireless.com/webapp/wcs/stores/servlet/";
+			var imageDirectoryPath = "/wcsstore/TFAuroraStorefrontAssetStore/";
+			var styleDirectoryPath = "images/colors/color1/";
+			var supportPaymentTypePromotions = true;
+			
+			var subsFulfillmentFrequencyAttrName = "fulfillmentFrequency";
+			var subsPaymentFrequencyAttrName = "paymentFrequency";
+			var subsTimePeriodAttrName = "timePeriod";
+			
+			var storeNLS = null;
+			var storeUserType = "G";
+			var ios = false;
+			var android = false;
+			
+			
+			// Store the amount of time of inactivity before a re-login is required, this value is retrieved from wc-server.xml, default is 30 mins
+			var inactivityTimeout = 0;
+			
+			// Store the amount of time the inactivity warning dialog will be displayed before it closes itself, default is 20 seconds
+			var inactivityWarningDialogDisplayTimer = 20000;
+			
+			// Store the amount of time to display a inactivity warning dialog before a re-login is required, default is 30 seconds
+			var inactivityWarningDialogBuffer = 30000;
+			
+			// Store the timing event to display the inactivity dialog
+			var inactivityTimeoutTracker = null;
+		
+			// Store the timing event to close the inactivity dialog
+			var dialogTimeoutTracker = null;
+			
+			//Summary: Returns the absolute URL to use for prefixing any Ajax URL call.
+			//Description: Dojo does not handle the case where the parameters in the URL are delimeted by the "/" forward slash. Therefore, in order to
+			//             workaround the issue, all AJAX requests must be done using absolute URLs rather than relative.
+			//Returns: The absolute URL to use for prefixing any Ajax URL call.
+			function getAbsoluteURL() {
+				if (absoluteURL != "") {
+					var currentURL = document.URL;
+					var currentProtocol = "";
+				
+					if (currentURL.indexOf("://") != -1) {
+						currentProtocol = currentURL.substring(0, currentURL.indexOf("://"));
+					}
+					
+					var savedProtocol = "";
+					if (absoluteURL.indexOf("://") != -1) {
+						savedProtocol = absoluteURL.substring(0, absoluteURL.indexOf("://"));
+					}
+					
+					if (currentProtocol != savedProtocol) {
+						absoluteURL = currentProtocol + absoluteURL.substring(absoluteURL.indexOf("://"));
+					}
+				}
+				
+				return absoluteURL;
+			}
+			//Summary: Returns the path pointing to the shared image directory.
+			//Description: In order to get the image directory path in any javascript file, this function can be used.
+			//Returns: The path to reference images.
+			function getImageDirectoryPath() {
+				return imageDirectoryPath;
+			}
+			//Summary: Returns the path pointing to the directory containing color-dependant image files.
+			//Description: In order to get the directory containing color-dependant image files in any javascript file, this function can be used.
+			//Returns: The path to reference color-dependant image files.
+			function getStyleDirectoryPath() {
+				return styleDirectoryPath;
+			}
+		</script>
+		
+
+		
+			<script type="text/javascript" charset="UTF-8" src="/wcsstore/dojo18/dojo/dojo.js" ></script>
+			<script type="text/javascript" src="/wcsstore/TFAuroraStorefrontAssetStore/javascript/TFPDPHeader.js?tf_ver_37.0"></script>
+				
+		<!-- BEGIN TFPDPCommonJSPFtoInclude.jspf --><!-- BEGIN TFPDPCommonJSToInclude.jspf -->
+
+<meta name="CommerceSearch" content="storeId_20003" />
+
+
+<link rel="icon" href="/wcsstore/TotalWireless/images/icons/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="/wcsstore/TotalWireless/images/icons/favicon.ico" type="image/x-icon" />
+
+
+<script>
+	dojo.require("wc.service.common");
+	dojo.require("dojo.number");
+</script>
+
+
+
+<script type="text/javascript">
+ //Set the default NLS to use in the store.
+ if(storeNLS == null) {
+	 dojo.requireLocalization("storetext", "StoreText");
+	 storeNLS = dojo.i18n.getLocalization("storetext","StoreText");
+ }
+ initializeInactivityWarning();
+ var ie6 = false;
+ if (navigator != null && navigator.userAgent != null) {
+	 ie6 = (navigator.userAgent.toLowerCase().indexOf("msie 6.0") > -1); 
+ }
+ if (location.href.indexOf('UnsupportedBrowserErrorView') == -1 && ie6) {
+	 document.write('<meta http-equiv="Refresh" content="0;URL=http://shop.totalwireless.com/shop/UnsupportedBrowserErrorView?catalogId=10001&amp;langId=-1&amp;storeId=20003"/>');
+ }
+</script>
+
+<!-- BEGIN TFCommonJSToIncludeExt.jspf --><!-- HERE WILL GO THE ALL PAGES GOOGLE ANALYTICS TRACKING --><!-- END TFCommonJSToIncludeExt.jspf -->
+
+<script>
+	var windowsizecheck = 0;
+	var cancelClick = false;
+	var ie7 = (navigator.userAgent.toLowerCase().indexOf("msie 7.0") > -1);
+	var ie8 = (navigator.userAgent.toLowerCase().indexOf("msie 8.0") > -1);
+	require(["dojo/ready"], function(ready){
+	
+	ready(function (){
+	  var nav = dojo.query('#navbar ul.nav li.dropdown');
+	  for(var i=0; i<nav.length; i++){
+	  	if(!ie8 && !ie7){
+	  		nav[i].addEventListener('touchstart', function(e){cancelClick=true;});
+	  	}
+	 	dojo.connect(nav[i], "onclick", function (){
+	 	windowsizecheck = window.innerWidth;
+	    if (windowsizecheck >= 768 && cancelClick==false){
+	     	window.location=this.children[0].href;
+	 	}
+	 	cancelClick=false;
+	});
+	 
+	 dojo.connect(nav[i], "onmouseenter", function() {
+	 	windowsizecheck = window.innerWidth;
+	    if (windowsizecheck >= 768 && cancelClick==false){
+	     	this.className = this.className+' open';
+	   	}
+	   });
+	 dojo.connect(nav[i], "onmouseleave", function() {
+	  	windowsizecheck = window.innerWidth;
+	    if (windowsizecheck >= 768 && cancelClick==false){
+	   		this.className = this.className.replace('open','');
+	   	}
+	   });
+	 
+	  }
+	});
+	});
+</script>
+<!-- END COMMON CommonJSToInclude.jspf --><!-- END TFPDPCommonJSToInclude.jspf -->
+	    <script type="text/javascript">
+					     require(["jquery"], function($){
+							$(document).ready(function(){
+							   var langCookieVal = '-1';
+								 if(langCookieVal == '-1'){
+									langCookieVal = 'en';
+								 }else{
+									langCookieVal = 'es';
+								 }
+								 var localeKey = 'locale_lang';
+								 var localeKeyVal = dojo.cookie(localeKey);
+								 if(localeKeyVal != null){
+							          if(localeKeyVal.indexOf(langCookieVal) != -1 || langCookieVal == null){
+							                return;
+							          }else{
+							                 dojo.cookie(localeKey, langCookieVal, {path:'/'});     
+							          }
+							     }else{
+									 dojo.cookie(localeKey, langCookieVal, {path:'/'}); 					
+							     }
+							});
+					 	 });		
+		  </script>
+	
+		<div tabindex="0" class="lto_spinner" id="lto_spinner" aria-label="Processing" role="alert" aria-hidden="true" style="display: none;"></div>
+	<!-- BEGIN MessageDisplay.jspf -->
+<div class="modal" id="lto_error_message_popup" tabindex="0" aria-labelledby="modal-body" aria-describedby="modal-footer" aria-role="alert-dialog" role="dialog" aria-modal="true" role="alertdialog" aria-hidden="true">
+
+		
+				<div class="modal-dialog" role="alert-dialog">
+					<div class="modal-content text-center">
+						<div class="modal-header" aria-hidden="true">
+							<h1 tabindex="0" class="modal-title"></h1>
+						</div>
+						<div class="modal-body modal- text-center" id="modal-body">
+							<div class="row grid-divided">
+								<div class="col-sm-10 col-sm-offset-1">
+									<p id="ErrorMessageText" class="agree"></p>
+									<p id="ErrorMessageId" style="display:none" aria-hidden="true"></p>
+								</div>
+							</div>
+							<div class="modal-footer" id="modal-footer">
+							<button tabindex="0" aria-label="OK"  class="btn btn-default" id="Compare_Popup_Close" data-dismiss="modal" data-backdrop="false">OK</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				
+</div>
+<!-- END MessageDisplay.jspf -->
+<div class="modal" id="lto_widget_product_comparison_popup">
+		<div class="modal-dialog">
+			<div class="modal-content text-center">
+				<div class="modal-header">
+					<h1 tabindex="0" class="modal-title">Product Comparison</h1>
+				</div>
+				<div class="modal-body modal- text-center">
+					<div class="row grid-divided">
+						<div class="col-sm-10 col-sm-offset-1">
+							<p tabindex="0" class="agree">The maximum number of products that can be compared is 3. Please refine your selection.</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button tabindex="0" aria-label="OK"  class="btn btn-default" id="Product_Compare_Popup_Close" data-dismiss="modal" data-backdrop="false">OK</button>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="lto_widget_items_comparison_popup" tabindex="0">
+		<div class="modal-dialog">
+			<div class="modal-content text-center">
+				<div class="modal-header">
+					<h1 class="modal-title">Product Comparison</h1>
+				</div>
+				<div class="modal-body modal- text-center">
+					<div class="row grid-divided">
+						<div class="col-sm-10 col-sm-offset-1">
+							<p class="agree">Please select at least 2 items to compare.</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-default" id="Item_Compare_Popup_Close" data-dismiss="modal" data-backdrop="false">OK</button>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END TFPDPCommonJSPFtoInclude.jspf -->
+		
+		<script type="text/javascript">
+			dojo.addOnLoad(function() { 
+				shoppingActionsJS.setCommonParameters('-1','20003','12051','G','$');
+				
+				if(document.getElementById('phoneNm') != null && document.getElementById('phoneNm') != undefined){
+					jQuery('#headphoneName >a>#headphname').html(document.getElementById('phoneNm').value);
+				}
+
+			});
+		</script>
+		
+					
+					
+					
+					<meta property="og:url" content="https://shop.totalwireless.com/shop/en/totalwireless/phones/tw-alcatel-my-flip-a405dl-reconditioned"/>
+					<meta property="og:site_name" content="Total Wireless"/>
+					<meta property="og:description" content="RECONDITIONED. The Alcatel MYFLIP&amp;trade; is more than just a basic phone. It delivers the essential features to be productive - including access to email, calendar and we"/>
+					<meta property="og:locale" content="en_US" />
+					
+					<meta property="og:locale:alternate" content="es_US" />
+										
+					<meta property="og:image" content="https://media.tracfone.com"/>
+					<meta property="og:type" content="products"/>
+					<meta property="og:title" content="ALCATEL MYFLIP&amp;trade; (A405DL) - RECONDITIONED|TotalWir"/>
+					<meta property="fb:app_id" name="fb_app_id" content=""/>	
+					<style>
+					/* Spinner css begin */
+					.spinnerbg{background:rgba(255,255,255,.8);position:absolute;width:100%;height:100%;z-index:99}.spinner{position:absolute;text-align:center;font-size:10px;width:55px;height:40px;top:calc(50% - 40px);left:calc(50% - 15px);z-index:1060}.spinner>div{background-color:#000;height:100%;width:6px;margin:0 1px;display:inline-block;-webkit-animation:1.2s ease-in-out infinite sk-stretchdelay;animation:1.2s ease-in-out infinite sk-stretchdelay}.spinner .rect2{-webkit-animation-delay:-1.1s;animation-delay:-1.1s}.spinner .rect3{-webkit-animation-delay:-1s;animation-delay:-1s}.spinner .rect4{-webkit-animation-delay:-.9s;animation-delay:-.9s}.spinner .rect5{-webkit-animation-delay:-.8s;animation-delay:-.8s}@-webkit-keyframes sk-stretchdelay{0%,40%,to{-webkit-transform:scaleY(.4)}20%{-webkit-transform:scaleY(1)}}@keyframes sk-stretchdelay{0%,40%,to{transform:scaleY(.4);-webkit-transform:scaleY(.4)}20%{transform:scaleY(1);-webkit-transform:scaleY(1)}}
+					/* Spinner css end */
+					</style>				
+	</head>
+		
+	<body id="PDPPageBody">	
+		
+		<div itemscope itemtype="http://schema.org/Product">
+			<meta itemprop="name" content="ALCATEL MYFLIP&trade; (A405DL) - RECONDITIONED"/>
+			<div style="display:none" data-swiftype-index='false'>
+				<span itemprop="manufacturer">ALCATEL</span>
+				<span itemprop="brand">ALCATEL</span>
+				<span itemprop="model">ALCATEL MYFLIP&trade; (A405DL) - RECONDITIONED</span>
+				<span itemprop="description">RECONDITIONED. The Alcatel MYFLIP&amp;trade; is more than just a basic phone. It delivers the essential features to be productive - including access to email, calendar and web at 4G speeds - in a durable compact flip phone design. The Alcatel MYFLIP&amp;trade; delivers the essential features to get things done in a compact flip phone design. Preloaded with web, email and calendar apps to be productive when you&#039;re out and about.</span>
+				<span itemprop="URL">https://shop.totalwireless.com/shop/en/totalwireless/phones/tw-alcatel-my-flip-a405dl-reconditioned</span>
+				<span itemprop="color"></span>
+				<span itemprop="sku">TWALA405DCR_P</span>				
+			</div>
+		
+	
+	<!-- Put condition for store conf PDP ZIP Code modal switch to ajax-->
+<div class="modal" id="zipcode_needed" tabindex="0" role="dialog" aria-labelledby="myModalLabel">
+
+			
+			
+				<div class="modal-dialog modal-lg" style = "left:0%"  role="document">
+				<div class="modal-content text-center">
+				
+					<div class="modal-header">
+							
+								<h1 id="myModalLabel" class="modal-title">ARE YOU AN EXISTING CUSTOMER?</h1>
+								<p class="lead">Get ready to shop for our hottest phones.</p>
+								
+	 		     	</div>
+	 		     	<div class="modal-body modal- text-center">
+	 		     	<div class="row grid-divided">
+						<div class="col-sm-6" >
+							<h2 class="top-push-0" role="heading" aria-level="2" aria-label="NO, I AM NOT an existing customer.">NO, I AM NOT</h2>	
+							    
+								  <p class="col-md-12 zipcode_text" style="padding-right: 0px;padding-left:0px">Enter the zip code of the area where you will be using your Total Wireless device the most.</p>
+								 
+								<div class="form-group col-sm-12 col-md-12 col-lg-12 top-push-0 customer-phoneno">
+									<input class="form-control" id="zipPopup_zc" name="zipCodeModal" aria-label="Zip Code" placeholder="Zip Code" type="tel" maxlength="5" onkeyup="Javascript:shoppingActionsJS.onlyNumbers(this, event);">
+								</div>
+								
+								<div class="col-sm-12 col-md-12 col-lg-12 top-push-0">
+									<button class="btn btn-default" id="pdp_zipbutton" aria-label="CONTINUE as a new customer with Zip Code" onclick="Javascript:shoppingActionsJS.checkAvailabilityForPartNumberAndCatGroup('TotalWireless','upgOptOut');">Continue</button>
+								</div>
+								<div class="clearfix"></div>
+								<span id="zipcode_needed_error" class="zipcode_needed_error" style="color: #EB0000;"/>							
+						
+						</div>
+						<div class="col-sm-6 top-push-xxs-3" >
+							<h2 class="top-push-0" role="heading" aria-level="2">YES, I AM</h2>
+							    
+									<p class="col-md-12 zipcode_text">Enter your phone number.<br><br></p>
+									
+								<div class="form-group col-sm-12  col-md-12 col-lg-12  top-push-0 customer-phoneno">
+									<input class="form-control" id="phoneNumber" name="phoneNumber" aria-label="Phone Number" placeholder="Phone Number" type="text" maxlength="10" onkeyup="Javascript:shoppingActionsJS.onlyNumbers(this, event);">
+								</div>
+								<div class="col-sm-12 col-md-12 col-lg-12 top-push-0">
+									
+											<button class="btn btn-default" id = "phoneNumber-button" aria-label="CONTINUE as an existing customer" onclick="Javascript:shoppingActionsJS.serviceCallUpgradePhoneNumberZipToTech('TotalWireless',true);">Continue</button>
+										
+								</div>
+							<div class="clearfix"></div>
+								<span id="phoneNumber_error" class="zipcode_needed_error" style="color: EB0000;"/>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	
+<script>
+	require(["jquery"], function($){
+		$(document).ready(function(){			           		
+			$("#select_phone_bundles_btn_nozip").click(function(){
+			if(document.getElementById("pdpAjaxRefresh") ){ 
+			var activePaymtOption="";
+				if(jQuery('.js-paymentOption').hasClass("active")){
+					activePaymtOption = jQuery('.js-paymentOption.active').data('value');
+		    	}
+				if(WCParamJS.storeId =='10154' && (activePaymtOption === "" || activePaymtOption == null || activePaymtOption == undefined)){
+					var selectPaymentMessage = dojo.query('.select_payment_option');
+					selectPaymentMessage.style("display", "block");
+					return false;
+				}
+				
+			}
+			$('#zipcode_needed').modal({show:true, keyboard:false, backdrop:'static'});
+			$('body').prepend("<div class='modal-background'></div>");	
+			$('body').on('shown.bs.modal', '#zipcode_needed', function () {
+				$('input:text:visible:first', this).focus();
+				$('input:text:visible:first', this).select();
+			})
+			$('#zipcode_needed').on('show.bs.modal', function (e) {	
+			
+					$('body').prepend("<div class='modal-background'></div>");					
+				});
+			
+			});			
+			$('#zipcode_needed').on('hidden.bs.modal', function (e) {
+			
+ 						$('.modal-background').remove();
+				});
+				
+			$("#zipPopup_zc").keydown(function(event){
+			    if(event.keyCode == 13){
+			        $("#pdp_zipbutton").click();
+			    }
+			});	
+			
+			// Phone number enter key validation
+            $("#phoneNumber").keydown(function(event){
+                if(event.keyCode == 13){
+                    $("#phoneNumber-button").click();
+                }
+            });    
+			
+			
+			$("#zip_cancelbutton").click(function(){
+				dojo.byId('zipcode_needed_error').innerHTML="";
+				dojo.byId('zipPopup_zc').value="";
+				console.debug('cancelling '+dojo.byId('zipPopup_zc').value);
+			  	$('body').removeClass("modal-open");
+ 					$('.modal-background').remove();
+			});	
+			
+			
+			
+			MessageHelper.setMessage("TFLOCATION_ZIPCODE_POPUPALERT", "The zip code entered is not correct. Please verify the number and enter the zip code again.");
+			MessageHelper.setMessage("TFLOCATION_ZIPCODE_POPUPEMPTYALERT", "Please enter your zip code.");
+			MessageHelper.setMessage("TFLOCATION_LOCATION_NOTCOVERED", "The zip code entered is not covered by any of our devices at this time. Please enter a different zip code.");
+			MessageHelper.setMessage("TFLOCATION_LOCATION_NOTCOVERED_FORPROD", "The zip code entered is not covered by this specific device at this time. Please enter a different zip code or select a different device.");
+			MessageHelper.setMessage("TF_ENTER_PHONE_NUMBER", "Please enter your phone number.");
+			MessageHelper.setMessage("TF_ST_LTO_POPUP_INVALID_PHONE", "Please enter a valid Phone number.");
+			MessageHelper.setMessage("TF_ST_LTO_MIN_NOT_ACTIVE_ERROR", "Phone number is not active. Enter an active phone number.");
+			MessageHelper.setMessage("TF_ST_LTO_MIN_NOT_REGISTERED_ERROR", "Phone number not registered. Enter a valid number.");
+			MessageHelper.setMessage("TF_ST_LTO_MIN_INVALID_BRAND_ERROR", "Phone number does not belong to TotalWireless.");
+			MessageHelper.setMessage("TF_ST_LTO_NOT_ENROLLED_LLID_BRAND_ERROR", "The value you entered is invalid. Please review the information and try again.");
+			MessageHelper.setMessage("TF_ERROR_NOT_VALID_ESN_PHONE", "There are no devices in our system with the information you provided. Please review the information and try again.");
+			MessageHelper.setMessage("TF_ERROR_ESN_IN_DB_NOT_SL_DEVICE", "The information provided corresponds to another brand. Please review the information and try again.");
+			MessageHelper.setMessage("TF_ERROR_ESN_IN_DB_SL_DEVICE_NOT_VALID_LLID", "We are sorry. Our records indicate that this Lifeline ID is not enrolled with SafeLink.");
+				
+		});// document.ready		
+        
+		
+	});// require jquery
+</script>
+
+<!-- BEGIN Header.jsp --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  --><!-- BEGIN Header_Data.jspf --><!-- DGN Modified for Tracfone --><!-- DGN: Modified for Tracfone --><!-- DGN: Modified for Tracfone --><!-- END Header_Data.jspf --><!-- BEGIN Header_UI.jspf -->
+<script>
+	var isGuest = true;
+</script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --><!--[if lt IE 9]>
+      <script src="/wcsstore/TFAuroraStorefrontAssetStore/javascript/html5shiv.js?tf_ver_37.0"></script>
+      <script src="/wcsstore/TFAuroraStorefrontAssetStore/javascript/respond.min.js?tf_ver_37.0"></script>
+    <![endif]-->
+
+<!-- START HEADER -->  
+<header>	
+		<div class="header-top bg-info" >
+			<div class="carticon_mobile visible-xs visible-sm">
+				<!-- BEGIN TFMiniCartIcon.jsp --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+
+<link rel="stylesheet" type="text/css" href="/wcsstore//TotalWireless/css/TotalWireless_new.css?tf_ver_37.0"/>
+
+<!-- defaultShopcartPath ::::: B --><!-- minicartEnabled :: B || storeName :: TotalWireless || userType :: G :: userId :: -1002-->
+
+<input type="hidden" id="userType" value="G" />
+<input type="hidden" id="userId" value="-1002" />
+
+
+<script type="text/javascript">
+	
+	MessageHelper.setMessage("SHOPPINGCART_TITLE", "Shopping Cart");
+	MessageHelper.setMessage("MSC_ITEMS_INFO", "item(s)");
+</script>
+
+<!-- WC_MINICART_COUNT_TotalWireless ::::: 0 --><!-- END TFMiniCartIcon.jsp -->
+			</div>
+			<div class="container-fluid clearfix">
+				<div class="brand pull-left lto_tw_logo">
+					<a tabindex="0" href="https://www.totalwireless.com" title="Total Wireless">					
+						<img src="/wcsstore//TotalWireless//img/brand/logo.png" alt="Total Wireless, Get Total Confidence No-Contract Wireless Plan">
+					</a>					
+				</div>
+				<div class="pull-right hidden-xs">
+					<div class="clearfix top-push-11"></div>
+					<div id="inqC2CImgContainer_fixed" class="hidden-sm" style="position: absolute; right: 62px; top: 43px;"></div>
+				</div>
+			</div>
+		</div>
+		<nav class="main-nav">
+			<div class="navbar navbar-default">
+				<div class="container-fluid">
+					<ul class="nav navbar-nav navbar-right collapse navbar-collapse" id="navbar-collapse" style="">
+							
+						<li><a tabindex="0" aria-label="PHONES" id="lto_header_phones" href="https://shop.totalwireless.com/shop/en/totalwireless/phones"><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> PHONES</a></li>
+						
+							<li><a tabindex="0" aria-label="ACCESSORIES" id="lto_header_accessories" href="https://shop.totalwireless.com/shop/en/totalwireless/accessories"> <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> ACCESSORIES</a></li>
+																			
+							<li><a tabindex="0" aria-label="DEALS" id="lto_header_deals" href="https://shop.totalwireless.com/shop/en/totalwireless/deals"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> DEALS</a></li>
+						
+	
+	<style>
+		.phone-left{
+			padding-left: 14px;
+		} 
+	</style><!-- BEGIN TFMiniCartIcon_Old.jsp --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+
+<input type="hidden" id="storeName" name="storeName" value="TotalWireless" />
+
+<!--  minicartEnabled :: B || storeName :: TotalWireless || userType :: G :: userId :: -1002--><!-- END TFMiniCartIcon_Old.jsp -->
+						<li><a tabindex="0" aria-label="Track Order" href="https://shop.totalwireless.com/shop/TFOrderStatusForm?storeId=20003&urlRequestType=Base&langId=-1&catalogId=12051"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Track Order</a></li>
+						
+							<li><a tabindex="0" aria-label="Español" href="#" onclick="JavaScript: document.getElementById('SetLanguageCurrencyPreferenceForm').submit()">
+							<i class="icon-flag icon-rounded hidden-sm hidden-md hidden-lg"></i>Español</a>
+							</li>
+						
+						<div class="carticon hidden-xs hidden-sm">
+							<!-- BEGIN TFMiniCartIcon.jsp --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+
+<link rel="stylesheet" type="text/css" href="/wcsstore//TotalWireless/css/TotalWireless_new.css?tf_ver_37.0"/>
+
+<!-- defaultShopcartPath ::::: B --><!-- minicartEnabled :: B || storeName :: TotalWireless || userType :: G :: userId :: -1002-->
+
+<input type="hidden" id="userType" value="G" />
+<input type="hidden" id="userId" value="-1002" />
+
+
+<script type="text/javascript">
+	
+	MessageHelper.setMessage("SHOPPINGCART_TITLE", "Shopping Cart");
+	MessageHelper.setMessage("MSC_ITEMS_INFO", "item(s)");
+</script>
+
+<!-- WC_MINICART_COUNT_TotalWireless ::::: 0 --><!-- END TFMiniCartIcon.jsp -->
+						</div>
+					</ul>
+				</div>
+				<button tabindex="0" aria-label="Navbar collapse" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="true">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="text-toggle">MENU</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+		</nav>
+		<!-- BEGIN LanguageCurrency.jsp --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+<div id="widget_language_and_currency" style="display:none;">
+	<div id="widget_language_and_currency_popup" dojoType="wc.widget.WCDialog" closeOnTimeOut="false" title="Language and Currency Dialog">
+		<div class="widget_language_and_currency_popup widget_site_popup">										
+			<!-- Top Border Styling -->
+			<div class="top">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Main Content Area -->
+			<div class="middle">
+				<div class="content_left_border">
+					<div class="content_right_border">
+						<div class="content">
+							<div class="header">
+								<span>Please select a language and currency</span>
+								<a id="close" class="close_acce tlignore" title="CLOSE"
+								 href="javascript:dijit.byId('widget_language_and_currency_popup').hide();"><img role="button"
+								 onmouseover="" 
+								 onmouseout="" 
+								 src="" 
+								 class="closeImg" alt="CLOSE"/></a>
+								<div class="clear_float"></div>
+							</div>
+							<div class="selectors">
+								<div class="selector">
+									<span class="option_name">Language:&nbsp;</span>
+									<label for="languageSelection" class="nodisplay">Language:</label>
+									<select id="languageSelection" name="langId" onchange="javascript:document.getElementById('languageSelectionHidden').value=this.value">
+										
+													<option value='-1' selected="selected">United States English</option>
+												
+													<option value='10001'>Estados Unidos Espanol</option>
+												
+									</select>
+									<div class="clear_float"></div>
+								</div>
+								<div class="selector">
+									<span class="option_name">Currency:&nbsp;</span>
+									<label for="currencySelection" class="nodisplay">Currency:</label>
+									<select id="currencySelection" name="currency" onchange="javascript:document.getElementById('currencySelectionHidden').value=this.value">
+										
+													<option value='USD' selected="selected">US Dollar</option>
+												
+													<option value='BRL'>Brazilian Real</option>
+												
+													<option value='CAD'>Canadian Dollar</option>
+												
+													<option value='CNY'>Chinese Yuan</option>
+												
+													<option value='EUR'>Euro</option>
+												
+													<option value='GBP'>British Pound</option>
+												
+													<option value='JPY'>Japanese Yen</option>
+												
+													<option value='KRW'>South Korean Won</option>
+												
+													<option value='PLN'>Polish Zloty</option>
+												
+													<option value='RON'>Romanian Leu</option>
+												
+													<option value='RUB'>Russian Ruble</option>
+												
+													<option value='TWD'>Taiwan Dollar</option>
+												
+									</select>
+									<div class="clear_float"></div>
+								</div>
+								<form id="SetLanguageCurrencyPreferenceForm"action="/webapp/wcs/stores/servlet/SetCurrencyPreference" method="post">
+									<input type="hidden" name="storeId" value="20003"/>
+									<input type="hidden" name="catalogId" value="12051"/>
+									
+									<input type="hidden" id="languageSelectionHidden" name="langId" value="10001"/>
+									<input type="hidden" id="currencySelectionHidden" name="currency" value="USD"/>									
+									
+											<input type="hidden" name="URL" value="/webapp/wcs/stores/servlet/ProductDisplay?currency*=" id="WC_SidebarDisplay_FormInput_URL_2"/>
+										
+												<input type="hidden" name="utm_campaign" value="Save $50 on iPhone 7+. Was: $399.99 Now: $349.99" id="WC_SidebarDisplay_FormInput_parm_1_1"/>
+											
+												<input type="hidden" name="cjevent" value="4e2347e113e711eb82f100260a1c0e0d" id="WC_SidebarDisplay_FormInput_parm_2_1"/>
+											
+												<input type="hidden" name="utm_medium" value="cj" id="WC_SidebarDisplay_FormInput_parm_4_1"/>
+											
+												<input type="hidden" name="errorViewName" value="ProductDisplayErrorView" id="WC_SidebarDisplay_FormInput_parm_5_1"/>
+											
+												<input type="hidden" name="utm_content" value="13919696" id="WC_SidebarDisplay_FormInput_parm_6_1"/>
+											
+												<input type="hidden" name="categoryId" value="22001" id="WC_SidebarDisplay_FormInput_parm_7_1"/>
+											
+												<input type="hidden" name="pageName" value="CatalogEntryPage" id="WC_SidebarDisplay_FormInput_parm_9_1"/>
+											
+												<input type="hidden" name="productId" value="281001" id="WC_SidebarDisplay_FormInput_parm_10_1"/>
+											
+												<input type="hidden" name="utm_source" value="1225267-affiliate" id="WC_SidebarDisplay_FormInput_parm_12_1"/>
+											
+									
+								</form>
+							</div>
+							<div class="footer">
+								<div class="button_container ">
+									<a id="LangCurrencyApplyBtn" class="button_primary tlignore" tabindex="0" href="javascript:dijit.byId('widget_language_and_currency_popup').hide();document.getElementById('SetLanguageCurrencyPreferenceForm').submit();">
+										<div class="left_border"></div>
+										<div id="LangCurrencyApplyBtnText" class="button_text">Apply</div>
+										<div class="right_border"></div>
+									</a>
+									<div class="clear_float"></div>
+								</div>
+								
+							</div>
+							<div class="clear_float"></div>
+						<!-- End content Section -->
+						</div>
+					<!-- End content_right_border -->
+					</div>
+				<!-- End content_left_border -->
+				</div>
+			</div>
+			<div class="clear_float"></div>
+			<!-- Bottom Border Styling -->
+			<div class="bottom">
+				<div class="left_border"></div>
+				<div class="middle"></div>
+				<div class="right_border"></div>
+			</div>
+			<div class="clear_float"></div>
+		</div>
+	</div>
+</div>
+<!-- END LanguageCurrency.jsp --><!-- BEGIN TFPDPInitializePlanCookie.jsp --><!-- END TFPDPInitializePlanCookie.jsp -->
+		
+	</header>
+<!-- // END HEADER -->
+
+<div id="inqC2CImgContainer_Anchored" style="position: fixed; bottom: 0px; right: 0px; z-index: 999999; top: 337px;"></div>
+
+<!-- END Header_UI.jspf --><!-- END Header.jsp -->
+			
+			<main>
+				<div class="container-fluid">
+				<div class="product_handset_content"> 
+					
+									<div class="row" style="display: block">
+										<div class="col-sm-12">
+										
+										<!-- BEGIN TFPageBackLinks.jsp --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  --><!-- From TFPageBackLinks_Data.jspf Starts --><!-- From TFPageBackLinks_Data.jspf ends --><!-- From EnvironmentSetup.jspf Starts -->
+
+<input type="hidden" id="is_new_customer" name="is_new_customer" value="Y" />
+<input type="hidden" id="is_auto_enrolled" name="is_auto_enrolled" value="N" />
+<input type="hidden" id="esn_service_end_date" name="esn_service_end_date" value="" />
+<input type="hidden" id="is_esn_service_active" name="is_esn_service_active" value="N" />
+<input type="hidden" id="cart_with_smartpay_item" name="cart_with_smartpay_item" value="N" />
+<input type="hidden" id="cart_with_presale_item" name="cart_with_presale_item" value="false" />
+<input type="hidden" id="isPreSaleItem" name="isPreSaleItem" value="false" />
+<input type="hidden" id="cart_with_item" name="cart_with_item" value="N" />
+<input type="hidden" id="cart_with_upgitem" name="cart_with_upgitem" value="false" />
+<input type="hidden" id="mgr_group" name="mgr_group" value="" />
+<!-- From EnvironmentSetup.jspf Ends -->
+<style>    
+    .brdcrmb    { position: relative;}
+    .brdcrmb .row {padding-top:4px;}
+    .brdcrmb    {border-bottom: 1px solid #c7c6c6; padding-bottom:7px;}
+    .brdcrmb ul {width:100%; margin-left:0;padding-left:0;paddin-bottom:10px;  }
+    .brdcrmb ul li {display:inline-block; font-size:0.8em;padding:10px 0px 0px 0px;line-height:10px; color:#000;  }
+    .brdcrmb ul li a { text-decoration:underline; color:#333;   }
+    .brdcrmb ul li a:hover {color:#000; }
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 728px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+                .brdcrmb ul,.brdcrmb ul li { margin:0 auto;display:inline-block;text-align:center; 
+}
+    
+</style>
+
+<!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+<div class="container">
+<div class="brdcrmb">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+       		<ul class="">
+       		<li><a href="https://www.totalwireless.com" id="home">Home</a><span>&nbsp;/</span></li> 
+       		
+			    <li><a href="https://shop.totalwireless.com/shop/en/totalwireless/phones" id="category_Phones">Phones</a><span>&nbsp;/</span></li> 
+			    <li>ALCATEL MYFLIP&trade; (A405DL) - RECONDITIONED</li>
+    		</ul>
+            <div class="clearfix"></div>
+        </div>
+	</div>
+</div>
+</div>
+
+<!-- END TFPageBackLinks.jsp -->
+										</div>
+									</div>
+									 
+												   <div dojoType="wc.widget.RefreshArea" id="PhoneItemDetails" widgetId="PhoneItemDetails" controllerId="PhoneItemDetailsController"
+														role="region" waistate:live="polite" waistate:atomic="false" waistate:relevant="all">
+														<div id="ProductDescriptionWidgetCall"></div>
+														<!-- BEGIN TFAuroraStorefrontAssetStore/Widgets/ProductDescriptionV1/ProductDescription.jsp  --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  --><!-- added --><!-- added -->
+<input type='hidden' name='productIDAcc' value='281001' id ='productIDAcc'/>
+
+<div id="entitledItem_281001" style="display:none;">
+		[
+		
+	
+						{
+						"catentry_id" : "281002",
+						"Attributes" :	{
+							
+							},
+							
+							
+										"ItemImage" : "https://media.tracfone.com//wps/contenthandler/dav/content/libraries/wcm.library.phones/components/STALA405DG/wcm.comps.image/st_ecom_small.png",
+										"ItemImage467" : "https://media.tracfone.com//wps/contenthandler/dav/content/libraries/wcm.library.phones/components/STALA405DG/wcm.comps.image/st_ecom_small.png",
+										"ItemThumbnailImage" : "https://media.tracfone.com//wps/contenthandler/dav/content/libraries/wcm.library.phones/components/STALA405DG/wcm.comps.image/st_ecom_small.png"
+									
+						}
+		]
+</div>
+
+<!-- ItemDescription_Data.jspf - STARTS --><!-- childItemID :::::::::::::::::::::::::::::::::::::++++++ 281002 --><!-- BEGIN CatalogEntryDisplay_LTO_Data.jspf --><!-- END CatalogEntryDisplay_LTO_Data.jspf --><!-- Image source --><!-- Images --><!--  Call to this page unsets the thresholdValue
+	Therefore commenting it --><!-- Images --><!-- ItemDescription_Data.jspf  - ENDS-->
+<script type="text/javascript">
+var free_Phone_Price="FREE";
+var due_today_text="Due Today";
+var due_monthly_text="Due Monthly";
+var taxes_and_shipping_text ="+ Taxes & Shipping";
+var hero_offer_tax_content ="+ One-time upfront payment may be required*";
+var taxes_text ="+ Taxes";
+
+</script>
+
+
+<style>
+	@media (max-width: 767px){
+	#pdpSection .bv_main_container {
+		margin: 0 auto !important;
+		display: table !important;
+		}
+	  #pdpSection .bv_button_component_container {
+		position: relative !important;
+		top: -4px!important;
+	}
+	}
+</style>
+<div id="pdpSection" style="display: block">
+	<div class="row top-push-6 js-mobile" id="phone_details">
+		<div id="entitledItem_device" style="display:none;">
+		[
+		{
+		"catentry_id" : "281001",
+		"Attributes" :	{ }
+		}
+		]
+		</div>
+        
+		 
+		<div class="phone-header  visible-xs">
+	      <div class="mobile-detail-xs">
+	         
+		<div class="phone-savings">
+    <div class="row">
+        <div class="col-md-12 text-left">
+            <div class="icontag">
+                <span class="glyphicon glyphicon-tag top-push-1" aria-hidden="true"></span>
+            </div>
+            <p> <p><strong><font style="color:red;font-size:12px"><b>PLAN PURCHASE REQUIRED</b></font></strong></p></p>
+        </div>
+    </div>
+
+</div>
+	
+	      </div>
+		  <h2 class="h1 text-center"><small class="text-center">ALCATEL MYFLIP&trade; (A405DL) - RECONDITIONED</small></h2>
+        </div>
+		
+		
+			<div class="col-sm-4 phone-gallery" style="display: block;">
+			
+				
+				
+				<ul class="list-unstyled">
+					<li id="pdpfi1"><a ><img class="img-responsive" src="https://media.tracfone.com/wps/contenthandler/dav/content/libraries/wcm.library.phones/components/STALA405DG/wcm.comps.image/st_ecom_large.png"></a></li>
+					<li id="pdpfi2" style="display:none"><a ><img class="img-responsive" src=""></a></li>
+					<li id="pdpfi3" style="display:none"><a ><img class="img-responsive" src=""></a></li>
+				</ul>
+				<ul class="list-unstyled list-inline list-mobilegalery">
+														
+				</ul>
+				
+				<div class="clear"></div>
+			</div>
+		
+		<script type="text/javascript">
+		    function collapseProductDetailsOnMobile() {
+		    	if(getScreenSize() == 'xs') {
+		                     jQuery('#productDetails').removeClass('in');
+		                     jQuery('.icon-angle-up').removeClass('icon-angle-up').addClass('icon-angle-down');
+		        }
+		    }
+		
+		    function getScreenSize() {
+		        if(jQuery('body div#screensize').length == 0) {
+		                     jQuery('body').append('<div id="screensize"><div class="visible-xs"></div><div class="visible-sm"></div><div class="visible-md"></div><div class="visible-lg"></div></div>');              
+		        }
+		        var screenSize = jQuery('#screensize div:visible').attr('class');
+		        return screenSize.replace('visible-','');
+		    }
+		</script>
+	
+		
+		<div class="col-sm-8">
+		
+		<div class="mobile-detail hidden-xs">
+			
+		<div class="phone-savings">
+    <div class="row">
+        <div class="col-md-12 text-left">
+            <div class="icontag">
+                <span class="glyphicon glyphicon-tag top-push-1" aria-hidden="true"></span>
+            </div>
+            <p> <p><strong><font style="color:red;font-size:12px"><b>PLAN PURCHASE REQUIRED</b></font></strong></p></p>
+        </div>
+    </div>
+
+</div>
+	
+			
+       </div>						
+				
+				
+		<div class="phone-header">
+	
+		<h2 class="h1 hidden-xs">ALCATEL MYFLIP&trade; (A405DL) - RECONDITIONED</h2>
+		<input hidden id="phoneNm" name="phoneNm" value="ALCATEL MYFLIP&trade; (A405DL) - RECONDITIONED"/>	
+		
+			<div data-bv-show="rating_summary" data-bv-productId="TWALA405DCR_P"><!--begin-bvseo-reviews-->
+
+<!--begin-aggregate-rating-->
+<div id="bvseo-aggregateRatingSection" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
+    <span class="bvseo-itemReviewed">ALCATEL MYFLIP&amp;trade; (A405DL) - RECONDITIONED</span> is rated
+    <span class="bvseo-ratingValue" itemprop="ratingValue">2.8</span> out of
+    <span class="bvseo-bestRating" itemprop="bestRating">5</span> by
+    <span class="bvseo-reviewCount" itemprop="reviewCount">6</span>.
+</div>
+<!--end-aggregate-rating-->
+
+
+
+
+<ul id="BVSEO_meta" style="display:none!important">
+    <li data-bvseo="bvDateModified">y_2020, m_10, d_20, h_16</li>
+    <li data-bvseo="ps">bvseo_bulk, prod_bvrr, vn_bulk_3.0.12</li>
+    <li data-bvseo="cp">cp_1, bvpage1</li>
+    <li data-bvseo="co">co_hasreviews, tv_1, tr_5</li>
+    <li data-bvseo="cf">loc_en_US, sid_TWALA405DCR_P, prod, sort_[SortEntry(order=RELEVANCE, direction=DESCENDING)]</li>
+    <li data-bvseo="diagnostics">clientName_totalwireless</li>
+</ul>
+<!--end-bvseo-reviews-->
+<ul id="BVSEOSDK_meta" style="display:none !important">
+  <li data-bvseo="sdk">bvseo_sdk, java_sdk, bvseo-4.0.0</li>
+  <li data-bvseo="sp_mt">CLOUD, getAggregateRating, 11ms</li>
+  <li data-bvseo="ct_st">REVIEWS, PRODUCT</li>
+</ul>
+</div>
+		
+		</br>
+			<!-- TFPhones_DescriptiveAttributes_Desktop_UI.jspf starts -->
+<div class="panel panel-default hidden-xs">
+	<div class="panel-body">
+		<ul class="list-unstyled list-details row">
+	
+       	<li class="col-sm-6" aria-label="SPEED">
+       	<strong>SPEED </strong>
+       		4G LTE</li>
+       
+      		<li class="col-sm-6" aria-label="USAGE TIME">
+      		<strong>USAGE TIME </strong>
+      			Talk time up to 6.5 Hrs
+      		</li>
+       
+       	<li class="col-sm-6" aria-label="DISPLAY">
+       		<strong>DISPLAY</strong>
+       		2.8'' QVGA (320x240) TFT-TN Display
+       	</li>
+       
+       	<li class="col-sm-6" aria-label="STORAGE">
+       		<strong>STORAGE </strong>
+       		Internal Memory 512MB RAM + 4GB ROM
+       	</li>
+       
+       	<li class="col-sm-6" aria-label="CAMERA">
+        	<strong>CAMERA</strong>
+        	2MP FF camera 60&deg; angle camera
+        </li>
+       
+       	<li class="col-sm-6" aria-label="DIMENSIONS">
+       		<strong>DIMENSIONS </strong>
+       		4.13'' x 2.08'' x 0.74'' inches
+       	</li>
+       
+  </ul>
+	</div>
+</div>
+<!-- TFPhones_DescriptiveAttributes_Desktop_UI.jspf ends -->		
+			</div>
+			<!-- TFPhones_Description_Desktop_UI.jspf starts -->
+<div class="phone-description text-black hidden-xs">
+		<p class="lead">SMARTPHONE FEATURES WITHOUT THE BULK.</p>
+		<p >RECONDITIONED. The Alcatel MYFLIP&trade; is more than just a basic phone. It delivers the essential features to be productive - including access to email, calendar and web at 4G speeds - in a durable compact flip phone design. The Alcatel MYFLIP&trade; delivers the essential features to get things done in a compact flip phone design. Preloaded with web, email and calendar apps to be productive when you're out and about. 
+		
+		<br><br>
+		<em>In the next step, you will have the option to bundle your Phone with one of our no-contract plans.</em> </p>
+		<div class="collapse js-collapsedtext lto-see-more-less" role="alert">
+			<p>A Service Plan Required for Activation. Plans are not returnable or refundable.</p> 
+		</div>
+		<span></span>
+		<button type="button" class="btn btn-link btn-link-simple" data-toggle="collapse" data-target=".js-collapsedtext" aria-label="See more information about the device">
+			<span class="show-collapsed">See more <em class="icon-angle-right"></em></span>
+			<span class="hidden-collapsed" aria-label="See less information about the device">See less </span>
+		</button>
+		
+				
+
+</div>
+<!-- TFPhones_Description_Desktop_UI.jspf ends -->
+					<input id="selectedDeviceItem" name="selectedDeviceItem" type="hidden" value="281002" />
+				<!-- BEGIN TFProductDescription_Phones_Price_UI.jsp --><!-- BEGIN CatalogEntryDisplay_LTO_Data_Calculation.jspf --><!-- ltoTier :::::::::::::  --><!-- ltoPriceTier ::::  --><!-- ltoPriceTerm ::::  --><!-- ltoUpfrontTier ::::  --><!-- ltoMultiplierTier ::::  --><!-- END CatalogEntryDisplay_LTO_Data_Calculation.jspf -->
+<p class="payment-options-title">CHOOSE PAYMENT OPTION</p>
+<div class="clearfix">
+	<div class="col-sm-12 col-xs-12 price-section">
+		<div class="price-info">
+			<div class="input-section col-sm-4 col-xs-12">
+				<!-- Requires in change plan flow -->
+					<input type="hidden" value="" id="lto_selected_payment_options" />
+			    	<!-- heroOfferSmartPayPrice ::  | freePhoneOffer ::  | lto3Enabled :: false | isSP1AndSP2Enabled :: false -->
+				
+				<div class="payment-option js-paymentOption price-box active lto3" data-value="FRP">
+					<input type="radio" class="radio-custom" id="frpPrice" name="paymentOpt" value="fullRetailPrice" checked="checked">
+					<span class="checkmark"></span>
+					<label for="frpPrice" aria-label="Price $9.99 one time payment" class="radio-custom-label">
+						<div class="price-text">
+							<div class="col-lg-6 col-md-7 col-sm-7 col-xs-6">
+								<p aria-hidden="true" class="price-heading" aria-label="Price">Price</p>
+								
+									<div aria-hidden="true"><span class="price-strikeout">$29.99</span></div>
+								
+							</div>
+							<div class="col-lg-6 col-md-5 col-sm-5 col-xs-6 border-left">
+								
+										<p aria-hidden="true" class="price-value">$9.<sup>99.</sup></p>
+										<p class="disclaimer-text small">one time payment</p>
+									
+							</div>
+						</div>
+					</label>
+				</div>
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- END TFProductDescription_Phones_Price_UI.jsp --><!--  Inventory check and ATC button logic  --><!--  TFProductDescriptionATCSection.jsp starts --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+	<div id="planSelectionConfiguration">
+		
+	</div>
+	<!--  TFProductDescriptionATC_Common_Phones_UI.jspf starts -->
+<input type="hidden" name="pdpAjaxRefresh" value="true" id ="pdpAjaxRefresh"/>
+<div class="text-right">
+	<div class="notifyme">
+	    <div class="row">
+        <div class="col-md-12">	
+		
+		<input type="hidden" name="inventory01" value="136.0-- 6" >
+		
+						<a id="select_phone_bundles_btn_nozip" class="btn btn-default btn-blok-xs btn-lg new-addtocart-style" href="#zipcode_needed">ADD TO CART</a>
+						<a style="display:none" id="select_phone_bundles_btn" class="btn btn-default btn-blok-xs btn-lg new-addtocart-style" href="javascript:shoppingActionsJS.addPlansForProduct(); makeElementSticky('.js-sidebarplan');collapseProductDetailsOnMobile();">ADD TO CART</a>
+						
+					
+				<div class="select_payment_option">
+							Please select a payment option.
+				</div>						
+				
+		<a id="select_phone_bundles_btn_hidden" onclick="javascript:shoppingActionsJS.addPlansForProduct();makeElementSticky('.js-sidebarplan');collapseProductDetailsOnMobile();" style="display:none;"></a>
+		
+			
+		  	</div>
+			 </div>
+		</div>	
+	<input type="hidden" id="inventory_not_available" name="inventory_not_available" value="false" />
+</div>
+<!--  TFProductDescriptionATC_Phones_UI.jspf End -->
+	<div style="display:none">
+	<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">					
+		
+		<span itemprop="price">9.99</span>
+		
+		<span itemprop="priceCurrency">USD</span>
+		<span itemprop="availability" itemtype="http://schema.org/Offer">http://schema.org/InStock</span>
+		<span itemprop="URL" itemtype="http://schema.org/Offer">https://shop.totalwireless.com/shop/en/totalwireless/phones/tw-alcatel-my-flip-a405dl-reconditioned</span>
+	</div>
+		<span itemprop="image">https://media.tracfone.com/wps/contenthandler/dav/content/libraries/wcm.library.phones/components/STALA405DG/wcm.comps.image/st_ecom_large.png</span>
+	</div>
+	
+	<div dojoType="wc.widget.RefreshArea" widgetId="pdpATCSection_widget" id = "pdpATCSection_widget" 
+										controllerId="pdpATCSection_controller" ariaMessage="Product Description ATC" 
+										ariaLiveId="ariaMessage" role="region">
+	<!-- TFESNContextAjax.jsp starts -->
+
+<input type="hidden" id="is_new_customer_ajax" name="is_new_customer_ajax" value="Y" />
+<input type="hidden" id="is_auto_enrolled_ajax" name="is_auto_enrolled_ajax" value="N" />
+<input type="hidden" id="esn_service_end_date_ajax" name="esn_service_end_date_ajax" value="" />
+<input type="hidden" id="is_esn_service_active_ajax" name="is_esn_service_active_ajax" value="Y" />
+<input type="hidden" id="cart_with_smartpay_item_ajax" name="cart_with_smartpay_item_ajax" value="N" />
+<input type="hidden" id="cart_with_presale_item_ajax" name="cart_with_presale_item_ajax" value="false" />
+<input type="hidden" id="isPreSaleItem_ajax" name="isPreSaleItem_ajax" value="false" />
+<input type="hidden" id="cart_with_item_ajax" name="cart_with_item_ajax" value="N" />
+<input type="hidden" id="callPhonesButtonClick_ajax" name="callPhonesButtonClick_ajax" value="" />
+<!-- TFESNContextAjax.jsp ends -->									
+	</div>
+	
+		
+	
+	<script type="text/javascript">
+		dojo.addOnLoad(function(){
+			shoppingActionsJS.initESNContextAjax('https://shop.totalwireless.com/shop/TFESNContextAjaxView?storeId=20003');
+		});
+	</script>
+	<script type="text/javascript">
+	require(["jquery"], function($){
+	
+	$test = $;
+	
+		$test(document).ready(function(){
+	
+			var invAvail = 'Available';
+			var catName = 'Phones';
+			if (invAvail != 'Available' && catName == 'SimCards'){
+				shoppingActionsJS.hideContentForOOS();
+			}
+		});
+	});
+	</script>
+	<!-- PDP  spinner logic -->
+	<script type="text/javascript">
+	        var spinner = document.getElementById("lto_spinner");
+	        spinner.style.display = 'block';
+	        require(["jquery"], function($){
+	        $(window).bind("load", function() {
+	                $("#addToCartBtnTemp").hide();
+	                $("#addToCartBtnTemp1").show();
+	            spinner.style.display = 'none';
+	        });
+	        });
+	 </script>
+	
+	
+	
+<!--  TFProductDescriptionATCSection.jsp ends --><!-- TFPhones_DescriptiveAttributes_Mobile_UI.jspf starts -->
+<div class="panel panel-default visible-xs">
+	<div class="panel-body">
+		<ul class="list-unstyled list-details row">
+	
+       	<li class="col-sm-6" tabindex="0" aria-label="SPEED">
+       	<strong>SPEED </strong>
+       		4G LTE</li>
+       
+      		<li class="col-sm-6" tabindex="0" aria-label="USAGE TIME">
+      		<strong>USAGE TIME </strong>
+      			Talk time up to 6.5 Hrs
+      		</li>
+       
+       	<li class="col-sm-6" tabindex="0" aria-label="DISPLAY">
+       		<strong>DISPLAY</strong>
+       		2.8'' QVGA (320x240) TFT-TN Display
+       	</li>
+       
+       	<li class="col-sm-6" tabindex="0" aria-label="STORAGE">
+       		<strong>STORAGE </strong>
+       		Internal Memory 512MB RAM + 4GB ROM
+       	</li>
+       
+       	<li class="col-sm-6" tabindex="0" aria-label="CAMERA">
+        	<strong>CAMERA</strong>
+        	2MP FF camera 60&deg; angle camera
+        </li>
+       
+       	<li class="col-sm-6" tabindex="0" aria-label="DIMENSIONS">
+       		<strong>DIMENSIONS </strong>
+       		4.13'' x 2.08'' x 0.74'' inches
+       	</li>
+       
+  </ul>
+	</div>
+</div>
+<!-- TFPhones_DescriptiveAttributes_Mobile_UI.jspf ends -->	
+			</div>
+				<div class="phone-description text-black visible-xs">
+	<p class="lead">SMARTPHONE FEATURES WITHOUT THE BULK.</p>
+		<p>RECONDITIONED. The Alcatel MYFLIP&trade; is more than just a basic phone. It delivers the essential features to be productive - including access to email, calendar and web at 4G speeds - in a durable compact flip phone design. The Alcatel MYFLIP&trade; delivers the essential features to get things done in a compact flip phone design. Preloaded with web, email and calendar apps to be productive when you're out and about. 
+		
+		<br><br>
+		<em>In the next step, you will have the option to bundle your Phone with one of our no-contract plans.</em> </p>
+		<div class="collapse js-collapsedtext lto-see-more-less" role="alert">
+			<p tabindex="0">A Service Plan Required for Activation. Plans are not returnable or refundable.</p> 
+		</div>
+		<span></span>
+		<button type="button" class="btn btn-link btn-link-simple" data-toggle="collapse" data-target=".js-collapsedtext" aria-label="See more information about the device">
+			<span class="show-collapsed">See more <em class="icon-angle-right"></em></span>
+			<span class="hidden-collapsed" aria-label="See less information about the device">See less </span>
+		</button>
+		
+</div>	
+		</div>
+	<hr/>
+		<div id="pdp-bundle-campaign">
+			<!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+		</div>
+		             <style>
+               section.features-nav .nav-tabs {
+               padding-top: 25px;
+               margin-bottom: 15px;
+               border-bottom: 0px;
+               }
+               section.features-nav ul.nav li {
+               border-bottom: 1px solid #ddd;
+               }
+               section.features-nav ul.nav li a {
+               word-wrap: break-word;
+               cursor: pointer;
+               font-size: 1em;
+               outline: 0px;
+               border: 0px;
+               line-height: 1em;
+               background-color: transparent;
+               background-position: center 30%;
+               background-repeat: no-repeat;
+               position: relative;
+               text-align: center;
+               color: #999;
+               }
+               section.features-nav ul.nav li a .glyphicon {
+               font-size: 30px;
+               padding-bottom:10px;
+               }
+               section.features-nav ul.nav li a div.shadow-caret {
+               background: transparent center center no-repeat;
+               background-image: none;
+               cursor: pointer;
+               }
+               section.features-nav ul.nav li.active {
+               border-bottom: 1px solid #000;
+               color: #000;
+               }
+               section.features-nav ul.nav li.active a {
+               color: #000;
+               }
+               section.features-nav .nav-tabs>li.active>a:focus,
+               section.features-nav .nav-tabs>li.active>a:hover {
+               color: #000;
+               border: 0px !important;
+               }
+               section.features-nav li a.active:after {
+               content: "";
+               position: absolute;
+               bottom: 0px;
+               left: 50%;
+               }
+               /* SLICK CODE  */
+               section.features-nav .slider {
+               width: 80%;
+               margin: 20px auto;
+               }
+               section.features-nav .slick-slide {
+               margin: 0px 20px;
+               }
+               section.features-nav .slick-slide img {
+               width: 100%;
+               }
+               section.features-nav .slick-prev:before,
+               section.features-nav .slick-next:before {
+               color: black !important;
+               }
+               section.features-nav .slick-slide {
+               transition: all ease-in-out .3s;
+               opacity: .2;
+               }
+               section.features-nav .slick-active {
+               opacity: .5;
+               }
+               section.features-nav .slick-current {
+               opacity: 1;
+               }
+               section.features-nav .slick-prev {
+               left: -10px;
+               }
+               section.features-nav .slick-next {
+               right: -10px;
+               }
+               /* STIcKY CODE
+               .fixednav {
+               position: fixed;
+               top:0px;
+               left:0;
+               width: 100%;
+               background: #fff;
+               z-index: 9999;
+               }  */
+               /* bootstrap hack: fix content width inside hidden tabs */
+               .tab-content > .tab-pane, .pill-content > .pill-pane {
+               /*display: block !important;    /* undo display:none          */
+             /*  height: 0 !important;         /* height:0 is also invisible */
+               /*overflow: hidden !important;  /* no-overflow                */
+               }
+               .tab-content > .active, .pill-content > .active {
+               height: auto !important;      /* let the content decide it  */
+               } /* bootstrap hack end */
+               @media only screen and (max-device-width: 480px) {
+               .nav>li>a {
+               padding: 10px 0px !important;
+               }
+               section.features-nav ul.nav li a {
+               font-size: .7em;
+               }
+               }
+            </style>
+            <section class="features-nav">
+               <ul class="nav nav-tabs">
+                  <li class="col-md-4 col-xs-4 col-xss-12 active" id="specificationOpt">
+                     <a  href="#1" data-toggle="tab" >
+                        <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span><br />
+                        <span class="sub-nav-text">Specifications</span>
+                        <div class="shadow-caret"><i class="down-caret1"></i></div>
+                     </a>
+                  </li>
+                  <li class="col-md-4 col-xs-4 col-xss-12" id="reviewsOpt">
+                     <a href="#2" data-toggle="tab">
+                        <span class="glyphicon glyphicon-comment" aria-hidden="true"></span><br />
+                        <span class="sub-nav-text">Reviews</span>
+                        <div class="shadow-caret"><i class="down-caret1"></i></div>
+                     </a>
+                  </li>
+                  
+                  <li class="col-md-4 col-xs-4  col-xss-12" id="accessoriesOpt">
+                     <a href="#3" data-toggle="tab">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span><br />
+                        <span class="sub-nav-text">Accessories</span>
+                        <div class="shadow-caret"><i class="down-caret1"></i></div>
+                     </a>
+                  </li>
+                  
+               </ul>
+              
+            </section>
+           
+           						
+					<div class="tab-content ">
+							<div class="tab-pane" id="3">
+								<!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  --><!-- BEGIN ESpotTitle_Data.jspf --><!-- END ESpotTitle_Data.jspf --><!-- Item slider-->
+			<div >						
+				<h2  class="carouselMessage carouselMessageAcc" id = "eSpotaccessoriesCaroselESpot">Compatible Accessories</h2>
+			</div>
+		
+
+ <div class="accessoriesCarousel">
+<!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+				
+					<div class="col-xxs-12 col-xs-12  mobile-list-accessories" data-value="153026">
+
+<a href="javascript:accessoriesDisplayJS.showAccessories('153026','productDisplay')">
+
+						<div class="mobile  js-mobile"  style="">
+
+
+
+							<div class="inner">
+							<div class="row">
+							
+								<div class="flag" >SUPER LOW PRICE&nbsp</div>
+									
+											
+								<div class="col-md-6 col-xs-5 top-push-2" style="">
+									
+										
+									
+	
+									<div class="clearfix"></div>
+									<h3 class="phone-title" >
+													Urbanista Melbourne - BT Speaker Dark Clown
+										
+										
+									</h3>
+									
+									
+									
+									<div class="clearfix"></div>
+									<div class="retail-price">																
+																
+										
+							
+													
+									                    	<div class="h3" aria-hidden="true">$29<sup>99</sup> </div>
+									                    			
+															<span class="spcss2">
+									                    		29 dollars and 99 cents
+															</span>
+									                	
+												<input type="hidden" id="ProductInfoPrice_153026" value="29.99"/>
+												
+				
+												
+												<small class="text-lite-black">Retail Price</small>	
+														
+											
+									</div>							
+																		
+								</div>							
+								<div class="col-md-6 col-xs-7 text-left" >								
+									<img aria-label="" alt="" class="img-responsive" style="" src="https://media.tracfone.com//wps/contenthandler/dav/content/libraries/wcm.library.phones/components/Accessories/1033402/wcm.comps.image/st_ecom_1033402_Hero_small.png" id="eSpotcatalogEntry_img1153026" >
+								</div>
+								
+								<div class="accessories-disclaimer">	
+										
+		<div class="phone-savings">
+    <div class="row">
+        <div class="col-md-12 text-left">
+            <div class="icontag">
+                <span class="glyphicon glyphicon-tag top-push-1" aria-hidden="true"></span>
+            </div>
+            <p> While supplies last</p>
+        </div>
+    </div>
+
+</div>
+	
+						        </div>
+            
+								</div>
+							</div>						
+						</div>  </a>
+					</div>
+					<!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+				
+					<div class="col-xxs-12 col-xs-12  mobile-list-accessories" data-value="153025">
+
+<a href="javascript:accessoriesDisplayJS.showAccessories('153025','productDisplay')">
+
+						<div class="mobile  js-mobile"  style="">
+
+
+
+							<div class="inner">
+							<div class="row">
+							
+								<div class="flag" >SUPER LOW PRICE&nbsp</div>
+									
+											
+								<div class="col-md-6 col-xs-5 top-push-2" style="">
+									
+										
+									
+	
+									<div class="clearfix"></div>
+									<h3 class="phone-title" >
+													Urbanista Melbourne - BT Speaker Rose Gold
+										
+										
+									</h3>
+									
+									
+									
+									<div class="clearfix"></div>
+									<div class="retail-price">																
+																
+										
+							
+													
+									                    	<div class="h3" aria-hidden="true">$29<sup>99</sup> </div>
+									                    			
+															<span class="spcss2">
+									                    		29 dollars and 99 cents
+															</span>
+									                	
+												<input type="hidden" id="ProductInfoPrice_153025" value="29.99"/>
+												
+				
+												
+												<small class="text-lite-black">Retail Price</small>	
+														
+											
+									</div>							
+																		
+								</div>							
+								<div class="col-md-6 col-xs-7 text-left" >								
+									<img aria-label="" alt="" class="img-responsive" style="" src="https://media.tracfone.com//wps/contenthandler/dav/content/libraries/wcm.library.phones/components/Accessories/1033413/wcm.comps.image/st_ecom_1033413_Hero_small.png" id="eSpotcatalogEntry_img1153025" >
+								</div>
+								
+								<div class="accessories-disclaimer">	
+										
+		<div class="phone-savings">
+    <div class="row">
+        <div class="col-md-12 text-left">
+            <div class="icontag">
+                <span class="glyphicon glyphicon-tag top-push-1" aria-hidden="true"></span>
+            </div>
+            <p> While supplies last</p>
+        </div>
+    </div>
+
+</div>
+	
+						        </div>
+            
+								</div>
+							</div>						
+						</div>  </a>
+					</div>
+					<!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+				
+					<div class="col-xxs-12 col-xs-12  mobile-list-accessories" data-value="153008">
+
+<a href="javascript:accessoriesDisplayJS.showAccessories('153008','productDisplay')">
+
+						<div class="mobile  js-mobile"  style="">
+
+
+
+							<div class="inner">
+							<div class="row">
+							
+								<div class="flag" >SUPER LOW PRICE&nbsp</div>
+									
+											
+								<div class="col-md-6 col-xs-5 top-push-2" style="">
+									
+										
+									
+	
+									<div class="clearfix"></div>
+									<h3 class="phone-title" >
+													Berlin Bluetooth Earphones - Rose Gold
+										
+										
+									</h3>
+									
+									
+									
+									<div class="clearfix"></div>
+									<div class="retail-price">																
+																
+										
+							
+													
+									                    	<div class="h3" aria-hidden="true">$19<sup>99</sup> </div>
+									                    			
+															<span class="spcss2">
+									                    		19 dollars and 99 cents
+															</span>
+									                	
+												<input type="hidden" id="ProductInfoPrice_153008" value="19.99"/>
+												
+				
+												
+												<small class="text-lite-black">Retail Price</small>	
+														
+											
+									</div>							
+																		
+								</div>							
+								<div class="col-md-6 col-xs-7 text-left" >								
+									<img aria-label="" alt="" class="img-responsive" style="" src="https://media.tracfone.com//wps/contenthandler/dav/content/libraries/wcm.library.phones/components/Accessories/HP_BERLIN_RG/wcm.comps.image/st_ecom_small.png" id="eSpotcatalogEntry_img1153008" >
+								</div>
+								
+								<div class="accessories-disclaimer">	
+										
+		<div class="phone-savings">
+    <div class="row">
+        <div class="col-md-12 text-left">
+            <div class="icontag">
+                <span class="glyphicon glyphicon-tag top-push-1" aria-hidden="true"></span>
+            </div>
+            <p> While supplies last</p>
+        </div>
+    </div>
+
+</div>
+	
+						        </div>
+            
+								</div>
+							</div>						
+						</div>  </a>
+					</div>
+					
+</div>
+
+
+<script type="text/javascript">
+	require(["jquery"], function($){
+	
+		$test = $;
+		
+		$test(document).ready(function(){
+		var selectedPaymtOption = "";
+    	if($('.js-paymentOption').hasClass("active"))
+    		selectedPaymtOption = $('.js-paymentOption.active').data('value');
+    	else if($('#lto_selected_payment_options')){
+    			selectedPaymtOption = $('#lto_selected_payment_options').val();
+    		}	
+			if(selectedPaymtOption != 'FRP'){
+				jQuery('#accessoriesOpt').hide();
+				jQuery('.accessoriesCarousel').hide();
+				jQuery('#accessoriesCaroselESpot').hide();
+			}
+			 
+		});
+	});
+	
+	
+
+	</script>
+ <!-- Item slider end-->
+						  	</div>				
+																		
+							<div class="tab-pane" id="2">								
+							
+									<div data-bv-show="reviews" data-bv-productId="TWALA405DCR_P"><!--begin-bvseo-reviews-->
+
+
+
+<!--begin-reviews-->
+<div id="bvseo-reviewsSection">
+    <div class="bvseo-review" itemprop="review" itemscope itemtype="http://schema.org/Review" data-reviewid="234910843">
+        <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+            Rated <span itemprop="ratingValue">1</span> out of
+            <span itemprop="bestRating">5</span>
+        </span> by
+        <span itemprop="author">Sara</span> from
+        <span itemprop="name">can't hear phone ring</span>
+        <span itemprop="description">bought at a retail store, have volume turned completely up as loud as it will go and still unable to hear if someone calls unless I have it right in front of me at all times or in my pocket and can feel it vibrate.</span>
+        <div class="bvseo-pubdate">Date published: 2020-07-15</div>
+        <meta itemprop="datePublished" content="2020-07-15" />
+    </div>
+    <div class="bvseo-review" itemprop="review" itemscope itemtype="http://schema.org/Review" data-reviewid="228806799">
+        <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+            Rated <span itemprop="ratingValue">5</span> out of
+            <span itemprop="bestRating">5</span>
+        </span> by
+        <span itemprop="author">Cope1</span> from
+        <span itemprop="name">No complaints</span>
+        <span itemprop="description">Think about getting another 1 works great though too</span>
+        <div class="bvseo-pubdate">Date published: 2020-01-28</div>
+        <meta itemprop="datePublished" content="2020-01-28" />
+    </div>
+    <div class="bvseo-review" itemprop="review" itemscope itemtype="http://schema.org/Review" data-reviewid="223866337">
+        <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+            Rated <span itemprop="ratingValue">5</span> out of
+            <span itemprop="bestRating">5</span>
+        </span> by
+        <span itemprop="author">Dustin Fruits</span> from
+        <span itemprop="name">Look at that free</span>
+        <span itemprop="description">If I would have known this I probably would of had this a while back. Now I know. So, if my broke  has to get the cheapo plan I'm gonna</span>
+        <div class="bvseo-pubdate">Date published: 2019-08-30</div>
+        <meta itemprop="datePublished" content="2019-08-30" />
+    </div>
+    <div class="bvseo-review" itemprop="review" itemscope itemtype="http://schema.org/Review" data-reviewid="237315446">
+        <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+            Rated <span itemprop="ratingValue">1</span> out of
+            <span itemprop="bestRating">5</span>
+        </span> by
+        <span itemprop="author">teresa jane</span> from
+        <span itemprop="name">will not set up e-mail, not  set up inbox notifica</span>
+        <span itemprop="description">will not let me set  up e-mail, not let me set up text alert notification sound, volume poor on high, buttons hard to push down, need different phone.  can't get online chat going with you people; need a better flip phone!  NOW.  can't get anyone to help me.</span>
+        <div class="bvseo-pubdate">Date published: 2020-09-28</div>
+        <meta itemprop="datePublished" content="2020-09-28" />
+    </div>
+    <div class="bvseo-review" itemprop="review" itemscope itemtype="http://schema.org/Review" data-reviewid="236714535">
+        <span itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+            Rated <span itemprop="ratingValue">2</span> out of
+            <span itemprop="bestRating">5</span>
+        </span> by
+        <span itemprop="author">Jenn f</span> from
+        <span itemprop="name"></span>
+        <span itemprop="description">Phone screen does not show who is calling and sometimes phone freezes</span>
+        <div class="bvseo-pubdate">Date published: 2020-09-03</div>
+        <meta itemprop="datePublished" content="2020-09-03" />
+    </div>
+</div>
+<script type="text/javascript">
+    if (document.getElementById('bvseo-reviewsSection')) {
+        document.getElementById('bvseo-reviewsSection').style.display = 'none';
+    }
+</script>
+<!--end-reviews-->
+
+
+<ul id="BVSEO_meta" style="display:none!important">
+    <li data-bvseo="bvDateModified">y_2020, m_10, d_20, h_16</li>
+    <li data-bvseo="ps">bvseo_bulk, prod_bvrr, vn_bulk_3.0.12</li>
+    <li data-bvseo="cp">cp_1, bvpage1</li>
+    <li data-bvseo="co">co_hasreviews, tv_1, tr_5</li>
+    <li data-bvseo="cf">loc_en_US, sid_TWALA405DCR_P, prod, sort_[SortEntry(order=RELEVANCE, direction=DESCENDING)]</li>
+    <li data-bvseo="diagnostics">clientName_totalwireless</li>
+</ul>
+<!--end-bvseo-reviews-->
+<ul id="BVSEOSDK_meta" style="display:none !important">
+  <li data-bvseo="sdk">bvseo_sdk, java_sdk, bvseo-4.0.0</li>
+  <li data-bvseo="sp_mt">CLOUD, getReviews, 8ms</li>
+  <li data-bvseo="ct_st">REVIEWS, PRODUCT</li>
+</ul>
+</div>
+															
+							</div>							
+						
+						<div class="tab-pane active" id="1">
+						<div class="col-xs-12 lto-pdp-specs">
+					<div class="jumbotron text-left">
+						<p class="lead">Specifications</p>
+						<ul class="list-unstyled list-details row">
+							
+								<li class="col-sm-6" aria-label="SIZE">
+								<strong>SIZE </strong> 
+								4.13'' x 2.08'' x 0.74'' inches</li>
+							
+								<li class="col-sm-6" aria-label="STANDBY TIME">
+								<strong>STANDBY TIME </strong>
+								Standby time up to 12 days</li>
+							
+								<li class="col-sm-6" aria-label="WEIGHT">
+								<strong>WEIGHT </strong> 
+								 4.16 (ounces)</li>
+							 
+								 <li class="col-sm-6" aria-label="BAND (FREQUENCY)">
+								<strong>BAND (FREQUENCY) </strong>
+								  Technology: LTE</li>
+							  
+								<li class="col-sm-6" aria-label="INCLUDED BATTERY">
+								<strong>INCLUDED BATTERY </strong>
+								Battery Lithium-ion 1350mAh</li>
+							
+								<li class="col-sm-6" aria-label="HEARING AID">
+								<strong>HEARING AID </strong>
+								M4/T4</li>
+							
+								<li class="col-sm-6" aria-label="TALK TIME">
+								<strong>TALK TIME </strong>
+								Talk time up to 6.5 Hrs</li>
+							
+							
+						</ul>
+						<div class="whats_in_the_box_manuals_wrapper clearfix">
+							
+								<div class="whats_in_the_box col-sm-6">
+								<p class="lead">What's in the Box?</p>
+								<ul id="inBoxValue">
+									
+										<li>Includes Charger</li>
+									
+										<li> Battery</li>
+									
+										<li> Activation Card</li>
+									
+										<li> Services Guide and Quick Start Guide. Safety & Warranty Information</li>
+									
+								</ul>
+								</div>
+						
+						
+						
+						<div class="hero_right_image col-sm-6">
+							
+							<img class="img-responsive" src="https://media.tracfone.com/wps/contenthandler/dav/content/libraries/wcm.library.phones/components/STALA405DG/wcm.comps.image/st_ecom_specialImg.png" alt="special image">
+							
+							<p>A Service Plan Required for Activation. Plans are not returnable or refundable.</p>
+							
+						
+							<div class="tutorial_manual_links ">
+							
+								<a href="http://tracfone.devicebits.com/totalwireless/home.seam?custId=ALA405DL&amp;locale=en_US">VIEW PHONE TUTORIALS</a>
+							 <br>
+							<!-- Requirement for StraightTalk to change Manual URL to point external web site -->
+								</div>
+							</div>
+						</div>
+						
+							<p><ul><img src="https://www.straighttalk.com/wps/contenthandler/dav/content/libraries/wcm.library.phones/components/ST_ECOM_ICONS/wcm.comps.image/WARNING.png" alt="WARNING: "><b>WARNING: </b>Cancer and Reproductive Harm - <u><font color="blue"><b><i><a href="https://www.p65warnings.ca.gov/" target="_blank">www.P65Warnings.ca.gov</a></i></b></font></strong></u></ul></p>
+												
+					</div>
+				</div>
+				
+			
+			<div class="row more-features">
+				<h2 class="lto-pdp-features">More features</h2>
+				<div class="lto-pdp-features"><!-- This nesting is necessary to let the items jump to next line when needed -->
+					<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3">
+						<div class="inner">
+							<h3>OS:</h3>
+							<p>KaiOS</p>
+						</div>
+					</div>
+				
+					<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3">
+						<div class="inner">
+							<h3>RAM:</h3>
+							<p>Internal Memory: 512MB RAM + 4GB ROM microSD (up to 32GB)</p>
+						</div>
+					</div>
+				
+					<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3">
+						<div class="inner">
+							<h3>CAMERA:</h3>
+							<p>2MP FF camera 60&deg; angle camera</p>
+						</div>
+					</div>
+				
+					<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3">
+						<div class="inner">
+							<h3>BATTERY:</h3>
+							<p>LONG-LASTING BATTERY - Don't worry about needing to charge throughout the day, the 1350 mAh battery with 6.5 hours of talk time has you covered.</p>
+						</div>
+					</div>
+				
+					<div class="col-xxs-12 col-xs-6 col-sm-4 col-md-3">
+						<div class="inner">
+							<h3>DISPLAY:</h3>
+							<p>2.8-inch QVGA (320x240) TFT-TN</p>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+				
+						</div>
+						
+				</div>
+	</div>
+
+<!-- Start TFSmartPayModalUI.jsp -->
+<div class="modal modal-smartpay">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content text-center">
+				<i class="icon-cancel-circled btn-close-modal" data-dismiss="modal" tabindex="0" aria-label="close"></i>
+				<h3 tabindex="0" aria-label="Monthly phone payments with " class="top-push-12">Monthly phone payments with  <img tabindex="0" src="/wcsstore/TFAuroraStorefrontAssetStore/images/smartpay/smartpay-medium.png" alt="Monthly Phone Payments with Smartpay Smartpay"/></h3>
+				<ul class="list-unstyled list-inline list-smartpayicons">
+					<li><div><img tabindex="0"  src="/wcsstore//TotalWireless//img/content/icon-document-checked.gif" alt="apply in seconds"/></div><p>Apply in seconds</p> </li>
+					<li><div><img tabindex="0"  src="/wcsstore//TotalWireless//img/content/icon-banknotes.gif" alt="Get up to $2000"/></div><p>Get up to $2000*</p> </li>
+					<li><div><img tabindex="0"  src="/wcsstore//TotalWireless//img/content/icon-calendar.gif" alt="Pay over time"/></div><p>Pay over time</p> </li>
+				</ul>
+				<h3>Monthly phone payment plan benefits</h3>
+				<div class="text-center">
+					<ul class="list-unstyled list-checkboxes">
+						<li tabindex="0" aria-label="No contract. Cancel anytime." class="icon-ok-circled2">No contract. Cancel anytime.</li>
+						<li tabindex="0" aria-label="No credit score option." class="icon-ok-circled2">No credit score option.</li>
+						<li tabindex="0" aria-label="No termination fee or penalties." class="icon-ok-circled2">No termination fee or penalties.</li>
+						<li tabindex="0" aria-label="Own your phone after completing the payment period." class="icon-ok-circled2">Own your phone after completing the payment period.</li>
+						<li tabindex="0" aria-label="Handset protection coverage." class="icon-ok-circled2">
+							Handset protection coverage.
+							<ul class="list-unstyled">
+								<li tabindex="0" aria-label="Mechanical and electrical failures" class="icon-ok">Mechanical and electrical failures</li>
+								<li tabindex="0" aria-label="Drops, liquid, spills, and cracked screens" class="icon-ok">Drops, liquid, spills, and cracked screens</li>
+								<li tabindex="0" aria-label="Damage due to dust, heat, and humidity" class="icon-ok">Damage due to dust, heat, and humidity</li>
+								<li tabindex="0" aria-label="Surge protection" class="icon-ok">Surge protection</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<div class="text-center"><a tabindex="0" aria-label="got it" href="#" class="btn btn-default" data-dismiss="modal">got it</a></div>
+					<div class="modal-content text-left top-push-4"><p tabindex="0" aria-label="Not all applications are approved for $2000 of equipment, or 90 day BuyOut option. Lease terms vary and customers receive 6,8,10,12,18 and 24 month offers. With Early Payoff, you save on total fees paid.">Not all applications are approved for $2000 of equipment, or 90 day BuyOut option. Lease terms vary and customers receive 6,8,10,12,18 and 24 month offers. With Early Payoff, you save on total fees paid.</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- END TFSmartPayModalUI.jsp -->
+
+
+<script>
+	require(["jquery"], function($){
+	 	$(document).ready(function(){
+	 		var showFeatures = "Y";
+			var showSpecs = "Y";
+			if(showFeatures != null && showFeatures != undefined){ 
+				if(showFeatures == 'N'){
+					$(".lto-pdp-features").hide();
+				}else{
+					$(".lto-pdp-features").show();
+				}
+			}
+			
+			if(showSpecs != null && showSpecs != undefined){ 
+				if(showSpecs == 'N'){
+					$(".lto-pdp-specs").hide();
+				}else{
+					$(".lto-pdp-specs").show();
+				}
+			}
+		});
+	});
+	
+</script>	
+<!-- END TFAuroraStorefrontAssetStore/Widgets/ProductDescriptionV1/ProductDescription.jsp  -->
+													</div>
+													<script type="text/javascript">
+														dojo.addOnLoad(function() {
+															CommonControllersDeclarationJS.setControllerURL('PhoneItemDetailsController', 'TFProductDescriptionView');
+															parseWidget("PhoneItemDetails");	
+														});
+													</script>
+											   										
+											
+												
+							
+										<input hidden id="productPartNumber" value="TWALA405DCR"/>
+									
+								
+											
+									</div>
+												
+										
+													<div id="planSelectionContainer" class="container_content_rightsidebar select_your_service_plan_display">
+																<script type="text/javascript">
+			if(shoppingActionsJS != 'undefined'){
+				shoppingActionsJS.pdpSpeedOptimizerEnabled = true;
+				shoppingActionsJS.psp_CategoryId = '22001';
+				shoppingActionsJS.psp_ParentPartNumber = 'TWALA405DCR_P';
+				shoppingActionsJS.psp_ProductId = '281001';
+				shoppingActionsJS.psp_CatGroupName = '';
+				shoppingActionsJS.deviceParentId = '';
+				shoppingActionsJS.catalogNavigationView = 'com.ibm.commerce.catalog.facade.datatypes.impl.CatalogNavigationViewTypeImpl@17371737';
+				shoppingActionsJS.productDisplayURL = 'https://shop.totalwireless.com/shop/en/totalwireless/phones/tw-alcatel-my-flip-a405dl-reconditioned';
+				shoppingActionsJS.categoryNameBL = 'Phones';
+				shoppingActionsJS.psp_CatentItemId = '';
+				shoppingActionsJS.psp_ColorId = '';
+				shoppingActionsJS.psp_SpecialOfferCode = '';
+				shoppingActionsJS.psp_ServicePlanGroup = '';
+				shoppingActionsJS.psp_PdpFullImage1Request = 'https://media.tracfone.com/wps/contenthandler/dav/content/libraries/wcm.library.phones/components/STALA405DG/wcm.comps.image/st_ecom_large.png';
+				shoppingActionsJS.psp_PdpFullImage1Prod = '';
+				shoppingActionsJS.psp_PdpFullImage1 = '';
+				shoppingActionsJS.psp_categoryName = 'Top Deals';
+				shoppingActionsJS.psp_promoCode = '';
+				shoppingActionsJS.psp_migrationGroupFromContext = '';
+				shoppingActionsJS.psp_typeDescAttr = '';
+				shoppingActionsJS.isCUSGSession = 'false';
+			}
+		</script>
+														
+													</div>
+													<div id="tempPdpAccessories" style="display:none">
+													<div id="pdpAccessories">
+													<!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  --><!-- BEGIN ESpotTitle_Data.jspf --><!-- END ESpotTitle_Data.jspf --><!-- Item slider-->
+			<div >						
+				<h2  class="carouselMessage carouselMessageAcc" id = "ChooseYourPlanaccessoriesCaroselESpot">Compatible Accessories</h2>
+			</div>
+		
+
+ <div class="accessoriesCarousel">
+<!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+				
+					<div class="col-xxs-12 col-xs-12  mobile-list-accessories" data-value="153026">
+
+<a href="javascript:accessoriesDisplayJS.showAccessories('153026','productDisplay')">
+
+						<div class="mobile  js-mobile"  style="">
+
+
+
+							<div class="inner">
+							<div class="row">
+							
+								<div class="flag" >SUPER LOW PRICE&nbsp</div>
+									
+											
+								<div class="col-md-6 col-xs-5 top-push-2" style="">
+									
+										
+									
+	
+									<div class="clearfix"></div>
+									<h3 class="phone-title" >
+													Urbanista Melbourne - BT Speaker Dark Clown
+										
+										
+									</h3>
+									
+									
+									
+									<div class="clearfix"></div>
+									<div class="retail-price">																
+																
+										
+							
+													
+									                    	<div class="h3" aria-hidden="true">$29<sup>99</sup> </div>
+									                    			
+															<span class="spcss2">
+									                    		29 dollars and 99 cents
+															</span>
+									                	
+												<input type="hidden" id="ProductInfoPrice_153026" value="29.99"/>
+												
+				
+												
+												<small class="text-lite-black">Retail Price</small>	
+														
+											
+									</div>							
+																		
+								</div>							
+								<div class="col-md-6 col-xs-7 text-left" >								
+									<img aria-label="" alt="" class="img-responsive" style="" src="https://media.tracfone.com//wps/contenthandler/dav/content/libraries/wcm.library.phones/components/Accessories/1033402/wcm.comps.image/st_ecom_1033402_Hero_small.png" id="ChooseYourPlancatalogEntry_img1153026" >
+								</div>
+								
+								<div class="accessories-disclaimer">	
+										
+		<div class="phone-savings">
+    <div class="row">
+        <div class="col-md-12 text-left">
+            <div class="icontag">
+                <span class="glyphicon glyphicon-tag top-push-1" aria-hidden="true"></span>
+            </div>
+            <p> While supplies last</p>
+        </div>
+    </div>
+
+</div>
+	
+						        </div>
+            
+								</div>
+							</div>						
+						</div>  </a>
+					</div>
+					<!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+				
+					<div class="col-xxs-12 col-xs-12  mobile-list-accessories" data-value="153025">
+
+<a href="javascript:accessoriesDisplayJS.showAccessories('153025','productDisplay')">
+
+						<div class="mobile  js-mobile"  style="">
+
+
+
+							<div class="inner">
+							<div class="row">
+							
+								<div class="flag" >SUPER LOW PRICE&nbsp</div>
+									
+											
+								<div class="col-md-6 col-xs-5 top-push-2" style="">
+									
+										
+									
+	
+									<div class="clearfix"></div>
+									<h3 class="phone-title" >
+													Urbanista Melbourne - BT Speaker Rose Gold
+										
+										
+									</h3>
+									
+									
+									
+									<div class="clearfix"></div>
+									<div class="retail-price">																
+																
+										
+							
+													
+									                    	<div class="h3" aria-hidden="true">$29<sup>99</sup> </div>
+									                    			
+															<span class="spcss2">
+									                    		29 dollars and 99 cents
+															</span>
+									                	
+												<input type="hidden" id="ProductInfoPrice_153025" value="29.99"/>
+												
+				
+												
+												<small class="text-lite-black">Retail Price</small>	
+														
+											
+									</div>							
+																		
+								</div>							
+								<div class="col-md-6 col-xs-7 text-left" >								
+									<img aria-label="" alt="" class="img-responsive" style="" src="https://media.tracfone.com//wps/contenthandler/dav/content/libraries/wcm.library.phones/components/Accessories/1033413/wcm.comps.image/st_ecom_1033413_Hero_small.png" id="ChooseYourPlancatalogEntry_img1153025" >
+								</div>
+								
+								<div class="accessories-disclaimer">	
+										
+		<div class="phone-savings">
+    <div class="row">
+        <div class="col-md-12 text-left">
+            <div class="icontag">
+                <span class="glyphicon glyphicon-tag top-push-1" aria-hidden="true"></span>
+            </div>
+            <p> While supplies last</p>
+        </div>
+    </div>
+
+</div>
+	
+						        </div>
+            
+								</div>
+							</div>						
+						</div>  </a>
+					</div>
+					<!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+				
+					<div class="col-xxs-12 col-xs-12  mobile-list-accessories" data-value="153008">
+
+<a href="javascript:accessoriesDisplayJS.showAccessories('153008','productDisplay')">
+
+						<div class="mobile  js-mobile"  style="">
+
+
+
+							<div class="inner">
+							<div class="row">
+							
+								<div class="flag" >SUPER LOW PRICE&nbsp</div>
+									
+											
+								<div class="col-md-6 col-xs-5 top-push-2" style="">
+									
+										
+									
+	
+									<div class="clearfix"></div>
+									<h3 class="phone-title" >
+													Berlin Bluetooth Earphones - Rose Gold
+										
+										
+									</h3>
+									
+									
+									
+									<div class="clearfix"></div>
+									<div class="retail-price">																
+																
+										
+							
+													
+									                    	<div class="h3" aria-hidden="true">$19<sup>99</sup> </div>
+									                    			
+															<span class="spcss2">
+									                    		19 dollars and 99 cents
+															</span>
+									                	
+												<input type="hidden" id="ProductInfoPrice_153008" value="19.99"/>
+												
+				
+												
+												<small class="text-lite-black">Retail Price</small>	
+														
+											
+									</div>							
+																		
+								</div>							
+								<div class="col-md-6 col-xs-7 text-left" >								
+									<img aria-label="" alt="" class="img-responsive" style="" src="https://media.tracfone.com//wps/contenthandler/dav/content/libraries/wcm.library.phones/components/Accessories/HP_BERLIN_RG/wcm.comps.image/st_ecom_small.png" id="ChooseYourPlancatalogEntry_img1153008" >
+								</div>
+								
+								<div class="accessories-disclaimer">	
+										
+		<div class="phone-savings">
+    <div class="row">
+        <div class="col-md-12 text-left">
+            <div class="icontag">
+                <span class="glyphicon glyphicon-tag top-push-1" aria-hidden="true"></span>
+            </div>
+            <p> While supplies last</p>
+        </div>
+    </div>
+
+</div>
+	
+						        </div>
+            
+								</div>
+							</div>						
+						</div>  </a>
+					</div>
+					
+</div>
+
+
+<script type="text/javascript">
+	require(["jquery"], function($){
+	
+		$test = $;
+		
+		$test(document).ready(function(){
+		var selectedPaymtOption = "";
+    	if($('.js-paymentOption').hasClass("active"))
+    		selectedPaymtOption = $('.js-paymentOption.active').data('value');
+    	else if($('#lto_selected_payment_options')){
+    			selectedPaymtOption = $('#lto_selected_payment_options').val();
+    		}	
+			if(selectedPaymtOption != 'FRP'){
+				jQuery('#accessoriesOpt').hide();
+				jQuery('.accessoriesCarousel').hide();
+				jQuery('#accessoriesCaroselESpot').hide();
+			}
+			 
+		});
+	});
+	
+	
+
+	</script>
+ <!-- Item slider end-->
+													</div></div>
+											
+																<div id="OOSEmailNotifyDiv" class="row product_handset_content_na select_your_service_plan_display">
+																	<div class="col-sm-12">
+																	<!-- BEGIN TFPageBackLinks.jsp --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  --><!-- From TFPageBackLinks_Data.jspf Starts --><!-- From TFPageBackLinks_Data.jspf ends --><!-- From EnvironmentSetup.jspf Starts -->
+
+<input type="hidden" id="is_new_customer" name="is_new_customer" value="Y" />
+<input type="hidden" id="is_auto_enrolled" name="is_auto_enrolled" value="N" />
+<input type="hidden" id="esn_service_end_date" name="esn_service_end_date" value="" />
+<input type="hidden" id="is_esn_service_active" name="is_esn_service_active" value="N" />
+<input type="hidden" id="cart_with_smartpay_item" name="cart_with_smartpay_item" value="N" />
+<input type="hidden" id="cart_with_presale_item" name="cart_with_presale_item" value="false" />
+<input type="hidden" id="isPreSaleItem" name="isPreSaleItem" value="false" />
+<input type="hidden" id="cart_with_item" name="cart_with_item" value="N" />
+<input type="hidden" id="cart_with_upgitem" name="cart_with_upgitem" value="false" />
+<input type="hidden" id="mgr_group" name="mgr_group" value="" />
+<!-- From EnvironmentSetup.jspf Ends -->
+<style>    
+    .brdcrmb    { position: relative;}
+    .brdcrmb .row {padding-top:4px;}
+    .brdcrmb    {border-bottom: 1px solid #c7c6c6; padding-bottom:7px;}
+    .brdcrmb ul {width:100%; margin-left:0;padding-left:0;paddin-bottom:10px;  }
+    .brdcrmb ul li {display:inline-block; font-size:0.8em;padding:10px 0px 0px 0px;line-height:10px; color:#000;  }
+    .brdcrmb ul li a { text-decoration:underline; color:#333;   }
+    .brdcrmb ul li a:hover {color:#000; }
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 728px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+                .brdcrmb ul,.brdcrmb ul li { margin:0 auto;display:inline-block;text-align:center; 
+}
+    
+</style>
+
+<!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+<div class="container">
+<div class="brdcrmb">
+    <div class="row">
+        <div class="col-md-12 col-xs-12">
+       		<ul class="">
+       		<li><a href="https://www.totalwireless.com" id="OOSEmailNotifyhome">Home</a><span>&nbsp;/</span></li> 
+       		
+			    <li><a href="https://shop.totalwireless.com/shop/en/totalwireless/phones" id="OOSEmailNotifycategory_Phones">Phones</a><span>&nbsp;/</span></li> 
+			    <li>ALCATEL MYFLIP&trade; (A405DL) - RECONDITIONED</li>
+    		</ul>
+            <div class="clearfix"></div>
+        </div>
+	</div>
+</div>
+</div>
+
+<!-- END TFPageBackLinks.jsp -->	
+																	</div>
+																</div>
+																
+																	<div id="outOfStockDiv" class="product_handset_content_na panel panel panel-danger select_your_service_plan_display">
+																		<div class="panel-body">
+	
+																		<p id="phoneNotAvlSuccess_oos" style="display:none;width:100%;font-weight:bold;margin:10px 0;">We will send you an email when this product becomes available.</p>
+																		<p id="phoneNotAvlError_oos" style="display:none;width:100%;font-weight:bold;">There was an error submitting your email. Please try again.</p>
+																		<p id="phoneNotAvl_oos" style="width:100%;font-weight:bold;margin-top:10px;">We are sorry but this device is not available currently!</p>
+																		
+																		<div class="form-inline">
+	  																	<div class="" style="padding: 21px 0px 9px 1px;">
+	  																		<labe id="emailLabel_oos">Please add your email and we will notify you when this device can be purchased:</label>
+	  																		<input type="text" name="email" id="emailOOS_oos" style="height: 45px;">
+	  																		<a id="submitEmailBtn_oos" class="css3button btn btn-default" onclick="javascript:shoppingActionsJS.validateEmailforOOS(document.getElementById('emailOOS_oos'),281001)">
+	  																		<b>SUBMIT</b></a>
+	  																	</div>
+	  																	</div>
+																		</div>
+																	</div>
+																
+											
+					
+					<input hidden id="migrationGroup" value=""/>					
+						<!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  --><!-- BEGIN ESpotTitle_Data.jspf --><!-- END ESpotTitle_Data.jspf -->
+							
+								<div class="row">
+													<div class="col-xs-12 top-push-8">
+													<div class="legal-notice lto-disclaimer-section select_your_service_plan_display">
+															<strong>
+																<p>*TETHERING TO ANOTHER DEVICE IS PROHIBITED. OTHER LIMITATIONS APPLY. Please refer to your terms and conditions. </p>
+															</strong>
+														</div>
+														
+														<div class="disclaimer_espot_content columns top-push-4">
+															<!-- BEGIN ContentRecommendation.jsp --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  --><!-- BEGIN ESpotTitle_Data.jspf --><!-- END ESpotTitle_Data.jspf --><!-- END ContentRecommendation.jsp -->
+														</div>
+											</div>
+								 </div>
+												 
+							
+							
+					</div>
+			</main>						
+				<div class="modal" id="smartpay_plan_upgrade_without_ar">
+		<div class="modal-dialog">
+			<div class="modal-content text-center" style="margin-right: 10px;">
+				<div class="modal-header">
+					<h1 tabindex="0" class="modal-title">WE NOTICE YOU CURRENTLY HAVE SERVICE UNTIL </h1>
+				</div>
+				<div class="modal-body modal- text-center">
+					<div class="row grid-divided">
+						<div class="col-sm-10 col-sm-offset-1">
+							<p tabindex="0">Please know as part of your Phone Monthly Payment Plan Agreement with SmartPay you need to maintain active service. If your service does not remain active during this period, SmartPay will automatically purchase your current monthly service plan.</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+					
+						<a tabindex="0" id="smartpay_plan_upgrade_without_ar_ok" 
+						   href="javascript:setCurrentId('select_phone_bundles_btn');shoppingActionsJS.TWAdd2ShopCartAjax('entitledItem_',document.getElementById('quantity_').value, false)" 
+							class="btn btn-default smartpay_plan_upgrade_without_ar_ok"
+							title="OK"
+							onclick="_gaq.push(['_setCustomVar',1, '','Yes',2]); _gaq.push(['_trackEvent', 'Device', '', 'Select_Phone',, false]);"> 
+							OK
+						</a>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal" id="smartpay_plan_upgrade_with_ar">
+		<div class="modal-dialog">
+			<div class="modal-content text-center">
+				<div class="modal-header">
+					<h1 tabindex="0" class="modal-title">WE NOTICE YOU CURRENTLY ENROLLED IN AUTO-REFILL </h1>
+				</div>
+				<div class="modal-body modal- text-center">
+					<div class="row grid-divided">
+						<div class="col-sm-10 col-sm-offset-1">
+							<p tabindex="0">Please know as part of your Phone Monthly Payment Plan Agreement with SmartPay you need to maintain active service. If your service does not remain active during this period, SmartPay will automatically purchase your current monthly service plan.</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+					
+						<a tabindex="0" id="smartpay_plan_upgrade_with_ar_ok" 
+						   href="javascript:setCurrentId('select_phone_bundles_btn');shoppingActionsJS.TWAdd2ShopCartAjax('entitledItem_',document.getElementById('quantity_').value, false)" 
+							class="btn btn-default smartpay_plan_upgrade_with_ar_ok"
+							title="OK"
+						 	 onclick="_gaq.push(['_setCustomVar',1, '','Yes',2]); _gaq.push(['_trackEvent', 'Device', '', 'Select_Phone',, false]);" >
+							OK
+						</a>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="modal" id="item_in_cart">
+		<div class="modal-dialog">
+			<div class="modal-content text-center">
+				<div class="modal-header">
+					<h1 tabindex="0" class="modal-title">WE'RE SORRY FOR THE INCONVENIENCE</h1>
+				</div>
+				<div class="modal-body modal- text-center">
+					<div class="row grid-divided">
+						<div class="col-sm-10 col-sm-offset-1">
+							<p tabindex="0">Currently, our phone monthly payment plan only allows customers to purchase one device at a time within the cart.</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button tabindex="0" aria-label="CONTINUE CHECKOUT"  class="btn btn-default" id="item_in_cart_no" data-dismiss="modal" data-backdrop="false">CONTINUE CHECKOUT</button>
+						<button tabindex="0" aria-label="DELETE PHONE FROM CART"  class="btn btn-default" id="item_in_cart_yes" onclick="JavaScript:setCurrentId('clear_cart'); shoppingActionsJS.clearCart();">DELETE PHONE FROM CART</button>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal" id="presale_item_in_cart">
+		<div class="modal-dialog">
+			<div class="modal-content text-center">
+				<div class="modal-header">
+					<h1 tabindex="0" class="modal-title">WE'RE SORRY FOR THE INCONVENIENCE</h1>
+				</div>
+				<div class="modal-body modal- text-center">
+					<div class="row grid-divided">
+						<div class="col-sm-10 col-sm-offset-1">
+							<p tabindex="0">This item cannot be added to your current cart. Please complete the checkout of your current cart and then add this item to the cart again.</p>
+							
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button tabindex="0" aria-label="OK"  class="btn btn-default" id="presale_item_in_cart_no" data-dismiss="modal" data-backdrop="false">OK</button>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="upg_item_in_cart">
+		<div class="modal-dialog">
+			<div class="modal-content text-center">
+				<div class="modal-header">
+					<h1 tabindex="0" class="modal-title">WE'RE SORRY FOR THE INCONVENIENCE</h1>
+				</div>
+				<div class="modal-body modal- text-center">
+					<div class="row grid-divided">
+						<div class="col-sm-10 col-sm-offset-1">
+							<p tabindex="0">You already have an upgrade phone in cart. Please complete the checkout of your current cart.</p>
+							
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button tabindex="0" aria-label="OK"  class="btn btn-default" id="upg_item_in_cart_no" data-dismiss="modal" data-backdrop="false">OK</button>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal modal-shippinginfo shippingInfoST" id="preOrderPopUp">
+<div class="modal-backdrop  in"></div>
+		<div class="modal-dialog modal-md">
+			<div class="modal-content text-center ">
+				<i class="icon-cancel-circled btn-close-modal" data-dismiss="modal" tabindex="0" aria-label="close"></i>
+				<div style="margin-top: 40px;">Pre-order this item today and we'll ship it as soon as it's available. Shipping dates are estimates. You will receive an email once your item ships. Please note your credit card will be charged at the time of purchase.
+</div>
+				<div class="modal-footer"><div class="text-center"><a href="#" class="btn btn-default" data-dismiss="modal">got it</a></div></div>
+			</div>
+		</div>
+	</div>
+<div class="modal modal-preOrderOfferinfo shippingInfoST" id="preOrderOfferPopUp">
+<div class="modal-backdrop  in"></div>
+		<div class="modal-dialog modal-md">
+			<div class="modal-content text-center " style="width: 100%">
+				<i class="icon-cancel-circled btn-close-modal" data-dismiss="modal" tabindex="0" aria-label="close"></i>
+				<div style="margin-top: 40px;margin-right: 20px;margin-left: 20px;text-align: justify;" id="PreOrderOfferMsgId"></div>
+				<div class="modal-footer"><div class="text-center"><a href="#" class="btn btn-default" data-dismiss="modal">got it</a></div></div>
+			</div>
+		</div>
+	</div><!-- BEGIN TotalWireless Footer Footer.jsp --><!-- isJqueryUpgradeEnabled :: 1 : /wcsstore/TFAuroraStorefrontAssetStore/ --><!--SCPC-171 addition   --><!--SCPC-171 addition ends  -->
+<script type="text/javascript" src="/wcsstore/TFAuroraStorefrontAssetStore/javascript/TLS.js?tf_ver_37.0"></script>
+<!-- START TotalWireless Footer Footer_UI.jspf --><style>
+/*TW Footer Changes starts*/
+
+
+footer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #fff;
+  margin-bottom: 0px;
+  background: #00b09b; }
+
+#footer .container {
+  border-top: 1px solid #ddd;
+  padding-top: 40px; }
+
+#footer p:last-child {
+  margin: 0;
+  padding: 0; }
+
+.footer_links_share {
+  background: #000000; }
+
+.footer_links_share nav.legal_links a {
+  color: #848383;
+  text-transform: lowercase; }
+
+.footer_links_share nav.legal_links a:hover {
+  color: #fff; }
+
+footer .legal_links {
+  padding-top: 20px;
+  padding-bottom: 10px; }
+
+footer .legal_notices {
+  background: #333;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+footer .additional_links {
+  padding-bottom: 30px; }
+
+footer .additional_links li a {
+  color: #000; }
+
+footer .additional_links li a:hover {
+  text-decoration: underline; }
+
+footer .copyright {
+  color: #fff; }
+
+footer .disclaimer {
+  color: #fff; }
+
+footer h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: lowercase; }
+
+.modal-body h2 {
+  color: #00b09b; }
+
+footer ul li a {
+  text-transform: lowercase;
+  line-height: 24px; }
+
+/*TW Footer Changes ends*/
+</style>
+<footer>
+<div class=footer_links_share>
+<div class=container>
+<div class=row>
+<div class=col-xs-12>
+<nav class=legal_links>
+<ul class=list-inline>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/h/about/">About Us</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/h/retaillocations">Retailers</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/support/contactus">Contact us</a></li>
+<li><a target="" title="" href="/shop/en/totalwireless/phones/hearing-aid-compatibility" data-target="" data-toggle="">Hearing aid
+compatibility</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/h/SiteMap">Site map</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/h/legal/terms-and-conditions" data-target="" data-toggle="">Terms and Conditions</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/h/legal/terms-and-conditions#returnpolicy" data-target="" data-toggle="">Return Policy</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/h/legal/privacy-policy" data-target="" data-toggle="">Privacy Policy</a></li>
+<li><a target=_blank title="" href="http://tfethics.com/" data-target="" data-toggle="">CODE OF CONDUCT</a></li>
+<li><a target=_blank title="" href="http://www.tfwunlockpolicy.com" data-target="" data-toggle="">Unlocking Policy</a></li>
+<li><a title="" href="https://www.totalwireless.com/accessibility" target="" data-target="" data-toggle="">accessibility</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<div class=additional_links>
+<div class=container>
+<div class=row>
+<div class=col-sm-4>
+<h2>I want to</h2>
+<ul class=list-unstyled>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/support/coveragemap">View Coverage map</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/howitworks">Learn how Total Wireless Works</a></li>
+</ul>
+<h2>Current customers</h2>
+<ul class=list-unstyled>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/h/a/phone">Activate my phone</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/h/a/phone/">Activate my hotspot</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/h/refill/ondemand/BuyAddAirTime">Refill my Plan</a></li>
+<li><a target="" title="" href="/shop/TFOrderStatusForm?storeId=20003&urlRequestType=Base&langId=-1&catalogId=12051">Track my order</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/support">Get support</a></li>
+</ul>
+</div>
+<div class=col-sm-4>
+<h2>Shop</h2>
+<ul class=list-unstyled>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/shop/phones">shop all phones</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/shop/serviceplans">shop all plans</a></li>
+<li><a target="" title="" href="https://www.totalwireless.com/wps/portal/home/shop/byop">bring your own phone</a></li>
+</ul>
+</div>
+<div class="col-sm-4 text-right">
+<div class="keepin-touch hidden-xs" id=keepin-touch-form></div>
+<div class="keepin-touch visible-xs" id=keepin-touch-form-mobile></div>
+<ul class="col-md-10 col-xs-12 list-inline list-social">
+<li class=facebook><a target=_blank href="http://www.facebook.com/totalwireless" title="follow us on Facebook"><i class="icon icon-facebook"></i></a></li>
+<li class=twitter><a target=_blank href="https://twitter.com/TotalWireless" title="follow us on Twitter"><i class="icon icon-twitter"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class=legal_notices>
+<div class=container>
+<div class=row>
+<div class=col-sm-3>
+<img src="https://media.tracfone.com/wps/wcm/connect/8ed77295-502e-44b1-881c-c6fe54d402b2/tw_logo_inverted.png?MOD=AJPERES&amp;attachment=true&amp;id=1521480845017" alt="Total Wireless">
+</div>
+<div class=col-sm-9>
+<p class=copyright style="font-size: 11px">
+&copy; 2020 TracFone Wireless, Inc.
+<br>
+Certain restrictions apply. Total Wireless reserves the right to terminate your service for unauthorized or abnormal usage. Plan, features, coverage and limitations may vary. Please refer always to the latest Terms and Conditions of Service at TotalWireless.com.
+</p>
+<p class=copyright style="font-size: 11px">
+<b>"No Fees 24 Months"</b> means that eligible consumers will only pay the retail price of the device over time by making the agreed upon scheduled rental/lease payments for their leased device without having to pay additional fees. Not all customers will qualify. We may check past transactional payment history, but no established FICO score or credit history is necessary. Approval not guaranteed. </p>
+<p class=copyright style="font-size: 11px">
+<b>"No Credit Required"</b> means that, although no minimum FICO score or established credit history is necessary to apply, we may check past payment history based on the information you provide in the application.</p>
+<p class=copyright style="font-size: 11px">
+<b>The advertised transaction is not a credit transaction.</b> The advertised transaction is a rental-purchase agreement (rent-to-own agreement, consumer rental-purchase agreement or a lease/lease-purchase agreement, depending on your state). You will not own the merchandise until the total amount necessary to acquire ownership is paid in full or you exercise your early purchase option ("EPO"). Purchase option not available in MN, NJ, WI, WY. Final payment more in NC. Taxes and applicable fees may apply. Retail prices are subject to change.
+</p>
+<p class=copyright style="font-size: 11px">
+<sup>&#8224;</sup>Please allow 24 - 72 hours after activation of the additional line for the gift card claim code to be processed. Gift card claim code has no cash value. Must be 18 years or older to participate. A U.S. address is required for delivery. Other restrictions may apply. Purchase and activation of new line required by May 15th, 2019 to qualify for promotion. Upgrades and reactivations not valid for promotion. Airtime service plan required for activation. Plans and phones sold separately. Promotion valid for one-time use. Promotion available online only for phones valued $30 or more.</br>
+</p>
+<p class=copyright style="font-size: 11px"><sup>1</sup>Service only available in: Arizona, Colorado, Connecticut, Delaware, Florida, Hawaii, Idaho, Indiana, Iowa, Maryland, Massachusetts, Mississippi, New Hampshire, New Jersey, New York, North Carolina, North Dakota, Tennessee & Washington DC. Total Wireless is not liable for any loss, injury, claim, liability, or damage of any kind resulting in any way from Doc.com app and its services. Total Wireless promotes the app but is not responsible for any content contained therein or any delay or failure in performance by the Doc.com app. The Doc.com app will consume data. Please check your data balance by texting 611611 before starting to use the application or use Wi-Fi.</p>
+<p class=copyright style="font-size: 11px">
+*The 30-Day cycle for Shared Data Family Plans begins on the day the first line/device is activated. Any line(s)/device(s) activated later in the first 30-Day cycle will receive only the number of days remaining in that cycle. A month equals 30 days.
+</p>
+<p class=copyright style="font-size: 11px">
+&#8224; To get 4G LTE speed where available you must have a 4G LTE capable device and a 4G LTE SIM card. Actual availability, coverage and speed may vary. LTE is a trademark of ETSI.
+</p>
+<p class=copyright style="font-size: 11px">
+&#167;The $10 Global Calling Card must be combined with another Total Wireless Service Plan to work. Calls must originate from the U.S. No international roaming is allowed. For personal use only. Calls are billed in one-minute increments. Rates are subject to change without prior notice. Airtime expires after 180 days of last use or 30 days after your Total Wireless Service is suspended. Available online only at TotalWireless.com
+</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+jQuery(" .top-flex-push-4").css( "display", "none" );
+</script>
+
+
+<script type="text/javascript">
+	dojo.addOnLoad(function() { 
+		//Make sure page is loaded at this point
+		//Set requestedSubmitted to false
+		requestSubmitted = false;
+
+		// All div's whose id attribute contains dojoWidget subString -- dojo.query('div[id*="dojoWidget"]')
+		// All div's which contains dojoType attribute -- dojo.query(div[dojoType])
+		dojo.query('div[dojoType]').forEach(function(node, index, arr){
+			addToWidgetsList(node.id);
+		});
+		parseAllWidgets();
+	}); 	
+</script>
+
+<script language="javascript" type="text/javascript" charset="utf-8" src="https://tracfone.inq.com/chatskins/launch/inqChatLaunch10004494.js?tf_ver_37.0"></script>
+<!-- //END-FOOTER TotalWireless Footer Footer_UI.jspf-->
+	<wcfc:param name="langId" value="-1" />
+	
+<input type="hidden" id="tlsUpdateYourBrowserPagePath"	value="http://shop.totalwireless.com/shop/UnsupportedBrowserErrorView?catalogId=12051&storeId=20003" />
+	
+<input type="hidden" id="tlsCustomerLang"	value="en" />
+<style>
+
+.browser-disclaimer-main {
+    font-size: 14px;
+    color: #000;
+    width: 100%;
+    overflow: hidden;
+    z-index: 999999;
+    position: inherit;
+} 
+
+.tlsWarning {
+ background-color:#f0ad4e!important;
+}
+
+.tlsWarning-TotalWireless{
+	background-color:#f0f0f0 !important;
+}
+
+
+</style>
+<div id="browser-disclaimer" class="browser-disclaimer-main tlsWarning tlsWarning-TotalWireless" style="display:none">  
+  <div class="row" style="margin: 10px 0px 10px 10px;">   
+    <div class="col-md-10 col-md-offset-1 col-xs-10">        
+      <span role="alert" title="Warning" id="warnicon" class="glyphicon glyphicon-exclamation-sign"></span>
+      <span style="margin-left:10px;" id="tlsDisclaimerMsg">
+      </span>    
+    </div>    
+    <div class="col-md-1 col-xs-2">     
+      <a id="browser-disclaimer-close" role="button" href="javascript:hideNotification();"><span role="alert" title="Close" class="glyphicon glyphicon-remove"></span></a>     
+    </div>   
+  </div>
+</div><!-- END TotalWireless Footer Footer.jsp -->
+	
+	
+		</div>
+	
+		
+	
+	<script type="text/javascript">
+			function LoadJSOnDOMReady() {
+	
+				var jsAssetsDir = '/wcsstore/TFAuroraStorefrontAssetStore/' + 'javascript/';	
+				var jslist = 	[
+									"libs.js?tf_ver_37.0","scripts.js?tf_ver_37.0","jquery/js/modernizr.custom.js?tf_ver_37.0","jquery/js/jquery.dlmenu.js?tf_ver_37.0","jquery/js/jquery.openmenu.js?tf_ver_37.0","LazyLoad/jquery.lazy.min.js?tf_ver_37.0","/Tealeaf/tealeafWC.js?tf_ver_37.0"								
+								];
+		
+				var jsListLength = jslist.length;
+				var i,jsfilepath;
+				for (i = 0; i < jsListLength; i++) {
+				   jsfilepath =  jsAssetsDir + jslist[i];
+				   	var element = document.createElement("script");
+					element.src = jsfilepath;
+					document.body.appendChild(element);
+				 }
+	
+				// Load BV
+				var bvscriptpath = 'https://apps.bazaarvoice.com/deployments/totalwireless/main_site/production/en_US/bv.js';				
+				if('true' === 'true')
+				{
+					var element = document.createElement("script");
+					element.src = bvscriptpath;
+					document.body.appendChild(element);
+			}
+						}
+
+			if (window.addEventListener)
+			window.addEventListener("load", LoadJSOnDOMReady, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", LoadJSOnDOMReady);
+			else window.onload = LoadJSOnDOMReady;
+		</script>
+			
+		<script async type="text/javascript">
+		if('true' === 'true')
+				{
+	      window.bvDCC = {
+	        catalogData: {
+	         locale: "en_US",
+	         catalogProducts: [{
+	            "productId":"TWALA405DCR_P",
+	            "productName":"ALCATEL MYFLIP&amp;trade; (A405DL) - RECONDITIONED",
+	            "productDescription":"RECONDITIONED. The Alcatel MYFLIP&amp;trade; is more than just a basic phone. It delivers the essential features to be productive - including access to email, calendar and web at 4G speeds - in a durable compact flip phone design. The Alcatel MYFLIP&amp;trade; delivers the essential features to get things done in a compact flip phone design. Preloaded with web, email and calendar apps to be productive when you&#039;re out and about.",
+	            "productImageURL":"https://media.tracfone.com/wps/contenthandler/dav/content/libraries/wcm.library.phones/components/STALA405DG/wcm.comps.image/st_ecom_large.png",
+	            "productPageURL":"https://shop.totalwireless.com/shop/en/totalwireless/phones/tw-alcatel-my-flip-a405dl-reconditioned",           
+	            "brandName":"ALCATEL",
+	            "categoryPath" : [
+	                {
+	                   "id" : "22001",
+	                   "Name" :"Phones" 
+	                }
+	            
+	          ]
+	        }]
+	        }
+	      };
+	
+	      window.bvCallback = function (BV) {
+	          BV.pixel.trackEvent("CatalogUpdate", {
+	              type: 'Product',
+	              locale: window.bvDCC.catalogData.locale,
+	              catalogProducts: window.bvDCC.catalogData.catalogProducts
+	 
+	          });
+	       }; 
+	       }
+	</script>
+	
+				
+	</body>
+	
+		<script type="text/javascript">
+		dojo.addOnLoad(function() { 
+				shoppingActionsServicesDeclarationJS.setCommonParameters('-1','20003','12051');
+				shoppingActionsJS.initCompare('');
+				CommonControllersDeclarationJS.setControllerURL('AccessoriesPopupController','https://shop.totalwireless.com/shop/AccessoriesPopupContentURL?catalogId=12051&langId=-1&storeId=20003');
+				
+			});
+	</script>
+	
+	
+	
+	<script type="text/javascript">
+	require(["jquery"], function($){
+	
+		$test = $;
+		var ie9 = (navigator.userAgent.toLowerCase().indexOf("msie 9.0") > -1);
+	
+		
+			
+			$test(window).resize();
+			var invAvail = 'Available';
+			var catName = 'Top Deals';
+			if (invAvail != 'Available' && catName == 'SimCards'){
+				shoppingActionsJS.hideContentForOOS();
+			}
+			var select_your_service_plan_display_val = "false";
+			if(select_your_service_plan_display_val != null && select_your_service_plan_display_val != undefined && select_your_service_plan_display_val == 'true'){
+				$test(".select_your_service_plan_display").show();
+				$test('.product_handset_content').hide();
+				var planPrice = jQuery('.js-plan.active .choose_plan_lto_price').text();
+				if(planPrice != null){
+					if(planPrice.indexOf('$') == 0)
+						planPrice = planPrice.split('$')[1]; 
+				}
+				if(planPrice == "" || planPrice == undefined || planPrice == null){
+					planPrice="0";
+				}				
+	    		var planCatalogEntryId = "";
+		    		
+		    		if(jQuery('.js-plan.active').val() != undefined){
+		    			planCatalogEntryId= jQuery('.js-plan.active').attr('id').split('choose_your_plan_section_')[1];
+		    		}
+		    		if (planCatalogEntryId !== "" && dojo.byId('specialOfferPlanPrice_'+planCatalogEntryId) != null) {
+	        		var specialOfferPlanPrice= parseFloat((dojo.byId('specialOfferPlanPrice_'+planCatalogEntryId).value));
+	            	if(specialOfferPlanPrice != null && specialOfferPlanPrice != undefined){
+	            		planPrice = specialOfferPlanPrice;
+	            	}
+	        	}
+	    		var catalogEntryId = jQuery('.js-plan.active').attr('id');
+				var noPlanCatalogEntryId = jQuery('.js-plan.lto-no-plan.no-plan').text();
+				
+				if(catalogEntryId && catalogEntryId != null && catalogEntryId != undefined){
+					console.log("Plan Exists !!");
+				}else if(noPlanCatalogEntryId && noPlanCatalogEntryId != null && noPlanCatalogEntryId != undefined){
+					console.log("Plan doesnt exists  - select no plan !!");
+					// jQuery('.js-plan.lto-no-plan.no-plan').addClass("active");
+				}
+				var planDecPrice = jQuery('.js-plan.active .choose_plan_lto_price_sup').text();
+				var featurePhonePlanPrice = jQuery('.js-plan.active .choose_plan_lto_decimal_price').text();
+				if(planDecPrice != undefined && planDecPrice != "" && planPrice!="0"){
+		    		jQuery(".price.lto_selected_plancost").html('$'+planPrice+'.'+planDecPrice);
+				} else if(featurePhonePlanPrice != undefined && featurePhonePlanPrice != ""){
+		    		jQuery(".price.lto_selected_plancost").html('$'+featurePhonePlanPrice);
+		    	} else {
+					jQuery(".price.lto_selected_plancost").html('$'+planPrice);
+				}
+				jQuery("a.lto_selected_plan_continue_url").attr("href",jQuery(".js-plan.active a.lto_selected_plan_url").attr("href"));
+				var selectedPaymtOption = jQuery("#lto_selected_payment_options").val();
+		    	if(selectedPaymtOption == 'SP1') {
+		    	jQuery('.accessoriesCarousel').hide();
+		    	jQuery('#accessoriesCaroselESpot').hide();
+		    		var deviceCost =parseFloat(jQuery("#estMonthlyAmountForGood").val())+ parseFloat(planPrice);    		
+		    		jQuery(".price.lto_selected_devicecost").html('$'+deviceCost.toFixed(2)); 
+		    		jQuery(".price.lto_selected_plancost").html('$'+deviceCost.toFixed(2));
+		    	} else if(selectedPaymtOption == 'SP2'){
+		    	jQuery('.accessoriesCarousel').hide();
+		    	jQuery('#accessoriesCaroselESpot').hide();
+		    		var deviceCost =parseFloat(jQuery("#estMonthlyAmountForBuilding").val())+ parseFloat(planPrice);    		
+		    		jQuery(".price.lto_selected_devicecost").html('$'+deviceCost.toFixed(2));  
+		    		jQuery(".price.lto_selected_plancost").html('$'+deviceCost.toFixed(2));
+		    	} else if(selectedPaymtOption == 'FRP'){
+		    		//jQuery('#accessoriesCaroselESpot').html('Donttttttttt');
+		    	}			
+		    	}else{
+				var hash = location.hash;
+				if(window.location.hash && hash == '#CHANGEPLAN'){ 
+       			//var hash = location.hash;
+      			   $test("#pdpSection").hide();
+		    	   $test("container_content_rightsidebar").show();
+		    	   $test('.product_handset_content').hide();
+		    	   $test('#outOfStockDiv').hide();
+		    	   $test('#OOSEmailNotifyDiv').hide();
+		    	
+       		  }else{
+       		  	$test(".select_your_service_plan_display").hide();
+       		  }
+			}
+			
+			// Hide the other details on change plan flow
+			
+			var hash = location.hash;
+			if(window.location.hash && hash == '#CHANGEPLAN'){ 
+       			//var hash = location.hash;
+      			   $test("#pdpSection").hide();
+		    	   $test("container_content_rightsidebar").show();
+		    	   $test('.product_handset_content').hide();
+		    	   $test('#outOfStockDiv').hide();
+		    	   $test('#OOSEmailNotifyDiv').hide();
+		    	
+       		  }else{
+       		  	$test('#outOfStockDiv').hide();
+				$test('#OOSEmailNotifyDiv').hide();       		  
+				}
+			
+		});
+//	});
+	
+	
+		require(["jquery"], function($) {
+		jQuery(document).ready(function(){
+			$('body').on('click','#Compare_Popup_Close', function(e){
+				var errorId = $("#ErrorMessageId").text();
+				if (errorId.indexOf("_ERR_TOO_MANY") >= 0 || errorId.indexOf("_ERR_THRESHOLD_SHOPPING_CART_QUANTITY") >= 0 || errorId.indexOf("_ERR_GENERIC") >=0){
+					$('a#lto_header_shopping_cart')[0].click();
+				}
+			});
+
+		});
+	});
+</script>
+
+<div id="accessories_popup">
+	<div id="accessoriesPopupRefresharea_111" dojoType="wc.widget.RefreshArea" widgetId="accessoriesPopupRefresh" controllerId="AccessoriesPopupController" role="wairole:region" waistate:live="polite" waistate:atomic="true" waistate:relevant="all">
+   	</div>
+	<script type="text/javascript">
+		require(["jquery"], function($) {
+			jQuery(document).ready(function(){
+				accessoriesDisplayJS.setCommonParameters('-1','20003','12051');
+				parseWidget("accessories_popup"); 
+				parseWidget("accessoriesPopupRefresharea_111"); 
+			});
+		});
+	</script>
+</div>
+
+
+	</html>
+<!-- End ProductDisplay.jsp -->

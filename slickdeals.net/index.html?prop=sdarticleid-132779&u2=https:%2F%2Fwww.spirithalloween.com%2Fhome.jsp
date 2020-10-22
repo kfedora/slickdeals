@@ -3,18 +3,19 @@ Server: Apache
 X-Frame-Options: sameorigin
 Content-Type: text/html;charset=UTF-8
 Content-Language: en-US
-serverid: web07
-X-Akamai-Transformed: 9 40573 0 pmb=mRUM,1
+serverid: web03
+X-Akamai-Path-Stats: [3:1999:19001]
+X-Akamai-Transformed: 9 40976 0 pmb=mRUM,1
 Vary: Accept-Encoding
-Date: Wed, 21 Oct 2020 01:21:10 GMT
+Date: Wed, 21 Oct 2020 22:27:38 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
-Set-Cookie: JSESSIONID=7BC1103496EDE81221291CA392AD1DA6; Path=/; Secure; HttpOnly
-Set-Cookie: PIPELINE_SESSION_ID=121269f8529b4b01ae2a48a3bbfcb41e; Domain=www.spirithalloween.com; Max-Age=2147483647; Expires=Mon, 08-Nov-2088 04:35:17 GMT; Path=/; Version=1; HttpOnly
+Set-Cookie: JSESSIONID=C13313260573C67B62B863E84DCA0AE7; Path=/; Secure; HttpOnly
+Set-Cookie: PIPELINE_SESSION_ID=79877a1bd6ae40f090a9f377a2af93c3; Domain=www.spirithalloween.com; Max-Age=2147483647; Expires=Tue, 09-Nov-2088 01:41:45 GMT; Path=/; Version=1; HttpOnly
 Set-Cookie: LOCALE_ID=1; Domain=www.spirithalloween.com; Path=/; Version=1; HttpOnly
 Set-Cookie: LANGUAGE_ID=1; Domain=www.spirithalloween.com; Path=/; Version=1; HttpOnly
-Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-Nov-2088 04:35:17 GMT; Path=/; Version=1; HttpOnly
+Set-Cookie: SITE_VISITED_DATE=10/21/2020; Max-Age=2147483647; Expires=Tue, 09-Nov-2088 01:41:45 GMT; Path=/; Version=1; HttpOnly
 
 
 
@@ -67,7 +68,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
     <meta name="keywords" content="Spirit Halloween"/>
     <meta name="description" content="Shop Spirit Halloween for an incredible selection of Halloween Costumes, Halloween Decorations, Halloween Accessories, and Halloween Makeup. Fast shipping &amp; huge selection! *Shop Now &amp; Save*"/>
     <link href="https://www.spirithalloween.com" rel="canonical"/>
-                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"684918",ustr:"",originlat:"0",clientrtt:"68",ghostip:"104.123.69.68",ipv6:false,pct:"10",clientip:"52.254.49.13",requestid:"ae4a1ba",region:"35694",protocol:"",blver:14,akM:"g",akN:"ae",akTT:"O",akTX:"1",akTI:"ae4a1ba",ai:"239460",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"684918",ustr:"",originlat:"0",clientrtt:"5",ghostip:"23.64.3.76",ipv6:false,pct:"10",clientip:"40.65.108.112",requestid:"3734df8a",region:"35326",protocol:"",blver:14,akM:"g",akN:"ae",akTT:"O",akTX:"1",akTI:"3734df8a",ai:"239460",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
                     </head>
 <body id="home" class="desktop notMobile" data-userAgent='Wget/1.19.4 (linux&#45;gnu)' data-deviceType="Desktop" data-siteCode="spt">
 
@@ -183,7 +184,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
                 // If current url is a command, we need to append the params submitted along with that command
                 
                     if (curURL.indexOf(".cmd") >=0 && curURL.indexOf(".cmd") == curURL.length - ".cmd".length) {
-                        destParam += '?' + 'affiliate_id=18097&utm_campaign=AFF%3APJ&utm_source=pepperjam&utm_medium=affiliate&utm_inex=e&utm_content=2-236930&click_id=3319757352&clickId=3319757352';
+                        destParam += '?' + 'affiliate_id=18097&utm_campaign=AFF%3APJ&utm_source=pepperjam&utm_medium=affiliate&utm_inex=e&utm_content=2-236930&click_id=3320886308&clickId=3320886308';
                     }
                 
 
@@ -270,7 +271,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
     </div>
 
     <style>#countdownWrap{display:inline-block;line-height:14px;padding-right:15px;margin-right:15px;border-right:1px solid #d9d9d9}body.tablet #countdownWrap{padding-right:0;border-right:0 none}#itsScaryImg{display:block;width:188px}body.tablet #itsScaryImg{display:inline-block;margin-right:4px}#countdownTxt{display:inline-block;font-weight:700;vertical-align:middle}body.tablet #countdownTxt{height:24px}span.SHIBDaysnumero{color:#f16531}</style><div id=countdownWrap><div id=itsScaryImg><img alt="So Much Fun It's Scary!®"class=image-scale src=//spirit.scene7.com/is/image/Spirit/so%5Fmuch%5Ffun%5Fits%5Fscary%5F2017?$PNG8$></div><div id=countdownText></div></div><script>(function(){var a=new Date;a.setUTCMonth(9);a.setUTCDate(31);a.setUTCFullYear(a.getFullYear());a.getTime()<=Date.now()&&a.setUTCFullYear(a.getFullYear()+1);a=Math.ceil((Date.parse(a)-Date.now())/864E5);a=0!==a?'Only <span style="color:#f16531;font-weight:bold;">'+a+"</span> Day"+(2<=a?"s":"")+" Until HALLOWEEN!":"Happy Halloween";document.querySelector("#countdownText").insertAdjacentHTML("afterbegin",a)})();</script><div class="cmsWrapper" id="Header-Area4" data-content-name="Header &#45; Area 4"><div id="spt_default_offer"></div></div><ul id="secondary-nav">
-            <input type="hidden" id="artGunURL" value='http://design-a-tee.spencersonline.com/apps/spencersonline/v32/index.php?s=e&k=spencersonline&b=h&g=123&c=48bedff8ac18302b4cbc94f39c7531df' />
+            <input type="hidden" id="artGunURL" value='http://design-a-tee.spencersonline.com/apps/spencersonline/v32/index.php?s=e&k=spencersonline&b=h&g=123&c=4d465ddfac18302749c803913c33dd91' />
 </ul>
     </div>
 <div class="clr"></div>
@@ -2782,8 +2783,8 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
       <a href="/section/new-arrivals/5183.uts?utm_medium=home_page&utm_source=a_spot1&utm_campaign=generic&utm_content=new_arrivals&utm_term=10.08.2020&utm_inex=i" title="Shop New Arrivals">
         <div class="card__content">
           <picture class="card__media">
-            <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F15%5F20%5FFamily%5FAspot%5FM?$fullsize$">
-            <img decoding="async" alt="Shop New Arrivals" class="image" src="//spirit.scene7.com/is/image/Spirit/Social%5FFamily%5FAspot?$fullsize$">
+            <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F19%5F20%5FVampire%5FBspot?$fullsize$">
+            <img decoding="async" alt="Shop New Arrivals" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F27%5F20%5FVampArrivals%5FAspotD?$fullsize$">
           </picture>
           <div class="card__CTAS">
             <a href="/section/new-arrivals/5183.uts?utm_medium=home_page&utm_source=a_spot1_text&utm_campaign=generic&utm_content=new_arrivals&utm_term=10.08.2020&utm_inex=i" title="Shop New Arrivals" class="card__CTA mobile-only">Shop&#32;New&#32;Arrivals</a>
@@ -2936,14 +2937,14 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
       <h2 class="page-section__title"><span>Officially Licensed</span></h2>
     </header>
     <div class="card card--featured">
-      <a href="/thumbnail/tv-movies-gaming/tv/pj-masks/pc/1382/c/3811/3714.uts?utm_medium=home_page&utm_source=b_spot1&utm_campaign=licensed&utm_content=pj_masks&utm_term=10.16.2020&utm_inex=i" title="PJ Masks">
+      <a href="/thumbnail/tv-movies-gaming/tv/miraculous-ladybug/pc/1382/c/3811/4236.uts?utm_medium=site_section&utm_source=b_spot1&utm_campaign=licensed&utm_content=miraculous_ladybug&utm_term=10.21.2020&utm_inex=i" title="Miraculous Ladybug">
         <div class="card__content">
           <picture class="card__media">
-            <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/LongBspot%5FPJMasksM?$fullsize$">
-            <img decoding="async" alt="PJ Masks" class="image" src="//spirit.scene7.com/is/image/Spirit/LongBspot%5FPJMasksD?$fullsize$">
+            <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/07%5F23%5F20%5FMiraculous%5FAspot%5FD?$fullsize$">
+            <img decoding="async" alt="Miraculous Ladybug" class="image" src="//spirit.scene7.com/is/image/Spirit/07%5F23%5F20%5FMiraculous%5FAspot%5FD?$fullsize$">
           </picture>
           <div class="card__CTAS">
-            <a href="/thumbnail/tv-movies-gaming/tv/pj-masks/pc/1382/c/3811/3714.uts?utm_medium=home_page&utm_source=b_spot1_text&utm_campaign=licensed&utm_content=pj_masks&utm_term=10.16.2020&utm_inex=i" title="Shop PJ Masks" class="card__CTA">Shop&#32;PJ&#32;Masks</a>
+            <a href="/thumbnail/tv-movies-gaming/tv/miraculous-ladybug/pc/1382/c/3811/4236.uts?utm_medium=site_section&utm_source=b_spot1_text&utm_campaign=licensed&utm_content=miraculous_ladybug&utm_term=10.21.2020&utm_inex=i" title="Shop Miraculous Ladybug" class="card__CTA">Shop&#32;Miraculous&#32;Ladybug</a>
           </div>
         </div>
       </a>
@@ -2967,7 +2968,20 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/halloween-costumes/toddler-costumes/toddler-animal-insect-costumes/pc/4742/c/798/4824.uts?utm_medium=home_page&utm_source=b_spot3&utm_campaign=licensed&utm_content=toddler_animal_costumes&utm_term=10.16.2020&utm_inex=i" title="Pete the Cat" class="card__content">
+            <a href="/category/tv-movies-gaming/movies/dr-seuss/pc/1382/c/3810/1452.uts?utm_medium=home_page&utm_source=b_spot3&utm_campaign=licensed&utm_content=dr_seuss&utm_term=10.16.2020&utm_inex=i" title="Dr. Seuss" class="card__content">
+              <picture class="card__media">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FSeuss?$fullsize$">
+                <img decoding="async" alt="Dr. Seuss" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FSeuss?$fullsize$">
+              </picture>
+              <div class="card__text">
+                <h3 class="card__title">Shop Dr. Seuss</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="/thumbnail/halloween-costumes/toddler-costumes/toddler-animal-insect-costumes/pc/4742/c/798/4824.uts?utm_medium=home_page&utm_source=b_spot4&utm_campaign=licensed&utm_content=toddler_animal_costumes&utm_term=10.16.2020&utm_inex=i" title="Pete the Cat" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/PeteTheCat_Bspot?$fullsize$">
                 <img decoding="async" alt="Pete the Cat" class="image" src="//spirit.scene7.com/is/image/Spirit/PeteTheCat_Bspot?$fullsize$">
@@ -2980,23 +2994,23 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/tv-movies-gaming/tv/miraculous-ladybug/pc/1382/c/3811/4236.uts?utm_medium=home_page&utm_source=b_spot4&utm_campaign=licensed&utm_content=miraculous_ladybug&utm_term=10.16.2020&utm_inex=i" title="Miraculous Ladybug" class="card__content">
+            <a href="/thumbnail/tv-movies-gaming/tv/pj-masks/pc/1382/c/3811/3714.uts?utm_medium=home_page&utm_source=b_spot5&utm_campaign=licensed&utm_content=pj_masks&utm_term=10.21.2020&utm_inex=i" title="PJ Masks" class="card__content">
               <picture class="card__media">
-                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/07%5F23%5F20%5FMiraculous%5FAspot%5FM?$fullsize$">
-                <img decoding="async" alt="Miraculous Ladybug" class="image" src="//spirit.scene7.com/is/image/Spirit/07%5F23%5F20%5FMiraculous%5FAspot%5FM?$fullsize$">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/PJ%5FMasks%5FBspot?$fullsize$">
+                <img decoding="async" alt="PJ Masks" class="image" src="//spirit.scene7.com/is/image/Spirit/PJ%5FMasks%5FBspot?$fullsize$">
               </picture>
               <div class="card__text">
-                <h3 class="card__title">Shop Miraculous Ladybug</h3>
+                <h3 class="card__title">Shop PJ Masks</h3>
               </div>
             </a>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/tv-movies-gaming/movies/hocus-pocus/pc/1382/c/3810/4229.uts?utm_medium=home_page&utm_source=b_spot5&utm_campaign=licensed&utm_content=hocus_pocus&utm_term=10.16.2020&utm_inex=i" title="Hocus Pocus" class="card__content">
+            <a href="/thumbnail/tv-movies-gaming/movies/hocus-pocus/pc/1382/c/3810/4229.uts?utm_medium=home_page&utm_source=b_spot6&utm_campaign=licensed&utm_content=hocus_pocus&utm_term=10.16.2020&utm_inex=i" title="Hocus Pocus" class="card__content">
               <picture class="card__media">
-                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/8%5F10%5F20%5FHocusPocus%5FBspot?$fullsize$">
-                <img decoding="async" alt="Hocus Pocus" class="image" src="//spirit.scene7.com/is/image/Spirit/8%5F10%5F20%5FHocusPocus%5FBspot?$fullsize$">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F16%5F20%5FDisney%5FHP%5FAspotM?$fullsize$">
+                <img decoding="async" alt="Hocus Pocus" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F16%5F20%5FDisney%5FHP%5FAspotM?$fullsize$">
               </picture>
               <div class="card__text">
                 <h3 class="card__title">Shop Hocus Pocus</h3>
@@ -3006,7 +3020,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/movies/batman/harley-quinn/pc/3810/c/1385/4830.uts?utm_medium=home_page&utm_source=b_spot6&utm_campaign=licensed&utm_content=harley_quinn&utm_term=10.16.2020&utm_inex=i" title="Harley Quinn" class="card__content">
+            <a href="/thumbnail/movies/batman/harley-quinn/pc/3810/c/1385/4830.uts?utm_medium=home_page&utm_source=b_spot7&utm_campaign=licensed&utm_content=harley_quinn&utm_term=10.16.2020&utm_inex=i" title="Harley Quinn" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F18%5F20%5FHarley%5FBspot?$fullsize$">
                 <img decoding="async" alt="Harley Quinn" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F18%5F20%5FHarley%5FBspot?$fullsize$">
@@ -3019,7 +3033,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/tv-movies-gaming/movies/chucky/pc/1382/c/3810/1634.uts?utm_medium=site_section&utm_source=b_spot7&utm_campaign=licensed&utm_content=chucky&utm_term=10.16.2020&utm_inex=i" title="Chucky" class="card__content">
+            <a href="/thumbnail/tv-movies-gaming/movies/chucky/pc/1382/c/3810/1634.uts?utm_medium=site_section&utm_source=b_spot8&utm_campaign=licensed&utm_content=chucky&utm_term=10.16.2020&utm_inex=i" title="Chucky" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/07%5F29%5F20%5FChucky%5FBspot?$fullsize$">
                 <img decoding="async" alt="Chucky" class="image" src="//spirit.scene7.com/is/image/Spirit/07%5F29%5F20%5FChucky%5FBspot?$fullsize$">
@@ -3032,7 +3046,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/tv-movies-gaming/movies/trick-r-treat/pc/1382/c/3810/4843.uts?utm_medium=site_section&utm_source=b_spot8&utm_campaign=licensed&utm_content=trick_r_treat&utm_term=10.16.2020&utm_inex=i" title="Trick 'r Treat" class="card__content">
+            <a href="/thumbnail/tv-movies-gaming/movies/trick-r-treat/pc/1382/c/3810/4843.uts?utm_medium=site_section&utm_source=b_spot9&utm_campaign=licensed&utm_content=trick_r_treat&utm_term=10.16.2020&utm_inex=i" title="Trick 'r Treat" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/09%5F25%5F20%5FTrickRTreat%5FAspot%5FM?$fullsize$">
                 <img decoding="async" alt="Trick 'r Treat" class="image" src="//spirit.scene7.com/is/image/Spirit/09%5F25%5F20%5FTrickRTreat%5FAspot%5FM?$fullsize$">
@@ -3045,7 +3059,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/tv-movies-gaming/movies/beetlejuice/pc/1382/c/3810/5156.uts?utm_medium=site_section&utm_source=b_spot9&utm_campaign=licensed&utm_content=beetlejuice&utm_term=10.16.2020&utm_inex=i" title="Beetlejuice" class="card__content">
+            <a href="/thumbnail/tv-movies-gaming/movies/beetlejuice/pc/1382/c/3810/5156.uts?utm_medium=site_section&utm_source=b_spot10&utm_campaign=licensed&utm_content=beetlejuice&utm_term=10.16.2020&utm_inex=i" title="Beetlejuice" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/08%5F24%5F20%5FBeetlejuice%5FM%5FAspot?$fullsize$">
                 <img decoding="async" alt="Beetlejuice" class="image" src="//spirit.scene7.com/is/image/Spirit/08%5F24%5F20%5FBeetlejuice%5FM%5FAspot?$fullsize$">
@@ -3066,14 +3080,14 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
       <h2 class="page-section__title"><span>Shop by Theme</span></h2>
     </header>
     <div class="card card--featured">
-      <a href="/thumbnail/halloween-costumes/costume-themes/horror/pc/4742/c/4833/4794.uts?utm_medium=home_page&utm_source=b_spot10&utm_campaign=generic&utm_content=horror_costumes&utm_term=10.15.2020&utm_inex=i" title="Horror Costumes">
+      <a href="/thumbnail/halloween-costumes/costume-themes/horror/pc/4742/c/4833/4794.uts?utm_medium=home_page&utm_source=b_spot11&utm_campaign=generic&utm_content=horror_costumes&utm_term=10.15.2020&utm_inex=i" title="Horror Costumes">
         <div class="card__content">
           <picture class="card__media">
             <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/LookBookBspots%5FBioHazard?$fullsize$">
             <img decoding="async" alt="Horror Costumes" class="image" src="//spirit.scene7.com/is/image/Spirit/LongBspot_BioHazardD?$fullsize$">
           </picture>
           <div class="card__CTAS">
-            <a href="/thumbnail/halloween-costumes/costume-themes/horror/pc/4742/c/4833/4794.uts?utm_medium=home_page&utm_source=b_spot10_text&utm_campaign=generic&utm_content=horror_costumes&utm_term=10.15.2020&utm_inex=i" title="Shop Horror Costumes" class="card__CTA">Shop&#32;Horror&#32;Costumes</a>
+            <a href="/thumbnail/halloween-costumes/costume-themes/horror/pc/4742/c/4833/4794.uts?utm_medium=home_page&utm_source=b_spot11_text&utm_campaign=generic&utm_content=horror_costumes&utm_term=10.15.2020&utm_inex=i" title="Shop Horror Costumes" class="card__CTA">Shop&#32;Horror&#32;Costumes</a>
           </div>
         </div>
       </a>
@@ -3084,7 +3098,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/halloween-costumes/costume-themes/funny-costumes/pc/4742/c/4833/5050.uts?utm_medium=home_page&utm_source=b_spot11&utm_campaign=generic&utm_content=funny_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/thumbnail/halloween-costumes/costume-themes/funny-costumes/pc/4742/c/4833/5050.uts?utm_medium=home_page&utm_source=b_spot12&utm_campaign=generic&utm_content=funny_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F20%5F20%5FFunny%5FBspot?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F20%5F20%5FFunny%5FBspot?$fullsize$">
@@ -3097,7 +3111,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/halloween-costumes/costume-themes/inflatables/pc/4742/c/4833/4751.uts?utm_medium=home_page&utm_source=b_spot12&utm_campaign=generic&utm_content=inflatable_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/thumbnail/halloween-costumes/costume-themes/inflatables/pc/4742/c/4833/4751.uts?utm_medium=home_page&utm_source=b_spot13&utm_campaign=generic&utm_content=inflatable_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/Funny%26Easy%5FBspots%5FChickencow?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/Funny%26Easy%5FBspots%5FChickencow?$fullsize$">
@@ -3110,7 +3124,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/halloween-costumes/costume-themes/easy-costumes/pc/4742/c/4833/5034.uts?utm_medium=home_page&utm_source=b_spot13&utm_campaign=generic&utm_content=easy_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/thumbnail/halloween-costumes/costume-themes/easy-costumes/pc/4742/c/4833/5034.uts?utm_medium=home_page&utm_source=b_spot14&utm_campaign=generic&utm_content=easy_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/09%5F30%5F20%5FEasyCostumes%5FAspot%5FM?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/09%5F30%5F20%5FEasyCostumes%5FAspot%5FM?$fullsize$">
@@ -3123,7 +3137,33 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/halloween-costumes/costume-themes/witches/pc/4742/c/4833/4796.uts?utm_medium=home_page&utm_source=b_spot14&utm_campaign=generic&utm_content=witch_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/thumbnail/halloween-costumes/costume-themes/royal-costumes/pc/4742/c/4833/5182.uts?utm_medium=home_page&utm_source=b_spot15&utm_campaign=generic&utm_content=royal_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+              <picture class="card__media">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FRoyals?$fullsize$">
+                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FRoyals?$fullsize$">
+              </picture>
+              <div class="card__text">
+                <h3 class="card__title">Shop Royal Costumes</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="/thumbnail/halloween-costumes/womens-costumes/womens-sexy-costumes/pc/4742/c/1326/4260.uts?utm_medium=home_page&utm_source=b_spot16&utm_campaign=generic&utm_content=womens_sexy_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+              <picture class="card__media">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FMaid?$fullsize$">
+                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FMaid?$fullsize$">
+              </picture>
+              <div class="card__text">
+                <h3 class="card__title">Shop Sexy Costumes</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="/thumbnail/halloween-costumes/costume-themes/witches/pc/4742/c/4833/4796.uts?utm_medium=home_page&utm_source=b_spot17&utm_campaign=generic&utm_content=witch_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/08%5F25%5F20%5FWitch%5FWomens%5FAspot%5FM?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/08%5F25%5F20%5FWitch%5FWomens%5FAspot%5FM?$fullsize$">
@@ -3136,7 +3176,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/halloween-costumes/costume-themes/animal-costumes/pc/4742/c/4833/5230.uts?utm_medium=home_page&utm_source=b_spot15&utm_campaign=generic&utm_content=animal_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/thumbnail/halloween-costumes/costume-themes/animal-costumes/pc/4742/c/4833/5230.uts?utm_medium=home_page&utm_source=b_spot18&utm_campaign=generic&utm_content=animal_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/07%5F29%5F20%5FCatRanger%5FBspot?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/07%5F29%5F20%5FCatRanger%5FBspot?$fullsize$">
@@ -3149,7 +3189,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/shop-by-theme/occupations/view-all-occupation-costumes/pc/4743/c/4748/5246.uts?utm_medium=home_page&utm_source=b_spot16&utm_campaign=generic&utm_content=occupation&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/thumbnail/shop-by-theme/occupations/view-all-occupation-costumes/pc/4743/c/4748/5246.uts?utm_medium=home_page&utm_source=b_spot19&utm_campaign=generic&utm_content=occupation&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F06%5F20%5FOccupations%5FBspot?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F06%5F20%5FOccupations%5FBspot?$fullsize$">
@@ -3162,7 +3202,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/halloween-costumes/costume-themes/skeletons/pc/4742/c/4833/4793.uts?utm_medium=home_page&utm_source=b_spot17&utm_campaign=generic&utm_content=skeleton_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/thumbnail/halloween-costumes/costume-themes/skeletons/pc/4742/c/4833/4793.uts?utm_medium=home_page&utm_source=b_spot20&utm_campaign=generic&utm_content=skeleton_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F11%5F20%5FSkeleton%5FM%5FAspot?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F11%5F20%5FSkeleton%5FM%5FAspot?$fullsize$">
@@ -3175,7 +3215,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/halloween-costumes/costume-themes/evil-clown/pc/4742/c/4833/4800.uts?utm_medium=home_page&utm_source=b_spot18&utm_campaign=generic&utm_content=scary_clown_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/thumbnail/halloween-costumes/costume-themes/evil-clown/pc/4742/c/4833/4800.uts?utm_medium=home_page&utm_source=b_spot21&utm_campaign=generic&utm_content=scary_clown_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/LookBookBspots%5FKidsCircus?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/LookBookBspots%5FKidsCircus?$fullsize$">
@@ -3188,7 +3228,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/category/shop-by-theme/time-periods/pc/4743/4746.uts?utm_medium=home_page&utm_source=b_spot19&utm_campaign=generic&utm_content=time_period_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/category/shop-by-theme/time-periods/pc/4743/4746.uts?utm_medium=home_page&utm_source=b_spot22&utm_campaign=generic&utm_content=time_period_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/LookBookBspots%5FKidsFlapper?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/LookBookBspots%5FKidsFlapper?$fullsize$">
@@ -3201,7 +3241,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/halloween-costumes/costume-themes/pirates/pc/4742/c/4833/4753.uts?utm_medium=home_page&utm_source=b_spot20&utm_campaign=generic&utm_content=pirate_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/thumbnail/halloween-costumes/costume-themes/pirates/pc/4742/c/4833/4753.uts?utm_medium=home_page&utm_source=b_spot23&utm_campaign=generic&utm_content=pirate_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/09%5F23%5FSignature%5FA%5FSpot%5FM?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/09%5F23%5FSignature%5FA%5FSpot%5FM?$fullsize$">
@@ -3214,7 +3254,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/halloween-costumes/costume-themes/sports-costumes/pc/4742/c/4833/5186.uts?utm_medium=home_page&utm_source=b_spot21&utm_campaign=generic&utm_content=sports_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/thumbnail/halloween-costumes/costume-themes/sports-costumes/pc/4742/c/4833/5186.uts?utm_medium=home_page&utm_source=b_spot24&utm_campaign=generic&utm_content=sports_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/LookBookBspots%5FSports?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/LookBookBspots%5FSports?$fullsize$">
@@ -3232,17 +3272,17 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
   </section>
   <section class="page-section" id="aspot">
     <header class="page-section__header">
-      <h2 class="page-section__title"><span>New Décor</span></h2>
+      <h2 class="page-section__title"><span>Accessories</span></h2>
     </header>
     <div class="card card--featured">
-      <a href="/category/animatronics/new-arrivals/pc/1011/3872.uts?utm_medium=home_page&utm_source=b_spot22&utm_campaign=licensed&utm_content=new_arrivals_animatronics&utm_term=09.25.2020&utm_inex=i" title="Shop Animatronics">
+      <a href="/category/accessories/wigs/pc/1921/950.uts?utm_medium=home_page&utm_source=b_spot25&utm_campaign=generic&utm_content=wigs&utm_term=10.16.2020&utm_inex=i" title="Shop Wigs">
         <div class="card__content">
           <picture class="card__media">
-            <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/DECOR%5FANIMATRONICS%5F2020?$fullsize$">
-            <img decoding="async" alt="Shop Animatronics" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F08%5F20%5FAnimatronic%5FHarvester%5FA%5FSpots?$fullsize$">
+            <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FWigsDesktop?$fullsize$">
+            <img decoding="async" alt="Shop Wigs" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FWigsDesktop?$fullsize$">
           </picture>
           <div class="card__CTAS">
-            <a href="/category/animatronics/new-arrivals/pc/1011/3872.uts?utm_medium=home_page&utm_source=b_spot22_text&utm_campaign=licensed&utm_content=new_arrivals_animatronics&utm_term=09.25.2020&utm_inex=i" title="Shop Animatronics" class="card__CTA">Shop&#32;Animatronics</a>
+            <a href="/category/accessories/wigs/pc/1921/950.uts?utm_medium=home_page&utm_source=b_spot25_text&utm_campaign=generic&utm_content=wigs&utm_term=10.16.2020&utm_inex=i" title="Shop Wigs" class="card__CTA">Shop&#32;Wigs</a>
           </div>
         </div>
       </a>
@@ -3253,7 +3293,98 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/decorations/props/hanging-props/pc/1005/c/1034/1041.uts?utm_medium=home_page&utm_source=b_spot23&utm_campaign=generic&utm_content=hanging_props&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+            <a href="/category/accessories/face-masks-gaitors/pc/1921/5177.uts?utm_medium=home_page&utm_source=b_spot26&utm_campaign=generic&utm_content=face_masks&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+              <picture class="card__media">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FMasks?$fullsize$">
+                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FMasks?$fullsize$">
+              </picture>
+              <div class="card__text">
+                <h3 class="card__title">Shop Face Masks</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="/thumbnail/halloween-costumes/costume-themes/witches/pc/4742/c/4833/4796.uts?utm_medium=home_page&utm_source=b_spot27&utm_campaign=generic&utm_content=witch_costumes&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+              <picture class="card__media">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FWitch?$fullsize$">
+                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FWitch?$fullsize$">
+              </picture>
+              <div class="card__text">
+                <h3 class="card__title">Shop Witch Accessories</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="/thumbnail/accessories/makeup/creams-greases/pc/1921/c/2190/2191.uts?utm_medium=home_page&utm_source=b_spot28&utm_campaign=generic&utm_content=makeup&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+              <picture class="card__media">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FMakeUp?$fullsize$">
+                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FMakeUp?$fullsize$">
+              </picture>
+              <div class="card__text">
+                <h3 class="card__title">Shop Face Paint</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="/category/accessories/costume-accessories/treat-bags-and-safety/pc/1921/c/3808/1000.uts?utm_medium=home_page&utm_source=b_spot29&utm_campaign=generic&utm_content=halloween_treat_bags&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+              <picture class="card__media">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FMarshmelloBucket?$fullsize$">
+                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FMarshmelloBucket?$fullsize$">
+              </picture>
+              <div class="card__text">
+                <h3 class="card__title">Shop Treat Buckets</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="/thumbnail/accessories/costume-accessories/costume-props/pc/1921/c/3808/5226.uts?utm_medium=home_page&utm_source=b_spot30&utm_campaign=generic&utm_content=costume_props&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
+              <picture class="card__media">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FWeapons?$fullsize$">
+                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FWeapons?$fullsize$">
+              </picture>
+              <div class="card__text">
+                <h3 class="card__title">Shop Costume Props</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+  <section class="page-section" id="aspot">
+    <header class="page-section__header">
+      <h2 class="page-section__title"><span>Décor</span></h2>
+    </header>
+    <div class="card card--featured">
+      <a href="/category/decorations/animatronics/pc/1005/1011.uts?utm_medium=home_page&utm_source=b_spot31&utm_campaign=generic&utm_content=animatronics&utm_term=10.16.2020&utm_inex=i" title="Animatronics">
+        <div class="card__content">
+          <picture class="card__media">
+            <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F08%5F20%5FAnimatronic%5FHarvester%5FA%5FSpot?$fullsize$">
+            <img decoding="async" alt="Animatronics" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F08%5F20%5FAnimatronic%5FHarvester%5FA%5FSpot?$fullsize$">
+          </picture>
+          <div class="card__CTAS">
+            <a href="/category/decorations/animatronics/pc/1005/1011.uts?utm_medium=home_page&utm_source=b_spot31_text&utm_campaign=generic&utm_content=animatronics&utm_term=10.16.2020&utm_inex=i" title="Shop Animatronics" class="card__CTA">Shop&#32;Animatronics</a>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section class="page-section" id="carousel">
+    <div class="swiper-container swiper-container-4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card">
+            <a href="/thumbnail/decorations/props/hanging-props/pc/1005/c/1034/1041.uts?utm_medium=home_page&utm_source=b_spot32&utm_campaign=generic&utm_content=hanging_props&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
                 <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/HangingProp%5FBspots%5FClown?$fullsize$">
                 <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/HangingProp%5FBspots%5FClown?$fullsize$">
@@ -3266,52 +3397,26 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/category/decorations/funko/pc/1005/3486.uts?utm_medium=home_page&utm_source=b_spot24&utm_campaign=licensed&utm_content=funko&utm_term=10.02.2020&utm_inex=i" title="" class="card__content">
+            <a href="/thumbnail/decorations/home-decor/blankets/pc/1005/c/3865/4695.uts?utm_medium=home_page&utm_source=b_spot33&utm_campaign=generic&utm_content=pillows_and_blankets&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
-                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/08%5F05%5F20%5FFunkoTrT%5FAspotM?$fullsize$">
-                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/08%5F05%5F20%5FFunkoTrT%5FAspotM?$fullsize$">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FBeetlejuice?$fullsize$">
+                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FBeetlejuice?$fullsize$">
               </picture>
               <div class="card__text">
-                <h3 class="card__title">Shop Funko</h3>
+                <h3 class="card__title">Shop Blankets</h3>
               </div>
             </a>
           </div>
         </div>
         <div class="swiper-slide">
           <div class="card">
-            <a href="/thumbnail/tv-movies-gaming/movies/ghostbusters/pc/1382/c/3810/1471.uts?utm_medium=home_page&utm_source=b_spot25&utm_campaign=licensed&utm_content=ghostbusters&utm_term=10.02.2020&utm_inex=i" title="" class="card__content">
+            <a href="/category/decorations/outdoor-decor/pumpkin-carving/pc/1005/c/1020/1047.uts?utm_medium=home_page&utm_source=b_spot34&utm_campaign=generic&utm_content=pumpkin_carving&utm_term=10.16.2020&utm_inex=i" title="" class="card__content">
               <picture class="card__media">
-                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/GHOSTBUSTERS%5FBspot?$fullsize$">
-                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/GHOSTBUSTERS%5FBspot?$fullsize$">
+                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FPumpkin?$fullsize$">
+                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/10%5F21%5F20%5FPumpkin?$fullsize$">
               </picture>
               <div class="card__text">
-                <h3 class="card__title">Shop Ghostbusters</h3>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <a href="/thumbnail/decorations/home-decor/mystical-arts/pc/1005/c/3865/4906.uts?utm_medium=home_page&utm_source=b_spot26&utm_campaign=generic&utm_content=mystical_arts&utm_term=09.15.2020&utm_inex=i" title="" class="card__content">
-              <picture class="card__media">
-                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/08%5F25%5F20%5FWitch%5FDecor%5FAspot%5FM?$fullsize$">
-                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/08%5F25%5F20%5FWitch%5FDecor%5FAspot%5FM?$fullsize$">
-              </picture>
-              <div class="card__text">
-                <h3 class="card__title">Shop Mystical Arts</h3>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <a href="/thumbnail/decorations/home-decor/gothic-noir/pc/1005/c/3865/4503.uts?utm_medium=home_page&utm_source=b_spot27&utm_campaign=generic&utm_content=gothic_noir&utm_term=10.02.2020&utm_inex=i" title="" class="card__content">
-              <picture class="card__media">
-                <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/09%5F23%5F20%5FVampire%5FDecor%5FAspot%5FM?$fullsize$">
-                <img decoding="async" alt="" class="image" src="//spirit.scene7.com/is/image/Spirit/09%5F23%5F20%5FVampire%5FDecor%5FAspot%5FM?$fullsize$">
-              </picture>
-              <div class="card__text">
-                <h3 class="card__title">Shop Gothic Noir</h3>
+                <h3 class="card__title">Shop Pumpking Carving</h3>
               </div>
             </a>
           </div>
@@ -3323,7 +3428,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
   </section>
   <section class="page-section" id="aspot">
     <div class="card card--featured">
-      <a href="/content.jsp?pageName=lookbook#utm_medium=home_page&utm_source=b_spot28&utm_campaign=generic&utm_content=lookbook&utm_term=10.07.2020&utm_inex=i" title="2020 Lookbook">
+      <a href="/content.jsp?pageName=lookbook#utm_medium=home_page&utm_source=b_spot35&utm_campaign=generic&utm_content=lookbook&utm_term=10.07.2020&utm_inex=i" title="2020 Lookbook">
         <div class="card__content">
           <picture class="card__media">
             <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/LookBook%5FBspotM?$fullsize$">
@@ -3335,7 +3440,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
   </section>
   <section class="page-section" id="aspot">
     <div class="card card--featured">
-      <a href="/content.jsp?pageName=shopsafely#utm_medium=home_page&utm_source=b_spot29&utm_campaign=generic&utm_content=safety_procedures&utm_term=09.17.2020&utm_inex=i" title="Store Safety Procedures">
+      <a href="/content.jsp?pageName=shopsafely#utm_medium=home_page&utm_source=b_spot36&utm_campaign=generic&utm_content=safety_procedures&utm_term=09.17.2020&utm_inex=i" title="Store Safety Procedures">
         <div class="card__content">
           <picture class="card__media">
             <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/COVID%2DSafety%2DSpots%5FMobile?$fullsize$">
@@ -3347,7 +3452,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
   </section>
   <section class="page-section" id="aspot">
     <div class="card card--featured">
-      <a href="/content.jsp?pageName=Sweepstakes#utm_medium=home_page&utm_source=b_spot30&utm_campaign=generic&utm_content=sweepstakes&utm_term=08.07.2020&utm_inex=i" title="Sweepstakes">
+      <a href="/content.jsp?pageName=Sweepstakes#utm_medium=home_page&utm_source=b_spot37&utm_campaign=generic&utm_content=sweepstakes&utm_term=08.07.2020&utm_inex=i" title="Sweepstakes">
         <div class="card__content">
           <picture class="card__media">
             <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/TRVL%5FHomepage%5FBanner%5FV2%5F1180x400?$fullsize$">
@@ -3360,7 +3465,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
   <section class="page-section" id="bspot">
     <ul class="card-group card-group--grid">
       <li class="card card--featured-half">
-        <a href="/content.jsp?pageName=soc#utm_medium=home_page&utm_source=b_spot31&utm_campaign=generic&utm_content=spirit_of_children&utm_term=07.29.2020&utm_inex=i" title="">
+        <a href="/content.jsp?pageName=soc#utm_medium=home_page&utm_source=b_spot38&utm_campaign=generic&utm_content=spirit_of_children&utm_term=07.29.2020&utm_inex=i" title="">
           <div class="card__content">
             <picture class="card__media">
               <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/SOC%5F07%5F31%5F19?$fullsize$">
@@ -3370,7 +3475,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
         </a>
       </li>
       <li class="card card--featured-half">
-        <a href="/blog/?utm_medium=home_page&utm_source=b_spot32&utm_campaign=generic&utm_content=blog&utm_term=07.29.2020&utm_inex=i" title="">
+        <a href="/blog/?utm_medium=home_page&utm_source=b_spot39&utm_campaign=generic&utm_content=blog&utm_term=07.29.2020&utm_inex=i" title="">
           <div class="card__content">
             <picture class="card__media">
               <source media="(max-width: 560px)" srcset="//spirit.scene7.com/is/image/Spirit/Blog%5FBspot%5FOct?$fullsize$">
@@ -3386,7 +3491,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
     <script>
     var isMobile = window.matchMedia("(max-width: 560px)").matches;
     var swiper1 = new Swiper('.swiper-container-1', {
-    slidesPerView: isMobile ? 1.5 : 2.5,
+    slidesPerView: isMobile ? 1.5 : 3,
     
     spaceBetween: isMobile ? 8 : 16,
     
@@ -3395,7 +3500,7 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
       prevEl: '.swiper-button-prev',
     }
   });var swiper2 = new Swiper('.swiper-container-2', {
-    slidesPerView: isMobile ? 1.5 : 2.5,
+    slidesPerView: isMobile ? 1.5 : 3,
     
     spaceBetween: isMobile ? 8 : 16,
     
@@ -3404,7 +3509,16 @@ Set-Cookie: SITE_VISITED_DATE=10/20/2020; Max-Age=2147483647; Expires=Mon, 08-No
       prevEl: '.swiper-button-prev',
     }
   });var swiper3 = new Swiper('.swiper-container-3', {
-    slidesPerView: isMobile ? 1.5 : 2.5,
+    slidesPerView: isMobile ? 1.5 : 3,
+    
+    spaceBetween: isMobile ? 8 : 16,
+    
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });var swiper4 = new Swiper('.swiper-container-4', {
+    slidesPerView: isMobile ? 1.5 : 3,
     
     spaceBetween: isMobile ? 8 : 16,
     
