@@ -1,12 +1,12 @@
 HTTP/1.1 200 OK
-Date: Wed, 21 Oct 2020 20:52:53 GMT
+Date: Thu, 22 Oct 2020 16:10:25 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Sorting-Hat-PodId: 88
 X-Sorting-Hat-ShopId: 23938647
 X-Storefront-Renderer-Rendered: 1
-Set-Cookie: secure_customer_sig=; path=/; expires=Sun, 21 Oct 2040 20:52:53 GMT; secure; HttpOnly
+Set-Cookie: secure_customer_sig=; path=/; expires=Mon, 22 Oct 2040 16:10:25 GMT; secure; HttpOnly
 X-Alternate-Cache-Key: cacheable:ce745665f5fb3ce151b56d01425d964a
 X-Cache: miss
 Content-Security-Policy: block-all-mixed-content; frame-ancestors *; upgrade-insecure-requests;
@@ -18,21 +18,21 @@ Vary: Accept
 Content-Language: en
 X-Shopify-Stage: production
 X-Dc: gcp-us-central1,gcp-us-central1,gcp-us-central1
-X-Request-ID: 27b69108-95bc-45ef-81e4-2a6faa832276
-Set-Cookie: cart_currency=USD; path=/; expires=Wed, 04 Nov 2020 20:52:53 GMT
-Set-Cookie: _shopify_y=8d0becac-e963-49be-9cb7-138c9d4ae563; Expires=Thu, 21-Oct-21 20:52:53 GMT; Domain=ring.com; Path=/
-Set-Cookie: _y=8d0becac-e963-49be-9cb7-138c9d4ae563; Expires=Thu, 21-Oct-21 20:52:53 GMT; Domain=ring.com; Path=/
+X-Request-ID: 01dab350-3b95-494c-a83c-eb74b06dfc02
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 NEL: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
 Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+set-cookie: cart_currency=USD; path=/; expires=Thu, 05 Nov 2020 16:10:25 GMT
+set-cookie: _shopify_y=e43ec69e-5533-4b48-ab0c-d4d83802fd04; Expires=Fri, 22-Oct-21 16:10:25 GMT; Domain=ring.com; Path=/
+set-cookie: _y=e43ec69e-5533-4b48-ab0c-d4d83802fd04; Expires=Fri, 22-Oct-21 16:10:25 GMT; Domain=ring.com; Path=/
 CF-Cache-Status: DYNAMIC
-cf-request-id: 05ee88b414000002d83b978000000001
+cf-request-id: 05f2ac76480000f4b2b7955000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Server: cloudflare
-CF-RAY: 5e5ddd668b1402d8-SEA
+CF-RAY: 5e647d038c05f4b2-YVR
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
 
@@ -415,7 +415,7 @@ window.ShopifyPay.apiHost = "pay.shopify.com";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":23938647,"offset":-25200,"reqid":"27b69108-95bc-45ef-81e4-2a6faa832276","pageurl":"shop.ring.com\/products\/security-system-alarm-8","u":"385941b1d4b6","p":"product","rtyp":"product","rid":4537024643161};</script>
+<script id="__st">var __st={"a":23938647,"offset":-25200,"reqid":"01dab350-3b95-494c-a83c-eb74b06dfc02","pageurl":"shop.ring.com\/products\/security-system-alarm-8","u":"ad0f4fb3947f","p":"product","rtyp":"product","rid":4537024643161};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
 window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
@@ -443,18 +443,22 @@ for (var attr in meta) {
     }
   };
 
-  var isDuplicatedThankYouPageView = function() {
-    return document.cookie.indexOf('loggedConversion=' + window.location.pathname) !== -1;
+  var hasLoggedConversion = function(token) {
+    if (document.cookie.indexOf('loggedConversion=' + window.location.pathname) !== -1) {
+      return true;
+    }
+    if (token) {
+      return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+    }
+    return false;
   }
 
-  var setCookieIfThankYouPage = function() {
-    if (window.location.pathname.indexOf('/checkouts') !== -1 &&
-        window.location.pathname.indexOf('/thank_you') !== -1) {
-
+  var setCookieIfConversion = function(token) {
+    if (token) {
       var twoMonthsFromNow = new Date(Date.now());
       twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
 
-      document.cookie = 'loggedConversion=' + window.location.pathname + '; expires=' + twoMonthsFromNow;
+      document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
     }
   }
 
@@ -542,7 +546,7 @@ for (var attr in meta) {
     first.parentNode.insertBefore(script, first);
   };
   trekkie.load(
-    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":23938647,"isMerchantRequest":null,"themeId":202371851,"themeCityHash":"17431666813368314627","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"isPixelGateEnabled":true},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1},"Session Attribution":{}}
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":23938647,"isMerchantRequest":null,"themeId":202371851,"themeCityHash":"6525124431150980449","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"isPixelGateEnabled":true},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1},"Session Attribution":{}}
   );
 
   var loaded = false;
@@ -704,14 +708,17 @@ for (var attr in meta) {
       })();
     
 
-    if (!isDuplicatedThankYouPageView()) {
-      setCookieIfThankYouPage();
-      
+    
         window.ShopifyAnalytics.lib.page(
           null,
           {"pageType":"product","resourceType":"product","resourceId":4537024643161}
         );
       
+
+    var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+    var token = match? match[1]: undefined;
+    if (!hasLoggedConversion(token)) {
+      setCookieIfConversion(token);
       
         window.ShopifyAnalytics.lib.track(
           "Viewed Product",
@@ -758,8 +765,6 @@ for (var attr in meta) {
 
 
 
-
-    
 
     
 
@@ -1890,10 +1895,8 @@ function checkSubNav(){
 				
 					
 					
-					data-price-white="$194.98"
+					data-price-white="$299.99"
 					data-currency=""
-					
-						data-price-save-white="$105"
 					
 
 					
@@ -1907,13 +1910,10 @@ function checkSubNav(){
 
 					8-Piece Alarm Security Kit + Indoor Cam (for 2nd Generation)<br>
 					
-					<span class="prod_price">$194.98</span>
+					<span class="prod_price">$299.99</span>
 
 					
 						
-						
-							
-							<span class="save">Save $105</span>
 						
 					
 				</a>
@@ -3223,7 +3223,7 @@ function checkSubNav(){
 
 
   <script type="application/json" id="ProductJson-product-template">
-    {"id":4537024643161,"title":"Alarm Security Kit, 8-Piece (for 2nd Generation)","handle":"security-system-alarm-8","description":"\u003cp\u003eProtect 4 windows or doors, add motion detection to 1 hallway or room, and control it all from the Ring app. Cover areas like the front door, bedrooms or the living room. \u003cbr\u003e\u003c\/p\u003e\n\u003cp\u003eIncludes:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eRing Alarm Base Station\u003c\/li\u003e\n\u003cli\u003eRing Alarm Keypad\u003c\/li\u003e\n\u003cli\u003e4 Contact Sensors\u003c\/li\u003e\n\u003cli\u003e1 Motion Detector\u003c\/li\u003e\n\u003cli\u003e1 Range Extender\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e \u003cspan style=\"font-weight: 400;\"\u003e*Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).\u003c\/span\u003e\u003c\/p\u003e\n\u003cdiv\u003e\u003c\/div\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400; color: #1998d5;\"\u003eSave $100 on Alarm Security Kit. Limited time only. Offer ends 10\/22\/2020 at 11:59PM PST.\u003c\/span\u003e\u003c\/p\u003e\u003cp\u003e*Not eligible for Protect Plus 10% Discount\u003c\/p\u003e","published_at":"2020-04-09T06:11:51-07:00","created_at":"2020-04-06T17:26:18-07:00","vendor":"Ring Staging","type":"Alarm Bundle","tags":["access_indoor","category_security-system","col_EXCLUSIVE","col_NH","col_NHLaw","collection_Alarm_Best_Sellers","collection_Alarm_Bundles","collection_RINGTEAM20","collection_Security_System","connect_power-over-ethernet","device_security-kit","evergreen","import_0409","limited_time","narvar_bundle","showofferslink"],"price":14999,"price_min":14999,"price_max":14999,"available":true,"price_varies":false,"compare_at_price":24999,"compare_at_price_min":24999,"compare_at_price_max":24999,"compare_at_price_varies":false,"variants":[{"id":31590097059929,"title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option1":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option2":null,"option3":null,"sku":"4K18SZ-0EN0","requires_shipping":true,"taxable":true,"featured_image":{"id":14882551758937,"product_id":4537024643161,"position":1,"created_at":"2020-10-20T21:04:18-07:00","updated_at":"2020-10-20T21:04:18-07:00","alt":"White","width":1000,"height":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058","variant_ids":[31590097059929]},"available":true,"name":"Alarm Security Kit, 8-Piece (for 2nd Generation) - White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","public_title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","options":["White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec)."],"price":14999,"weight":0,"compare_at_price":24999,"inventory_quantity":-3938,"inventory_management":"shopify","inventory_policy":"continue","barcode":null,"featured_media":{"alt":"White","id":7054200537177,"position":1,"preview_image":{"aspect_ratio":1.0,"height":1000,"width":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058"}}}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058","options":["Color"],"media":[{"alt":"White","id":7054200537177,"position":1,"preview_image":{"aspect_ratio":1.0,"height":1000,"width":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058"},"aspect_ratio":1.0,"height":1000,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058","width":1000}],"content":"\u003cp\u003eProtect 4 windows or doors, add motion detection to 1 hallway or room, and control it all from the Ring app. Cover areas like the front door, bedrooms or the living room. \u003cbr\u003e\u003c\/p\u003e\n\u003cp\u003eIncludes:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eRing Alarm Base Station\u003c\/li\u003e\n\u003cli\u003eRing Alarm Keypad\u003c\/li\u003e\n\u003cli\u003e4 Contact Sensors\u003c\/li\u003e\n\u003cli\u003e1 Motion Detector\u003c\/li\u003e\n\u003cli\u003e1 Range Extender\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e \u003cspan style=\"font-weight: 400;\"\u003e*Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).\u003c\/span\u003e\u003c\/p\u003e\n\u003cdiv\u003e\u003c\/div\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400; color: #1998d5;\"\u003eSave $100 on Alarm Security Kit. Limited time only. Offer ends 10\/22\/2020 at 11:59PM PST.\u003c\/span\u003e\u003c\/p\u003e\u003cp\u003e*Not eligible for Protect Plus 10% Discount\u003c\/p\u003e"}
+    {"id":4537024643161,"title":"Alarm Security Kit, 8-Piece (for 2nd Generation)","handle":"security-system-alarm-8","description":"\u003cp\u003eProtect 4 windows or doors, add motion detection to 1 hallway or room, and control it all from the Ring app. Cover areas like the front door, bedrooms or the living room. \u003cbr\u003e\u003c\/p\u003e\n\u003cp\u003eIncludes:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eRing Alarm Base Station\u003c\/li\u003e\n\u003cli\u003eRing Alarm Keypad\u003c\/li\u003e\n\u003cli\u003e4 Contact Sensors\u003c\/li\u003e\n\u003cli\u003e1 Motion Detector\u003c\/li\u003e\n\u003cli\u003e1 Range Extender\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e \u003cspan style=\"font-weight: 400;\"\u003e*Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).\u003c\/span\u003e\u003c\/p\u003e\n\u003cdiv\u003e\u003c\/div\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400; color: #1998d5;\"\u003eSave $100 on Alarm Security Kit. Limited time only. Offer ends 10\/22\/2020 at 11:59PM PST.\u003c\/span\u003e\u003c\/p\u003e\u003cp\u003e*Not eligible for Protect Plus 10% Discount\u003c\/p\u003e","published_at":"2020-04-09T06:11:51-07:00","created_at":"2020-04-06T17:26:18-07:00","vendor":"Ring Staging","type":"Alarm Bundle","tags":["access_indoor","category_security-system","col_EXCLUSIVE","col_NH","col_NHLaw","collection_Alarm_Best_Sellers","collection_Alarm_Bundles","collection_RINGTEAM20","collection_Security_System","connect_power-over-ethernet","device_security-kit","evergreen","import_0409","limited_time","narvar_bundle","showofferslink"],"price":14999,"price_min":14999,"price_max":14999,"available":true,"price_varies":false,"compare_at_price":24999,"compare_at_price_min":24999,"compare_at_price_max":24999,"compare_at_price_varies":false,"variants":[{"id":31590097059929,"title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option1":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option2":null,"option3":null,"sku":"4K18SZ-0EN0","requires_shipping":true,"taxable":true,"featured_image":{"id":14882551758937,"product_id":4537024643161,"position":1,"created_at":"2020-10-20T21:04:18-07:00","updated_at":"2020-10-20T21:04:18-07:00","alt":"White","width":1000,"height":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058","variant_ids":[31590097059929]},"available":true,"name":"Alarm Security Kit, 8-Piece (for 2nd Generation) - White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","public_title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","options":["White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec)."],"price":14999,"weight":0,"compare_at_price":24999,"inventory_quantity":-4010,"inventory_management":"shopify","inventory_policy":"continue","barcode":null,"featured_media":{"alt":"White","id":7054200537177,"position":1,"preview_image":{"aspect_ratio":1.0,"height":1000,"width":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058"}}}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058","options":["Color"],"media":[{"alt":"White","id":7054200537177,"position":1,"preview_image":{"aspect_ratio":1.0,"height":1000,"width":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058"},"aspect_ratio":1.0,"height":1000,"media_type":"image","src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058","width":1000}],"content":"\u003cp\u003eProtect 4 windows or doors, add motion detection to 1 hallway or room, and control it all from the Ring app. Cover areas like the front door, bedrooms or the living room. \u003cbr\u003e\u003c\/p\u003e\n\u003cp\u003eIncludes:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003eRing Alarm Base Station\u003c\/li\u003e\n\u003cli\u003eRing Alarm Keypad\u003c\/li\u003e\n\u003cli\u003e4 Contact Sensors\u003c\/li\u003e\n\u003cli\u003e1 Motion Detector\u003c\/li\u003e\n\u003cli\u003e1 Range Extender\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003e \u003cspan style=\"font-weight: 400;\"\u003e*Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).\u003c\/span\u003e\u003c\/p\u003e\n\u003cdiv\u003e\u003c\/div\u003e\n\u003cp\u003e\u003cspan style=\"font-weight: 400; color: #1998d5;\"\u003eSave $100 on Alarm Security Kit. Limited time only. Offer ends 10\/22\/2020 at 11:59PM PST.\u003c\/span\u003e\u003c\/p\u003e\u003cp\u003e*Not eligible for Protect Plus 10% Discount\u003c\/p\u003e"}
   </script>
 
 
@@ -3232,7 +3232,7 @@ function checkSubNav(){
     window.dataLayer = window.dataLayer || [];
     
 
-        var variant = {"id":31590097059929,"title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option1":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option2":null,"option3":null,"sku":"4K18SZ-0EN0","requires_shipping":true,"taxable":true,"featured_image":{"id":14882551758937,"product_id":4537024643161,"position":1,"created_at":"2020-10-20T21:04:18-07:00","updated_at":"2020-10-20T21:04:18-07:00","alt":"White","width":1000,"height":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058","variant_ids":[31590097059929]},"available":true,"name":"Alarm Security Kit, 8-Piece (for 2nd Generation) - White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","public_title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","options":["White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec)."],"price":14999,"weight":0,"compare_at_price":24999,"inventory_quantity":-3938,"inventory_management":"shopify","inventory_policy":"continue","barcode":null,"featured_media":{"alt":"White","id":7054200537177,"position":1,"preview_image":{"aspect_ratio":1.0,"height":1000,"width":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058"}}};
+        var variant = {"id":31590097059929,"title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option1":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option2":null,"option3":null,"sku":"4K18SZ-0EN0","requires_shipping":true,"taxable":true,"featured_image":{"id":14882551758937,"product_id":4537024643161,"position":1,"created_at":"2020-10-20T21:04:18-07:00","updated_at":"2020-10-20T21:04:18-07:00","alt":"White","width":1000,"height":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058","variant_ids":[31590097059929]},"available":true,"name":"Alarm Security Kit, 8-Piece (for 2nd Generation) - White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","public_title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","options":["White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec)."],"price":14999,"weight":0,"compare_at_price":24999,"inventory_quantity":-4010,"inventory_management":"shopify","inventory_policy":"continue","barcode":null,"featured_media":{"alt":"White","id":7054200537177,"position":1,"preview_image":{"aspect_ratio":1.0,"height":1000,"width":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058"}}};
         function dataLayerPush() {
             dataLayer.push({
                 'ecommerce': {
@@ -3251,7 +3251,7 @@ function checkSubNav(){
             });
         }
         dataLayerPush();
-        var variants = [{"id":31590097059929,"title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option1":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option2":null,"option3":null,"sku":"4K18SZ-0EN0","requires_shipping":true,"taxable":true,"featured_image":{"id":14882551758937,"product_id":4537024643161,"position":1,"created_at":"2020-10-20T21:04:18-07:00","updated_at":"2020-10-20T21:04:18-07:00","alt":"White","width":1000,"height":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058","variant_ids":[31590097059929]},"available":true,"name":"Alarm Security Kit, 8-Piece (for 2nd Generation) - White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","public_title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","options":["White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec)."],"price":14999,"weight":0,"compare_at_price":24999,"inventory_quantity":-3938,"inventory_management":"shopify","inventory_policy":"continue","barcode":null,"featured_media":{"alt":"White","id":7054200537177,"position":1,"preview_image":{"aspect_ratio":1.0,"height":1000,"width":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058"}}}];
+        var variants = [{"id":31590097059929,"title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option1":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","option2":null,"option3":null,"sku":"4K18SZ-0EN0","requires_shipping":true,"taxable":true,"featured_image":{"id":14882551758937,"product_id":4537024643161,"position":1,"created_at":"2020-10-20T21:04:18-07:00","updated_at":"2020-10-20T21:04:18-07:00","alt":"White","width":1000,"height":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058","variant_ids":[31590097059929]},"available":true,"name":"Alarm Security Kit, 8-Piece (for 2nd Generation) - White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","public_title":"White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec).","options":["White: *Ring Alarm and the professional monitoring service are available and ship only within the U.S. (excluding American Samoa, Guam, Northern Mariana Islands, Puerto Rico, and the U.S. Virgin Islands) and Canada (excluding Quebec)."],"price":14999,"weight":0,"compare_at_price":24999,"inventory_quantity":-4010,"inventory_management":"shopify","inventory_policy":"continue","barcode":null,"featured_media":{"alt":"White","id":7054200537177,"position":1,"preview_image":{"aspect_ratio":1.0,"height":1000,"width":1000,"src":"https:\/\/cdn.shopify.com\/s\/files\/1\/2393\/8647\/products\/4K18SZ-0EN0_SALE.jpg?v=1603253058"}}}];
         document.querySelectorAll(".product-form .dots > div").forEach(function(el) {
             el.addEventListener("click", function(e) {
                 variants.forEach(function(el){

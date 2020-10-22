@@ -1,14 +1,14 @@
 HTTP/1.1 200 OK
-Date: Thu, 22 Oct 2020 02:21:14 GMT
+Date: Thu, 22 Oct 2020 16:08:48 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Sorting-Hat-PodId: 88
 X-Sorting-Hat-ShopId: 23938647
 X-Storefront-Renderer-Rendered: 1
-Set-Cookie: secure_customer_sig=; path=/; expires=Mon, 22 Oct 2040 02:21:14 GMT; secure; HttpOnly
+Set-Cookie: secure_customer_sig=; path=/; expires=Mon, 22 Oct 2040 16:08:48 GMT; secure; HttpOnly
 X-Alternate-Cache-Key: cacheable:ca652c44fa147ac28b5810745d85fe58
-X-Cache: hit, server
+X-Cache: miss
 Content-Security-Policy: block-all-mixed-content; frame-ancestors *; upgrade-insecure-requests;
 Access-Control-Allow-Origin: *
 Strict-Transport-Security: max-age=7889238
@@ -18,21 +18,21 @@ Vary: Accept
 Content-Language: en
 X-Shopify-Stage: production
 X-Dc: gcp-us-central1,gcp-us-central1,gcp-us-central1
-X-Request-ID: 1f99f5d7-7419-46e1-b350-69424884d4eb
-Set-Cookie: cart_currency=USD; path=/; expires=Thu, 05 Nov 2020 02:21:14 GMT
-Set-Cookie: _shopify_y=63b99bd8-ddfc-4a7b-b31b-94d67523f05e; Expires=Fri, 22-Oct-21 02:21:14 GMT; Domain=ring.com; Path=/
-Set-Cookie: _y=63b99bd8-ddfc-4a7b-b31b-94d67523f05e; Expires=Fri, 22-Oct-21 02:21:14 GMT; Domain=ring.com; Path=/
+X-Request-ID: 6fd1b8fc-8b78-4574-bd2c-d17c31fd1a68
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 NEL: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
 Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+set-cookie: cart_currency=USD; path=/; expires=Thu, 05 Nov 2020 16:08:48 GMT
+set-cookie: _shopify_y=e43ec69e-5533-4b48-ab0c-d4d83802fd04; Expires=Fri, 22-Oct-21 16:08:48 GMT; Domain=ring.com; Path=/
+set-cookie: _y=e43ec69e-5533-4b48-ab0c-d4d83802fd04; Expires=Fri, 22-Oct-21 16:08:48 GMT; Domain=ring.com; Path=/
 CF-Cache-Status: DYNAMIC
-cf-request-id: 05efb553080000138e9c1a4000000001
+cf-request-id: 05f2aafa510000136e50ac5000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Server: cloudflare
-CF-RAY: 5e5fbe64dac0138e-SEA
+CF-RAY: 5e647aa3bd89136e-YVR
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
 
@@ -420,7 +420,7 @@ window.ShopifyPay.apiHost = "pay.shopify.com";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":23938647,"offset":-25200,"reqid":"ba4f5eca-1605-48ce-9ec6-00b7fdc98ba1","pageurl":"shop.ring.com\/pages\/protect-plans","s":"pages-264266187","u":"c7a2d0653eae","p":"page","rtyp":"page","rid":264266187};</script>
+<script id="__st">var __st={"a":23938647,"offset":-25200,"reqid":"6fd1b8fc-8b78-4574-bd2c-d17c31fd1a68","pageurl":"shop.ring.com\/pages\/protect-plans","s":"pages-264266187","u":"cdc4deb83e9f","p":"page","rtyp":"page","rid":264266187};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
 window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
@@ -448,18 +448,22 @@ for (var attr in meta) {
     }
   };
 
-  var isDuplicatedThankYouPageView = function() {
-    return document.cookie.indexOf('loggedConversion=' + window.location.pathname) !== -1;
+  var hasLoggedConversion = function(token) {
+    if (document.cookie.indexOf('loggedConversion=' + window.location.pathname) !== -1) {
+      return true;
+    }
+    if (token) {
+      return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+    }
+    return false;
   }
 
-  var setCookieIfThankYouPage = function() {
-    if (window.location.pathname.indexOf('/checkouts') !== -1 &&
-        window.location.pathname.indexOf('/thank_you') !== -1) {
-
+  var setCookieIfConversion = function(token) {
+    if (token) {
       var twoMonthsFromNow = new Date(Date.now());
       twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
 
-      document.cookie = 'loggedConversion=' + window.location.pathname + '; expires=' + twoMonthsFromNow;
+      document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
     }
   }
 
@@ -547,7 +551,7 @@ for (var attr in meta) {
     first.parentNode.insertBefore(script, first);
   };
   trekkie.load(
-    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":23938647,"isMerchantRequest":null,"themeId":202371851,"themeCityHash":"17431666813368314627","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"isPixelGateEnabled":true},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1},"Session Attribution":{}}
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":23938647,"isMerchantRequest":null,"themeId":202371851,"themeCityHash":"6525124431150980449","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"isPixelGateEnabled":true},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1},"Session Attribution":{}}
   );
 
   var loaded = false;
@@ -709,14 +713,17 @@ for (var attr in meta) {
       })();
     
 
-    if (!isDuplicatedThankYouPageView()) {
-      setCookieIfThankYouPage();
-      
+    
         window.ShopifyAnalytics.lib.page(
           null,
           {"pageType":"page","resourceType":"page","resourceId":264266187}
         );
       
+
+    var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+    var token = match? match[1]: undefined;
+    if (!hasLoggedConversion(token)) {
+      setCookieIfConversion(token);
       
     }
   });
@@ -752,8 +759,6 @@ for (var attr in meta) {
 
 
 
-
-    
 
     
 

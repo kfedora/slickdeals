@@ -1,12 +1,12 @@
 HTTP/1.1 200 OK
-Date: Thu, 22 Oct 2020 02:22:12 GMT
+Date: Thu, 22 Oct 2020 16:09:41 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Sorting-Hat-PodId: 88
 X-Sorting-Hat-ShopId: 23938647
 X-Storefront-Renderer-Rendered: 1
-Set-Cookie: secure_customer_sig=; path=/; expires=Mon, 22 Oct 2040 02:22:12 GMT; secure; HttpOnly
+Set-Cookie: secure_customer_sig=; path=/; expires=Mon, 22 Oct 2040 16:09:41 GMT; secure; HttpOnly
 X-Alternate-Cache-Key: cacheable:22100362e32b9a1e2279b15d95859653
 X-Cache: miss
 Content-Security-Policy: block-all-mixed-content; frame-ancestors *; upgrade-insecure-requests;
@@ -18,21 +18,21 @@ Vary: Accept
 Content-Language: en
 X-Shopify-Stage: production
 X-Dc: gcp-us-central1,gcp-us-central1,gcp-us-central1
-X-Request-ID: 939894a6-6fa8-48d6-828e-6c1a1130b045
-Set-Cookie: cart_currency=USD; path=/; expires=Thu, 05 Nov 2020 02:22:12 GMT
-Set-Cookie: _shopify_y=63b99bd8-ddfc-4a7b-b31b-94d67523f05e; Expires=Fri, 22-Oct-21 02:22:12 GMT; Domain=ring.com; Path=/
-Set-Cookie: _y=63b99bd8-ddfc-4a7b-b31b-94d67523f05e; Expires=Fri, 22-Oct-21 02:22:12 GMT; Domain=ring.com; Path=/
+X-Request-ID: 0c528fa9-0506-43e5-be2f-2f8cfd575a01
 X-Download-Options: noopen
 X-Permitted-Cross-Domain-Policies: none
 X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 NEL: {"report_to":"network-errors","max_age":2592000,"failure_fraction":0.01,"success_fraction":0.0001}
 Report-To: {"group":"network-errors","max_age":2592000,"endpoints":[{"url":"https://monorail-edge.shopifycloud.com/v1/reports/nel/20190325/shopify"}]}
+set-cookie: cart_currency=USD; path=/; expires=Thu, 05 Nov 2020 16:09:41 GMT
+set-cookie: _shopify_y=e43ec69e-5533-4b48-ab0c-d4d83802fd04; Expires=Fri, 22-Oct-21 16:09:41 GMT; Domain=ring.com; Path=/
+set-cookie: _y=e43ec69e-5533-4b48-ab0c-d4d83802fd04; Expires=Fri, 22-Oct-21 16:09:41 GMT; Domain=ring.com; Path=/
 CF-Cache-Status: DYNAMIC
-cf-request-id: 05efb6348b0000f579d3865000000001
+cf-request-id: 05f2abc9c80000f4b283b4c000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Server: cloudflare
-CF-RAY: 5e5fbfcdaf3ef579-SEA
+CF-RAY: 5e647befaa0ef4b2-YVR
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400
 
 
@@ -420,7 +420,7 @@ window.ShopifyPay.apiHost = "pay.shopify.com";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":23938647,"offset":-25200,"reqid":"939894a6-6fa8-48d6-828e-6c1a1130b045","pageurl":"shop.ring.com\/pages\/doorbell-cameras","s":"pages-24932024409","u":"75e2f0c137d1","p":"page","rtyp":"page","rid":24932024409};</script>
+<script id="__st">var __st={"a":23938647,"offset":-25200,"reqid":"0c528fa9-0506-43e5-be2f-2f8cfd575a01","pageurl":"shop.ring.com\/pages\/doorbell-cameras","s":"pages-24932024409","u":"4cd6732e6076","p":"page","rtyp":"page","rid":24932024409};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
 window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
@@ -448,18 +448,22 @@ for (var attr in meta) {
     }
   };
 
-  var isDuplicatedThankYouPageView = function() {
-    return document.cookie.indexOf('loggedConversion=' + window.location.pathname) !== -1;
+  var hasLoggedConversion = function(token) {
+    if (document.cookie.indexOf('loggedConversion=' + window.location.pathname) !== -1) {
+      return true;
+    }
+    if (token) {
+      return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+    }
+    return false;
   }
 
-  var setCookieIfThankYouPage = function() {
-    if (window.location.pathname.indexOf('/checkouts') !== -1 &&
-        window.location.pathname.indexOf('/thank_you') !== -1) {
-
+  var setCookieIfConversion = function(token) {
+    if (token) {
       var twoMonthsFromNow = new Date(Date.now());
       twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
 
-      document.cookie = 'loggedConversion=' + window.location.pathname + '; expires=' + twoMonthsFromNow;
+      document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
     }
   }
 
@@ -547,7 +551,7 @@ for (var attr in meta) {
     first.parentNode.insertBefore(script, first);
   };
   trekkie.load(
-    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":23938647,"isMerchantRequest":null,"themeId":202371851,"themeCityHash":"17431666813368314627","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"isPixelGateEnabled":true},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1},"Session Attribution":{}}
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":23938647,"isMerchantRequest":null,"themeId":202371851,"themeCityHash":"6525124431150980449","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"isPixelGateEnabled":true},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1},"Session Attribution":{}}
   );
 
   var loaded = false;
@@ -709,14 +713,17 @@ for (var attr in meta) {
       })();
     
 
-    if (!isDuplicatedThankYouPageView()) {
-      setCookieIfThankYouPage();
-      
+    
         window.ShopifyAnalytics.lib.page(
           null,
           {"pageType":"page","resourceType":"page","resourceId":24932024409}
         );
       
+
+    var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+    var token = match? match[1]: undefined;
+    if (!hasLoggedConversion(token)) {
+      setCookieIfConversion(token);
       
     }
   });
@@ -752,8 +759,6 @@ for (var attr in meta) {
 
 
 
-
-    
 
     
 
@@ -1390,7 +1395,7 @@ function checkSubNav(){
          <li>
             <a href="/products/video-doorbell-v2">
                
-                  <div class="badge savings product-strip product-strip-tag-sale">Sale</div>
+                  <div class="badge product-strip product-strip-tag-new">New</div>
                
                <img src="
 https://cdn.shopify.com/s/files/1/2486/3560/files/vd_rvdg2_select_200x200_2x_e0facc76-c787-46cd-9cb4-127af918df62.png?v=1594047099" />
@@ -2827,15 +2832,6 @@ https://cdn.shopify.com/s/files/1/0069/5051/8902/files/vd_peephole_select_200x20
 			
 
 					
-					data-limited="time"
-				
-
-			
-			
-
-			
-
-					
 					data-narvar="single_sku"
 				
 
@@ -2858,12 +2854,6 @@ https://cdn.shopify.com/s/files/1/0069/5051/8902/files/vd_peephole_select_200x20
     <div class="badge blue ">New</div>
 
 	
-		
-		
-    <div class="badge savings">Save $30</div>
-
-
-	
 	</div>
 	
 	<a class="cflex grid-view-item__link grid-view-item__image-container" href="/products/video-doorbell-v2" data-url="/products/video-doorbell-v2">
@@ -2876,22 +2866,17 @@ https://cdn.shopify.com/s/files/1/0069/5051/8902/files/vd_peephole_select_200x20
 
 
 
+
   
-    <span class="product-price__price product-price__sale">
-      $69.99
-      <!--<span class="product-price__sale-label">translation missing: en.products.expandprod.on_sale</span>-->
-    </span>
     <span class="visually-hidden">translation missing: en.products.expandprod.regular_price</span>
-    
-    <s class="product-price__price">$99.99</s>
-    
+    <span class="product-price__price">$99.99</span>
   
 
 </div>
 			
 		</div>
 		
-			<div class="img" style="background-image:url(//cdn.shopify.com/s/files/1/2393/8647/products/8VR1SZ-SEN0_560x.jpg?v=1603213251);"></div>
+			<div class="img" style="background-image:url(//cdn.shopify.com/s/files/1/2393/8647/products/8VR1SZ-SEN0_20fe8c7d-5e9d-45e6-9d65-ebde89481ca6_560x.jpg?v=1603378939);"></div>
 		
 	</a>
 

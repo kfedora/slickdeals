@@ -7,12 +7,12 @@ Last-Modified: Sun, 11 Oct 2020 11:34:59 GMT
 Server: Akamai Resource Optimizer
 Vary: Accept-Encoding
 Cache-Control: max-age=125746
-Expires: Fri, 23 Oct 2020 14:30:17 GMT
-Date: Thu, 22 Oct 2020 03:34:31 GMT
+Expires: Sat, 24 Oct 2020 03:35:02 GMT
+Date: Thu, 22 Oct 2020 16:39:16 GMT
 Content-Length: 1540
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=3
+Server-Timing: edge; dur=7
 Strict-Transport-Security: max-age=86400
 
 /**
