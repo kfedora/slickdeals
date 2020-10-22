@@ -1,17 +1,18 @@
 HTTP/1.1 200 OK
 Content-Type: text/javascript
 ETag: "3062954860"
-Last-Modified: Sun, 11 Oct 2020 11:34:25 GMT
+Last-Modified: Mon, 19 Oct 2020 02:01:22 GMT
 Server: Akamai Resource Optimizer
+X-Akamai-Path-Stats: [1:380:27620]
 Vary: Accept-Encoding
-Cache-Control: max-age=64753
-Expires: Thu, 22 Oct 2020 16:25:56 GMT
-Date: Wed, 21 Oct 2020 22:26:43 GMT
+Cache-Control: max-age=72896
+Expires: Thu, 22 Oct 2020 23:50:17 GMT
+Date: Thu, 22 Oct 2020 03:35:21 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=21
+Server-Timing: edge; dur=1
 Strict-Transport-Security: max-age=86400
 
 /*! jQuery iLightBox (2.4.0) - Revolutionary Lightbox Plugin http:// www.ilightbox.net/  updated By TieLbas on 22/01/2020 */
