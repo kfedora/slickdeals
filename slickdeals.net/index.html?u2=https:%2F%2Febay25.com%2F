@@ -1,84 +1,15 @@
-HTTP/1.1 200 OK
-Server: nginx/1.18.0
-Content-Type: text/html; charset=UTF-8
-Transfer-Encoding: chunked
-Vary: Accept-Encoding
-X-Powered-By: PHP/7.3.22
-Cache-Control: no-cache, private
-Date: Wed, 21 Oct 2020 03:49:55 GMT
-Set-Cookie: XSRF-TOKEN=eyJpdiI6IlMxQVN0aFJsZlE0dXFZTU1WVU04VHc9PSIsInZhbHVlIjoiMHlVSS9HZHVNT3lpSmlwTTdqdG5NMUVCWFFnSERpd1R1eXRXakEzTFNJdlAyMHhaWlZCeHE0OGxTMi82bmdLUEdTd2NYWkhjVnpEQ213TXRydXZlVDhJTXRhOGpxdGJuODJCQVh1QTlCREtrTVJkSTJteGt6TU1WTGZrK2Z4OVIiLCJtYWMiOiIwYjVmOGQ2ZmI1NmVhMTA2ZTEzNGIyZTA1MDEzMGFlODRiNDZmOGM4YTJmNTIwMWI3YTdkYjc0ZTllYTdhNjFjIn0%3D; expires=Sat, 24-Oct-2020 03:49:55 GMT; Max-Age=259200; path=/; samesite=lax
-Set-Cookie: ebay25_session=eyJpdiI6ImZpL3dKbm5WRzVDUFdaQ0RGSmYzZlE9PSIsInZhbHVlIjoiV2wrRGxicmRNSWIybGpaaE02Rk1mUDArc3BTdVJ2TzhUZWFBa2tOdlM2a2ZIQXVRK0RrZEdrME9haW5GS0Fhd1FKSjhZN2NrTUdmWlVKYTd3dyt0UDl3dExMVUZ5aXNrZzRtTXRCb3RvYW85K0FYUHlnN1ZXUXpydVp4dXZmV3EiLCJtYWMiOiIyNTg0N2U1MzM0MDQxNWY3ZDNjMWM2MWI2MWRmYmVhM2IwYjBjNDdkZGZmMzQ0MzM3ZGExNjc5MTdjM2YwMDQ3In0%3D; expires=Sat, 24-Oct-2020 03:49:55 GMT; Max-Age=259200; path=/; httponly; samesite=lax
-Via: 1.1 3c72cd1132c1 (nginx/1.18.0), 1.1 google
-Alt-Svc: clear
+HTTP/1.1 500 Internal Server Error
+Cache-Control: no-cache
+Content-Type: text/html
+Content-Length: 96
+X-Akamai-Path-Stats: [3:7264:15000736]
+Date: Thu, 22 Oct 2020 14:41:39 GMT
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=MISS
+Server-Timing: edge; dur=31
+Server-Timing: origin; dur=15008
+Strict-Transport-Security: max-age=86400
 
-<!-- Stored in resources/views/child.blade.php -->
-
-
-
-
-
-<!-- Stored in resources/views/layouts/app.blade.php -->
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="csrf-token" content="AT9RUQzG9155twe0LZJFJtCcGrEy8cbLiLU0xgBw">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- <link rel="icon" type="image/png" href="https://ebay25.com/img/favicon.png"> -->
-    <link rel="icon" type="image/png" href="/img/favicon.png">
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="AT9RUQzG9155twe0LZJFJtCcGrEy8cbLiLU0xgBw">
-
-    <title>eBay's 25th Sellerbration</title>
-
-    <!-- Scripts -->
-    <script src="https://kit.fontawesome.com/46abc7d764.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <script src="/js/app.js?id=5a648267edbfd40dd1eb" defer></script>
-
-
-    <!-- Fonts -->
-    <style nonce=data.nonce>
-        .font-marketsans body {
-            font-family: "Market Sans", Arial, sans-serif;
-        }
-    </style>
-    <script nonce=data.nonce>
-        (function() {
-            var useCustomFont = ('fontDisplay' in document.documentElement.style) ||
-                (localStorage && localStorage.getItem('ebay-font'));
-            if (useCustomFont) {
-                document.documentElement.classList.add('font-marketsans');
-            }
-        })();
-    </script>
-    <!-- Styles -->
-   <link href="/css/app.css?id=91a245115b4211ebef9b" rel="stylesheet">
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
-            {'gtm.start': new Date().getTime(),event:'gtm.js'}
-
-        );var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=gDwu3OBvbbJX1-lNBpC-lw&gtm_preview=env-1&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5RFFPWR');</script>
-    <!-- End Google Tag Manager -->
-
-
-</head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5RFFPWR&gtm_auth=gDwu3OBvbbJX1-lNBpC-lw&gtm_preview=env-1&gtm_cookies_win=x"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div id="ebay">
-        <router-view></router-view>
-
-
-            <chat-bubble></chat-bubble>
-    </div>
-<script async src="/js/fontloader.standalone.js"></script>
-
-</body>
-</html>
+<html><body><h1>500 Internal Server Error</h1>
+An internal server error occured.
+</body></html>
