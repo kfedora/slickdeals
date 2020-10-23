@@ -1,11 +1,11 @@
 HTTP/1.1 200 OK
 Server: nginx/1.16.1 (Ubuntu)
-Date: Fri, 23 Oct 2020 18:04:48 GMT
+Date: Fri, 23 Oct 2020 18:56:12 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: donation-identifier=6b4bf80ec4175b1ebd5e64ba9e29dff7; expires=Sat, 23-Oct-2021 18:04:48 GMT; Max-Age=31536000; path=/; domain=.archive.org
-Set-Cookie: PHPSESSID=81tdpdccpc6t7d6c3lrbiqq640; path=/; domain=.archive.org
+Set-Cookie: donation-identifier=c240dbb74112c5703b4251080dde20b4; expires=Sat, 23-Oct-2021 18:56:12 GMT; Max-Age=31536000; path=/; domain=.archive.org
+Set-Cookie: PHPSESSID=4gdcesm7dtcvqsdbk1qac41c24; path=/; domain=.archive.org
 Strict-Transport-Security: max-age=15724800
 
 <!DOCTYPE html>
@@ -2572,7 +2572,7 @@ Any way to fix this??      </div>
   <div id="also-found"
     class="container container-ia width-max"
     data-identifier="msdos_Mario_Teaches_Typing_1992"
-    data-host-name="www16.us.archive.org"
+    data-host-name="www29.us.archive.org"
     data-mediatype="software">
     <div class="row">
       <div class="col-xs-12 tilebars">
@@ -2603,13 +2603,13 @@ Any way to fix this??      </div>
     
     
     <!-- Timing ...
-     rendered on: www16.us.archive.org
+     rendered on: www29.us.archive.org
  seconds diff sec               message   stack(file:line:function)
 =========================================================
   0.0000   0.0000         petabox start   var/cache/petabox/petabox/www/sf/details.php:1:require
                                              |common/ia:66:require_once
                                              |setup.php:384:log
-  0.0059   0.0059      redis_read start   var/cache/petabox/petabox/www/sf/details.php:62:getItem
+  0.0068   0.0068      redis_read start   var/cache/petabox/petabox/www/sf/details.php:62:getItem
                                              |details.php:183:getItem
                                              |common/Item.inc:77:parseMetadata
                                              |Item.inc:132:get_obj
@@ -2622,7 +2622,7 @@ Any way to fix this??      </div>
                                              |AdapterPipeline.inc:613:fetch
                                              |RecordServer.inc:144:execute
                                              |RecordServer/FetchRecordOp.inc:52:log
-  0.0151   0.0093     redis_read finish   var/cache/petabox/petabox/www/sf/details.php:62:getItem
+  0.0084   0.0017     redis_read finish   var/cache/petabox/petabox/www/sf/details.php:62:getItem
                                              |details.php:183:getItem
                                              |common/Item.inc:77:parseMetadata
                                              |Item.inc:132:get_obj
@@ -2635,8 +2635,8 @@ Any way to fix this??      </div>
                                              |AdapterPipeline.inc:613:fetch
                                              |RecordServer.inc:144:execute
                                              |RecordServer/FetchRecordOp.inc:58:log
-  0.0290   0.0138                render   var/cache/petabox/petabox/www/sf/details.php:82:log
-  0.0295   0.0005      start db connect   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.0185   0.0100                render   var/cache/petabox/petabox/www/sf/details.php:82:log
+  0.0189   0.0005      start db connect   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4952:setupAndActionsFlags
                                              |DetailsFlags.inc:22:getFlags
                                              |DetailsFlags.inc:116:__callStatic
@@ -2652,7 +2652,7 @@ Any way to fix this??      </div>
                                              |DB.inc:765:connect
                                              |DB.inc:105:conn
                                              |DB.inc:867:log
-  0.0406   0.0111                got db   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.0445   0.0255                got db   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4952:setupAndActionsFlags
                                              |DetailsFlags.inc:22:getFlags
                                              |DetailsFlags.inc:116:__callStatic
@@ -2668,22 +2668,22 @@ Any way to fix this??      </div>
                                              |DB.inc:765:connect
                                              |DB.inc:105:conn
                                              |DB.inc:914:log
-  0.0467   0.0061   begin session_start   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.0950   0.0506   begin session_start   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4958:nav
                                              |Details.inc:4760:head
                                              |Nav.inc:127:__construct
                                              |Nav.inc:212:session_start
                                              |Cookies.inc:56:log
-  0.0468   0.0002    done session_start   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.0952   0.0002    done session_start   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4958:nav
                                              |Details.inc:4760:head
                                              |Nav.inc:127:__construct
                                              |Nav.inc:212:session_start
                                              |Cookies.inc:62:log
-  0.0493   0.0024          header drawn   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.0977   0.0025          header drawn   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4958:nav
                                              |Details.inc:4764:log
-  0.1209   0.0716      redis_read start   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.2329   0.1351      redis_read start   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4990:info_right
                                              |Details.inc:3145:get_status
                                              |Lending/LendingACL.php:117:get_metadata_fields
@@ -2698,7 +2698,7 @@ Any way to fix this??      </div>
                                              |AdapterPipeline.inc:613:fetch
                                              |RecordServer.inc:144:execute
                                              |RecordServer/FetchRecordOp.inc:52:log
-  0.1230   0.0021     redis_read finish   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.2342   0.0014     redis_read finish   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4990:info_right
                                              |Details.inc:3145:get_status
                                              |Lending/LendingACL.php:117:get_metadata_fields
@@ -2713,7 +2713,7 @@ Any way to fix this??      </div>
                                              |AdapterPipeline.inc:613:fetch
                                              |RecordServer.inc:144:execute
                                              |RecordServer/FetchRecordOp.inc:58:log
-  0.1444   0.0214              bug dump   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.4256   0.1914              bug dump   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:5013:footer
                                              |setup.php:153:footer
                                              |Nav.inc:1118:dump
@@ -2726,8 +2726,8 @@ if (window.archive_analytics) {
   var vs = window.archive_analytics.get_data_packets();
   for (var i in vs) {
     vs[i]['cache_bust']=Math.random();
-    vs[i]['server_ms']=144;
-    vs[i]['server_name']="www16.us.archive.org";
+    vs[i]['server_ms']=425;
+    vs[i]['server_name']="www29.us.archive.org";
       }
 
   if (document.querySelectorAll('.more_search').length) {
@@ -2735,9 +2735,9 @@ if (window.archive_analytics) {
   }
 }
 </script>
-              <img src="//analytics.archive.org/0.gif?kind=track_js&track_js_case=control&cache_bust=551993243" />
+              <img src="//analytics.archive.org/0.gif?kind=track_js&track_js_case=control&cache_bust=793465878" />
           <noscript>
-        <img src="//analytics.archive.org/0.gif?kind=track_js&track_js_case=disabled&cache_bust=480148646" />
+        <img src="//analytics.archive.org/0.gif?kind=track_js&track_js_case=disabled&cache_bust=1124158959" />
       </noscript>
           <script>
         document.addEventListener('DOMContentLoaded', function() {
