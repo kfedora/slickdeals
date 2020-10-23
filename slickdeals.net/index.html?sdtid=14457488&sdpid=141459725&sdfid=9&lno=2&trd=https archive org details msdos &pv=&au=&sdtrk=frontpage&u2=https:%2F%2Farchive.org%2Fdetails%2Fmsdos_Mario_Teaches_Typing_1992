@@ -1,11 +1,11 @@
 HTTP/1.1 200 OK
 Server: nginx/1.16.1 (Ubuntu)
-Date: Fri, 23 Oct 2020 12:00:35 GMT
+Date: Fri, 23 Oct 2020 12:16:59 GMT
 Content-Type: text/html; charset=UTF-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: donation-identifier=6593cc9b3da2f328b5c7b729e1831b35; expires=Sat, 23-Oct-2021 12:00:35 GMT; Max-Age=31536000; path=/; domain=.archive.org
-Set-Cookie: PHPSESSID=v0k2ih0u1g4g3mb801klaet7o7; path=/; domain=.archive.org
+Set-Cookie: donation-identifier=495883e56221f3b3180937d36084df87; expires=Sat, 23-Oct-2021 12:16:59 GMT; Max-Age=31536000; path=/; domain=.archive.org
+Set-Cookie: PHPSESSID=bsnu1gj8lq1k9m8b2lnjs9ced2; path=/; domain=.archive.org
 Strict-Transport-Security: max-age=15724800
 
 <!DOCTYPE html>
@@ -2609,7 +2609,7 @@ Any way to fix this??      </div>
   0.0000   0.0000         petabox start   var/cache/petabox/petabox/www/sf/details.php:1:require
                                              |common/ia:66:require_once
                                              |setup.php:384:log
-  0.0054   0.0054      redis_read start   var/cache/petabox/petabox/www/sf/details.php:62:getItem
+  0.0089   0.0089      redis_read start   var/cache/petabox/petabox/www/sf/details.php:62:getItem
                                              |details.php:183:getItem
                                              |common/Item.inc:77:parseMetadata
                                              |Item.inc:132:get_obj
@@ -2622,7 +2622,7 @@ Any way to fix this??      </div>
                                              |AdapterPipeline.inc:613:fetch
                                              |RecordServer.inc:144:execute
                                              |RecordServer/FetchRecordOp.inc:52:log
-  0.0088   0.0034     redis_read finish   var/cache/petabox/petabox/www/sf/details.php:62:getItem
+  0.0124   0.0035     redis_read finish   var/cache/petabox/petabox/www/sf/details.php:62:getItem
                                              |details.php:183:getItem
                                              |common/Item.inc:77:parseMetadata
                                              |Item.inc:132:get_obj
@@ -2635,8 +2635,8 @@ Any way to fix this??      </div>
                                              |AdapterPipeline.inc:613:fetch
                                              |RecordServer.inc:144:execute
                                              |RecordServer/FetchRecordOp.inc:58:log
-  0.0213   0.0126                render   var/cache/petabox/petabox/www/sf/details.php:82:log
-  0.0217   0.0004      start db connect   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.0270   0.0146                render   var/cache/petabox/petabox/www/sf/details.php:82:log
+  0.0272   0.0002      start db connect   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4952:setupAndActionsFlags
                                              |DetailsFlags.inc:22:getFlags
                                              |DetailsFlags.inc:116:__callStatic
@@ -2652,7 +2652,7 @@ Any way to fix this??      </div>
                                              |DB.inc:765:connect
                                              |DB.inc:105:conn
                                              |DB.inc:867:log
-  0.0323   0.0107                got db   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.0359   0.0086                got db   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4952:setupAndActionsFlags
                                              |DetailsFlags.inc:22:getFlags
                                              |DetailsFlags.inc:116:__callStatic
@@ -2668,22 +2668,22 @@ Any way to fix this??      </div>
                                              |DB.inc:765:connect
                                              |DB.inc:105:conn
                                              |DB.inc:914:log
-  0.0381   0.0058   begin session_start   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.0427   0.0069   begin session_start   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4958:nav
                                              |Details.inc:4760:head
                                              |Nav.inc:127:__construct
                                              |Nav.inc:212:session_start
                                              |Cookies.inc:56:log
-  0.0383   0.0002    done session_start   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.0429   0.0002    done session_start   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4958:nav
                                              |Details.inc:4760:head
                                              |Nav.inc:127:__construct
                                              |Nav.inc:212:session_start
                                              |Cookies.inc:62:log
-  0.0423   0.0040          header drawn   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.0471   0.0042          header drawn   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4958:nav
                                              |Details.inc:4764:log
-  0.1206   0.0784      redis_read start   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.1111   0.0640      redis_read start   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4990:info_right
                                              |Details.inc:3145:get_status
                                              |Lending/LendingACL.php:117:get_metadata_fields
@@ -2698,7 +2698,7 @@ Any way to fix this??      </div>
                                              |AdapterPipeline.inc:613:fetch
                                              |RecordServer.inc:144:execute
                                              |RecordServer/FetchRecordOp.inc:52:log
-  0.1231   0.0025     redis_read finish   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.1131   0.0020     redis_read finish   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:4990:info_right
                                              |Details.inc:3145:get_status
                                              |Lending/LendingACL.php:117:get_metadata_fields
@@ -2713,7 +2713,7 @@ Any way to fix this??      </div>
                                              |AdapterPipeline.inc:613:fetch
                                              |RecordServer.inc:144:execute
                                              |RecordServer/FetchRecordOp.inc:58:log
-  0.1383   0.0152              bug dump   var/cache/petabox/petabox/www/sf/details.php:83:render
+  0.1257   0.0126              bug dump   var/cache/petabox/petabox/www/sf/details.php:83:render
                                              |common/Details.inc:5013:footer
                                              |setup.php:153:footer
                                              |Nav.inc:1118:dump
@@ -2726,7 +2726,7 @@ if (window.archive_analytics) {
   var vs = window.archive_analytics.get_data_packets();
   for (var i in vs) {
     vs[i]['cache_bust']=Math.random();
-    vs[i]['server_ms']=138;
+    vs[i]['server_ms']=125;
     vs[i]['server_name']="www10.us.archive.org";
       }
 
@@ -2735,9 +2735,9 @@ if (window.archive_analytics) {
   }
 }
 </script>
-              <img src="//analytics.archive.org/0.gif?kind=track_js&track_js_case=control&cache_bust=457826180" />
+              <img src="//analytics.archive.org/0.gif?kind=track_js&track_js_case=control&cache_bust=2047926857" />
           <noscript>
-        <img src="//analytics.archive.org/0.gif?kind=track_js&track_js_case=disabled&cache_bust=1802821943" />
+        <img src="//analytics.archive.org/0.gif?kind=track_js&track_js_case=disabled&cache_bust=1769151100" />
       </noscript>
           <script>
         document.addEventListener('DOMContentLoaded', function() {
