@@ -6,9 +6,9 @@ ETag: "1547039199"
 Last-Modified: Sun, 11 Oct 2020 11:34:59 GMT
 Server: Akamai Resource Optimizer
 Vary: Accept-Encoding
-Cache-Control: max-age=78664
-Expires: Sat, 24 Oct 2020 19:03:43 GMT
-Date: Fri, 23 Oct 2020 21:12:39 GMT
+Cache-Control: max-age=57488
+Expires: Sat, 24 Oct 2020 18:47:21 GMT
+Date: Sat, 24 Oct 2020 02:49:13 GMT
 Content-Length: 1540
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=HIT
