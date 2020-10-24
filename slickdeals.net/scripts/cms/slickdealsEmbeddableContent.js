@@ -1,18 +1,17 @@
 HTTP/1.1 200 OK
 Content-Type: text/javascript
-Access-Control-Allow-Headers: x-requested-with, content-type, accept, sd-extension-client, sd-extension-version, sd-extension-user
-Access-Control-Allow-Origin: *
 ETag: "1479930332"
-Last-Modified: Sun, 11 Oct 2020 11:34:49 GMT
+Last-Modified: Mon, 19 Oct 2020 10:31:08 GMT
+Referrer-Policy: strict-origin-when-cross-origin
 Server: Akamai Resource Optimizer
 Vary: Accept-Encoding
-Cache-Control: max-age=57582
-Expires: Sat, 24 Oct 2020 18:48:57 GMT
-Date: Sat, 24 Oct 2020 02:49:15 GMT
+Cache-Control: max-age=150946
+Expires: Mon, 26 Oct 2020 10:31:53 GMT
+Date: Sat, 24 Oct 2020 16:36:07 GMT
 Content-Length: 7440
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=1
+Server-Timing: edge; dur=2
 Strict-Transport-Security: max-age=86400
 
 /**

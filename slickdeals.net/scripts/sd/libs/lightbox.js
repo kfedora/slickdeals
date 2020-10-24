@@ -1,17 +1,17 @@
 HTTP/1.1 200 OK
 Content-Type: text/javascript
 ETag: "15159747"
-Last-Modified: Sat, 17 Oct 2020 18:52:02 GMT
+Last-Modified: Mon, 19 Oct 2020 02:04:18 GMT
 Referrer-Policy: strict-origin-when-cross-origin
 Server: Akamai Resource Optimizer
 Vary: Accept-Encoding
-Cache-Control: max-age=57744
-Expires: Sat, 24 Oct 2020 18:51:42 GMT
-Date: Sat, 24 Oct 2020 02:49:18 GMT
+Cache-Control: max-age=101096
+Expires: Sun, 25 Oct 2020 20:41:05 GMT
+Date: Sat, 24 Oct 2020 16:36:09 GMT
 Content-Length: 9372
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=2
+Server-Timing: edge; dur=1
 Strict-Transport-Security: max-age=86400
 
 /*!

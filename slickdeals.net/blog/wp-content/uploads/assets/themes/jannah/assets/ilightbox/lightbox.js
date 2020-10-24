@@ -6,8 +6,8 @@ Server: Akamai Resource Optimizer
 X-Akamai-Path-Stats: [1:380:27620],[1:445:4294942851]
 Vary: Accept-Encoding
 Cache-Control: max-age=72896
-Expires: Sat, 24 Oct 2020 23:07:04 GMT
-Date: Sat, 24 Oct 2020 02:52:08 GMT
+Expires: Sun, 25 Oct 2020 12:51:48 GMT
+Date: Sat, 24 Oct 2020 16:36:52 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
