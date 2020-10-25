@@ -6,13 +6,13 @@ Server: Akamai Resource Optimizer
 X-Akamai-Path-Stats: [1:380:27620]
 Vary: Accept-Encoding
 Cache-Control: max-age=72896
-Expires: Mon, 26 Oct 2020 18:23:24 GMT
-Date: Sun, 25 Oct 2020 22:08:28 GMT
+Expires: Mon, 26 Oct 2020 15:37:20 GMT
+Date: Sun, 25 Oct 2020 19:22:24 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=1
+Server-Timing: edge; dur=2
 Strict-Transport-Security: max-age=86400
 
 /*! jQuery iLightBox (2.4.0) - Revolutionary Lightbox Plugin http:// www.ilightbox.net/  updated By TieLbas on 22/01/2020 */
