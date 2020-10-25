@@ -3,18 +3,18 @@ Server: Apache
 X-Frame-Options: sameorigin
 Content-Type: text/html;charset=UTF-8
 Content-Language: en-US
-serverid: web06
-X-Akamai-Transformed: 9 40972 0 pmb=mRUM,1
+serverid: web03
+X-Akamai-Transformed: 9 40973 0 pmb=mRUM,1
 Vary: Accept-Encoding
-Date: Sat, 24 Oct 2020 16:37:53 GMT
+Date: Sun, 25 Oct 2020 12:39:48 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
-Set-Cookie: JSESSIONID=3FDEAF7A8624425419C9E148982EACD0; Path=/; Secure; HttpOnly
-Set-Cookie: PIPELINE_SESSION_ID=c76718beb0914e1f961256be76309864; Domain=www.spirithalloween.com; Max-Age=2147483647; Expires=Thu, 11-Nov-2088 19:52:00 GMT; Path=/; Version=1; HttpOnly
+Set-Cookie: JSESSIONID=43D2A61275396EA8BCF38F343031F1E2; Path=/; Secure; HttpOnly
+Set-Cookie: PIPELINE_SESSION_ID=b7c64c1da6034a929dd35a6aec4ef857; Domain=www.spirithalloween.com; Max-Age=2147483647; Expires=Fri, 12-Nov-2088 15:53:55 GMT; Path=/; Version=1; HttpOnly
 Set-Cookie: LOCALE_ID=1; Domain=www.spirithalloween.com; Path=/; Version=1; HttpOnly
 Set-Cookie: LANGUAGE_ID=1; Domain=www.spirithalloween.com; Path=/; Version=1; HttpOnly
-Set-Cookie: SITE_VISITED_DATE=10/24/2020; Max-Age=2147483647; Expires=Thu, 11-Nov-2088 19:52:00 GMT; Path=/; Version=1; HttpOnly
+Set-Cookie: SITE_VISITED_DATE=10/25/2020; Max-Age=2147483647; Expires=Fri, 12-Nov-2088 15:53:55 GMT; Path=/; Version=1; HttpOnly
 
 
 
@@ -67,7 +67,7 @@ Set-Cookie: SITE_VISITED_DATE=10/24/2020; Max-Age=2147483647; Expires=Thu, 11-No
     <meta name="keywords" content="Spirit Halloween"/>
     <meta name="description" content="Shop Spirit Halloween for an incredible selection of Halloween Costumes, Halloween Decorations, Halloween Accessories, and Halloween Makeup. Fast shipping &amp; huge selection! *Shop Now &amp; Save*"/>
     <link href="https://www.spirithalloween.com" rel="canonical"/>
-                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"684918",ustr:"",originlat:"0",clientrtt:"5",ghostip:"23.64.3.38",ipv6:false,pct:"10",clientip:"52.148.184.247",requestid:"5a7dcf5",region:"35326",protocol:"",blver:14,akM:"g",akN:"ae",akTT:"O",akTX:"1",akTI:"5a7dcf5",ai:"239460",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"684918",ustr:"",originlat:"0",clientrtt:"4",ghostip:"184.27.179.182",ipv6:false,pct:"10",clientip:"40.65.111.230",requestid:"594053d",region:"17728",protocol:"",blver:14,akM:"g",akN:"ae",akTT:"O",akTX:"1",akTI:"594053d",ai:"239460",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
                     </head>
 <body id="home" class="desktop notMobile" data-userAgent='Wget/1.19.4 (linux&#45;gnu)' data-deviceType="Desktop" data-siteCode="spt">
 
@@ -183,7 +183,7 @@ Set-Cookie: SITE_VISITED_DATE=10/24/2020; Max-Age=2147483647; Expires=Thu, 11-No
                 // If current url is a command, we need to append the params submitted along with that command
                 
                     if (curURL.indexOf(".cmd") >=0 && curURL.indexOf(".cmd") == curURL.length - ".cmd".length) {
-                        destParam += '?' + 'affiliate_id=18097&utm_campaign=AFF%3APJ&utm_source=pepperjam&utm_medium=affiliate&utm_inex=e&utm_content=2-236930&click_id=3324111259&clickId=3324111259';
+                        destParam += '?' + 'affiliate_id=18097&utm_campaign=AFF%3APJ&utm_source=pepperjam&utm_medium=affiliate&utm_inex=e&utm_content=2-236930&click_id=3325002871&clickId=3325002871';
                     }
                 
 
@@ -270,7 +270,7 @@ Set-Cookie: SITE_VISITED_DATE=10/24/2020; Max-Age=2147483647; Expires=Thu, 11-No
     </div>
 
     <style>#countdownWrap{display:inline-block;line-height:14px;padding-right:15px;margin-right:15px;border-right:1px solid #d9d9d9}body.tablet #countdownWrap{padding-right:0;border-right:0 none}#itsScaryImg{display:block;width:188px}body.tablet #itsScaryImg{display:inline-block;margin-right:4px}#countdownTxt{display:inline-block;font-weight:700;vertical-align:middle}body.tablet #countdownTxt{height:24px}span.SHIBDaysnumero{color:#f16531}</style><div id=countdownWrap><div id=itsScaryImg><img alt="So Much Fun It's Scary!®"class=image-scale src=//spirit.scene7.com/is/image/Spirit/so%5Fmuch%5Ffun%5Fits%5Fscary%5F2017?$PNG8$></div><div id=countdownText></div></div><script>(function(){var a=new Date;a.setUTCMonth(9);a.setUTCDate(31);a.setUTCFullYear(a.getFullYear());a.getTime()<=Date.now()&&a.setUTCFullYear(a.getFullYear()+1);a=Math.ceil((Date.parse(a)-Date.now())/864E5);a=0!==a?'Only <span style="color:#f16531;font-weight:bold;">'+a+"</span> Day"+(2<=a?"s":"")+" Until HALLOWEEN!":"Happy Halloween";document.querySelector("#countdownText").insertAdjacentHTML("afterbegin",a)})();</script><div class="cmsWrapper" id="Header-Area4" data-content-name="Header &#45; Area 4"><div id="spt_default_offer"></div></div><ul id="secondary-nav">
-            <input type="hidden" id="artGunURL" value='http://design-a-tee.spencersonline.com/apps/spencersonline/v32/index.php?s=e&k=spencersonline&b=h&g=123&c=5b793d8bac18302a74e800c8b54391dd' />
+            <input type="hidden" id="artGunURL" value='http://design-a-tee.spencersonline.com/apps/spencersonline/v32/index.php?s=e&k=spencersonline&b=h&g=123&c=5fc59e98ac18302749c80391a2e59290' />
 </ul>
     </div>
 <div class="clr"></div>
