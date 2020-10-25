@@ -6,13 +6,13 @@ ETag: "1341919724"
 Last-Modified: Mon, 19 Oct 2020 01:57:52 GMT
 Server: Akamai Resource Optimizer
 Vary: Accept-Encoding
-Cache-Control: max-age=45802
-Expires: Mon, 26 Oct 2020 01:57:26 GMT
-Date: Sun, 25 Oct 2020 13:14:04 GMT
+Cache-Control: max-age=354188
+Expires: Thu, 29 Oct 2020 19:44:23 GMT
+Date: Sun, 25 Oct 2020 17:21:15 GMT
 Content-Length: 3468
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=1
+Server-Timing: edge; dur=3
 Strict-Transport-Security: max-age=86400
 
 (function (factory)
