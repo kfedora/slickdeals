@@ -1,0 +1,103 @@
+HTTP/1.1 200 OK
+Server: Resin/3.1.14
+ETag: "AQG/f3IUAZU"
+Last-Modified: Sat, 25 Jan 2014 00:53:46 GMT
+Accept-Ranges: bytes
+Content-Type: text/html
+Content-Length: 3197
+Connection: close
+Date: Sun, 25 Oct 2020 11:57:58 GMT
+
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<meta charset=utf-8>
+<title>OOPS!  The offer you're looking for has expired.</title>
+<script src="js/modernizr-1.7.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" title="html5doctor.com Reset Stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/css3.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/general.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/grid.css" media="screen" />
+<!--<link rel="stylesheet" type="text/css" href="css/fontface.css" media="screen" />-->
+<link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
+</head>
+
+<body>
+<section class="row rounded main" style="text-align:center; padding:50px;">
+
+  <h1>OOPS! Your offer could not be found... </h1>
+  <a href="#" class="back button" style="font-size:24px">&laquo; Click here to go back to the previous page.</a> 
+ </section> 
+
+
+<footer class="row" style="text-align:center">Copyright ©<span id="year"></span> CJ &reg;, Inc. All rights reserved.
+ <a href="http://www.cj.com/privacy.html">Privacy Policy</a> | <a href="http://www.cj.com/terms">Terms of Use</a> | <a href="http://www.cj.com/our-offices">Contact Us</a> 
+  <!-- /bottom-footer-links -->
+  </div>
+</footer>
+<script type="text/javascript">
+    $(window).load(function() {
+      $('a.back').click(function(){
+        parent.history.back();
+        return false;
+	  });
+	  
+	  var parameters = location.search.substring(1);
+
+ var currentYear = (new Date).getFullYear();
+  $(document).ready(function() {
+  $("#year").text( (new Date).getFullYear() );
+  });
+	
+
+
+	
+
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+
+
+var PID = getUrlVars()["PID"];
+var AID = getUrlVars()["AID"];
+var SID = getUrlVars()["SID"];
+
+var tracking =  "?sid=AID_" + AID + "%26PID_" + PID  + "%26SID_" + SID;
+
+
+$('a.track').attr('href', function() {
+    return this.href + tracking;
+  });
+	  
+    });
+</script> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-26150092-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

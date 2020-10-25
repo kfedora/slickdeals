@@ -4,14 +4,14 @@ ETag: "3942043982"
 Last-Modified: Mon, 12 Oct 2020 18:53:33 GMT
 Server: Akamai Resource Optimizer
 Vary: Accept-Encoding
-Cache-Control: max-age=57729
-Expires: Mon, 26 Oct 2020 04:40:25 GMT
-Date: Sun, 25 Oct 2020 12:38:16 GMT
+Cache-Control: max-age=55531
+Expires: Mon, 26 Oct 2020 04:39:51 GMT
+Date: Sun, 25 Oct 2020 13:14:20 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=14
+Server-Timing: edge; dur=1
 Strict-Transport-Security: max-age=86400
 
 /*! jQuery v1.12.4 | (c) jQuery Foundation | jquery.org/license | WordPress 2019-05-16 */
