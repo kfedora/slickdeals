@@ -6,12 +6,12 @@ Referrer-Policy: strict-origin-when-cross-origin
 Server: Akamai Resource Optimizer
 Vary: Accept-Encoding
 Cache-Control: max-age=101096
-Expires: Tue, 27 Oct 2020 14:29:49 GMT
-Date: Mon, 26 Oct 2020 10:24:53 GMT
+Expires: Tue, 27 Oct 2020 15:18:30 GMT
+Date: Mon, 26 Oct 2020 11:13:34 GMT
 Content-Length: 9372
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=3
+Server-Timing: edge; dur=2
 Strict-Transport-Security: max-age=86400
 
 /*!
