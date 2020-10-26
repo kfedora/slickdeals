@@ -1,0 +1,1125 @@
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+ETag: "00af73fb81bea37bf67264ec571e0662:1603463165.171668"
+Last-Modified: Fri, 23 Oct 2020 14:26:05 GMT
+X-Akamai-Transformed: 9 - 0 pmb=mTOE,1mRUM,2
+Date: Mon, 26 Oct 2020 19:23:29 GMT
+Transfer-Encoding:  chunked
+Connection: keep-alive
+Connection: Transfer-Encoding
+Set-Cookie: cjevent=b8fcfce317c011eb80c701e70a1c0e0d; expires=Tue, 26-Oct-2021 19:23:29 GMT; path=/
+Server-Timing: cdn-cache; desc=HIT
+Server-Timing: edge; dur=1
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: bm_sz=B48642F33C33F5C5F99CF9B58AF3E3A2~YAAQRAMkF/MMe1l1AQAAeZBdZgnIdsHaI0zuzbOiJI+Jh9ByMdJigNUkVdxq3+6qTMgVQ957JQGN6AAaTLbBelOEp3EX+oawjx3y9LCg9BgDlqqjugX1GrhshZCTYwL7V5cs20XkxoxDH3ZHzzk+4M7OpHViswMuOxJWYb1j6ybAd34ayJDE/UkrbaGtHOSsd590o2TBs8NA; Domain=.cricketwireless.com; Path=/; Expires=Mon, 26 Oct 2020 23:23:29 GMT; Max-Age=14400; HttpOnly
+Set-Cookie: _abck=2E2EFA7F4618B5A0EE48664A693A31A1~-1~YAAQRAMkF/QMe1l1AQAAeZBdZgT96323+PFqI54jhbJ5l5DJOEYnbNyeh5GYb28kcfTJsGMDaT1k8vs+h+iJx3OhRAT+1VpH6WdbX2NJg2Jr86zO1eTO6wqBXspubxB2EFJ7z71LKhJqj71BP/DcPvotnxwgUzTGpJ0tFHio5pVSXJ6gjcrK+26iRQVNZWuDM/Kvm9feCasrOinwNmF492GEQ7eThSYu0gQ/aggXjPeyvLz6n5zNB0t9ScUFnrNR8TWSCRQi4h+EdhCt59Ww4YVuGPQL2Uc6+WQxKToPZmEVBfM1GYSqQnY32EvJo8n8DDdV~-1~-1~-1; Domain=.cricketwireless.com; Path=/; Expires=Tue, 26 Oct 2021 19:23:29 GMT; Max-Age=31536000; Secure
+
+<!DOCTYPE html><html lang="en"><head>
+    <!-- NEUSTAR SEGMENTATION PIXEL -->
+    <script src="/ui-pre/portallayout/js/libs/require.min.js" crossorigin></script>
+<script>var Pipe=(function(n,e){function t(){for(var n,e=c.length-1;e>=0;e--)if((n=c[e]).hasAttribute("data-pipe"))return n.removeAttribute("data-pipe"),n}function o(){0!==l.length||!n.readyState||"complete"!==n.readyState&&"interactive"!==n.readyState||v.onDone()}function r(n){return null!=n&&"object"==typeof n&&"function"==typeof n.then}function i(n,e,t,i){v.onBeforeInit(t,i);var a=n(e),f=function(){l.pop(),v.onAfterInit(t,i),o(t)};r(a)?a.then(f).catch(f):f()}function a(n,t){!1 in e||p.push({name:n,duration:Number(t),entryType:"tailor",startTime:e.now()||Date.now()-e.timing.navigationStart})}function f(n){return function(e){v[n]=e}}var u={},d={},c=n.getElementsByTagName("script"),l=[],p=[],s=function(){},v={onStart:s,onBeforeInit:s,onAfterInit:s,onDone:s};return{placeholder:function(n){u[n]=t()},start:function(n,e,o){d[n]=t(),e&&(l.push(n),v.onStart(o,n),require([e]))},end:function(n,e,r){var a,f=u[n],c=d[n],p=t(),s=c;if(f){do{a=s,s=s.nextSibling,f.parentNode.insertBefore(a,f)}while(a!==p);f.parentNode.removeChild(f)}for(a=c.nextSibling;a&&1!==a.nodeType;)a=a.nextSibling;a===p&&(a=void 0),c.parentNode.removeChild(c),p.parentNode.removeChild(p),e&&require([e],function(e){var t=e&&e.__esModule?e.default:e;if("function"!=typeof t)return l.pop(),v.onBeforeInit(r,n),v.onAfterInit(r,n),void o();i(t,a,r,n)})},loadCSS:/* @preserve - loadCSS: load a CSS file asynchronously. [c]2016 @scottjehl, Filament Group, Inc. Licensed MIT */
+function(e){function t(e){if(n.body)return e();setTimeout(function(){t(e)})}function o(){i.addEventListener&&i.removeEventListener("load",o),i.media="all"}var r,i=n.createElement("link"),a=(n.body||n.getElementsByTagName("head")[0]).childNodes;r=a[a.length-1];var f=n.styleSheets;i.rel="stylesheet",i.href=e,i.media="only x",t(function(){r.parentNode.insertBefore(i,r.nextSibling)});var u=function(n){for(var e=i.href,t=f.length;t--;)if(f[t].href===e)return n();setTimeout(function(){u(n)})};return i.addEventListener&&i.addEventListener("load",o),i.onloadcssdefined=u,u(o),i},onStart:f("onStart"),onBeforeInit:f("onBeforeInit"),onAfterInit:f("onAfterInit"),onDone:function(n){var e=v.onDone;v.onDone=function(){e(),n()}},addPerfEntry:a,addTTFMPEntry:function(n){a("ttfmp",n)},getEntries:function(){return p}}})(window.document,window.performance);</script>
+<script type="text/javascript">
+        // set neustar to default value so that we don't break Optimizely tests in there is an issue with callback
+        window.neustar = false;
+
+        //callback function – adds response as a global variable
+        function neustar_response(nue_resp) {
+            window.neustar = nue_resp;
+        }
+
+        var nue = document.createElement("script");
+        nue.src = 'https://aa.agkn.com/adscores/g.json?sid=9212284698&page=' + window.encodeURIComponent(window.location.href);
+        document.head.appendChild(nue);
+    </script>
+    <!-- OPTIMIZELY SCRIPT -->
+    <script src="https://cdn.optimizely.com/js/10679271662.js"></script>
+
+    <!-- Affirm -->
+    <script>
+        _affirm_config = {
+            public_api_key: 'YFEILS9GQLZYEVBE',
+            script: 'https://cdn1.affirm.com/js/v2/affirm.js'
+        };
+        (function(l,g,m,e,a,f,b){var d,c=l[m]||{},h=document.createElement(f),n=document.getElementsByTagName(f)[0],k=function(a,b,c){
+            return function(){a[b]._.push([c,arguments])}};c[e]=k(c,e,"set");
+            d=c[e];c[a]={};c[a]._=[];d._=[];c[a][b]=k(c,a,b);a=0;
+            for(b="set add save post open empty reset on off trigger ready setProduct".split(" ");
+            a<b.length;a++)d[b[a]]=k(c,e,b[a]);a=0;for(b=["get","token","url","items"];
+            a<b.length;a++)d[b[a]]=function(){};h.async=!0;h.src=g[f];n.parentNode.insertBefore(h,n);delete g[f];
+            d(g);l[m]=c})(window,_affirm_config,"affirm","checkout","ui","script","ready");
+    </script>
+   <!-- End Affirm -->
+
+    <!-- FullStory Snippet NON-ODA -->
+    <script>
+        window['_fs_debug'] = false;
+        window['_fs_host'] = 'rs.cricketwireless.com';
+        window['_fs_script'] = 'rs.cricketwireless.com/s/fs.js';
+        window['_fs_org'] = 'KX23T';
+        window['_fs_namespace'] = 'FS';
+        (function(m,n,e,t,l,o,g,y){
+            if (e in m) {if(m.console && m.console.log) { m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].');} return;}
+            g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s);};g.q=[];
+            o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;
+            y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);
+            g.identify=function(i,v,s){g(l,{uid:i},s);if(v)g(l,v,s)};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};
+            g.anonymize=function(){g.identify(!!0)};
+            g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};
+            g.log = function(a,b){g("log",[a,b])};
+            g.consent=function(a){g("consent",!arguments.length||a)};
+            g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};
+            g.clearUserCookie=function(){};
+            g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];
+            if(m[y])m[y]=function(){return g._w[y].apply(this,arguments)};
+            g._v="1.2.0";
+        })(window,document,window['_fs_namespace'],'script','user');
+    </script>
+
+    <!-- This script will report the page specific info back to the dataLayer -->
+    <script id="ga360" type="text/javascript">
+        const metadata = {"event":"trackEvent-pageLoad","documentTitle":"Quick Pay | Cricket Wireless","pageName":"Quick Pay | Cricket Wireless","pageType":"account page","siteId":"cricket_en"};
+        const userId = sessionStorage.getItem('ngStorage-UID');
+        const promoListType = "";
+        metadata.userId = userId;
+        metadata.userType = userId ? 'existing' : null;
+        dataLayer = window.dataLayer || [];
+        dataLayer.push(metadata);
+        dataLayer.push(promoListType);
+    </script>
+
+
+    <!-- Google Tag Manager -->
+    <script type="text/javascript">
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+            j.src='https://exmgr.cricketwireless.com/ckmain.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5WBVJR6');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta name="google-site-verification" content="9zR0QhayeHStM8cSDKXzF4X74nrSCY22OpqLXRusoJo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Quick Pay | Cricket Wireless</title><meta name="apple-itunes-app" content="app-id=626392754"><meta name="pageType" content="account page"><meta property="og:title" content="Quick Pay | Cricket Wireless"><meta property="og:image" content="https://www.cricketwireless.com/uiassets/cricketwirelesslogo.jpg"><meta property="og:type" content="website">    
+  <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false"}]);</script>
+  <script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("True"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="84KZK-5FSUD-DY9SJ-QUDVP-G7UKK",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);r.src="javascript:void(0)",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="width:0;height:0;border:0;display:none;",o=document.getElementsByTagName("script")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"84KZK-5FSUD-DY9SJ-QUDVP-G7UKK",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write("<bo"+'dy onload="document._l();">'),_.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""=="true"?1:0,t="",n="gsohph3ikg55ox4xeiyq-f-a23864f54-clientnsv4-s.akamaihd.net",i={"ak.v":"29","ak.cp":"286423","ak.ai":parseInt("184545",10),"ak.ol":"0","ak.cr":4,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"c48b212","ak.r":34125,"ak.a2":e,"ak.m":"a","ak.n":"essl","ak.bpcip":"52.156.119.0","ak.cport":1024,"ak.gh":"23.36.3.68","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1603740209","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==2eUY4yyolqszYP8NIHAmVuBkFVLa9GO3E+ylksXNLQ9iY9xg+8j/lss7hqyQnGi6Awx+Y0S8AKBRlRCiV4V7Ztabeg8TTuaGy3s1qVhqLmyFHU/K2oCgqd1rqNbrrCWcZuLgt9hE7rMY6ZHKvVSRJ0gYF24QF13F1MR1UfJmPONYB/Fxm9g7V0cQ/XoVkKsxEEFYtIE/zHdqr6mjwixs1Q+D87t914L5Tzfls+CgBcLKTpIOgcLoIstd5xOFSGUAAzWObNl7TgW0lDvN6jtrmChkhv7b4BlNRFHpc7ufA6P0umY2OIj8O9TVQm2bPAugoS9ak/eqrEPyNfCAtaqpHbp8LeZrXcm/YzarGXCuQZi/ebwcHWnb+Rzd+ZSkyYtk4w3Lhpwqh6Tk1wjYgYsAgBo5/2WVp7CtKAdZGGOUdSM=","ak.pv":"2504","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var _={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!_.i){var a=BOOMR.subscribe;a("before_beacon",_.av,null,null),a("onbeacon",_.rv,null,null),_.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head><body class="responsive">
+    <!--
+    DNS Prefetch to speed up page load
+    https://developer.mozilla.org/en-US/docs/Learn/Performance/dns-prefetch
+    -->
+    <link rel="preconnect" href="//www.googletagmanager.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com/">
+
+    <link rel="preconnect" href="//exmgr.cricketwireless.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//exmgr.cricketwireless.com/">
+
+    <link rel="preconnect" href="//www.google.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//www.google.com/">
+
+    <link rel="preconnect" href="//www.google-analytics.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//www.google-analytics.com/">
+
+    <link rel="preconnect" href="//cdn.optimizely.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//cdn.optimizely.com/">
+
+    <link rel="preconnect" href="//aa.agkn.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//aa.agkn.com/">
+
+    <link rel="preconnect" href="//cricket.inq.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//cricket.inq.com/">
+
+    <link rel="preconnect" href="//static.ada.support/" crossorigin="">
+    <link rel="dns-prefetch" href="//static.ada.support/">
+
+    <link rel="preconnect" href="//display.ugc.bazaarvoice.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//display.ugc.bazaarvoice.com/">
+
+    <link rel="preconnect" href="//analytics-static.ugc.bazaarvoice.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//analytics-static.ugc.bazaarvoice.com/">
+
+    <link rel="preconnect" href="//static.ads-twitter.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//static.ads-twitter.com/">
+
+    <link rel="preconnect" href="//analytics.twitter.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//analytics.twitter.com/">
+
+    <link rel="preconnect" href="//bat.bing.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//bat.bing.com/">
+
+    <link rel="preconnect" href="//connect.facebook.net/" crossorigin="">
+    <link rel="dns-prefetch" href="//connect.facebook.net/">
+
+    <link rel="preconnect" href="//www.gstatic.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//www.gstatic.com/">
+
+    <link rel="preconnect" href="//fullstory.com/" crossorigin="">
+    <link rel="dns-prefetch" href="//fullstory.com/">
+
+    <!-- Prefetch fonts -->
+    <link rel="prefetch" href="/uiassets/fonts/SimplyCricket-Demibold.woff2">
+    <link rel="prefetch" href="/uiassets/fonts/SimplyCricket-Book.woff2">
+    <link rel="prefetch" href="/uiassets/fonts/SimplyCricket-Bold.woff2">
+    <link rel="prefetch" href="/uiassets-fonts/glyphicons-halflings-regular.woff">
+    <link rel="prefetch" href="/uiassets-fonts/glyphicons-halflings-regular.ttf">
+    <link rel="prefetch" href="/uiassets/fonts/glyphicons-halflings-regular.woff">
+
+    <link rel="icon" href="/uiassets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/uiassets/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="48x48" href="/uiassets/icon-48.png">
+    <link rel="icon" sizes="96x96" href="/uiassets/icon-96.png">
+    <link rel="icon" sizes="144x144" href="/uiassets/icon-144.png">
+    <link rel="icon" sizes="192x192" href="/uiassets/icon-192.png">
+    <link rel="icon" sizes="256x256" href="/uiassets/icon-256.png">
+    <link rel="icon" sizes="384x384" href="/uiassets/icon-384.png">
+    <link rel="icon" sizes="512x512" href="/uiassets/icon-512.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/uiassets/apple-touch-icon-57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/uiassets/apple-touch-icon-60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/uiassets/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/uiassets/apple-touch-icon-76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/uiassets/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/uiassets/apple-touch-icon-120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/uiassets/apple-touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/uiassets/apple-touch-icon-167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/uiassets/apple-touch-icon-180.png">
+    <link rel="mask-icon" href="/uiassets/safari-pinned-tab.svg" color="#ff0000">
+    <meta name="msapplication-TileColor" content="#ff0000">
+    <meta name="msapplication-TileImage" content="/uiassets/ms-tile-144.png">
+    <!--<link rel="manifest" href="/manifest.json">-->
+
+
+    <link rel="stylesheet" href="/ui-pre/portallayout/bundles/js/cricketResetCSS.778d7747b2c048eb4797.css">
+    <link rel="stylesheet" href="/ui-pre/portallayout/bundles/js/cricketGlobalCss.63dca70b99ed5ddaff2e.css">
+    <link rel="stylesheet" href="/ui-pre/portallayout/bundles/js/global.0659fbba67edec0e446c.css">
+    <script>
+        // this is required for pre-fetching the resources and to handle the Chrome warnings
+        require.config({
+            onNodeCreated: function (node, config, name, url) {
+                // console.log(node);
+                // console.log(config);
+                // console.log(name);
+                // console.log(url);
+                node.attributes.crossorigin = true;
+                node.setAttribute("crossorigin", "anonymous");
+            }
+        });
+    </script>
+    <script>
+        // Determine if PaymentRequest is allowed based on the current document's permissions policy
+        let paymentRequestEnabled = true;
+        
+        try {
+            const methodData = [{
+                supportedMethods: 'basic-card',
+                data: {
+                    supportedNetworks: ['visa'],
+                }
+            }];
+
+            const details = {
+                total: {
+                    label: 'Total',
+                    amount: {
+                        currency: 'USD',
+                        value: '1.00'
+                    },
+                }
+            };
+
+            new PaymentRequest(methodData, details);
+        } catch (e) {
+            paymentRequestEnabled = false;
+        }
+
+        //initialize global flags
+        window.myAccountFlags = {
+            paypalPaymentsEnabled: false,
+            mhsPromoEnabled: true
+        };
+
+        const darkModeAccess = window.location.pathname.indexOf('ui-pre') !== -1;
+        const mhsEnabled = true;
+        const UnlCoreEnabled = true;
+        const ProtectTechEnabled = true;
+        const CartRedirectEnabled = true;
+        const NextGenCartEnabled = true;
+        const checkoutSecurityQuestions = [{"value":"SQ14","text":"Where did you go the first time you flew on a plane?"},{"value":"SQ15","text":"Who was your first boss?"},{"value":"SQ16","text":"In what city did you meet your spouse/significant other?"},{"value":"SQ17","text":"What was the first name of your best friend in high school?"}];
+        const skipIMEIEnabled = true;
+        const alternativePaymentEnabled = true;
+        const isApplePayEnabled = true || darkModeAccess;
+        const isGooglePayEnabled = paymentRequestEnabled && (false || darkModeAccess);
+        const isAffirmEnabled = false || darkModeAccess;
+        const isProgPaymentEnabled = false || darkModeAccess;
+        const saveCartEnabled = true || darkModeAccess;
+        
+        const appleMerchantId = 'merchant.PROD-cricketwireless';
+        const progPaymentStoreId = '114413';
+        const progPaymentMinAmount = 149.99;
+        const planUNLPromoActive = true;
+    </script>
+
+    <!-- For image lazyload we have to include the plugin in the head -->
+    <script type="application/javascript" src="/ui-pre/portallayout/js/libs/lazyload2.min.js"></script>
+
+    <!-- Below slot will house more specific stylesheets declared in the sub-templates -->
+    <script id="libs" src="/ui-pre/portallayout/bundles/js/libs.3f271b2c497f1c8075b2.js"></script>
+    <script id="global" src="/ui-pre/portallayout/bundles/js/global.2688c3e2ea6c263abb5c.js"></script>
+
+    <!-- These slots will contain stylesheets and any scripts that need to be loaded in the head -->
+    
+    
+
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WBVJR6"
+            height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+<!--
+    This is where the page templates get loaded
+    - header contains the navigation fragment based on the need of the template
+    - main-content contains the main section of the template
+    - footer will contain the footer fragment based on teh need of the template
+-->
+<div id="mainWrapper">
+    <header class="main nav no-subnav">
+    <script data-pipe>Pipe.start(0, "/ui-pre/portallayout/public/cart/js/build/cart.ee57bdf0ca066ef06c83.js", {"primary":true,"id":"cart","range":[0,0]})</script><script data-pipe>Pipe.end(0, "/ui-pre/portallayout/public/cart/js/build/cart.ee57bdf0ca066ef06c83.js", {"primary":true,"id":"cart","range":[0,0]})</script>
+    <link rel="stylesheet" href="/ui-pre/portallayout/public/mainnav/build/mainNavCSS.1a6c8881c37e36b3ea72.css"><script data-pipe>Pipe.start(10, "/ui-pre/portallayout/public/mainnav/build/mainnav.87d4a8f465e0fc339da5.js", {"primary":false,"id":"mainnav","range":[10,10]})</script>        <input type="hidden" id="keepAliveUrlId" value="/selfservice/rest/authentication/ticket/validate/" />
+        <input type="hidden" id="amssLogoutUrlId" value="/myaccount.html#/logout" />
+        <nav class="main-nav app-nav container-fluid no-gutter">
+            <div class="topbar container-fluid">
+                <div class="constrain-width-1024">
+                    <div class="row">
+                        <ul id="leftLinks">
+                            <li>
+                                <a id="cw-skip-navigation-link"
+                                   aria-label="Skip Navigation"
+                                   href="#"
+                                   onclick="cricket.mainNav.skipNavigation(event)">
+                                    <!-- Avoiding anchor link because Angular behaves differently -->
+                                    Skip Navigation
+                                </a>
+                            </li>
+                            <li class="col-xs-3 topRegSign">
+                                <a id="linkAmssLogin" href="/myaccount.html#/login">Sign In or Create
+                                    Account</a>
+                            </li>
+                        </ul>
+                        <ul id="rightLinks">
+                            <li class="topStoreLoc">
+                                <a href="/stores">Store Locator</a>
+                            </li>
+                            <li class="topQuickPay" id="QuickPayLink">
+                                <a class="quick-pay-btn myaiologin" href="/quickpay.html">Quick
+                                    Pay</a>
+                            </li>
+                            <li class="topActivate" id="ActivateLink">
+                                <a class="activate-btn myaiologin" href="/activate.html">Activate</a>
+                            </li>
+                            <li class="topEspanol" id="EspanolLink">
+                                <a href="https://espanol.cricketwireless.com/" class="myaiologin"
+                                   lang="es">Espa&ntilde;ol</a>
+                            </li>
+                            <li class="topChat">
+                                <a href="#" onclick="adaEmbed.toggle()">Chat</a>
+                            </li>
+                            <li class="topCart">
+                                <a id="cartValue" class="cart_icon" aria-label="Cart - 0 items in cart" href="/shop/cart.html">
+                                    <!-- <svg version="1.1" class="cart-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="24px" height="24px">
+        <style type="text/css">
+        	.st1 {fill:none;}
+        	@media (min-width: 991px) {
+        		#cartValue { position: relative; }
+        		.st0 {fill:#fff;}
+        		.cart-icon {
+        			position: absolute;
+        			left: 19px;
+        			top: 11px;
+        		}
+        	}
+        	@media (max-width: 990px) {
+        		#mobileCart { position: relative; }
+        		#mobileCart:hover .st0 {fill:#1d5c99;}
+        		#mobileCart:focus .st0 {fill:#1d5c99;}
+        		.st0 {fill:#1B75BB;}
+        		.cart-icon {
+        			position: absolute;
+        			left: 0px;
+        			top: 18px;
+        		}
+        	}
+        </style>
+        <g>
+        	<path class="st0" d="M16.14,17.95c1.25,0,2.27,1.01,2.27,2.27c0,1.25-1.01,2.27-2.27,2.27c-1.25,0-2.27-1.01-2.27-2.27
+        		C13.88,18.97,14.89,17.95,16.14,17.95 M10.22,17.95c-1.25,0-2.27,1.01-2.27,2.27c0,1.25,1.01,2.27,2.27,2.27
+        		c1.25,0,2.27-1.01,2.27-2.27C12.49,18.97,11.47,17.95,10.22,17.95 M19.23,15.62l3.13-6.55c0.36-0.76,0.04-1.67-0.72-2.03
+        		C20.87,6.67,19.96,7,19.6,7.76l-2.71,5.68h-6.88L8.53,2.83c-0.1-0.75-0.75-1.31-1.51-1.31H3.02C2.18,1.52,1.5,2.2,1.5,3.04
+        		c0,0.84,0.68,1.52,1.52,1.52h2.67l1.48,10.61c0.1,0.75,0.75,1.31,1.51,1.31h9.17C18.44,16.48,18.97,16.15,19.23,15.62z"/>
+        	<rect class="st1" width="24" height="24"/>
+        </g>
+        </svg>
+          -->
+                                    Cart (<span id="commerceItemscount" class="cart-items-count">0</span>)
+                                </a>
+                            </li>
+                            <li class="search">
+                                <form id="srch_form" autocomplete="off">
+                                    <!--input 2LNs-->
+                                    <label for="tags" class="sr-only">Start typing your search term</label>
+                                    <input aria-label="Start typing your search term" placeholder="Search" name="tags" id="tags"
+                                           type="search" tabindex="0" class="tag hide" value="" autocomplete="off" aria-required="required" required/>
+                                    <!--button-->
+                                    <div id="searchOpen" tabindex="0" aria-label="search" role="button"></div>
+                                    <div id="searchButtonDesktop" aria-hidden="true" role="button" aria-label="submit search" class="search-button hide"></div>
+                                    <div id="searchClose" class="hide" tabindex="0" aria-label="search close" role="button"></div>
+                                </form>
+                                <div class="clear"></div>
+                                <ul class="search-suggestions" id="search-suggestion-nav" style="display:none;">
+                                    <%-- Search Suggestions will be injected here --%>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="primary-nav container-fluid">
+                <div>
+                    <ul class="row">
+                            <li id="CricketWirelessHomeLink" class="home ">
+                                <a href="/" id="cw-homepage-logo" class="has-focus-white-stroke" aria-controls="" aria-expanded="" title="Cricket Wireless Shop Page Link">Cricket Wireless Home Page</a>
+                            
+                            </li>                    <li id="shopMenu" class="primNavOne has-subnav ">
+                                <a href="/cell-phones" id="" class="" aria-controls="" aria-expanded="" title="">Shop</a>
+                            
+                                    <div class="subnav">
+                                        <div class="subnav-inner">
+                                            <div>
+                                                <ul id="shopMenuSub" class="subMenu">
+                                                        <li class="subNavOne">
+                                                            <a href="/cell-phone-plans" title=""
+                                                               class=""
+                                                               title="">
+                                                                Plans &amp; Features
+                                                            </a>
+                                                        </li>                            <li class="subNavTwo">
+                                                            <a href="/cell-phones/smartphones" title=""
+                                                               class=""
+                                                               title="">
+                                                                Phones
+                                                            </a>
+                                                        </li>                            <li class="subNavThree">
+                                                            <a href="/data-device/Moxee-Mobile-Hotspot-black.html" title=""
+                                                               class=""
+                                                               title="">
+                                                                Data Device
+                                                            </a>
+                                                        </li>                            <li class="subNavFour">
+                                                            <a href="/cell-phones/bring-your-phone" title=""
+                                                               class=""
+                                                               title="">
+                                                                Bring Your Phone
+                                                            </a>
+                                                        </li>                            <li class="subNavFive">
+                                                            <a href="/cell-phone-accessories" title=""
+                                                               class=""
+                                                               title="">
+                                                                Accessories
+                                                            </a>
+                                                        </li>                            <li class="subNavSix">
+                                                            <a href="/current-phone-and-plan-deals" title=""
+                                                               class=""
+                                                               title="">
+                                                                Deals
+                                                            </a>
+                                                        </li>                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>                    <li id="myAccountMenu" class="primNavTwo has-subnav ">
+                                <a href="/myaccount.html#/" id="" class="" aria-controls="" aria-expanded="" title="My Cricket Wireless Account Link">My Account</a>
+                            
+                                    <div class="subnav">
+                                        <div class="subnav-inner">
+                                            <div>
+                                                <ul id="myAccountMenuSub" class="subMenu">
+                                                        <li class="subNavOne">
+                                                            <a href="/myaccount.html#/" title=""
+                                                               class=""
+                                                               title="">
+                                                                Account Summary
+                                                            </a>
+                                                        </li>                            <li class="subNavTwo">
+                                                            <a href="/myaccount.html#/payments" title=""
+                                                               class=""
+                                                               title="">
+                                                                Payments
+                                                            </a>
+                                                        </li>                            <li class="subNavThree">
+                                                            <a href="/myaccount.html#/billingHistory" title=""
+                                                               class=""
+                                                               title="">
+                                                                Billing History
+                                                            </a>
+                                                        </li>                            <li class="subNavFour">
+                                                            <a href="/myaccount.html#/usagedetails" title=""
+                                                               class=""
+                                                               title="">
+                                                                Usage
+                                                            </a>
+                                                        </li>                            <li class="subNavFive">
+                                                            <a href="/myaccount.html#/manageLines" title=""
+                                                               class=""
+                                                               title="">
+                                                                Plans &amp; Services
+                                                            </a>
+                                                        </li>                            <li class="subNavSix">
+                                                            <a href="/myaccount.html#/accountSettings" title=""
+                                                               class=""
+                                                               title="">
+                                                                Account Settings
+                                                            </a>
+                                                        </li>                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>                    <li id="supportMenu" class="primNavThree has-subnav ">
+                                <a href="/support" id="" class="" aria-controls="" aria-expanded="" title="">Support</a>
+                            
+                                    <div class="subnav">
+                                        <div class="subnav-inner">
+                                            <div>
+                                                <ul id="supportMenuSub" class="subMenu">
+                                                        <li class="subNavOne">
+                                                            <a href="/support/orders-and-activations" title=""
+                                                               class=""
+                                                               title="">
+                                                                New Orders
+                                                            </a>
+                                                        </li>                            <li class="subNavTwo">
+                                                            <a href="/support/account-management" title=""
+                                                               class=""
+                                                               title="">
+                                                                Manage My Account
+                                                            </a>
+                                                        </li>                            <li class="subNavThree">
+                                                            <a href="/support/plans-and-features" title=""
+                                                               class=""
+                                                               title="">
+                                                                Cricket Plan Options
+                                                            </a>
+                                                        </li>                            <li class="subNavFour">
+                                                            <a href="/support/billing-and-payments" title=""
+                                                               class=""
+                                                               title="">
+                                                                Billing & Payments
+                                                            </a>
+                                                        </li>                            <li class="subNavFive">
+                                                            <a href="/support/apps-and-services" title=""
+                                                               class=""
+                                                               title="">
+                                                                Apps & Services
+                                                            </a>
+                                                        </li>                            <li class="subNavSix">
+                                                            <a href="https://community.cricketwireless.com/" title=""
+                                                               class=""
+                                                               title="">
+                                                                Community Forums
+                                                            </a>
+                                                        </li>                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>                    <li id="cricketMenu" class="primNavFour has-subnav ">
+                                <a href="/why-cricket" id="" class="why_zig_link cricket-script has-focus-white-stroke" aria-controls="" aria-expanded="" title="Learn about our team, recent news, and career opportunities"><span class="textLink">Why Cricket?</span><span class="arrow"></span></a>
+                            
+                                    <div class="subnav">
+                                        <div class="subnav-inner">
+                                            <div>
+                                                <ul id="cricketMenuSub" class="subMenu">
+                                                        <li class="subNavOne">
+                                                            <a href="/why-cricket/our-team.html" title=""
+                                                               class=""
+                                                               title="">
+                                                                Our Team
+                                                            </a>
+                                                        </li>                            <li class="subNavTwo">
+                                                            <a href="/newsroom.html" title=""
+                                                               class=""
+                                                               title="">
+                                                                News
+                                                            </a>
+                                                        </li>                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>                    <li id="coverageMenu" class=" ">
+                                <a href="/map.html" id="" class="" aria-controls="" aria-expanded="" title="">Coverage</a>
+                            
+                            </li>            </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="itemAdded" class="itemAdded hidden" role="alert">
+            <div class="item-added-icon" aria-hidden="true">
+                <img src="/uiassets/item-added-icon.png" alt="Item added" height="30" width="30"/>
+            </div>
+            <div class="item-added-details" aria-live="assertive" role="alert">
+                <p id="itemAddedTitle" class="h4">Item Added</p>
+                <p id="itemAddedDescription">The [Manufacturer Device] is in your cart.</p>
+            </div>
+        </div>
+        
+        <nav id="mobileHeader" class="main-nav">
+            <div id="mobileNavContainer" class="hidden-print">
+                <div id="mobileNav">
+                    <ul class="left-links">
+                        <li><a id="mobileMenuLogo" class="has-focus-white-stroke" href="/">&nbsp;<span class="sr-only">Cricket Wireless Home Page</span></a></li>
+                    </ul>
+                    <ul class="right-links">
+                        <li><div id="inqC2CImgContainer_white"></div></li>
+                        <li>
+                            <a id="mobileCart" href="/shop/cart.html">
+                                <svg version="1.1" class="cart-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve" width="24px" height="24px">
+                                <style type="text/css">
+                                	.st1 {fill:none;}
+                                	@media (min-width: 991px) {
+                                		#cartValue { position: relative; }
+                                		.st0 {fill:#fff;}
+                                		.cart-icon {
+                                			position: absolute;
+                                			left: 19px;
+                                			top: 11px;
+                                		}
+                                	}
+                                	@media (max-width: 990px) {
+                                		#mobileCart { position: relative; }
+                                		#mobileCart:hover .st0 {fill:#1d5c99;}
+                                		#mobileCart:focus .st0 {fill:#1d5c99;}
+                                		.st0 {fill:#1B75BB;}
+                                		.cart-icon {
+                                			position: absolute;
+                                			left: 0px;
+                                			top: 18px;
+                                		}
+                                	}
+                                </style>
+                                <g>
+                                	<path class="st0" d="M16.14,17.95c1.25,0,2.27,1.01,2.27,2.27c0,1.25-1.01,2.27-2.27,2.27c-1.25,0-2.27-1.01-2.27-2.27
+                                		C13.88,18.97,14.89,17.95,16.14,17.95 M10.22,17.95c-1.25,0-2.27,1.01-2.27,2.27c0,1.25,1.01,2.27,2.27,2.27
+                                		c1.25,0,2.27-1.01,2.27-2.27C12.49,18.97,11.47,17.95,10.22,17.95 M19.23,15.62l3.13-6.55c0.36-0.76,0.04-1.67-0.72-2.03
+                                		C20.87,6.67,19.96,7,19.6,7.76l-2.71,5.68h-6.88L8.53,2.83c-0.1-0.75-0.75-1.31-1.51-1.31H3.02C2.18,1.52,1.5,2.2,1.5,3.04
+                                		c0,0.84,0.68,1.52,1.52,1.52h2.67l1.48,10.61c0.1,0.75,0.75,1.31,1.51,1.31h9.17C18.44,16.48,18.97,16.15,19.23,15.62z"/>
+                                	<rect class="st1" width="24" height="24"/>
+                                </g>
+                                </svg>
+                               <span aria-label="" class="cart-items-count">0</span>
+                            </a>
+                        </li>
+                        <li class="last">
+                            <a id="mobileMenuToggle" class="has-focus open" name="" href="#">
+                                <span class="sr-only">Open global navigation menu</span>&nbsp;
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div id="mobileLinksContainer">
+                <div id="mobileMenuBg">
+                    <div class="mobile-shadow"></div>
+                    <ul id="mobileLinks" class="row" aria-hidden="true">
+                        <li id="mobileLogin" class="links-LI">
+                            <button id="linkAmssLoginMobile" class="has-focus" data-href="/myaccount.html#/login">Sign In or<br />Create Account</button>
+                        </li>
+                        <li id="mobileSearch">
+                            <form id="srch_form_mobile">
+                                <!--input 2LNs-->
+                                <input title="search " placeholder="" name="search" id="mobileSearchTags" type="text" class="tag" value=""  />
+                                <input type="hidden" value="" id="allowedGroupsMobile" />
+                                <input type="hidden" value="Search" />
+                                <input type="hidden" value="basicSearch" />
+                                <input type="hidden" value="/search" />
+                                <input type="hidden" value="/search" />
+                                <!--button-->
+                                <div id="searchButtonMobile" role="button" tabindex="0" aria-label="search icon"
+                                     onclick="cricket.mainNav.mobileSearchSubmit()"
+                                     onkeypress="cricket.mainNav.mobileSearchButtonKeypress(event)"  class="search-button"></div>
+                                <div class="clear"></div>
+                            </form>
+                        </li>
+        
+                            <li id="mobile-CricketWirelessHomeLink" class="links-LI">
+                                <a href="/"
+                                   title="cw-homepage-logo"
+                                   class="parent-link "
+                                   aria-expanded="false"
+                                   role="button">
+                                    Home
+                                </a>
+                            
+                            </li>
+                            <li id="mobile-shopMenu" class="links-LI">
+                                <a href="#"
+                                   title=""
+                                   class="parent-link mobile-accordion"
+                                   aria-expanded="false"
+                                   role="button">
+                                    Shop
+                                </a>
+                            
+                                    <ul class="mobile-accordion-content" aria-hidden="true">
+                                            <li class="subNavOne">
+                                                <a href="/cell-phone-plans" title="">
+                                                    Plans &amp; Features
+                                                </a>
+                                            </li>                <li class="subNavTwo">
+                                                <a href="/cell-phones/smartphones" title="">
+                                                    Phones
+                                                </a>
+                                            </li>                <li class="subNavThree">
+                                                <a href="/data-device/Moxee-Mobile-Hotspot-black.html" title="">
+                                                    Data Device
+                                                </a>
+                                            </li>                <li class="subNavFour">
+                                                <a href="/cell-phones/bring-your-phone" title="">
+                                                    Bring Your Phone
+                                                </a>
+                                            </li>                <li class="subNavFive">
+                                                <a href="/cell-phone-accessories" title="">
+                                                    Accessories
+                                                </a>
+                                            </li>                <li class="subNavSix">
+                                                <a href="/current-phone-and-plan-deals" title="">
+                                                    Deals
+                                                </a>
+                                            </li>        </ul>
+                            </li>
+                            <li id="mobile-myAccountMenu" class="links-LI">
+                                <a href="#"
+                                   title=""
+                                   class="parent-link mobile-accordion"
+                                   aria-expanded="false"
+                                   role="button">
+                                    My Account
+                                </a>
+                            
+                                    <ul class="mobile-accordion-content" aria-hidden="true">
+                                            <li class="subNavOne">
+                                                <a href="/myaccount.html#/" title="">
+                                                    Account Summary
+                                                </a>
+                                            </li>                <li class="subNavTwo">
+                                                <a href="/myaccount.html#/payments" title="">
+                                                    Payments
+                                                </a>
+                                            </li>                <li class="subNavThree">
+                                                <a href="/myaccount.html#/billingHistory" title="">
+                                                    Billing History
+                                                </a>
+                                            </li>                <li class="subNavFour">
+                                                <a href="/myaccount.html#/usagedetails" title="">
+                                                    Usage
+                                                </a>
+                                            </li>                <li class="subNavFive">
+                                                <a href="/myaccount.html#/manageLines" title="">
+                                                    Plans &amp; Services
+                                                </a>
+                                            </li>                <li class="subNavSix">
+                                                <a href="/myaccount.html#/accountSettings" title="">
+                                                    Account Settings
+                                                </a>
+                                            </li>        </ul>
+                            </li>
+                            <li id="mobile-supportMenu" class="links-LI">
+                                <a href="#"
+                                   title=""
+                                   class="parent-link mobile-accordion"
+                                   aria-expanded="false"
+                                   role="button">
+                                    Support
+                                </a>
+                            
+                                    <ul class="mobile-accordion-content" aria-hidden="true">
+                                            <li class="subNavOne">
+                                                <a href="/support" title="">
+                                                    Overview
+                                                </a>
+                                            </li>                <li class="subNavTwo">
+                                                <a href="/support/orders-and-activations" title="">
+                                                    New Orders
+                                                </a>
+                                            </li>                <li class="subNavThree">
+                                                <a href="/support/account-management" title="">
+                                                    Manage My Account
+                                                </a>
+                                            </li>                <li class="subNavFour">
+                                                <a href="/support/plans-and-features" title="">
+                                                    Cricket Plan Options
+                                                </a>
+                                            </li>                <li class="subNavFive">
+                                                <a href="/support/billing-and-payments" title="">
+                                                    Billing & Payments
+                                                </a>
+                                            </li>                <li class="subNavSix">
+                                                <a href="/support/apps-and-services" title="">
+                                                    Apps & Services
+                                                </a>
+                                            </li>                <li class="subNavSeven">
+                                                <a href="https://community.cricketwireless.com/" title="">
+                                                    Community Forums
+                                                </a>
+                                            </li>        </ul>
+                            </li>
+                            <li id="mobile-cricketMenu" class="links-LI">
+                                <a href="#"
+                                   title=""
+                                   class="parent-link mobile-accordion"
+                                   aria-expanded="false"
+                                   role="button">
+                                    <span class="textLink">Why Cricket?</span><span class="arrow"></span>
+                                </a>
+                            
+                                    <ul class="mobile-accordion-content" aria-hidden="true">
+                                            <li class="subNavOne">
+                                                <a href="/why-cricket" title="">
+                                                    Overview
+                                                </a>
+                                            </li>                <li class="subNavTwo">
+                                                <a href="/why-cricket/our-team.html" title="">
+                                                    Our Team
+                                                </a>
+                                            </li>                <li class="subNavThree">
+                                                <a href="/newsroom.html" title="">
+                                                    News
+                                                </a>
+                                            </li>        </ul>
+                            </li>
+                            <li id="mobile-coverageMenu" class="links-LI">
+                                <a href="/map.html"
+                                   title=""
+                                   class="parent-link "
+                                   aria-expanded="false"
+                                   role="button">
+                                    Coverage
+                                </a>
+                            
+                            </li>
+        
+                        <!-- Store Locator Link -->
+                        <li id="mobileStore" class="links-LI">
+                            <a href="/stores.html" name="Store Coverage">Store Locator</a>
+                        </li>
+        
+                        <!-- QuickPay Link -->
+                        <li id="mobileQuickPay" class="links-LI">
+                            <a href="/quickpay.html" name="QuickPay">QuickPay</a>
+                        </li>
+        
+                        <!-- Activation Link -->
+                        <li id="mobileActivations" class="links-LI">
+                            <a href="/activate.html" name="Activate">Activate</a>
+                        </li>
+        
+                        <li id="mobileEspanol" class="links-LI">
+                            <a name="Mobile Espanol" href="https://espanol.cricketwireless.com/" class="myaiologin">Espa&ntilde;ol</a>
+                        </li>
+                        <li id="mobileChatLI" class="links-LI hidden-sm visible-xs">
+                            <div id="inqC2CImgContainer_side"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="container-fluid lineConfigurationNav no-gutter inactiveNav">
+            <div class="clear"></div>
+            <div class="primary-nav container-fluid">
+                <div class="row">
+                    <ul class="col-xs-5 leftCol">
+                        <li id="CricketWirelessHomeLink" class="home">
+                            <a href="/" id="cw-homepage-logo" class="has-focus-white-stroke"
+                               title="Cricket Wireless Home Page"></a>
+                        </li>
+                    </ul>
+                    <ul class="col-xs-7 lineInfo">
+                        <li id="cartLineNumber" class="hidden"></li>
+                        <li id="removeLine"><a href="javascript:void(0)" role="button" data-toggle="modal"
+                                               data-target="#removeLineModal" class="remove-line cato-focussed"
+                                               aria-label="Remove Line">Remove Line</a></li>
+                        <span class="has-focus-white-stroke lineNumber" aria-controls="" aria-expanded="" title=""></span>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="itemAdded" class="itemAdded hidden" role="alert">
+            <div class="item-added-icon" aria-hidden="true">
+                <img src="/uiassets/item-added-icon.png" alt="Item added" height="30" width="30"/>
+            </div>
+            <div class="item-added-details" aria-live="assertive" role="alert">
+                <p id="itemAddedTitle" class="h4">Item Added</p>
+                <p id="itemAddedDescription">The [Manufacturer Device] is in your cart.</p>
+            </div>
+        </div>
+        <nav class="container-fluid main amazon-nav prePurchasedNRFlow no-gutter inactiveNav">
+            <div class="amazon-nav-topbar container-fluid">
+                <div class="constrain-width-1024">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a href="/" class="back "><span>&lt; Back to cricketwireless.com</span></a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="amazon-nav-bottombar container-fluid">
+                <div class="constrain-width-1024">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <img src="/uiassets/logo_cricket_green_line_small.png" width="142" height="31" class="logo-amazon" alt="Cricket logo for Amazon navigation.">
+                            <p class="h4">SIM Card Setup</p>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+<script data-pipe>Pipe.end(10, "/ui-pre/portallayout/public/mainnav/build/mainnav.87d4a8f465e0fc339da5.js", {"primary":false,"id":"mainnav","range":[10,10]})</script>
+</header>
+
+
+
+    <div class="main">
+    <div class="container-fluid" id="container" tabindex="-1">
+        <link rel="stylesheet" href="/ui-pre/portallayout/public/myaccount/quickpay.bbba8474338b701276e7.css"><script data-pipe>Pipe.start(20, "/ui-pre/portallayout/public/myaccount/quickpay.f03572233ac5b1f79fe1.js", {"primary":false,"id":"myaccount","range":[20,20]})</script><section id="app-container" class="amss-app-container subnav-margin-fix main">
+
+    <server-errors></server-errors>
+
+    <div role="main" aria-busy="{{!!routeChangeInEffect}}" ui-view animation-event-aggregator send-focus-to="[animation-end-focus]" animation-running-message="Animating" animation-complete-message="Animation complete" class="clearfix"></div>
+
+    <spinner></spinner>
+</section><script data-pipe>Pipe.end(20, "/ui-pre/portallayout/public/myaccount/quickpay.f03572233ac5b1f79fe1.js", {"primary":false,"id":"myaccount","range":[20,20]})</script>
+    </div>
+</div>
+
+
+    <footer class="footer">
+    <link rel="stylesheet" href="/ui-pre/portallayout/public/footer/js/build/footer.552c4dca3bb53ab25112.css"><script data-pipe>Pipe.start(30, "/ui-pre/portallayout/public/footer/js/build/footer.fb2e480fd1fb066eeddd.js", {"primary":false,"id":"footer","range":[30,30]})</script>        
+            <div class="parbase cms-base-footer">
+                <div class="constrain-width-1024">
+                    <div class="row">
+                        <div id="cricketNation" class="footer-column col-lg-4 col-md-5 col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <p class="h5">Join the Cricket Nation</p>
+                                </div>
+                        
+                                <div class="col-xs-3 social-icons facebook">
+                                    <a title="Cricket on Facebook" aria-label="facebook" class="has-focus" href="https://www.facebook.com/cricketwireless">
+                                        <img tabindex="-1" src="/uiassets/icon_facebook.png" alt="Cricket on Facebook" class="img-responsive">
+                                    </a>
+                                </div>
+                        
+                                <div class="col-xs-3 social-icons twitter">
+                                    <a title="Cricket on Twitter" aria-label="twitter" class="has-focus" href="https://twitter.com/CricketNation">
+                                        <img tabindex="-1" src="/uiassets/icon_twitter.png" alt="Cricket on Twitter" class="img-responsive">
+                                    </a>
+                                </div>
+                        
+                                <div class="col-xs-3 social-icons instagram">
+                                    <a title="Cricket on Instagram" aria-label="instagram" class="has-focus" href="http://instagram.com/cricketwireless">
+                                        <img tabindex="-1" src="/uiassets/icon_instagram.png" alt="Cricket on Instagram" class="img-responsive">
+                                    </a>
+                                </div>
+                        
+                                <div class="col-xs-3 social-icons youtube">
+                                    <a title="Cricket on YouTube" aria-label="youtube" class="has-focus" href="https://www.youtube.com/user/CricketNation">
+                                        <img tabindex="-1" src="/uiassets/icon_youtube.png" alt="Cricket on YouTube" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear hidden-lg"></div>
+                            <div class="footer-column footer-links col-lg-3 col-md-4 col-xs-12">
+                                <p class="h5">About Us</p>
+                                <ul>
+                                            <li class="">
+                                                <a title="News - Link"
+                                                   aria-label="News"
+                                                   href="/newsroom.html">
+                                                    News
+                                                </a>
+                                            </li>
+                                            <li class="standard">
+                                                <a title="Careers - Link"
+                                                   aria-label="Careers"
+                                                   href="https://www.att.jobs/category/cricket-wireless-jobs/117/29173/1">
+                                                    Careers
+                                                </a>
+                                            </li>
+                                            <li class="standard">
+                                                <a title="Become an Authorized Retailer - Link"
+                                                   aria-label="Become an Authorized Retailer"
+                                                   href="/become-a-dealer">
+                                                    Become an Authorized Retailer
+                                                </a>
+                                            </li>
+                                            <li class="standard">
+                                                <a title="Contact Us - Link"
+                                                   aria-label="Contact Us"
+                                                   href="/contactus">
+                                                    Contact Us
+                                                </a>
+                                            </li>
+                                            <li class="standard">
+                                                <a title="Blog - Link"
+                                                   aria-label="Blog"
+                                                   href="https://www.cricketwireless.com/newsroom/blog.html">
+                                                    Blog
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="Chat - Link"
+                                                   aria-label="Chat"
+                                                   href="/#">
+                                                    Chat
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <div class="footer-column footer-links col-lg-3 col-md-4 col-xs-12">
+                                <p class="h5">Legal</p>
+                                <ul>
+                                            <li class="standard">
+                                                <a title="Important Legal Info - Link"
+                                                   aria-label="Important Legal Info"
+                                                   href="/legal-info/legal-information.html">
+                                                    Important Legal Info
+                                                </a>
+                                            </li>
+                                            <li class="standard">
+                                                <a title="Advertising Choices - Link"
+                                                   aria-label="Advertising Choices"
+                                                   href="https://info.evidon.com/pub_info/7723">
+                                                    Advertising Choices
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="Terms of Use - Link"
+                                                   aria-label="Terms of Use"
+                                                   href="/legal-info/website-terms-of-use.html">
+                                                    Terms of Use
+                                                </a>
+                                            </li>
+                                            <li class="standard">
+                                                <a title="Do Not Sell My Personal Information - Link"
+                                                   aria-label="Do Not Sell  My Personal Information"
+                                                   href="/legal-info/california-consumer-privacy-act.html">
+                                                    Do Not Sell My Personal Information
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="Privacy Policy - Link"
+                                                   aria-label="Privacy Policy"
+                                                   href="/privacy">
+                                                    Privacy Policy
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="Wireless Agreement - Link"
+                                                   aria-label="Wireless Agreement"
+                                                   href="/terms">
+                                                    Wireless Agreement
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="Accessibility - Link"
+                                                   aria-label="Accessibility"
+                                                   href="/support/accessibility">
+                                                    Accessibility
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                            <div class="footer-column footer-links col-lg-2 col-xs-3">
+                                <p class="h5">Learn More</p>
+                                <ul>
+                                            <li class="">
+                                                <a title="Link - Sitemap"
+                                                   aria-label="Sitemap"
+                                                   href="/sitemap.html">
+                                                    Sitemap
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="Link - Track My Order"
+                                                   aria-label="Track My Order"
+                                                   href="/track-order.html">
+                                                    Track My Order
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="Link - Unsubscribe"
+                                                   aria-label="Unsubscribe"
+                                                   href="/legal-info/customer-choices-and-controls-marketing-emails.html">
+                                                    Unsubscribe
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="Link - Phone Payment Plans"
+                                                   aria-label="Phone Payment Plans"
+                                                   href="/l/cell-phone-payment-plan.html">
+                                                    Phone Payment Plans
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="Link - Community Forums"
+                                                   aria-label="Community Forums"
+                                                   href="https://community.cricketwireless.com/">
+                                                    Community Forums
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a title="Link - Refer a Friend"
+                                                   aria-label="Refer a Friend"
+                                                   href="https://www.cricketwireless.com/l/refer-a-friend-promo.html">
+                                                    Refer a Friend
+                                                </a>
+                                            </li>
+                                </ul>
+                            </div>
+                        <div class="clear"></div>
+                        <div id="footerCopyright" class="col-xs-12">
+                            <span>&copy; <span id="copyrightYear">2020</span> Cricket Wireless LLC. All rights reserved.</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <button aria-label="Top of page" class="hidden-lg has-focus" id="mobileScrollIcon">
+                    <img src="/uiassets/scroll-top.png" alt="Top of page">
+                </button>
+            </div>
+    <script data-pipe>Pipe.end(30, "/ui-pre/portallayout/public/footer/js/build/footer.fb2e480fd1fb066eeddd.js", {"primary":false,"id":"footer","range":[30,30]})</script>
+</footer>
+
+</div>
+<!-- END CONTENT -->
+
+<!-- Nuance Live Chat JS file load -->
+<script type="text/javascript" charset="utf-8" src="https://cricket.inq.com/chatskins/launch/inqChatLaunch10004397.js"></script>
+
+<!-- Google recaptcha script -->
+<script type="text/javascript" charset="utf-8" src="https://www.google.com/recaptcha/api.js?onload=recaptchaLoaded&amp;render=explicit" async="" defer=""></script>
+
+
+<!-- This slot will contain the Handlebars for the modal specific to the page/template -->
+
+
+
+<script type="text/javascript" >var _cf = _cf || []; _cf.push(['_setFsp', true]);  _cf.push(['_setBm', true]);  _cf.push(['_setAu', '/static/de436843a70ti2575e1c6f8a72a827eb5']); </script><script type="text/javascript"  src="/static/de436843a70ti2575e1c6f8a72a827eb5"></script></body></html>

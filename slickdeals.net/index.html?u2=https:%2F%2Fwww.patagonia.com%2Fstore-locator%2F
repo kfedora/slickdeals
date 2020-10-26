@@ -1,32 +1,156 @@
 HTTP/1.1 200 OK
 Content-Type: text/html;charset=UTF-8
-x-dw-request-base-id: cBI1Q-vgll8BAAB_
+x-dw-request-base-id: cBK4wQdBl18BAAB_
 Cache-Control: no-cache, no-store, must-revalidate
 Pragma: no-cache
 Expires: Thu, 01 Dec 1994 16:00:00 GMT
 CF-Cache-Status: DYNAMIC
-cf-request-id: 0606f7b030000030dfbd1a7000000001
+cf-request-id: 06086f1b630000eb5de9af0000000001
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 Server: cloudflare
-CF-RAY: 5e84f5604bc830df-ORD
+CF-RAY: 5e874e0bdc84eb5d-LAX
 Vary: Accept-Encoding
-Date: Mon, 26 Oct 2020 14:45:00 GMT
+Date: Mon, 26 Oct 2020 21:35:03 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
-Date: Mon, 26 Oct 2020 15:59:39 GMT
-Server: Apache/2.4.29 (Ubuntu)
-Vary: Accept-Encoding,User-Agent
-X-Cache: Miss from cloudfront
-Via: 1.1 943c6a4d4ee43b18ee91634536f53eae.cloudfront.net (CloudFront)
-X-Amz-Cf-Pop: SEA19-C2
-X-Amz-Cf-Id: L1r0pqabIC0YeVG7_znvXE9EqyaONLB0DRyh8rIt5mZnkt_XZlT_qw==
+Connection: Transfer-Encoding
+Set-Cookie: __cq_dnt=0; Path=/; Secure; SameSite=None
+Set-Cookie: dw_dnt=0; Path=/; Secure; SameSite=None
 
-<html>
-<head><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"d4c890b218",applicationID:"9561187"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
-    <style type="text/css">
-        body {
-    background-color: rgb(54,103,174);
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Patagonia Store Locator: Find a Patagonia Store Near You</title>
+<meta charset=UTF-8>
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Looking for the closest place to grab our gear? Find Patagonia retail stores, dealers and environmental grants near you with our handy store locator." />
+<meta name="keywords" content="Patagonia is a designer of outdoor clothing and gear for the silent sports: climbing, surfing, skiing and snowboarding, fly fishing, and trail running" />
+<meta property="og:description" content="Looking for the closest place to grab our gear? Find Patagonia retail stores, dealers and environmental grants near you with our handy store locator." />
+<meta property="fb:pages" content="97830335456" />
+<meta name="google-site-verification" content="B7fGbkWCKKvVp_EsJRCQxezX6-0ikXgFgRHAY0gbnaE" />
+<link rel="canonical" href="https://www.patagonia.com/store-locator/" />
+<meta property="og:url" content="https://www.patagonia.com/store-locator/" />
+<link rel="icon" type="image/png" href="/on/demandware.static/Sites-patagonia-us-Site/-/default/dwe3afb1fa/images/favicons/favicon-16x16.png" sizes="16x16" />
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="7b341081-d1d9-4887-8cbf-6d335f9c7dd8"></script>
+<link href="https://fonts.googleapis.com/css?family=Lusitana:400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1603724815915/css/global.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1603724815915/css/storeLocator.css" />
+<script type="text/javascript">
+    (function(){
+        window.Urls = { staticPath: "/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1603724815915/" };
+        window.Settings = { locale: "en_US" };
+    }());
+</script>
+<script type="text/javascript" src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1603724815915/js/sprites.js"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1603724815915/js/init.js"></script>
+<script type="text/javascript">
+var monetateT = new Date().getTime();
+(function() {
+    var p = document.location.protocol;
+    if (p == "http:" || p == "https:") {
+        var m = document.createElement('script'); m.type = 'text/javascript'; m.async = true; m.src = (p == "https:" ? "https://s" : "http://") + "e.monetate.net/js/2/a-cb5eecc8/p/patagonia.com/custom.js";
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(m, s);
+    }
+})();
+</script>
+<script type="text/javascript">
+        var siteRegion = 'us';
+
+        /*
+        *	Global Monetate array for tracking
+        */
+        window.monetateQ = window.monetateQ || [];
+        
+        /*
+        *	Temporary storage for data: cartrows, breadcrumbs, products on the plp/clp/search pages
+        */
+        window.monetateData = window.monetateData || {};
+        window.monetateData.setPageType = "unknown";
+    </script>
+<script type="text/javascript">
+    assetManager.addDelayedAsset('/on/demandware.static/-/Library-Sites-PatagoniaShared/en_US/v1603724815915/catalog/colorHexCodes.css');
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    }
+};
+/* ]]> */
+// -->
+</script><script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bdjb-patagonia-us';
+CQuotient.realm = 'BDJB';
+CQuotient.siteId = 'patagonia-us';
+CQuotient.instanceType = 'prd';
+CQuotient.locale = 'en_US';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.cqeid='';
+CQuotient.cqlid='';
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  var value = c.substring('cquid='.length,c.length);
+		  if (value) {
+		  	var split_value = value.split("|", 3);
+		  	if (split_value.length > 0) {
+			  CQuotient.cquid=split_value[0];
+		  	}
+		  	if (split_value.length > 1) {
+			  CQuotient.cqeid=split_value[1];
+		  	}
+		  	if (split_value.length > 2) {
+			  CQuotient.cqlid=split_value[2];
+		  	}
+		  }
+	  }
+	}
 }
 CQuotient.getCQCookieId = function () {
 	if(window.CQuotient.cqcid == '')
@@ -92,7 +216,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
                     <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"813610",ustr:"",originlat:"0",clientrtt:"4",ghostip:"23.36.3.28",ipv6:false,pct:"10",clientip:"52.143.126.175",requestid:"16914510",region:"34125",protocol:"",blver:14,akM:"a",akN:"ae",akTT:"O",akTX:"1",akTI:"16914510",ai:"479456",ra:"false",pmgn:"",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
                     </head>
 <body>
-<script type="text/javascript" src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1602782150124/js/tests-body-open.js"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1603724815915/js/tests-body-open.js"></script>
 <main class="user-unregistered" data-action="null" data-querystring="null" data-country="US" data-siteId="patagonia-us">
 <section class="page-wrapper is-light">
 <div data-main-classes-inject data-classes="user-unregistered bopis-enabled header-store-enabled"></div>
@@ -455,7 +579,7 @@ Account
 <span class="h10">Order Status</span>
 </a>
 </li>
- <li>
+<li>
 <a href="https://www.patagonia.com/returns.html">
  <span class="h10">Returns &amp; Repairs</span>
 </a>
@@ -614,7 +738,6 @@ Account
 <li class="menu--category__womens-t-shirts js-cat-womens-t-shirts">
  <a href="/shop/womens-t-shirts" class="demi">T-Shirts</a>
 </li>
-
 <li class="menu--category__womens-pants-jeans js-cat-womens-pants-jeans">
 <a href="/shop/womens-pants" class="demi">Pants &amp; Jeans</a>
 </li>
@@ -641,7 +764,6 @@ Account
 <li class="menu--category__womens-socks-underwear js-cat-womens-socks-underwear">
 <a href="/shop/womens-bras-underwear" class="demi">Underwear &amp; Sports Bras</a>
 </li>
-
 <li class="menu--category__womens-socks-underwear-socks js-cat-womens-socks-underwear-socks">
 <a href="/shop/womens-socks" class="demi">Socks</a>
 </li>
@@ -733,7 +855,6 @@ Account
  <span class="h2">Kids' &amp; Baby</span>
 </a>
 <ul>
-
 <li class="menu--category__kids-all js-cat-kids-all">
 <a href="/shop/all-kids-baby" class="demi">Shop All</a>
 </li>
@@ -1130,8 +1251,8 @@ Account
 </li>
 <li>
 <a href="/shop/mens-accessories"><span class="h2">Hats &amp; Accessories</span></a>
-</li>
- <li>
+ </li>
+<li>
 <a href="/shop/mens-workwear-clothing"><span class="h2">Workwear</span></a>
 </li>
 <li>
@@ -1143,7 +1264,6 @@ Account
 <li><a href="https://www.patagonia.com/shop/mens-fly-fishing"><h2>Fly Fishing</h2></a></li>
 <li><a href="https://www.patagonia.com/shop/mens-trail-running"><h2>Trail Running</h2></a></li>
 <li><a href="https://www.patagonia.com/shop/mens-mountain-biking"><h2>Mountain Biking</h2></a></li>
-
 </ul>
 </div>
 </div>
@@ -1231,7 +1351,7 @@ Account
 <span class="h2">Collections</span>
 </a>
 </li>
- 
+
 <div class="d-none">
 <div class="navigation-primary__expanded-secondary-menu navigation-primary__expanded-section navigation-primary__expanded-section--big-list" data-parent-menu="collections">
 <ul class="navigation-primary__expanded-section--content-wrapper">
@@ -1399,7 +1519,7 @@ Account
 <a href="https://help.patagonia.com/s/">
 <span class="h5">Help Center</span>
 </a>
-</li>
+ </li>
 <li class="show-registered">
 <a href="https://www.patagonia.com/orders/">
 <span class="h5">Order History</span>
@@ -1424,7 +1544,7 @@ Account
 <a href="https://www.patagonia.com/product-care.html">
 <span class="h5">Product Care</span>
 </a>
-</li> 
+</li>
 <li>
  <a href="https://www.patagonia.com/pro-landing.html">
 <span class="h5">Pro Program</span>
@@ -1504,8 +1624,7 @@ Account
 <a href="http://www.patagoniaworks.com/" target="_blank">
 <span class="h10">Press</span>
 </a>
-</li>
-
+ </li>
 </ul>
 </div>
 </li>
@@ -1526,7 +1645,7 @@ Account
 <span class="h10">Help Center</span>
 </a>
 </li>
- <li class="show-registered">
+<li class="show-registered">
 <a href="https://www.patagonia.com/orders/">
 <span class="h10">Order History</span>
 </a>
@@ -1747,7 +1866,7 @@ Australia
 <option class="select-option" label="Austria" value="AT">
 Austria
 </option>
- <option class="select-option" label="Bangladesh" value="BD">
+<option class="select-option" label="Bangladesh" value="BD">
 Bangladesh
 </option>
 <option class="select-option" label="Belgium" value="BE">
@@ -1859,7 +1978,7 @@ Slovenia
 </option>
 <option class="select-option" label="South Korea" value="KR">
 South Korea
- </option>
+</option>
 <option class="select-option" label="Spain" value="ES">
 Spain
 </option>
@@ -1872,7 +1991,7 @@ Sweden
 <option class="select-option" label="Switzerland" value="CH">
 Switzerland
 </option>
-<option class="select-option" label="Taiwan" value="TW">
+ <option class="select-option" label="Taiwan" value="TW">
 Taiwan
 </option>
 <option class="select-option" label="United Kingdom" value="UK">
@@ -1910,7 +2029,7 @@ Virgin Islands (U.S.)
 </div>
 </div>
 <div class="store-info">
- <div class="store-name">
+<div class="store-name">
 <a href="/patagonia-santa-monica-1344-4th-street-santa-monica-ca-90401/store_924602111.html" title="Patagonia Santa Monica" class="alt-link">Patagonia Santa Monica</a>
 </div>
 <div class="store-addr">1344 4th St</div>
@@ -2008,7 +2127,7 @@ Virgin Islands (U.S.)
 </div>
 <div class="store-info">
 <div class="store-name">
- <a href="/patagonia-new-haven-1-broadway-new-haven-connecticut-06511/store_1734047832.html" title="Patagonia New Haven" class="alt-link">Patagonia New Haven</a>
+<a href="/patagonia-new-haven-1-broadway-new-haven-connecticut-06511/store_1734047832.html" title="Patagonia New Haven" class="alt-link">Patagonia New Haven</a>
 </div>
 <div class="store-addr">1 Broadway</div>
 <div class="store-location">New Haven CT 06511</div>
@@ -2068,8 +2187,8 @@ Virgin Islands (U.S.)
 </div>
 <h2 class="stores-header">Illinois</h2>
 <div class="stores">
-<div class="store-info">
- <div class="store-name">
+ <div class="store-info">
+<div class="store-name">
 <a href="/patagonia-magnificent-mile-48-e-walton-street-chicago-illinois-60611/store_1507382788.html" title="Patagonia Chicago The Magnificent Mile&reg;" class="alt-link">Patagonia Chicago The Magnificent Mile&reg;</a>
 </div>
 <div class="store-addr">48 E. Walton St.</div>
@@ -2105,7 +2224,7 @@ Virgin Islands (U.S.)
 <h2 class="stores-header">Massachusetts</h2>
 <div class="stores">
 <div class="store-info">
- <div class="store-name">
+<div class="store-name">
 <a href="/patagonia-boston-346-newbury-street-boston-massachusetts-02115/store_924604521.html" title="Patagonia Boston" class="alt-link">Patagonia Boston</a>
 </div>
 <div class="store-addr">346 Newbury St</div>
@@ -2154,7 +2273,7 @@ Virgin Islands (U.S.)
 <h2 class="stores-header">Nevada</h2>
 <div class="stores">
 <div class="store-info">
- <div class="store-name">
+<div class="store-name">
 <a href="/patagonia-outlet-reno-130-south-center-street-reno-nevada-89501/store_684455761.html" title="Patagonia Outlet Reno" class="alt-link">Patagonia Outlet Reno</a>
 </div>
 <div class="store-addr">130 South Center St</div>
@@ -2165,8 +2284,7 @@ Virgin Islands (U.S.)
 </div>
 </div>
 <h2 class="stores-header">New York</h2>
-<div class="stores">
-
+ <div class="stores">
 <div class="store-info">
 <div class="store-name">
 <a href="/patagonia-nyc-bowery-313-bowery-new-york-city-ny-10003/store_2020721762.html" title="Patagonia Bowery" class="alt-link">Patagonia Bowery</a>
@@ -2203,7 +2321,7 @@ Virgin Islands (U.S.)
 <a href="/patagonia-nyc-meatpacking-414-w-14th-street-new-york-city-ny-10014/store_1899290811.html" title="Patagonia Meatpacking" class="alt-link">Patagonia Meatpacking</a>
 </div>
 <div class="store-addr">414 W 14th Street</div>
- <div class="store-location">New York NY 10014</div>
+<div class="store-location">New York NY 10014</div>
 <div class="store-phone">
 <a href="tel:(212) 929-6512">p: (212) 929-6512</a>
 </div>
@@ -2448,6 +2566,7 @@ Sign Me Up
 <div class="modal fade modal__content modal__full modal-email-capture js-modal-email-capture-center js-email-capture-form-parent" id="modalEmailCapture" tabindex="-1" role="dialog" aria-labelledby="modalEmailCapture" aria-hidden="true">
 <div class="modal-dialog" role="document">
 <div class="modal-content">
+
 <div class="modal__close modal-close">
 <a href="javascript:;" class="cta-circle cta-circle-light cta-circle-outlined cta-close-x cta-close-x-light cta-close-x-outlined " data-cta-close-x data-modal-close data-modal-close>
 <svg>
@@ -2575,7 +2694,7 @@ Take Action
 <div class="cta-circle__hit-area"></div>
 </a>
 </div>
-</div>
+ </div>
 </div>
 </div>
 </div>
@@ -2643,45 +2762,66 @@ if (contextAUIDs.length == contextSecondaryAUIDs.length)
 for (i = 0; i < contextAUIDs.length; i++) {
 anchorsArray.push({id: contextAUIDs[i], sku: contextSecondaryAUIDs[i], type: contextTypes[i], alt_id: contextAltAUIDs[i]});
 }
-#gdpr-modal {
-    box-sizing: border-box;
-    z-index: 1000;
-    max-width: 80vw;
-    width: 750px;
-    position: static;
-    display: block;
-    padding: 24px;
-    border-radius: 4px;
-    overflow: auto;
-    outline: 0;
-    min-height: inherit;
-    max-height: inherit;
-    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
-    background: white;
-    color: rgba(0, 0, 0, 0.87);
-    font-family: sans-serif;
-    font-size: 14px;
-    line-height: 1.3em;
+} else {
+anchorsArray = [{id: contextAUID, sku: contextSecondaryAUID, type: contextType, alt_id: contextAltAUID}];
 }
-#gdpr-modal img {
-    height: 30px;
+var urlToCall = '/on/demandware.store/Sites-patagonia-us-Site/en_US/CQRecomm-Start';
+var params = {
+userId: cq.getCQUserId(),
+cookieId: cq.getCQCookieId(),
+emailId: cq.getCQHashedEmail(),
+loginId: cq.getCQHashedLogin(),
+anchors: anchorsArray,
+ccver: '1.02'
+};
+if (cq.getRecs) {
+cq.getRecs(cq.clientId, recommender, params, cb);
+} else {
+cq.widgets = cq.widgets || [];
+cq.widgets.push({
+recommenderName: recommender,
+parameters: params,
+callback: cb
+});
 }
-#consent {
+};
+function cb(parsed) {
+var arr = parsed[recommender].recs;
+if (arr && 0 < arr.length) {
+var filteredProductIds = '';
+for (i = 0; i < arr.length; i++) {
+filteredProductIds = filteredProductIds + 'pid' + i + '=' + encodeURIComponent(arr[i].id) + '&';
 }
-#learn-more {
-    visibility: hidden;
-    display: none;
+filteredProductIds = filteredProductIds.substring(0, filteredProductIds.length - 1);//to remove the trailing '&'
+var formData = 'auid=' + encodeURIComponent(contextAUID)
++ '&scid=' + slotConfigurationUUID
++ '&' + filteredProductIds;
+var request = new XMLHttpRequest();
+request.open('POST', urlToCall, true);
+request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+request.onreadystatechange = function() {
+if (this.readyState === 4) {
+// Got the product data from DW, showing the products now by changing the inner HTML of the DIV:
+var divId = 'cq_recomm_slot-' + slotConfigurationUUID;
+document.getElementById(divId).innerHTML = this.responseText;
+//find and evaluate scripts in response:
+var scripts = document.getElementById(divId).getElementsByTagName('script');
+if (null != scripts) {
+for (var i=0;i<scripts.length;i++) {//not combining script snippets on purpose
+var srcScript = document.createElement('script');
+srcScript.text = scripts[i].innerHTML;
+srcScript.asynch = scripts[i].asynch;
+srcScript.defer = scripts[i].defer;
+srcScript.type = scripts[i].type;
+srcScript.charset = scripts[i].charset;
+document.head.appendChild( srcScript );
+document.head.removeChild( srcScript );
 }
-.modal-content {
 }
-.buttons {
-    text-align: right;
 }
-button {
-    border: none;
-    outline: none;
-    padding: 10px 30px;
-    border-radius: 5px;
+};
+request.send(formData);
+request = null;
 }
 };
 })();
@@ -2708,7 +2848,7 @@ button {
 </div>
 <div class="modal-body">
 <div class="modal-country-selector__body" tabindex="0">
- <div class="modal-country-selector__copy">
+<div class="modal-country-selector__copy">
 <h6>Welcome.</h6>
 <h6>Please choose your country and language.</h6>
 </div>
@@ -2772,7 +2912,7 @@ button {
  "cart_shipping_promo_desc": [],
  "cart_merchtotal": "0.00",
  "cart_payment_type": "",
- "cart_id": "a11bb8b22972c233f95ce50ad9",
+ "cart_id": "cf9a360f242ddfe54d193c328e",
  "cart_quantity": "0",
  "cart_shipping": "0.00",
  "cart_tax": "0.00",
@@ -2818,12 +2958,12 @@ button {
 <script type="text/javascript">
 (function(){
 window.Urls = {
-staticPath: "/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1602782150124/",
+staticPath: "/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1603724815915/",
 orderHistory: "/on/demandware.store/Sites-patagonia-us-Site/en_US/OrderPipeline-GetHistory"
 };
 }());
 </script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1602782150124/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1603724815915/js/main.js"></script>
 <script>
     window.FormValidationErrors = {"VALIDATE_REQUIRED":"This field is required.","VALIDATE_REMOTE":"Please fix this field.","VALIDATE_EMAIL":"Email Address is not valid.","VALIDATE_URL":"Please enter a valid URL.","VALIDATE_DATE":"Please enter a valid date.","VALIDATE_DATEISO":"Please enter a valid date ( ISO ).","VALIDATE_NUMBER":"Please enter a valid number.","VALIDATE_DIGITS":"Please enter only digits.","VALIDATE_CREDITCARD":"Please enter a valid credit card number.","VALIDATE_EQUALTO":"Please enter the same value again.","VALIDATE_MAXLENGTH":"Please enter no more than {0} characters.","VALIDATE_MINLENGTH":"Please enter at least {0} characters.","VALIDATE_RANGELENGTH":"Please enter a value between {0} and {1} characters long.","VALIDATE_RANGE":"Please enter a value between {0} and {1}.","VALIDATE_MAX":"Please enter a value less than or equal to {0}.","VALIDATE_MIN":"Please enter a value greater than or equal to {0}.","VALIDATE_ORDER_NO":"Please enter a valid Order Number.","VALIDATE_ORDER_FIRST_NAME":"validate.order.firstname","VALIDATE_ORDER_LAST_NAME":"Last Name can only contain alphabetical characters","VALIDATE_NO_CREDIT_CARD":"Please remove credit card number and try again","VALIDATE_PRO_PAN":"Patagonia account number is too short, see instructions above and resubmit","VALIDATE_GIFTCARD_AMOUNT":"Gift Certificate can only be purchased with a minimum of 10 and maximum of 1000","VALIDATE_GIFTCARD_NUMBER":"Please enter at least 19 numeric characters.","VALIDATE_GIFTCARD_MESSAGE":"Message contains invalid characters","VALIDATE_GIFTCARD_PIN":"Please enter 4 numeric characters.","VALIDATE_PHONE_NUMBER":"Please specify a valid phone number (Example: 555 123 4567).","VALIDATE_PASSWORD":"Must include at least 1 number, 1 uppercase letter and 1 special character (e.g. !@#$%^&*). 8-25 characters.","VALIDATE_POSTAL":"Please enter a valid ZIP Code","VALIDATE_OWNER":"This appears to be a credit card number. Please enter the name of the card holder.","VALIDATE_NON_WHITE_SPACE":"validate.nonewhitespace","VALIDATE_SPECIAL_CHARACTERS":"Please remove invalid characters","VALIDATE_BYTE_CITY":"validate.bytecity","VALIDATE_NUMBER_BYTE":"validate.numberofbyte","VALIDATE_BYTE_EMAIL":"validate.numberofbyte","VALIDATE_BYTE_PHONE":"validate.invalidphonebyte"};
     window.EnableStripEmoji = true;
@@ -2842,80 +2982,21 @@ function trackPage() {
         }
     }catch(err) {};
 }
-button.no-background {
-    background: none;
-    color: #305B9B;
-}
-button.primary {
-    background-color: #2FAF6D;
-    color: #FFFFFF;
-}
-form {
-    margin: 0;
-}
-input[type="checkbox"] {
-    float: left;
-    background-color: #305B9B;
-    color: #305B9B;
-}
-label.checkbox-label {
-    display: block;
-    padding-left: 2em;
-}    </style>
-    <script type="text/javascript">
-        function switchModal(show, hide)
-{
-    document.getElementById(show).style = "visibility:visible;display:block;";
-    document.getElementById(hide).style = "visibility:hidden;display:none;";
-}    </script>
-</head>
-<body>
-<div id="gdpr-modal-container">
-    <div id="gdpr-modal">
-        <img src="/images/avantlink-black-nodomain.png">
-        <hr/>
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1603724815915/internal/jscript/dwanalytics-20.5.1.js" async="async" onload="trackPage()"></script>
 
-        <div id="consent">
-            <div class="modal-content">
-                <p>The website you just visited (http://slickdeals.net) has an advertising relationship with brands like Patagonia and has partnered with AvantLink to facilitate these relationships.</p>
-                <p>The website owner may earn a commission or other fee when you purchase something from these brands. AvantLink uses data tracking technologies (including cookies) to collect data that allows the website owner to be paid for these referrals.</p>
-                <p>By clicking “Continue”, you are providing consent to the use of data tracking technologies (including cookies) on this website and other websites that work with us. If you wish to decline, click “Learn More” below.</p>
-            </div>
-            <div class="buttons">
-                <form action="/click.php" method="get">
-                    <input type="hidden" name="cookie_consent" value="1">
-                                            <input type="hidden" name="ctc" value="3ffa2dfe17a411ebae9a065367ff376c0INT">
-                                            <input type="hidden" name="tt" value="cl">
-                                            <input type="hidden" name="merchant_id" value="50d08f80-6a3b-4a15-90d3-1b7c09b770b0">
-                                            <input type="hidden" name="website_id" value="25d00054-d522-4311-93da-e9184ad63b3e">
-                                            <input type="hidden" name="url" value="https://www.patagonia.com/store-locator/">
-                                        <button class="no-background" onclick="switchModal('learn-more', 'consent'); return false;">Learn More</button>
-                    <button type="submit" class="primary">Continue</button>
-                </form>
-            </div>
-        </div>
+<script src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1603724815915/internal/jscript/dwac-20.3.js" type="text/javascript" async="async"></script>
+<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 
-        <div id="learn-more">
-            <form action="/click.php" method="get">
-                <div class="modal-content">
-                    <p>By clicking “Continue”, you are providing consent to the use of data tracking technologies (including cookies) on this website and other websites that work with us.</p>
-                    <input type="checkbox" id="consent-checkbox" name="no_consent_checkbox">
-                    <label for="consent-checkbox" class="checkbox-label">Checking this box indicates that you DO NOT consent to AvantLink’s data collection. This means that the website you visited and other websites that work with us will not be paid for referring you to brands like Patagonia.</label>
-                </div>
-                <div class="buttons">
-                    <input type="hidden" name="cookie_consent" value="1">
-                                            <input type="hidden" name="ctc" value="3ffa2dfe17a411ebae9a065367ff376c0INT">
-                                            <input type="hidden" name="tt" value="cl">
-                                            <input type="hidden" name="merchant_id" value="50d08f80-6a3b-4a15-90d3-1b7c09b770b0">
-                                            <input type="hidden" name="website_id" value="25d00054-d522-4311-93da-e9184ad63b3e">
-                                            <input type="hidden" name="url" value="https://www.patagonia.com/store-locator/">
-                                        <button class="no-background" onclick="switchModal('consent', 'learn-more'); return false;">Go Back</button>
-                    <button type="submit" class="primary">Continue</button>
-                </div>
-            </form>
-        </div>
-
-    </div>
-</div>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d4c890b218","applicationID":"9561187","transactionName":"NAEEZRYDDxFXVUBQDg1LM0MNTQIOX1VfFxELFA==","queueTime":0,"applicationTime":14,"atts":"GEYHE14ZHB8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+if (!window.dw) dw = {};
+dw.applepay = {"action":{"cancel":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-Cancel","getRequest":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-GetRequest","onshippingcontactselected":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-ShippingContactSelected","onpaymentmethodselected":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-PaymentMethodSelected","onvalidatemerchant":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-ValidateMerchant","onpaymentauthorized":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-PaymentAuthorized","prepareBasket":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-PrepareBasket","onshippingmethodselected":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-ShippingMethodSelected"},"inject":{"directives":[{"css":"dw-apple-pay-button","query":"ISAPPLEPAY","action":"replace","copy":true}]}};
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1603724815915/internal/jscript/applepay.js" async="true"></script>
+</body>
 </html>

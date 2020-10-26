@@ -1,14 +1,625 @@
-HTTP/1.1 500 Internal Server Error
-Cache-Control: no-cache
-Content-Type: text/html
-Content-Length: 96
-Date: Mon, 26 Oct 2020 19:49:54 GMT
+HTTP/1.1 200 OK
+Server: Server
+Date: Mon, 26 Oct 2020 21:39:52 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
 Connection: keep-alive
-Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=31
-Server-Timing: origin; dur=15024
-Strict-Transport-Security: max-age=86400
+x-amz-rid: H3VKDACA6MY0NB79EJW8
+Set-Cookie: ap-fid=""; Domain=.woot.com; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/ap/; Secure
+X-XSS-Protection: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+x-ua-compatible: IE=edge
+Pragma: No-cache
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Vary: Content-Type,Accept-Encoding,X-Amzn-CDN-Cache,X-Amzn-AX-Treatment,User-Agent
 
-<html><body><h1>500 Internal Server Error</h1>
-An internal server error occured.
-</body></html>
+
+
+
+
+<!doctype html><html class="a-no-js" data-19ax5a9jf="dingo">
+  <head><script>var aPageStart = (new Date()).getTime();</script><meta charset="utf-8"/>
+    <title dir="ltr">Woot Sign-In</title>
+
+    
+      
+        <link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/61VQ9uFVICL.css?AUIClients/AuthenticationPortalWootGreenSkin#us.not-trident" />
+<link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/01SdjaY0ZsL._RC|419sIPk+mYL.css,41+ENBGOqUL.css_.css?AUIClients/AuthenticationPortalAssets" />
+<link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/11E08O3eXDL.css?AUIClients/CVFAssets" />
+
+        <script>
+(function(f,h,Q,A){function G(a){v&&v.tag&&v.tag(q(":","aui",a))}function x(a,b){v&&v.count&&v.count("aui:"+a,0===b?0:b||(v.count("aui:"+a)||0)+1)}function l(a){try{return a.test(navigator.userAgent)}catch(b){return!1}}function y(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)}function q(a,b,c,e){b=b&&c?b+a+c:b||c;return e?q(a,b,e):b}function H(a,b,c){try{Object.defineProperty(a,b,{value:c,writable:!1})}catch(e){a[b]=c}return c}function ta(a,b){var c=a.length,
+e=c,g=function(){e--||(R.push(b),S||(setTimeout(T,0),S=!0))};for(g();c--;)ca[a[c]]?g():(B[a[c]]=B[a[c]]||[]).push(g)}function ua(a,b,c,e,g){var d=h.createElement(a?"script":"link");y(d,"error",e);g&&y(d,"load",g);a?(d.type="text/javascript",d.async=!0,c&&/AUIClients|images[/]I/.test(b)&&d.setAttribute("crossorigin","anonymous"),d.src=b):(d.rel="stylesheet",d.href=b);h.getElementsByTagName("head")[0].appendChild(d)}function da(a,b){function c(c,e){function g(){ua(b,c,h,function(b){!I&&h?(h=!1,x("resource_retry"),
+g()):(x("resource_error"),a.log("Asset failed to load: "+c,I?"WARN":A));b&&b.stopPropagation?b.stopPropagation():f.event&&(f.event.cancelBubble=!0)},e)}if(ea[c])return!1;ea[c]=!0;x("resource_count");var h=!0;return!g()}if(b){var e=0,g=0;c.andConfirm=function(a,b){return c(a,function(){e++;b&&b.apply(this,arguments)})};c.confirm=function(){g++};c.getCsriCounters=function(){return{reqs:e,full:g}}}return c}function va(a,b,c){for(var e={name:a,guard:function(c){return b.guardFatal(a,c)},logError:function(c,
+d,e){b.logError(c,d,e,a)}},g=[],d=0;d<c.length;d++)J.hasOwnProperty(c[d])&&(g[d]=U.hasOwnProperty(c[d])?U[c[d]](J[c[d]],e):J[c[d]]);return g}function C(a,b,c,e,g){return function(d,h){function m(){var a=null;e?a=h:"function"===typeof h&&(p.start=D(),a=h.apply(f,va(d,k,l)),p.end=D());if(b){J[d]=a;a=d;for(ca[a]=!0;(B[a]||[]).length;)B[a].shift()();delete B[a]}p.done=!0}var k=g||this;"function"===typeof d&&(h=d,d=A);b&&(d=d?d.replace(fa,""):"__NONAME__",V.hasOwnProperty(d)&&k.error(q(", reregistered by ",
+q(" by ",d+" already registered",V[d]),k.attribution),d),V[d]=k.attribution);for(var l=[],n=0;n<a.length;n++)l[n]=a[n].replace(fa,"");var p=ga[d||"anon"+ ++wa]={depend:l,registered:D(),namespace:k.namespace};c?m():ta(l,k.guardFatal(d,m));return{decorate:function(a){U[d]=k.guardFatal(d,a)}}}}function ha(a){return function(){var b=Array.prototype.slice.call(arguments);return{execute:C(b,!1,a,!1,this),register:C(b,!0,a,!1,this)}}}function W(a,b){return function(c,e){e||(e=c,c=A);var g=this.attribution;
+return function(){z.push(b||{attribution:g,name:c,logLevel:a});var d=e.apply(this,arguments);z.pop();return d}}}function K(a,b){this.load={js:da(this,!0),css:da(this)};H(this,"namespace",b);H(this,"attribution",a)}function ia(){h.body?p.trigger("a-bodyBegin"):setTimeout(ia,20)}function E(a,b){a.className=X(a,b)+" "+b}function X(a,b){return(" "+a.className+" ").split(" "+b+" ").join(" ").replace(/^ | $/g,"")}function ja(a){try{return a()}catch(b){return!1}}function L(){if(M){var a={w:f.innerWidth||
+m.clientWidth,h:f.innerHeight||m.clientHeight};5<Math.abs(a.w-Y.w)||50<a.h-Y.h?(Y=a,N=4,(a=k.mobile||k.tablet?450<a.w&&a.w>a.h:1250<=a.w)?E(m,"a-ws"):m.className=X(m,"a-ws")):0<N&&(N--,ka=setTimeout(L,16))}}function xa(a){(M=a===A?!M:!!a)&&L()}function ya(){return M}function r(a,b){return"sw:"+(b||"")+":"+a+":"}function la(){ma.forEach(function(a){G(a)})}function n(a){ma.push(a)}function na(a,b,c,e){if(c){b=l(/Chrome/i)&&!l(/Edge/i)&&!l(/OPR/i)&&!a.capabilities.isAmazonApp&&!l(new RegExp(Z+"bwv"+
+Z+"b"));var g=r(e,"browser"),d=r(e,"prod_mshop"),f=r(e,"beta_mshop");!a.capabilities.isAmazonApp&&c.browser&&b&&(n(g+"supported"),c.browser.action(g,e));!b&&c.browser&&n(g+"unsupported");c.prodMshop&&n(d+"unsupported");c.betaMshop&&n(f+"unsupported")}}"use strict";var O=Q.now=Q.now||function(){return+new Q},D=function(a){return a&&a.now?a.now.bind(a):O}(f.performance),za=D(),t=f.AmazonUIPageJS||f.P;if(t&&t.when&&t.register)throw Error("A copy of P has already been loaded on this page.");var v=f.ue;
+G();G("aui_build_date:3.19.8-2020-08-04");var R=[],S=!1,T;T=function(){for(var a=setTimeout(T,0),b=O();R.length;)if(R.shift()(),50<O()-b)return;clearTimeout(a);S=!1};var ca={},B={},ea={},I=!1;y(f,"beforeunload",function(){I=!0;setTimeout(function(){I=!1},1E4)});var fa=/^prv:/,V={},J={},U={},ga={},wa=0,Z=String.fromCharCode(92),F,z=[],oa=f.onerror;f.onerror=function(a,b,c,e,g){g&&"object"===typeof g||(g=Error(a,b,c),g.columnNumber=e,g.stack=b||c||e?q(Z,g.message,"at "+q(":",b,c,e)):A);var d=z.pop()||
+{};g.attribution=q(":",g.attribution||d.attribution,d.name);g.logLevel=d.logLevel;g.attribution&&console&&console.log&&console.log([g.logLevel||"ERROR",a,"thrown by",g.attribution].join(" "));z=[];oa&&(d=[].slice.call(arguments),d[4]=g,oa.apply(f,d))};K.prototype={logError:function(a,b,c,e){b={message:b,logLevel:c||"ERROR",attribution:q(":",this.attribution,e)};if(f.ueLogError)return f.ueLogError(a||b,a?b:null),!0;console&&console.error&&(console.log(b),console.error(a));return!1},error:function(a,
+b,c,e){a=Error(q(":",e,a,c));a.attribution=q(":",this.attribution,b);throw a;},guardError:W(),guardFatal:W("FATAL"),guardCurrent:function(a){var b=z[z.length-1];return b?W(b.logLevel,b).call(this,a):a},log:function(a,b,c){return this.logError(null,a,b,c)},declare:C([],!0,!0,!0),register:C([],!0),execute:C([]),AUI_BUILD_DATE:"3.19.8-2020-08-04",when:ha(),now:ha(!0),trigger:function(a,b,c){var e=O();this.declare(a,{data:b,pageElapsedTime:e-(f.aPageStart||NaN),triggerTime:e});c&&c.instrument&&F.when("prv:a-logTrigger").execute(function(b){b(a)})},
+handleTriggers:function(){this.log("handleTriggers deprecated")},attributeErrors:function(a){return new K(a)},_namespace:function(a,b){return new K(a,b)}};var p=H(f,"AmazonUIPageJS",new K);F=p._namespace("PageJS","AmazonUI");F.declare("prv:p-debug",ga);p.declare("p-recorder-events",[]);p.declare("p-recorder-stop",function(){});H(f,"P",p);ia();if(h.addEventListener){var pa;h.addEventListener("DOMContentLoaded",pa=function(){p.trigger("a-domready");h.removeEventListener("DOMContentLoaded",pa,!1)},!1)}var m=
+h.documentElement,aa=function(){var a=["O","ms","Moz","Webkit"],b=h.createElement("div");return{testGradients:function(){b.style.cssText="background-image:-webkit-gradient(linear,left top,right bottom,from(#1E4),to(white));background-image:-webkit-linear-gradient(left top,#1E4,white);background-image:linear-gradient(left top,#1E4,white);";return~b.style.backgroundImage.indexOf("gradient")},test:function(c){var e=c.charAt(0).toUpperCase()+c.substr(1);c=(a.join(e+" ")+e+" "+c).split(" ");for(e=c.length;e--;)if(""===
+b.style[c[e]])return!0;return!1},testTransform3d:function(){var a=!1;f.matchMedia&&(a=f.matchMedia("(-webkit-transform-3d)").matches);return a}}}(),t=m.className,qa=/(^| )a-mobile( |$)/.test(t),ra=/(^| )a-tablet( |$)/.test(t),k={audio:function(){return!!h.createElement("audio").canPlayType},video:function(){return!!h.createElement("video").canPlayType},canvas:function(){return!!h.createElement("canvas").getContext},svg:function(){return!!h.createElementNS&&!!h.createElementNS("http://www.w3.org/2000/svg",
+"svg").createSVGRect},offline:function(){return navigator.hasOwnProperty&&navigator.hasOwnProperty("onLine")&&navigator.onLine},dragDrop:function(){return"draggable"in h.createElement("span")},geolocation:function(){return!!navigator.geolocation},history:function(){return!(!f.history||!f.history.pushState)},webworker:function(){return!!f.Worker},autofocus:function(){return"autofocus"in h.createElement("input")},inputPlaceholder:function(){return"placeholder"in h.createElement("input")},textareaPlaceholder:function(){return"placeholder"in
+h.createElement("textarea")},localStorage:function(){return"localStorage"in f&&null!==f.localStorage},orientation:function(){return"orientation"in f},touch:function(){return"ontouchend"in h},gradients:function(){return aa.testGradients()},hires:function(){var a=f.devicePixelRatio&&1.5<=f.devicePixelRatio||f.matchMedia&&f.matchMedia("(min-resolution:144dpi)").matches;x("hiRes"+(qa?"Mobile":ra?"Tablet":"Desktop"),a?1:0);return a},transform3d:function(){return aa.testTransform3d()},touchScrolling:function(){return l(/Windowshop|android|OS ([5-9]|[1-9][0-9]+)(_[0-9]{1,2})+ like Mac OS X|Chrome|Silk|Firefox|Trident.+?; Touch/i)},
+ios:function(){return l(/OS [1-9][0-9]*(_[0-9]*)+ like Mac OS X/i)&&!l(/trident|Edge/i)},android:function(){return l(/android.([1-9]|[L-Z])/i)&&!l(/trident|Edge/i)},mobile:function(){return qa},tablet:function(){return ra},rtl:function(){return"rtl"===m.dir}},u;for(u in k)k.hasOwnProperty(u)&&(k[u]=ja(k[u]));for(var ba="textShadow textStroke boxShadow borderRadius borderImage opacity transform transition".split(" "),P=0;P<ba.length;P++)k[ba[P]]=ja(function(){return aa.test(ba[P])});var M=!0,ka=0,
+Y={w:0,h:0},N=4;L();y(f,"resize",function(){clearTimeout(ka);N=4;L()});var sa={getItem:function(a){try{return f.localStorage.getItem(a)}catch(b){}},setItem:function(a,b){try{return f.localStorage.setItem(a,b)}catch(c){}}};m.className=X(m,"a-no-js");E(m,"a-js");!l(/OS [1-8](_[0-9]*)+ like Mac OS X/i)||f.navigator.standalone||l(/safari/i)||E(m,"a-ember");t=[];for(u in k)k.hasOwnProperty(u)&&k[u]&&t.push("a-"+u.replace(/([A-Z])/g,function(a){return"-"+a.toLowerCase()}));E(m,t.join(" "));m.setAttribute("data-aui-build-date",
+"3.19.8-2020-08-04");p.register("p-detect",function(){return{capabilities:k,localStorage:k.localStorage&&sa,toggleResponsiveGrid:xa,responsiveGridEnabled:ya}});l(/UCBrowser/i)||k.localStorage&&E(m,sa.getItem("a-font-class"));p.declare("a-event-revised-handling",!1);var w;try{w=navigator.serviceWorker}catch(a){G("sw:nav_err")}w&&(y(w,"message",function(a){a&&a.data&&x(a.data.k,a.data.v)}),w.controller&&w.controller.postMessage("MSG-RDY"));var ma=[];(function(a){var b=a.reg,c=a.unreg;w&&w.getRegistrations?
+(F.when("A","a-util").execute(function(a,b){na(a,b,c,"unregister")}),y(f,"load",function(){F.when("A","a-util").execute(function(a,c){na(a,c,b,"register");la()})})):(b&&(b.browser&&n(r("register","browser")+"unsupported"),b.prodMshop&&n(r("register","prod_mshop")+"unsupported"),b.betaMshop&&n(r("register","beta_mshop")+"unsupported")),c&&(c.browser&&n(r("unregister","browser")+"unsupported"),c.prodMshop&&n(r("unregister","prod_mshop")+"unsupported"),c.betaMshop&&n(r("unregister","beta_mshop")+"unsupported")),
+la())})({reg:{},unreg:{}});p.declare("a-fix-event-off",!1);x("pagejs:pkgExecTime",D()-za)})(window,document,Date);
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/61-6nKPKyWL._RC|11-BZEJ8lnL.js,01rpauTep4L.js,71lZadDvtjL.js_.js?AUIClients/AuthenticationPortalWootGreenSkin');
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/21G215oqvfL._RC|21OJDARBhQL.js,218GJg15I8L.js,31lucpmF4CL.js,21juQdw6GzL.js,21muxdgytlL.js,01X8mxV5RSL.js,51E5FrEwjUL.js_.js?AUIClients/AuthenticationPortalAssets');
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/01dTJcsqFWL.js?AUIClients/AuthenticationPortalInlineAssets');
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/3121k52PhPL.js?AUIClients/CVFAssets');
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/81POFmfr8CL.js?AUIClients/SiegeClientSideEncryptionAUI');
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-na.ssl-images-amazon.com/images/I/71bhHxJ5SeL.js?AUIClients/FWCIMAssets');
+</script>
+
+      
+
+      
+    
+  </head>
+
+  <body class="auth-wootgreen ap-locale-en_US a-m-us a-aui_157141-c a-aui_158613-c a-aui_72554-c a-aui_dropdown_187959-c a-aui_pci_risk_banner_210084-c a-aui_perf_130093-c a-aui_tnr_v2_180836-c a-aui_ux_145937-c"><div id="a-page"><script type="a-state" data-a-state="{&quot;key&quot;:&quot;a-wlab-states&quot;}">{}</script>
+    <div class="a-section a-padding-medium auth-workflow">
+      <div class="a-section a-spacing-none auth-navbar">
+        
+
+
+
+
+  
+
+
+<div class="a-section a-spacing-medium a-text-center">
+  
+    
+      
+        
+          <a class="a-link-nav-icon" tabindex="-1" href="https://www.woot.com/">
+            <img src="https://images-na.ssl-images-amazon.com/images/G/01/woot/images/wootLogo._CB485942410_.png" alt="Woot"/>
+          </a>
+        
+
+        
+      
+    
+
+    
+  
+</div>
+
+
+      </div>
+
+      <div id="authportal-center-section" class="a-section">
+        
+          
+          
+            <div id="authportal-main-section" class="a-section">
+              
+
+
+
+
+
+<div class="a-section a-spacing-base auth-pagelet-container">
+  
+    
+    
+      <div id="auth-cookie-warning-message" class="a-box a-alert a-alert-warning"><div class="a-box-inner a-alert-container"><h4 class="a-alert-heading">Please Enable Cookies to Continue</h4><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+        <p>
+          <a class="a-link-normal" href="/gp/help/customer/display.html/ref=ap_cookie_error_help?">
+            
+          </a>
+        </p>
+      </div></div></div>
+    
+  
+</div>
+
+<div class="a-section auth-pagelet-container">
+  
+
+
+
+
+
+
+
+<!-- Set cross domain sso variables to be used for making Ajax calls to central Identity domain -->
+
+
+<!-- Set cross domain sso variables to be used for making Ajax calls to central Identity domain -->
+
+
+<!-- show a warning modal dialog when the third party account is connected with Amazon -->
+
+
+
+  
+  
+    <div class="a-section a-spacing-base">
+      <div class="a-section">
+        
+        <form name="signIn" method="post" novalidate action="https://auth.woot.com/ap/signin" class="a-spacing-none">
+          
+            
+            
+              <input type="hidden" name="appActionToken" value="scIhj2FOCtxr39z7eUIj2FWeNOWxtIwj3D" /><input type="hidden" name="appAction" value="SIGNIN" />
+            
+          
+
+          
+
+
+
+
+  
+    <input type="hidden" name="openid.return_to" value="ape:aHR0cHM6Ly9hY2NvdW50Lndvb3QuY29tL2F1dGg/cmV0dXJuVXJsPWh0dHBzJTNBJTJGJTJGYWNjb3VudC53b290LmNvbSUyRnN1cHBvcnQlM0ZyZWYlM0R3d3cud29vdC5jb20lMkZ3cml0ZXVzJTI2dXRtX21lZGl1bSUzRGFmZmlsaWF0ZSUyNnV0bV9jYW1wYWlnbiUzRENKJTI2Y2pldmVudCUzRGM1YjliODhhMTdkMzExZWI4MzlmMDAwYjBhMWMwZTEyJTI2dXRtX3NvdXJjZSUzRFNsaWNrZGVhbHMlMkJMTEMmdXNlTmV3VUk9dXNlTmV3VUklM0R0cnVlJnZlcmlmaWNhdGlvblRva2VuPTdjZDgzZWI0YWI0ODI5ODNhNTRmYTQ0ODRlNjM4NTQzZGQ2YWFiMTdhNGYxNjI0YTJlODliYzMyMjc0MDI2YjM=" />
+  
+    <input type="hidden" name="prevRID" value="ape:SDNWS0RBQ0E2TVkwTkI3OUVKVzg=" />
+  
+    <input type="hidden" name="workflowState" value="eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.nQtvgppVkzP1yFu6nAcScg--fy2yBoMPeH4I4i_KX333hPQzvIDITg.TafdZCsujZjBVEc0.QcHR9PIe3J3f8Z0TPodPqNFPm4Uq5a4u6a8vuzR2tpILxbVjX6K2X4MANVVZa80LczmnNG67owChMw-2IkzITi2p29XUaDh-bt3xailG7mWxxQskFaerZztECMB_Yjo3NPsaFx06UsS7l7ucOsQXZsIeTTjLqfHH_P08jd4wULNZ4imbmddqN8XBRlG3oCWfStGJtgsQRHxfZNRjva2lsjGRi7NcD48TnMq_ObNsaJ2EWQWesnRdcLDPLLapGXJksDjabwNstegXfhSDF3Qb5PZQUQ-ZCB28lBKcjI-Ffm0gT-eHjgJSzh2QjX78KDnECZQb3enh6E8ULXEPsn_q_Egn4Mw4bCDGT5AKc59tmxaim0XxkBuqCAJL9L_xl_bmKC941pZZMUb3p4r97M-I57HTFC2MloDLJXTOMHSLNnBaZQXzilIvM5-ZeQeNhkDAhql3lV93vdSCLn3w0FRsmAPNP7ZG7RXKlilfOnjeXcOzl6e10P6l.jhr4QtaSgqrFNMm6_sZ9Ow" />
+  
+
+
+
+          <div class="a-section">
+            <div class="a-box"><div class="a-box-inner a-padding-extra-large">
+              <h1 class="a-spacing-small">
+                Sign-In
+              </h1>
+              <!-- optional subheading element -->
+              
+              
+                
+
+
+
+
+  
+  
+  
+    
+      
+      
+      
+        
+        
+          <div class="a-section a-spacing-large">
+            
+
+
+
+
+
+
+<div class="a-section a-spacing-none">
+  
+
+  <div class="a-section auth-third-party-content">
+    
+    <div class="a-section a-spacing-none">
+      
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="image" src="https://images-na.ssl-images-amazon.com/images/G/01/woot/images/lwa-button._CB485945349_.png" id="auth-lwa-button"/>
+
+
+  <script type="text/javascript">
+    document.cookie="lwa-csrf=14f5cb64-4660-49ba-9d50-9fcce09376ea; domain=.woot.com; path=/ap; secure";
+  </script>
+
+
+<div id="amazon-root"></div>
+<script type="text/javascript">
+  window.onAmazonLoginReady = function() {
+    amazon.Login.setClientId('amzn1.application-oa2-client.a14446438bf448d0be5bf01d8d378567');
+    amazon.Login.setDomain('https://www.amazon.com');
+  };
+  (function(d) {
+    var a = d.createElement('script'); a.type = 'text/javascript';
+    a.async = true; a.id = 'amazon-login-sdk';
+    a.src = 'https://api-cdn.amazon.com/sdk/login1.js';
+    d.getElementById('amazon-root').appendChild(a);
+  })(document);
+</script>
+
+<script type="text/javascript">
+  document.getElementById('auth-lwa-button').onclick = function() {
+    setTimeout(window.doLogin, 1);
+    return false;
+  };
+
+  window.doLogin = function() {
+    var languageCode = '';
+
+    if (languageCode) {
+      amazon.Login.setLanguage(languageCode);
+    }
+
+    options = {};
+    options.scope = 'profile prime:benefit_status payments:widget payments:shipping_address';
+    options.response_type = 'code';
+    options.redirect_uri = 'https://auth.woot.com:443/ap/bootstrap/?openid.assoc_handle=amzn_woot_desktop_us';
+    options.client_id = 'amzn1.application-oa2-client.a14446438bf448d0be5bf01d8d378567';
+    options.state = '%7B%22csrfToken%22%3A%227y8NgnlA60hraeIIwinqOA6BD6diJI6h%2Bdp3vbN2a5M%3D%3Anull%22%2C%22openIdParamsMap%22%3A%7B%22openid.return_to%22%3A%22https%3A%2F%2Faccount.woot.com%2Fauth%3FreturnUrl%3Dhttps%253A%252F%252Faccount.woot.com%252Fsupport%253Fref%253Dwww.woot.com%252Fwriteus%2526utm_medium%253Daffiliate%2526utm_campaign%253DCJ%2526cjevent%253Dc5b9b88a17d311eb839f000b0a1c0e12%2526utm_source%253DSlickdeals%252BLLC%26useNewUI%3DuseNewUI%253Dtrue%26verificationToken%3D7cd83eb4ab482983a54fa4484e638543dd6aab17a4f1624a2e89bc32274026b3%22%2C%22openid.assoc_handle%22%3A%22amzn_woot_desktop_us%22%2C%22openid.oa2.client_id%22%3A%22iba%3Aamzn1.application-oa2-client.a14446438bf448d0be5bf01d8d378567%22%7D%2C%22siteState%22%3Anull%2C%22originalPageId%22%3A%22wootgreen%22%2C%22lwaClientId%22%3A%22amzn1.application-oa2-client.a14446438bf448d0be5bf01d8d378567%22%2C%22pandaClientId%22%3A%22amzn1.application-oa2-client.a14446438bf448d0be5bf01d8d378567%22%2C%22languageCode%22%3A%22%22%2C%22skipRegisterOnSignInLapLinking%22%3Atrue%7D';
+    options.popup = true;
+    amazon.Login.authorize(options, 'https://auth.woot.com:443/ap/bootstrap/?openid.assoc_handle=amzn_woot_desktop_us');
+  };
+</script>
+
+        
+          <p class="a-spacing-top-small a-text-left a-size-small a-color-information">
+            Log in with your Amazon Prime account to receive FREE shipping on Woot!
+
+          </p>
+        
+      
+      
+        <div class="a-divider a-divider-break"><h5>or sign in with Woot</h5></div>
+      
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+</div>
+
+          </div>
+        
+      
+    
+  
+
+              
+
+              <div class="a-row a-spacing-base">
+                <label for="ap_email" class="a-form-label">
+                  Email
+                </label>
+                
+                
+                  
+                    
+                  
+                  
+                
+                <input type="email" maxlength="128" id="ap_email" name="email" tabindex="1" class="a-input-text a-span12 auth-autofocus auth-required-field"/>
+                
+
+
+
+<div id="auth-email-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+  Enter your email or mobile phone number
+</div></div></div>
+
+              </div>
+
+              
+              <input type="hidden" name="create" value="0"/>
+
+              
+              
+
+
+
+
+
+<div class="a-section a-spacing-large">
+  <div class="a-row">
+    <div class="a-column a-span5">
+      <label for="ap_password" class="a-form-label">
+        
+          
+            Password
+          
+          
+        
+      </label>
+    </div>
+
+    
+    
+      <div class="a-column a-span7 a-text-right a-span-last">
+        
+
+
+
+  
+  
+  
+    
+  
+
+<a id="auth-fpp-link-bottom" class="a-link-normal" tabindex="3" href="https://auth.woot.com/ap/forgotpassword?showRememberMe=true&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=wootgreen&amp;openid.return_to=https%3A%2F%2Faccount.woot.com%2Fauth%3FreturnUrl%3Dhttps%253A%252F%252Faccount.woot.com%252Fsupport%253Fref%253Dwww.woot.com%252Fwriteus%2526utm_medium%253Daffiliate%2526utm_campaign%253DCJ%2526cjevent%253Dc5b9b88a17d311eb839f000b0a1c0e12%2526utm_source%253DSlickdeals%252BLLC%26useNewUI%3DuseNewUI%253Dtrue%26verificationToken%3D7cd83eb4ab482983a54fa4484e638543dd6aab17a4f1624a2e89bc32274026b3&amp;prevRID=H3VKDACA6MY0NB79EJW8&amp;openid.assoc_handle=amzn_woot_desktop_us&amp;openid.oa2.response_type=token&amp;openid.mode=checkid_setup&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.ns.oa2=http%3A%2F%2Fwww.amazon.com%2Fap%2Fext%2Foauth%2F2&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;rmrMeStringID=ap_rememeber_me_default_message&amp;openid.oa2.scope=device_auth_access&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.oa2.client_id=device%3A70c7390e-4ff5-4cef-bda5-2d3b5b7fbbca&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">
+  Forgot your password?
+</a>
+      </div>
+    
+  </div>
+  
+  
+    
+      
+    
+    
+  
+  <input type="password" maxlength="1024" id="ap_password" name="password" tabindex="2" class="a-input-text a-span12 auth-required-field"/>
+
+  
+    
+
+
+
+<div id="auth-password-missing-alert" class="a-box a-alert-inline a-alert-inline-error auth-inlined-error-message a-spacing-top-mini" aria-live="assertive" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">
+  Enter your password
+</div></div></div>
+
+  
+</div>
+
+  
+
+<input type="hidden" name="encryptedPasswordExpected"/>
+<script type="a-state" data-a-state="{&quot;key&quot;:&quot;sif-encryption-profile&quot;}">{"sifProfile":"AuthenticationPortalSigninNA"}</script>
+
+<script type="text/javascript" async
+  src="https://static.siege-amazon.com/prod/profiles/AuthenticationPortalSigninNA.js">
+</script>
+
+
+              <div class="a-section a-spacing-extra-large">
+                
+                
+
+
+
+
+
+
+
+
+
+                
+                <span class="a-button a-button-span12 a-button-primary auth-disable-button-on-submit"><span class="a-button-inner"><input id="signInSubmit" tabindex="5" class="a-button-input" type="submit"/><span class="a-button-text" aria-hidden="true">
+                  Sign-In
+                </span></span></span>
+
+                
+                
+                  
+
+
+
+<div id="legalTextRow" class="a-row a-spacing-top-medium a-size-small">
+  <div>Signing in means you agree to the Woot <a class="a-link-normal" target="_blank" rel="noopener" href="https://www.woot.com/terms?ref=w_ft_wiw_tc">terms of use</a> and <a class="a-link-normal" target="_blank" rel="noopener" href="https://www.woot.com/privacy?ref=w_ft_wiw_pp">privacy policy</a></div>
+</div> 
+
+                
+
+                
+<script>
+  function cf() {
+    if (typeof window.uet === 'function') {
+      uet('cf');
+    }
+    if (window.embedNotification &&
+      typeof window.embedNotification.onCF === 'function') {
+      embedNotification.onCF();
+    }
+  }
+</script>
+
+<script type="text/javascript">cf()</script>
+
+
+                
+                
+
+
+
+
+  <div class="a-row a-spacing-top-medium">
+    <div class="a-section a-text-left">
+      <label for="auth-remember-me" class="a-form-label">
+        <div data-a-input-name="rememberMe" class="a-checkbox"><label><input type="checkbox" name="rememberMe" value="true" tabindex="4"/><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+          Keep me signed in.
+          <span class="a-declarative" data-action="a-popover" data-a-popover="{&quot;activate&quot;:&quot;onclick&quot;,&quot;header&quot;:&quot;\&quot;Keep Me Signed In\&quot; Checkbox&quot;,&quot;inlineContent&quot;:&quot;\u003cp&gt;Choosing \&quot;Keep me signed in\&quot; reduces the number of times you're asked to Sign-In on this device.\u003c\/p&gt;\n\u003cp&gt;To keep your account secure, use this option only on your personal devices.\u003c\/p&gt;&quot;}">
+            <a id="remember_me_learn_more_link" href="javascript:void(0)" class="a-popover-trigger a-declarative">
+              Details
+            <i class="a-icon a-icon-popover"></i></a>
+          </span>
+        </span></label></div>
+      </label>
+    </div>
+  </div>
+
+              </div>
+
+              
+
+              
+
+              
+                
+                
+                  
+                    
+                    <div class="a-divider a-divider-break"><h5>New to Woot?</h5></div>
+                    <span id="auth-create-account-link" class="a-button a-button-span12 a-button-base"><span class="a-button-inner"><a id="createAccountSubmit" tabindex="6" href="https://auth.woot.com/ap/register?showRememberMe=true&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=wootgreen&amp;openid.return_to=https%3A%2F%2Faccount.woot.com%2Fauth%3FreturnUrl%3Dhttps%253A%252F%252Faccount.woot.com%252Fsupport%253Fref%253Dwww.woot.com%252Fwriteus%2526utm_medium%253Daffiliate%2526utm_campaign%253DCJ%2526cjevent%253Dc5b9b88a17d311eb839f000b0a1c0e12%2526utm_source%253DSlickdeals%252BLLC%26useNewUI%3DuseNewUI%253Dtrue%26verificationToken%3D7cd83eb4ab482983a54fa4484e638543dd6aab17a4f1624a2e89bc32274026b3&amp;prevRID=H3VKDACA6MY0NB79EJW8&amp;openid.assoc_handle=amzn_woot_desktop_us&amp;openid.oa2.response_type=token&amp;openid.mode=checkid_setup&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;openid.ns.oa2=http%3A%2F%2Fwww.amazon.com%2Fap%2Fext%2Foauth%2F2&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;rmrMeStringID=ap_rememeber_me_default_message&amp;openid.oa2.scope=device_auth_access&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.oa2.client_id=device%3A70c7390e-4ff5-4cef-bda5-2d3b5b7fbbca&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" class="a-button-text" role="button">
+                      Create your Woot account
+                    </a></span></span>
+                  
+                
+              
+
+              
+
+              
+              
+            </div></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  
+
+</div>
+            </div>
+          
+        
+      </div>
+
+      
+      <div id="right-2">
+      </div>
+
+      <div class="a-section a-spacing-top-extra-large auth-footer">
+        
+
+
+
+<div class="a-divider a-divider-section"><div class="a-divider-inner"></div></div>
+
+<div class="a-section a-spacing-small a-text-center a-size-mini">
+  <span class="auth-footer-seperator"></span>
+
+  
+    
+      
+        
+      
+
+      
+    
+
+    <a class="a-link-normal" target="_blank" rel="noopener" href="https://www.woot.com/writeus?ref=w_ft_wiw_wtus">
+      WRITE US
+    </a>
+    <span class="auth-footer-seperator"></span>
+  
+    
+      
+        
+      
+
+      
+    
+
+    <a class="a-link-normal" target="_blank" rel="noopener" href="https://www.woot.com/privacy?ref=w_ft_wiw_pp">
+      PRIVACY POLICY
+    </a>
+    <span class="auth-footer-seperator"></span>
+  
+    
+      
+        
+      
+
+      
+    
+
+    <a class="a-link-normal" target="_blank" rel="noopener" href="https://www.woot.com/terms?ref=w_ft_wiw_tc">
+      TERMS AND CONDITIONS
+    </a>
+    <span class="auth-footer-seperator"></span>
+  
+
+  
+</div>
+
+
+
+
+<div class="a-section a-spacing-none a-text-center">
+  
+
+
+
+
+
+<span class="a-size-mini a-color-secondary">
+  WOOT LOGOS, SITE DESIGN, & CONTENT © WOOT, INC. 2004-2020. ALL RIGHTS RESERVED.
+</span>
+
+</div>
+
+      </div>
+    </div>
+
+    <div id="auth-external-javascript" class="auth-external-javascript" data-external-javascripts="">
+    </div>
+
+    
+
+<script type="text/javascript">
+  try {
+    var metadataList = document.getElementsByName('metadata1');
+    if (metadataList.length == 0) {
+      var input = document.createElement('input');
+      input.name = 'metadata1';
+      input.type = 'hidden';
+      input.value = 'true';
+
+      var authenticationFormList = document.getElementsByName('signIn');
+      for (var index = 0; index < authenticationFormList.length; index++) {
+        authenticationFormList[index].appendChild(input);
+      }
+    } else {
+      for (var index = 0; index < metadataList.length; index++) {
+        metadataList[index].value = 'true';
+      }
+    }
+  } catch (e) {
+    if (typeof window.ueLogError === 'function') {
+      window.ueLogError(e, {
+        message: 'Failed to populate default metadata value',
+        logLevel: 'warn',
+        attribution: 'FWCIMAssets'
+      });
+    }
+  }
+</script>
+<script type="text/javascript">
+    window.fwcimCmd = [
+        
+            ['profile', 'signIn']
+            
+        
+    ];
+</script>
+
+    
+    <!-- cache slot rendered -->
+    
+  </div></body>
+</html>
