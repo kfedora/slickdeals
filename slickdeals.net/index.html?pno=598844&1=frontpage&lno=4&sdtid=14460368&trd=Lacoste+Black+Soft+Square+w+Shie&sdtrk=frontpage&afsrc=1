@@ -3,50 +3,50 @@ Connection: keep-alive
 Cache-Control: public, max-age=600
 Content-Type: text/html; charset=UTF-8
 Link: <https://eyedictive.com/wp-json/>; rel="https://api.w.org/"
-Link: <https://eyedictive.com/wp-json/wp/v2/product/859575>; rel="alternate"; type="application/json"
-Link: <https://eyedictive.com/?p=859575>; rel=shortlink
+Link: <https://eyedictive.com/wp-json/wp/v2/product/580518>; rel="alternate"; type="application/json"
+Link: <https://eyedictive.com/?p=580518>; rel=shortlink
 Server: nginx
-Set-Cookie: cjevent=465ceb8c16f411eb82fe01860a1c0e11; expires=Wed, 09-Dec-2020 18:59:59 GMT; Max-Age=3888000; path=/; domain=eyedictive.com
+Set-Cookie: cjevent=1715fe72172911eb80e801c40a1c0e10; expires=Thu, 10-Dec-2020 01:18:03 GMT; Max-Age=3888000; path=/; domain=eyedictive.com
 Strict-Transport-Security: max-age=300
-X-Pantheon-Styx-Hostname: styx-fe3-b-6776458c68-7wjkb
-X-Styx-Req-Id: 47e2c0bf-16f4-11eb-a160-e6110f627779
-Date: Sun, 25 Oct 2020 19:00:00 GMT
-X-Served-By: cache-mdw17353-MDW, cache-sea4466-SEA
+X-Pantheon-Styx-Hostname: styx-fe3-b-6776458c68-6j5jb
+X-Styx-Req-Id: 1892cd57-1729-11eb-bd65-8a04a199118e
+Date: Mon, 26 Oct 2020 01:18:04 GMT
+X-Served-By: cache-mdw17337-MDW, cache-sea4481-SEA
 X-Cache: MISS, MISS
 X-Cache-Hits: 0, 0
-X-Timer: S1603652400.851649,VS0,VE579
+X-Timer: S1603675084.802866,VS0,VE475
 Vary: Accept-Encoding, Cookie, Cookie
 Age: 0
 Accept-Ranges: bytes
-Via: 1.1 varnish
+Via: 1.1 varnish, 1.1 varnish
 transfer-encoding: chunked
 
 
 <!DOCTYPE html>
 <html lang="en-US">
 <head >
-<meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"fa90b5e8c2",applicationID:"396271409"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 	<!-- This site is optimized with the Yoast SEO plugin v14.8 - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>Lacoste Black Soft Square w/Shield Lens Sunglasses - Eyedictive</title>
-	<meta name="description" content="Crafted from lightweight and durable nylon material, the L907S from Lacoste features a modern, soft square shield lens design in a black finish. Pique" />
+	<title>Lacoste Polarized Stripes and Piping Soft Square Sunglasses - Eyedictive</title>
+	<meta name="description" content="Casual and cool, the 781SP from Lacoste features a two-tone color scheme in a timelessly shaped soft square design. These shades come fitted with green" />
 	<meta name="robots" content="index, follow" />
 	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 	<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-	<link rel="canonical" href="https://eyedictive.com/product/lacoste-black-soft-square-w-shield-lens/" />
+	<link rel="canonical" href="https://eyedictive.com/product/lacoste-polarized-stripes-and-piping-soft-square/" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Lacoste Black Soft Square w/Shield Lens Sunglasses - Eyedictive" />
-	<meta property="og:description" content="Crafted from lightweight and durable nylon material, the L907S from Lacoste features a modern, soft square shield lens design in a black finish. Pique" />
-	<meta property="og:url" content="https://eyedictive.com/product/lacoste-black-soft-square-w-shield-lens/" />
+	<meta property="og:title" content="Lacoste Polarized Stripes and Piping Soft Square Sunglasses - Eyedictive" />
+	<meta property="og:description" content="Casual and cool, the 781SP from Lacoste features a two-tone color scheme in a timelessly shaped soft square design. These shades come fitted with green" />
+	<meta property="og:url" content="https://eyedictive.com/product/lacoste-polarized-stripes-and-piping-soft-square/" />
 	<meta property="og:site_name" content="Eyedictive" />
-	<meta property="article:modified_time" content="2020-10-24T18:56:45+00:00" />
-	<meta property="og:image" content="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg" />
+	<meta property="article:modified_time" content="2020-10-26T00:24:26+00:00" />
+	<meta property="og:image" content="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg" />
 	<meta property="og:image:width" content="538" />
 	<meta property="og:image:height" content="253" />
 	<meta name="twitter:card" content="summary" />
-	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://eyedictive.com/#website","url":"https://eyedictive.com/","name":"Eyedictive","description":"Discount Designer Sunglasses - Eyedictive","potentialAction":[{"@type":"SearchAction","target":"https://eyedictive.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://eyedictive.com/product/lacoste-black-soft-square-w-shield-lens/#primaryimage","inLanguage":"en-US","url":"https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg","width":538,"height":253},{"@type":"WebPage","@id":"https://eyedictive.com/product/lacoste-black-soft-square-w-shield-lens/#webpage","url":"https://eyedictive.com/product/lacoste-black-soft-square-w-shield-lens/","name":"Lacoste Black Soft Square w/Shield Lens Sunglasses - Eyedictive","isPartOf":{"@id":"https://eyedictive.com/#website"},"primaryImageOfPage":{"@id":"https://eyedictive.com/product/lacoste-black-soft-square-w-shield-lens/#primaryimage"},"datePublished":"2020-10-07T20:57:07+00:00","dateModified":"2020-10-24T18:56:45+00:00","description":"Crafted from lightweight and durable nylon material, the L907S from Lacoste features a modern, soft square shield lens design in a black finish. Pique","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://eyedictive.com/product/lacoste-black-soft-square-w-shield-lens/"]}]}]}</script>
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://eyedictive.com/#website","url":"https://eyedictive.com/","name":"Eyedictive","description":"Discount Designer Sunglasses - Eyedictive","potentialAction":[{"@type":"SearchAction","target":"https://eyedictive.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://eyedictive.com/product/lacoste-polarized-stripes-and-piping-soft-square/#primaryimage","inLanguage":"en-US","url":"https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg","width":538,"height":253},{"@type":"WebPage","@id":"https://eyedictive.com/product/lacoste-polarized-stripes-and-piping-soft-square/#webpage","url":"https://eyedictive.com/product/lacoste-polarized-stripes-and-piping-soft-square/","name":"Lacoste Polarized Stripes and Piping Soft Square Sunglasses - Eyedictive","isPartOf":{"@id":"https://eyedictive.com/#website"},"primaryImageOfPage":{"@id":"https://eyedictive.com/product/lacoste-polarized-stripes-and-piping-soft-square/#primaryimage"},"datePublished":"2020-09-13T19:00:02+00:00","dateModified":"2020-10-26T00:24:26+00:00","description":"Casual and cool, the 781SP from Lacoste features a two-tone color scheme in a timelessly shaped soft square design. These shades come fitted with green","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://eyedictive.com/product/lacoste-polarized-stripes-and-piping-soft-square/"]}]}]}</script>
 	<!-- / Yoast SEO plugin. -->
 
 
@@ -97,7 +97,7 @@ img.emoji {
 <script type='text/javascript' src='https://eyedictive.com/wp-content/plugins/e-commerce-mailcheck/mailcheck-js/jquery.mailcheck.min.js?ver=5.5.1' id='wpcm-js'></script>
 <script type='text/javascript' id='simple-banner-script-js-extra'>
 /* <![CDATA[ */
-var scriptParams = {"hide_simple_banner":"","simple_banner_position":"","header_margin":"","header_padding":"","simple_banner_text":"","pro_version_enabled":"","in_array":"","debug_mode":"","id":"859575","disabled_pages_array":[""],"simple_banner_font_size":"","simple_banner_color":"#24C7B9","simple_banner_text_color":"#fff","simple_banner_link_color":"","simple_banner_custom_css":"","site_custom_css":"","keep_site_custom_css":"","site_custom_js":"","keep_site_custom_js":""};
+var scriptParams = {"hide_simple_banner":"","simple_banner_position":"","header_margin":"","header_padding":"","simple_banner_text":"","pro_version_enabled":"","in_array":"","debug_mode":"","id":"580518","disabled_pages_array":[""],"simple_banner_font_size":"","simple_banner_color":"#24C7B9","simple_banner_text_color":"#fff","simple_banner_link_color":"","simple_banner_custom_css":"","site_custom_css":"","keep_site_custom_css":"","site_custom_js":"","keep_site_custom_js":""};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://eyedictive.com/wp-content/plugins/simple-banner/simple-banner.js?ver=2.5.0' id='simple-banner-script-js'></script>
@@ -173,13 +173,13 @@ window.wc_ga_pro.is_valid_email = function( email ) {
 	})();
 </script>
 		<!-- end WooCommerce Google Analytics Pro -->
-		<link rel="https://api.w.org/" href="https://eyedictive.com/wp-json/" /><link rel="alternate" type="application/json" href="https://eyedictive.com/wp-json/wp/v2/product/859575" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://eyedictive.com/xmlrpc.php?rsd" />
+		<link rel="https://api.w.org/" href="https://eyedictive.com/wp-json/" /><link rel="alternate" type="application/json" href="https://eyedictive.com/wp-json/wp/v2/product/580518" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://eyedictive.com/xmlrpc.php?rsd" />
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://eyedictive.com/wp-includes/wlwmanifest.xml" /> 
 <meta name="generator" content="WordPress 5.5.1" />
 <meta name="generator" content="WooCommerce 4.4.1" />
-<link rel='shortlink' href='https://eyedictive.com/?p=859575' />
-<link rel="alternate" type="application/json+oembed" href="https://eyedictive.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feyedictive.com%2Fproduct%2Flacoste-black-soft-square-w-shield-lens%2F" />
-<link rel="alternate" type="text/xml+oembed" href="https://eyedictive.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feyedictive.com%2Fproduct%2Flacoste-black-soft-square-w-shield-lens%2F&#038;format=xml" />
+<link rel='shortlink' href='https://eyedictive.com/?p=580518' />
+<link rel="alternate" type="application/json+oembed" href="https://eyedictive.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feyedictive.com%2Fproduct%2Flacoste-polarized-stripes-and-piping-soft-square%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://eyedictive.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feyedictive.com%2Fproduct%2Flacoste-polarized-stripes-and-piping-soft-square%2F&#038;format=xml" />
 <style type="text/css" media="screen">.simple-banner{background:#24C7B9;}</style><style type="text/css" media="screen">.simple-banner .simple-banner-text{color:#fff;}</style><style type="text/css" media="screen">.simple-banner .simple-banner-text a{color:#f16521;}</style><link rel="icon" href="https://eyedictive.com/wp-content/themes/eyedictive/images/eyedictive-favicon.png" />
 
 <!-- Google Code for Remarketing Tag -->
@@ -236,7 +236,7 @@ var google_remarketing_only = false;
 			if (typeof accessToken === 'string' && accessToken.match(/^Atza/)) {
 				document.cookie = "amazon_Login_accessToken=" + encodeURIComponent(accessToken) +
 				";secure";
-				window.location = '/product/lacoste-black-soft-square-w-shield-lens/?cjevent=465ceb8c16f411eb82fe01860a1c0e11&amp;amazon_payments_advanced=true';
+				window.location = '/product/lacoste-polarized-stripes-and-piping-soft-square/?cjevent=1715fe72172911eb80e801c40a1c0e10&amp;amazon_payments_advanced=true';
 			}
 		</script>
 		<script>
@@ -308,7 +308,7 @@ var google_remarketing_only = false;
 	.pum-theme-62129 .pum-content, .pum-theme-default-theme .pum-content, .popup-box  {height:500px}
 }		</style>
 		</head>
-<body class="product-template-default single single-product postid-859575 theme-genesis woocommerce woocommerce-page woocommerce-no-js full-width-content" itemscope itemtype="https://schema.org/WebPage"><!-- Google Tag Manager -->
+<body class="product-template-default single single-product postid-580518 theme-genesis woocommerce woocommerce-page woocommerce-no-js full-width-content" itemscope itemtype="https://schema.org/WebPage"><!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KTKH5X"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -382,35 +382,138 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 <li class="menu-item"><a href="https://eyedictive.com/my-account">Log In</a></li><li class="menu-item bag"><a href="https://eyedictive.com/cart">Cart</a></li></ul></nav></div>
 		</div></section>
 </div></div></header><div class="site-inner"><div class="content-sidebar-wrap"><main class="content"><div class="woocommerce-notices-wrapper"></div><span class="posted_in">Men's</span>
-	<div itemscope itemtype="http://schema.org/Product" id="product-859575" class="post-859575 product type-product status-publish has-post-thumbnail product_cat-lacoste-sunglasses product_cat-mens entry first outofstock sale taxable shipping-taxable purchasable product-type-simple">
-		<h1 itemprop="name" class="product_title entry-title">Lacoste Black Soft Square w/Shield Lens</h1>
+	<div itemscope itemtype="http://schema.org/Product" id="product-580518" class="post-580518 product type-product status-publish has-post-thumbnail product_cat-lacoste-sunglasses product_cat-mens entry first instock sale taxable shipping-taxable purchasable product-type-simple">
+		<h1 itemprop="name" class="product_title entry-title">Lacoste Polarized Stripes and Piping Soft Square</h1>
 		<div class="product-number">
-			L907S-001		</div>
+			L781SP-414		</div>
 
-		<meta itemprop="name" content="Lacoste Black Soft Square w/Shield Lens" />
-		<meta itemprop="sku" content="L907S-001" />
-		<meta itemprop="description" content="Crafted from lightweight and durable nylon material, the L907S from Lacoste features a modern, soft square shield lens design in a black finish. Pique pattern on temples with iconic croc logo nod to the iconic polo shirt knit pattern. The lens provides 100% UV protection." />
-		<meta itemprop="image" content="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg"/>
+		<meta itemprop="name" content="Lacoste Polarized Stripes and Piping Soft Square" />
+		<meta itemprop="sku" content="L781SP-414" />
+		<meta itemprop="description" content="Casual and cool, the 781SP from Lacoste features a two-tone color scheme in a timelessly shaped soft square design. These shades come fitted with green polarized lenses that offer 100% UV protection from the sun&#039;s harmful rays. Iconic Lacoste Croc logo detailing found on both temples." />
+		<meta itemprop="image" content="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg"/>
 
 		
 	<span class="onsale">Sale!</span>
 	<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
 	<figure class="woocommerce-product-gallery__wrapper">
-		<div data-thumb="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg"><img width="538" height="253" src="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg" class="wp-post-image" alt="" loading="lazy" title="L907S-001 M" data-caption="" data-src="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg" data-large_image="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg" data-large_image_width="538" data-large_image_height="253" srcset="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg 538w, https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M-300x141.jpg 300w, https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M-250x118.jpg 250w" sizes="(max-width: 538px) 100vw, 538px" /></a></div><div data-thumb="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg"><img width="538" height="253" src="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg" class="" alt="" loading="lazy" title="L907S-001 M" data-caption="" data-src="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg" data-large_image="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg" data-large_image_width="538" data-large_image_height="253" srcset="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M.jpg 538w, https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M-300x141.jpg 300w, https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-M-250x118.jpg 250w" sizes="(max-width: 538px) 100vw, 538px" /></a></div><div data-thumb="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-F.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-F.jpg"><img width="538" height="253" src="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-F.jpg" class="" alt="" loading="lazy" title="L907S-001 F" data-caption="" data-src="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-F.jpg" data-large_image="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-F.jpg" data-large_image_width="538" data-large_image_height="253" srcset="https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-F.jpg 538w, https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-F-300x141.jpg 300w, https://eyedictive.com/wp-content/uploads/2020/09/L907S-001-F-250x118.jpg 250w" sizes="(max-width: 538px) 100vw, 538px" /></a></div><div data-thumb="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg"><img width="538" height="253" src="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg" class="" alt="" loading="lazy" title="Lacoste Blue Case" data-caption="" data-src="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg" data-large_image="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg" data-large_image_width="538" data-large_image_height="253" srcset="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg 538w, https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case-300x141.jpg 300w, https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case-250x118.jpg 250w" sizes="(max-width: 538px) 100vw, 538px" /></a></div>	</figure>
+		<div data-thumb="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg"><img width="538" height="253" src="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg" class="wp-post-image" alt="" loading="lazy" title="L781SP-414 M" data-caption="" data-src="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg" data-large_image="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg" data-large_image_width="538" data-large_image_height="253" srcset="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg 538w, https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M-300x141.jpg 300w, https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M-250x118.jpg 250w" sizes="(max-width: 538px) 100vw, 538px" /></a></div><div data-thumb="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg"><img width="538" height="253" src="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg" class="" alt="" loading="lazy" title="L781SP-414 M" data-caption="" data-src="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg" data-large_image="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg" data-large_image_width="538" data-large_image_height="253" srcset="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M.jpg 538w, https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M-300x141.jpg 300w, https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-M-250x118.jpg 250w" sizes="(max-width: 538px) 100vw, 538px" /></a></div><div data-thumb="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-F.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-F.jpg"><img width="538" height="253" src="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-F.jpg" class="" alt="" loading="lazy" title="L781SP-414 F" data-caption="" data-src="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-F.jpg" data-large_image="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-F.jpg" data-large_image_width="538" data-large_image_height="253" srcset="https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-F.jpg 538w, https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-F-300x141.jpg 300w, https://eyedictive.com/wp-content/uploads/2020/02/L781SP-414-F-250x118.jpg 250w" sizes="(max-width: 538px) 100vw, 538px" /></a></div><div data-thumb="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg"><img width="538" height="253" src="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg" class="" alt="" loading="lazy" title="Lacoste Blue Case" data-caption="" data-src="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg" data-large_image="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg" data-large_image_width="538" data-large_image_height="253" srcset="https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case.jpg 538w, https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case-300x141.jpg 300w, https://eyedictive.com/wp-content/uploads/2019/12/Lacoste-Blue-Case-250x118.jpg 250w" sizes="(max-width: 538px) 100vw, 538px" /></a></div>	</figure>
 </div>
     <div class="hjs-before-summary">
 
 		<div class="summary">
 			<div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-				<p class="price"><del><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>110.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>56.00</bdi></span></ins></p>
-				<meta itemprop="price" content="56" />
+				<p class="price"><del><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>179.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>59.00</bdi></span></ins></p>
+				<meta itemprop="price" content="59" />
 				<meta itemprop="priceCurrency" content="USD" />
-				<link itemprop="availability" href="http://schema.org/OutOfStock" />
+				<link itemprop="availability" href="http://schema.org/InStock" />
 			</div>
 
 			<div class="eye-timer-single">
 				<div class="eye-timer-buy">
-											<h4 class="out-of-stock">SOLD OUT</h4>
+											<p class="stock in-stock">In stock</p>
+
+	  <script type="text/javascript">
+  jQuery( document ).bind( 'woocommerce_update_variation_values', function() {
+
+    jQuery( '.variations select option' ).each( function( index, el ) {
+      var sold_out = 'sold out';
+      var re = new RegExp( ' - ' + sold_out + '$' );
+      el = jQuery( el );
+
+      if ( el.is( ':disabled' ) ) {
+        if ( ! el.html().match( re ) ) el.html( el.html() + ' - ' + sold_out );
+      } else {
+        if ( el.html().match( re ) ) el.html( el.html().replace( re,'' ) );
+      }
+    } );
+
+  } );
+</script>
+  
+	<form class="cart" action="https://eyedictive.com/product/lacoste-polarized-stripes-and-piping-soft-square/" method="post" enctype='multipart/form-data'>
+			<div class="quantity">
+				<label class="screen-reader-text" for="quantity_5f9623cc21f05">Lacoste Polarized Stripes and Piping Soft Square quantity</label>
+		<input
+			type="number"
+			id="quantity_5f9623cc21f05"
+			class="input-text qty text"
+			step="1"
+			min="1"
+			max="5"
+			name="quantity"
+			value="1"
+			title="Qty"
+			size="4"
+			placeholder=""
+			inputmode="numeric" />
+			</div>
+	
+		<div class="eyedictive-product-buttons-wrap has-timer">
+
+			<button type="submit" name="add-to-cart" value="580518" class="single_add_to_cart_button button alt">BUY NOW</button>
+
+						<div class="detail-countdown">
+				<div class="countdown-details">
+					<div class="time-container">
+						<h4>Time Remaining</h4>
+						<div id="detail-timer"></div>
+					</div>
+
+				</div>
+
+				<script type="text/javascript">
+
+
+				jQuery(document).ready(function($) {
+
+					function serverTime() {
+						var time = null;
+						$.ajax({url: 'https://eyedictive.com/wp-content/themes/eyedictive/servertime.php',
+							async: false,
+							dataType: 'text',
+							success: function(text) {
+								time = new Date();
+							},
+							error: function(http, message, exc) {
+								time = new Date();
+						}});
+						return time;
+
+					}
+
+					function getCountDown() {
+						var until = getNowEDT();
+
+						until.setHours(16,0,0,0); // 3PM current day
+
+						if(getNowEDT() >= until){
+							until.setHours(40,0,0,0); // 3PM next day
+						}
+
+
+
+						return until;
+					}
+
+					function getNowEDT() {
+						var now = new Date();
+						now.setMinutes(now.getMinutes() + now.getTimezoneOffset() - 3 * 60); // EDT is UTC-4
+						return now;
+					}
+
+					$('#detail-timer').countdown({until: getCountDown(), compact: true, serverSync: serverTime, format: 'HMS', timezone: -3,
+						onExpiry: function() {
+							$(this).countdown('option', {until: getCountDown()});
+					}});
+				});
+			</script>
+		</div>
+		
+	</div>
+
+			</form>
+
+	
 									</div>
 			</div>
 
@@ -430,28 +533,34 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 																		
 							<!-- <h6> SUNGLASSES	 </h6>  -->
 														<tr>
-							<th>Frame Color 	</th><td><p>Black </p></td>
+							<th>Frame Color 	</th><td><p>Blue/Yellow </p></td>
 							</tr>
 														<tr>
-							<th>Frame Material  </th><td><p>Nylon </p></td>
+							<th>Frame Material  </th><td><p>Acetate </p></td>
 							</tr>
 														<tr>
-							<th>Lens Color   </th><td><p>Grey </p></td>
+							<th>Lens Color   </th><td><p>Green </p></td>
 							</tr>
 														<tr>
-							<th>Polarized     </th><td><p>No </p></td>
+							<th>Lens Material    </th><td><p>Polycarbonate </p></td>
+							</tr>
+														<tr>
+							<th>Polarized     </th><td><p>Yes </p></td>
 							</tr>
 														<tr>
 							<th> Protection   </th><td><p> 100% UV </p></td>
 							</tr>
 														<tr>
-							<th> Accessories	</th><td><p> Storage case </p></td>
+							<th> Rx-able  </th><td><p> Yes </p></td>
+							</tr>
+														<tr>
+							<th> Accessories	</th><td><p> Storage case and cleaning cloth </p></td>
 							</tr>
 							
 						
 													<tr>
 								<th>UPC</th>
-								<td><p>886895429467</p></td>
+								<td><p>886895264648</p></td>
 							</tr>
 						
 						</tbody>
@@ -486,7 +595,7 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 														<img class="size-full wp-image-62143 alignnone frame-details-icon" src="/wp-content/uploads/2018/07/img2.png" alt="" width="83" height="30">
 													</div>
 						<div class="frame-details-label">
-							<strong><span class="frame-details-label-key">Temple</span><span class="frame-details-label-value">145</span></strong><span class="frame-details-units">mm</span>
+							<strong><span class="frame-details-label-key">Temple</span><span class="frame-details-label-value">140</span></strong><span class="frame-details-units">mm</span>
 						</div>
 					</div>
 
@@ -509,10 +618,10 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
 				</li>
 					</ul>
 					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--new_description_tab panel entry-content wc-tab" id="tab-new_description_tab" role="tabpanel" aria-labelledby="tab-title-new_description_tab">
-				<p>Crafted from lightweight and durable nylon material, the L907S from Lacoste features a modern, soft square shield lens design in a black finish. Pique pattern on temples with iconic croc logo nod to the iconic polo shirt knit pattern. The lens provides 100% UV protection.</p>
+				<p>Casual and cool, the 781SP from Lacoste features a two-tone color scheme in a timelessly shaped soft square design. These shades come fitted with green polarized lenses that offer 100% UV protection from the sun&#8217;s harmful rays. Iconic Lacoste Croc logo detailing found on both temples.</p>
 			</div>
 					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_info_tab panel entry-content wc-tab" id="tab-additional_info_tab" role="tabpanel" aria-labelledby="tab-title-additional_info_tab">
-				<p>More than 75 years after its creation, Lacoste has become a lifestyle brand which exemplifies elegance and comfort. Eyewear attributes include relaxed, casual fit, classy, comfortable and stylish, colorful, fresh and unconventional chic.</p>
+				<p>The history of Lacoste is the story of a tennis legend whose inventions changed the sport and fashion industry forever. Inspired by his nickname, French tennis superstar René Lacoste put the little crocodile logo onto a white polo shirt for the first time in 1920 – and the icon was born. Lacoste eyewear relies on its authentic sports heritage and elegance.</p>
 			</div>
 		
 			</div>
@@ -554,14 +663,6 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                                         </a>
                 </div><!--/product-widget-->
                             <div class="product-widget">
-                    <a href="https://eyedictive.com/product/vera-wang-farah-classic-square-w-swarovski-crystal-detail/" title="Vera Wang Farah Classic Square w/ Swarovski Crystal Detail">
-                    <img width="250" height="115" src="https://eyedictive.com/wp-content/uploads/2020/10/FARAEB55-M-250x115.jpg" class="attachment-last-chance-home size-last-chance-home wp-post-image" alt="" loading="lazy" srcset="https://eyedictive.com/wp-content/uploads/2020/10/FARAEB55-M-250x115.jpg 250w, https://eyedictive.com/wp-content/uploads/2020/10/FARAEB55-M-538x250.jpg 538w" sizes="(max-width: 250px) 100vw, 250px" />                                                <h3>Women's Vera Wang Farah Classic Square w/ Swarovski Crystal Detail</h3>
-                        
-                    <span class="price"><del><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>255.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>32.00</bdi></span></ins></span>
-                                        
-                                        </a>
-                </div><!--/product-widget-->
-                            <div class="product-widget">
                     <a href="https://eyedictive.com/product/dragon-collection/" title="Dragon Collection">
                     <img width="250" height="115" src="https://eyedictive.com/wp-content/uploads/2020/10/DRDEADLOCKION-045-M-250x115.jpg" class="attachment-last-chance-home size-last-chance-home wp-post-image" alt="" loading="lazy" srcset="https://eyedictive.com/wp-content/uploads/2020/10/DRDEADLOCKION-045-M-250x115.jpg 250w, https://eyedictive.com/wp-content/uploads/2020/10/DRDEADLOCKION-045-M-538x250.jpg 538w" sizes="(max-width: 250px) 100vw, 250px" />                                                <h3>Men's Dragon Collection</h3>
                         
@@ -582,6 +683,14 @@ f=false,d=document;return{use_existing_jquery:function(){return use_existing_jqu
                     <img width="250" height="115" src="https://eyedictive.com/wp-content/uploads/2019/01/L705S-421-M-250x115.jpg" class="attachment-last-chance-home size-last-chance-home wp-post-image" alt="" loading="lazy" srcset="https://eyedictive.com/wp-content/uploads/2019/01/L705S-421-M-250x115.jpg 250w, https://eyedictive.com/wp-content/uploads/2019/01/L705S-421-M-538x250.jpg 538w" sizes="(max-width: 250px) 100vw, 250px" />                                                <h3>Men's Lacoste Collection</h3>
                         
                     <span class="price"><del><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>175.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>56.00</bdi></span></ins></span>
+                                        
+                                        </a>
+                </div><!--/product-widget-->
+                            <div class="product-widget">
+                    <a href="https://eyedictive.com/product/john-varvatos-collection/" title="John Varvatos Collection">
+                    <img width="250" height="115" src="https://eyedictive.com/wp-content/uploads/2020/08/V510NAV55-1-250x115.jpg" class="attachment-last-chance-home size-last-chance-home wp-post-image" alt="" loading="lazy" srcset="https://eyedictive.com/wp-content/uploads/2020/08/V510NAV55-1-250x115.jpg 250w, https://eyedictive.com/wp-content/uploads/2020/08/V510NAV55-1-538x250.jpg 538w" sizes="(max-width: 250px) 100vw, 250px" />                                                <h3>Men's John Varvatos Collection</h3>
+                        
+                    <span class="price"><del><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>200.00</bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>64.00</bdi></span></ins></span>
                                         
                                         </a>
                 </div><!--/product-widget-->
@@ -830,4 +939,4 @@ jQuery(function($) {
             $('.woocommerce-main-image img').attr('srcset', $srcset.replace('-200x200','-600x600'));  });
     });
     </script>
-    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"fa90b5e8c2","applicationID":"396271409","transactionName":"ZlQGMksCXEsEB01dC18eJQVNCl1WShdQWgNdVEkWSwxWTQYQ","queueTime":0,"applicationTime":501,"atts":"ShMFRAMYT0U=","errorBeacon":"bam.nr-data.net","agent":""}</script></body></html>
+    </body></html>

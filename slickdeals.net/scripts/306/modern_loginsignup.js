@@ -8,12 +8,12 @@ Server: Akamai Resource Optimizer
 X-Akamai-Path-Stats: [1:536:7464]
 Vary: Accept-Encoding
 Cache-Control: max-age=334831
-Expires: Thu, 29 Oct 2020 16:22:06 GMT
-Date: Sun, 25 Oct 2020 19:21:35 GMT
+Expires: Thu, 29 Oct 2020 22:33:34 GMT
+Date: Mon, 26 Oct 2020 01:33:03 GMT
 Content-Length: 5258
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=67
+Server-Timing: edge; dur=11
 Strict-Transport-Security: max-age=86400
 
 // This file should contain the minimal amount of code
