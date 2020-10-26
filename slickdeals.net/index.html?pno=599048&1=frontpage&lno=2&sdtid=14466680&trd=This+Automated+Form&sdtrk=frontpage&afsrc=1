@@ -1,0 +1,98 @@
+HTTP/1.1 200 OK
+Date: Mon, 26 Oct 2020 05:07:32 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: AWSALB=jL56X/w4eSNApOLaD8fMyWTDaQRx2TZXjKbr5kO4dLRIyeWQk984rlHKVWFslwWqtiBvtIlLvUts3Um35Gk6J/+d4h1lV+r6YjbWDyLYuD3Z0bWKUDKOmIcq2ASF; Expires=Mon, 02 Nov 2020 05:07:32 GMT; Path=/
+Set-Cookie: AWSALBCORS=jL56X/w4eSNApOLaD8fMyWTDaQRx2TZXjKbr5kO4dLRIyeWQk984rlHKVWFslwWqtiBvtIlLvUts3Um35Gk6J/+d4h1lV+r6YjbWDyLYuD3Z0bWKUDKOmIcq2ASF; Expires=Mon, 02 Nov 2020 05:07:32 GMT; Path=/; SameSite=None; Secure
+Server: Apache-Coyote/1.1
+X-Powered-By: JSP/2.2
+X-Powered-By: JSP/2.2
+Content-Language: en-US
+Set-Cookie: JSESSIONID=G-+5V9TZTgsVnkIa2D+JHjhs.a74a3b6d59b36712767342959d2d86f98bc62a9e; Path=/; Secure; HttpOnly
+
+
+	    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SheerID Offer</title>
+
+            <!-- Google Tag Manager -->
+        <script>
+        dataLayer = [];
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K4R77WB');
+        </script>
+        <!-- End Google Tag Manager -->
+    
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sheerid/jslib@1/sheerid.css" type="text/css" />
+    </head>
+<body>
+        <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4R77WB"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <div id="my-form"></div>
+
+          <script src="https://cdn.jsdelivr.net/npm/@sheerid/jslib@1/metrics.js"></script>
+    
+        
+            <script src="https://cdn.jsdelivr.net/npm/@sheerid/jslib@1/sheerid.js"></script>
+    
+    <script>
+        // Create a program at my.sheerid.com
+        var myProgramId = '5f287ef3b5ed56189fcf4d52';
+        var baseUrl = 'https://my.sheerid.com';
+
+                        var pathname = window.location.pathname;
+        if (myProgramId.indexOf('templateId') > -1 && pathname && pathname.length > 0) {
+            if (!window.location.origin) {
+                window.location.origin = window.location.protocol + "//" + window.location.hostname + (window.location.port ? ':' + window.location.port: '');
+            }
+            var fallbackTemplateId = pathname.match(/[a-z|\d]{24}/g);
+            myProgramId = fallbackTemplateId[0];
+            baseUrl = window.location.origin;
+        }
+
+        // trigger iframe-1.2.js to fade-in the contents of the modal:
+        window.parent.postMessage(JSON.stringify({
+            action: "updateHeight",
+            height: 650,
+        }), "*");
+
+        var sheerid = window.sheerid;
+        sheerId.setOptions({
+            useFingerprinting: true,
+            logLevel: 'error',
+            restApi: {
+                serviceUrl: baseUrl || ''
+            },
+        });
+
+                    try {
+                sheerId.addHook({
+                    name: 'ON_VERIFICATION_STEP_CHANGE',
+                    callback: function(verificationResponse) {
+                        dataLayer.push({
+                            'event':'step-change',
+                            'step-name': verificationResponse.currentStep,
+                            'verificationId': verificationResponse.verificationId
+                        });
+                    }
+                });
+            } catch(e) {
+            }
+        
+                                                
+        var myDiv = document.getElementById('my-form');
+        var myForm = new sheerId.VerificationForm(myDiv, myProgramId);
+    </script>
+</body>
+</html>

@@ -4,14 +4,14 @@ ETag: "3062954860"
 Last-Modified: Sun, 25 Oct 2020 09:17:56 GMT
 Server: Akamai Resource Optimizer
 Vary: Accept-Encoding
-Cache-Control: max-age=133109
-Expires: Tue, 27 Oct 2020 14:32:21 GMT
-Date: Mon, 26 Oct 2020 01:33:52 GMT
+Cache-Control: max-age=72896
+Expires: Tue, 27 Oct 2020 04:09:12 GMT
+Date: Mon, 26 Oct 2020 07:54:16 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
 Server-Timing: cdn-cache; desc=HIT
-Server-Timing: edge; dur=2
+Server-Timing: edge; dur=4
 Strict-Transport-Security: max-age=86400
 
 /*! jQuery iLightBox (2.4.0) - Revolutionary Lightbox Plugin http:// www.ilightbox.net/  updated By TieLbas on 22/01/2020 */
