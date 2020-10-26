@@ -16,9 +16,13 @@ Vary: Accept-Encoding
 Date: Mon, 26 Oct 2020 14:42:40 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
-Connection: Transfer-Encoding
-Set-Cookie: __cq_dnt=0; Path=/; Secure; SameSite=None
-Set-Cookie: dw_dnt=0; Path=/; Secure; SameSite=None
+Date: Mon, 26 Oct 2020 15:58:38 GMT
+Server: Apache/2.4.29 (Ubuntu)
+Vary: Accept-Encoding,User-Agent
+X-Cache: Miss from cloudfront
+Via: 1.1 4f3feb5c4393987d42d1971d404d7cea.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: SEA19-C2
+X-Amz-Cf-Id: G2upNeBpPqGjxXjTckA18npcQ-D3Di-QLFw7RQtsOJrh7InXF9JaUw==
 
 
 <!DOCTYPE html>
@@ -2679,45 +2683,64 @@ function trackPage() {
         }
     }catch(err) {};
 }
-/* ]]> */
-// -->
-</script>
-<script type="text/javascript" src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1602782150124/internal/jscript/dwanalytics-20.5.1.js" async="async" onload="trackPage()"></script>
+label.checkbox-label {
+    display: block;
+    padding-left: 2em;
+}    </style>
+    <script type="text/javascript">
+        function switchModal(show, hide)
+{
+    document.getElementById(show).style = "visibility:visible;display:block;";
+    document.getElementById(hide).style = "visibility:hidden;display:none;";
+}    </script>
+</head>
+<body>
+<div id="gdpr-modal-container">
+    <div id="gdpr-modal">
+        <img src="/images/avantlink-black-nodomain.png">
+        <hr/>
 
-<script src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1602782150124/internal/jscript/dwac-20.3.js" type="text/javascript" async="async"></script>
-<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
+        <div id="consent">
+            <div class="modal-content">
+                <p>The website you just visited (http://slickdeals.net) has an advertising relationship with brands like Patagonia and has partnered with AvantLink to facilitate these relationships.</p>
+                <p>The website owner may earn a commission or other fee when you purchase something from these brands. AvantLink uses data tracking technologies (including cookies) to collect data that allows the website owner to be paid for these referrals.</p>
+                <p>By clicking “Continue”, you are providing consent to the use of data tracking technologies (including cookies) on this website and other websites that work with us. If you wish to decline, click “Learn More” below.</p>
+            </div>
+            <div class="buttons">
+                <form action="/click.php" method="get">
+                    <input type="hidden" name="cookie_consent" value="1">
+                                            <input type="hidden" name="ctc" value="1b83bdaa17a411ebbe88668ace3e36770INT">
+                                            <input type="hidden" name="tt" value="cl">
+                                            <input type="hidden" name="merchant_id" value="50d08f80-6a3b-4a15-90d3-1b7c09b770b0">
+                                            <input type="hidden" name="website_id" value="25d00054-d522-4311-93da-e9184ad63b3e">
+                                            <input type="hidden" name="url" value="http://www.patagonia.com">
+                                        <button class="no-background" onclick="switchModal('learn-more', 'consent'); return false;">Learn More</button>
+                    <button type="submit" class="primary">Continue</button>
+                </form>
+            </div>
+        </div>
 
-<script type="text/javascript">//<!--
-/* <![CDATA[ */
-if (!window.dw) dw = {};
-dw.applepay = {"action":{"cancel":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-Cancel","getRequest":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-GetRequest","onshippingcontactselected":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-ShippingContactSelected","onpaymentmethodselected":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-PaymentMethodSelected","onvalidatemerchant":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-ValidateMerchant","onpaymentauthorized":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-PaymentAuthorized","prepareBasket":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-PrepareBasket","onshippingmethodselected":"https:\/\/www.patagonia.com\/on\/demandware.store\/Sites-patagonia-us-Site\/en_US\/__SYSTEM__ApplePay-ShippingMethodSelected"},"inject":{"directives":[{"css":"dw-apple-pay-button","query":"ISAPPLEPAY","action":"replace","copy":true}]}};
-/* ]]> */
-// -->
-</script>
-<script type="text/javascript" src="/on/demandware.static/Sites-patagonia-us-Site/-/en_US/v1602782150124/internal/jscript/applepay.js" async="true"></script>
-</body>
+        <div id="learn-more">
+            <form action="/click.php" method="get">
+                <div class="modal-content">
+                    <p>By clicking “Continue”, you are providing consent to the use of data tracking technologies (including cookies) on this website and other websites that work with us.</p>
+                    <input type="checkbox" id="consent-checkbox" name="no_consent_checkbox">
+                    <label for="consent-checkbox" class="checkbox-label">Checking this box indicates that you DO NOT consent to AvantLink’s data collection. This means that the website you visited and other websites that work with us will not be paid for referring you to brands like Patagonia.</label>
+                </div>
+                <div class="buttons">
+                    <input type="hidden" name="cookie_consent" value="1">
+                                            <input type="hidden" name="ctc" value="1b83bdaa17a411ebbe88668ace3e36770INT">
+                                            <input type="hidden" name="tt" value="cl">
+                                            <input type="hidden" name="merchant_id" value="50d08f80-6a3b-4a15-90d3-1b7c09b770b0">
+                                            <input type="hidden" name="website_id" value="25d00054-d522-4311-93da-e9184ad63b3e">
+                                            <input type="hidden" name="url" value="http://www.patagonia.com">
+                                        <button class="no-background" onclick="switchModal('consent', 'learn-more'); return false;">Go Back</button>
+                    <button type="submit" class="primary">Continue</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"d4c890b218","applicationID":"9561187","transactionName":"NAEEZRYDDxFXVUBQDg1LM0MNTQIOX1VfFxELFA==","queueTime":0,"applicationTime":24,"atts":"GEYHE14ZHB8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
-<script type="text/javascript">
-	/*
-	*	Writing breadcrumbs to the temporary storage
-    */
-    var breadCrumbsJson = "[\"Home\"]";
-    monetateData.breadCrumbs = JSON.parse(breadCrumbsJson);
-</script>
-<script type="text/javascript">
-        monetateData.setPageType = "main";
-        window.monetateQ.push(["setPageType", monetateData.setPageType]);
-
-        if (monetateData.addCartRows && monetateData.addCartRows.length!=0) window.monetateQ.push(["addCartRows", monetateData.addCartRows]);
-
-        if (typeof monetateData.breadCrumbs !== 'undefined') {
-            
-            
-                
-            
-            if (monetateData.breadCrumbs) window.monetateQ.push(["addBreadcrumbs", monetateData.breadCrumbs]);
-        }
-
-        
-        window.monetateQ.push(["trackData"]);
-    </script>
