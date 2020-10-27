@@ -1,12 +1,13 @@
 HTTP/1.1 200 OK
 Content-Type: text/javascript
 ETag: "3942043982"
-Last-Modified: Sun, 25 Oct 2020 12:38:48 GMT
+Last-Modified: Thu, 15 Oct 2020 04:03:49 GMT
 Server: Akamai Resource Optimizer
+X-Akamai-Path-Stats: [1:19693:40307]
 Vary: Accept-Encoding
-Cache-Control: max-age=191699
-Expires: Wed, 28 Oct 2020 22:58:44 GMT
-Date: Mon, 26 Oct 2020 17:43:45 GMT
+Cache-Control: max-age=77218
+Expires: Wed, 28 Oct 2020 11:23:21 GMT
+Date: Tue, 27 Oct 2020 13:56:23 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding

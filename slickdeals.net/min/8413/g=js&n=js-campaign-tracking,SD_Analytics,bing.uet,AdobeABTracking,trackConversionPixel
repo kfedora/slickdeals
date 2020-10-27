@@ -1,0 +1,1098 @@
+HTTP/1.1 200 OK
+X-Powered-By: PHP/7.2.31
+Last-Modified: Mon, 01 Jun 2020 17:05:11 GMT
+ETag: "pub1591031111;gz"
+Content-Type: application/x-javascript; charset=utf-8
+Referrer-Policy: strict-origin-when-cross-origin
+Server: Apache
+X-Akamai-Path-Stats: [1:26737:7263]
+Vary: Accept-Encoding
+Cache-Control: public, max-age=34229
+Expires: Tue, 27 Oct 2020 23:26:09 GMT
+Date: Tue, 27 Oct 2020 13:55:40 GMT
+Content-Length: 33772
+Connection: keep-alive
+Server-Timing: cdn-cache; desc=HIT
+Server-Timing: edge; dur=1
+Strict-Transport-Security: max-age=86400
+
+(function (window)
+{
+    var parseQueryString = function (queryString)
+    {
+        if (!queryString.length) return {};
+        var queryStringKVPairs = queryString.split('&'),
+                queryMap = {};
+
+
+        for (var i = 0; i < queryStringKVPairs.length; i++)
+        {
+            var kv = queryStringKVPairs[i].split('=');
+            queryMap[decodeURIComponent(kv.shift())] = decodeURIComponent(kv.join('='));
+        }
+
+        return queryMap;
+    };
+
+    var parseGacSessionData = function (cookieString)
+    {
+        var gaqCookie = cookieString.match(/__utmz=(?:[0-9]+\.)+([^;]+)/);
+
+        if (!gaqCookie) return {};
+        var parameters = ("|" + gaqCookie[1]).match(/\|utmc[a-z]{2}=.*?(?=\|utm|$)/g);
+        var campaign = {};
+        for (var i = 0; i < parameters.length; i++)
+        {
+            var kv = parameters[i].substr(1).split('=');
+            var k = kv.shift();
+            var v = decodeURIComponent(kv.join('='));
+
+            if (k == 'utmcsr') campaign.source = v;
+            if (k == 'utmccn') campaign.campaign = v;
+            if (k == 'utmcmd') campaign.medium = v;
+            if (k == 'utmctr') campaign.term = v;
+            if (k == 'utmcct') campaign.content = v;
+        }
+
+        return campaign;
+    };
+
+    var hasGacActiveCookie = function (cookieString)
+    {
+        return !!cookieString.match(/__utmb=[^;]+/);
+    };
+
+    var cleanValue = function (v)
+    {
+        if (typeof(v) == "undefined" || v == null || v == '(not set)' || v == '(direct)' || v == '(none)')
+        {
+            return '';
+        }
+        return v;
+    };
+
+    var compareCampaigns = function (c1, c2)
+    {
+        if (cleanValue(c1.source) != cleanValue(c2.source)) return false;
+        if (cleanValue(c1.campaign) != cleanValue(c2.campaign)) return false;
+        if (cleanValue(c1.medium) != cleanValue(c2.medium)) return false;
+        if (cleanValue(c1.term) != cleanValue(c2.term)) return false;
+        return cleanValue(c1.content) == cleanValue(c2.content);
+    };
+
+    var jct = function (queryMap, previousCampaign, referrerHost, referrerPath, currentHost, isNew)
+    {
+        this.queryMap = queryMap;
+        this.previousCampaign = previousCampaign;
+        this.referrerHost = referrerHost;
+        this.referrerPath = referrerPath;
+        this.currentHost = currentHost;
+        this.overrideCampaign = {};
+        this.isNew = isNew;
+    };
+
+    jct.prototype.getCampaignData = function ()
+    {
+        var campaign = {};
+
+        if (this.queryMap.gclid || this.queryMap.gclsrc)
+        {
+            campaign.source = 'google';
+            campaign.medium = 'cpc';
+            campaign.campaign = this.queryMap.utm_campaign;
+            campaign.term = this.queryMap.utm_term;
+            campaign.content = this.queryMap.utm_content;
+        }
+        else if (this.overrideCampaign.source)
+        {
+            campaign.source = this.overrideCampaign.source;
+            campaign.medium = this.overrideCampaign.medium || '(not set)';
+            campaign.campaign = this.overrideCampaign.campaign || '(not set)';
+            campaign.term = this.overrideCampaign.term;
+            campaign.content = this.overrideCampaign.content;
+        }
+        else if (this.queryMap.utm_source)
+        {
+            campaign.source = this.queryMap.utm_source;
+            campaign.medium = this.queryMap.utm_medium || '(not set)';
+            campaign.campaign = this.queryMap.utm_campaign || '(not set)';
+            campaign.term = this.queryMap.utm_term;
+            campaign.content = this.queryMap.utm_content;
+        }
+        else
+        {
+            if (this.referrerHost && this.referrerHost != this.currentHost)
+            {
+                campaign.source = this.referrerHost;
+                campaign.medium = 'referral';
+                campaign.campaign = '(referral)';
+                campaign.content = this.referrerPath;
+            }
+            else
+            {
+                campaign.source = this.previousCampaign.source || '(direct)';
+                campaign.medium = this.previousCampaign.medium || '(not set)';
+                campaign.campaign = this.previousCampaign.campaign || '(not set)';
+                campaign.term = this.previousCampaign.term;
+                campaign.content = this.previousCampaign.content;
+            }
+        }
+        campaign.isNew = this.isNew || !compareCampaigns(campaign, this.previousCampaign);
+        return campaign;
+    };
+
+    jct.track = function (campaign)
+    {
+        var referrerData = document.referrer.match(/^https?:\/\/([^/]+)(\/.*)$/);
+        var rHost = referrerData ? referrerData[1] : null;
+        var rPath = referrerData ? referrerData[2] : null;
+
+        var tracker = new jct(parseQueryString(window.location.search.substr(1)), parseGacSessionData(window.document.cookie), rHost, rPath, window.location.hostname, !hasGacActiveCookie(window.document.cookie));
+        if (campaign) tracker.overrideCampaign = campaign;
+        return tracker.getCampaignData();
+    };
+
+    window.jct = jct;
+})(window);
+;/* eslint-disable */
+if (typeof(window.SD) === "undefined")
+{
+    window.SD = {};
+}
+
+if (typeof(window.dataLayer) === "undefined")
+{
+    window.dataLayer = {};
+}
+
+SD.Analytics = {
+    socialFollow: function (socialNetwork)
+    {
+        "use strict";
+
+        if (typeof(dataLayer.social) === "undefined")
+        {
+            dataLayer.social = {
+                platform: ""
+            };
+        }
+
+        if (socialNetwork !== "")
+        {
+            dataLayer.social.platform = socialNetwork;
+        }
+
+        return true;
+    },
+    socialShare: function (shareType)
+    {
+        "use strict";
+
+        if (typeof(dataLayer.social) === "undefined")
+        {
+            dataLayer.social = {
+                platform: ""
+            };
+        }
+
+        if (shareType !== "")
+        {
+            dataLayer.social.platform = shareType;
+        }
+
+        return true;
+    },
+    loginTrack: function(trackType)
+    {
+        return false;
+    },
+    signUpTrack: function(trackType)
+    {
+        return false;
+    },
+    newsletterTrack: function(trackType)
+    {
+        return false;
+    },
+    'recordCheckoutTrackableAction': function (action)
+    {
+        if (typeof dataLayer.checkout === 'undefined')
+        {
+            dataLayer.checkout = {};
+        }
+
+        if (dataLayer.checkout.trackableAction !== action)
+        {
+            dataLayer.checkout.trackableAction = action;
+        }
+    },
+    dtmTrackRegLogin: function(event, actionSource)
+    {
+        if (typeof window.gtmDl === 'undefined' || !('registrationTracking' in window.dataLayer))
+        {
+            return;
+        }
+
+        /**
+         * We expect a few things:
+         * - this is being used primarily for registration, login, newsletter signups, or social registration
+         * - previous events should have populated dataLayer.registrationTracking either via:
+         *   - regLogController population
+         *   - server-side rehydration (if applicable still)
+         * - the actual gtm event is fired. No voodoo
+         */
+        const formType = window.dataLayer.registrationTracking.type.split('|');
+        const flow = formType[1].charAt(0).toUpperCase() + formType[1].slice(1);
+        const eventData = {
+            'event': event,
+            'js rl action source': actionSource,
+            'js rl category': flow,
+            'js rl form experience': formType[0].charAt(0).toUpperCase() + formType[0].slice(1),
+            'js rl form flow': flow,
+            'js rl label': window.dataLayer.registrationTracking.method,
+        };
+
+        if ('newsletterSubscriptionId' in window.dataLayer.registrationTracking)
+        {
+            eventData['js rl newsletter subscription id'] = window.dataLayer.newsletterSubscriptionId;
+        }
+
+        window.gtmDl.push(eventData);
+    },
+    sendOutclick: function (outclickData)
+    {
+        window.dataLayer.product = window.dataLayer.product || {};
+        window.dataLayer.outclick = {};
+        dataLayer.product.products = outclickData.productId ? ';' + outclickData.productId : '';
+        dataLayer.product.forum = outclickData.forum;
+        dataLayer.product.exitWebsite = outclickData.exitWebsite;
+        dataLayer.outclick.typeOfOutclick = outclickData.typeOfOutclick;
+        dataLayer.outclick.identifier = outclickData.adobeRef;
+        dataLayer.outclick.clickType = outclickData.clickType;
+        if (typeof outclickData.query === 'object')
+        {
+            if ('sdtrk' in outclickData.query)
+            {
+                dataLayer.outclick.sdTrack = outclickData.query.sdtrk;
+            }
+            if ('attr_track' in outclickData.query)
+            {
+                dataLayer.outclick.attrTrack = '';
+                if (outclickData.query.attr_track.length > 100)
+                {
+                    var lastPipe = outclickData.query.attr_track.lastIndexOf('|', 100);
+                    dataLayer.outclick.attrTrack = outclickData.query.attr_track.substr(0, lastPipe);
+                }
+                else
+                {
+                    dataLayer.outclick.attrTrack = outclickData.query.attr_track;
+                }
+            }
+        }
+    },
+    injectSDTrk: function (url, sdtrk)
+    {
+        var delim, uSplode = new RegExp("u(\\d+)=");
+
+        sdtrk = 'sdtrk=' + sdtrk;
+
+        if (uSplode.test(url))
+        {
+            delim = uSplode.exec(url);
+            delim = ["u", delim[1], "="].join("");
+
+            url = url.split(delim);
+            url[0] = url[0] + sdtrk + "&";
+            url = url.join(delim);
+        }
+        else
+        {
+            url = url.indexOf("?") > 0 ?
+                (url + "&" + sdtrk) :
+                (url + "?" + sdtrk);
+        }
+
+        return url;
+    },
+    trackActivityMap: function (link, region)
+    {
+        window.s_objectID = link;
+        window.s_regionID = region;
+    },
+    'trackTestEvent': function (category, label)
+    {
+        category = category.replace('|', '');
+        label = label.replace('|', '');
+
+        dataLayer.abTestEventDataDirect = category + '|' + label;
+    },
+    addDataLayerProductTitle: function(title)
+    {
+        if (typeof(dataLayer.product) === "undefined")
+        {
+            dataLayer.product = {
+                title: title
+            };
+        }
+        else
+        {
+            dataLayer.product.title = title;
+        }
+    },
+    addDataLayerProductId: function(threadId)
+    {
+        if (typeof(dataLayer.product) === "undefined")
+        {
+            dataLayer.product = {
+                products: ';' + threadId
+            };
+        }
+        else
+        {
+            dataLayer.product.products = ';' + threadId;
+        }
+    },
+    addDataLayerCouponIdentifier: function(couponId)
+    {
+        "use strict";
+
+        if (typeof(dataLayer.coupon) === "undefined")
+        {
+            dataLayer.coupon = {
+                identifier: couponId
+            };
+        }
+        else
+        {
+            dataLayer.coupon.identifier = couponId;
+        }
+    },
+    ajaxThreadTracking: function(threadids)
+    {
+        var threadString = "";
+        for (var i = 0; i < threadids.length; i++)
+        {
+            threadString += ";" + threadids[i] + ","
+        }
+        threadString = threadString.substring(0, (threadString.length - 1));
+        dataLayer.product.products = threadString;
+    },
+    addDataLayerProductTileNumber: function(tilePosition)
+    {
+        if (typeof(dataLayer.product) === "undefined")
+        {
+            dataLayer.product = {
+                tileNumber: tilePosition
+            };
+        }
+        else
+        {
+            dataLayer.product.tileNumber = tilePosition;
+        }
+    },
+    addDataLayerProductFireSign: function(fireSignEnabled)
+    {
+        var fireSignOn = fireSignEnabled ? 'yes' : 'no';
+
+        if (typeof(dataLayer.product) === "undefined")
+        {
+            dataLayer.product = {
+                fireSign: fireSignOn
+            };
+        }
+        else
+        {
+            dataLayer.product.fireSign = fireSignOn;
+        }
+    },
+    addDataLayerProductModule: function(moduleName)
+    {
+        if (typeof(dataLayer.product) === "undefined")
+        {
+            dataLayer.product = {
+                module: moduleName
+            };
+        }
+        else
+        {
+            dataLayer.product.module = moduleName;
+        }
+    },
+    trackDealClick: function(threadId, position, fireSign, module)
+    {
+        SD.Analytics.addDataLayerProductId(threadId);
+        SD.Analytics.addDataLayerProductTileNumber(position);
+        SD.Analytics.addDataLayerProductFireSign(fireSign);
+        SD.Analytics.addDataLayerProductModule(module);
+    },
+    getGridTilePosition: function(tileIndex)
+    {
+        var windowWidth =  $(window).width();
+        var tilesPerRow = 7;
+
+        if (windowWidth < 1099)
+        {
+            tilesPerRow = 4;
+        }
+        else if (windowWidth < 1372)
+        {
+            tilesPerRow = 5;
+        }
+        else if (windowWidth < 1540)
+        {
+            tilesPerRow = 6;
+        }
+
+        var row = Math.ceil(tileIndex / tilesPerRow);
+        var col = tileIndex % tilesPerRow == 0 ? tilesPerRow : tileIndex % tilesPerRow;
+
+        return row + ':' + col;
+    },
+    getClassicGridTilePosition: function(tileIndex)
+    {
+        var windowWidth =  $(window).width();
+        var tilesPerRow = 6;
+
+        if (windowWidth < 1117)
+        {
+            tilesPerRow = 4;
+        }
+        else if (windowWidth < 1270)
+        {
+            tilesPerRow = 5;
+        }
+
+        var row = Math.ceil(tileIndex / tilesPerRow);
+        var col = tileIndex % tilesPerRow == 0 ? tilesPerRow : tileIndex % tilesPerRow;
+
+        return row + ':' + col;
+    },
+    getClassicCategoryTilePosition: function(tileIndex)
+    {
+        var windowWidth =  $(window).width();
+        var tilesPerRow = 3;
+
+        if (windowWidth < 1344)
+        {
+            tilesPerRow = 2;
+        }
+
+        var row = Math.ceil(tileIndex / tilesPerRow);
+        var col = tileIndex % tilesPerRow == 0 ? tilesPerRow : tileIndex % tilesPerRow;
+
+        return row + ':' + col;
+    },
+    handleFpDealLink: function(linkElement, view)
+    {
+        var parentElement, headingElement, position;
+
+        if (view == 'redesign')
+        {
+            parentElement = linkElement.closest('.fpGridBox');
+            headingElement = linkElement.closest('.gridCategory').find('.headingLeft');
+
+            if (parentElement.hasClass('grid'))
+            {
+                position = SD.Analytics.getGridTilePosition(parentElement.first().index());
+            }
+            else
+            {
+                position = parentElement.first().index() + 1 + ':1';
+            }
+        }
+        else if (view == 'classic')
+        {
+            parentElement = linkElement.closest('.dealitem');
+            headingElement = parentElement.prevAll('.deal_header_date:first');
+
+            if ($("#deal_list").hasClass("grid"))
+            {
+                position = SD.Analytics.getClassicGridTilePosition(parentElement.data('position'));
+            }
+            else
+            {
+                position = parentElement.data('position') + ':1';
+            }
+        }
+        else if (view == 'mobile')
+        {
+            parentElement = linkElement.closest('.coupon-content');
+            headingElement = linkElement.closest('.wrapper').prev().find('.date');
+            position = parentElement.data('position') + ':1';
+        }
+
+        var threadId = parentElement.data('threadid');
+        var fireDeal = parentElement.hasClass('firedeal');
+        var heading = headingElement.data('deal-list-heading') || headingElement.text().trim();
+
+        SD.Analytics.trackDealClick(threadId, position, fireDeal, heading);
+    },
+    handleClassicFpDetailsLink: function(linkElement)
+    {
+        var parentElement = linkElement.closest('.deal_body');
+
+        var threadId = parentElement.prev().data('threadid');
+        var fireDeal = parentElement.prev().hasClass('firedeal');
+        var position = parentElement.prev().data('position') + ':1';
+        var heading = parentElement.prevAll('.deal_header_date:first').find('.deal_header_date_link').text().trim();
+
+        SD.Analytics.trackDealClick(threadId, position, fireDeal, heading);
+    },
+    handlePopularDealLink: function(linkElement, view)
+    {
+        var parentElement, heading;
+
+        if (view == 'mobile')
+        {
+            parentElement = linkElement.closest('.coupon-content');
+            heading = linkElement.closest('.wrapper').prev().find('.date').text().trim();
+        }
+        else
+        {
+            parentElement = linkElement.closest('.dealRow');
+            heading = $('.popularDealsPageTitle').data('heading');
+        }
+
+        var threadId = parentElement.data('threadid');
+        var fireDeal = parentElement.hasClass('firedeal');
+        var position = parentElement.data('position') + ':1';
+
+        SD.Analytics.trackDealClick(threadId, position, fireDeal, heading);
+    },
+    handleStoreDealLink: function(linkElement, view)
+    {
+        var parentElement, position, headingElement;
+
+        if (view == 'classic')
+        {
+            parentElement = linkElement.closest('.deal_block');
+            headingElement = '.fpcontent.store.deals';
+
+            position = SD.Analytics.getClassicCategoryTilePosition(parentElement.data('position'));
+        }
+        else if (view == 'redesign')
+        {
+            parentElement = linkElement.closest('.item');
+            position = parentElement.data('bestorder') + ':1';
+            headingElement = '#storeTop';
+        }
+        else if (view == 'mobile')
+        {
+            parentElement = linkElement.closest('.coupon-content');
+            position = parentElement.data('position') + ':1';
+            headingElement = '#dealWrapper';
+        }
+
+        var threadId = parentElement.data('threadid');
+        var fireDeal = parentElement.hasClass('firedeal');
+        var heading = $(headingElement).data('heading');
+
+        SD.Analytics.trackDealClick(threadId, position, fireDeal, heading);
+    },
+    addDataLayerFrontpageLayout: function(layoutType)
+    {
+        if (typeof(dataLayer.frontpage) === "undefined")
+        {
+            dataLayer.frontpage = {
+                layout: layoutType
+            };
+        }
+        else
+        {
+            dataLayer.frontpage.layout = layoutType;
+        }
+    },
+    updateFormFunnel: function (type, entryPoint, entryPage, status)
+    {
+        dataLayer.formFunnel = {
+            type: type,
+            entryPoint: entryPoint,
+            status: status,
+            startPage: entryPage
+        };
+    },
+    handleClick: function (selector, callback)
+    {
+        this.clickHandlers.push({selector: selector, callback: callback});
+    },
+    clickHandlers: [],
+    processGlobalClick: function (ev)
+    {
+        var sendClickEvent = false;
+        $.each(SD.Analytics.clickHandlers, function (i, handler)
+        {
+            var matches = $(ev.target).closest(handler.selector);
+            if (matches.length)
+            {
+                sendClickEvent = handler.callback(matches) || sendClickEvent;
+            }
+        });
+    },
+    modalImpressionTrack: function(modalName)
+    {
+        if (modalName.length === 0)
+        {
+            return;
+        }
+
+        if (!dataLayer.modal)
+        {
+            dataLayer.modal = {};
+        }
+        dataLayer.modal.modalName = modalName;
+    }
+};
+
+window.dataLayer.gaCampaign = jct.track();
+
+window.sdLoadQueue.push([function()
+{
+    "use strict";
+
+    if (!!window['\u200BsdAnalytics'] === false)
+    {
+        window['\u200BsdAnalytics'] = true;
+    }
+    else
+    {
+        return false;
+    }
+
+    //Adobe social sharing analytics tracking
+    $('.social-follow').on('click', function()
+    {
+        SD.Analytics.socialFollow($(this).data('platform'));
+        return true;
+    });
+
+    $('.social-share').on('click', function()
+    {
+        SD.Analytics.socialShare($(this).data('platform'));
+        return true;
+    });
+
+   $(window).on('click', SD.Analytics.processGlobalClick);
+
+    SD.Analytics.handleClick("[data-funnel-entry][data-funnel-type]", function (target)
+    {
+        SD.Analytics.updateFormFunnel(target.data('funnel-type'), target.data('funnel-entry'), dataLayer.page.pageName, 'started');
+        var funnelCookie = SD.CookieService.session.getCookie('funnel');
+        funnelCookie.setType(target.data('funnel-type'), 1, target.data('funnel-entry'), dataLayer.page.pageName);
+        SD.CookieService.session.setCookie('funnel', funnelCookie);
+        return true;
+    });
+
+    var formInteracted = false;
+    var funnelForms = $("form[data-funnel-type]");
+    funnelForms.each(function ()
+    {
+        var type = $(this).closest("form").data('funnel-type');
+        var funnels = SD.CookieService.session.getCookie('funnel');
+        var funnelTypeData = funnels.getType(type);
+        var entry, statuses;
+        if (!funnelTypeData)
+        {
+            entry = '(none specified)';
+            statuses = 'started';
+
+            SD.Analytics.updateFormFunnel(type, entry, entry, statuses);
+            funnels.setType(type, 1, entry, entry);
+            SD.CookieService.session.setCookie('funnel', funnels);
+        }
+
+    });
+    funnelForms.find("input,select,textarea").click(function ()
+    {
+        if (!formInteracted)
+        {
+            var type = $(this).closest("form").data('funnel-type');
+            var funnels = SD.CookieService.session.getCookie('funnel');
+            var funnelData = funnels.getType(type);
+            var state, entry, startPage, statuses;
+            if (funnelData)
+            {
+                state = funnelData.state;
+                entry = funnelData.entryPoint;
+                startPage = funnelData.startPage;
+                statuses = 'interacted';
+            }
+            else
+            {
+                state = 1;
+                startPage = entry = '(none specified)';
+                statuses = 'interacted';
+            }
+
+            if (state == 1)
+            {
+                SD.Analytics.updateFormFunnel(type, entry, startPage, statuses);
+                funnels.setType(type, 2, entry, startPage);
+                SD.CookieService.session.setCookie('funnel', funnels);
+            }
+        }
+    });
+
+    // Sign-up, Login, Newsletter Tracking
+    if (window.location.href.indexOf('login=1') >= 0)
+    {
+        SD.Analytics.loginTrack('successful');
+    }
+
+    $('.track-sign-up').on('click', function(ev) {
+        SD.Analytics.signUpTrack('start');
+        return true;
+    });
+
+    $('.track-login').on('click', function(ev) {
+        SD.Analytics.loginTrack('start');
+        return true;
+    });
+
+    $('.track-newsletter-checkbox').on('click', function(ev)
+    {
+        if (this.checked)
+        {
+            SD.Analytics.newsletterTrack('start');
+            return true;
+        }
+    });
+
+    $('.track-fpDealLink').on('click', function(ev) {
+        SD.Analytics.handleFpDealLink($(ev.target), 'redesign');
+        return true;
+    });
+
+    $(document).on('click', '.track-fpDealDetailLink', function(ev) {
+        SD.Analytics.handleFpDealLink($(this), 'redesign');
+        return true;
+    });
+
+    $(document).on('click', '.track-classicFpDetailsLink', function(ev) {
+        SD.Analytics.handleClassicFpDetailsLink($(this));
+        return true;
+    });
+
+    $('.track-popularDealLink').on('click', function(ev) {
+        SD.Analytics.handlePopularDealLink($(this));
+        return true;
+    });
+
+    $('.track-storeDealLink').on('click', function(ev) {
+        SD.Analytics.handleStoreDealLink($(this), 'redesign');
+        return true;
+    });
+
+    $('.track-classicStoreDealLink').on('click', function(ev) {
+        SD.Analytics.handleStoreDealLink($(this), 'classic');
+        return true;
+    });
+
+    $(document).on('click', '#dealWrapper .coupon-content a', function(ev) {
+        SD.Analytics.handleStoreDealLink($(this), 'mobile');
+        return true;
+    });
+
+    $(document).on('click', '.box.onFrontPage a', function(ev) {
+        SD.Analytics.handleFpDealLink($(this), 'mobile');
+        return true;
+    });
+
+    $(document).on('click', '.box.onPopularDeals a', function(ev) {
+        SD.Analytics.handlePopularDealLink($(this), 'mobile');
+        return true;
+    });
+}, 'analytics']);
+
+
+;  var binging = true;
+  (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5175619"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+;/**
+ * Adobe Attribution Testing tracking module.
+ *
+ * Safe for multiple instantiations, selectors and tagging.
+ *
+ * Example: var foo = new attrTracking("#foo a", ["category", "label", "value"], "<Attribute Name>");
+ **/
+(function(d, w)
+{
+    'use strict';
+
+    w.attrTracking = function(selectorText, triplet, attrName)
+    {
+        var allowedAttributes = ['attr_track', 'attrsrc'];
+
+        attrName = (typeof attrName === 'undefined') ?
+            'attr_track' :
+            attrName;
+
+        this.debugStats = {};
+
+        // I assume it would be in bad taste to error.
+        if (!Array.prototype.indexOf)
+        {
+            this.debugStats.unsupported = 'Browser does not support indexOf for Arrays, likely querySelectorAll out as well.';
+            return;
+        }
+
+        if (triplet.hasOwnProperty('length') && triplet.length === 3)
+        {
+            this.selector = selectorText;
+            this.triplet = false;
+            this.attrName = attrName;
+
+            if (allowedAttributes.indexOf(attrName) === -1)
+            {
+                this.debugStats.badAttr = 'Please consult your user\'s manual.';
+                return;
+            }
+
+            this.paramRE = new RegExp('(?:&amp;|&|)' + this.attrName + '=([^&]+)');
+
+            if (typeof this.selector !== 'undefined')
+            {
+                this.triplet = triplet;
+                this.debugStats.triplet = triplet.join(':');
+
+                if (w.attrTracking.prototype.safeToWork)
+                {
+                    w.attrTracking.prototype.safeToWork = false;
+
+                    this.debugStats.wait = 'none';
+                    this.addElementsAndTestBit(this.selector);
+
+                    w.attrTracking.prototype.safeToWork = true;
+                }
+                else
+                {
+                    this.debugStats.wait = 'had to wait';
+
+                    setTimeout(function(s, t)
+                    {
+                        this.debugStats.waitCount = this.debugStats.waitCount + 1 || 1;
+                        this.attrTracking(s, t);
+                    }.bind(this), 500, selectorText, triplet);
+                }
+            }
+        }
+    };
+
+    w.addMstData = function(selector, triplet)
+    {
+        var got, i, elem, mst;
+
+        if (typeof d.querySelectorAll != 'function')
+        {
+            return;
+        }
+
+        got = d.querySelectorAll(selector);
+        i = got.length;
+
+        for (i -= 1; i > -1; i -= 1)
+        {
+            elem = got[i];
+            mst = elem.getAttribute('data-mst');
+            elem.setAttribute('data-mst', (mst ? mst + '|' : '') + triplet.join(':'));
+        }
+    };
+
+    // Live DOM list
+    w.attrTracking.prototype.elemList = [];
+
+    // Work safety
+    w.attrTracking.prototype.safeToWork = true;
+
+    // Warn about intersections
+    w.attrTracking.prototype.warningIssued = false;
+
+    // Known link tomfoolery
+    w.attrTracking.prototype.knownHrefProperties = ['data-href2', 'data-href', 'href2', 'href'];
+
+    /**
+     * Builds element list, attempts to ensure uniqueness.
+     *
+     * @param String  selector
+     **/
+    w.attrTracking.prototype.addElementsAndTestBit = function(selector)
+    {
+        var got, i, j, k, l, elem, linkData, triplet = this.triplet.join(':');
+
+        got = d.querySelectorAll(selector);
+
+        i = got.length;
+
+        this.debugStats.ranSelector = selector;
+        this.debugStats.selectorFound = i;
+        this.debugStats.intersectionCount = 0;
+        this.debugStats.rewrittenElementCount = 0;
+
+        for (i -= 1; i > -1; i -= 1)
+        {
+            l = w.attrTracking.prototype.elemList.indexOf(got[i]);
+
+            elem = (l === -1) ?
+                got[i] :
+                w.attrTracking.prototype.elemList[l];
+
+            linkData = (l === -1) ?
+                this.getAttrTrk(got[i]) :
+                elem.sdAttrData;
+
+            if (l > -1)
+            {
+                this.debugStats.intersectionCount += 1;
+            }
+
+            if (l === -1)
+            {
+                // Jam existing link data triplets to array on element
+                for (j = linkData.length - 1; j > -1; j -= 1)
+                {
+                    this.appendAttrTrk(elem, linkData[j]);
+                }
+
+                w.attrTracking.prototype.elemList.push(got[i]);
+            }
+            else if (w.attrTracking.prototype.warningIssued === false)
+            {
+                console.warn('Test Element Intersection!');
+
+                this.debugStats.intersection = 'An intersection between test calls happened.';
+
+                w.attrTracking.prototype.warningIssued = true;
+            }
+
+            // Apply object triplet to array on element
+            this.appendAttrTrk(elem, triplet);
+            this.rewriteUrl(elem);
+        }
+    };
+
+    /**
+     * Return current sdabtrk on tag
+     *
+     * @param DomElement elem
+     * @return object
+     */
+    w.attrTracking.prototype.getAttrTrk = function(elem)
+    {
+        var ret = [], i, j, block;
+
+        for (i = this.knownHrefProperties.length - 1; i > -1; i -= 1)
+        {
+            if (elem.hasAttribute(this.knownHrefProperties[i]) && this.paramRE.test(elem.getAttribute(this.knownHrefProperties[i])))
+            {
+                block = decodeURIComponent(elem.getAttribute(this.knownHrefProperties[i])).match(this.paramRE)[1].split('|');
+
+                for (j = block.length - 1; j > -1; j -= 1)
+                {
+                    if (ret.indexOf(block[j]) === -1)
+                    {
+                        ret.push(block[j]);
+                    }
+                }
+            }
+        }
+
+        return ret;
+    };
+
+    /**
+     * Update sd ab tracking data on element
+     *
+     * @param DomElement elem
+     * @param string list
+     */
+    w.attrTracking.prototype.appendAttrTrk = function(elem, list)
+    {
+        var i;
+
+        if (typeof elem.sdAttrData === 'undefined')
+        {
+            elem.sdAttrData = [];
+        }
+
+        for (i = this.knownHrefProperties.length - 1; i > -1; i -= 1)
+        {
+            if (elem.hasAttribute(this.knownHrefProperties[i]))
+            {
+                if (elem.sdAttrData.indexOf(list) === -1)
+                {
+                    elem.sdAttrData.push(decodeURIComponent(list));
+                }
+            }
+        }
+    };
+
+    /**
+     * Rewrites given url to include SID.  Won't double-rewrite.
+     *
+     * @param DomElement elem
+     **/
+    w.attrTracking.prototype.rewriteUrl = function(elem)
+    {
+        var linkCheck = new RegExp('(?:&|\\?|;)(afsrc|mid|rnd|mon|ref|tid|pno|lno|u2|u1|u3|sid|sn|cno|ccid|ddid|bfid)='), uSplode = new RegExp('u(\\d+)='), delim, url, param, i;
+
+        for (i = this.knownHrefProperties.length - 1; i > -1; i -= 1)
+        {
+            if (elem.hasAttribute(this.knownHrefProperties[i]) && elem.sdAttrData.length > 0)
+            {
+                url = elem.getAttribute(this.knownHrefProperties[i]).replace(this.paramRE, '');
+
+                // Guardian - prevents updates to non-redirecting links.
+                if (linkCheck.test(url) && this.attrName === 'attr_track')
+                {
+                    this.debugStats.rewrittenElementCount += 1;
+
+                    param = this.attrName + '=' + encodeURIComponent(elem.sdAttrData.join('|'));
+
+                    if (uSplode.test(url))
+                    {
+                        delim = uSplode.exec(url);
+                        delim = ['u', delim[1], '='].join('');
+
+                        url = url.split(delim);
+                        url[0] = url[0] + param + '&';
+                        url = url.join(delim);
+                    }
+                    else
+                    {
+                        url = url.indexOf('?') > 0 ?
+                            (url + '&' + param) :
+                            (url + '?' + param);
+                    }
+
+                    elem.setAttribute(this.knownHrefProperties[i], url);
+                }
+                else if (!linkCheck.test(url) && this.attrName !== 'attr_track')
+                {
+                    this.debugStats.rewrittenElementCount += 1;
+
+                    param = this.attrName + '=' + encodeURIComponent(elem.sdAttrData.join('|'));
+
+                    url = url.indexOf('?') > 0 ?
+                        (url + '&' + param) :
+                        (url + '?' + param);
+
+                    elem.setAttribute(this.knownHrefProperties[i], url);
+                }
+            }
+        }
+    };
+
+    w.attrTracking.prototype.dumpStats = function()
+    {
+        var i;
+
+        console.info('Instance Debug Stats:');
+        console.info('---------------------');
+
+        for (i in this.debugStats)
+        {
+            if (this.debugStats.hasOwnProperty(i))
+            {
+                console.info(i + ':' + this.debugStats[i]);
+            }
+        }
+    };
+}(document, window));
