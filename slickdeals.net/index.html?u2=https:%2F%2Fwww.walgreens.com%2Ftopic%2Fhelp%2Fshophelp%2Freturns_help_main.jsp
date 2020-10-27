@@ -6,15 +6,15 @@ Access-Control-Allow-Credentials: true
 Access-Control-Allow-Methods: Content-Type
 x-oneagent-js-injection: true
 x-ruxit-js-agent: true
-x-envoy-upstream-service-time: 113
+x-envoy-upstream-service-time: 350
 x-wag-acs: p01
 x-frame-options: SAMEORIGIN
 Content-Type: text/html; charset=utf-8
 Server: istio-envoy
-X-EdgeConnect-MidMile-RTT: 50
-X-EdgeConnect-Origin-MEX-Latency: 184
+X-EdgeConnect-MidMile-RTT: 40
+X-EdgeConnect-Origin-MEX-Latency: 614
 Vary: Accept-Encoding
-Date: Tue, 27 Oct 2020 08:51:31 GMT
+Date: Tue, 27 Oct 2020 13:32:32 GMT
 Transfer-Encoding:  chunked
 Connection: keep-alive
 Connection: Transfer-Encoding
@@ -22,14 +22,14 @@ X-Akamai-Native: NO
 X-Akamai-CacheKeyMod: desktop;NONATIVE;o9
 X-Content-Type-Options: nosniff
 X-Akamai-DeviceOS: 
-akamai-x-url: /topic/help/shophelp/returns_help_main.jsp?cjevent=9ad74002183111eb810f004f0a1c0e10&CID=1122587&ext=1225267&PID=1225267&AID=10654946&SID=99ebbcaa183111eb96fed289d02817d70INT
+akamai-x-url: /topic/help/shophelp/returns_help_main.jsp?cjevent=dc80eed5185811eb839f00570a1c0e12&CID=1122587&ext=1225267&PID=1225267&AID=10654946&SID=db23e4aa185811eb91129e46292aae400INT
 X-Akamai-DeviceType: desktop
 Timing-Allow-Origin: *
 
 
             <!DOCTYPE html>
             <html lang="en">
-				<head><script type="text/javascript" src="/dthandler/ruxitagentjs_ICA2SVfghjqrux_10203201023153222.js" data-dtconfig="rid=RID_-761048780|rpid=670722015|domain=walgreens.com|reportUrl=https://www.walgreens.com/dthandler/|uam=1|app=0eed2717dafcc06d|cors=1|featureHash=ICA2SVfghjqrux|vcv=2|rdnt=1|uxrgce=1|cuc=r0427uye|dpvc=1|md=mdcc1=cwag_sid,mdcc2=cwrp_dt_tracker|lastModification=1603473686163|dtVersion=10203201023153222|tp=500,50,0,1|uxdcw=1500|vs=2|agentUri=/dthandler/ruxitagentjs_ICA2SVfghjqrux_10203201023153222.js"></script>
+				<head><script type="text/javascript" src="/dthandler/ruxitagentjs_ICA2SVfghjqrux_10203201023153222.js" data-dtconfig="rid=RID_-582038545|rpid=-219518224|domain=walgreens.com|reportUrl=https://www.walgreens.com/dthandler/|uam=1|app=0eed2717dafcc06d|cors=1|featureHash=ICA2SVfghjqrux|vcv=2|rdnt=1|uxrgce=1|cuc=r0427uye|dpvc=1|md=mdcc1=cwag_sid,mdcc2=cwrp_dt_tracker|lastModification=1603473686163|dtVersion=10203201023153222|tp=500,50,0,1|uxdcw=1500|vs=2|agentUri=/dthandler/ruxitagentjs_ICA2SVfghjqrux_10203201023153222.js"></script>
 					<title>Returns Help | Walgreens</title> <meta name='description' content='Walgreens. Trusted Since 1901.'> <meta property='og:title' content='Returns Help | Walgreens'> <meta property='og:description' content='Walgreens. Trusted Since 1901.'> <link rel='canonical' href='https://www.walgreens.com/topic/help/shophelp/returns_help_main.jsp'>
 					
 					<meta charset="utf-8">
@@ -39,15 +39,15 @@ Timing-Allow-Origin: *
 					<meta name = "format-detection" content = "telephone=no">
 					<meta http-equiv="x-dns-prefetch-control" content="on">
 					<meta property="og:site_name" content="Walgreens">
-					<meta property="og:url" content="https://www.walgreens.com/topic/help/shophelp/returns_help_main.jsp?cjevent=9ad74002183111eb810f004f0a1c0e10&CID=1122587&ext=1225267&PID=1225267&AID=10654946&SID=99ebbcaa183111eb96fed289d02817d70INT">
-					<link rel="canonical" href="https://www.walgreens.com/topic/help/shophelp/returns_help_main.jsp?cjevent=9ad74002183111eb810f004f0a1c0e10&CID=1122587&ext=1225267&PID=1225267&AID=10654946&SID=99ebbcaa183111eb96fed289d02817d70INT">
+					<meta property="og:url" content="https://www.walgreens.com/topic/help/shophelp/returns_help_main.jsp?cjevent=dc80eed5185811eb839f00570a1c0e12&CID=1122587&ext=1225267&PID=1225267&AID=10654946&SID=db23e4aa185811eb91129e46292aae400INT">
+					<link rel="canonical" href="https://www.walgreens.com/topic/help/shophelp/returns_help_main.jsp?cjevent=dc80eed5185811eb839f00570a1c0e12&CID=1122587&ext=1225267&PID=1225267&AID=10654946&SID=db23e4aa185811eb91129e46292aae400INT">
 					<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 					<link rel='dns-prefetch' href='https://smetrics.walgreens.com'>
 					<link rel='dns-prefetch' href='http://assets.adobedtm.com'>
 					<link rel='dns-prefetch' href='http://ecomuem.walgreens.com'>
 					<link rel='dns-prefetch' href='https://se.monetate.net'>
 					<link rel='dns-prefetch' href='https://csi.gstatic.com'>
-					<meta name="_csrf" content="8UZRknJUWKI1ng==.VE7MlApwYm849JpBJRoqIW20lX5h+UutASJwCaiJKAQ=" />
+					<meta name="_csrf" content="3uyfrvXjGYQkUQ==.sETdG+skQOrcZtENSaBdGtryBuKPIO66jNcWu3SIK54=" />
 		<meta name="_csrfHeader" content="X-XSRF-TOKEN" />
 					
 					<style>
