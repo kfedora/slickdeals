@@ -2,12 +2,11 @@ HTTP/1.1 500 Internal Server Error
 Cache-Control: no-cache
 Content-Type: text/html
 Content-Length: 96
-X-Akamai-Path-Stats: [3:21538:14986462]
-Date: Sat, 24 Oct 2020 04:05:35 GMT
+Date: Tue, 27 Oct 2020 19:42:46 GMT
 Connection: keep-alive
 Server-Timing: cdn-cache; desc=MISS
-Server-Timing: edge; dur=64
-Server-Timing: origin; dur=15008
+Server-Timing: edge; dur=29
+Server-Timing: origin; dur=15007
 Strict-Transport-Security: max-age=86400
 
 <html><body><h1>500 Internal Server Error</h1>
